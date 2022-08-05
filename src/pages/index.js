@@ -1,10 +1,13 @@
-import * as React from "react";
+import * as React from 'react';
+import Layout from 'components/Layout';
 
 const IndexPage = () => {
   return (
-    <main className="container text-center mt-4 ">
-      <h1 className="">Congratulations</h1>
-    </main>
+    <Layout>
+      <main className="container text-center mt-4 ">
+        <h1 className="">Congratulations</h1>
+      </main>
+    </Layout>
   );
 };
 

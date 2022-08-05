@@ -1,8 +1,8 @@
 {
-  "name": "test-be",
+  "name": "be-better",
   "version": "1.0.0",
   "private": true,
-  "description": "test-be",
+  "description": "be-better",
   "author": "Korotenko Alex",
   "keywords": [
     "gatsby"

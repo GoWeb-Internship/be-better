@@ -43,4 +43,4 @@ Run project
   
 All components create in components folder.
 The folder with the component must contain 3 files : Component, Component.module.css and index.js for re-export.
-In Coomponent.module.css we use custom classes with @aplly fro TailwiindCss classes
+In Component.module.css we use custom classes with @aplly fro TailwiindCss classes

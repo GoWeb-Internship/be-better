@@ -5,7 +5,11 @@ const IndexPage = () => {
   return (
     <Layout>
       <main className="container text-center mt-4 ">
+    
         <h1 className="">Congratulations</h1>
+        <h1 className="text-3xl font-bold underline">
+        Hello world!
+      </h1>
       </main>
     </Layout>
   );

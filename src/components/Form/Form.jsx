@@ -32,7 +32,19 @@ const Form = () => {
     resolver: yupResolver(schema),
   });
 
-  const onSubmit = data => console.log(data);
+  const onSubmit = data => {
+    const TOKEN = '5494380827:AAEulxKlPigRCbJkIixI2HmtsnEOSaXoTyg';
+    const CHAT_ID = '-616555921';
+    const message = `Вы получили новую заявку! Отправитель: ${data.name}, email: ${data.email}, номер телефона:${data.phone}`;
+
+    const TG_URL = `https://api.telegram.org/bot${TOKEN}/sendMessage?chat_id=${CHAT_ID}&text=${message}`;
+
+    fetch(TG_URL, {
+      method: 'POST',
+    })
+      .then(() => alert('Заявка отправлена!'))
+      .catch(error => alert(error));
+  };
 
   return (
     <form

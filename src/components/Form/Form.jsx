@@ -8,7 +8,7 @@ const phoneRegEx = /^[+]*[(]{0,1}[0-9]{1,3}[)]{0,1}[-\s./0-9]*$/g;
 
 const schema = yup
   .object({
-    name: yup.string(),
+    name: yup.string().required('Name is required'),
     email: yup
       .string()
       .email()
@@ -21,6 +21,7 @@ const schema = yup
       .string()
       .matches(phoneRegEx, 'Enter valid number')
       .required('Phone is required'),
+    checkbox: yup.boolean().required('You must accept the terms'),
   })
   .required();
 
@@ -41,9 +42,10 @@ const Form = () => {
     }
   );
 
-  const onSubmit = data => {
-    const TOKEN = '5494380827:AAEulxKlPigRCbJkIixI2HmtsnEOSaXoTyg';
-    const CHAT_ID = '-616555921';
+  const GATSBY_TOKEN = process.env.GATSBY_TOKEN;
+  const CHAT_ID = process.env.CHAT_ID;
+
+  const onSubmit = async data => {
     let message = `
     <b>Request information:</b>
     Name: ${data.name}
@@ -59,9 +61,9 @@ const Form = () => {
     ------
     `;
 
-    const TG_URL = `https://api.telegram.org/bot${TOKEN}/sendMessage`;
+    const TG_URL = `https://api.telegram.org/bot${GATSBY_TOKEN}/sendMessage`;
 
-    axios
+    await axios
       .post(TG_URL, {
         chat_id: CHAT_ID,
         text: message,

@@ -1,13 +1,14 @@
 module.exports = {
   siteMetadata: {
-    title: `test-be`,
+    title: `Be-better`,
     description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    siteUrl: `https://www.yourdomain.tld`,
+    siteUrl: `https://be-better.netlify.app`,
   },
   plugins: [
     'gatsby-plugin-netlify-cms',
+    `gatsby-transformer-remark`,
     `gatsby-plugin-sharp`,
-
+    `gatsby-plugin-react-i18next`,
     `gatsby-transformer-sharp`,
     'gatsby-plugin-postcss',
     `gatsby-plugin-image`,

@@ -9,7 +9,7 @@ collections:
   - name: 'price'
     label: 'Price'
     folder: 'content/price'
-    create: false
+    create: yes
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
     editor:
       preview: true

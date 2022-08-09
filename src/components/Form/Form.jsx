@@ -1,7 +1,8 @@
 import * as React from 'react';
-import { useForm } from 'react-hook-form';
+import { useForm, Controller } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
 import * as yup from 'yup';
+import axios from 'axios';
 
 const phoneRegEx = /^[+]*[(]{0,1}[0-9]{1,3}[)]{0,1}[-\s./0-9]*$/g;
 
@@ -26,22 +27,46 @@ const schema = yup
 const Form = () => {
   const {
     register,
+    control,
     handleSubmit,
     formState: { errors },
-  } = useForm({
-    resolver: yupResolver(schema),
-  });
+  } = useForm(
+    {
+      resolver: yupResolver(schema),
+    },
+    {
+      defaultValues: {
+        checkbox: false,
+      },
+    }
+  );
 
   const onSubmit = data => {
     const TOKEN = '5494380827:AAEulxKlPigRCbJkIixI2HmtsnEOSaXoTyg';
     const CHAT_ID = '-616555921';
-    const message = `Вы получили новую заявку! Отправитель: ${data.name}, email: ${data.email}, номер телефона:${data.phone}`;
+    let message = `
+    <b>Request information:</b>
+    Name: ${data.name}
+    Email: ${data.email}
+    Phone: ${data.phone}
+    Checkbox: yes
 
-    const TG_URL = `https://api.telegram.org/bot${TOKEN}/sendMessage?chat_id=${CHAT_ID}&text=${message}`;
+    <b>Additional information:</b>
+    <i>TransactionID: 11111111</i>
+    <i>BlockID: 22222222</i>
+    <i>Form name: contact</i>
+    <a href="https://be-better.today">https://be-better.today</a>
+    ------
+    `;
 
-    fetch(TG_URL, {
-      method: 'POST',
-    })
+    const TG_URL = `https://api.telegram.org/bot${TOKEN}/sendMessage`;
+
+    axios
+      .post(TG_URL, {
+        chat_id: CHAT_ID,
+        text: message,
+        parse_mode: 'HTML',
+      })
       .then(() => alert('Заявка отправлена!'))
       .catch(error => alert(error));
   };
@@ -73,6 +98,18 @@ const Form = () => {
         placeholder="Enter your number"
       />
       <p>{errors.phone?.message}</p>
+      <Controller
+        name="checkbox"
+        control={control}
+        rules={{ required: true }}
+        render={({ field }) => (
+          <>
+            <input type="checkbox" {...field} />
+            <span>Accept</span>
+          </>
+        )}
+      />
+      <p>{errors.checkbox?.message}</p>
       <input type="submit" />
     </form>
   );

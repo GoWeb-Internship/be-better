@@ -10,25 +10,26 @@ const pk = () => {
       />
 
       <div className=" relative h-52 w-full overflow-hidden">
-        <div className="table box-border absolute visible z-2 top-4 left-12">
+        <div className="table box-border absolute visible z-2 top-4 left-12" href="/">
           <a
             href="/"
             className="no-underline border-solid border-transparent bg-center rotate-180 block table-cell"
           >
             <img
-              className="cursor-pointer visible box-content block w-full"
+              className="cursor-pointer visible box-content block w-7"
               src="https://thumb.tildacdn.com/tild3431-3937-4633-b465-303734313661/-/resize/70x/-/format/webp/photo.png"
               data-original="https://static.tildacdn.com/tild3431-3937-4633-b465-303734313661/photo.png"
               ingfield="tn_img_1649831904378"
+              href="/"
             />
           </a>
         </div>
         <div className="table box-border absolute visible z-3 left-12 top-4 w-18 ">
           <a
             href="/"
-            className="cursor-pointer font-normal text-base w-full font-normal invisible"
+            className="cursor-pointer font-normal text-base w-full  invisible "
           >
-            назад на стр
+            назад на
           </a>
           <a
             href="/"
@@ -38,19 +39,20 @@ const pk = () => {
           </a>
         </div>
 
-        <div className=" z-0 box-border table bg-no-repeat top-16 text-center text-2xl z-1 absolute left-0 w-full">
-          <div className="text-3xl z-1 text-center visible font-semibold border-solid w-full text-white">
-            Политика конфиденциальности
+
+        <div className=" z-0 box-border table bg-no-repeat top-16 text-center text-2xl z-1 absolute left-0 w-full text-black">
+          <div className="text-3xl z-1 text-center visible font-semibold border-solid w-full text-white lg:text-4xl">
+            Политика  конфиденциальности
           </div>
         </div>
       </div>
       <div className="pt-2 pb-1.5 ">
-        <div className="float-none px-5 m-0 box-border w-full max-w-full block">
+        <div className="float-none px-5 m-0 box-border w-full max-w-full block pt-14 pb-14">
           <div
             field="text"
-            className="text-base  font-light font-sans title: black"
+            className="text-black  font-light font-sans max-w-screen-lg ml-auto  mr-auto lg:text-lg"
           >
-            <strong className="font-bold text-base">
+            <strong className="font-bold text-base lg:text-lg">
               Политика в отношении обработки персональных данных
             </strong>
             <br />

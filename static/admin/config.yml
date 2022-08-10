@@ -1,5 +1,6 @@
 backend:
   name: git-gateway
+  repo: ToyEye/be-better
   branch: master
 
 media_folder: 'static/image'
@@ -9,7 +10,7 @@ collections:
   - name: 'price'
     label: 'Price'
     folder: 'content/price'
-    create: yes
+    create: true
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
     editor:
       preview: true

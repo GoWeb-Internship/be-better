@@ -20,18 +20,18 @@ export default IndexPage;
 
 export const Head = () => <title>Home Page</title>;
 
-// export const query = graphql`
-//   query PriceF {
-//     allMarkdownRemark {
-//       nodes {
-//         html
-//         frontmatter {
-//           title
-//           date
-//           description
-//         }
-//         id
-//       }
-//     }
-//   }
-// `;
+export const query = graphql`
+  query PriceF {
+    allMarkdownRemark {
+      nodes {
+        html
+        frontmatter {
+          title
+          date
+          description
+        }
+        id
+      }
+    }
+  }
+`;

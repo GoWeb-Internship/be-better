@@ -21,7 +21,7 @@ collections:
       - { label: 'Economy', name: 'economy', widget: 'string', required: false }
       - { label: 'Month', name: 'month', widget: 'string' }
       - { label: 'Hour', name: 'hour', widget: 'string' }
-      - name: 'price'
+  - name: 'aboutMe'
     label: 'About'
     folder: 'content/aboutMe'
     create: true

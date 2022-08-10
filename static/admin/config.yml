@@ -1,6 +1,6 @@
 backend:
   name: git-gateway
-  repo: ToyEye/be-better
+  repo: GoWeb-Internship/be-better
   branch: master
 
 media_folder: 'static/image'

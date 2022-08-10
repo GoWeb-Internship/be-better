@@ -10,8 +10,10 @@ const Price = () => {
         nodes {
           html
           frontmatter {
-            description
-            title
+            hour
+            month
+            price
+            economy
           }
           id
         }
@@ -19,17 +21,19 @@ const Price = () => {
     }
   `);
   const data = allMarkdownRemark.nodes;
-
+  console.log(data);
   return (
     <div className="container m-auto text-center">
       <h1>Price</h1>
       <ul className="flex mt-4">
         {allMarkdownRemark &&
-          data.map(({ html, id, frontmatter: { description } }) => {
+          data.map(({ id, frontmatter: { hour, month, price, economy } }) => {
             return (
               <li key={id}>
-                <p>{description}</p>
-                <div dangerouslySetInnerHTML={{ __html: html }} />
+                <p>{price}</p>
+                {economy && <p>{economy}</p>}
+                <p>{month}</p>
+                <p>{hour}</p>
               </li>
             );
           })}

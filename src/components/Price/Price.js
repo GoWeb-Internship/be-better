@@ -13,6 +13,7 @@ const Price = () => {
             hour
             month
             price
+            economy
           }
           id
         }
@@ -26,10 +27,11 @@ const Price = () => {
       <h1>Price</h1>
       <ul className="flex mt-4">
         {allMarkdownRemark &&
-          data.map(({ id, frontmatter: { hour, month, price } }) => {
+          data.map(({ id, frontmatter: { hour, month, price, economy } }) => {
             return (
               <li key={id}>
                 <p>{price}</p>
+                {economy && <p>{economy}</p>}
                 <p>{month}</p>
                 <p>{hour}</p>
               </li>

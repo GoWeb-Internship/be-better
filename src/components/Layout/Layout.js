@@ -19,7 +19,7 @@ const Layout = ({ children }) => {
     <>
       <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
       <div>
-        <main>{children}</main>
+        <main className="container m-auto">{children}</main>
         <Footer>
           © {new Date().getFullYear()} &middot; Built with
           {` `}

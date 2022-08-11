@@ -10,7 +10,8 @@ collections:
   - name: 'price'
     label: 'Price'
     folder: 'content/price'
-    create: true
+    create: false
+    delete: false
     slug: '{{slug}}'
     editor:
       preview: true
@@ -24,29 +25,29 @@ collections:
     label: 'About me'
     folder: 'content/aboutMe'
     create: false
-    delete: true
+    delete: false
     slug: '{{slug}}'
     editor:
       preview: true
     fields:
       - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
   - name: 'aboutYou'
     label: 'About you'
     folder: 'content/aboutYou'
-    create: true
-    slug: '{{title}}-{{slug}}'
+    create: false
+    delete: false
+    slug: '{{slug}}'
     editor:
       preview: true
     fields:
       - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
   - name: 'route'
     label: 'Route'
     folder: 'content/route'
-    create: true
+    create: false
+    delete: false
     slug: '{{slug}}'
     editor:
       preview: true
@@ -56,11 +57,55 @@ collections:
   - name: 'guarantee'
     label: 'Guarantee'
     folder: 'content/guarantee'
-    create: true
+    create: false
+    delete: false
     slug: '{{slug}}'
     editor:
       preview: true
     fields:
       - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
+      - { label: 'Body', name: 'body', widget: 'markdown' }
+  - name: 'wyCouchBetter'
+    label: 'Wy Couch Better'
+    folder: 'content/wyCouchBetter'
+    create: false
+    delete: false
+    slug: '{{slug}}'
+    editor:
+      preview: true
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Body', name: 'body', widget: 'markdown' }
+  - name: 'experience'
+    label: 'Experience'
+    folder: 'content/experience'
+    create: false
+    delete: false
+    slug: '{{slug}}'
+    editor:
+      preview: true
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Body', name: 'body', widget: 'markdown' }
+  - name: 'сhanges'
+    label: 'Changes'
+    folder: 'content/сhanges'
+    create: false
+    delete: false
+    slug: '{{slug}}'
+    editor:
+      preview: true
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Body', name: 'body', widget: 'markdown' }
+  - name: 'beBetter'
+    label: 'Be Better'
+    folder: 'content/beBetter'
+    create: false
+    delete: false
+    slug: '{{slug}}'
+    editor:
+      preview: true
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Body', name: 'body', widget: 'markdown' }

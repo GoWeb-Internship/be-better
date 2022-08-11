@@ -87,9 +87,9 @@ collections:
     fields:
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
-  - name: 'сhanges'
-    label: 'Changes'
-    folder: 'content/сhanges'
+  - name: 'beBetter'
+    label: 'Be Better'
+    folder: 'content/beBetter'
     create: false
     delete: false
     slug: '{{slug}}'
@@ -98,9 +98,9 @@ collections:
     fields:
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
-  - name: 'beBetter'
-    label: 'Be Better'
-    folder: 'content/beBetter'
+  - name: 'changes'
+    label: 'Changes'
+    folder: 'content/changes'
     create: false
     delete: false
     slug: '{{slug}}'

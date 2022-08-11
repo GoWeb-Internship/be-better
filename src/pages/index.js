@@ -13,7 +13,7 @@ const IndexPage = () => {
         <Form />
         <Price />
         <div>
-        <Link to="/pk">Политика конфеденциальности</Link>
+        <Link to="/Pk">Политика конфеденциальности</Link>
         </div>
       
       </main>

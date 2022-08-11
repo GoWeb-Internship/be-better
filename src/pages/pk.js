@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'gatsby';
 import { StaticImage } from 'gatsby-plugin-image';
 
 const pk = () => {
@@ -10,8 +11,8 @@ const pk = () => {
       />
 
       <div className=" relative h-52 w-full overflow-hidden">
-        <div className="table box-border absolute visible z-2 top-4 left-12" href="/">
-          <a
+        <div className="table box-border absolute visible z-2 top-4 left-12">
+          <Link
             href="/"
             className="no-underline border-solid border-transparent bg-center rotate-180 block table-cell"
           >
@@ -20,23 +21,23 @@ const pk = () => {
               src="https://thumb.tildacdn.com/tild3431-3937-4633-b465-303734313661/-/resize/70x/-/format/webp/photo.png"
               data-original="https://static.tildacdn.com/tild3431-3937-4633-b465-303734313661/photo.png"
               ingfield="tn_img_1649831904378"
-              href="/"
+              
             />
-          </a>
+          </Link>
         </div>
         <div className="table box-border absolute visible z-3 left-12 top-4 w-18 ">
-          <a
+          <Link
             href="/"
             className="cursor-pointer font-normal text-base w-full  invisible "
           >
             назад на
-          </a>
-          <a
+          </Link>
+          <Link
             href="/"
             className="cursor-pointer font-normal text-base font-sans visible shadow-none text-white"
           >
             Назад
-          </a>
+          </Link>
         </div>
 
 

@@ -36,6 +36,7 @@ module.exports = {
         path: `${__dirname}/content/price`,
       },
     },
+
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -43,6 +44,7 @@ module.exports = {
         path: `${__dirname}/content/aboutMe`,
       },
     },
+
     {
       resolve: `gatsby-source-filesystem`,
       options: {

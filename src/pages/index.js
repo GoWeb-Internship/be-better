@@ -12,7 +12,10 @@ const IndexPage = () => {
         <h1 className="text-3xl font-bold underline mb-4">Hello world!</h1>
         <Form />
         <Price />
-        <Link to="/pk">Политика конфеденциальности</Link>
+        <div>
+        <Link to="/Pk">Политика конфеденциальности</Link>
+        </div>
+      
       </main>
     </Layout>
   );

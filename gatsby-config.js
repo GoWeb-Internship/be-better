@@ -9,7 +9,6 @@ module.exports = {
     siteUrl: `https://be-better.netlify.app`,
   },
   plugins: [
-    'gatsby-plugin-netlify-cms',
     `gatsby-transformer-remark`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-react-i18next`,
@@ -20,6 +19,12 @@ module.exports = {
       options: {
         name: `images`,
         path: `${__dirname}/src/images`,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-netlify-cms`,
+      options: {
+        modulePath: `${__dirname}/src/cms/cms.js`,
       },
     },
     {

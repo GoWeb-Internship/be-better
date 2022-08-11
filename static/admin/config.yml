@@ -11,7 +11,7 @@ collections:
     label: 'Price'
     folder: 'content/price'
     create: true
-    slug: '{{slug}}'
+    slug: '{{title}}-{{slug}}'
     editor:
       preview: true
     fields:

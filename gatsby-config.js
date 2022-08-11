@@ -9,12 +9,10 @@ module.exports = {
     siteUrl: `https://be-better.netlify.app`,
   },
   plugins: [
-    'gatsby-plugin-netlify-cms',
     `gatsby-transformer-remark`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-react-i18next`,
     `gatsby-transformer-sharp`,
-    'gatsby-plugin-postcss',
     `gatsby-plugin-image`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -24,9 +22,29 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-plugin-netlify-cms`,
+      options: {
+        modulePath: `${__dirname}/src/cms/cms.js`,
+      },
+    },
+    {
       resolve: `gatsby-plugin-mdx`,
       options: {
         extensions: [`.mdx`, `.md`],
+      },
+    },
+    {
+      resolve: `gatsby-plugin-postcss`,
+      options: {
+        postCssPlugins: [require('tailwindcss'), require('autoprefixer')],
+      },
+    },
+    {
+      resolve: `gatsby-plugin-purgecss`,
+      options: {
+        printRejected: false,
+        develop: false,
+        tailwind: true,
       },
     },
     {
@@ -36,12 +54,32 @@ module.exports = {
         path: `${__dirname}/content/price`,
       },
     },
-
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `aboutMe`,
         path: `${__dirname}/content/aboutMe`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `aboutYou`,
+        path: `${__dirname}/content/aboutYou`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `guarantee`,
+        path: `${__dirname}/content/guarantee`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `route`,
+        path: `${__dirname}/content/route`,
       },
     },
 

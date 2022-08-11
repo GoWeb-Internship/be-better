@@ -14,14 +14,13 @@ const Pk = () => {
         <div className="table box-border absolute visible z-2 top-4 left-12">
           <Link
             to="/"
-            className="no-underline border-solid border-transparent bg-center rotate-180 block table-cell"
+            className="no-underline border-solid border-transparent bg-center rotate-180 block"
           >
             <img
               className="cursor-pointer visible box-content block w-7"
               src="https://thumb.tildacdn.com/tild3431-3937-4633-b465-303734313661/-/resize/70x/-/format/webp/photo.png"
               data-original="https://static.tildacdn.com/tild3431-3937-4633-b465-303734313661/photo.png"
               ingfield="tn_img_1649831904378"
-              
             />
           </Link>
         </div>
@@ -40,10 +39,9 @@ const Pk = () => {
           </Link>
         </div>
 
-
         <div className=" z-0 box-border table bg-no-repeat top-16 text-center text-2xl z-1 absolute left-0 w-full text-black">
           <div className="text-3xl z-1 text-center visible font-semibold border-solid w-full text-white lg:text-4xl">
-            Политика  конфиденциальности
+            Политика конфиденциальности
           </div>
         </div>
       </div>

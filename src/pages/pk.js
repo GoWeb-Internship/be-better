@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'gatsby';
 import { StaticImage } from 'gatsby-plugin-image';
 
-const pk = () => {
+const Pk = () => {
   return (
     <div>
       <StaticImage
@@ -13,7 +13,7 @@ const pk = () => {
       <div className=" relative h-52 w-full overflow-hidden">
         <div className="table box-border absolute visible z-2 top-4 left-12">
           <Link
-            href="/"
+            to="/"
             className="no-underline border-solid border-transparent bg-center rotate-180 block table-cell"
           >
             <img
@@ -27,13 +27,13 @@ const pk = () => {
         </div>
         <div className="table box-border absolute visible z-3 left-12 top-4 w-18 ">
           <Link
-            href="/"
+            to="/"
             className="cursor-pointer font-normal text-base w-full  invisible "
           >
             назад на
           </Link>
           <Link
-            href="/"
+            to="/"
             className="cursor-pointer font-normal text-base font-sans visible shadow-none text-white"
           >
             Назад
@@ -561,4 +561,4 @@ const pk = () => {
   );
 };
 
-export default pk;
+export default Pk;

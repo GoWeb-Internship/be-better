@@ -2,7 +2,8 @@
 module.exports = {
   content: ['./src/pages/**/*.{js,jsx}', './src/components/**/*.{js,jsx}'],
   theme: {
-    extend: {},
+    extend: {
+    },
     colors: {
       transparent: 'transparent',
       current: 'currentColor',

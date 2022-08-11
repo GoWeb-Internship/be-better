@@ -6,8 +6,8 @@ const Oferta = () => {
   return (
     <div>
       <StaticImage
-        className="bg-scroll h-52 bg-center z-0 top-0 left-0 absolute"
-        src="https://thumb.tildacdn.com/tild3865-3734-4436-b930-626164373038/-/format/webp/mike-aunzo-yYSnv8meS.jpg"
+        className="bg-scroll h-52 bg-center z-0 top-0 left-0 absolute "
+        
       />
 
       <div className=" relative h-52 w-full overflow-hidden">

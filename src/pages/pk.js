@@ -5,10 +5,7 @@ import { StaticImage } from 'gatsby-plugin-image';
 const Pk = () => {
   return (
     <div>
-      <StaticImage
-        className="bg-scroll h-52 bg-center z-0 top-0 left-0 absolute "
-       
-      />
+      <StaticImage className="bg-scroll h-52 bg-center z-0 top-0 left-0 absolute " />
 
       <div className=" relative h-52 w-full overflow-hidden">
         <div className="table box-border absolute visible z-2 top-4 left-12">
@@ -21,6 +18,7 @@ const Pk = () => {
               src="https://thumb.tildacdn.com/tild3431-3937-4633-b465-303734313661/-/resize/70x/-/format/webp/photo.png"
               data-original="https://static.tildacdn.com/tild3431-3937-4633-b465-303734313661/photo.png"
               ingfield="tn_img_1649831904378"
+              alt="background"
             />
           </Link>
         </div>

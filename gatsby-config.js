@@ -14,7 +14,6 @@ module.exports = {
     `gatsby-plugin-sharp`,
     `gatsby-plugin-react-i18next`,
     `gatsby-transformer-sharp`,
-    'gatsby-plugin-postcss',
     `gatsby-plugin-image`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -30,18 +29,52 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-plugin-postcss`,
+      options: {
+        postCssPlugins: [require('tailwindcss'), require('autoprefixer')],
+      },
+    },
+    {
+      resolve: `gatsby-plugin-purgecss`,
+      options: {
+        printRejected: false,
+        develop: false,
+        tailwind: true,
+      },
+    },
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `price`,
         path: `${__dirname}/content/price`,
       },
     },
-
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `aboutMe`,
         path: `${__dirname}/content/aboutMe`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `aboutYou`,
+        path: `${__dirname}/content/aboutYou`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `guarantee`,
+        path: `${__dirname}/content/guarantee`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `route`,
+        path: `${__dirname}/content/route`,
       },
     },
 

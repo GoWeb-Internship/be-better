@@ -22,8 +22,41 @@ collections:
       - { label: 'Month', name: 'month', widget: 'string' }
       - { label: 'Hour', name: 'hour', widget: 'string' }
   - name: 'aboutMe'
-    label: 'About'
+    label: 'About me'
     folder: 'content/aboutMe'
+    create: true
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    editor:
+      preview: true
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
+      - { label: 'Body', name: 'body', widget: 'markdown' }
+  - name: 'aboutYou'
+    label: 'About you'
+    folder: 'content/aboutYou'
+    create: true
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    editor:
+      preview: true
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
+      - { label: 'Body', name: 'body', widget: 'markdown' }
+  - name: 'route'
+    label: 'Route'
+    folder: 'content/route'
+    create: true
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    editor:
+      preview: true
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
+      - { label: 'Body', name: 'body', widget: 'markdown' }
+  - name: 'guarantee'
+    label: 'Guarantee'
+    folder: 'content/guarantee'
     create: true
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
     editor:

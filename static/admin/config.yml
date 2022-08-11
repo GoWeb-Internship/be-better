@@ -10,25 +10,102 @@ collections:
   - name: 'price'
     label: 'Price'
     folder: 'content/price'
-    create: true
-    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    create: false
+    delete: false
+    slug: '{{slug}}'
     editor:
       preview: true
     fields:
       - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
       - { label: 'Price', name: 'price', widget: 'string' }
       - { label: 'Economy', name: 'economy', widget: 'string', required: false }
       - { label: 'Month', name: 'month', widget: 'string' }
       - { label: 'Hour', name: 'hour', widget: 'string' }
   - name: 'aboutMe'
-    label: 'About'
+    label: 'About me'
     folder: 'content/aboutMe'
-    create: true
-    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    create: false
+    delete: false
+    slug: '{{slug}}'
     editor:
       preview: true
     fields:
       - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
+      - { label: 'Body', name: 'body', widget: 'markdown' }
+  - name: 'aboutYou'
+    label: 'About you'
+    folder: 'content/aboutYou'
+    create: false
+    delete: false
+    slug: '{{slug}}'
+    editor:
+      preview: true
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Body', name: 'body', widget: 'markdown' }
+  - name: 'route'
+    label: 'Route'
+    folder: 'content/route'
+    create: false
+    delete: false
+    slug: '{{slug}}'
+    editor:
+      preview: true
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Body', name: 'body', widget: 'markdown' }
+  - name: 'guarantee'
+    label: 'Guarantee'
+    folder: 'content/guarantee'
+    create: false
+    delete: false
+    slug: '{{slug}}'
+    editor:
+      preview: true
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Body', name: 'body', widget: 'markdown' }
+  - name: 'wyCouchBetter'
+    label: 'Wy Couch Better'
+    folder: 'content/wyCouchBetter'
+    create: false
+    delete: false
+    slug: '{{slug}}'
+    editor:
+      preview: true
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Body', name: 'body', widget: 'markdown' }
+  - name: 'experience'
+    label: 'Experience'
+    folder: 'content/experience'
+    create: false
+    delete: false
+    slug: '{{slug}}'
+    editor:
+      preview: true
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Body', name: 'body', widget: 'markdown' }
+  - name: 'beBetter'
+    label: 'Be Better'
+    folder: 'content/beBetter'
+    create: false
+    delete: false
+    slug: '{{slug}}'
+    editor:
+      preview: true
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Body', name: 'body', widget: 'markdown' }
+  - name: 'changes'
+    label: 'Changes'
+    folder: 'content/changes'
+    create: false
+    delete: false
+    slug: '{{slug}}'
+    editor:
+      preview: true
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Body', name: 'body', widget: 'markdown' }

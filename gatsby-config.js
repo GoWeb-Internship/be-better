@@ -57,8 +57,36 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
+        name: `wyCouchBetter`,
+        path: `${__dirname}/content/wyCouchBetter`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `beBetter`,
+        path: `${__dirname}/content/beBetter`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
         name: `aboutMe`,
         path: `${__dirname}/content/aboutMe`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `experience`,
+        path: `${__dirname}/content/experience`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `changes`,
+        path: `${__dirname}/content/changes`,
       },
     },
     {

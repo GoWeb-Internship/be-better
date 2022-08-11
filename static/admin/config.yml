@@ -11,7 +11,7 @@ collections:
     label: 'Price'
     folder: 'content/price'
     create: true
-    slug: '{{title}}-{{slug}}'
+    slug: '{{slug}}'
     editor:
       preview: true
     fields:
@@ -23,7 +23,8 @@ collections:
   - name: 'aboutMe'
     label: 'About me'
     folder: 'content/aboutMe'
-    create: true
+    create: false
+    delete: true
     slug: '{{slug}}'
     editor:
       preview: true
@@ -35,7 +36,7 @@ collections:
     label: 'About you'
     folder: 'content/aboutYou'
     create: true
-    slug: '{{slug}}'
+    slug: '{{title}}-{{slug}}'
     editor:
       preview: true
     fields:

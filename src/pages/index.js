@@ -3,6 +3,7 @@ import { Link } from 'gatsby';
 import Layout from '../components/Layout';
 import Form from '../components/Form';
 import Price from '../components/Price';
+import Social from '../components/Social';
 
 const IndexPage = () => {
   return (
@@ -18,6 +19,7 @@ const IndexPage = () => {
         <div>
           <Link to="/oferta">Публичная оферта</Link>
         </div>
+        <Social/>
       </main>
     </Layout>
   );

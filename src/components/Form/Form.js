@@ -63,11 +63,10 @@ const Form = () => {
     ------
     `;
 
-    const TG_URL = `https://api.telegram.org/bot${GATSBY_TOKEN}/sendMessage`;
+    const TG_URL = `https://api.telegram.org/bot${GATSBY_TOKEN}/sendMessage?chat_id=${CHAT_ID}`;
 
     await axios
       .post(TG_URL, {
-        chat_id: CHAT_ID,
         text: message,
         parse_mode: 'HTML',
       })

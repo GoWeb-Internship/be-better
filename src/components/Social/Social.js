@@ -33,7 +33,8 @@ const Social = () => {
 
     <div>
       <Link
-        to='https://web.telegram.org/z/'
+        to='tg://resolve?domain=https://web.telegram.org/z/#581764253 text=Привет!'
+        
         target="blank"
         rel="noreferrer noopener"
         
@@ -44,7 +45,7 @@ const Social = () => {
     
     <div>
       <Link
-        to='https://web.telegram.org/z/'
+        to='whatsapp://send?phone=+380962153975 text=Привет'
         target="blank"
         rel="noreferrer noopener"
         

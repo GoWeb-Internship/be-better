@@ -17,7 +17,7 @@ const IndexPage = () => {
           <Link to="/pk">Политика конфеденциальности</Link>
         </div>
         <div>
-          <Link to="/oferta">Публичная оферта</Link>
+          <Link to="/Oferta">Публичная оферта</Link>
         </div>
         <Social/>
       </main>

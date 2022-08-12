@@ -31,24 +31,27 @@ const Social = () => {
     </Link>
     </div>
 
+
+
     <div>
-      <Link
-        to='tg://resolve?domain=https://web.telegram.org/z/#581764253 text=Привет!'
-        
+       <Link
+        to='https://t.me/Petmel'
+        text="hello"
         target="blank"
         rel="noreferrer noopener"
-        
     >
 <img src={telegram}  alt="telegram"/>
-    </Link>
+    </Link> 
+   
     </div>
-    
+
+
     <div>
       <Link
         to='whatsapp://send?phone=+380962153975 text=Привет'
         target="blank"
         rel="noreferrer noopener"
-        
+       
     >
 <img src={whatApp}  alt="whatApp"/>
     </Link>

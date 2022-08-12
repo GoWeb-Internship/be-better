@@ -1,10 +1,11 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
 // import { Link } from 'gatsby';
+import Navigation from '../Navigation';
 
 const Header = ({ siteTitle }) => (
   <header className="m-auto">
-    <p>Logo</p>
+    <Navigation />
   </header>
 );
 

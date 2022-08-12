@@ -18,14 +18,9 @@ const Layout = ({ children }) => {
   return (
     <>
       <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
-      <div>
-        <main className="container m-auto">{children}</main>
-        <Footer>
-          © {new Date().getFullYear()} &middot; Built with
-          {` `}
-          <a href="https://www.gatsbyjs.com">Gatsby</a>
-        </Footer>
-      </div>
+
+      <main className="container m-auto">{children}</main>
+      <Footer />
     </>
   );
 };

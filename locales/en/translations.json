@@ -1,0 +1,21 @@
+{
+  "header": {
+    "nav": [
+      { "name": "About", "id": "nav-about" },
+      { "name": "Reviews", "id": "nav-reviews" },
+      { "name": "Price", "id": "nav-price" },
+      { "name": "Feedback", "id": "nav-feedback" }
+    ]
+  },
+  "form": {
+    "nameInput": "Name",
+    "accept": "I agree to the processing of my personal data",
+    "button": "Take the first step"
+  },
+  "footer": {
+    "links": [
+      { "name": "Privacy Policy", "id": "pk" },
+      { "name": "Public offer", "id": "Oferta" }
+    ]
+  }
+}

@@ -28,6 +28,8 @@ const schema = yup
   })
   .required();
 
+const isBrowser = typeof window !== 'undefined';
+
 const Form = ({ clickFrom }) => {
   const [userLocation, setUserLocation] = React.useState('');
   const {
@@ -53,7 +55,7 @@ const Form = ({ clickFrom }) => {
   useFormPersist(`form-${clickFrom}`, {
     watch,
     setValue,
-    storage: window.localStorage,
+    storage: isBrowser ? window.localStorage : null,
   });
 
   const GATSBY_TOKEN = process.env.GATSBY_TOKEN;
@@ -85,7 +87,10 @@ const Form = ({ clickFrom }) => {
       })
       .then(() => alert('Заявка отправлена!'))
       .catch(error => alert(error))
-      .finally(reset());
+      .finally(() => {
+        reset();
+        localStorage.removeItem(`form-${clickFrom}`);
+      });
   };
 
   axios('https://api.db-ip.com/v2/free/self')

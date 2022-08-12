@@ -41,6 +41,7 @@ const Form = () => {
       defaultValues: {
         checkbox: false,
       },
+      mode: 'onBlur',
     }
   );
 
@@ -82,28 +83,33 @@ const Form = () => {
     .catch(err => console.log(err));
 
   const onValidatePhoneNumber = (value, country) => {
-    if (isValidPhoneNumber(value, country.iso2.toUpperCase())) {
-      return true;
-    } else if (
-      validatePhoneNumberLength(value, country.iso2.toUpperCase()) ===
-      'TOO_SHORT'
-    ) {
-      return (
-        <p className="absolute -bottom-16 -left-12 w-32">Too short number</p>
-      );
-    } else if (
-      validatePhoneNumberLength(value, country.iso2.toUpperCase()) ===
-      'TOO_LONG'
-    ) {
-      return (
-        <p className="absolute -bottom-16 -left-12 w-32">Too long number</p>
-      );
-    } else {
-      return (
-        <p className="absolute -bottom-16 -left-12 w-32">
-          Enter correct number
-        </p>
-      );
+    if (value && value.length > 9) {
+      if (isValidPhoneNumber(value, country.iso2.toUpperCase())) {
+        return true;
+      } else if (
+        validatePhoneNumberLength(value, country.iso2.toUpperCase()) ===
+        'TOO_SHORT'
+      ) {
+        return 'Too short number';
+        // return (
+        //   <p className="absolute -bottom-16 -left-12 w-32">Too short number</p>
+        // );
+      } else if (
+        validatePhoneNumberLength(value, country.iso2.toUpperCase()) ===
+        'TOO_LONG'
+      ) {
+        return 'Too long number';
+        // return (
+        //   <p className="absolute -bottom-16 -left-12 w-32">Too long number</p>
+        // );
+      } else {
+        return 'Enter correct number';
+        // return (
+        //   <p className="absolute -bottom-16 -left-12 w-32">
+
+        //   </p>
+        // );
+      }
     }
   };
 

@@ -1,8 +1,7 @@
 import * as React from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
 import Button from '../reusableComponents/Button';
-import { container, list, item, button } from './Price.module.css';
-import { changeLanguage } from 'i18next';
+import { container, list, item } from './Price.module.css';
 
 const Price = () => {
   const { allMarkdownRemark } = useStaticQuery(graphql`
@@ -24,7 +23,7 @@ const Price = () => {
   const data = allMarkdownRemark.nodes;
 
   return (
-    <div className={container}>
+    <div className={container} id="nav-price">
       <h1>Price</h1>
       <ul className={list}>
         {allMarkdownRemark &&

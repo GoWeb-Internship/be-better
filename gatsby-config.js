@@ -11,7 +11,6 @@ module.exports = {
   plugins: [
     `gatsby-transformer-remark`,
     `gatsby-plugin-sharp`,
-    `gatsby-plugin-react-i18next`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-image`,
     {
@@ -39,14 +38,15 @@ module.exports = {
         postCssPlugins: [require('tailwindcss'), require('autoprefixer')],
       },
     },
-    {
-      resolve: `gatsby-plugin-purgecss`,
-      options: {
-        printRejected: false,
-        develop: false,
-        tailwind: true,
-      },
-    },
+    // {
+    //   resolve: `gatsby-plugin-purgecss`,
+    //   options: {
+    //     printRejected: false,
+    //     develop: false,
+    //     tailwind: true,
+    //     ignore: ['react-phone-input-2/lib/bootstrap.css'],
+    //   },
+    // },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -110,7 +110,6 @@ module.exports = {
         path: `${__dirname}/content/route`,
       },
     },
-
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -118,7 +117,20 @@ module.exports = {
         path: `${__dirname}/static/image`,
       },
     },
-
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/locales`,
+        name: `locale`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/locales`,
+        name: `locale`,
+      },
+    },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -128,6 +140,28 @@ module.exports = {
         background_color: `#663399`,
         display: `minimal-ui`,
         icon: `src/images/icon.png`,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-react-i18next`,
+      options: {
+        localeJsonSourceName: `locale`,
+        languages: [`ua`, `en`, `ru`],
+        defaultLanguage: `ua`,
+        generateDefaultLanguagePage: '/ua',
+        siteUrl: ``,
+
+        i18nextOptions: {
+          lng: 'ua',
+          load: 'currentOnly',
+
+          interpolation: {
+            escapeValue: false,
+          },
+
+          keySeparator: false,
+          nsSeparator: true,
+        },
       },
     },
   ],

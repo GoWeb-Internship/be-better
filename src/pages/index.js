@@ -1,5 +1,6 @@
 import * as React from 'react';
 import { Link } from 'gatsby';
+import 'react-phone-input-2/lib/style.css';
 import Layout from '../components/Layout';
 import Form from '../components/Form';
 import Price from '../components/Price';
@@ -17,9 +18,9 @@ const IndexPage = () => {
           <Link to="/pk">Политика конфеденциальности</Link>
         </div>
         <div>
-          <Link to="/oferta">Публичная оферта</Link>
+          <Link to="/Oferta">Публичная оферта</Link>
         </div>
-        <Social/>
+        <Social />
       </main>
     </Layout>
   );

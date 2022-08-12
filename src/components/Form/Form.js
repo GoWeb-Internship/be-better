@@ -90,25 +90,21 @@ const Form = () => {
         validatePhoneNumberLength(value, country.iso2.toUpperCase()) ===
         'TOO_SHORT'
       ) {
-        return 'Too short number';
-        // return (
-        //   <p className="absolute -bottom-16 -left-12 w-32">Too short number</p>
-        // );
+        // return 'Too short number';
+        return (
+          <p className="absolute -bottom-16 -left-12 w-32">Too short number</p>
+        );
       } else if (
         validatePhoneNumberLength(value, country.iso2.toUpperCase()) ===
         'TOO_LONG'
       ) {
-        return 'Too long number';
-        // return (
-        //   <p className="absolute -bottom-16 -left-12 w-32">Too long number</p>
-        // );
+        // return 'Too long number';
+        return (
+          <p className="absolute -bottom-16 -left-12 w-32">Too long number</p>
+        );
       } else {
-        return 'Enter correct number';
-        // return (
-        //   <p className="absolute -bottom-16 -left-12 w-32">
-
-        //   </p>
-        // );
+        // return 'Enter correct number';
+        return <p className="absolute -bottom-16 -left-12 w-32"></p>;
       }
     }
   };
@@ -145,7 +141,6 @@ const Form = () => {
             placeholder="Enter phone number"
             preferredCountries={['ua', 'gb']}
             isValid={onValidatePhoneNumber}
-            className="mb-6"
             {...field}
           />
         )}

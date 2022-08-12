@@ -3,6 +3,8 @@ import { graphql } from 'gatsby';
 import Layout from '../components/Layout';
 import Form from '../components/Form';
 import Price from '../components/Price';
+import 'react-phone-input-2/lib/style.css';
+import Social from '../components/Social';
 
 const IndexPage = () => {
   return (

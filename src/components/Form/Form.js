@@ -46,7 +46,7 @@ const Form = () => {
   );
 
   const GATSBY_TOKEN = process.env.GATSBY_TOKEN;
-  const CHAT_ID = process.env.CHAT_ID;
+  const CHAT_ID = process.env.GATSBY_CHAT_ID;
 
   const onSubmit = async data => {
     let message = `

@@ -4,8 +4,10 @@ import useFormPersist from 'react-hook-form-persist';
 import { yupResolver } from '@hookform/resolvers/yup';
 import * as yup from 'yup';
 import axios from 'axios';
+import { useTranslation } from 'gatsby-plugin-react-i18next';
 import PhoneInput from 'react-phone-input-2';
 import 'react-phone-input-2/lib/style.css';
+import Button from '../reusableComponents/Button';
 import {
   isValidPhoneNumber,
   validatePhoneNumberLength,
@@ -32,6 +34,8 @@ const isBrowser = typeof window !== 'undefined';
 
 const Form = ({ clickFrom }) => {
   const [userLocation, setUserLocation] = React.useState('');
+  const { t } = useTranslation();
+  const data = t('form', { returnObjects: true });
   const {
     register,
     control,
@@ -140,13 +144,13 @@ const Form = ({ clickFrom }) => {
       <input
         {...register('name')}
         className="w-80 mb-4 p-2"
-        placeholder="Enter your name"
+        placeholder={data.nameInput}
       />
       <p className=" text-red">{errors.name?.message}</p>
       <input
         {...register('email')}
         className="w-80 mb-4 p-2"
-        placeholder="Enter your email"
+        placeholder="E-mail"
       />
       <p className="text-red">{errors.email?.message}</p>
       <Controller
@@ -172,12 +176,14 @@ const Form = ({ clickFrom }) => {
         render={({ field }) => (
           <>
             <input type="checkbox" {...field} />
-            <span>Я согласен на обработку моих персональных данных</span>
+            <span>{data.accept}</span>
           </>
         )}
       />
-      <p className=" text-red">{errors.checkbox?.message}</p>
-      <button type="submit">Сделать первый шаг</button>
+      <p>{errors.checkbox?.message}</p>
+      <Button type="submit" className="p-4 border rounded-lg mt-2 ">
+        {data.button}
+      </Button>
     </form>
   );
 };

@@ -15,7 +15,7 @@
   "footer": {
     "links": [
       { "name": "Privacy Policy", "id": "pk" },
-      { "name": "Public offer", "id": "Oferta" }
+      { "name": "Public offer", "id": "oferta" }
     ]
   }
 }

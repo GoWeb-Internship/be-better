@@ -48,7 +48,7 @@ const Social = () => {
 
     <div>
       <Link
-        to='whatsapp://send?phone=+380962153975 text=Привет'
+        to="https://api.whatsapp.com/send?phone=380969019037"
         target="blank"
         rel="noreferrer noopener"
        

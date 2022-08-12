@@ -10,6 +10,7 @@ import {
   isValidPhoneNumber,
   validatePhoneNumberLength,
 } from 'libphonenumber-js/max';
+// import s from './Form.module.css';
 
 const schema = yup
   .object({
@@ -124,24 +125,25 @@ const Form = ({ clickFrom }) => {
   return (
     <form
       onSubmit={handleSubmit(onSubmit)}
-      name="contact-test"
+      name="contact"
       method="POST"
       data-netlify="true"
       data-netlify-honeypot="bot-field"
       className="w-80 m-auto"
     >
+      <input type="hidden" name="form-name" value="contact" />
       <input
         {...register('name')}
         className="w-80 mb-4 p-2"
         placeholder="Enter your name"
       />
-      <p>{errors.name?.message}</p>
+      <p className=" text-red">{errors.name?.message}</p>
       <input
         {...register('email')}
         className="w-80 mb-4 p-2"
         placeholder="Enter your email"
       />
-      <p>{errors.email?.message}</p>
+      <p className="text-red">{errors.email?.message}</p>
       <Controller
         name="phone"
         control={control}
@@ -157,7 +159,7 @@ const Form = ({ clickFrom }) => {
         )}
       />
 
-      <p>{errors.phone?.message}</p>
+      <p className=" text-red">{errors.phone?.message}</p>
       <Controller
         name="checkbox"
         control={control}
@@ -165,12 +167,12 @@ const Form = ({ clickFrom }) => {
         render={({ field }) => (
           <>
             <input type="checkbox" {...field} />
-            <span>Accept</span>
+            <span>Я согласен на обработку моих персональных данных</span>
           </>
         )}
       />
-      <p>{errors.checkbox?.message}</p>
-      <input type="submit" />
+      <p className=" text-red">{errors.checkbox?.message}</p>
+      <button type="submit">Сделать первый шаг</button>
     </form>
   );
 };

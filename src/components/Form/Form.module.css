@@ -1,0 +1,7 @@
+@tailwind components;
+
+@layer components {
+.error-message {
+    @apply absolute -bottom-16 -left-12 w-32;
+}
+}

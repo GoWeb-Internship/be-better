@@ -12,12 +12,6 @@ const IndexPage = () => {
       <main className="container text-center mt-4 ">
         <Form clickFrom="hero" />
         <Price />
-        <div>
-          <Link to="/pk">Политика конфеденциальности</Link>
-        </div>
-        <div>
-          <Link to="/Oferta">Публичная оферта</Link>
-        </div>
         <Form clickFrom="footer" />
         <Social />
       </main>

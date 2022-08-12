@@ -47,7 +47,7 @@ const Form = () => {
   );
 
   const GATSBY_TOKEN = process.env.GATSBY_TOKEN;
-  const CHAT_ID = process.env.GATSBY_CHAT_ID;
+  const GATSBY_CHAT_ID = process.env.GATSBY_CHAT_ID;
 
   const onSubmit = async data => {
     let message = `
@@ -65,7 +65,7 @@ const Form = () => {
     ------
     `;
 
-    const TG_URL = `https://api.telegram.org/bot${GATSBY_TOKEN}/sendMessage?chat_id=${CHAT_ID}`;
+    const TG_URL = `https://api.telegram.org/bot${GATSBY_TOKEN}/sendMessage?chat_id=${GATSBY_CHAT_ID}`;
 
     await axios
       .post(TG_URL, {

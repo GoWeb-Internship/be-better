@@ -1,11 +1,11 @@
 import * as React from 'react';
 import { useForm, Controller } from 'react-hook-form';
+import useFormPersist from 'react-hook-form-persist';
 import { yupResolver } from '@hookform/resolvers/yup';
 import * as yup from 'yup';
 import axios from 'axios';
 import PhoneInput from 'react-phone-input-2';
 import 'react-phone-input-2/lib/style.css';
-
 import {
   isValidPhoneNumber,
   validatePhoneNumberLength,
@@ -34,6 +34,9 @@ const Form = ({ clickFrom }) => {
     control,
     handleSubmit,
     formState: { errors },
+    reset,
+    watch,
+    setValue,
   } = useForm(
     {
       resolver: yupResolver(schema),
@@ -45,6 +48,12 @@ const Form = ({ clickFrom }) => {
       mode: 'onBlur',
     }
   );
+
+  useFormPersist(`form-${clickFrom}`, {
+    watch,
+    setValue,
+    storage: window.localStorage,
+  });
 
   const GATSBY_TOKEN = process.env.GATSBY_TOKEN;
   const GATSBY_CHAT_ID = process.env.GATSBY_CHAT_ID;
@@ -74,7 +83,8 @@ const Form = ({ clickFrom }) => {
         parse_mode: 'HTML',
       })
       .then(() => alert('Заявка отправлена!'))
-      .catch(error => alert(error));
+      .catch(error => alert(error))
+      .finally(reset());
   };
 
   axios('https://api.db-ip.com/v2/free/self')

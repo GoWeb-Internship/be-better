@@ -12,7 +12,7 @@ const IndexPage = () => {
       <main className="container text-center mt-4 ">
         <h1 className="">Congratulations</h1>
         <h1 className="text-3xl font-bold underline mb-4">Hello world!</h1>
-        <Form />
+        <Form clickFrom="hero" />
         <Price />
         <div>
           <Link to="/pk">Политика конфеденциальности</Link>
@@ -20,6 +20,7 @@ const IndexPage = () => {
         <div>
           <Link to="/Oferta">Публичная оферта</Link>
         </div>
+        <Form clickFrom="footer" />
         <Social />
       </main>
     </Layout>

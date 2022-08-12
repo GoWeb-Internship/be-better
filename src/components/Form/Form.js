@@ -27,7 +27,7 @@ const schema = yup
   })
   .required();
 
-const Form = () => {
+const Form = ({ clickFrom }) => {
   const [userLocation, setUserLocation] = React.useState('');
   const {
     register,
@@ -56,6 +56,7 @@ const Form = () => {
     Email: ${data.email}
     Phone: ${data.phone}
     Checkbox: yes
+    Form send from: ${clickFrom}
     
     <b>Additional information:</b>
     <i>TransactionID: 11111111</i>
@@ -119,7 +120,6 @@ const Form = () => {
       data-netlify-honeypot="bot-field"
       className="w-80 m-auto"
     >
-      <input type="hidden" name="form-name" value="contact-test" />
       <input
         {...register('name')}
         className="w-80 mb-4 p-2"

@@ -1,5 +1,6 @@
 import * as React from 'react';
 import { useForm, Controller } from 'react-hook-form';
+import useFormPersist from 'react-hook-form-persist';
 import { yupResolver } from '@hookform/resolvers/yup';
 import * as yup from 'yup';
 import axios from 'axios';
@@ -7,11 +8,11 @@ import { useTranslation } from 'gatsby-plugin-react-i18next';
 import PhoneInput from 'react-phone-input-2';
 import 'react-phone-input-2/lib/style.css';
 import Button from '../reusableComponents/Button';
-
 import {
   isValidPhoneNumber,
   validatePhoneNumberLength,
 } from 'libphonenumber-js/max';
+// import s from './Form.module.css';
 
 const schema = yup
   .object({
@@ -29,7 +30,9 @@ const schema = yup
   })
   .required();
 
-const Form = () => {
+const isBrowser = typeof window !== 'undefined';
+
+const Form = ({ clickFrom }) => {
   const [userLocation, setUserLocation] = React.useState('');
   const { t } = useTranslation();
   const data = t('form', { returnObjects: true });
@@ -38,6 +41,9 @@ const Form = () => {
     control,
     handleSubmit,
     formState: { errors },
+    reset,
+    watch,
+    setValue,
   } = useForm(
     {
       resolver: yupResolver(schema),
@@ -50,6 +56,12 @@ const Form = () => {
     }
   );
 
+  useFormPersist(`form-${clickFrom}`, {
+    watch,
+    setValue,
+    storage: isBrowser ? window.localStorage : null,
+  });
+
   const GATSBY_TOKEN = process.env.GATSBY_TOKEN;
   const GATSBY_CHAT_ID = process.env.GATSBY_CHAT_ID;
 
@@ -60,6 +72,7 @@ const Form = () => {
     Email: ${data.email}
     Phone: ${data.phone}
     Checkbox: yes
+    Form send from: ${clickFrom}
     
     <b>Additional information:</b>
     <i>TransactionID: 11111111</i>
@@ -77,7 +90,11 @@ const Form = () => {
         parse_mode: 'HTML',
       })
       .then(() => alert('Заявка отправлена!'))
-      .catch(error => alert(error));
+      .catch(error => alert(error))
+      .finally(() => {
+        reset();
+        localStorage.removeItem(`form-${clickFrom}`);
+      });
   };
 
   axios('https://api.db-ip.com/v2/free/self')
@@ -117,25 +134,25 @@ const Form = () => {
   return (
     <form
       onSubmit={handleSubmit(onSubmit)}
-      name="contact-test"
+      name="contact"
       method="POST"
       data-netlify="true"
       data-netlify-honeypot="bot-field"
       className="w-80 m-auto"
     >
-      <input type="hidden" name="form-name" value="contact-test" />
+      <input type="hidden" name="form-name" value="contact" />
       <input
         {...register('name')}
         className="w-80 mb-4 p-2"
         placeholder={data.nameInput}
       />
-      <p>{errors.name?.message}</p>
+      <p className=" text-red">{errors.name?.message}</p>
       <input
         {...register('email')}
         className="w-80 mb-4 p-2"
         placeholder="E-mail"
       />
-      <p>{errors.email?.message}</p>
+      <p className="text-red">{errors.email?.message}</p>
       <Controller
         name="phone"
         control={control}
@@ -151,7 +168,7 @@ const Form = () => {
         )}
       />
 
-      <p>{errors.phone?.message}</p>
+      <p className=" text-red">{errors.phone?.message}</p>
       <Controller
         name="checkbox"
         control={control}

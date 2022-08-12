@@ -10,8 +10,10 @@ const IndexPage = () => {
   return (
     <Layout>
       <main className="container text-center mt-4 ">
-        <Form />
+        <Form clickFrom="hero" />
         <Price />
+        <Form clickFrom="footer" />
+        <Social />
       </main>
     </Layout>
   );

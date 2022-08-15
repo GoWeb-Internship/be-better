@@ -31,7 +31,7 @@ collections:
       preview: true
     fields:
       - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: 'Language', name: 'language', widget: 'string' }
+      - { label: 'Language', name: 'language', widget: 'hidden', default: 'uk' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
   - name: 'aboutYou'
     label: 'About you'
@@ -43,6 +43,7 @@ collections:
       preview: true
     fields:
       - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Language', name: 'language', widget: 'hidden', default: 'uk' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
   - name: 'route'
     label: 'Route'
@@ -54,6 +55,7 @@ collections:
       preview: true
     fields:
       - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Language', name: 'language', widget: 'hidden', default: 'uk' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
   - name: 'guarantee'
     label: 'Guarantee'
@@ -65,6 +67,7 @@ collections:
       preview: true
     fields:
       - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Language', name: 'language', widget: 'hidden', default: 'uk' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
   - name: 'wyCouchBetter'
     label: 'Wy Couch Better'
@@ -76,6 +79,7 @@ collections:
       preview: true
     fields:
       - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Language', name: 'language', widget: 'hidden', default: 'uk' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
   - name: 'experience'
     label: 'Experience'
@@ -87,6 +91,7 @@ collections:
       preview: true
     fields:
       - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Language', name: 'language', widget: 'hidden', default: 'uk' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
   - name: 'beBetter'
     label: 'Be Better'
@@ -98,6 +103,7 @@ collections:
       preview: true
     fields:
       - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Language', name: 'language', widget: 'hidden', default: 'uk' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
   - name: 'changes'
     label: 'Changes'
@@ -109,4 +115,5 @@ collections:
       preview: true
     fields:
       - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Language', name: 'language', widget: 'hidden', default: 'uk' }
       - { label: 'Body', name: 'body', widget: 'markdown' }

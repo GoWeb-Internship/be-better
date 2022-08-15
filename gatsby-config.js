@@ -50,66 +50,11 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `price`,
-        path: `${__dirname}/content/price`,
+        name: `Data`,
+        path: `${__dirname}/content`,
       },
     },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `wyCouchBetter`,
-        path: `${__dirname}/content/wyCouchBetter`,
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `beBetter`,
-        path: `${__dirname}/content/beBetter`,
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `aboutMe`,
-        path: `${__dirname}/content/aboutMe`,
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `experience`,
-        path: `${__dirname}/content/experience`,
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `changes`,
-        path: `${__dirname}/content/changes`,
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `aboutYou`,
-        path: `${__dirname}/content/aboutYou`,
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `guarantee`,
-        path: `${__dirname}/content/guarantee`,
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `route`,
-        path: `${__dirname}/content/route`,
-      },
-    },
+
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -125,19 +70,13 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        path: `${__dirname}/locales`,
-        name: `locale`,
-      },
-    },
-    {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `Be Better`,
+        short_name: `Be Better`,
+        lang: 'ua',
         start_url: `/`,
-        background_color: `#663399`,
+        background_color: `#ffffff`,
         display: `minimal-ui`,
         icon: `src/images/icon.png`,
       },
@@ -160,7 +99,7 @@ module.exports = {
           },
 
           keySeparator: false,
-          nsSeparator: true,
+          nsSeparator: false,
         },
       },
     },

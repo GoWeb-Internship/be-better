@@ -33,7 +33,7 @@ fbq('track', 'PageView');
 `,
         }}
       />
-      ;
+
       <script
         type="text/javascript"
         dangerouslySetInnerHTML={{

@@ -100,7 +100,9 @@ const Form = ({ clickFrom }) => {
   axios('https://api.db-ip.com/v2/free/self')
     .then(data => {
       const location = data.data.countryCode;
-      setUserLocation(location.toLowerCase());
+      if (location) {
+        setUserLocation(location.toLowerCase());
+      }
     })
     .catch(err => console.log(err));
 
@@ -181,7 +183,7 @@ const Form = ({ clickFrom }) => {
         )}
       />
       <p>{errors.checkbox?.message}</p>
-      <Button type="submit" className="p-4 border rounded-lg mt-2 ">
+      <Button type="submit" className="p-4 border rounded-lg mt-2">
         {data.button}
       </Button>
     </form>

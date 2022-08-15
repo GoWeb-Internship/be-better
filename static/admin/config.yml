@@ -31,9 +31,8 @@ collections:
       preview: true
     fields:
       - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: 'Ru', name: 'ru', widget: 'string' }
-      - { label: 'En', name: 'en', widget: 'string' }
-      - { label: 'UA', name: 'ua', widget: 'string' }
+      - { label: 'Language', name: 'language', widget: 'string' }
+      - { label: 'Body', name: 'body', widget: 'markdown' }
   - name: 'aboutYou'
     label: 'About you'
     folder: 'content/aboutYou'

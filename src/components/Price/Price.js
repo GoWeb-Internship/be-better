@@ -4,6 +4,7 @@ import Button from '../reusableComponents/Button';
 import { container, list, item } from './Price.module.css';
 import ModalWindow from '../ModalWindow';
 import Form from '../Form';
+import { useTranslation } from 'gatsby-plugin-react-i18next';
 
 const Price = () => {
   const [modal, setModal] = React.useState(false);
@@ -26,6 +27,8 @@ const Price = () => {
     }
   `);
   const data = allMarkdownRemark.nodes;
+  const { t } = useTranslation();
+  const buttonTranslate = t('littleComponents', { returnObjects: true });
 
   const showModal = price => {
     setCurrentPrice(price);
@@ -55,7 +58,7 @@ const Price = () => {
                   className="border border-gray-300 px-16 py-2 rounded-3xl"
                   doAction={() => showModal(price)}
                 >
-                  Записаться
+                  {buttonTranslate.button}
                 </Button>
               </div>
             );

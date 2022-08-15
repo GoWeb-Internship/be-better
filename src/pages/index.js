@@ -6,11 +6,13 @@ import Form from '../components/Form';
 import Price from '../components/Price';
 import Social from '../components/Social';
 import Guarantee from '../components/Guarantee';
+import ClientHistory from '../components/ClientHistory';
 
 const IndexPage = () => {
   return (
     <Layout>
       <main className="container text-center mt-4 ">
+        <ClientHistory />
         <Form clickFrom="hero" />
         <Price />
         <Guarantee />

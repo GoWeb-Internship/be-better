@@ -1,5 +1,6 @@
 import React from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
+import { useTranslation } from 'gatsby-plugin-react-i18next';
 
 const Guarantee = () => {
   const { allMarkdownRemark } = useStaticQuery(graphql`
@@ -11,12 +12,14 @@ const Guarantee = () => {
           html
           frontmatter {
             title
+            language
           }
           id
         }
       }
     }
   `);
+
   const [data] = allMarkdownRemark.nodes;
 
   return (

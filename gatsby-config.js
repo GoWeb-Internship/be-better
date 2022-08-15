@@ -13,6 +13,7 @@ module.exports = {
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-image`,
+    `gatsby-plugin-facebook-pixel`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -47,6 +48,12 @@ module.exports = {
     //     ignore: ['react-phone-input-2/lib/bootstrap.css'],
     //   },
     // },
+    {
+      resolve: `gatsby-plugin-facebook-pixel`,
+      options: {
+        pixelId: "pixel id here",
+      },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {

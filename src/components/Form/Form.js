@@ -2,47 +2,14 @@ import * as React from 'react';
 import { useForm, Controller } from 'react-hook-form';
 import useFormPersist from 'react-hook-form-persist';
 import { yupResolver } from '@hookform/resolvers/yup';
-import * as yup from 'yup';
-import axios from 'axios';
 import { useTranslation } from 'gatsby-plugin-react-i18next';
 import PhoneInput from 'react-phone-input-2';
 import 'react-phone-input-2/lib/style.css';
 import Button from '../reusableComponents/Button';
-import {
-  isValidPhoneNumber,
-  validatePhoneNumberLength,
-} from 'libphonenumber-js/max';
 // import s from './Form.module.css';
-
-const schema = yup
-  .object({
-    name: yup
-      .string()
-      .matches(
-        /^[а-яА-ЯёЁa-zA-Z]{1}[а-яА-ЯёЁa-zA-Z ]+$/,
-        'Please enter valid name'
-      )
-      .min(3, 'Name must contain 3 or more letters')
-      .max(100, 'Name can not contain more then 100 letters')
-      .required('Name is required'),
-    email: yup
-      .string()
-      .email()
-      .matches(
-        /^[a-zA-Z0-9+_.]+[a-zA-Z0-9+_.-]+@[a-zA-Z0-9_.-]+$/,
-        'Please enter valid email'
-      )
-      .min(10, 'Email must contain 10 or more symbols')
-      .max(63, 'Email can not contain more then 63 symbols')
-      .required('Email is required'),
-    phone: yup
-      .string()
-      .min(9, 'Phone number must contain at least 8 digits')
-      .max(13, 'Phone number cannot contain more than 13 digits')
-      .required('Phone number is required'),
-    checkbox: yup.boolean().required('You must accept the terms'),
-  })
-  .required();
+import locationApi from '../../services/locationApi';
+import sendMessageToTg from '../../services/telegramApi';
+import { schema, onValidatePhoneNumber } from '../../helpers/validation';
 
 const isBrowser = typeof window !== 'undefined';
 
@@ -76,8 +43,9 @@ const Form = ({ clickFrom }) => {
     storage: isBrowser ? window.localStorage : null,
   });
 
-  const GATSBY_TOKEN = process.env.GATSBY_TOKEN;
-  const GATSBY_CHAT_ID = process.env.GATSBY_CHAT_ID;
+  locationApi()
+    .then(location => setUserLocation(location))
+    .catch(err => console.log(err));
 
   const onSubmit = async data => {
     let message = `
@@ -96,55 +64,13 @@ const Form = ({ clickFrom }) => {
     ------
     `;
 
-    const TG_URL = `https://api.telegram.org/bot${GATSBY_TOKEN}/sendMessage?chat_id=${GATSBY_CHAT_ID}`;
-
-    await axios
-      .post(TG_URL, {
-        text: message,
-        parse_mode: 'HTML',
-      })
+    sendMessageToTg(message)
       .then(() => alert('Заявка отправлена!'))
       .catch(error => alert(error))
       .finally(() => {
         reset();
         localStorage.removeItem(`form-${clickFrom}`);
       });
-  };
-
-  axios('https://api.db-ip.com/v2/free/self')
-    .then(data => {
-      const location = data.data.countryCode;
-      if (location) {
-        setUserLocation(location.toLowerCase());
-      }
-    })
-    .catch(err => console.log(err));
-
-  const onValidatePhoneNumber = (value, country) => {
-    if (value && value.length > 9) {
-      if (isValidPhoneNumber(value, country.iso2.toUpperCase())) {
-        return true;
-      } else if (
-        validatePhoneNumberLength(value, country.iso2.toUpperCase()) ===
-        'TOO_SHORT'
-      ) {
-        return 'Too short number';
-        // return (
-        //   <p className="absolute -bottom-16 -left-12 w-32">Too short number</p>
-        // );
-      } else if (
-        validatePhoneNumberLength(value, country.iso2.toUpperCase()) ===
-        'TOO_LONG'
-      ) {
-        return 'Too long number';
-        // return (
-        //   <p className="absolute -bottom-16 -left-12 w-32">Too long number</p>
-        // );
-      } else {
-        return 'Enter correct number';
-        // return <p className="absolute -bottom-16 -left-12 w-32"></p>;
-      }
-    }
   };
 
   return (

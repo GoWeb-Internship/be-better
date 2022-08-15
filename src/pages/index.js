@@ -1,10 +1,11 @@
 import * as React from 'react';
+import 'react-phone-input-2/lib/style.css';
 import { graphql } from 'gatsby';
 import Layout from '../components/Layout';
 import Form from '../components/Form';
 import Price from '../components/Price';
-import 'react-phone-input-2/lib/style.css';
 import Social from '../components/Social';
+import Guarantee from '../components/Guarantee';
 
 const IndexPage = () => {
   return (
@@ -16,6 +17,7 @@ const IndexPage = () => {
           clickFrom="hero"
         />
         <Price />
+        <Guarantee />
         <Form clickFrom="footer" />
         <Social />
       </main>
@@ -35,7 +37,6 @@ fbq('track', 'PageView');
 `,
         }}
       />
-      ;
       <script
         type="text/javascript"
         dangerouslySetInnerHTML={{

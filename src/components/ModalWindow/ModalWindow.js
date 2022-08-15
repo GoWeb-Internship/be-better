@@ -24,7 +24,7 @@ const ModalWindow = ({ children, handleClose }) => {
   }, [onClose, handleClose]);
 
   return (
-    <div className="fixed flex items-center justify-center z-10 inset-0 bg-gray-500 bg-opacity-75 transition-opacity overflow-y-auto">
+    <div className="fixed flex items-center justify-center z-10 inset-0 bg-black bg-opacity-50 transition-opacity overflow-y-auto">
       <div className="bg-white p-14 h-[560px] w-[440px] rounded-2xl">
         {children}
         <Button type="button" doAction={handleClose}>

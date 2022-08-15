@@ -11,7 +11,11 @@ const IndexPage = () => {
   return (
     <Layout>
       <main className="container text-center mt-4 ">
-        <Form clickFrom="hero" />
+        <Form
+          title="Научу жить и работать в кайф без эмоциональных выгораний"
+          seeYou="Записывайся сегодня ко мне на первую коуч-сессию и начни уже завтра жить в кайф!"
+          clickFrom="hero"
+        />
         <Price />
         <Guarantee />
         <Form clickFrom="footer" />
@@ -33,7 +37,6 @@ fbq('track', 'PageView');
 `,
         }}
       />
-
       <script
         type="text/javascript"
         dangerouslySetInnerHTML={{

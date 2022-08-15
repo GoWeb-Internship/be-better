@@ -114,7 +114,9 @@ const Form = ({ clickFrom }) => {
   axios('https://api.db-ip.com/v2/free/self')
     .then(data => {
       const location = data.data.countryCode;
-      setUserLocation(location.toLowerCase());
+      if (location) {
+        setUserLocation(location.toLowerCase());
+      }
     })
     .catch(err => console.log(err));
 

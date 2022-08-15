@@ -2,8 +2,13 @@ import * as React from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
 import Button from '../reusableComponents/Button';
 import { container, list, item } from './Price.module.css';
+import ModalWindow from '../ModalWindow';
+import Form from '../Form';
 
 const Price = () => {
+  const [modal, setModal] = React.useState(false);
+  const [currentPrice, setCurrentPrice] = React.useState('');
+
   const { allMarkdownRemark } = useStaticQuery(graphql`
     query {
       allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/price/" } }) {
@@ -22,6 +27,15 @@ const Price = () => {
   `);
   const data = allMarkdownRemark.nodes;
 
+  const showModal = price => {
+    setCurrentPrice(price);
+    setModal(true);
+  };
+
+  const hideModal = () => {
+    setModal(false);
+  };
+
   return (
     <div className={container} id="nav-price">
       <h1>Price</h1>
@@ -36,13 +50,22 @@ const Price = () => {
                   <p>{month}</p>
                   <p>{hour}</p>
                 </li>
-                <Button className="border border-gray-300 px-16 py-2 rounded-3xl">
+                <Button
+                  type="button"
+                  className="border border-gray-300 px-16 py-2 rounded-3xl"
+                  doAction={() => showModal(price)}
+                >
                   Записаться
                 </Button>
               </div>
             );
           })}
       </ul>
+      {modal && (
+        <ModalWindow handleClose={hideModal}>
+          <Form clickFrom={currentPrice} />
+        </ModalWindow>
+      )}
     </div>
   );
 };

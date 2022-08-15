@@ -6,11 +6,13 @@ import Form from '../components/Form';
 import Price from '../components/Price';
 import Social from '../components/Social';
 import Guarantee from '../components/Guarantee';
+import ClientHistory from '../components/ClientHistory';
 
 const IndexPage = () => {
   return (
     <Layout>
       <main className="container text-center mt-4 ">
+        <ClientHistory />
         <Form
           title="Научу жить и работать в кайф без эмоциональных выгораний"
           seeYou="Записывайся сегодня ко мне на первую коуч-сессию и начни уже завтра жить в кайф!"

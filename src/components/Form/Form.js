@@ -13,7 +13,7 @@ import { schema, onValidatePhoneNumber } from '../../helpers/validation';
 
 const isBrowser = typeof window !== 'undefined';
 
-const Form = ({ clickFrom }) => {
+const Form = ({ title, seeYou = '', clickFrom }) => {
   const [userLocation, setUserLocation] = React.useState('');
   const { t } = useTranslation();
   const data = t('form', { returnObjects: true });
@@ -74,59 +74,75 @@ const Form = ({ clickFrom }) => {
   };
 
   return (
-    <form
-      onSubmit={handleSubmit(onSubmit)}
-      name="contact"
-      method="POST"
-      data-netlify="true"
-      data-netlify-honeypot="bot-field"
-      className="w-80 m-auto"
-    >
-      <input type="hidden" name="form-name" value="contact" />
-      <input
-        {...register('name')}
-        className="w-80 mb-4 p-2"
-        placeholder={data.nameInput}
-      />
-      <p className=" text-red">{errors.name?.message}</p>
-      <input
-        {...register('email')}
-        className="w-80 mb-4 p-2"
-        placeholder="E-mail"
-      />
-      <p className="text-red">{errors.email?.message}</p>
-      <Controller
-        name="phone"
-        control={control}
-        rules={{ required: true }}
-        render={({ field }) => (
-          <PhoneInput
-            country={userLocation || 'ua'}
-            placeholder="Enter phone number"
-            preferredCountries={['ua', 'gb']}
-            isValid={onValidatePhoneNumber}
-            {...field}
-          />
-        )}
-      />
-
-      <p className=" text-red">{errors.phone?.message}</p>
-      <Controller
-        name="checkbox"
-        control={control}
-        rules={{ required: true }}
-        render={({ field }) => (
-          <>
-            <input type="checkbox" {...field} />
-            <span>{data.accept}</span>
-          </>
-        )}
-      />
-      <p className=" text-red">{errors.checkbox?.message}</p>
-      <Button type="submit" className="p-4 border rounded-lg mt-2 ">
-        {data.button}
-      </Button>
-    </form>
+    <section>
+      <h2>{title}</h2>
+      <form
+        onSubmit={handleSubmit(onSubmit)}
+        name="contact"
+        method="POST"
+        data-netlify="true"
+        data-netlify-honeypot="bot-field"
+        className="w-[324px] m-auto"
+      >
+        <input type="hidden" name="form-name" value="contact" />
+        <input
+          {...register('name')}
+          className="w-full mb-3 pl-8 py-3 rounded-full shadow-inner outline-none"
+          placeholder={data.nameInput}
+        />
+        <p className=" text-red">{errors.name?.message}</p>
+        <input
+          {...register('email')}
+          className="w-full mb-3 pl-8 py-3 rounded-full shadow-inner outline-none"
+          placeholder="E-mail"
+        />
+        <p className="text-red">{errors.email?.message}</p>
+        <Controller
+          name="phone"
+          control={control}
+          rules={{ required: true }}
+          render={({ field }) => (
+            <PhoneInput
+              country={userLocation || 'ua'}
+              placeholder="Enter phone number"
+              preferredCountries={['ua', 'gb']}
+              enableSearch="true"
+              disableSearchIcon="true"
+              isValid={onValidatePhoneNumber}
+              containerClass={'outline-none'}
+              buttonClass={
+                '!pl-6 !rounded-l-full !border-hidden !bg-transparent'
+              }
+              inputClass={
+                '!pl-[72px] !h-11 !border-hidden !w-full !rounded-full shadow-inner '
+              }
+              dropdownClass={'!pl-8 text-left !rounded-lg'}
+              {...field}
+            />
+          )}
+        />
+        <p className=" text-red">{errors.phone?.message}</p>
+        <Controller
+          name="checkbox"
+          control={control}
+          rules={{ required: true }}
+          render={({ field }) => (
+            <div className="mt-1.5	mb-3	">
+              <input type="checkbox" {...field} />
+              <span className="ml-2	text-xs">{data.accept}</span>
+            </div>
+          )}
+        />
+        <p className=" text-red">{errors.checkbox?.message}</p>
+        <Button
+          type="submit"
+          className="h-12	w-full border rounded-full bg-purple text-white text-lg font-semibold"
+        >
+          {data.button}
+        </Button>
+      </form>
+      <p>{seeYou}</p>
+    </section>
   );
 };
 

@@ -43,13 +43,11 @@ const Price = () => {
         {allMarkdownRemark &&
           data.map(({ id, frontmatter: { hour, month, price, economy } }) => {
             return (
-              <div className={item} key={id}>
-                <li>
-                  <p>{price}</p>
-                  {economy && <p>{economy}</p>}
-                  <p>{month}</p>
-                  <p>{hour}</p>
-                </li>
+              <li className={item} key={id}>
+                <p>{price}</p>
+                {economy && <p>{economy}</p>}
+                <p>{month}</p>
+                <p>{hour}</p>
                 <Button
                   type="button"
                   className="border border-gray-300 px-16 py-2 rounded-3xl"
@@ -57,13 +55,17 @@ const Price = () => {
                 >
                   Записаться
                 </Button>
-              </div>
+              </li>
             );
           })}
       </ul>
       {modal && (
         <ModalWindow handleClose={hideModal}>
-          <Form clickFrom={currentPrice} />
+          <Form
+            title="Привет!Я скоро свяжусь с тобой!"
+            seeYou="Увидимся!"
+            clickFrom={currentPrice}
+          />
         </ModalWindow>
       )}
     </div>

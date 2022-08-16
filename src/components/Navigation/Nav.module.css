@@ -1,0 +1,11 @@
+.headerContainer {
+  @apply flex justify-between  w-full pb-4 pt-7;
+}
+
+.navContainer {
+  @apply flex justify-between;
+}
+
+.links {
+  @apply text-main text-sm leading-1.36 py-2 px-4;
+}

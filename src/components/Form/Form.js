@@ -6,11 +6,11 @@ import { useTranslation } from 'gatsby-plugin-react-i18next';
 import PhoneInput from 'react-phone-input-2';
 import 'react-phone-input-2/lib/style.css';
 import Button from '../reusableComponents/Button';
-// import s from './Form.module.css';
+import { checkbox, check } from './Form.module.css';
 import locationApi from '../../services/locationApi';
 import sendMessageToTg from '../../services/telegramApi';
 import { schema, onValidatePhoneNumber } from '../../helpers/validation';
-import { FaSearch } from 'react-icons/fa';
+// import { FaSearch } from 'react-icons/fa';
 
 const isBrowser = typeof window !== 'undefined';
 
@@ -137,10 +137,11 @@ const Form = ({ title, seeYou = '', clickFrom }) => {
           control={control}
           rules={{ required: true }}
           render={({ field }) => (
-            <div className="mt-1.5	mb-3	">
-              <input type="checkbox" {...field} />
-              <span className="ml-2	text-xs">{data.accept}</span>
-            </div>
+            <label className="flex items-center mt-1 mb-3 pl-2 py-1">
+              <input className={checkbox} type="checkbox" {...field} />
+              <span className={check}></span>
+              <span className="ml-2	text-[8px] text-black">{data.accept}</span>
+            </label>
           )}
         />
         <p className=" text-red">{errors.checkbox?.message}</p>

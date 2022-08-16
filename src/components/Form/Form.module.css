@@ -1,7 +1,22 @@
-@tailwind components;
+/* @tailwind components;
 
 @layer components {
 .error-message {
     @apply absolute -bottom-16 -left-12 w-32;
 }
+} */
+
+.checkbox {
+    position: absolute;
+    appearance: none;
+}
+
+.checkbox:checked + .check {
+    background-image: url('../../images/check.svg');
+}
+
+.check {
+    width: 16px;
+    height: 16px;
+    background-image: url('../../images/notcheck.svg');
 }

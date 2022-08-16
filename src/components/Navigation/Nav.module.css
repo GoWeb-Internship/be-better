@@ -7,5 +7,5 @@
 }
 
 .links {
-  @apply text-main text-sm leading-1.36 py-2 px-4;
+  @apply text-main text-sm leading-1.36 py-2 px-4 active:border-b-2 border-main;
 }

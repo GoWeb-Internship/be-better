@@ -21,10 +21,10 @@
   @apply mb-8;
 }
 
-.text p:nth-child(5) {
-  @apply mb-0;
-}
-
 .text p:nth-child(2) {
   @apply mb-6.5;
+}
+
+.text p:nth-child(5) {
+  @apply mb-0;
 }

@@ -6,7 +6,7 @@ import { useTranslation } from 'gatsby-plugin-react-i18next';
 import PhoneInput from 'react-phone-input-2';
 import 'react-phone-input-2/lib/style.css';
 import Button from '../reusableComponents/Button';
-import { checkbox, check } from './Form.module.css';
+import { form, input, label, checkbox, check, error } from './Form.module.css';
 import locationApi from '../../services/locationApi';
 import sendMessageToTg from '../../services/telegramApi';
 import { schema, onValidatePhoneNumber } from '../../helpers/validation';
@@ -83,27 +83,30 @@ const Form = ({ title, seeYou = '', clickFrom }) => {
         method="POST"
         data-netlify="true"
         data-netlify-honeypot="bot-field"
-        className="w-[324px] m-auto"
+        className={form}
       >
         <input type="hidden" name="form-name" value="contact" />
-        <input
-          {...register('name')}
-          className="w-full mb-3 pl-8 py-3 rounded-full shadow-inner outline-none"
-          placeholder={data.nameInput}
-        />
-        <p className=" text-red">{errors.name?.message}</p>
-        <input
-          {...register('email')}
-          className="w-full mb-3 pl-8 py-3 rounded-full shadow-inner outline-none"
-          placeholder="E-mail"
-        />
-        <p className="text-red">{errors.email?.message}</p>
+        <div className="relative">
+          <input id="name" {...register('name')} className={input} />
+          <label className={label} htmlFor="name">
+            {data.nameInput}
+          </label>
+          <p className={error}>{errors.name?.message}</p>
+        </div>
+        <div className="relative ">
+          <input id="email" {...register('email')} className={input} />
+          <label className={label} htmlFor="email">
+            E-mail
+          </label>
+          <p className={error}>{errors.email?.message}</p>
+        </div>
+
         <Controller
           name="phone"
           control={control}
           rules={{ required: true }}
           render={({ field }) => (
-            <>
+            <div className="relative">
               <PhoneInput
                 country={userLocation || 'ua'}
                 placeholder="Enter phone number"
@@ -127,11 +130,10 @@ const Form = ({ title, seeYou = '', clickFrom }) => {
                 }
                 {...field}
               />
-              {/* <FaSearch className="" /> */}
-            </>
+            </div>
           )}
         />
-        <p className=" text-red">{errors.phone?.message}</p>
+        <p className={error}>{errors.phone?.message}</p>
         <Controller
           name="checkbox"
           control={control}
@@ -144,7 +146,7 @@ const Form = ({ title, seeYou = '', clickFrom }) => {
             </label>
           )}
         />
-        <p className=" text-red">{errors.checkbox?.message}</p>
+        <p className="text-error text-[8px]">{errors.checkbox?.message}</p>
         <Button
           type="submit"
           className="h-12	w-full border rounded-full bg-purple text-white text-lg font-semibold"

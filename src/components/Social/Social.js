@@ -1,8 +1,8 @@
 import React from 'react';
-import instagram from '../../images/inst.png';
-import facebook from '../../images/facebook.png';
-import telegram from '../../images/telegram.png';
-import whatApp from '../../images/whatApp.png';
+import instagram from '../../images/instag.svg';
+import facebook from '../../images/facebook.svg';
+import telegram from '../../images/teleg.svg';
+import whatApp from '../../images/watApp.svg';
 
 const Social = () => {
   return (

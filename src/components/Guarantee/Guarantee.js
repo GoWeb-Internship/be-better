@@ -1,6 +1,6 @@
 import React from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
-import { useTranslation } from 'gatsby-plugin-react-i18next';
+// import { useTranslation } from 'gatsby-plugin-react-i18next';
 
 const Guarantee = () => {
   const { allMarkdownRemark } = useStaticQuery(graphql`

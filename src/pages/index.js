@@ -8,6 +8,7 @@ import Social from '../components/Social';
 import Guarantee from '../components/Guarantee';
 import ClientHistory from '../components/ClientHistory';
 
+
 const IndexPage = () => {
   return (
     <Layout>
@@ -20,6 +21,7 @@ const IndexPage = () => {
         />
         <Price />
         <Guarantee />
+       
         <Form clickFrom="footer" />
         <Social />
       </main>
@@ -64,6 +66,16 @@ export const query = graphql`
           ns
           data
           language
+        }
+      }
+    }
+    allMarkdownRemark(
+      filter: { frontmatter: { language: { eq: $language } } }
+    ) {
+      nodes {
+        html
+        frontmatter {
+          title
         }
       }
     }

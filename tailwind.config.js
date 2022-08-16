@@ -5,8 +5,21 @@ module.exports = {
   content: ['./src/pages/**/*.{js,jsx}', './src/components/**/*.{js,jsx}'],
   theme: {
     extend: {
+      backgroundImage: {
+        signature: "url('./src/images/signature.jpg')",
+      },
       lineHeight: {
         1.36: '1.36',
+      },
+      margin: {
+        13: '52px',
+        6.5: '26px',
+      },
+      fontFamily: {
+        caveat: 'Caveat,sans-serif',
+      },
+      width: {
+        524: '524px',
       },
     },
     colors: {
@@ -29,6 +42,7 @@ module.exports = {
     },
   },
   plugins: [
+    require('@tailwindcss/typography'),
     plugin(({ addUtilities, addComponents, theme }) => {
       addComponents({
         '.btn-primary': {
@@ -40,6 +54,20 @@ module.exports = {
           lineHeight: 1.36,
           marginRight: 'auto',
           marginLeft: 'auto',
+        },
+        '.title-primary': {
+          color: theme('colors.main'),
+          fontSize: 34,
+          fontWeight: 600,
+          lineHeight: 1.36,
+          letterSpacing: 0.25,
+        },
+        '.text-caveat': {
+          color: theme('colors.main'),
+          fontFamily: 'Caveat,sans-serif',
+          fontSize: 24,
+          lineHeight: 1.36,
+          letterSpacing: 0.25,
         },
       });
     }),

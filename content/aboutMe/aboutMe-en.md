@@ -1,6 +1,6 @@
 ---
 title: Let's get acquainted
-language: En
+language: en
 ---
 
 <p>Hello, I'm Julia and the motto of my life is to live in a high! I always do what

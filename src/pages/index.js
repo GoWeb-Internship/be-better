@@ -69,5 +69,15 @@ export const query = graphql`
         }
       }
     }
+    allMarkdownRemark(
+      filter: { frontmatter: { language: { eq: $language } } }
+    ) {
+      nodes {
+        html
+        frontmatter {
+          title
+        }
+      }
+    }
   }
 `;

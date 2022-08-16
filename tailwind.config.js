@@ -1,22 +1,47 @@
+const plugin = require('tailwindcss/plugin');
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ['./src/pages/**/*.{js,jsx}', './src/components/**/*.{js,jsx}'],
   theme: {
-    extend: {},
+    extend: {
+      lineHeight: {
+        1.36: '1.36',
+      },
+    },
     colors: {
       transparent: 'transparent',
       current: 'currentColor',
-      white: '#ffffff',
-      purple: '#3f3cbb',
-      midnight: '#121063',
-      metal: '#565584',
-      tahiti: '#3ab7bf',
-      silver: '#ecebff',
-      bubbleGum: '#ff77e9',
-      bermuda: '#78dcca',
-      black: '#000000',
-      red: '#ef4444',
+      main: '#00A5CC',
+      black: '#05202C',
+      white: '#FAFCFC',
+      likeGrey: '#9AC9D4',
+      background: '#F5F9FA',
+      backgroundSecond: '#FFF8F4',
+      bright: '#ADF0FE',
+      mainLight: '#CFEDF3',
+      orangeContrast: '#FFCEB2',
+      error: '#E74A3B',
+      mainSecond: 'EF7229',
+      mainSecondLight: 'FF9B62',
+      orangeDark: '4D2107',
+      orangeDirty: 'F3AE86',
     },
   },
-  plugins: [],
+  plugins: [
+    plugin(({ addUtilities, addComponents, theme }) => {
+      addComponents({
+        '.btn-primary': {
+          color: theme('colors.white'),
+          backgroundColor: theme('colors.main'),
+          display: 'block',
+          fontSize: 18,
+          fontWeight: 600,
+          lineHeight: 1.36,
+          marginRight: 'auto',
+          marginLeft: 'auto',
+        },
+      });
+    }),
+  ],
 };

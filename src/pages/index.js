@@ -7,12 +7,14 @@ import Price from '../components/Price';
 import Social from '../components/Social';
 import Guarantee from '../components/Guarantee';
 import ClientHistory from '../components/ClientHistory';
-
+import Video from '../components/Video';
+import Container from '../components/Container'
 
 const IndexPage = () => {
   return (
     <Layout>
-      <main className="container text-center mt-4 ">
+      {/* <main> */}
+        <Container>
         <ClientHistory />
         <Form
           title="Научу жить и работать в кайф без эмоциональных выгораний"
@@ -21,10 +23,11 @@ const IndexPage = () => {
         />
         <Price />
         <Guarantee />
-       
+       <Video/>
         <Form clickFrom="footer" />
         <Social />
-      </main>
+        </Container>
+      {/* </main> */}
       <script
         dangerouslySetInnerHTML={{
           __html: `

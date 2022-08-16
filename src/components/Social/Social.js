@@ -4,6 +4,7 @@ import instagram from '../../images/instag.svg'
 import facebook from '../../images/facebook.svg'
 import telegram from '../../images/teleg.svg'
 import whatApp from '../../images/watApp.svg'
+import linkudun from '../../images/linkudun.svg'
 
 
 const Social = () => {
@@ -54,6 +55,17 @@ const Social = () => {
        
     >
 <img src={whatApp}  alt="whatApp"/>
+    </Link>
+    </div>
+
+    <div>
+      <Link
+        to="https://www.linkedin.com/in/yshayenko/"
+        target="blank"
+        rel="noreferrer noopener"
+       
+    >
+<img src={linkudun}  alt="linkudun"/>
     </Link>
     </div>
     </div>

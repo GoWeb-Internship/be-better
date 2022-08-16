@@ -7,6 +7,7 @@ import Price from '../components/Price';
 import Social from '../components/Social';
 import Guarantee from '../components/Guarantee';
 import ClientHistory from '../components/ClientHistory';
+import Sea from '../components/Sea';
 
 const IndexPage = () => {
   return (
@@ -20,6 +21,7 @@ const IndexPage = () => {
         />
         <Price />
         <Guarantee />
+       <Sea/>
         <Form clickFrom="footer" />
         <Social />
       </main>

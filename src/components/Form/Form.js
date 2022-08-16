@@ -6,10 +6,11 @@ import { useTranslation } from 'gatsby-plugin-react-i18next';
 import PhoneInput from 'react-phone-input-2';
 import 'react-phone-input-2/lib/style.css';
 import Button from '../reusableComponents/Button';
-// import s from './Form.module.css';
+import { form, input, label, checkbox, check, error } from './Form.module.css';
 import locationApi from '../../services/locationApi';
 import sendMessageToTg from '../../services/telegramApi';
 import { schema, onValidatePhoneNumber } from '../../helpers/validation';
+// import { FaSearch } from 'react-icons/fa';
 
 const isBrowser = typeof window !== 'undefined';
 
@@ -82,58 +83,70 @@ const Form = ({ title, seeYou = '', clickFrom }) => {
         method="POST"
         data-netlify="true"
         data-netlify-honeypot="bot-field"
-        className="w-[324px] m-auto"
+        className={form}
       >
         <input type="hidden" name="form-name" value="contact" />
-        <input
-          {...register('name')}
-          className="w-full mb-3 pl-8 py-3 rounded-full shadow-inner outline-none"
-          placeholder={data.nameInput}
-        />
-        <p className=" text-red">{errors.name?.message}</p>
-        <input
-          {...register('email')}
-          className="w-full mb-3 pl-8 py-3 rounded-full shadow-inner outline-none"
-          placeholder="E-mail"
-        />
-        <p className="text-red">{errors.email?.message}</p>
+        <div className="relative">
+          <input id="name" {...register('name')} className={input} />
+          <label className={label} htmlFor="name">
+            {data.nameInput}
+          </label>
+          <p className={error}>{errors.name?.message}</p>
+        </div>
+        <div className="relative ">
+          <input id="email" {...register('email')} className={input} />
+          <label className={label} htmlFor="email">
+            E-mail
+          </label>
+          <p className={error}>{errors.email?.message}</p>
+        </div>
+
         <Controller
           name="phone"
           control={control}
           rules={{ required: true }}
           render={({ field }) => (
-            <PhoneInput
-              country={userLocation || 'ua'}
-              placeholder="Enter phone number"
-              preferredCountries={['ua', 'gb']}
-              enableSearch="true"
-              disableSearchIcon="true"
-              isValid={onValidatePhoneNumber}
-              containerClass={'outline-none'}
-              buttonClass={
-                '!pl-6 !rounded-l-full !border-hidden !bg-transparent'
-              }
-              inputClass={
-                '!pl-[72px] !h-11 !border-hidden !w-full !rounded-full shadow-inner '
-              }
-              dropdownClass={'!pl-8 text-left !rounded-lg'}
-              {...field}
-            />
+            <div className="relative">
+              <PhoneInput
+                country={userLocation || 'ua'}
+                placeholder="Enter phone number"
+                preferredCountries={['ua', 'gb']}
+                enableSearch="true"
+                searchPlaceholder="Choose country"
+                disableSearchIcon="true"
+                isValid={onValidatePhoneNumber}
+                containerClass={'outline-none'}
+                buttonClass={
+                  '!pl-6 !rounded-l-full !border-hidden !bg-transparent'
+                }
+                inputClass={
+                  '!pl-[72px] !h-11 !border-hidden !w-full !rounded-full shadow-inner '
+                }
+                dropdownClass={
+                  '!pl-8 text-left !rounded-2xl snap-start [&::-webkit-scrollbar]:w-4 [&::-webkit-scrollbar]:bg-[#e4eaeb] [&::-webkit-scrollbar-thumb]:rounded [&::-webkit-scrollbar-thumb]:h-2 [&::-webkit-scrollbar-thumb]:bg-purple'
+                }
+                searchClass={
+                  '!w-full !pl-0 !ml-0 !border-x-transparent !border-t-transparent !border-b-[#00A5CC]'
+                }
+                {...field}
+              />
+            </div>
           )}
         />
-        <p className=" text-red">{errors.phone?.message}</p>
+        <p className={error}>{errors.phone?.message}</p>
         <Controller
           name="checkbox"
           control={control}
           rules={{ required: true }}
           render={({ field }) => (
-            <div className="mt-1.5	mb-3	">
-              <input type="checkbox" {...field} />
-              <span className="ml-2	text-xs">{data.accept}</span>
-            </div>
+            <label className="flex items-center mt-1 mb-3 pl-2 py-1">
+              <input className={checkbox} type="checkbox" {...field} />
+              <span className={check}></span>
+              <span className="ml-2	text-[8px] text-black">{data.accept}</span>
+            </label>
           )}
         />
-        <p className=" text-red">{errors.checkbox?.message}</p>
+        <p className="text-error text-[8px]">{errors.checkbox?.message}</p>
         <Button
           type="submit"
           className="h-12	w-full border rounded-full bg-purple text-white text-lg font-semibold"

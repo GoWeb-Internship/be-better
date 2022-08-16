@@ -10,6 +10,7 @@ import Button from '../reusableComponents/Button';
 import locationApi from '../../services/locationApi';
 import sendMessageToTg from '../../services/telegramApi';
 import { schema, onValidatePhoneNumber } from '../../helpers/validation';
+import { FaSearch } from 'react-icons/fa';
 
 const isBrowser = typeof window !== 'undefined';
 
@@ -102,23 +103,32 @@ const Form = ({ title, seeYou = '', clickFrom }) => {
           control={control}
           rules={{ required: true }}
           render={({ field }) => (
-            <PhoneInput
-              country={userLocation || 'ua'}
-              placeholder="Enter phone number"
-              preferredCountries={['ua', 'gb']}
-              enableSearch="true"
-              disableSearchIcon="true"
-              isValid={onValidatePhoneNumber}
-              containerClass={'outline-none'}
-              buttonClass={
-                '!pl-6 !rounded-l-full !border-hidden !bg-transparent'
-              }
-              inputClass={
-                '!pl-[72px] !h-11 !border-hidden !w-full !rounded-full shadow-inner '
-              }
-              dropdownClass={'!pl-8 text-left !rounded-lg'}
-              {...field}
-            />
+            <>
+              <PhoneInput
+                country={userLocation || 'ua'}
+                placeholder="Enter phone number"
+                preferredCountries={['ua', 'gb']}
+                enableSearch="true"
+                searchPlaceholder="Choose country"
+                disableSearchIcon="true"
+                isValid={onValidatePhoneNumber}
+                containerClass={'outline-none'}
+                buttonClass={
+                  '!pl-6 !rounded-l-full !border-hidden !bg-transparent'
+                }
+                inputClass={
+                  '!pl-[72px] !h-11 !border-hidden !w-full !rounded-full shadow-inner '
+                }
+                dropdownClass={
+                  '!pl-8 text-left !rounded-2xl snap-start [&::-webkit-scrollbar]:w-4 [&::-webkit-scrollbar]:bg-[#e4eaeb] [&::-webkit-scrollbar-thumb]:rounded [&::-webkit-scrollbar-thumb]:h-2 [&::-webkit-scrollbar-thumb]:bg-purple'
+                }
+                searchClass={
+                  '!w-full !pl-0 !ml-0 !border-x-transparent !border-t-transparent !border-b-[#00A5CC]'
+                }
+                {...field}
+              />
+              {/* <FaSearch className="" /> */}
+            </>
           )}
         />
         <p className=" text-red">{errors.phone?.message}</p>

@@ -1,9 +1,9 @@
 import { Link } from 'gatsby';
 import React from 'react';
-import instagram from '../../images/inst.png'
-import facebook from '../../images/facebook.png'
-import telegram from '../../images/telegram.png'
-import whatApp from '../../images/whatApp.png'
+import instagram from '../../images/instag.svg'
+import facebook from '../../images/facebook.svg'
+import telegram from '../../images/teleg.svg'
+import whatApp from '../../images/watApp.svg'
 
 
 const Social = () => {
@@ -11,7 +11,7 @@ const Social = () => {
     <div className='flex'>
     <div>
       <Link
-        to='https://www.instagram.com/'
+        to='https://instagram.com/yuliya_shayenko?igshid=YmMyMTA2M2Y='
         target="blank"
         rel="noreferrer noopener"
         
@@ -22,7 +22,7 @@ const Social = () => {
 
     <div>
       <Link
-        to='https://uk-ua.facebook.com/'
+        to='https://www.facebook.com/Yuliya.Shayenko'
         target="blank"
         rel="noreferrer noopener"
         

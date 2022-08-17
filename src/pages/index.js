@@ -16,11 +16,7 @@ const IndexPage = () => {
     <Layout id="home">
       {/* <main> */}
       <Container>
-        <Form
-          title="Научу жить и работать в кайф без эмоциональных выгораний"
-          seeYou="Записывайся сегодня ко мне на первую коуч-сессию и начни уже завтра жить в кайф!"
-          clickFrom="hero"
-        />
+        <Form clickFrom="hero" />
         <AboutMe />
         <ClientHistory />
         <Formula />

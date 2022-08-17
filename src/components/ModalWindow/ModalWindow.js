@@ -1,10 +1,14 @@
 import React, { useCallback, useEffect } from 'react';
-import Button from '../reusableComponents/Button';
+import { backdrop, modal, icon } from './ModalWindow.module.css';
+import sprite from '../../images/sprite.svg';
 
-const ModalWindow = ({ children, handleClose }) => {
+const ModalWindow = ({ children, className = '', handleClose }) => {
   const onClose = useCallback(
     e => {
-      if (e.code === 'Escape') {
+      if (
+        e.code === 'Escape' ||
+        e.target.className === 'ModalWindow-module--backdrop--d9jgE'
+      ) {
         handleClose();
       }
     },
@@ -13,23 +17,25 @@ const ModalWindow = ({ children, handleClose }) => {
 
   useEffect(() => {
     window.addEventListener('keydown', onClose);
-    // window.addEventListener('click', onClose);
+    window.addEventListener('click', onClose);
     document.body.style.overflow = 'hidden';
 
     return () => {
       window.removeEventListener('keydown', onClose);
-      // window.removeEventListener('click', onClose);
+      window.removeEventListener('click', onClose);
       document.body.style.overflow = '';
     };
   }, [onClose, handleClose]);
 
   return (
-    <div className="fixed flex items-center justify-center z-10 inset-0 bg-black bg-opacity-50 transition-opacity overflow-y-auto">
-      <div className="bg-white p-14 h-[560px] w-[440px] rounded-2xl">
+    <div className={backdrop}>
+      <div className={`${modal} ${className}`}>
         {children}
-        <Button type="button" doAction={handleClose}>
-          Close
-        </Button>
+        <button className={icon} type="button" onClick={handleClose}>
+          <svg width="28px" height="28px">
+            <use href={`${sprite}#close`} />
+          </svg>
+        </button>
       </div>
     </div>
   );

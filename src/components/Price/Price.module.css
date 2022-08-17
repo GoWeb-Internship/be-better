@@ -1,9 +1,35 @@
 .container {
   @apply m-auto text-center;
 }
+
 .list {
   @apply flex mt-4 text-center justify-center;
 }
+
 .item {
   @apply p-3 w-80 mr-8 rounded-lg last:mr-0 hover:bg-hoverPrice shadow-you;
 }
+
+.modalform {
+    @apply w-[440px] h-[560px] pt-14 text-xl bg-background;
+  }
+
+.formtitle {
+    @apply mb-1 font-medium text-xl text-black;
+  }
+
+.formmargin {
+    @apply mb-8;
+  }
+
+  .formtext {
+    @apply text-base;
+  }
+
+  .accenttext {
+    @apply text-main font-bold;
+  }
+
+  .price {
+    @apply mb-[34px] text-xl text-main font-bold;
+  }

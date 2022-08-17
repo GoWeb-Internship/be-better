@@ -1,6 +1,3 @@
-@tailwind components;
-
-@layer components {
     .form {
         @apply w-[324px] m-auto;
     }
@@ -10,9 +7,34 @@
     .label {
         @apply absolute left-8 top-3 text-sm text-likeGrey hover:text-main transition-transform;
     }
+    .phonebutton {
+        @apply !pl-6 !rounded-l-full !border-hidden !bg-transparent;
+    }
+
+    .phoneinput {
+        @apply !pl-[72px] !h-11 !border-hidden !w-full !rounded-full shadow-inner;
+    }
+    .phonedropdown {
+        @apply left-0 top-0 !m-0 !pl-8 !w-[324px] text-left !rounded-2xl snap-start;
+    }
+        .phonedropdown::-webkit-scrollbar {
+            @apply w-4 bg-[#e4eaeb];
+        }
+        .phonedropdown::-webkit-scrollbar-thumb {
+            @apply h-2 rounded bg-likeGrey;
+        }
+
 .error {
     @apply absolute -top-1 right-8 z-10 text-error text-[8px];
 }
+.modalsuccess{
+    @apply w-[456px] h-[225px] pt-14 px-[68px] bg-white
+}
+.modaltitle {
+    @apply mb-1 text-2xl font-semibold text-main;
+}
+.modaltext {
+    @apply font-medium text-xl text-black;
 }
 
 .input:focus + .label,

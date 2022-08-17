@@ -14,7 +14,7 @@ const IndexPage = () => {
   return (
     <Layout>
       {/* <main> */}
-        <Container>
+      <Container>
         <ClientHistory />
         <Form
           title="Научу жить и работать в кайф без эмоциональных выгораний"

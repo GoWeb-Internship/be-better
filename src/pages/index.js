@@ -8,7 +8,7 @@ import Social from '../components/Social';
 import Guarantee from '../components/Guarantee';
 import ClientHistory from '../components/ClientHistory';
 import Video from '../components/Video';
-import Container from '../components/Container'
+import Container from '../components/Container';
 import AboutMe from '../components/AboutMe';
 
 const IndexPage = () => {
@@ -16,7 +16,6 @@ const IndexPage = () => {
     <Layout>
       {/* <main> */}
       <Container>
-        <ClientHistory />
         <Form
           title="Научу жить и работать в кайф без эмоциональных выгораний"
           seeYou="Записывайся сегодня ко мне на первую коуч-сессию и начни уже завтра жить в кайф!"
@@ -26,10 +25,10 @@ const IndexPage = () => {
         <ClientHistory />
         <Price />
         <Guarantee />
-       <Video/>
+        <Video />
         <Form clickFrom="footer" />
         <Social />
-        </Container>
+      </Container>
       {/* </main> */}
       <script
         dangerouslySetInnerHTML={{

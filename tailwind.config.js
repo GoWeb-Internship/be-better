@@ -5,6 +5,15 @@ module.exports = {
   content: ['./src/pages/**/*.{js,jsx}', './src/components/**/*.{js,jsx}'],
   theme: {
     extend: {
+      spacing: {
+        you: '52%',
+      },
+      boxShadow: {
+        you: '0px 1px 2px rgba(1, 66, 82, 0.3), 0px 1px 3px 1px rgba(1, 66, 82, 0.15)',
+      },
+      translate: {
+        yS: '15%',
+      },
       backgroundImage: {
         signature: "url('./src/images/signature.jpg')",
       },
@@ -41,13 +50,13 @@ module.exports = {
       orangeDirty: 'F3AE86',
     },
     screens: {
-      'tablet': '320px',
+      tablet: '320px',
       // => @media (min-width: 320px) { ... }
 
-      'laptop': '768px',
+      laptop: '768px',
       // => @media (min-width: 768px) { ... }
 
-      'desktop': '1440px',
+      desktop: '1440px',
       // => @media (min-width: 1280px) { ... }
     },
   },

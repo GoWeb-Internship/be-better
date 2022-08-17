@@ -37,6 +37,7 @@ module.exports = {
       main: '#00A5CC',
       black: '#05202C',
       white: '#FAFCFC',
+      hoverPrice: '#E5FBFF',
       likeGrey: '#9AC9D4',
       background: '#F5F9FA',
       backgroundSecond: '#FFF8F4',

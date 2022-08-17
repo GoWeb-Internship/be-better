@@ -6,16 +6,35 @@ import { useTranslation } from 'gatsby-plugin-react-i18next';
 import PhoneInput from 'react-phone-input-2';
 import 'react-phone-input-2/lib/style.css';
 import Button from '../reusableComponents/Button';
-import { form, input, label, checkbox, check, error } from './Form.module.css';
+import {
+  form,
+  input,
+  label,
+  checkbox,
+  check,
+  phonebutton,
+  phoneinput,
+  phonedropdown,
+  error,
+  modalsuccess,
+  modaltitle,
+  modaltext,
+} from './Form.module.css';
 import locationApi from '../../services/locationApi';
 import sendMessageToTg from '../../services/telegramApi';
-import { schema, onValidatePhoneNumber } from '../../helpers/validation';
-// import { FaSearch } from 'react-icons/fa';
+import { schema } from '../../helpers/validation';
+import ModalWindow from '../ModalWindow';
 
 const isBrowser = typeof window !== 'undefined';
 
-const Form = ({ title, seeYou = '', clickFrom }) => {
+const Form = ({
+  clickFrom,
+  formClassname,
+  checkboxClassname = 'mb-3',
+  closeFormModal = null,
+}) => {
   const [userLocation, setUserLocation] = React.useState('');
+  const [successModal, setSuccessModal] = React.useState(false);
   const { t } = useTranslation();
   const data = t('form', { returnObjects: true });
   const {
@@ -66,7 +85,11 @@ const Form = ({ title, seeYou = '', clickFrom }) => {
     `;
 
     sendMessageToTg(message)
-      .then(() => alert('Заявка отправлена!'))
+      .then(() => {
+        // closeFormModal();
+        // setTimeout(() => setSuccessModal(true), 1500);
+        setSuccessModal(true);
+      })
       .catch(error => alert(error))
       .finally(() => {
         reset();
@@ -75,26 +98,35 @@ const Form = ({ title, seeYou = '', clickFrom }) => {
   };
 
   return (
-    <section>
-      <h2>{title}</h2>
+    <>
       <form
         onSubmit={handleSubmit(onSubmit)}
         name="contact"
         method="POST"
         data-netlify="true"
         data-netlify-honeypot="bot-field"
-        className={form}
+        className={`${form} ${formClassname}`}
       >
         <input type="hidden" name="form-name" value="contact" />
         <div className="relative">
-          <input id="name" {...register('name')} className={input} />
+          <input
+            id="name"
+            {...register('name')}
+            className={input}
+            placeholder=" "
+          />
           <label className={label} htmlFor="name">
             {data.nameInput}
           </label>
           <p className={error}>{errors.name?.message}</p>
         </div>
         <div className="relative ">
-          <input id="email" {...register('email')} className={input} />
+          <input
+            id="email"
+            {...register('email')}
+            className={input}
+            placeholder=" "
+          />
           <label className={label} htmlFor="email">
             E-mail
           </label>
@@ -114,39 +146,34 @@ const Form = ({ title, seeYou = '', clickFrom }) => {
                 enableSearch="true"
                 searchPlaceholder="Choose country"
                 disableSearchIcon="true"
-                isValid={onValidatePhoneNumber}
+                // isValid={onValidatePhoneNumber}
                 containerClass={'outline-none'}
-                buttonClass={
-                  '!pl-6 !rounded-l-full !border-hidden !bg-transparent'
-                }
-                inputClass={
-                  '!pl-[72px] !h-11 !border-hidden !w-full !rounded-full shadow-inner '
-                }
-                dropdownClass={
-                  '!pl-8 text-left !rounded-2xl snap-start [&::-webkit-scrollbar]:w-4 [&::-webkit-scrollbar]:bg-[#e4eaeb] [&::-webkit-scrollbar-thumb]:rounded [&::-webkit-scrollbar-thumb]:h-2 [&::-webkit-scrollbar-thumb]:bg-purple'
-                }
-                searchClass={
-                  '!w-full !pl-0 !ml-0 !border-x-transparent !border-t-transparent !border-b-[#00A5CC]'
-                }
+                buttonClass={phonebutton}
+                inputClass={phoneinput}
+                dropdownClass={phonedropdown}
                 {...field}
               />
+              <p className={error}>{errors.phone?.message}</p>
             </div>
           )}
         />
-        <p className={error}>{errors.phone?.message}</p>
         <Controller
           name="checkbox"
           control={control}
           rules={{ required: true }}
           render={({ field }) => (
-            <label className="flex items-center mt-1 mb-3 pl-2 py-1">
-              <input className={checkbox} type="checkbox" {...field} />
-              <span className={check}></span>
-              <span className="ml-2	text-[8px] text-black">{data.accept}</span>
-            </label>
+            <div className={`relative ${checkboxClassname}`}>
+              <label className="flex items-center mt-1 pl-2 py-1">
+                <input className={checkbox} type="checkbox" {...field} />
+                <span className={check}></span>
+                <span className="ml-2	text-[8px] text-black">{data.accept}</span>
+              </label>
+              <p className="absolute top-6 text-error text-[8px]">
+                {errors.checkbox?.message}
+              </p>
+            </div>
           )}
         />
-        <p className="text-error text-[8px]">{errors.checkbox?.message}</p>
         <Button
           type="submit"
           className="h-12	w-full border rounded-full bg-purple text-white text-lg font-semibold"
@@ -154,8 +181,20 @@ const Form = ({ title, seeYou = '', clickFrom }) => {
           {data.button}
         </Button>
       </form>
-      <p>{seeYou}</p>
-    </section>
+      {successModal && (
+        <ModalWindow
+          className={modalsuccess}
+          handleClose={() => setSuccessModal(false)}
+        >
+          <div>
+            <h2 className={modaltitle}>Благодарю за заявку! </h2>
+            <p className={modaltext}>
+              Теперь ты на шаг ближе к моменту своей счастливой жизни!
+            </p>
+          </div>
+        </ModalWindow>
+      )}
+    </>
   );
 };
 

@@ -12,6 +12,14 @@
     "accept": "I agree to the processing of my personal data",
     "button": "Take the first step"
   },
+  "formula": {
+    "title": "My formula is very simple and effective",
+    "list": [
+      "Understand what you want",
+      "Understand how to get it",
+      "Start doing!"
+    ]
+  },
   "footer": {
     "links": [
       { "name": "Privacy Policy", "id": "pk" },

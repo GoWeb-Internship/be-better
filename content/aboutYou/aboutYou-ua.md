@@ -1,6 +1,6 @@
 ---
 title: 'Я знаю, що ти відчуваєш, коли:'
-language: ua
+language: uk
 ---
 
 <ul>

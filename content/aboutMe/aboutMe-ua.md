@@ -1,6 +1,6 @@
 ---
 title: Давай знайомитися
-language: ua
+language: uk
 ---
 
 <p>Привіт, я Юля і <span class='text-caveat'>девіз мого життя - жити в кайф!</span> Я завжди

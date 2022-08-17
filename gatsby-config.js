@@ -51,7 +51,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-facebook-pixel`,
       options: {
-        pixelId: "pixel id here",
+        pixelId: 'pixel id here',
       },
     },
     {
@@ -92,13 +92,13 @@ module.exports = {
       resolve: `gatsby-plugin-react-i18next`,
       options: {
         localeJsonSourceName: `locale`,
-        languages: [`ua`, `en`, `ru`],
-        defaultLanguage: `ua`,
-        generateDefaultLanguagePage: '/ua',
+        languages: [`uk`, `en`, `ru`],
+        defaultLanguage: `uk`,
+        generateDefaultLanguagePage: '/uk',
         siteUrl: ``,
 
         i18nextOptions: {
-          lng: 'ua',
+          lng: 'uk',
           load: 'currentOnly',
 
           interpolation: {

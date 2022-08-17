@@ -1,5 +1,5 @@
 .headerContainer {
-  @apply flex justify-between  w-full pb-4 pt-7;
+  @apply container fixed flex justify-around  w-full pb-4 pt-7 z-10 items-center bg-white;
 }
 
 .navContainer {
@@ -7,5 +7,9 @@
 }
 
 .links {
-  @apply text-main text-sm leading-1.36 py-2 px-4 active:border-b-2 border-main;
+  @apply text-main text-sm leading-1.36 py-2 px-4 hover:border-b-2 border-main;
+}
+
+.logo {
+  @apply hover:scale-110;
 }

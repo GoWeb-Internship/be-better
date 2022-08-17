@@ -1,0 +1,15 @@
+.container {
+  @apply laptop:max-w-3xl w-72 py-6 absolute left-0 bg-white rounded-2xl top-you -translate-x-yS shadow-you px-11;
+}
+
+.title {
+  @apply text-main mb-3 text-base;
+}
+
+.listContainer {
+  @apply text-sm;
+}
+
+.listContainer li {
+  @apply mb-3 marker:text-main list-disc;
+}

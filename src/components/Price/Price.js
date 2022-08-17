@@ -1,14 +1,25 @@
-import * as React from 'react';
+import React, { useState, useEffect } from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
 import Button from '../reusableComponents/Button';
-import { container, list, item } from './Price.module.css';
+import {
+  container,
+  list,
+  item,
+  modalform,
+  formtitle,
+  formmargin,
+  formtext,
+  accenttext,
+  price,
+} from './Price.module.css';
 import ModalWindow from '../ModalWindow';
 import Form from '../Form';
 import { useTranslation } from 'gatsby-plugin-react-i18next';
 
 const Price = () => {
-  const [modal, setModal] = React.useState(false);
-  const [currentPrice, setCurrentPrice] = React.useState('');
+  const [modal, setModal] = useState(false);
+  const [currentPrice, setCurrentPrice] = useState('');
+  const [currentRate, setCurrentRate] = useState('');
 
   const { allMarkdownRemark } = useStaticQuery(graphql`
     query {
@@ -29,6 +40,25 @@ const Price = () => {
   const data = allMarkdownRemark.nodes;
   const { t } = useTranslation();
   const buttonTranslate = t('littleComponents', { returnObjects: true });
+
+  useEffect(() => {
+    switch (currentPrice) {
+      case '$320':
+        setCurrentRate('Минимальный');
+        break;
+
+      case '$600':
+        setCurrentRate('Базовый');
+        break;
+
+      case '$850':
+        setCurrentRate('Оптимальный');
+        break;
+
+      default:
+        setCurrentRate('');
+    }
+  }, [currentPrice]);
 
   const showModal = price => {
     setCurrentPrice(price);
@@ -63,12 +93,22 @@ const Price = () => {
           })}
       </ul>
       {modal && (
-        <ModalWindow handleClose={hideModal}>
-          <Form
-            title="Привет!Я скоро свяжусь с тобой!"
-            seeYou="Увидимся!"
-            clickFrom={currentPrice}
-          />
+        <ModalWindow className={modalform} handleClose={hideModal}>
+          <>
+            <h2 className={formtitle}>Привет!</h2>
+            <p className={formtext}>
+              Ты выбрал пакет{' '}
+              <span className={accenttext}>"{currentRate}"</span>
+            </p>
+            <p className={price}>{currentPrice}</p>
+            <Form
+              clickFrom={currentPrice}
+              formClassname={formmargin}
+              checkboxClassname="mb-8"
+              closeFormModal={hideModal}
+            />
+            <p className={formtext}>Я скоро свяжусь с тобой!</p>
+          </>
         </ModalWindow>
       )}
     </div>

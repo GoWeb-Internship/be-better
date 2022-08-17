@@ -4,7 +4,7 @@ import { graphql } from 'gatsby';
 import Layout from '../components/Layout';
 import Form from '../components/Form';
 import Price from '../components/Price';
-import Social from '../components/Social';
+// import Social from '../components/Social';
 import Guarantee from '../components/Guarantee';
 import ClientHistory from '../components/ClientHistory';
 import Video from '../components/Video';
@@ -13,7 +13,7 @@ import AboutMe from '../components/AboutMe';
 
 const IndexPage = () => {
   return (
-    <Layout>
+    <Layout id="home">
       {/* <main> */}
       <Container>
         <Form
@@ -26,8 +26,8 @@ const IndexPage = () => {
         <Price />
         <Guarantee />
         <Video />
-        <Form clickFrom="footer" />
-        <Social />
+        {/* <Form clickFrom="footer" /> */}
+        {/* <Social /> */}
       </Container>
       {/* </main> */}
       <script
@@ -71,16 +71,6 @@ export const query = graphql`
           ns
           data
           language
-        }
-      }
-    }
-    allMarkdownRemark(
-      filter: { frontmatter: { language: { eq: $language } } }
-    ) {
-      nodes {
-        html
-        frontmatter {
-          title
         }
       }
     }

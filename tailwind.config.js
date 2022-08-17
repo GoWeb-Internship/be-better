@@ -40,8 +40,6 @@ module.exports = {
       orangeDark: '4D2107',
       orangeDirty: 'F3AE86',
     },
-  },
-  theme: {
     screens: {
       'tablet': '320px',
       // => @media (min-width: 320px) { ... }
@@ -53,7 +51,6 @@ module.exports = {
       // => @media (min-width: 1280px) { ... }
     },
   },
-  plugins: [],
 
   plugins: [
     require('@tailwindcss/typography'),

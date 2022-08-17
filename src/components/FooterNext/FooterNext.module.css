@@ -1,0 +1,19 @@
+.textFooter{
+    @apply font-semibold text-2xl pb-4 text-black;
+}
+
+.containerFooter{
+    @apply w-1/3;
+}
+
+.text{
+    @apply font-normal  text-sm;
+}
+
+.text p{
+    @apply pt-14 text-main;
+}
+
+.text span {
+    @apply text-caveat;
+  }

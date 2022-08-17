@@ -49,6 +49,7 @@ module.exports = {
       mainSecondLight: 'FF9B62',
       orangeDark: '4D2107',
       orangeDirty: 'F3AE86',
+      write: 'FFFFFF'
     },
     screens: {
       tablet: '320px',

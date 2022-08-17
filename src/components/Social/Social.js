@@ -1,4 +1,3 @@
-import { Link } from 'gatsby';
 import React from 'react';
 import instagram from '../../images/instag.svg'
 import facebook from '../../images/facebook.svg'
@@ -68,8 +67,8 @@ const Social = () => {
 <img src={linkudun}  alt="linkudun"/>
     </Link>
     </div>
-    </div>
-  )
-}
+</div>
+  );
+};
 
-export default Social
+export default Social;

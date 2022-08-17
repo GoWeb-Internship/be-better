@@ -1,7 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Open+Sans:wght@300;400;500;600&display=swap');
 * {
   box-sizing: border-box;
 }
@@ -17,16 +17,19 @@ p {
   margin: 0;
   padding: 0;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 body {
   margin: 0;
+  font-family: 'Open Sans', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #e7ecf2;
+  background-color: #f5f9fa;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
 
@@ -39,4 +42,3 @@ img {
   max-width: 100%;
   height: auto;
 }
-

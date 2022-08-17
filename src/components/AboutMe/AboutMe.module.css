@@ -1,0 +1,30 @@
+.container {
+  @apply pt-20 pb-36 px-20 flex text-base;
+}
+.title {
+  @apply title-primary mb-13;
+}
+
+.textContainer {
+  @apply w-3/5 text-left ml-20;
+}
+
+.text {
+  @apply w-524 text-sm;
+}
+
+.text span {
+  @apply text-caveat;
+}
+
+.text p:nth-child(odd) {
+  @apply mb-8;
+}
+
+.text p:nth-child(2) {
+  @apply mb-6.5;
+}
+
+.text p:nth-child(5) {
+  @apply mb-0;
+}

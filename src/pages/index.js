@@ -9,6 +9,7 @@ import Guarantee from '../components/Guarantee';
 import ClientHistory from '../components/ClientHistory';
 import Video from '../components/Video';
 import Container from '../components/Container'
+import AboutMe from '../components/AboutMe';
 
 const IndexPage = () => {
   return (
@@ -21,6 +22,8 @@ const IndexPage = () => {
           seeYou="Записывайся сегодня ко мне на первую коуч-сессию и начни уже завтра жить в кайф!"
           clickFrom="hero"
         />
+        <AboutMe />
+        <ClientHistory />
         <Price />
         <Guarantee />
        <Video/>
@@ -69,6 +72,16 @@ export const query = graphql`
           ns
           data
           language
+        }
+      }
+    }
+    allMarkdownRemark(
+      filter: { frontmatter: { language: { eq: $language } } }
+    ) {
+      nodes {
+        html
+        frontmatter {
+          title
         }
       }
     }

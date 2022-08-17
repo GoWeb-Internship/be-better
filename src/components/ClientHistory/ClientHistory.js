@@ -40,7 +40,7 @@ const ClientHistory = () => {
   return (
     <Slider {...settings}>
       {data.map(({ name, prof, quote }) => (
-        <div>
+        <div key={name}>
           <div className="flex">
             <div>
               <p>{name}</p>

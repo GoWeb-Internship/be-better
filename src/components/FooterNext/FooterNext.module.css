@@ -11,7 +11,7 @@
 }
 
 .text p{
-    @apply pt-14 text-main;
+    @apply pt-14 text-main text-start pt-8;
 }
 
 .text span {

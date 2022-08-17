@@ -29,17 +29,19 @@ const Footer = () => {
             layout="fixed"
           />
           </div>
-          <FooterNext/>
 
+          
+          <FooterNext/>
+       
        
         <Form clickFrom="footer" />
         <Social />
 
           </div>
-        <ul className="flex justify-center">
+        <ul className="flex justify-center mr-4">
           {links.map(({ name, id }) => (
             <li key={id} className="last: ml-10">
-              <Link to={`/${id}`}>{name}</Link>
+              <Link className='pr-7 text-black font-normal text-sm mr-10 ml-10 pr-15 px-0' to={`/${id}`}>{name}</Link>
             </li>
           ))}
         </ul>

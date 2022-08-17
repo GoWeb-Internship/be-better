@@ -1,10 +1,10 @@
 import React from 'react';
-
 import { FaTelegramPlane } from 'react-icons/fa';
 import { RiWhatsappLine } from 'react-icons/ri';
 import { TiSocialFacebook } from 'react-icons/ti';
 import { TbBrandInstagram } from 'react-icons/tb';
 import { TiSocialLinkedin } from 'react-icons/ti';
+import {social} from './Social.module.css';
 
 const Social = () => {
   return (
@@ -16,7 +16,7 @@ const Social = () => {
         rel="noreferrer noopener"
         
     >
-<TbBrandInstagram className='w-11 h-11  bg-main text-white rounded-lg cursor-pointer mb-4 hover:text-main hover:bg-white'/>
+<TbBrandInstagram className={social}/>
 
     </a>
     </div>
@@ -28,7 +28,7 @@ const Social = () => {
         rel="noreferrer noopener"
         
     >
-<TiSocialFacebook className='w-11 h-11 bg-main text-white rounded-lg cursor-pointer mb-4  hover:text-main hover:bg-white'/>
+<TiSocialFacebook className={social}/>
     </a>
     </div>
 
@@ -39,7 +39,7 @@ const Social = () => {
         rel="noreferrer noopener"
        
     >
-<TiSocialLinkedin className='w-11 h-11  bg-main text-white rounded-lg cursor-pointer mb-4  hover:text-main hover:bg-white'/>
+<TiSocialLinkedin className={social}/>
     </a>
     </div>
 
@@ -50,7 +50,7 @@ const Social = () => {
         target="blank"
         rel="noreferrer noopener"
     >
-<FaTelegramPlane className='w-11 h-11  bg-main text-white rounded-lg cursor-pointer mb-4  hover:text-main hover:bg-white'/>
+<FaTelegramPlane className={social}/>
     </a> 
     </div>
 
@@ -61,7 +61,7 @@ const Social = () => {
         rel="noreferrer noopener"
        
     >
-<RiWhatsappLine className='w-11 h-11  bg-main text-white rounded-lg cursor-pointer mb-4  hover:text-main hover:bg-white'/>
+<RiWhatsappLine className={social}/>
     </a>
     </div>
 

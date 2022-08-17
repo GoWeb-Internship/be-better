@@ -14,20 +14,20 @@ module.exports = {
       translate: {
         yS: '15%',
       },
-      backgroundImage: {
-        signature: "url('./src/images/signature.jpg')",
-      },
+
       lineHeight: {
         1.36: '1.36',
       },
       margin: {
-        13: '52px',
         6.5: '26px',
+        13: '52px',
+        22: '92px',
       },
       fontFamily: {
         caveat: 'Caveat,sans-serif',
       },
       width: {
+        50: '200px',
         524: '524px',
       },
     },
@@ -79,10 +79,10 @@ module.exports = {
         },
         '.title-primary': {
           color: theme('colors.main'),
-          fontSize: 34,
+          fontSize: 20,
           fontWeight: 600,
-          lineHeight: 1.36,
-          letterSpacing: 0.25,
+          lineHeight: 1.32,
+          letterSpacing: 0.15,
         },
         '.text-caveat': {
           color: theme('colors.main'),

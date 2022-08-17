@@ -4,7 +4,7 @@ import { graphql } from 'gatsby';
 import Layout from '../components/Layout';
 import Form from '../components/Form';
 import Price from '../components/Price';
-// import Social from '../components/Social';
+import Formula from '../components/Formula';
 import Guarantee from '../components/Guarantee';
 import ClientHistory from '../components/ClientHistory';
 import Video from '../components/Video';
@@ -17,18 +17,13 @@ const IndexPage = () => {
     <Layout id="home">
       {/* <main> */}
       <Container>
-        <Form
-          title="Научу жить и работать в кайф без эмоциональных выгораний"
-          seeYou="Записывайся сегодня ко мне на первую коуч-сессию и начни уже завтра жить в кайф!"
-          clickFrom="hero"
-        />
+        <Form clickFrom="hero" />
         <AboutMe />
         <ClientHistory />
+        <Formula />
         <Price />
         <Guarantee />
         <Video />
-        {/* <Form clickFrom="footer" /> */}
-        {/* <Social /> */}
       </Container>
       {/* </main> */}
       <script

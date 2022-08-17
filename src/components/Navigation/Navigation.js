@@ -20,6 +20,7 @@ const Navigation = () => {
             width={90}
             height={56}
             layout="fixed"
+            alt="logo"
           />
         </Link>
         <nav className={navContainer}>

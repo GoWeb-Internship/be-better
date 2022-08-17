@@ -1,0 +1,15 @@
+.formulaContainer {
+  @apply text-center;
+}
+
+.title {
+  @apply title-primary mb-11;
+}
+
+.list {
+  @apply flex flex-col;
+}
+
+.itemLi {
+  @apply h-36 w-50 m-auto shadow-you rounded-lg mb-22 px-6 text-black;
+}

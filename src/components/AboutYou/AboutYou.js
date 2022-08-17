@@ -1,7 +1,11 @@
 import React from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
 import { title, container, listContainer } from './AboutYou.module.css';
+import { useTranslation } from 'gatsby-plugin-react-i18next';
+
 const AboutYou = () => {
+  const { i18n } = useTranslation();
+
   const { allMarkdownRemark } = useStaticQuery(graphql`
     query {
       allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/aboutYou/" } }) {
@@ -16,15 +20,29 @@ const AboutYou = () => {
       }
     }
   `);
-  const [data] = allMarkdownRemark.nodes;
+  // const [data] = allMarkdownRemark.nodes;
+  const data = allMarkdownRemark.nodes;
 
   return (
     <div className={container}>
-      <h3 className={title}>{data.frontmatter.title}</h3>
+      {data.map(node => {
+        if (node.frontmatter.language === i18n.language) {
+          return (
+            <>
+              <h3 className={title}>{node.frontmatter.title}</h3>
+              <div
+                className={listContainer}
+                dangerouslySetInnerHTML={{ __html: node.html }}
+              />
+            </>
+          );
+        }
+      })}
+      {/* <h3 className={title}>{data.frontmatter.title}</h3>
       <div
         className={listContainer}
         dangerouslySetInnerHTML={{ __html: data.html }}
-      />
+      /> */}
     </div>
   );
 };

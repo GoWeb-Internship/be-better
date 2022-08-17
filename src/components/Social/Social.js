@@ -5,6 +5,8 @@ import telegram from '../../images/teleg.svg'
 import whatApp from '../../images/watApp.svg'
 import linkudun from '../../images/linkudun.svg'
 
+// import instagran from '../../images/symbol-defs.svg/#icon-instag'
+
 
 const Social = () => {
   return (
@@ -16,7 +18,8 @@ const Social = () => {
         rel="noreferrer noopener"
         
     >
-<img src={instagram}  alt="instagram"/>
+{/* <img src={instagram}  alt="instagram"/> */}
+<svg><use href='../../images/symbol-defs.svg/#icon-instag'></use></svg>
     </a>
     </div>
 

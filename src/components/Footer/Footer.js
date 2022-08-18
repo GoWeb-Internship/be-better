@@ -14,16 +14,15 @@ const Footer = () => {
   return (
     <footer className={footerContainer}>
      
-      <Container className="m-0 p-0 w-full flex relative">
-        <div className='flex justify-between'>
+      {/* <Container className="m-0 p-0 w-full flex relative"> */}
+        <div className='flex justify-between m-0 p-0 w-full relative'>
        
       <StaticImage
       alt=''
       src='../../images/bg-min.png'
-      width={1036}
+      width={1100}
       height={420}
-      className="absolute m-0 
-      z-0"
+      className="absolute m-0 -z-10"
       />
         <div className='pt-16 pl-12 pr-14'>
       <StaticImage
@@ -57,7 +56,7 @@ const Footer = () => {
           ))}
         </ul>
         
-      </Container>
+      {/* </Container> */}
     </footer>
   );
 };

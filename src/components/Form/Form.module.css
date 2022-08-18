@@ -1,5 +1,5 @@
     .form {
-        @apply w-70 m-auto desktop:w-81 ;
+        @apply relative w-70 m-auto desktop:w-81 z-10;
     }
     .input {
         @apply w-full mb-3 pl-8 h-11 border border-main rounded-full shadow-inner outline-none text-main;

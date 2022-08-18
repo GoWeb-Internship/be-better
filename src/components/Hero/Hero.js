@@ -16,17 +16,17 @@ const Hero = () => {
       <div className="relative h-[532px]">
         <StaticImage
           src="../../images/background/heroMobile.png"
-          className="absolute w-full top-0 left-0 -z-10"
+          className="absolute w-full top-0 left-0 z-0"
         />
         <StaticImage
           src="../../images/background/darkGradient.png"
-          className="absolute w-full top-0 left-0 -z-10"
+          className="absolute w-full top-0 left-0 z-0"
         />
         <StaticImage
           src="../../images/background/lightGradient.png"
-          className="absolute w-full top-0 left-0 -z-10"
+          className="absolute w-full top-0 left-0 z-0"
         />
-        <div className="flex justify-between mb-[150px] pt-[100px]">
+        <div className="relative flex justify-between mb-[150px] pt-[100px] text-left z-10">
           <div className=" pl-5 text-white">
             <p className="text-xl font-caveat">Научу</p>
             <h1 className="font-medium text-xl">
@@ -39,7 +39,7 @@ const Hero = () => {
               выгораний
             </p>
           </div>
-          <div className="flex flex-col justify-evenly pr-[30px]">
+          <div className="flex flex-col justify-evenly pr-[30px] z-10">
             <a
               href="https://instagram.com/yuliya_shayenko?igshid=YmMyMTA2M2Y="
               target="blank"
@@ -66,11 +66,11 @@ const Hero = () => {
 
         <Button
           type="button"
-          className="h-12 w-[280px] rounded-full !bg-buttonMobile mb-6"
+          className="relative h-12 w-[280px] rounded-full !bg-buttonMobile mb-6 z-10"
         >
           {data.button}
         </Button>
-        <p className="px-5 font-caveat text-orangeDark text-lg leading-[18px] text-center">
+        <p className="relative px-5 font-caveat text-orangeDark text-lg leading-[18px] text-center z-10">
           Записывайся сегодня ко мне на первую коуч-сессию и начни уже завтра
           жить в кайф!
         </p>

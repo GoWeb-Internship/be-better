@@ -1,5 +1,5 @@
 .headerContainer {
-  @apply container fixed flex justify-around  w-full pb-4 pt-7 z-10 items-center bg-white;
+  @apply container fixed flex justify-around  w-full z-10 items-center bg-white;
 }
 
 .navContainer {

@@ -1,21 +1,21 @@
     .form {
-        @apply w-[324px] m-auto;
+        @apply w-70 m-auto desktop:w-81 ;
     }
     .input {
-        @apply w-full mb-3 pl-8 h-11 rounded-full shadow-inner outline-none text-main;
+        @apply w-full mb-3 pl-8 h-11 border border-main rounded-full shadow-inner outline-none text-main;
     }
     .label {
-        @apply absolute left-8 top-3 text-sm text-likeGrey hover:text-main transition-transform;
+        @apply absolute left-8 top-3 text-sm text-main desktop:text-likeGrey hover:text-main transition-transform;
     }
     .phonebutton {
         @apply !pl-6 !rounded-l-full !border-hidden !bg-transparent;
     }
 
     .phoneinput {
-        @apply !pl-[72px] !h-11 !border-hidden !w-full !rounded-full shadow-inner;
+        @apply !pl-[72px] !h-11 text-main !border-buttonMobile desktop:!border-hidden !w-full !rounded-full shadow-inner;
     }
     .phonedropdown {
-        @apply left-0 top-0 !m-0 !pl-8 !w-[324px] text-left !rounded-2xl snap-start;
+        @apply left-0 top-0 !m-0 !pl-8 !w-70 desktop:!w-81 text-left !rounded-2xl snap-start;
     }
         .phonedropdown::-webkit-scrollbar {
             @apply w-4 bg-[#e4eaeb];
@@ -50,6 +50,10 @@
 
 .checkbox:checked + .check {
     background-image: url('../../images/check.svg');
+}
+
+.checkbox:invalid +.check {
+    background-image: url('../../images/errorcheck.svg');
 }
 
 .check {

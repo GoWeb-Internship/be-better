@@ -23,7 +23,7 @@ const Footer = () => {
             className="mb-11"
           />
       <StaticImage
-            src="../../images/rectang.png"
+            src="../../images/icf.png"
             width={96}
             height={96}
             layout="fixed"

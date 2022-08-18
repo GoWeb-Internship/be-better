@@ -15,7 +15,7 @@ const Footer = () => {
     <footer className={footerContainer}>
      
       {/* <Container className="m-0 p-0 w-full flex relative"> */}
-        <div className='flex justify-between m-0 p-0 w-full relative'>
+        <div className='justify-between m-0 p-0 w-full relative'>
        
       <StaticImage
       alt=''
@@ -24,6 +24,7 @@ const Footer = () => {
       height={420}
       className="absolute m-0 -z-10"
       />
+      <div className='flex'>
         <div className='pt-16 pl-12 pr-14'>
       <StaticImage
             src="../../images/logo.png"
@@ -46,7 +47,7 @@ const Footer = () => {
        
         <Form clickFrom="footer" className="pt-16"/>
         <Social className="z-3 pt-16"/>
-
+        </div>
           </div>
         <ul className="flex text-left pl-44 ml-10 mr-4 z-10">
           {links.map(({ name, id }) => (

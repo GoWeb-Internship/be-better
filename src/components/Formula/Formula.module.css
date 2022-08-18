@@ -1,15 +1,31 @@
 .formulaContainer {
-  @apply text-center;
+  @apply text-center pt-20 pb-54 relative;
 }
 
 .title {
-  @apply title-primary mb-11;
+  @apply title-primary mb-20 text-34;
 }
 
 .list {
-  @apply flex flex-col;
+  @apply flex flex-col desktop:flex-row justify-around;
+}
+
+.text {
+  @apply absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2;
 }
 
 .itemLi {
-  @apply h-36 w-50 m-auto shadow-you rounded-lg mb-22 px-6 text-black;
+  @apply relative w-50 h-36 m-auto shadow-you rounded-lg mb-2 px-6 text-black;
+}
+
+.iconArrow {
+  @apply mb-9 w-20 h-20 text-likeGrey  desktop:-rotate-90 desktop:mb-0;
+}
+
+.icon {
+  @apply h-8 w-8 fill-main m-auto mt-icon;
+}
+
+.iconPosition {
+  @apply w-14 h-14 bg-white rounded-lg absolute shadow-you -top-icon  left-2/4 -translate-x-1/2;
 }

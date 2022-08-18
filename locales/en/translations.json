@@ -15,9 +15,9 @@
   "formula": {
     "title": "My formula is very simple and effective",
     "list": [
-      "Understand what you want",
-      "Understand how to get it",
-      "Start doing!"
+      { "name": "Understand what you want", "svg": "idea" },
+      { "name": "Understand how to get it", "svg": "puzzle" },
+      { "name": "Start doing!", "svg": "toDo" }
     ]
   },
   "footer": {

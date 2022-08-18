@@ -10,7 +10,7 @@
 }
 
 .text {
-  @apply w-524 text-sm;
+  @apply w-524 text-sm text-main;
 }
 
 .text span {

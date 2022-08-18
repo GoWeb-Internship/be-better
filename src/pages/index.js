@@ -14,9 +14,9 @@ import Hero from '../components/Hero';
 const IndexPage = () => {
   return (
     <Layout id="home">
-      <Hero />
       {/* <main> */}
       <Container>
+        <Hero />
         <AboutMe />
         <ClientHistory />
         <Formula />

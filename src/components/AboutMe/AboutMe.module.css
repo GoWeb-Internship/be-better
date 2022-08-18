@@ -2,7 +2,7 @@
   @apply pt-20 pb-36 px-20  text-base  relative;
 }
 .title {
-  @apply title-primary mb-13;
+  @apply title-primary mb-13 text-34;
 }
 
 .textContainer {

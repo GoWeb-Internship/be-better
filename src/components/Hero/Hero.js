@@ -16,14 +16,17 @@ const Hero = () => {
       <div className="relative h-[532px]">
         <StaticImage
           src="../../images/background/heroMobile.png"
+          alt="hero"
           className="absolute w-full top-0 left-0 z-0"
         />
         <StaticImage
           src="../../images/background/darkGradient.png"
+          alt="hero"
           className="absolute w-full top-0 left-0 z-0"
         />
         <StaticImage
           src="../../images/background/lightGradient.png"
+          alt="hero"
           className="absolute w-full top-0 left-0 z-0"
         />
         <div className="relative flex justify-between mb-[150px] pt-[100px] text-left z-10">

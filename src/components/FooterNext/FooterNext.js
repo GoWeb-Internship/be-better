@@ -1,9 +1,12 @@
 import React from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
 import {textFooter, containerFooter, text} from './FooterNext.module.css';
+import { useTranslation } from 'gatsby-plugin-react-i18next';
 
 const FooterNext = () => {
-    const { allMarkdownRemark } = useStaticQuery(graphql`
+  const { i18n } = useTranslation();
+
+  const { allMarkdownRemark } = useStaticQuery(graphql`
     query {
       allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/footer/" } }) {
         nodes {
@@ -17,17 +20,30 @@ const FooterNext = () => {
       }
     }
   `);
-  const [data] = allMarkdownRemark.nodes;
-  return (
-    <div className={containerFooter}>
-      <h2 className={textFooter}>{data.frontmatter.title}</h2>
-      <div
-      className={text}
-        dangerouslySetInnerHTML={{ __html: data.html }}
-      />
-      
-    </div>
-  )
-}
+  const data = allMarkdownRemark.nodes;
 
-export default FooterNext
+return(
+  <div className={containerFooter}>
+     <div className={textFooter}>
+          {data.map(node => {
+            if (node.frontmatter.language === i18n.language) {
+              return (
+                <>
+                  <h3 className={textFooter}>{node.frontmatter.title}</h3>
+                  <div
+                    key={node.frontmatter.language}
+                    className={text}
+                    dangerouslySetInnerHTML={{ __html: node.html }}
+                  />
+                </>
+              );
+            }
+          })}
+        </div>
+  </div>
+)
+    };
+        
+      
+
+export default FooterNext;

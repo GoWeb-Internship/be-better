@@ -1,9 +1,9 @@
 .formulaContainer {
-  @apply text-center py-8 px-15;
+  @apply text-center pt-20 pb-54 relative;
 }
 
 .title {
-  @apply title-primary mb-11;
+  @apply title-primary mb-20 text-34;
 }
 
 .list {
@@ -11,13 +11,21 @@
 }
 
 .text {
-  @apply pb-12 pt-13;
+  @apply absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2;
 }
 
 .itemLi {
-  @apply w-50 m-auto shadow-you rounded-lg mb-2 px-6 text-black;
+  @apply relative w-50 h-36 m-auto shadow-you rounded-lg mb-2 px-6 text-black;
 }
 
 .iconArrow {
-  @apply mb-9 w-12 h-12 text-likeGrey last:hidden;
+  @apply mb-9 w-20 h-20 text-likeGrey  desktop:-rotate-90 desktop:mb-0;
+}
+
+.icon {
+  @apply h-8 w-8 fill-main m-auto mt-icon;
+}
+
+.iconPosition {
+  @apply w-14 h-14 bg-white rounded-lg absolute shadow-you -top-icon  left-2/4 -translate-x-1/2;
 }

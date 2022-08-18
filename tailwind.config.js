@@ -7,6 +7,8 @@ module.exports = {
     extend: {
       spacing: {
         you: '52%',
+        icon: '20%',
+        iconBG: '30%',
       },
       boxShadow: {
         you: '0px 1px 2px rgba(1, 66, 82, 0.3), 0px 1px 3px 1px rgba(1, 66, 82, 0.15)',
@@ -22,6 +24,7 @@ module.exports = {
         6.5: '26px',
         13: '52px',
         15: '60px',
+        54: '218px',
       },
       margin: {
         6.5: '26px',
@@ -30,6 +33,9 @@ module.exports = {
       },
       fontFamily: {
         caveat: 'Caveat,sans-serif',
+      },
+      fontSize: {
+        34: ['34px', '46.3px'],
       },
       width: {
         50: '200px',
@@ -50,11 +56,12 @@ module.exports = {
       mainLight: '#CFEDF3',
       orangeContrast: '#FFCEB2',
       error: '#E74A3B',
-      mainSecond: 'EF7229',
-      mainSecondLight: 'FF9B62',
-      orangeDark: '4D2107',
-      orangeDirty: 'F3AE86',
-      write: 'FFFFFF'
+      mainSecond: '#EF7229',
+      mainSecondLight: '#FF9B62',
+      orangeDark: '#4D2107',
+      orangeDirty: '#F3AE86',
+      write: '#FFFFFF',
+      iconBg: '#DCF2F6',
     },
     screens: {
       tablet: '320px',

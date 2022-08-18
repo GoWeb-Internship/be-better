@@ -18,6 +18,11 @@ module.exports = {
       lineHeight: {
         1.36: '1.36',
       },
+      padding: {
+        6.5: '26px',
+        13: '52px',
+        15: '60px',
+      },
       margin: {
         6.5: '26px',
         13: '52px',

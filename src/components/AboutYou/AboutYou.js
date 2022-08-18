@@ -20,7 +20,7 @@ const AboutYou = () => {
       }
     }
   `);
-  // const [data] = allMarkdownRemark.nodes;
+
   const data = allMarkdownRemark.nodes;
 
   return (
@@ -38,11 +38,6 @@ const AboutYou = () => {
           );
         }
       })}
-      {/* <h3 className={title}>{data.frontmatter.title}</h3>
-      <div
-        className={listContainer}
-        dangerouslySetInnerHTML={{ __html: data.html }}
-      /> */}
     </div>
   );
 };

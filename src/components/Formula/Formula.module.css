@@ -1,5 +1,5 @@
 .formulaContainer {
-  @apply text-center;
+  @apply text-center py-8 px-15;
 }
 
 .title {
@@ -7,9 +7,17 @@
 }
 
 .list {
-  @apply flex flex-col;
+  @apply flex flex-col desktop:flex-row justify-around;
+}
+
+.text {
+  @apply pb-12 pt-13;
 }
 
 .itemLi {
-  @apply h-36 w-50 m-auto shadow-you rounded-lg mb-22 px-6 text-black;
+  @apply w-50 m-auto shadow-you rounded-lg mb-2 px-6 text-black;
+}
+
+.iconArrow {
+  @apply mb-9 w-12 h-12 text-likeGrey last:hidden;
 }

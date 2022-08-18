@@ -176,7 +176,7 @@ const Form = ({
         />
         <Button
           type="submit"
-          className="h-12	w-full border border-main rounded-full"
+          className="h-12 	w-full border border-main rounded-full text-white text-lg font-semibold z-10"
         >
           {data.button}
         </Button>

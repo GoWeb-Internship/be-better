@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { useStaticQuery, graphql } from 'gatsby';
 import Footer from '../Footer';
 import Header from '../Header';
+import Arrow from '../ArrowSvg';
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -18,7 +19,6 @@ const Layout = ({ children }) => {
   return (
     <>
       <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
-
       <main className="container m-auto">{children}</main>
       <Footer />
     </>

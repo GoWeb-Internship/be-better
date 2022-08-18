@@ -5,16 +5,26 @@ import Form from '../Form';
 import Social from '../Social';
 import FooterNext from '../FooterNext';
 import { StaticImage } from 'gatsby-plugin-image';
+import {footerContainer} from './Footer.module.css';
 
 const Footer = () => {
   const { t } = useTranslation();
   const { links } = t('footer', { returnObjects: true });
 
   return (
-    <footer className='bg-bright'>
-      <Container>
-        <div className='flex justify-between'>
-        <div>
+    <footer className={footerContainer}>
+     
+      {/* <Container className="m-0 p-0 w-full flex relative"> */}
+        <div className='flex justify-between m-0 p-0 w-full relative'>
+       
+      <StaticImage
+      alt=''
+      src='../../images/bg-min.png'
+      width={1100}
+      height={420}
+      className="absolute m-0 -z-10"
+      />
+        <div className='pt-16 pl-12 pr-14'>
       <StaticImage
             src="../../images/logo.png"
             width={90}
@@ -34,18 +44,19 @@ const Footer = () => {
           <FooterNext/>
        
        
-        <Form clickFrom="footer" />
-        <Social />
+        <Form clickFrom="footer" className="pt-16"/>
+        <Social className="z-3 pt-16"/>
 
           </div>
-        <ul className="flex justify-center mr-4">
+        <ul className="flex text-left pl-44 ml-10 mr-4 z-10">
           {links.map(({ name, id }) => (
-            <li key={id} className="last: ml-10">
-              <Link className='pr-7 text-black font-normal text-sm mr-10 ml-10 pr-15 px-0' to={`/${id}`}>{name}</Link>
+            <li key={id} className="last: ml-5 z-10">
+              <Link className='pr-7 text-black font-normal text-sm  px-0' to={`/${id}`}>{name}</Link>
             </li>
           ))}
         </ul>
-      </Container>
+        
+      {/* </Container> */}
     </footer>
   );
 };

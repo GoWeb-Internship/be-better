@@ -2,7 +2,6 @@ import * as React from 'react';
 import 'react-phone-input-2/lib/style.css';
 import { graphql } from 'gatsby';
 import Layout from '../components/Layout';
-import Form from '../components/Form';
 import Price from '../components/Price';
 import Formula from '../components/Formula';
 import Guarantee from '../components/Guarantee';
@@ -10,14 +9,14 @@ import ClientHistory from '../components/ClientHistory';
 import Video from '../components/Video';
 import Container from '../components/Container';
 import AboutMe from '../components/AboutMe';
-
+import Hero from '../components/Hero';
 
 const IndexPage = () => {
   return (
     <Layout id="home">
+      <Hero />
       {/* <main> */}
       <Container>
-        <Form clickFrom="hero" />
         <AboutMe />
         <ClientHistory />
         <Formula />

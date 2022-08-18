@@ -28,6 +28,8 @@ module.exports = {
       },
       width: {
         50: '200px',
+        70: '280px',
+        81: '324px',
         524: '524px',
       },
     },
@@ -47,9 +49,10 @@ module.exports = {
       error: '#E74A3B',
       mainSecond: 'EF7229',
       mainSecondLight: 'FF9B62',
-      orangeDark: '4D2107',
+      orangeDark: '#4D2107',
       orangeDirty: 'F3AE86',
-      write: 'FFFFFF'
+      write: 'FFFFFF',
+      buttonMobile: '#01BBD4',
     },
     screens: {
       tablet: '320px',

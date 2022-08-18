@@ -11,6 +11,7 @@ import Video from '../components/Video';
 import Container from '../components/Container';
 import AboutMe from '../components/AboutMe';
 
+
 const IndexPage = () => {
   return (
     <Layout id="home">

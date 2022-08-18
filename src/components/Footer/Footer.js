@@ -15,7 +15,7 @@ const Footer = () => {
     <footer className={footerContainer}>
      
       {/* <Container className="m-0 p-0 w-full flex relative"> */}
-        <div className='justify-between m-0 p-0 w-full relative'>
+        <div className='justify-between m-0 p-0 w-full '>
        
       <StaticImage
       alt=''
@@ -24,7 +24,7 @@ const Footer = () => {
       height={420}
       className="absolute m-0 -z-10"
       />
-      <div className='flex'>
+      <div className='flex relative'>
         <div className='pt-16 pl-12 pr-14'>
       <StaticImage
             src="../../images/logo.png"

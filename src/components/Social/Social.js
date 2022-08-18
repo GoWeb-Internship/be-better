@@ -8,7 +8,7 @@ import {social} from './Social.module.css';
 
 const Social = () => {
   return (
-    <div className='pt-16 mr-14'>
+    <div className='pt-4 mr-14'>
     <div>
       <a
         href='https://instagram.com/yuliya_shayenko?igshid=YmMyMTA2M2Y='

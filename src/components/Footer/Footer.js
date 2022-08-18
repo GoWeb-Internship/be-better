@@ -24,7 +24,7 @@ const Footer = () => {
       height={420}
       className="absolute -z-10"
       />
-      <div className='flex relative'>
+      <div className='flex'>
         <div className='pt-16 pl-12 pr-14'>
       <StaticImage
             src="../../images/logo.png"
@@ -45,7 +45,7 @@ const Footer = () => {
           <FooterNext className="absolute"/>
        
        
-        <Form clickFrom="footer" className="mt-20 absolute"/>
+        <Form clickFrom="footer" className="-mb-4"/>
         <Social className="z-3 pt-16 absolute"/>
         </div>
           </div>

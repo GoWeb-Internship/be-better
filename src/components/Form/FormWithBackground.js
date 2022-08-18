@@ -7,9 +7,9 @@ const FormWithBackground = () => {
     <div className="relative h-[568px]">
       <StaticImage
         src="../../images/background/formMobile.png"
-        className="absolute w-full top-0 left-0 -z-10"
+        className="absolute w-full top-0 left-0 z-0"
       />
-      <p className="mb-[176px] px-8 pt-[60px] font-caveat text-orangeDark text-2xl">
+      <p className="relative mb-[176px] px-8 pt-[60px] font-caveat text-orangeDark text-2xl z-10">
         Если ты эмоционально выгорел и живешь без удовольствия
       </p>
       <Form clickFrom="hero" />

@@ -32,15 +32,15 @@ collections:
     editor:
       preview: true
     fields:
-      - { label: 'Name Ua', name: 'name-uk', widget: 'string' }
-      - { label: 'Position Ua', name: 'uk-position', widget: 'string' }
-      - { label: 'Text Ua', name: 'uk-text', widget: 'string' }
-      - { label: 'Name En', name: 'name-en', widget: 'string' }
-      - { label: 'Position En', name: 'en-position', widget: 'string' }
-      - { label: 'Text En', name: 'en-text', widget: 'string' }
-      - { label: 'Name Ru', name: 'name-ru', widget: 'string' }
-      - { label: 'Position Ru', name: 'ru-position', widget: 'string' }
-      - { label: 'Text Ru', name: 'ru-text', widget: 'string' }
+      - { label: 'Name Ua', name: 'ukName', widget: 'string' }
+      - { label: 'Position Ua', name: 'ukPosition', widget: 'string' }
+      - { label: 'Text Ua', name: 'ukText', widget: 'string' }
+      - { label: 'Name En', name: 'enName', widget: 'string' }
+      - { label: 'Position En', name: 'enPosition', widget: 'string' }
+      - { label: 'Text En', name: 'enText', widget: 'string' }
+      - { label: 'Name Ru', name: 'ruName', widget: 'string' }
+      - { label: 'Position Ru', name: 'ruPosition', widget: 'string' }
+      - { label: 'Text Ru', name: 'ruText', widget: 'string' }
       - { label: 'Language', name: 'language', widget: 'hidden', default: 'uk' }
 
   # - name: 'aboutMe'

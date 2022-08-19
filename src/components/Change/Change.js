@@ -64,11 +64,19 @@ const Change = () => {
 <h3 className={changeTitle}>{node.frontmatter.title}</h3>
 <div className='flex '>
           <div className='flex justify-between'>
-          <StaticImage
+          {/* <StaticImage
+          layout="fullWidth"
           src="../../images/arrow-min.png"
           alt=""
           style={{ position: 'absolute' }}
           className="top-0 mt-48 pt-16  ml-10 mr-20 "
+        /> */}
+         <StaticImage
+          layout="fullWidth"
+          src="../../images/arrow-min.png"
+          alt=""
+          style={{ position: 'absolute' }}
+          className="-z-10  w-px h-3/4 top-0 mt-48 pt-16  ml-10 mr-20 "
         />
         <div>
         <div>
@@ -104,11 +112,20 @@ const Change = () => {
           </div> 
           <div>
           <StaticImage
+          layout="fullWidth"
           src="../../images/julia-min.png"
-          className='w-120 h-177  mr-4  ml-20'
+          alt=""
+          style={{ position: 'absolute' }}
+          className="-z-10 mt-20 ml-20 top-0 w-1/3 h-11/12 "
+        />
+          {/* <StaticImage
+          
+          src="../../images/julia-min.png"
+          className='w-120 h-177  mr-4 -z-10 ml-20'
           style={{ position: 'absolute' }}
           alt=""
-        />
+          layout="fullWidth"
+        /> */}
         </div>
         </div>
         </div>       

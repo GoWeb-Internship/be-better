@@ -6,12 +6,12 @@ import Price from '../components/Price';
 import Formula from '../components/Formula';
 import Guarantee from '../components/Guarantee';
 import ClientHistory from '../components/ClientHistory';
-// import Video from '../components/Video';
 import Container from '../components/Container';
 import AboutMe from '../components/AboutMe';
 import Facts from '../components/Facts';
 import Hero from '../components/Hero';
 // import FormWithBackground from '../components/Form/FormWithBackground';
+import FormWithVideoBg from '../components/Form/FormWithVideoBg';
 import BeBetter from '../components/BeBetter';
 import Change from '../components/Change';
 
@@ -25,11 +25,9 @@ const IndexPage = () => {
         <Facts />
         <ClientHistory />
         <Formula />
-        {/* <FormWithBackground clickFrom="main" /> */}
+        <FormWithVideoBg clickFrom="main" />
         <Price />
         <Guarantee />
-        {/* <Video /> */}
-
         <Change />
         <BeBetter />
       </Container>

@@ -11,7 +11,7 @@ import Form from '../Form';
 
 const Hero = () => {
   const { t } = useTranslation();
-  const data = t('form', { returnObjects: true });
+  // const data = t('form', { returnObjects: true });
 
   return (
     <section>

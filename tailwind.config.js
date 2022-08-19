@@ -8,8 +8,11 @@ module.exports = {
       spacing: {
         44: '44%',
         9: '9%',
+        '10%': '10%',
+        '12%': '12%',
         icon: '20%',
-        iconBG: '30%',
+        iconPercentTr: '30%',
+        iconPercentTrF: '45%',
       },
       boxShadow: {
         you: '0px 1px 2px rgba(1, 66, 82, 0.3), 0px 1px 3px 1px rgba(1, 66, 82, 0.15)',
@@ -23,6 +26,7 @@ module.exports = {
         1.36: '1.36',
       },
       padding: {
+        4.5: '18px',
         6.5: '26px',
         13: '52px',
         15: '60px',
@@ -130,6 +134,23 @@ module.exports = {
           fontSize: 24,
           lineHeight: 1.36,
           letterSpacing: 0.25,
+        },
+        '.stair-icons': {
+          width: '32px',
+          height: '32px',
+          margin: 'auto',
+        },
+        '.stair-iconsBg': {
+          width: '66px',
+          height: '66px',
+          margin: 'auto',
+          position: 'absolute',
+        },
+        '.stair-container-svg': {
+          width: '66px',
+          height: '66px',
+          margin: 'auto',
+          position: 'absolute',
         },
       });
     }),

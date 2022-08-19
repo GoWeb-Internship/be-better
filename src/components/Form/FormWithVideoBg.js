@@ -4,7 +4,6 @@ import { TiSocialFacebook } from 'react-icons/ti';
 import { TbBrandInstagram } from 'react-icons/tb';
 import { TiSocialLinkedin } from 'react-icons/ti';
 import Video from '../Video';
-// import { StaticImage } from 'gatsby-plugin-image';
 
 const FormWithVideoBg = ({ clickFrom }) => {
   return (
@@ -22,7 +21,7 @@ const FormWithVideoBg = ({ clickFrom }) => {
             <br /> без удовольствия
           </p>
           <Form
-            clickFrom="hero"
+            clickFrom={clickFrom}
             formClassname="desktop:!m-0 desktop:!mr-auto desktop:!mb-6"
           />
           <p className="w-[426px] font-caveat text-black text-lg leading-[23px] text-left">

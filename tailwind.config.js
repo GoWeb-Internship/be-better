@@ -12,6 +12,7 @@ module.exports = {
       },
       boxShadow: {
         you: '0px 1px 2px rgba(1, 66, 82, 0.3), 0px 1px 3px 1px rgba(1, 66, 82, 0.15)',
+        formInput: 'inset 0px -1px 3px 1px rgba(0, 0, 0, 0.15)',
       },
       translate: {
         yS: '15%',
@@ -36,7 +37,10 @@ module.exports = {
         caveat: 'Caveat,sans-serif',
       },
       fontSize: {
+        28: ['28px', '48px'],
+        32: ['32px', '48px'],
         34: ['34px', '46.3px'],
+        59: ['59px', '80px'],
       },
       width: {
         50: '200px',

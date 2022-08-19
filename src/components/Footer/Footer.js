@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link, useTranslation } from 'gatsby-plugin-react-i18next';
-import Container from '../Container';
+// import Container from '../Container';
 import Form from '../Form';
 import Social from '../Social';
 import FooterNext from '../FooterNext';
@@ -15,14 +15,6 @@ const Footer = () => {
     <footer className={footerContainer}>
       {/* <Container className="m-0 p-0 w-full flex relative"> */}
       <div className={container}>
-        {/* <StaticImage
-      alt=''
-      formats={['auto', 'webp', 'avif']}
-      src='../../images/bg-min.png'
-      width={1031}
-      height={420}
-      className="absolute -z-10"
-      /> */}
         <StaticImage
           layout="fullWidth"
           src="../../images/background/bg-min.png"
@@ -64,7 +56,6 @@ const Footer = () => {
           </ul>
         </div>
       </div>
-
       {/* </Container> */}
     </footer>
   );

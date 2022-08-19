@@ -11,6 +11,7 @@ import Container from '../components/Container';
 import AboutMe from '../components/AboutMe';
 import Hero from '../components/Hero';
 import BeBetter from '../components/BeBetter'
+import Change from '../components/Change';
 
 const IndexPage = () => {
   return (
@@ -24,6 +25,7 @@ const IndexPage = () => {
         <Price />
         <Guarantee />
         {/* <Video /> */}
+        <Change/>
         <BeBetter/>
       </Container>
       {/* </main> */}

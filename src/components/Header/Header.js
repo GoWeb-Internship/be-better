@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import Navigation from '../Navigation';
 
 const Header = ({ siteTitle }) => (
-  <header className="m-auto">
+  <header className="m-auto ">
     <Navigation />
   </header>
 );

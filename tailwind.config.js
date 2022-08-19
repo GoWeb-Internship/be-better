@@ -6,7 +6,7 @@ module.exports = {
   theme: {
     extend: {
       spacing: {
-        you: '52%',
+        you: '44%',
         icon: '20%',
         iconBG: '30%',
       },
@@ -24,6 +24,7 @@ module.exports = {
         6.5: '26px',
         13: '52px',
         15: '60px',
+        46: '188px',
         54: '218px',
       },
       margin: {
@@ -42,6 +43,7 @@ module.exports = {
         70: '280px',
         81: '324px',
         524: '524px',
+        large: '1440px',
       },
     },
     colors: {

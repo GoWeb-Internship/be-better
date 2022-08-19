@@ -31,7 +31,7 @@ const AboutMe = () => {
   const data = allMarkdownRemark.nodes;
 
   return (
-    <section className={sectionContainer}>
+    <section className={sectionContainer} id="nav-about">
       <div className="flex">
         <div>
           <StaticImage
@@ -39,6 +39,7 @@ const AboutMe = () => {
             alt="author"
             width={456}
             height={480}
+            className="rounded-2xl  "
             placeholder="blurred"
             formats={['auto', 'webp']}
           />
@@ -47,15 +48,14 @@ const AboutMe = () => {
           {data.map(node => {
             if (node.frontmatter.language === i18n.language) {
               return (
-                <>
+                <div key={node.frontmatter.language}>
                   <h3 className={title}>{node.frontmatter.title}</h3>
                   <AboutYou />
                   <div
-                    key={node.frontmatter.language}
                     className={text}
                     dangerouslySetInnerHTML={{ __html: node.html }}
                   />
-                </>
+                </div>
               );
             }
           })}
@@ -68,6 +68,7 @@ const AboutMe = () => {
         width={265}
         height={80}
         layout="fixed"
+        alt=""
       />
     </section>
   );

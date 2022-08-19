@@ -5,7 +5,10 @@ import { StaticImage } from 'gatsby-plugin-image';
 const Pk = () => {
   return (
     <div>
-      <StaticImage className="bg-scroll h-52 bg-center z-0 top-0 left-0 absolute " />
+      <StaticImage
+        className="bg-scroll h-52 bg-center z-0 top-0 left-0 absolute "
+        alt=""
+      />
 
       <div className=" relative h-52 w-full overflow-hidden">
         <div className="table box-border absolute visible z-2 top-4 left-12">

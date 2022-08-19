@@ -45,16 +45,33 @@ const Change = () => {
               return (
                 <>
    
-        <div className='flex  mb-24 mt-24'>
+        <div className='relative mb-24 mt-24'>
+
+        <StaticImage
+          layout="fullWidth"
+          src="../../images/background/fon-min.png"
+          alt=""
+          style={{ position: 'absolute' }}
+          className="w-3/4 -z-10 top-0 ml-80 mb-16 pr-0 max-w-5xl"
+        />
+        <StaticImage
+          layout="fullWidth"
+          src="../../images/background/fontwo-min.png"
+          alt=""
+          style={{ position: 'absolute' }}
+          className="-z-20 top-0 w-full h-full mt-20  max-w-full"
+        />
+<h3 className={changeTitle}>{node.frontmatter.title}</h3>
+<div className='flex'>
           <div className='flex justify-between'>
           <StaticImage
           src="../../images/arrow-min.png"
           alt=""
           style=''
-          className="top-0 h-full mr-28 "
+          className="top-0 h-full ml-10  mr-10 "
         />
         <div>
-        <h3 className={changeTitle}>{node.frontmatter.title}</h3>
+        <div>
           <div
             key={node.frontmatter.language}
             className={text}
@@ -62,12 +79,12 @@ const Change = () => {
           />
           <Button
                   type="button"
-                  className="!bg-mainSecond border ml-10 px-16 py-2 rounded-3xl"
+                  className="!bg-mainSecond border !ml-0 !mt-5 px-16 py-2 rounded-3xl"
                   doAction={() => showModal()}
                 >
                   {buttonTranslate.button}
                 </Button>
-          
+                </div>
         </div>  
         {modal && (
         <ModalWindow className={modalform} handleClose={hideModal}>
@@ -93,7 +110,7 @@ const Change = () => {
         />
         </div>
         </div>
-          
+        </div>       
                 </>
               );
             }

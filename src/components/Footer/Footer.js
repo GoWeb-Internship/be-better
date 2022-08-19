@@ -14,17 +14,7 @@ const Footer = () => {
   return (
     <footer className={footerContainer}>
      
-      {/* <Container className="m-0 p-0 w-full flex relative"> */}
         <div className={container}>
-       
-        {/* <StaticImage
-      alt=''
-      formats={['auto', 'webp', 'avif']}
-      src='../../images/bg-min.png'
-      width={1031}
-      height={420}
-      className="absolute -z-10"
-      /> */}
       <StaticImage
           layout="fullWidth"
           src="../../images/background/bg-min.png"

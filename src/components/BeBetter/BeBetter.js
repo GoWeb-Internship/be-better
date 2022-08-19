@@ -29,7 +29,7 @@ const BeBetter = () => {
             if (node.frontmatter.language === i18n.language) {
               return (
                 <>
-                  <h3 className='font-semibold text-3xl text-buttonMobile pb-8 pb-8'>{node.frontmatter.title}</h3>
+                  <h3 className='text-left font-semibold text-3xl  text-buttonMobile pb-8'>{node.frontmatter.title}</h3>
                   <div
                     key={node.frontmatter.language}
                     className={text}

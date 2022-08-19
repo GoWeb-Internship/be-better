@@ -1,14 +1,13 @@
 import React from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
-import { title, container, listContainer } from './AboutYou.module.css';
 import { useTranslation } from 'gatsby-plugin-react-i18next';
-
-const AboutYou = () => {
+import { title, listContainer, wayContainer } from './Way.module.css';
+const Way = () => {
   const { i18n } = useTranslation();
 
   const { allMarkdownRemark } = useStaticQuery(graphql`
     query {
-      allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/aboutYou/" } }) {
+      allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/route/" } }) {
         nodes {
           html
           frontmatter {
@@ -20,11 +19,9 @@ const AboutYou = () => {
       }
     }
   `);
-
   const data = allMarkdownRemark.nodes;
-
   return (
-    <div className={container}>
+    <div className={wayContainer}>
       {data.map(node => {
         if (node.frontmatter.language === i18n.language) {
           return (
@@ -41,5 +38,4 @@ const AboutYou = () => {
     </div>
   );
 };
-
-export default AboutYou;
+export default Way;

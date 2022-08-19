@@ -111,5 +111,15 @@ module.exports = {
         },
       },
     },
+    // {
+    //   resolve: 'gatsby-plugin-breakpoints',
+    //   options: {
+    //     queries: {
+    //       mobile: '(max-width: 767px)',
+    //       tablet: '(max-width: 1279px)',
+    //       desktop: '(min-width: 1280px)',
+    //     },
+    //   },
+    // },
   ],
 };

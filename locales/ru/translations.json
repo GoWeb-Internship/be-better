@@ -20,6 +20,41 @@
       { "name": "Начать делать!", "svg": "toDo" }
     ]
   },
+  "facts": {
+    "title": "Факты обо мне",
+    "list": [
+      {
+        "textPrimary": "15 лет",
+        "textSecondary": "в международном бизнесе",
+        "svg": "bag"
+      },
+      {
+        "textPrimary": "30+",
+        "textSecondary": "довольных клиентов",
+        "svg": "ok"
+      },
+      {
+        "textPrimary": "7 лет",
+        "textSecondary": " в продажах и развитии стартапов",
+        "svg": "scale"
+      },
+      {
+        "textPrimary": "6 лет",
+        "textSecondary": "работы с управленцами бизнесов",
+        "svg": "house"
+      },
+      {
+        "textPrimary": "с 2021",
+        "textSecondary": "Лайф-коуч ICF",
+        "svg": "icf"
+      },
+      {
+        "textPrimary": "15 лет",
+        "textSecondary": "500+ часов практики",
+        "svg": "clock"
+      }
+    ]
+  },
   "footer": {
     "links": [
       {

@@ -1,5 +1,4 @@
 import React from 'react';
-import { graphql, useStaticQuery } from 'gatsby';
 import { useTranslation } from 'gatsby-plugin-react-i18next';
 import {
   formulaContainer,
@@ -9,29 +8,16 @@ import {
   iconArrow,
   text,
   icon,
+  iconPosition,
 } from './Formula.module.css';
 import Section from '../reusableComponents/Section';
 import { StaticImage } from 'gatsby-plugin-image';
-import BackgroundImg from '../reusableComponents/BackgroundImg';
 import { IoIosArrowRoundDown } from 'react-icons/io';
 import icons from '../../images/formulaIcons.svg';
 
 const Formula = () => {
   const { t } = useTranslation();
   const data = t('formula', { returnObjects: true });
-
-  const image = useStaticQuery(graphql`
-    query {
-      file(name: { eq: "backgroundBlu" }) {
-        id
-        publicURL
-        childImageSharp {
-          gatsbyImageData
-          id
-        }
-      }
-    }
-  `);
 
   return (
     <Section className={formulaContainer}>
@@ -51,7 +37,7 @@ const Formula = () => {
             className="flex flex-col items-center w-full  desktop:flex-row"
           >
             <div className={itemLi}>
-              <div className="w-14 h-14 bg-white rounded-lg absolute shadow-you -top-icon left-2/4 -translate-x-1/2">
+              <div className={iconPosition}>
                 <svg className={icon}>
                   <use href={`${icons}#icon-${svg}`} />
                 </svg>

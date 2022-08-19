@@ -6,11 +6,11 @@
 }
 
 .textContainer {
-  @apply w-3/5 text-left ml-20;
+  @apply w-524 text-left ml-20;
 }
 
 .text {
-  @apply w-524 text-sm text-black;
+  @apply text-sm text-black;
 }
 
 .text span {

@@ -1,8 +1,8 @@
     .form {
-        @apply relative w-70 m-auto desktop:w-81 z-10;
+        @apply relative w-70 m-auto z-10 desktop:w-81;
     }
     .input {
-        @apply w-full mb-3 pl-8 h-11 border border-main rounded-full shadow-inner outline-none text-main;
+        @apply w-full mb-3 pl-8 h-11 border border-main rounded-full outline-none text-main desktop:border-transparent desktop:shadow-formInput;
     }
     .label {
         @apply absolute left-8 top-3 text-sm text-main desktop:text-likeGrey hover:text-main transition-transform;
@@ -12,7 +12,7 @@
     }
 
     .phoneinput {
-        @apply !pl-[72px] !h-11 text-main !border-buttonMobile desktop:!border-hidden !w-full !rounded-full shadow-inner;
+        @apply !pl-[72px] !h-11 text-main !border-buttonMobile desktop:!border-hidden !w-full !rounded-full desktop:shadow-formInput desktop:text-likeGrey;
     }
     .phonedropdown {
         @apply left-0 top-0 !m-0 !pl-8 !w-70 desktop:!w-81 text-left !rounded-2xl snap-start;

@@ -6,12 +6,14 @@ module.exports = {
   theme: {
     extend: {
       spacing: {
-        you: '52%',
+        44: '44%',
+        9: '9%',
         icon: '20%',
         iconBG: '30%',
       },
       boxShadow: {
         you: '0px 1px 2px rgba(1, 66, 82, 0.3), 0px 1px 3px 1px rgba(1, 66, 82, 0.15)',
+        formInput: 'inset 0px -1px 3px 1px rgba(0, 0, 0, 0.15)',
       },
       translate: {
         yS: '15%',
@@ -24,24 +26,31 @@ module.exports = {
         6.5: '26px',
         13: '52px',
         15: '60px',
+        46: '188px',
         54: '218px',
       },
       margin: {
         6.5: '26px',
         13: '52px',
         22: '92px',
+        50: '200px',
       },
       fontFamily: {
         caveat: 'Caveat,sans-serif',
       },
       fontSize: {
+        28: ['28px', '48px'],
+        32: ['32px', '48px'],
         34: ['34px', '46.3px'],
+        59: ['59px', '80px'],
       },
       width: {
         50: '200px',
         70: '280px',
         81: '324px',
         524: '524px',
+        630: '630px',
+        648: '648px',
       },
     },
     colors: {
@@ -56,7 +65,7 @@ module.exports = {
       backgroundSecond: '#FFF8F4',
       bright: '#ADF0FE',
       mainLight: '#CFEDF3',
-      orangeContrast: '#FFCEB2',
+      orangeContrast: '#FBF1EB',
       error: '#E74A3B',
       mainSecond: '#EF7229',
       mainSecondLight: '#FF9B62',
@@ -97,6 +106,15 @@ module.exports = {
           fontSize: 20,
           fontWeight: 600,
           lineHeight: 1.32,
+          textAlign: 'center',
+          letterSpacing: 0.15,
+        },
+        '.title-secondary': {
+          color: theme('colors.orangeDark'),
+          fontSize: 20,
+          fontWeight: 500,
+          lineHeight: 1.32,
+          textAlign: 'center',
           letterSpacing: 0.15,
         },
         '.text-caveat': {

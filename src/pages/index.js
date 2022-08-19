@@ -9,7 +9,9 @@ import ClientHistory from '../components/ClientHistory';
 // import Video from '../components/Video';
 import Container from '../components/Container';
 import AboutMe from '../components/AboutMe';
+import Facts from '../components/Facts';
 import Hero from '../components/Hero';
+// import FormWithBackground from '../components/Form/FormWithBackground';
 import BeBetter from '../components/BeBetter';
 import Change from '../components/Change';
 
@@ -20,13 +22,16 @@ const IndexPage = () => {
       <Container>
         <Hero />
         <AboutMe />
+        <Facts />
         <ClientHistory />
         <Formula />
+        {/* <FormWithBackground clickFrom="main" /> */}
         <Price />
         <Guarantee />
         {/* <Video /> */}
-       <Change/>
-        <BeBetter/>
+
+        <Change />
+        <BeBetter />
       </Container>
       {/* </main> */}
       <script

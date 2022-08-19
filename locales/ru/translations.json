@@ -15,9 +15,23 @@
   "formula": {
     "title": "Моя формула очень проста и результативна",
     "list": [
-      { "name": "Понять чего ты хочешь", "svg": "idea" },
-      { "name": "Понять как это получить", "svg": "puzzle" },
-      { "name": "Начать делать!", "svg": "toDo" }
+      {
+        "firstWord": "Понять",
+        "colorWord": " чего",
+        "thirdWord": " ты хочешь",
+        "svg": "idea"
+      },
+      {
+        "firstWord": "Понять",
+        "colorWord": " как",
+        "thirdWord": " это получить",
+        "svg": "puzzle"
+      },
+      {
+        "firstWord": "Начать",
+        "colorWord": " делать!",
+        "svg": "toDo"
+      }
     ]
   },
   "facts": {

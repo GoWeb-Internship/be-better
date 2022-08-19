@@ -50,9 +50,19 @@
   "formula": {
     "title": "My formula is very simple and effective",
     "list": [
-      { "name": "Understand what you want", "svg": "idea" },
-      { "name": "Understand how to get it", "svg": "puzzle" },
-      { "name": "Start doing!", "svg": "toDo" }
+      {
+        "firstWord": "Understand",
+        "colorWord": " what",
+        "thirdWord": " you want",
+        "svg": "idea"
+      },
+      {
+        "firstWord": "Understand",
+        "colorWord": " how",
+        "thirdWord": " to get it",
+        "svg": "puzzle"
+      },
+      { "firstWord": "Start", "colorWord": " doing!", "svg": "toDo" }
     ]
   },
   "footer": {

@@ -1,30 +1,80 @@
 import React from 'react';
+import {
+  titleFacts,
+  iconFacts,
+  titleFormula,
+  listFacts,
+  listFormula,
+  iconFormula,
+  itemFacts,
+  itemFormula,
+  svgBgFacts,
+  svgBgFormula,
+  svgContainerFacts,
+  textContainer,
+  textPr,
+  svgContainerFormula,
+  iconArrow,
+  testSec,
+} from './List.module.css';
+import { IoIosArrowRoundDown } from 'react-icons/io';
 
-const List = ({ className = '', bgIcons = '', icons = '', data = {} }) => {
+const List = ({ icons = '', data = {}, formula = false }) => {
+  if (formula) {
+    return (
+      <div>
+        <h3 className={titleFormula}>{data.title}</h3>
+        {!!data.list.length && (
+          <ul className={listFormula}>
+            {data.list.map(({ svg, firstWord, colorWord, thirdWord }) => {
+              return (
+                <div
+                  key={icons}
+                  className="flex items-center flex-col desktop:flex-row"
+                >
+                  <li className={itemFormula}>
+                    <div className={svgContainerFormula}>
+                      <svg className={iconFormula}>
+                        <use href={`${icons}#icon-${svg}`} />
+                      </svg>
+                    </div>
+                    <div className={textContainer}>
+                      <p className={testSec}>
+                        {firstWord}
+                        <span className="text-main">{colorWord}</span>
+                        {thirdWord}
+                      </p>
+                    </div>
+                    <svg className={svgBgFormula}>
+                      <use href={`${icons}#icon-${svg}`} />
+                    </svg>
+                  </li>
+                  <IoIosArrowRoundDown className={iconArrow} />
+                </div>
+              );
+            })}
+          </ul>
+        )}
+      </div>
+    );
+  }
   return (
     <div>
-      <h3 className="title-secondary text-34 text-left mb-13 -m-4 ">
-        {data.title}
-      </h3>
+      <h3 className={titleFacts}>{data.title}</h3>
       {!!data.list.length && (
-        <ul className="flex flex-wrap w-648 ">
+        <ul className={`${listFacts}`}>
           {data.list.map(({ textPrimary, svg, textSecondary }) => {
             return (
-              <li
-                className={`relative mr-4 mb-13 ${className}`}
-                key={className}
-              >
-                <div className="w-14 h-14 bg-white rounded-lg absolute shadow-you -top-icon left-2/4 -translate-x-1/2 z-10">
-                  <svg className="h-8 w-8 fill-mainSecond m-auto mt-icon">
+              <li className={itemFacts} key={icons}>
+                <div className={svgContainerFacts}>
+                  <svg className={iconFacts}>
                     <use href={`${icons}#icon-${svg}`} />
                   </svg>
                 </div>
-                <div className=" w-50 h-36 bg-white rounded-lg shadow-you px-3 text-center flex flex-col justify-center ">
-                  <p className=" text-mainSecond font-bold text-xl tracking-wide z-10">
-                    {textPrimary}
-                  </p>
-                  <p className=" text-black text-sm z-10">{textSecondary}</p>
-                  <svg className="h-16 w-16 fill-orangeContrast ml-auto mb-iconBG absolute ">
+                <div className={textContainer}>
+                  <p className={textPr}>{textPrimary}</p>
+                  <p className={testSec}>{textSecondary}</p>
+                  <svg className={svgBgFacts}>
                     <use href={`${icons}#icon-${svg}`} />
                   </svg>
                 </div>

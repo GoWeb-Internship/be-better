@@ -1,8 +1,8 @@
 .changeTitle{
-    @apply font-semibold text-3xl text-orangeDark pt-5 text-start max-w-xl ml-11 ;
+    @apply font-semibold text-3xl  text-orangeDark pt-6 text-start max-w-xl ml-11 ;
 }
 .text{
-    @apply font-normal text-base text-start max-w-xl pt-14 mr-16 mt-12;
+    @apply font-normal text-base text-start max-w-xl pt-14 ml-20 pl-10 mr-10 mt-12;
 }
 .text span{
     @apply  text-change text-start  pt-16  w-80;

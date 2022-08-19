@@ -10,7 +10,7 @@ import ClientHistory from '../components/ClientHistory';
 import Video from '../components/Video';
 import Container from '../components/Container';
 import AboutMe from '../components/AboutMe';
-
+import Facts from '../components/Facts';
 
 const IndexPage = () => {
   return (
@@ -19,6 +19,7 @@ const IndexPage = () => {
       <Container>
         <Form clickFrom="hero" />
         <AboutMe />
+        <Facts />
         <ClientHistory />
         <Formula />
         <Price />

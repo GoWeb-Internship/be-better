@@ -12,6 +12,41 @@
     "accept": "I agree to the processing of my personal data",
     "button": "Take the first step"
   },
+  "facts": {
+    "title": "Facts about me",
+    "list": [
+      {
+        "textPrimary": "15 years",
+        "textSecondary": "in international business",
+        "svg": "bag"
+      },
+      {
+        "textPrimary": "30+",
+        "textSecondary": "satisfied customers",
+        "svg": "ok"
+      },
+      {
+        "textPrimary": "7 years",
+        "textSecondary": "in the development of startups and sales",
+        "svg": "scale"
+      },
+      {
+        "textPrimary": "6 years",
+        "textSecondary": "of work with business managers",
+        "svg": "house"
+      },
+      {
+        "textPrimary": "since 2021",
+        "textSecondary": "ICF life coach since 2021",
+        "svg": "icf"
+      },
+      {
+        "textPrimary": "15 years",
+        "textSecondary": "500+ hours of practice",
+        "svg": "clock"
+      }
+    ]
+  },
   "formula": {
     "title": "My formula is very simple and effective",
     "list": [

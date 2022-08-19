@@ -47,15 +47,14 @@ const AboutMe = () => {
           {data.map(node => {
             if (node.frontmatter.language === i18n.language) {
               return (
-                <>
+                <div key={node.frontmatter.language}>
                   <h3 className={title}>{node.frontmatter.title}</h3>
                   <AboutYou />
                   <div
-                    key={node.frontmatter.language}
                     className={text}
                     dangerouslySetInnerHTML={{ __html: node.html }}
                   />
-                </>
+                </div>
               );
             }
           })}
@@ -68,6 +67,7 @@ const AboutMe = () => {
         width={265}
         height={80}
         layout="fixed"
+        alt=""
       />
     </section>
   );

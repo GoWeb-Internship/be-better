@@ -28,13 +28,13 @@ const AboutYou = () => {
       {data.map(node => {
         if (node.frontmatter.language === i18n.language) {
           return (
-            <>
+            <div key={node.frontmatter.language}>
               <h3 className={title}>{node.frontmatter.title}</h3>
               <div
                 className={listContainer}
                 dangerouslySetInnerHTML={{ __html: node.html }}
               />
-            </>
+            </div>
           );
         }
       })}

@@ -3,7 +3,7 @@
 }
 
 .title {
-  @apply title-primary mb-20 text-34;
+  @apply title-primary mb-20 desktop:text-34;
 }
 
 .list {

@@ -32,7 +32,7 @@
 }
 
 .iconArrow {
-  @apply mt-2 w-20 h-20 text-likeGrey desktop:-rotate-90;
+  @apply mt-2  text-likeGrey desktop:-rotate-90;
 }
 
 .titleFormula {

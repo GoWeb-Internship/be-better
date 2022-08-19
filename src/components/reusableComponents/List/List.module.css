@@ -1,0 +1,57 @@
+.titleFacts {
+  @apply title-secondary text-34 text-left mb-13 -m-4;
+}
+.listFacts {
+  @apply flex flex-wrap w-648;
+}
+
+.itemFacts {
+  @apply relative mr-4 mb-13;
+}
+
+.svgContainerFacts {
+  @apply w-14 h-14 bg-white rounded-lg absolute shadow-you -top-icon left-2/4 -translate-x-1/2 z-10;
+}
+
+.iconFacts {
+  @apply stair-icons fill-mainSecond mt-icon;
+}
+
+.textContainer {
+  @apply w-50 h-36 bg-white rounded-lg shadow-you px-5 text-center flex flex-col justify-center;
+}
+
+.textPr {
+  @apply text-mainSecond font-bold text-xl tracking-wide z-10;
+}
+.testSec {
+  @apply text-black text-sm z-10;
+}
+.svgBgFacts {
+  @apply stair-iconsBg fill-orangeContrast  mb-iconPercentTr;
+}
+
+.iconArrow {
+  @apply mt-2 w-20 h-20 text-likeGrey desktop:-rotate-90;
+}
+
+.titleFormula {
+  @apply title-primary mb-20 desktop:text-34;
+}
+.listFormula {
+  @apply flex flex-col desktop:flex-row justify-center;
+}
+.itemFormula {
+  @apply relative flex flex-col items-center desktop:flex-row;
+}
+
+.iconFormula {
+  @apply stair-icons fill-main mt-icon;
+}
+.svgBgFormula {
+  @apply stair-iconsBg fill-iconBg   ml-iconPercentTrF;
+}
+
+.svgContainerFormula {
+  @apply w-14 h-14 bg-white rounded-lg absolute shadow-you -top-icon left-2/4 -translate-x-1/2 z-10;
+}

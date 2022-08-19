@@ -50,9 +50,19 @@
   "formula": {
     "title": "Моя формула дуже проста та результативна",
     "list": [
-      { "name": "Зрозуміти, чого ти хочеш", "svg": "idea" },
-      { "name": "Зрозуміти, як це отримати", "svg": "puzzle" },
-      { "name": "Почати робити!", "svg": "toDo" }
+      {
+        "firstWord": "Зрозуміти,",
+        "colorWord": " чого",
+        "thirdWord": " ти хочеш",
+        "svg": "idea"
+      },
+      {
+        "firstWord": "Зрозуміти,",
+        "colorWord": " як",
+        "thirdWord": " це отримати",
+        "svg": "puzzle"
+      },
+      { "firstWord": "Почати", "colorWord": " робити!", "svg": "toDo" }
     ]
   },
   "footer": {

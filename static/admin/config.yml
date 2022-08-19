@@ -7,6 +7,7 @@ media_folder: 'static/image'
 public_folder: '/image'
 
 collections:
+  # Price
   - name: 'price'
     label: 'Price'
     folder: 'content/price'
@@ -21,99 +22,109 @@ collections:
       - { label: 'Economy', name: 'economy', widget: 'string', required: false }
       - { label: 'Month', name: 'month', widget: 'string' }
       - { label: 'Hour', name: 'hour', widget: 'string' }
-  - name: 'aboutMe'
-    label: 'About me'
-    folder: 'content/aboutMe'
-    create: false
-    delete: false
-    slug: '{{slug}}'
+  #history clients
+  - name: 'history'
+    label: 'History'
+    folder: 'content/clientHistory'
+    create: true
+    delete: true
+    slug: '{{name-en}}-{{en-position}}'
     editor:
       preview: true
     fields:
-      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Name Ua', name: 'name-uk', widget: 'string' }
+      - { label: 'Position Ua', name: 'uk-position', widget: 'string' }
+      - { label: 'Text Ua', name: 'uk-text', widget: 'string' }
+      - { label: 'Name En', name: 'name-en', widget: 'string' }
+      - { label: 'Position En', name: 'en-position', widget: 'string' }
+      - { label: 'Text En', name: 'en-text', widget: 'string' }
+      - { label: 'Name Ru', name: 'name-ru', widget: 'string' }
+      - { label: 'Position Ru', name: 'ru-position', widget: 'string' }
+      - { label: 'Text Ru', name: 'ru-text', widget: 'string' }
       - { label: 'Language', name: 'language', widget: 'hidden', default: 'uk' }
-      - { label: 'Body', name: 'body', widget: 'markdown' }
-  - name: 'aboutYou'
-    label: 'About you'
-    folder: 'content/aboutYou'
-    create: false
-    delete: false
-    slug: '{{slug}}'
-    editor:
-      preview: true
-    fields:
-      - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: 'Language', name: 'language', widget: 'hidden', default: 'uk' }
-      - { label: 'Body', name: 'body', widget: 'markdown' }
-  - name: 'route'
-    label: 'Route'
-    folder: 'content/route'
-    create: false
-    delete: false
-    slug: '{{slug}}'
-    editor:
-      preview: true
-    fields:
-      - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: 'Language', name: 'language', widget: 'hidden', default: 'uk' }
-      - { label: 'Body', name: 'body', widget: 'markdown' }
-  - name: 'guarantee'
-    label: 'Guarantee'
-    folder: 'content/guarantee'
-    create: false
-    delete: false
-    slug: '{{slug}}'
-    editor:
-      preview: true
-    fields:
-      - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: 'Language', name: 'language', widget: 'hidden', default: 'uk' }
-      - { label: 'Body', name: 'body', widget: 'markdown' }
-  - name: 'wyCouchBetter'
-    label: 'Wy Couch Better'
-    folder: 'content/wyCouchBetter'
-    create: false
-    delete: false
-    slug: '{{slug}}'
-    editor:
-      preview: true
-    fields:
-      - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: 'Language', name: 'language', widget: 'hidden', default: 'uk' }
-      - { label: 'Body', name: 'body', widget: 'markdown' }
-  - name: 'experience'
-    label: 'Experience'
-    folder: 'content/experience'
-    create: false
-    delete: false
-    slug: '{{slug}}'
-    editor:
-      preview: true
-    fields:
-      - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: 'Language', name: 'language', widget: 'hidden', default: 'uk' }
-      - { label: 'Body', name: 'body', widget: 'markdown' }
-  - name: 'beBetter'
-    label: 'Be Better'
-    folder: 'content/beBetter'
-    create: false
-    delete: false
-    slug: '{{slug}}'
-    editor:
-      preview: true
-    fields:
-      - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: 'Language', name: 'language', widget: 'hidden', default: 'uk' }
-      - { label: 'Body', name: 'body', widget: 'markdown' }
-  - name: 'changes'
-    label: 'Changes'
-    folder: 'content/changes'
-    create: false
-    delete: false
-    slug: '{{slug}}'
-    editor:
-      preview: true
-    fields:
-      - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: 'Language', name: 'language', widget: 'hidden', default: 'uk' }
-      - { label: 'Body', name: 'body', widget: 'markdown' }
+
+  # - name: 'aboutMe'
+  #   label: 'About me'
+  #   folder: 'content/aboutMe'
+  #   create: false
+  #   delete: false
+  #   slug: '{{slug}}'
+  #   editor:
+  #     preview: true
+  #   fields:
+  #     - { label: 'Title', name: 'title', widget: 'string' }
+  #     - { label: 'Language', name: 'language', widget: 'hidden', default: 'uk' }
+  #     - { label: 'Body', name: 'body', widget: 'markdown' }
+  # - name: 'aboutYou'
+  #   label: 'About you'
+  #   folder: 'content/aboutYou'
+  #   create: false
+  #   delete: false
+  #   slug: '{{slug}}'
+  #   editor:
+  #     preview: true
+  #   fields:
+  #     - { label: 'Title', name: 'title', widget: 'string' }
+  #     - { label: 'Language', name: 'language', widget: 'hidden', default: 'uk' }
+  #     - { label: 'Body', name: 'body', widget: 'markdown' }
+  # - name: 'route'
+  #   label: 'Route'
+  #   folder: 'content/route'
+  #   create: false
+  #   delete: false
+  #   slug: '{{slug}}'
+  #   editor:
+  #     preview: true
+  #   fields:
+  #     - { label: 'Title', name: 'title', widget: 'string' }
+  #     - { label: 'Language', name: 'language', widget: 'hidden', default: 'uk' }
+  #     - { label: 'Body', name: 'body', widget: 'markdown' }
+  # - name: 'guarantee'
+  #   label: 'Guarantee'
+  #   folder: 'content/guarantee'
+  #   create: false
+  #   delete: false
+  #   slug: '{{slug}}'
+  #   editor:
+  #     preview: true
+  #   fields:
+  #     - { label: 'Title', name: 'title', widget: 'string' }
+  #     - { label: 'Language', name: 'language', widget: 'hidden', default: 'uk' }
+  #     - { label: 'Body', name: 'body', widget: 'markdown' }
+  # - name: 'wyCouchBetter'
+  #   label: 'Wy Couch Better'
+  #   folder: 'content/wyCouchBetter'
+  #   create: false
+  #   delete: false
+  #   slug: '{{slug}}'
+  #   editor:
+  #     preview: true
+  #   fields:
+  #     - { label: 'Title', name: 'title', widget: 'string' }
+  #     - { label: 'Language', name: 'language', widget: 'hidden', default: 'uk' }
+  #     - { label: 'Body', name: 'body', widget: 'markdown' }
+
+  # - name: 'beBetter'
+  #   label: 'Be Better'
+  #   folder: 'content/beBetter'
+  #   create: false
+  #   delete: false
+  #   slug: '{{slug}}'
+  #   editor:
+  #     preview: true
+  #   fields:
+  #     - { label: 'Title', name: 'title', widget: 'string' }
+  #     - { label: 'Language', name: 'language', widget: 'hidden', default: 'uk' }
+  #     - { label: 'Body', name: 'body', widget: 'markdown' }
+  # - name: 'changes'
+  #   label: 'Changes'
+  #   folder: 'content/changes'
+  #   create: false
+  #   delete: false
+  #   slug: '{{slug}}'
+  #   editor:
+  #     preview: true
+  #   fields:
+  #     - { label: 'Title', name: 'title', widget: 'string' }
+  #     - { label: 'Language', name: 'language', widget: 'hidden', default: 'uk' }
+  #     - { label: 'Body', name: 'body', widget: 'markdown' }

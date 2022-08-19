@@ -18,5 +18,4 @@ you will start getting incredible results.</p>
 <p>Don't put off your life for later! People who live in pleasure achieve
 best results! Do you want to know how?</p>
 
-<span class='text-caveat'>Sign up today for your first coaching session
-with a 75% discount and start living in high spirits tomorrow!</span>
+<span class='text-change'>Sign up today for my first coaching session with a 75% discount and start living in high spirits tomorrow!</span>

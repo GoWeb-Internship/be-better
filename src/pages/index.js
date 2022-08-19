@@ -29,6 +29,7 @@ const IndexPage = () => {
         <Price />
         <Guarantee />
         {/* <Video /> */}
+
         <Change />
         <BeBetter />
       </Container>

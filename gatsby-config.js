@@ -33,6 +33,7 @@ module.exports = {
         extensions: [`.mdx`, `.md`],
       },
     },
+    
     {
       resolve: `gatsby-plugin-postcss`,
       options: {

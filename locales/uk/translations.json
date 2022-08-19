@@ -12,6 +12,41 @@
     "accept": "Я даю згоду на обробку моїх персональних даних",
     "button": "Зробити перший крок"
   },
+  "facts": {
+    "title": "Факти про мене",
+    "list": [
+      {
+        "textPrimary": "15 років ",
+        "textSecondary": "у міжнародному бізнесі",
+        "svg": "bag"
+      },
+      {
+        "textPrimary": "30+",
+        "textSecondary": "задоволених клієнтів",
+        "svg": "ok"
+      },
+      {
+        "textPrimary": "7 років ",
+        "textSecondary": "у продажах і розвитку стартапів",
+        "svg": "scale"
+      },
+      {
+        "textPrimary": "6 років ",
+        "textSecondary": "роботи з керівниками бізнесів",
+        "svg": "house"
+      },
+      {
+        "textPrimary": "с 2021",
+        "textSecondary": "Лайф-коуч ICF с 2021",
+        "svg": "icf"
+      },
+      {
+        "textPrimary": "15 років ",
+        "textSecondary": "годин практики",
+        "svg": "clock"
+      }
+    ]
+  },
   "formula": {
     "title": "Моя формула дуже проста та результативна",
     "list": [

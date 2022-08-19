@@ -62,14 +62,13 @@ const Change = () => {
           className="-z-20 top-0 w-full h-full mt-20  max-w-full"
         />
 <h3 className={changeTitle}>{node.frontmatter.title}</h3>
-<div className='flex'>
+<div className='flex '>
           <div className='flex justify-between'>
           <StaticImage
-          layout="fullWidth"
           src="../../images/arrow-min.png"
           alt=""
           style={{ position: 'absolute' }}
-          className="top-0 h-full ml-10  mr-20 "
+          className="top-0 mt-48 pt-16  ml-10 mr-20 "
         />
         <div>
         <div>
@@ -80,7 +79,7 @@ const Change = () => {
           />
           <Button
                   type="button"
-                  className="!bg-mainSecond border !ml-0 !mt-5 px-16 py-2 rounded-3xl"
+                  className="!bg-mainSecond border !mt-5 px-16 !ml-28 py-2 rounded-3xl"
                   doAction={() => showModal()}
                 >
                   {buttonTranslate.button}
@@ -105,9 +104,8 @@ const Change = () => {
           </div> 
           <div>
           <StaticImage
-          layout="fullWidth"
           src="../../images/julia-min.png"
-          className='w-120 h-177 mr-4  ml-2'
+          className='w-120 h-177  mr-4  ml-20'
           style={{ position: 'absolute' }}
           alt=""
         />

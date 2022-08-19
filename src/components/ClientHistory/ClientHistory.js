@@ -17,15 +17,15 @@ const ClientHistory = () => {
       ) {
         nodes {
           frontmatter {
-            name_uk
-            uk_position
-            uk_text
-            name_en
-            en_position
-            en_text
-            name_ru
-            ru_position
-            ru_text
+            ukName
+            ukPosition
+            ukText
+            enName
+            enPosition
+            enText
+            ruName
+            ruPosition
+            ruText
           }
           id
         }
@@ -64,30 +64,18 @@ const ClientHistory = () => {
   return (
     <Section>
       <Slider {...settings}>
-        {clients.map(({ frontmatter }, id) => {
-          <li key={id}>
-            <div>
-              <p>{frontmatter[`name-${i18n.language}`]}</p>
-              <p>{frontmatter[`${i18n.language}-position`]}</p>
-            </div>
-            <div>
-              <p>{frontmatter[`${i18n.language}-text`]}</p>
-            </div>
-          </li>;
-        })}
-      </Slider>
-      <Slider>
-        {data.map(({ name, prof, quote }) => (
-          <div key={name}>
-            <div className="flex">
+        {!!clients.length &&
+          clients.map(({ frontmatter }, id) => {
+            <li key={id}>
               <div>
-                <p>{name}</p>
-                <p>{prof}</p>
+                <p>{frontmatter[`${i18n.language}Name`]}</p>
+                <p>{frontmatter[`${i18n.language}Position`]}</p>
               </div>
-              <p>{quote}</p>
-            </div>
-          </div>
-        ))}
+              <div>
+                <p>{frontmatter[`${i18n.language}Text`]}</p>
+              </div>
+            </li>;
+          })}
       </Slider>
     </Section>
   );

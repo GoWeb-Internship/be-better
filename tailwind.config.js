@@ -10,6 +10,7 @@ module.exports = {
         9: '9%',
         '10%': '10%',
         '12%': '12%',
+        '60%': '60%',
         icon: '20%',
         iconPercentTr: '30%',
         iconPercentTrF: '45%',

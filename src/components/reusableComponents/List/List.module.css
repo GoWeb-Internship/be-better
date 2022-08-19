@@ -49,7 +49,7 @@
   @apply stair-icons fill-main mt-icon;
 }
 .svgBgFormula {
-  @apply stair-iconsBg fill-iconBg   ml-iconPercentTrF;
+  @apply stair-iconsBg fill-iconBg   ml-60%;
 }
 
 .svgContainerFormula {

@@ -1,9 +1,11 @@
 import React from 'react'
-import { Link, useTranslation } from 'gatsby-plugin-react-i18next';
 import { StaticImage } from 'gatsby-plugin-image';
+import { graphql, useStaticQuery } from 'gatsby';
+import { useTranslation } from 'gatsby-plugin-react-i18next';
+import { text} from './BeBetter.module.css';
 
 const BeBetter = () => {
-    const { t } = useTranslation();
+  const { i18n } = useTranslation();
    
     const { allMarkdownRemark } = useStaticQuery(graphql`
     query {
@@ -21,16 +23,16 @@ const BeBetter = () => {
   `);
   const data = allMarkdownRemark.nodes;
   return (
-    <div className=''>
+    <div className='flex'>
       <div className="">
           {data.map(node => {
             if (node.frontmatter.language === i18n.language) {
               return (
                 <>
-                  <h3 className="">{node.frontmatter.title}</h3>
+                  <h3 className='font-semibold text-3xl text-buttonMobile pb-8 pb-8'>{node.frontmatter.title}</h3>
                   <div
                     key={node.frontmatter.language}
-                    className=""
+                    className={text}
                     dangerouslySetInnerHTML={{ __html: node.html }}
                   />
                 </>
@@ -38,26 +40,31 @@ const BeBetter = () => {
             }
           })}
         </div>
-        <div>
+        <div className=''>
         <StaticImage
       alt=''
       src='../../images/one-min.png'
       width=''
       height=''
-      />
-       <StaticImage
-      alt=''
-      src='../../images/two-min.png'
-      width=''
-      height=''
+      
       />
        <StaticImage
       alt=''
       src='../../images/three-min.png'
       width=''
       height=''
+      className='ml-4'
       />
-        </div>
+      </div>
+      <div>
+       <StaticImage
+      alt=''
+      src='../../images/two-min.png'
+      width=''
+      height=''
+      />
+      </div>
+        
     </div>
   )
 }

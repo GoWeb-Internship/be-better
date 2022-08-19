@@ -1,0 +1,9 @@
+.text span {
+    @apply text-caveat pb-4;
+  }
+.text ol{
+    @apply pb-16;
+}
+.text li{
+    @apply pb-4 text-start font-normal text-base list-disc mb-3 marker:text-main
+}

@@ -4,6 +4,7 @@ import { useTranslation } from 'gatsby-plugin-react-i18next';
 import { StaticImage } from 'gatsby-plugin-image';
 import List from '../reusableComponents/List';
 import svg from '../../images/factsIcons.svg';
+import Way from '../Way';
 
 const Facts = () => {
   const { t } = useTranslation();
@@ -25,11 +26,12 @@ const Facts = () => {
           src="../../images/factsFoto.jpg"
           width={380}
           height={560}
-          className="rounded-2xl  "
+          className="rounded-2xl ml-13 "
           placeholder="blurred"
           formats={['auto', 'webp']}
         />
       </div>
+      <Way />
     </Section>
   );
 };

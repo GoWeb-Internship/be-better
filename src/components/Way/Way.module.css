@@ -1,0 +1,19 @@
+.wayContainer {
+  @apply text-left m-auto w-630 mt-50;
+}
+
+.title {
+  @apply title-secondary mb-13 text-34;
+}
+
+.listContainer {
+  @apply text-base text-black;
+}
+
+.listContainer span {
+  @apply text-mainSecond;
+}
+
+.listContainer li {
+  @apply mb-5 marker:text-mainSecond list-disc;
+}

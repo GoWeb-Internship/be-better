@@ -6,7 +6,8 @@ module.exports = {
   theme: {
     extend: {
       spacing: {
-        you: '44%',
+        44: '44%',
+        9: '9%',
         icon: '20%',
         iconBG: '30%',
       },
@@ -32,6 +33,7 @@ module.exports = {
         6.5: '26px',
         13: '52px',
         22: '92px',
+        50: '200px',
       },
       fontFamily: {
         caveat: 'Caveat,sans-serif',
@@ -47,7 +49,8 @@ module.exports = {
         70: '280px',
         81: '324px',
         524: '524px',
-        large: '1440px',
+        630: '630px',
+        648: '648px',
       },
     },
     colors: {
@@ -62,7 +65,7 @@ module.exports = {
       backgroundSecond: '#FFF8F4',
       bright: '#ADF0FE',
       mainLight: '#CFEDF3',
-      orangeContrast: '#FFCEB2',
+      orangeContrast: '#FBF1EB',
       error: '#E74A3B',
       mainSecond: '#EF7229',
       mainSecondLight: '#FF9B62',
@@ -103,6 +106,15 @@ module.exports = {
           fontSize: 20,
           fontWeight: 600,
           lineHeight: 1.32,
+          textAlign: 'center',
+          letterSpacing: 0.15,
+        },
+        '.title-secondary': {
+          color: theme('colors.orangeDark'),
+          fontSize: 20,
+          fontWeight: 500,
+          lineHeight: 1.32,
+          textAlign: 'center',
           letterSpacing: 0.15,
         },
         '.text-caveat': {

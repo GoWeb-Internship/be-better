@@ -28,17 +28,20 @@ collections:
     folder: 'content/clientHistory'
     create: true
     delete: true
-    slug: '{{slug}}'
+    slug: '{{name-en}}-{{en-position}}'
     editor:
       preview: true
-      - { label: 'Name', name: 'title', widget: 'string' }
+    fields:
+      - { label: 'Name Ua', name: 'name-uk', widget: 'string' }
+      - { label: 'Position Ua', name: 'uk-position', widget: 'string' }
+      - { label: 'Text Ua', name: 'uk-text', widget: 'string' }
+      - { label: 'Name En', name: 'name-en', widget: 'string' }
+      - { label: 'Position En', name: 'en-position', widget: 'string' }
+      - { label: 'Text En', name: 'en-text', widget: 'string' }
+      - { label: 'Name Ru', name: 'name-ru', widget: 'string' }
+      - { label: 'Position Ru', name: 'ru-position', widget: 'string' }
+      - { label: 'Text Ru', name: 'ru-text', widget: 'string' }
       - { label: 'Language', name: 'language', widget: 'hidden', default: 'uk' }
-      - {label: 'Ru position', name: 'ru-position', widget: 'string'}
-      - {label: 'En position', name: 'en-position', widget: 'string'}
-      - {label: 'Uk position', name: 'uk-position', widget: 'string'}
-      - {label: 'Ru text', name: 'ru-text', widget: 'string'}
-      - {label: 'En text', name: 'en-text', widget: 'string'}
-      - {label: 'Uk text', name: 'uk-text', widget: 'string'}
 
   # - name: 'aboutMe'
   #   label: 'About me'
@@ -76,18 +79,18 @@ collections:
   #     - { label: 'Title', name: 'title', widget: 'string' }
   #     - { label: 'Language', name: 'language', widget: 'hidden', default: 'uk' }
   #     - { label: 'Body', name: 'body', widget: 'markdown' }
-  - name: 'guarantee'
-    label: 'Guarantee'
-    folder: 'content/guarantee'
-    create: false
-    delete: false
-    slug: '{{slug}}'
-    editor:
-      preview: true
-    fields:
-      - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: 'Language', name: 'language', widget: 'hidden', default: 'uk' }
-      - { label: 'Body', name: 'body', widget: 'markdown' }
+  # - name: 'guarantee'
+  #   label: 'Guarantee'
+  #   folder: 'content/guarantee'
+  #   create: false
+  #   delete: false
+  #   slug: '{{slug}}'
+  #   editor:
+  #     preview: true
+  #   fields:
+  #     - { label: 'Title', name: 'title', widget: 'string' }
+  #     - { label: 'Language', name: 'language', widget: 'hidden', default: 'uk' }
+  #     - { label: 'Body', name: 'body', widget: 'markdown' }
   # - name: 'wyCouchBetter'
   #   label: 'Wy Couch Better'
   #   folder: 'content/wyCouchBetter'

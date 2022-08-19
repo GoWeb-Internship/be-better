@@ -65,10 +65,11 @@ const Change = () => {
 <div className='flex'>
           <div className='flex justify-between'>
           <StaticImage
+          layout="fullWidth"
           src="../../images/arrow-min.png"
           alt=""
-          style=''
-          className="top-0 h-full ml-10  mr-10 "
+          style={{ position: 'absolute' }}
+          className="top-0 h-full ml-10  mr-20 "
         />
         <div>
         <div>
@@ -104,8 +105,10 @@ const Change = () => {
           </div> 
           <div>
           <StaticImage
+          layout="fullWidth"
           src="../../images/julia-min.png"
-          className='w-120 h-177 ml-8'
+          className='w-120 h-177 mr-4  ml-2'
+          style={{ position: 'absolute' }}
           alt=""
         />
         </div>

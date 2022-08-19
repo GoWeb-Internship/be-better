@@ -4,7 +4,7 @@ import Container from '../Container';
 import Form from '../Form';
 import Social from '../Social';
 import FooterNext from '../FooterNext';
-import { StaticImage, GatsbyImage } from 'gatsby-plugin-image';
+import { StaticImage} from 'gatsby-plugin-image';
 import {footerContainer, list, link, container} from './Footer.module.css';
 
 const Footer = () => {
@@ -25,6 +25,13 @@ const Footer = () => {
       height={420}
       className="absolute -z-10"
       /> */}
+      <StaticImage
+          layout="fullWidth"
+          src="../../images/background/bg-min.png"
+          alt=""
+          style={{ position: 'absolute' }}
+          className="w-3/4 -z-10 top-0"
+        />
       <div className='flex'>
         <div className='pt-16 pl-12 pr-14'>
     
@@ -62,7 +69,7 @@ const Footer = () => {
         </div>
           </div>
        
-      
+          
       {/* </Container> */}
     </footer>
   );

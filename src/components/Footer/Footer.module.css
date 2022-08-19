@@ -1,5 +1,5 @@
 .footerContainer{
-    @apply bg-bright ;
+    @apply relative ;
 }
 .list{
     @apply flex text-left pl-44 ml-10 mr-4 z-10 ;
@@ -8,5 +8,5 @@
     @apply pr-7 text-black font-normal text-sm  px-0;
 }
 .container{
-    @apply justify-between m-0 p-0 w-full bg-bright ;
+    @apply justify-between m-0 p-0 w-full  ;
 }

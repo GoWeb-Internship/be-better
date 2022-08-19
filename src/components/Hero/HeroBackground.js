@@ -4,7 +4,6 @@ import { StaticImage } from 'gatsby-plugin-image';
 const HeroBackground = () => {
   return (
     <div>
-      <div className="absolute w-[404px] h-full top-0 left-0 -z-10 bg-white"></div>
       <StaticImage
         layout="fullWidth"
         src="../../images/background/heroDesktop.png"

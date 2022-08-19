@@ -2,11 +2,16 @@ import { Link, useI18next } from 'gatsby-plugin-react-i18next';
 import React from 'react';
 
 const SwitchLang = () => {
-  const { languages, originalPath } = useI18next();
+  const { language, languages, changeLanguage, originalPath } = useI18next();
+
+  // const handleChange = e => {
+  //   changeLanguage(e.target.value);
+  // };
+
   return (
-    <ul className="flex justify-between">
+    <ul>
       {languages.map(lng => (
-        <li key={lng} className="mr-10 last:mr-0">
+        <li key={lng}>
           <Link to={originalPath} language={lng}>
             {lng}
           </Link>

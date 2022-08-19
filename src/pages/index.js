@@ -10,6 +10,7 @@ import Video from '../components/Video';
 import Container from '../components/Container';
 import AboutMe from '../components/AboutMe';
 import Hero from '../components/Hero';
+import FormWithBackground from '../components/Form/FormWithBackground';
 
 const IndexPage = () => {
   return (
@@ -20,6 +21,7 @@ const IndexPage = () => {
         <AboutMe />
         <ClientHistory />
         <Formula />
+        <FormWithBackground clickFrom="main" />
         <Price />
         <Guarantee />
         <Video />

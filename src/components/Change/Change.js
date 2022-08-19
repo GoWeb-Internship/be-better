@@ -3,7 +3,7 @@ import { StaticImage } from 'gatsby-plugin-image';
 import Button from '../reusableComponents/Button';
 import { graphql, useStaticQuery } from 'gatsby';
 import { useTranslation } from 'gatsby-plugin-react-i18next';
-import { text, changeTitle} from './Change.module.css';
+import { text, changeTitle, modalform, formtext, formtextmain} from './Change.module.css';
 import ModalWindow from '../ModalWindow';
 import Form from '../Form';
 
@@ -11,8 +11,8 @@ const Change = () => {
     const { i18n } = useTranslation();
     const [modal, setModal] = useState(false);
     const [currentChange, setCurrentChange] = useState('');
-    const buttonTranslate = t('littleComponents', { returnObjects: true });
     const { t } = useTranslation();
+    const buttonTranslate = t('littleComponents', { returnObjects: true });
 
     const { allMarkdownRemark } = useStaticQuery(graphql`
     query {
@@ -62,7 +62,7 @@ const Change = () => {
           />
           <Button
                   type="button"
-                  className="border border-gray-300 px-16 py-2 rounded-3xl"
+                  className="!bg-mainSecond border ml-10 px-16 py-2 rounded-3xl"
                   doAction={() => showModal()}
                 >
                   {buttonTranslate.button}
@@ -70,17 +70,17 @@ const Change = () => {
           
         </div>  
         {modal && (
-        <ModalWindow className="" handleClose={hideModal}>
+        <ModalWindow className={modalform} handleClose={hideModal}>
           <>
-            <h2 className="">Привет!</h2>
-            <p className="">Я скоро свяжусь с тобой</p>
+            <h2 className={formtext}>Привет!</h2>
+            <p className={formtext}>Я скоро свяжусь с тобой</p>
             <Form
               clickFrom={currentChange}
               formClassname=""
               checkboxClassname="mb-8"
               closeFormModal={hideModal}
             />
-            <p className="">Увидимся</p>
+            <p className={formtextmain}>Увидимся</p>
           </>
         </ModalWindow>
       )}    
@@ -88,7 +88,7 @@ const Change = () => {
           <div>
           <StaticImage
           src="../../images/julia-min.png"
-          className='w-120 h-177'
+          className='w-120 h-177 ml-8'
           alt=""
         />
         </div>

@@ -3,7 +3,7 @@ title: Be better today! Your new life is waiting for you!
 language: en
 ---
 
-<p>In which you will:</p>
+<span class='text-caveat'>In which you will:</span>
 
 <ol>
     <li>Live in a high, do every day what will bring you pleasure</li>
@@ -13,4 +13,4 @@ language: en
     <li>It is easier to make decisions and get new impressions of yourself and your life</li>
 </ol>
 
-<p>Don't waste your time!!! Take a step right now!</p>
+<span class='text-caveat'>Don't waste your time!!! Take a step right now!</span>

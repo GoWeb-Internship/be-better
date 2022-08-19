@@ -6,10 +6,12 @@ import Price from '../components/Price';
 import Formula from '../components/Formula';
 import Guarantee from '../components/Guarantee';
 import ClientHistory from '../components/ClientHistory';
-import Video from '../components/Video';
+// import Video from '../components/Video';
 import Container from '../components/Container';
 import AboutMe from '../components/AboutMe';
 import Hero from '../components/Hero';
+import BeBetter from '../components/BeBetter'
+import Change from '../components/Change';
 
 const IndexPage = () => {
   return (
@@ -22,7 +24,9 @@ const IndexPage = () => {
         <Formula />
         <Price />
         <Guarantee />
-        <Video />
+        {/* <Video /> */}
+        <Change/>
+        <BeBetter/>
       </Container>
       {/* </main> */}
       <script

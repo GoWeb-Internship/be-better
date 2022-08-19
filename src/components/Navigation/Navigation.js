@@ -14,7 +14,7 @@ const Navigation = () => {
   return (
     <>
       <div className={headerContainer}>
-        <Link to="#home" className={logo}>
+        <Link to="#" className={logo}>
           <StaticImage
             src="../../images/logo.png"
             width={90}

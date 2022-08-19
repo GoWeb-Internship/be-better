@@ -10,11 +10,25 @@ const Facts = () => {
   const data = t('facts', { returnObjects: true });
 
   return (
-    <Section>
-      <div>
-        <h3>{data.title}</h3>
-
-        <List data={data.list} icons={svg} />
+    <Section className="pt-20 pb-16 relative">
+      <StaticImage
+        layout="fullWidth"
+        src="../../images/background/features.jpg"
+        alt=""
+        style={{ position: 'absolute' }}
+        className="w-full h-full -z-10 top-0"
+      />
+      <div className="flex px-46 ">
+        <List data={data} icons={svg} />
+        <StaticImage
+          alt=""
+          src="../../images/factsFoto.jpg"
+          width={380}
+          height={560}
+          className="rounded-2xl  "
+          placeholder="blurred"
+          formats={['auto', 'webp']}
+        />
       </div>
     </Section>
   );

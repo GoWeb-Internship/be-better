@@ -31,7 +31,7 @@ const AboutMe = () => {
   const data = allMarkdownRemark.nodes;
 
   return (
-    <section className={sectionContainer}>
+    <section className={sectionContainer} id="nav-about">
       <div className="flex">
         <div>
           <StaticImage
@@ -39,6 +39,7 @@ const AboutMe = () => {
             alt="author"
             width={456}
             height={480}
+            className="rounded-2xl  "
             placeholder="blurred"
             formats={['auto', 'webp']}
           />

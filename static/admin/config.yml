@@ -28,7 +28,7 @@ collections:
     folder: 'content/clientHistory'
     create: true
     delete: true
-    slug: '{{name-en}}'
+    slug: '{{name-en}}-{{en-position}}'
     editor:
       preview: true
     fields:

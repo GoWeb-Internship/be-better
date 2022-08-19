@@ -39,6 +39,8 @@ module.exports = {
       },
       width: {
         50: '200px',
+        70: '280px',
+        81: '324px',
         524: '524px',
       },
     },
@@ -60,8 +62,9 @@ module.exports = {
       mainSecondLight: '#FF9B62',
       orangeDark: '#4D2107',
       orangeDirty: '#F3AE86',
-      write: '#FFFFFF',
+      realWrite: '#FFFFFF',
       iconBg: '#DCF2F6',
+      buttonMobile: '#01BBD4',
     },
     screens: {
       tablet: '320px',

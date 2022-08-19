@@ -8,6 +8,7 @@ import {
   iconArrow,
   text,
   icon,
+  iconPosition,
 } from './Formula.module.css';
 import Section from '../reusableComponents/Section';
 import { StaticImage } from 'gatsby-plugin-image';
@@ -36,7 +37,7 @@ const Formula = () => {
             className="flex flex-col items-center w-full  desktop:flex-row"
           >
             <div className={itemLi}>
-              <div className="w-14 h-14 bg-white rounded-lg absolute shadow-you -top-icon left-2/4 -translate-x-1/2">
+              <div className={iconPosition}>
                 <svg className={icon}>
                   <use href={`${icons}#icon-${svg}`} />
                 </svg>

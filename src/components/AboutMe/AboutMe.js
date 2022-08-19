@@ -32,7 +32,7 @@ const AboutMe = () => {
 
   return (
     <section className={sectionContainer} id="nav-about">
-      <div className="flex">
+      <div className="flex justify-center">
         <div>
           <StaticImage
             src="../../images/aboutMe.jpg"

@@ -10,7 +10,7 @@ import ClientHistory from '../components/ClientHistory';
 import Container from '../components/Container';
 import AboutMe from '../components/AboutMe';
 import Hero from '../components/Hero';
-import BeBetter from '../components/BeBetter'
+import BeBetter from '../components/BeBetter';
 import Change from '../components/Change';
 
 const IndexPage = () => {
@@ -25,7 +25,7 @@ const IndexPage = () => {
         <Price />
         <Guarantee />
         {/* <Video /> */}
-        <Change/>
+       <Change/>
         <BeBetter/>
       </Container>
       {/* </main> */}

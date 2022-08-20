@@ -16,7 +16,7 @@ const HeroBackground = () => {
         src="../../images/background/whiteDesktop.png"
         alt=""
         style={{ position: 'absolute' }}
-        className="w-[1036px] h-full -z-10 top-0"
+        className="w-[1036px] h-full -z-10 top-0 right-0"
       />
     </div>
   );

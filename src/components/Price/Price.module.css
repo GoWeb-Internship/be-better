@@ -1,5 +1,8 @@
 .container {
-  @apply m-auto text-center;
+  @apply m-auto text-center pt-20 pb-23;
+}
+.title {
+  @apply title-primary mb-8 desktop:text-34 desktop:tracking-wide desktop:mb-13;
 }
 
 .list {
@@ -7,29 +10,29 @@
 }
 
 .item {
-  @apply p-3 w-80 mr-8 rounded-lg last:mr-0 hover:bg-hoverPrice shadow-you;
+  @apply pt-6 pb-12 px-7 w-80 mr-8 rounded-lg last:mr-0 hover:bg-hoverPrice shadow-you;
 }
 
 .modalform {
-    @apply w-[440px] h-[560px] pt-14 text-xl bg-background;
-  }
+  @apply w-[440px] h-[560px] pt-14 text-xl bg-background;
+}
 
 .formtitle {
-    @apply mb-1 font-medium text-xl text-black;
-  }
+  @apply mb-1 font-medium text-xl;
+}
 
 .formmargin {
-    @apply mb-8;
-  }
+  @apply mb-8;
+}
 
-  .formtext {
-    @apply text-base;
-  }
+.formtext {
+  @apply text-base;
+}
 
-  .accenttext {
-    @apply text-main font-bold;
-  }
+.accenttext {
+  @apply text-main font-bold;
+}
 
-  .price {
-    @apply mb-[34px] text-xl text-main font-bold;
-  }
+.price {
+  @apply mb-[34px] text-xl text-main font-bold;
+}

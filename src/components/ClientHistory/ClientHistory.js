@@ -10,6 +10,7 @@ import Section from '../reusableComponents/Section';
 const ClientHistory = () => {
   const { t, i18n } = useTranslation();
   const data = t('clientHistory', { returnObjects: true });
+
   const { allMarkdownRemark } = useStaticQuery(graphql`
     query {
       allMarkdownRemark(
@@ -63,7 +64,8 @@ const ClientHistory = () => {
 
   return (
     <Section>
-      {!!clients.length &&
+      {/* 
+      {!!clients.length &&master
         clients.map(({ frontmatter }, id) => {
           <Slider {...settings}>
             <li key={id}>
@@ -75,8 +77,9 @@ const ClientHistory = () => {
                 <p>{frontmatter[`${i18n.language}Text`]}</p>
               </div>
             </li>
-          </Slider>;
-        })}
+          </Slider>
+
+        })}  */}
     </Section>
   );
 };

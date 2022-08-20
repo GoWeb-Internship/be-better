@@ -20,12 +20,8 @@ collections:
       - { label: 'Subscription Ua', name: 'ukSubscription', widget: 'string' }
       - { label: 'Subscription En', name: 'enSubscription', widget: 'string' }
       - { label: 'Subscription Ru', name: 'ruSubscription', widget: 'string' }
-      - { label: 'Price Ua', name: 'ukPrice', widget: 'string' }
-      - { label: 'Price En', name: 'enPrice', widget: 'string' }
-      - { label: 'Price Ru', name: 'ruPrice', widget: 'string' }
-      - { label: 'Economy Ua', name: 'ukEconomy', widget: 'string' }
-      - { label: 'Economy En', name: 'enEconomy', widget: 'string' }
-      - { label: 'Economy Ru', name: 'ruEconomy', widget: 'string' }
+      - { label: 'Price', name: 'price', widget: 'number' }
+      - { label: 'Economy', name: 'economy', widget: 'number' }
       - { label: 'Month Ua', name: 'ukMonth', widget: 'string' }
       - { label: 'Month En', name: 'enMonth', widget: 'string' }
       - { label: 'Month Ru', name: 'ruMonth', widget: 'string' }
@@ -65,7 +61,6 @@ collections:
       - { label: 'Position Ru', name: 'ruPosition', widget: 'string' }
       - { label: 'Text Ru', name: 'ruText', widget: 'string' }
       - { label: 'Language', name: 'language', widget: 'hidden', default: 'uk' }
-
   # - name: 'aboutMe'
   #   label: 'About me'
   #   folder: 'content/aboutMe'

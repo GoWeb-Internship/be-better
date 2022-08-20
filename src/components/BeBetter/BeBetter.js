@@ -23,8 +23,8 @@ const BeBetter = () => {
   `);
   const data = allMarkdownRemark.nodes;
   return (
-    <div className="flex">
-      <div className="">
+    <div className="flex justify-between pb-24 text-left ">
+      <div className="mr-10  ml-40">
           {data.map(node => {
             if (node.frontmatter.language === i18n.language) {
               return (
@@ -40,7 +40,7 @@ const BeBetter = () => {
             }
           })}
         </div>
-        <div className=''>
+        <div className='mt-8'>
 
         <StaticImage alt="" src="../../images/one-min.png" width="" height="" />
 
@@ -49,11 +49,11 @@ const BeBetter = () => {
           src="../../images/three-min.png"
           width=""
           height=""
-          className="ml-2"
+          className="ml-12 mt-5"
         />
       </div>
-      <div>
-        <StaticImage alt="" src="../../images/two-min.png" className='mr-6' width="" height="" />
+      <div className='mr-40'>
+        <StaticImage alt="" src="../../images/two-min.png" className='mr-6 w-72' width="" height="" />
       </div>
     </div>
   );

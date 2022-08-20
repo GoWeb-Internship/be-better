@@ -1,0 +1,9 @@
+.text span{
+    @apply text-main
+}
+.steps{
+    @apply text-main
+}
+.text li{
+    @apply list-none list-inside
+}

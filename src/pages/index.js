@@ -14,6 +14,7 @@ import Hero from '../components/Hero';
 // import FormWithBackground from '../components/Form/FormWithBackground';
 import BeBetter from '../components/BeBetter';
 import Change from '../components/Change';
+import Steps from '../components/Steps';
 
 const IndexPage = () => {
   return (
@@ -29,7 +30,7 @@ const IndexPage = () => {
         <Price />
         <Guarantee />
         {/* <Video /> */}
-
+        <Steps/>
         <Change />
         <BeBetter />
       </Container>

@@ -1,6 +1,6 @@
 import React from 'react';
 // import { StaticImage } from 'gatsby-plugin-image';
-import { useTranslation } from 'gatsby-plugin-react-i18next';
+// import { useTranslation } from 'gatsby-plugin-react-i18next';
 import { TiSocialFacebook } from 'react-icons/ti';
 import { TbBrandInstagram } from 'react-icons/tb';
 import { TiSocialLinkedin } from 'react-icons/ti';
@@ -10,11 +10,11 @@ import Form from '../Form';
 // import Button from '../reusableComponents/Button';
 
 const Hero = () => {
-  const { t } = useTranslation();
+  // const { t } = useTranslation();
   // const data = t('form', { returnObjects: true });
 
   return (
-    <section>
+    <section id="home">
       {/* Mobile version */}
       {/* <div className="relative h-[532px]">
         <StaticImage

@@ -7,9 +7,12 @@ import Video from '../Video';
 
 const FormWithVideoBg = ({ clickFrom }) => {
   return (
-    <div className="relative flex justify-end pr-6">
+    <section
+      className="relative flex justify-end h-[760px] pr-6"
+      id="nav-feedback"
+    >
       <Video />
-      <div className="text-left pt-10 mr-[111px]">
+      <div className="text-left pt-20 ">
         <div className="w-81 text-black">
           <p className="mb-10 text-34 font-semibold">
             Если ты
@@ -30,7 +33,7 @@ const FormWithVideoBg = ({ clickFrom }) => {
           </p>
         </div>
       </div>
-      <ul className="flex flex-col space-y-8 pt-20 ">
+      <ul className="flex flex-col space-y-8 ml-[213px] pt-20 ">
         <li className="flex justify-center items-center w-11 h-11 bg-main text-white border border-main rounded-2xl hover:bg-white hover:text-main transition">
           <a
             href="https://instagram.com/yuliya_shayenko?igshid=YmMyMTA2M2Y="
@@ -59,7 +62,7 @@ const FormWithVideoBg = ({ clickFrom }) => {
           </a>
         </li>
       </ul>
-    </div>
+    </section>
   );
 };
 

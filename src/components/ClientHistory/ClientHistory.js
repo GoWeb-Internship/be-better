@@ -10,29 +10,30 @@ import Section from '../reusableComponents/Section';
 const ClientHistory = () => {
   const { t, i18n } = useTranslation();
   const data = t('clientHistory', { returnObjects: true });
-  // const { allMarkdownRemark } = useStaticQuery(graphql`
-  //   query {
-  //     allMarkdownRemark(
-  //       filter: { fileAbsolutePath: { regex: "/clientHistory/" } }
-  //     ) {
-  //       nodes {
-  //         frontmatter {
-  //           ukName
-  //           ukPosition
-  //           ukText
-  //           enName
-  //           enPosition
-  //           enText
-  //           ruName
-  //           ruPosition
-  //           ruText
-  //         }
-  //         id
-  //       }
-  //     }
-  //   }
-  // `);
-  // const clients = allMarkdownRemark.nodes;
+
+  const { allMarkdownRemark } = useStaticQuery(graphql`
+    query {
+      allMarkdownRemark(
+        filter: { fileAbsolutePath: { regex: "/clientHistory/" } }
+      ) {
+        nodes {
+          frontmatter {
+            ukName
+            ukPosition
+            ukText
+            enName
+            enPosition
+            enText
+            ruName
+            ruPosition
+            ruText
+          }
+          id
+        }
+      }
+    }
+  `);
+  const clients = allMarkdownRemark.nodes;
 
   function SampleNextArrow(props) {
     const { onClick } = props;
@@ -63,7 +64,8 @@ const ClientHistory = () => {
 
   return (
     <Section>
-      {/* {!!clients.length &&
+      {/* 
+      {!!clients.length &&master
         clients.map(({ frontmatter }, id) => {
           <Slider {...settings}>
             <li key={id}>
@@ -75,8 +77,9 @@ const ClientHistory = () => {
                 <p>{frontmatter[`${i18n.language}Text`]}</p>
               </div>
             </li>
-          </Slider>;
-        })} */}
+          </Slider>
+
+        })}  */}
     </Section>
   );
 };

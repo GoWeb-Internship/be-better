@@ -7,7 +7,11 @@ const NavList = ({ navigation }) => {
     <ul className="flex">
       {navigation.map(({ id, name }) => (
         <li key={id} className="mr-10 ">
-          <Link to={`#${id}`} className={links}>
+          <Link
+            to={`#${id}`}
+            className={links}
+            activeStyle={{ borderBottom: '2px solid #00A5CC' }}
+          >
             {name}
           </Link>
         </li>

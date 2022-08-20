@@ -70,7 +70,7 @@ const Price = () => {
   };
 
   return (
-    <div className={container} id="nav-price">
+    <section className={container} id="nav-price">
       <h1>Price</h1>
       <ul className={list}>
         {/* {allMarkdownRemark &&
@@ -111,7 +111,7 @@ const Price = () => {
           </>
         </ModalWindow>
       )}
-    </div>
+    </section>
   );
 };
 

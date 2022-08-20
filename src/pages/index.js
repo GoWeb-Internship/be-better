@@ -14,6 +14,7 @@ import Hero from '../components/Hero';
 import FormWithVideoBg from '../components/Form/FormWithVideoBg';
 import BeBetter from '../components/BeBetter';
 import Change from '../components/Change';
+import StepsAdd from '../components/StepsAdd';
 
 const IndexPage = () => {
   return (
@@ -28,6 +29,8 @@ const IndexPage = () => {
         <FormWithVideoBg clickFrom="main" />
         <Price />
         <Guarantee />
+        {/* <Video /> */}
+        <StepsAdd/>
         <Change />
         <BeBetter />
       </Container>

@@ -63,9 +63,9 @@ const ClientHistory = () => {
 
   return (
     <Section>
-      <Slider {...settings}>
-        {!!clients.length &&
-          clients.map(({ frontmatter }, id) => {
+      {!!clients.length &&
+        clients.map(({ frontmatter }, id) => {
+          <Slider {...settings}>
             <li key={id}>
               <div>
                 <p>{frontmatter[`${i18n.language}Name`]}</p>
@@ -74,9 +74,9 @@ const ClientHistory = () => {
               <div>
                 <p>{frontmatter[`${i18n.language}Text`]}</p>
               </div>
-            </li>;
-          })}
-      </Slider>
+            </li>
+          </Slider>;
+        })}
     </Section>
   );
 };

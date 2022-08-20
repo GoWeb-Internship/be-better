@@ -21,23 +21,23 @@ const Price = () => {
   const [currentPrice, setCurrentPrice] = useState('');
   const [currentRate, setCurrentRate] = useState('');
 
-  const { allMarkdownRemark } = useStaticQuery(graphql`
-    query {
-      allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/price/" } }) {
-        nodes {
-          html
-          frontmatter {
-            hour
-            month
-            price
-            economy
-          }
-          id
-        }
-      }
-    }
-  `);
-  const data = allMarkdownRemark.nodes;
+  // const { allMarkdownRemark } = useStaticQuery(graphql`
+  //   query {
+  //     allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/price/" } }) {
+  //       nodes {
+  //         html
+  //         frontmatter {
+  //           hour
+  //           month
+  //           price
+  //           economy
+  //         }
+  //         id
+  //       }
+  //     }
+  //   }
+  // `);
+  // const data = allMarkdownRemark.nodes;
   const { t } = useTranslation();
   const buttonTranslate = t('littleComponents', { returnObjects: true });
 
@@ -73,7 +73,7 @@ const Price = () => {
     <div className={container} id="nav-price">
       <h1>Price</h1>
       <ul className={list}>
-        {allMarkdownRemark &&
+        {/* {allMarkdownRemark &&
           data.map(({ id, frontmatter: { hour, month, price, economy } }) => {
             return (
               <li className={item} key={id}>
@@ -90,7 +90,7 @@ const Price = () => {
                 </Button>
               </li>
             );
-          })}
+          })} */}
       </ul>
       {modal && (
         <ModalWindow className={modalform} handleClose={hideModal}>

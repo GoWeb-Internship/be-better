@@ -47,7 +47,7 @@ const Footer = () => {
         <div>
           <ul className={list}>
             {links.map(({ name, id }) => (
-              <li key={id} className="last: ml-5 z-10">
+              <li key={id} className="last:  z-10">
                 <Link className={link} to={`/${id}`}>
                   {name}
                 </Link>

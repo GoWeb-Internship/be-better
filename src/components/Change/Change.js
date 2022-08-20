@@ -76,7 +76,7 @@ const Change = () => {
           src="../../images/background/arrow-min.png"
           alt=""
           style={{ position: 'absolute' }}
-          className="-z-10  w-px h-3/4 top-0 mt-48 pt-16  ml-10 mr-20 "
+          className="-z-10  w-px h-full top-0 mt-48 pt-16  ml-10 mr-20 "
         />
         <div>
         <div>

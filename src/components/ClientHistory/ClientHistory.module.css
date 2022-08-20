@@ -1,0 +1,10 @@
+.title {
+  @apply title-primary px-5 mb-6 laptop:mb-[58px] laptop:px-15 laptop:text-34 desktop:mb-13;
+}
+.name {
+  @apply text-2xl font-semibold mb-1;
+}
+
+.profession {
+  @apply text-likeGrey laptop:mb-4;
+}

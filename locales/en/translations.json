@@ -7,10 +7,26 @@
       { "name": "Feedback", "id": "nav-feedback" }
     ]
   },
+  "hero": {
+    "teach": "Learn",
+    "life": " to live and work",
+    "kaif": "in a rush",
+    "emotion": "without emotional",
+    "burn": "burnout",
+    "note": "Sign up today for the first coaching session with me and start living in a high tomorrow!",
+    "if": "If you are emotionally burnt out",
+    "pleasure": "and live without pleasure"
+  },
   "form": {
     "nameInput": "Name",
     "accept": "I agree to the processing of my personal data",
-    "button": "Take the first step"
+    "button": "Take the first step",
+    "greeting": "Hi!",
+    "packet": "You have chosen a package ",
+    "connection": "I will contact you soon!",
+    "minimum": "Minimum",
+    "base": "Base",
+    "optimal": "Optimal"
   },
   "facts": {
     "title": "Facts about me",
@@ -95,5 +111,9 @@
       "prof": "Manager",
       "quote": "Thanks for support! It was very important to say everything that was in my head and find those moments that constantly slow me down. I had no idea that everyday little things have such an impact on life in general. I realized that everything is ok with me, started some new habits, thanks to which I met new people and joined a very cool project! Our life is our thoughts!"
     }
-  ]
+  ],
+  "price": {
+    "title": "The cost of your life is high",
+    "economy": "Saving"
+  }
 }

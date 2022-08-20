@@ -2,12 +2,8 @@
 ukSubscription: Мінімальний
 enSubscription: Minimum
 ruSubscription: Минимальный
-ukPrice: "320"
-enPrice: "320"
-ruPrice: "320"
-ukEconomy: "0"
-enEconomy: "0"
-ruEconomy: "0"
+price: 320
+economy: 0
 ukMonth: 1 місяць роботи
 enMonth: 1 month of work
 ruMonth: 1 месяц работы

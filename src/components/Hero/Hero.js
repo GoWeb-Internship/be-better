@@ -5,6 +5,7 @@ import { TiSocialFacebook } from 'react-icons/ti';
 import { TbBrandInstagram } from 'react-icons/tb';
 import { TiSocialLinkedin } from 'react-icons/ti';
 import HeroBackground from './HeroBackground';
+import { useTranslation } from 'gatsby-plugin-react-i18next';
 import Form from '../Form';
 // import FormWithBackground from '../Form/FormWithBackground';
 // import Button from '../reusableComponents/Button';
@@ -12,7 +13,9 @@ import Form from '../Form';
 const Hero = () => {
   // const { t } = useTranslation();
   // const data = t('form', { returnObjects: true });
+  const { t } = useTranslation();
 
+  const hero = t('hero', { returnObjects: true });
   return (
     <section id="home">
       {/* Mobile version */}
@@ -121,28 +124,28 @@ const Hero = () => {
         </ul>
         <div className="text-left">
           <div className=" text-black">
-            <p className="text-32 font-caveat">Научу</p>
+            <p className="text-32 font-caveat">{hero.teach}</p>
             <h1 className="font-normal text-5xl leading-[65px]">
-              жить и работать
+              {hero.life}
               <br />
-              <span className="font-light text-59">в кайф</span>
+              <span className="font-light text-59">{hero.kaif}</span>
             </h1>
             <p className="mb-10 text-32 font-caveat">
-              без эмоциональных <br />
-              выгораний
+              {hero.emotion} <br />
+              {hero.burn}
             </p>
             <Form
               clickFrom="hero"
               formClassname="desktop:!m-0 desktop:!mr-auto desktop:!mb-6"
             />
             <p className="w-81 font-caveat text-black text-lg leading-[23px] text-left">
-              Записывайся сегодня ко мне на первую коуч-сессию и начни уже
-              завтра жить в кайф!
+              {hero.note}
             </p>
           </div>
         </div>
         <p className="ml-auto text-28 font-caveat text-white text-left">
-          Если ты эмоционально выгорел <br />и живешь без удовольствия
+          {hero.if} <br />
+          {hero.pleasure}
         </p>
       </div>
     </section>

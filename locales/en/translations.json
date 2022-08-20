@@ -90,28 +90,9 @@
   "littleComponents": {
     "button": "Sign up"
   },
-  "clientHistory": [
-    {
-      "name": "Andrew",
-      "prof": "Entrepreneur",
-      "quote": "Home-work, work-home. What else can you do when life is getting busy? Need to work. I need to help around the house. You need to submit your report on time. You have to make time for the family. Life is lost among the many musts. I forgot what I wanted in life. Thanks to coaching, I remembered my dreams, remembered what I wanted before, what brought me pleasure, I understood how to regain the lost taste of life. And it's cool!"
-    },
-    {
-      "name": "Elena",
-      "prof": "Entrepreneur",
-      "quote": "Thanks for the coaching. I did not think that everything is hidden in ourselves and I have such potential! She took the risk of performing on stage (previously she did not dare to do this). It's really a thrill to overcome your fear! She also changed her attitude towards making money. I used to think that I needed to work hard in the office, and after coaching I also decided to develop my hobby. The first orders have arrived. I'm extremely happy! Thank you!"
-    },
-    {
-      "name": "Anna",
-      "prof": "Project manager",
-      "quote": "I used to think that my thinking would change as soon as my life began to change and I was really looking forward to it. It turns out the opposite. Only after analyzing and analyzing my thoughts and daily habits, I realized what had been stopping me all this time. Step by step, I began to understand that little by little my life was changing, I took all my hands and, without waiting for a sign from above, began to create pleasant moments myself. Happiness turns out to be in the little things"
-    },
-    {
-      "name": "Alexander",
-      "prof": "Manager",
-      "quote": "Thanks for support! It was very important to say everything that was in my head and find those moments that constantly slow me down. I had no idea that everyday little things have such an impact on life in general. I realized that everything is ok with me, started some new habits, thanks to which I met new people and joined a very cool project! Our life is our thoughts!"
-    }
-  ],
+  "clientHistory": {
+    "title": "Incredible customer stories"
+  },
   "price": {
     "title": "The cost of your life is high",
     "economy": "Saving"

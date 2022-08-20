@@ -13,7 +13,7 @@ collections:
     folder: 'content/price'
     create: true
     delete: false
-    slug: '{{slug}}'
+    slug: '{{ukSubscription}}'
     editor:
       preview: true
     fields:
@@ -38,7 +38,7 @@ collections:
     folder: 'content/donations'
     create: true
     delete: false
-    slug: '{{slug}}'
+    slug: '{{name}}'
     editor:
       preview: false
     fields:

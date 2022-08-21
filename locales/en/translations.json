@@ -8,14 +8,16 @@
     ]
   },
   "hero": {
-    "teach": "Learn",
-    "life": " to live and work",
-    "kaif": "in a rush",
+    "teach": "I will teach you",
+    "life": "  to live",
+    "kaif": "in high spirits",
     "emotion": "without emotional",
-    "burn": "burnout",
+    "burn": "burnouts",
     "note": "Sign up today for the first coaching session with me and start living in a high tomorrow!",
-    "if": "If you are emotionally burnt out",
-    "pleasure": "and live without pleasure"
+    "if": "If you ",
+    "emo": " are emotionally burnt out",
+    "yourLife": "your life",
+    "pleasure": "and don’t enjoy "
   },
   "form": {
     "nameInput": "Name",
@@ -24,12 +26,12 @@
     "greeting": "Hi!",
     "packet": "You have chosen a package ",
     "connection": "I will contact you soon!",
-    "minimum": "Minimum",
-    "base": "Base",
-    "optimal": "Optimal"
+    "minimum": "Basic",
+    "base": "Standard",
+    "optimal": "Professional"
   },
   "reviews": {
-    "title": "Reviews"
+    "title": "Сustomer feedback ❤️"
   },
   "facts": {
     "title": "Facts about me",
@@ -46,7 +48,7 @@
       },
       {
         "textPrimary": "7 years",
-        "textSecondary": "in the development of startups and sales",
+        "textSecondary": "in sales and startup development",
         "svg": "scale"
       },
       {

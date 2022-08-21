@@ -16,6 +16,8 @@ import {
   svgContainerFormula,
   iconArrow,
   testSec,
+  formulaContainer,
+  textContainerFormula,
 } from './List.module.css';
 import { IoIosArrowRoundDown } from 'react-icons/io';
 
@@ -28,17 +30,14 @@ const List = ({ icons = '', data = {}, formula = false }) => {
           <ul className={listFormula}>
             {data.list.map(({ svg, firstWord, colorWord, thirdWord }) => {
               return (
-                <div
-                  key={icons}
-                  className="flex items-center flex-col desktop:flex-row"
-                >
+                <div key={icons} className={formulaContainer}>
                   <li className={itemFormula}>
                     <div className={svgContainerFormula}>
                       <svg className={iconFormula}>
                         <use href={`${icons}#icon-${svg}`} />
                       </svg>
                     </div>
-                    <div className={textContainer}>
+                    <div className={textContainerFormula}>
                       <p className={testSec}>
                         {firstWord}
                         <span className="text-main">{colorWord}</span>
@@ -49,7 +48,7 @@ const List = ({ icons = '', data = {}, formula = false }) => {
                       <use href={`${icons}#icon-${svg}`} />
                     </svg>
                   </li>
-                  <IoIosArrowRoundDown size={48} className={iconArrow} />
+                  <IoIosArrowRoundDown className={iconArrow} />
                 </div>
               );
             })}

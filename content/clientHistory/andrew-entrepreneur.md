@@ -11,12 +11,12 @@ ukText:
 enName: Andrew
 enPosition: Entrepreneur
 enText:
-  Home-work, work-home. What else can you do when life is getting busy? Need to
-  work. I need to help around the house. You need to submit your report on time.
-  You have to make time for the family. Life is lost among the many musts. I
-  forgot what I wanted in life. Thanks to coaching, I remembered my dreams,
-  remembered what I wanted before, what brought me pleasure, I understood how to
-  regain the lost taste of life. And it's cool!
+  Home, work, work, home. What else can you do when life is getting busy? You
+  need to work. You need to help around the house. You need to submit your
+  report on time. You have to pay attention to the family. Life is lost among
+  the many “have to”. I forgot what I wanted in life. Thanks to coaching, I
+  remembered my dreams, remembered what I wanted before, what brought me
+  pleasure, I understood how to regain the lost taste for life. And it's cool!
 ruName: Андрей
 ruPosition: Предприниматель
 ruText:

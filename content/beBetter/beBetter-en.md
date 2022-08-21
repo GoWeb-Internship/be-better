@@ -6,11 +6,11 @@ language: en
 <span class='text-caveat'>In which you will:</span>
 
 <ol>
-    <li>Live in a high, do every day what will bring you pleasure</li>
-    <li>Fulfill your true dreams, desires and achieve what you have been about for so long</li>
+    <li>Live it up, do every day what brings pleasure</li>
+    <li>Fulfill your true dreams, desires and achieve what you have dreamed of for so long</li>
     <li>Meet new and interesting people</li>
     <li>Achieve cool personal results and transform your life beyond recognition</li>
-    <li>It is easier to make decisions and get new impressions of yourself and your life</li>
+    <li>It will be easier to make decisions and get new impressions of yourself and your life</li>
 </ol>
 
 <span class='text-caveat'>Don't waste your time!!! Take a step right now!</span>

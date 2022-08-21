@@ -29,11 +29,11 @@ const IndexPage = () => {
         <ClientHistory />
         <Formula />
         <FormWithVideoBg clickFrom="main" />
-        <WhyStepsAdd/>
+        <WhyStepsAdd />
         <Price />
         <Guarantee />
         {/* <Video /> */}
-        <StepsAdd/>
+        <StepsAdd />
         <Change />
         <BeBetter />
       </Container>

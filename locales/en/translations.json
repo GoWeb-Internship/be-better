@@ -28,6 +28,9 @@
     "base": "Base",
     "optimal": "Optimal"
   },
+  "reviews": {
+    "title": "Reviews"
+  },
   "facts": {
     "title": "Facts about me",
     "list": [

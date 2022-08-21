@@ -11,13 +11,6 @@ const HeroBackground = () => {
         style={{ position: 'absolute' }}
         className="w-[1036px] h-full -z-10 top-0 right-0"
       />
-      <StaticImage
-        layout="fullWidth"
-        src="../../images/background/whiteDesktop.png"
-        alt=""
-        style={{ position: 'absolute' }}
-        className="w-[1036px] h-full -z-10 top-0 right-0"
-      />
     </div>
   );
 };

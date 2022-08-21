@@ -25,8 +25,9 @@
 }
 
 .textPr {
-@apply text-mainSecond list-none ml-12 list-inside font-normal text-sm -mt-11 ;
+@apply text-mainSecond list-none  list-inside font-normal ml-8  -mt-8  text-sm  ;
 }
+
 .textContainer {
 @apply w-50 h-36   px-5 text-center flex flex-col justify-center ;
 }
@@ -40,7 +41,7 @@
 }
 
 .iconClass{
- @apply m-0
+ @apply m-0 pl-46 
 }
 
 
@@ -54,7 +55,7 @@
 }
 
 .iconFacts {
-  @apply stair-icons mt-icon top-60%;
+  @apply stair-icons mt-40   top-60%;
 }
 
 /* margin-top: 473% */
@@ -79,7 +80,7 @@
 }
 
 .iconFormula {
-  @apply stair-icons fill-main mt-icon;
+  @apply stair-icons fill-main;
 }
 .svgBgFormula {
   @apply stair-iconsBg fill-iconBg   ml-60%;

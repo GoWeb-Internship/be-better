@@ -3,13 +3,13 @@ import { useTranslation } from 'gatsby-plugin-react-i18next';
 import NavList from './NavList';
 import { navContainer } from './Nav.module.css';
 
-const Navigation = () => {
+const Navigation = ({ handleClick }) => {
   const { t } = useTranslation();
   const { nav } = t('header', { returnObjects: true });
 
   return (
     <nav className={navContainer}>
-      <NavList navigation={nav} />
+      <NavList navigation={nav} handleClick={handleClick}/>
     </nav>
   );
 };

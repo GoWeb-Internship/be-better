@@ -17,6 +17,8 @@ import Change from '../components/Change';
 import StepsAdd from '../components/StepsAdd';
 import Reviews from '../components/Reviews';
 
+import WhyStepsAdd from '../components/WhyStepsAdd';
+
 const IndexPage = () => {
   return (
     <Layout id="home">
@@ -28,6 +30,7 @@ const IndexPage = () => {
         <ClientHistory />
         <Formula />
         <FormWithVideoBg clickFrom="main" />
+        <WhyStepsAdd/>
         <Price />
         <Reviews />
         <Guarantee />

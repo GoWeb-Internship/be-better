@@ -1,0 +1,33 @@
+.spepstext span{
+    @apply text-mainSecond list-none list-inside font-normal text-sm pr-4 pb-3.5
+}
+.steps{
+    @apply text-orangeDark font-semibold text-4xl  text-center pt-15
+}
+.spepstext li{
+    @apply list-none list-inside font-normal text-sm pr-4 inline text-start pl-4  flow-root  pb-24  pt-2  w-40 
+}
+.spepstext ol{
+    @apply flex text-center pl-14
+}
+.spepstext li:nth-child(1){
+    @apply mt-64 pt-36 ml-4 
+}
+.spepstext li:nth-child(2){
+    @apply mt-72 pt-14 ml-20 
+}
+.spepstext li:nth-child(3){
+    @apply mt-52 pt-20 ml-20
+}
+.spepstext li:nth-child(4){
+    @apply mt-40 pt-20 ml-16 pl-7 
+}
+.spepstext li:nth-child(5){
+    @apply mt-32 ml-14 pl-10 pt-15
+}
+.spepstext li:nth-child(6){
+    @apply mt-20 ml-28 pt-16
+}
+.textSteps{
+    @apply relative
+}

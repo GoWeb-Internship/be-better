@@ -4,7 +4,7 @@ import { useTranslation } from 'gatsby-plugin-react-i18next';
 import { StaticImage } from 'gatsby-plugin-image';
 // import WhySteps from '../WhySteps';
 import List from '../reusableComponents/Steps';
-import svg from '../../images/iconku.svg';
+import svg from '../../images/iconsnew.svg';
 
 const StepsAdd = () => {
   const { t } = useTranslation();
@@ -18,7 +18,7 @@ const StepsAdd = () => {
           src="../../images/background/str-min.png"
           alt=""
           style={{ position: 'absolute' }}
-          className="w-96 h-52 -z-10  pl-40 left-2/4 top-2/4 "
+          className="w-64 h-20 z-1  pl-40 left-2/4 top-3/4 "
         />
          <StaticImage
           layout="fullWidth"

@@ -14,7 +14,7 @@ import Hero from '../components/Hero';
 import FormWithVideoBg from '../components/Form/FormWithVideoBg';
 import BeBetter from '../components/BeBetter';
 import Change from '../components/Change';
-import StepsAdd from '../components/StepsAdd';
+import Steps from '../components/Steps'
 
 import WhyStepsAdd from '../components/WhyStepsAdd';
 
@@ -33,7 +33,7 @@ const IndexPage = () => {
         <Price />
         <Guarantee />
         {/* <Video /> */}
-        <StepsAdd />
+        <Steps />
         <Change />
         <BeBetter />
       </Container>

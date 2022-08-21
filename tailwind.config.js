@@ -155,6 +155,12 @@ module.exports = {
           margin: 'auto',
           position: 'absolute',
         },
+        '.icons-step':{
+          width: '200px',
+          height: '128px',
+          margin: 'auto',
+          position: 'absolute'
+        }
       });
     }),
   ],

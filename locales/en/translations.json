@@ -104,42 +104,42 @@
     "title": "What are your 6 most important results?",
     "page": [
       {
-        "textPrimary": "1 Understanding",
+        "textPrimary": "1.Understanding",
         "textSecondary": "Understand what you really want in life and begin to purposefully move towards your desires",
         "svg": "gone",
         "img": "one",
         "icon": "rone"
       },
       {
-        "textPrimary": "2 Value",
+        "textPrimary": "2.Value",
         "textSecondary": "You will begin to live a conscious and full life paying attention to important things that you previously put off or ignored",
         "svg": "gtwoo",
         "img": "two",
         "icon": "rtwo"
       },
       {
-        "textPrimary": "3 Confidence",
+        "textPrimary": "3.Confidence",
         "textSecondary": "You will gain courage and self-confidence, you will begin to do what you could not decide on before.",
         "svg": "gthree",
         "img": "three",
         "icon": "rthree"
       },
       {
-        "textPrimary": "4 Settings",
+        "textPrimary": "4.Settings",
         "textSecondary": "You will change your attitude towards yourself and the environment, you will find productive attitudes that will help you reach a new level of life",
         "svg": "gfor",
         "img": "four",
         "icon": "rfor"
       },
       {
-        "textPrimary": "5 Energy",
+        "textPrimary": "5.Energy",
         "textSecondary": "Increase your personal efficiency and energy level to move towards your goals",
         "svg": "gfive",
         "img": "five",
         "icon": "rfive"
       },
       {
-        "textPrimary": "6 Pleasure",
+        "textPrimary": "6.Pleasure",
         "textSecondary": "Fill your life with pleasure and incredible accomplishments",
         "svg": "gsix",
         "img": "six"

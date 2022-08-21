@@ -7,6 +7,7 @@ import { titleFacts,
     svgContainerFacts,
     textContainer,
     textPr,
+    iconClass,
     testSec,} from './Page.module.css'
 
 const Page = ({ icons = '', data = {}, img ='', icon='' }) => {
@@ -26,7 +27,7 @@ const Page = ({ icons = '', data = {}, img ='', icon='' }) => {
                   </svg>
                   <p className={textPr}>{textPrimary}</p>
                 </div>
-                <div className=''>
+                <div className={iconClass}>
                 <svg className={icons}>
                     <use href={`${icons}#icon-${icon}`} />
                   </svg>

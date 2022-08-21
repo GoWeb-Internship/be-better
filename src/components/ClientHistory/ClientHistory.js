@@ -7,7 +7,7 @@ import Section from '../reusableComponents/Section';
 import { SwiperSlide } from 'swiper/react';
 import Slider from '../reusableComponents/Slider';
 import { title, name, profession } from './ClientHistory.module.css';
-// import Svg from '../../images/quote.svg';
+import { FaQuoteLeft } from 'react-icons/fa';
 const ClientHistory = () => {
   const { t, i18n } = useTranslation();
 
@@ -38,7 +38,7 @@ const ClientHistory = () => {
   const clients = allMarkdownRemark.nodes;
 
   return (
-    <Section className="py-20 ">
+    <Section className="py-20" id="nav-reviews">
       <h3 className={title}>{data.title}</h3>
 
       <Slider>
@@ -56,14 +56,17 @@ const ClientHistory = () => {
                     </p>
                   </div>
                   <div className=" laptop:w-80 desktop:w-[518px] desktop:ml-5 ">
-                    <p>{frontmatter[`${i18n.language}Text`]}</p>{' '}
+                    <p>{frontmatter[`${i18n.language}Text`]}</p>
                   </div>
-                  {/* <img src={Svg} alt="" /> */}
                 </div>
               </SwiperSlide>
             );
           })}
       </Slider>
+      <FaQuoteLeft
+        className="absolute -z-10 text-[#E8F6FA] top-[30%] left-[5%] laptop:top-[45%] laptop:left-[27%] desktop:top-1/4 desktop:left-[37%]"
+        size={120}
+      />
     </Section>
   );
 };

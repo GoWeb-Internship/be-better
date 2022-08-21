@@ -11,8 +11,8 @@ enText: Julia, I want to say a huge thank you to our work in coaching! I
   clarified a lot in my request, now I know how to proceed. Everything became
   easy and clear thanks to your work. Thank you for your support, it was a
   pleasure to work with you! 😊
-ruName: CEO Global LTD
-ruPosition: Александра
+ruName: Александра
+ruPosition: CEO Global LTD
 ruText: Юля, хочу сказать огромное спасибо ща нашу работу в коучинге! Я многое
   прояснила  в своем запросе, теперь знаю, как нужно действовать. Все стало
   легко и понятно благодаря твоей работе. Спасибо за твою поддержку, было очень

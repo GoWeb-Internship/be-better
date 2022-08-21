@@ -8,10 +8,10 @@ const StepsAdd = () => {
   const { t } = useTranslation();
   const data = t('stepsAdd', { returnObjects: true });
   return (
-    <Section className="pt-20 pb-16 relative">
+    <Section className="relative">
     <StaticImage
           layout="fullWidth"
-          src="../../images/background/main-min.png"
+          src="../../images/background/stec.png"
           alt=""
           style={{ position: 'absolute' }}
           className="-z-20 w-full h-full"

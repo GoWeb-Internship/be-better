@@ -1,6 +1,4 @@
 import React from 'react';
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
 import { useTranslation } from 'gatsby-plugin-react-i18next';
 import { graphql, useStaticQuery } from 'gatsby';
 import Section from '../reusableComponents/Section';
@@ -38,10 +36,10 @@ const ClientHistory = () => {
   const clients = allMarkdownRemark.nodes;
 
   return (
-    <Section className="py-20" id="nav-reviews">
+    <Section className="py-20">
       <h3 className={title}>{data.title}</h3>
 
-      <Slider>
+      <Slider slidesPerView={1}>
         {!!clients.length &&
           clients.map(({ frontmatter }, id) => {
             return (

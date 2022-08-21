@@ -15,7 +15,6 @@ import FormWithVideoBg from '../components/Form/FormWithVideoBg';
 import BeBetter from '../components/BeBetter';
 import Change from '../components/Change';
 import StepsAdd from '../components/StepsAdd';
-import Reviews from '../components/Reviews';
 
 import WhyStepsAdd from '../components/WhyStepsAdd';
 
@@ -30,9 +29,8 @@ const IndexPage = () => {
         <ClientHistory />
         <Formula />
         <FormWithVideoBg clickFrom="main" />
-        <WhyStepsAdd/>
+        <WhyStepsAdd />
         <Price />
-        <Reviews />
         <Guarantee />
         {/* <Video /> */}
         <StepsAdd />

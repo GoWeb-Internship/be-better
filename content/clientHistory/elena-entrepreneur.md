@@ -11,13 +11,12 @@ ukText:
 enName: Elena
 enPosition: Entrepreneur
 enText:
-  Thanks for the coaching. I did not think that everything is hidden in
-  ourselves and I have such potential! She took the risk of performing on stage
-  (previously she did not dare to do this). It's really a thrill to overcome
-  your fear! She also changed her attitude towards making money. I used to think
-  that I needed to work hard in the office, and after coaching I also decided to
-  develop my hobby. The first orders have arrived. I'm extremely happy! Thank
-  you!
+  Thanks for the coaching. I have never thought that we all have such a hidden
+  potential! I took the risk of performing on stage (previously I did not dare
+  to do it). It's really a thrill to overcome your fear! Also I changed my
+  attitude towards making money. I used to think that I needed to work hard in
+  the office, and after coaching I also decided to make money on my hobby. The
+  first orders have appeared. I'm extremely happy! Thank you!
 ruName: Елена
 ruPosition: Предприниматель
 ruText:

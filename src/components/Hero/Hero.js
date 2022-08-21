@@ -144,8 +144,9 @@ const Hero = () => {
           </div>
         </div>
         <p className="ml-auto text-28 font-caveat text-white text-left">
-          {hero.if} <br />
-          {hero.pleasure}
+          {hero.if}
+          {hero.emo} <br />
+          {hero.yourLife} {hero.pleasure}
         </p>
       </div>
     </section>

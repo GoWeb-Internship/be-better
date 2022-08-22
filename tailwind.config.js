@@ -163,7 +163,11 @@ module.exports = {
           height: '128px',
           margin: 'auto',
           position: 'absolute'
-        }
+        },
+        '.stair-iconka': {
+          width: '32px',
+          height: '32px',
+        },
       });
     }),
   ],

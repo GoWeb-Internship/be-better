@@ -15,7 +15,7 @@ const Footer = () => {
       <Container>
         <div className={container}>
           <StaticImage
-            layout="fullWidth"
+            layout="fixed"
             src="../../images/background/bg-min.png"
             alt=""
             style={{ position: 'absolute' }}

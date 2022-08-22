@@ -108,9 +108,9 @@ collections:
       - { label: 'Title', name: 'ukTitle', widget: 'string' }
       - { label: 'Title', name: 'enTitle', widget: 'string' }
       - { label: 'Title', name: 'ruTitle', widget: 'string' }
-      - { label: 'Texet', name: 'ukTexet', widget: 'string' }
-      - { label: 'Texet', name: 'enTexet', widget: 'string' }
-      - { label: 'Texet', name: 'ruTexet', widget: 'string' }
+      - { label: 'Text', name: 'ukText', widget: 'string' }
+      - { label: 'Text', name: 'enText', widget: 'string' }
+      - { label: 'Text', name: 'ruText', widget: 'string' }
 
   # - name: 'aboutMe'
   #   label: 'About me'

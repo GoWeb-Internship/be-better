@@ -4,7 +4,7 @@ import { titleFacts,iconFacts, listFacts, itemFacts, svgBgFacts, svgContainerFac
 const Page = ({ icons = '', data = {}, img ='', icon='' }) => {
 
   return (
-    <div>
+    <div className='max-w-full'>
       <h3 className={titleFacts}>{data.title}</h3>
       {!!data.page.length && (
         <ul className={`${listFacts}`}>

@@ -9,7 +9,7 @@ const Slider = ({ children, slidesPerView }) => {
   return (
     <div className="relative">
       <Swiper
-        className={`mx-auto w-80 laptop:w-[600px]  desktop:w-[1248px]`}
+        className={`mx-auto w-80 laptop:w-[600px]  desktop:w-[1248px] pb-[5px]`}
         navigation={true}
         slidesPerView={slidesPerView}
         modules={[Navigation, EffectFade]}

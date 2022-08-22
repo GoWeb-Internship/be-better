@@ -166,7 +166,7 @@ const Form = ({
               <label className="flex items-center mt-1 pl-2 py-1">
                 <input className={checkbox} type="checkbox" {...field} />
                 <span className={check}></span>
-                <span className="ml-2	text-[8px] text-black">{data.accept}</span>
+                <span className="ml-2	text-[9px] text-black">{data.accept}</span>
               </label>
               <p className="absolute top-6 text-error text-[8px]">
                 {errors.checkbox?.message}

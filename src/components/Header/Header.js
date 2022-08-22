@@ -7,7 +7,7 @@ import SwitchLang from '../SwitchLang';
 
 const Header = ({ siteTitle }) => {
   return (
-    <header className="container m-auto h-20" id="home">
+    <header className="container m-auto h-20 " id="home">
       <div className="fixed flex justify-between w-[1440px] h-20 px-20 z-20 items-center bg-white">
         <Link to="#home" className="hover:scale-110 transition-transform">
           <StaticImage

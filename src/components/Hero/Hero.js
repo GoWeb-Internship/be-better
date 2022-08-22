@@ -8,6 +8,7 @@ import HeroBackground from './HeroBackground';
 import { useTranslation } from 'gatsby-plugin-react-i18next';
 import Form from '../Form';
 import Section from '../reusableComponents/Section';
+import Social from '../Social';
 // import FormWithBackground from '../Form/FormWithBackground';
 // import Button from '../reusableComponents/Button';
 
@@ -94,7 +95,10 @@ const Hero = () => {
       {/* Desktop version */}
       <div className="relative flex items-start pt-11 px-20 h-[700px]">
         <HeroBackground />
-        <ul className="flex flex-col space-y-8 mr-[172px]">
+        <div className="mr-[172px]">
+          <Social />
+        </div>
+        {/* <ul className="flex flex-col space-y-8 mr-[172px]">
           <li className="flex justify-center items-center w-11 h-11 bg-main text-white border border-main rounded-2xl hover:bg-white hover:text-main transition">
             <a
               href="https://instagram.com/yuliya_shayenko?igshid=YmMyMTA2M2Y="
@@ -122,7 +126,7 @@ const Hero = () => {
               <TiSocialLinkedin className="w-6 h-6 fill-inherit " />
             </a>
           </li>
-        </ul>
+        </ul> */}
         <div className="text-left">
           <div className=" text-black">
             <p className="text-32 font-caveat">{hero.teach}</p>

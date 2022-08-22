@@ -42,6 +42,7 @@ module.exports = {
         13: '52px',
         22: '92px',
         50: '200px',
+        74: '296px',
       },
       fontFamily: {
         caveat: 'Caveat,sans-serif',
@@ -158,12 +159,12 @@ module.exports = {
           margin: 'auto',
           position: 'absolute',
         },
-        '.icons-step':{
+        '.icons-step': {
           width: '200px',
           height: '128px',
           margin: 'auto',
-          position: 'absolute'
-        }
+          position: 'absolute',
+        },
       });
     }),
   ],

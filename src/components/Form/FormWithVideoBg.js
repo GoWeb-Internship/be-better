@@ -1,11 +1,12 @@
 import React from 'react';
-import Form from './Form';
+import { useTranslation } from 'gatsby-plugin-react-i18next';
 import { TiSocialFacebook } from 'react-icons/ti';
 import { TbBrandInstagram } from 'react-icons/tb';
 import { TiSocialLinkedin } from 'react-icons/ti';
-import Video from '../Video';
 import Section from '../reusableComponents/Section';
-import { useTranslation } from 'gatsby-plugin-react-i18next';
+import Video from '../Video';
+import Form from './Form';
+import Social from '../Social';
 
 const FormWithVideoBg = ({ clickFrom }) => {
   const { t } = useTranslation();
@@ -32,7 +33,10 @@ const FormWithVideoBg = ({ clickFrom }) => {
           </p>
         </div>
       </div>
-      <ul className="flex flex-col space-y-8 ml-[213px] pt-20 ">
+      <div className="ml-[213px] pt-20 ">
+        <Social />
+      </div>
+      {/* <ul className="flex flex-col space-y-8 ">
         <li className="flex justify-center items-center w-11 h-11 bg-main text-white border border-main rounded-2xl hover:bg-white hover:text-main transition">
           <a
             href="https://instagram.com/yuliya_shayenko?igshid=YmMyMTA2M2Y="
@@ -60,7 +64,7 @@ const FormWithVideoBg = ({ clickFrom }) => {
             <TiSocialLinkedin className="w-6 h-6 fill-inherit " />
           </a>
         </li>
-      </ul>
+      </ul> */}
     </Section>
   );
 };

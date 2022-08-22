@@ -24,21 +24,19 @@ const FooterNext = () => {
 
   return (
     <div className={containerFooter}>
-      <div className={textFooter}>
-        {data.map(node => {
-          if (node.frontmatter.language === i18n.language) {
-            return (
-              <div key={node.frontmatter.language}>
-                <h3 className={textFooter}>{node.frontmatter.title}</h3>
-                <div
-                  className={text}
-                  dangerouslySetInnerHTML={{ __html: node.html }}
-                />
-              </div>
-            );
-          }
-        })}
-      </div>
+      {data.map(node => {
+        if (node.frontmatter.language === i18n.language) {
+          return (
+            <div key={node.frontmatter.language}>
+              <h3 className={textFooter}>{node.frontmatter.title}</h3>
+              <div
+                className={text}
+                dangerouslySetInnerHTML={{ __html: node.html }}
+              />
+            </div>
+          );
+        }
+      })}
     </div>
   );
 };

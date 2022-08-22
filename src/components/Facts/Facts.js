@@ -28,7 +28,7 @@ const Facts = () => {
           height={560}
           className="rounded-2xl ml-13 "
           placeholder="blurred"
-          formats={['auto', 'webp']}
+          formats={['auto', 'webp', 'avif']}
         />
       </div>
       <Way />

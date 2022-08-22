@@ -3,7 +3,7 @@ import { graphql, useStaticQuery } from 'gatsby';
 import { StaticImage } from 'gatsby-plugin-image';
 import AboutYou from '../AboutYou';
 import { useTranslation } from 'gatsby-plugin-react-i18next';
-
+import Section from '../reusableComponents/Section';
 import {
   title,
   sectionContainer,
@@ -31,17 +31,18 @@ const AboutMe = () => {
   const data = allMarkdownRemark.nodes;
 
   return (
-    <section className={sectionContainer} id="nav-about">
+    <Section className={sectionContainer} id="nav-about">
       <div className="flex justify-center">
         <div>
           <StaticImage
-            src="../../images/aboutMe.jpg"
+            src="../../images/aboutMe.jpeg"
+            layout="constrained"
             alt="author"
             width={456}
             height={480}
             className="rounded-2xl  "
             placeholder="blurred"
-            formats={['auto', 'webp']}
+            formats={['auto', 'webp', 'avif']}
           />
         </div>
         <div className={textContainer}>
@@ -64,13 +65,13 @@ const AboutMe = () => {
 
       <StaticImage
         className="ml-auto mt-13"
-        src="../../images/signature.png"
+        src="../../images/signature.jpg"
         width={265}
         height={80}
         layout="fixed"
         alt=""
       />
-    </section>
+    </Section>
   );
 };
 

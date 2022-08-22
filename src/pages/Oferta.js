@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'gatsby';
 import { StaticImage } from 'gatsby-plugin-image';
 
-const Oferta = () => {
+const oferta = () => {
   return (
     <div>
       <StaticImage
@@ -877,4 +877,4 @@ const Oferta = () => {
   );
 };
 
-export default Oferta;
+export default oferta;

@@ -2,90 +2,71 @@
   @apply text-mainSecondLight font-semibold text-4xl  text-center pt-20 -top-20;
 }
 .listFacts {
-  @apply flex list-none list-inside  font-normal text-sm pr-4  text-start pl-4  w-40 pb-24  pt-2  ;
+  @apply flex  text-sm pr-4  text-start  pb-24  pt-2 ;
 }
 
 .listFacts li:nth-child(1){
-  @apply mt-80 pt-10 ml-20 pr-4
+  @apply mr-5 mt-64 w-48 ml-20
 }
 .listFacts li:nth-child(2){
-  @apply mt-64 pt-10  pr-4
-}
+  @apply   mr-5  mt-52 w-48
+} 
 .listFacts li:nth-child(3){
-  @apply mt-48 pt-10 pr-4 
+  @apply  mr-5 mt-40 w-48 
+}
+.listFacts p:nth-child(3){
+  @apply  -mt-40
 }
 .listFacts li:nth-child(4){
-  @apply mt-36 pt-10  pr-4
-}
-.listFacts li:nth-child(5){
-  @apply mt-28  pt-10 pr-4
-}
-.listFacts li:nth-child(6){
-  @apply mt-20  pt-10
+  @apply   mr-5   mt-28  w-48
 }
 
+.listFacts li:nth-child(5){
+  @apply  mr-5 mt-16 w-48
+}
+.listFacts li:nth-child(6){
+  @apply mr-5 mt-5  w-48
+} 
+
+
 .textPr {
-@apply text-mainSecond list-none  list-inside font-normal ml-8  -mt-8  text-sm  ;
+@apply text-mainSecond list-none  list-inside font-normal pl-4  -mt-36  text-sm  ;
 }
 
 .textContainer {
-@apply w-50 h-36   px-5 text-center flex flex-col justify-center ;
-}
+  @apply w-50 h-36 mt-36 text-center flex flex-col justify-center ;
+  }
+  
+  
+  .testSec {
+  @apply  font-normal text-sm pr-4 text-start pl-4 -mt-40    
+  }
+ 
 
-.testSec {
-@apply list-none list-inside font-normal text-sm pr-4  text-start pl-4   pb-20 -mb-5 pt-2   
-}
+  
+  .iconClass{
+    @apply  pl-40  -mb-56 pb-12
 
-.icons{
-@apply ml-40 -mb-20 pl-40 mt-40
-}
-
-.iconClass{
- @apply m-0 
-}
-
-
-
-.itemFacts {
-  @apply relative;
-}
-
-.svgContainerFacts {
-  @apply w-5 h-5  rounded-lg absolute -top-5  left-7   z-10;
-}
-
-.iconFacts {
-  @apply stair-icons mt-40   top-60%;
-}
-
-/* margin-top: 473% */
-
-
-.svgBgFacts {
-  @apply icons-step fill-mainSecondLight  -mt-48 -ml-5;
-}
-
-.iconArrow {
-  @apply mt-2  text-likeGrey desktop:-rotate-90;
-}
-
-.titleFormula {
-  @apply title-primary mb-20 desktop:text-34;
-}
-.listFormula {
-  @apply flex flex-col desktop:flex-row justify-center;
-}
-.itemFormula {
-  @apply relative flex flex-col items-center desktop:flex-row;
-}
-
-.iconFormula {
-  @apply stair-icons fill-main;
-}
-.svgBgFormula {
-  @apply stair-iconsBg fill-iconBg   ml-60%;
-}
-
-.svgContainerFormula {
-  @apply w-14 h-14 bg-white rounded-lg absolute shadow-you -top-icon left-2/4 -translate-x-1/2 z-10;
-}
+  }
+  
+  
+  
+  .itemFacts {
+    @apply relative w-48;
+  }
+  
+  .svgContainerFacts {
+    @apply w-5 h-5   absolute -top-5  left-7   z-10;
+  }
+  
+  .iconFacts {
+    @apply   mt-20 -ml-4;
+  }
+  
+  
+  
+  .svgBgFacts {
+    @apply icons-step fill-mainSecondLight  -mt-48 -ml-5;
+  }
+  
+   

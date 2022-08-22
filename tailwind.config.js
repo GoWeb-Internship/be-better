@@ -16,6 +16,8 @@ module.exports = {
         iconPercentTrF: '45%',
       },
       boxShadow: {
+        orange:
+          '0px 1px 2px rgba(1, 66, 82, 0.3), 0px 1px 3px 1px rgba(1, 66, 82, 0.15)',
         you: '0px 1px 2px rgba(1, 66, 82, 0.3), 0px 1px 3px 1px rgba(1, 66, 82, 0.15)',
         formInput: 'inset 0px -1px 3px 1px rgba(0, 0, 0, 0.15)',
       },
@@ -164,6 +166,10 @@ module.exports = {
           height: '128px',
           margin: 'auto',
           position: 'absolute',
+        },
+        '.stair-iconka': {
+          width: '32px',
+          height: '32px',
         },
       });
     }),

@@ -40,7 +40,9 @@ const List = ({ icons = '', data = {}, formula = false }) => {
                     <div className={textContainerFormula}>
                       <p className={testSec}>
                         {firstWord}
-                        <span className="text-main">{colorWord}</span>
+                        <span className="text-main font-bold ">
+                          {colorWord}
+                        </span>
                         {thirdWord}
                       </p>
                     </div>
@@ -84,9 +86,6 @@ const List = ({ icons = '', data = {}, formula = false }) => {
       )}
     </div>
   );
-
-
-  
 };
 
 export default List;

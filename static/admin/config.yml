@@ -96,6 +96,22 @@ collections:
         }
       - { label: 'Text Ru', name: 'ruText', widget: 'string' }
       - { label: 'Language', name: 'language', widget: 'hidden', default: 'uk' }
+  # Policy
+  - name: 'policy'
+    label: 'Policy'
+    folder: 'content/policy'
+    create: true
+    delete: true
+    editor:
+      preview: true
+    fields:
+      - { label: 'Title', name: 'ukTitle', widget: 'string' }
+      - { label: 'Title', name: 'enTitle', widget: 'string' }
+      - { label: 'Title', name: 'ruTitle', widget: 'string' }
+      - { label: 'Text', name: 'ukText', widget: 'string' }
+      - { label: 'Text', name: 'enText', widget: 'string' }
+      - { label: 'Text', name: 'ruText', widget: 'string' }
+
   # - name: 'aboutMe'
   #   label: 'About me'
   #   folder: 'content/aboutMe'

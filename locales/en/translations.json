@@ -19,6 +19,18 @@
     "yourLife": "your life",
     "pleasure": "and don’t enjoy "
   },
+  "couch": {
+    "title": "Why it is better with a coach?",
+    "mySelf": "“I’ll do it myself” is a common mistake of people who drive themselves and constantly face burnout…",
+    "course": "Of course, you can do it yourself, if you find the time and energy to study all the necessary information, you will understand what you need, what are the problems and start acting.",
+    "noTime": "But there is not enough time anyway, and your current knowledge has led to the current situation.",
+    "why": "What for you need to “reinvent the wheel“, waste time, money, energy and to go all the way yourself and, besides, you don’t even know whether it will be successful.  Instead, you can call for professional help and achieve results faster and easier. That's what all successful people do!"
+  },
+  "modalForm": {
+    "hi": "Hi",
+    "connection": "I will contact you soon",
+    "seeYou": "See you"
+  },
   "form": {
     "nameInput": "Name",
     "accept": "I agree to the processing of my personal data",
@@ -57,8 +69,8 @@
         "svg": "house"
       },
       {
-        "textPrimary": "since 2021",
-        "textSecondary": "ICF life coach",
+        "textPrimary": "life coach",
+        "textSecondary": "ICF since 2021",
         "svg": "icf"
       },
       {

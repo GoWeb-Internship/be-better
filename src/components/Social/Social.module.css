@@ -1,3 +1,7 @@
-.social {
-  @apply flex justify-center items-center pl-2 pr-2 w-11 h-11 mb-3  bg-main text-white border border-main rounded-2xl hover:bg-white hover:text-main transition;
+.list {
+  @apply flex flex-col space-y-8;
+}
+
+.link {
+  @apply flex justify-center items-center p-2 bg-main text-white border border-main rounded-2xl outline-none transition hover:bg-white hover:text-main focus:bg-white focus:text-main;
 }

@@ -21,8 +21,8 @@ const FormWithVideoBg = ({ clickFrom }) => {
             <br />
             <span className="text-32 font-caveat font-normal">{hero.emo}</span>
             <br />
-            {hero.pleasure}
-            <br /> {hero.yourLife}
+            {hero.yourLife}
+            <br /> {hero.pleasure}
           </p>
           <Form
             clickFrom={clickFrom}

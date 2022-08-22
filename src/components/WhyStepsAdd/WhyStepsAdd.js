@@ -12,7 +12,7 @@ const StepsAdd = () => {
 
   return (
     <Section className="relative">
-      <div className="relative max-h-full pb-[142px]">
+      <div className="relative max-h-full ">
         <StaticImage
           layout="fullWidth"
           src="../../images/background/str-min.png"

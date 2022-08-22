@@ -105,12 +105,9 @@ collections:
     editor:
       preview: true
     fields:
-      - { label: 'Title', name: 'ukTitle', widget: 'string' }
-      - { label: 'Title', name: 'enTitle', widget: 'string' }
-      - { label: 'Title', name: 'ruTitle', widget: 'string' }
-      - { label: 'Text', name: 'ukText', widget: 'string' }
-      - { label: 'Text', name: 'enText', widget: 'string' }
-      - { label: 'Text', name: 'ruText', widget: 'string' }
+      - { label: 'Text Uk', name: 'ukText', widget: 'string' }
+      - { label: 'Text En', name: 'enText', widget: 'string' }
+      - { label: 'Text Ru', name: 'ruText', widget: 'string' }
 
   # - name: 'aboutMe'
   #   label: 'About me'

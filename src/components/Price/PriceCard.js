@@ -2,7 +2,6 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 import Button from '../reusableComponents/Button';
 import PropTypes from 'prop-types';
-
 const PriceCard = ({ priceData = {}, onClick }) => {
   const { t, i18n } = useTranslation();
   const buttonTranslate = t('littleComponents', { returnObjects: true });
@@ -19,10 +18,8 @@ const PriceCard = ({ priceData = {}, onClick }) => {
         {price.economy} ${priceData.economy}
       </p>
 
-      <p className=" mb-6 text-likeGrey ">
-        {priceData[`${i18n.language}Month`]}
-      </p>
-      <p className="mb-2">{priceData[`${i18n.language}Hour`]}</p>
+      <p className=" mb-2">{priceData[`${i18n.language}Month`]}</p>
+      <p className="mb-6 text-likeGrey ">{priceData[`${i18n.language}Hour`]}</p>
       <Button
         type="button"
         className="border border-gray-300 px-16 py-2 rounded-3xl"

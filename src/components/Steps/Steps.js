@@ -7,21 +7,20 @@ import { useTranslation } from 'gatsby-plugin-react-i18next';
 import svg from '../../images/iconku.svg';
 
 const Steps = () => {
-  
   const { t } = useTranslation();
   const data = t('steps', { returnObjects: true });
 
   return (
     <Section className="pt-20 pb-16 relative">
-    <div className="relative max-h-full">
-      <StaticImage
+      <div className="relative max-h-full">
+        <StaticImage
           layout="fullWidth"
           src="../../images/background/Frame-min.png"
           alt=""
           style={{ position: 'absolute' }}
           className="w-96 h-52 -z-10  pl-40 left-2/4 top-2/4 "
         />
-         <StaticImage
+        <StaticImage
           layout="fullWidth"
           src="../../images/background/backgroundBlu.jpg"
           alt=""
@@ -29,7 +28,7 @@ const Steps = () => {
           className="-z-20 w-full h-full"
         />
         <List data={data} icons={svg} />
-    </div>
+      </div>
     </Section>
   );
 };

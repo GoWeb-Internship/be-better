@@ -33,7 +33,7 @@ const Reviews = () => {
 
   const reviews = t('reviews', { returnObjects: true });
   return (
-    <Section id="nav-reviews">
+    <Section id="nav-reviews" className="mt-[181px]">
       <h3 className="title-primary text-orangeDark px-5 mb-6 laptop:mb-[58px] laptop:px-15 laptop:text-34 desktop:mb-11">
         {reviews.title}
       </h3>

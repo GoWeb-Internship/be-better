@@ -3,7 +3,6 @@ import { graphql, useStaticQuery } from 'gatsby';
 import { StaticImage } from 'gatsby-plugin-image';
 import { textSteps, spepstext, steps } from './WhySteps.module.css';
 import { useTranslation } from 'gatsby-plugin-react-i18next';
-import Reviews from '../Reviews';
 
 const Steps = () => {
   const { i18n } = useTranslation();
@@ -47,7 +46,6 @@ const Steps = () => {
           }
         })}
       </div>
-      <Reviews />
     </div>
   );
 };

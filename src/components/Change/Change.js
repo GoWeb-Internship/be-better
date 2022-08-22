@@ -92,7 +92,7 @@ const Change = () => {
                         />
                         <Button
                           type="button"
-                          className="!bg-mainSecond border !mt-5 px-16 !ml-28 py-2 rounded-3xl"
+                          className="!bg-mainSecond border !mt-5 px-16 !ml-28 py-2 rounded-3xl hover:!bg-[#d46828] ease-in duration-300"
                           doAction={() => showModal()}
                         >
                           {buttonTranslate.button}

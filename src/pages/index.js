@@ -14,7 +14,7 @@ import Hero from '../components/Hero';
 import FormWithVideoBg from '../components/Form/FormWithVideoBg';
 import BeBetter from '../components/BeBetter';
 import Change from '../components/Change';
-import StepsAdd from '../components/StepsAdd';
+// import StepsAdd from '../components/StepsAdd';
 import Couch from '../components/Couch';
 import WhyStepsAdd from '../components/WhyStepsAdd';
 import Steps from '../components/Steps';

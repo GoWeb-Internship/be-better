@@ -11,7 +11,7 @@
 }
 
 .listContainer span {
-  @apply text-mainSecond;
+  @apply text-mainSecond font-bold;
 }
 
 .listContainer li {

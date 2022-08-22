@@ -14,14 +14,15 @@ const PriceCard = ({ priceData = {}, onClick }) => {
       <p className=" text-xl font-medium mb-14  ">
         {priceData[`${i18n.language}Subscription`]}
       </p>
-      <p className=" mb-2 ">${priceData.price}</p>
+      <p className=" mb-2 font-semibold text-34 ">${priceData.price}</p>
       <p className={`${economy} mb-16 text-main `}>
         {price.economy} ${priceData.economy}
       </p>
-      <p className="mb-2">{priceData[`${i18n.language}Hour`]}</p>
+
       <p className=" mb-6 text-likeGrey ">
         {priceData[`${i18n.language}Month`]}
       </p>
+      <p className="mb-2">{priceData[`${i18n.language}Hour`]}</p>
       <Button
         type="button"
         className="border border-gray-300 px-16 py-2 rounded-3xl"

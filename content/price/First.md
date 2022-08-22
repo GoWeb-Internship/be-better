@@ -1,7 +1,7 @@
 ---
-ukSubscription: Мінімальний
-enSubscription: Minimum
-ruSubscription: Минимальный
+ukSubscription: Basic
+enSubscription: Basic
+ruSubscription: Basic
 price: 320
 economy: 0
 ukMonth: 1 місяць роботи

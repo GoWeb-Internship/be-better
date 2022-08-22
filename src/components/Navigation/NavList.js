@@ -1,17 +1,19 @@
 import React from 'react';
-import { Link } from 'gatsby-plugin-react-i18next';
-import { links } from './Nav.module.css';
+import { Link } from 'react-scroll';
+import { links, active } from './Nav.module.css';
 
-const NavList = ({ navigation, handleClick }) => {
+const NavList = ({ navigation }) => {
   return (
     <ul className="flex">
       {navigation.map(({ id, name }) => (
-        <li key={id} className="mr-10 ">
+        <li key={id} className="mr-10 cursor-pointer">
           <Link
-            to={`#${id}`}
-            onClick={handleClick}
+            to={`${id}`}
+            smooth
+            spy
+            offset={-80}
             className={links}
-            activeClassName="text-orangeDark"
+            activeClass={active}
           >
             {name}
           </Link>

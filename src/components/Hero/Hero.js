@@ -7,6 +7,7 @@ import { TiSocialLinkedin } from 'react-icons/ti';
 import HeroBackground from './HeroBackground';
 import { useTranslation } from 'gatsby-plugin-react-i18next';
 import Form from '../Form';
+import Section from '../reusableComponents/Section';
 // import FormWithBackground from '../Form/FormWithBackground';
 // import Button from '../reusableComponents/Button';
 
@@ -17,7 +18,7 @@ const Hero = () => {
 
   const hero = t('hero', { returnObjects: true });
   return (
-    <section id="home">
+    <Section id="home">
       {/* Mobile version */}
       {/* <div className="relative h-[532px]">
         <StaticImage
@@ -149,7 +150,7 @@ const Hero = () => {
           {hero.yourLife} {hero.pleasure}
         </p>
       </div>
-    </section>
+    </Section>
   );
 };
 

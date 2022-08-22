@@ -69,8 +69,8 @@
         "svg": "house"
       },
       {
-        "textPrimary": "з 2021",
-        "textSecondary": "Лайф-коуч ICF",
+        "textPrimary": "Лайф-коуч",
+        "textSecondary": "ICF з 2021",
         "svg": "icf"
       },
       {
@@ -210,5 +210,4 @@
       }
     ]
   }
-
 }

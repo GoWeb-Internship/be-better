@@ -1,5 +1,5 @@
 .titleFacts {
-  @apply title-secondary text-34 text-left mb-13 -m-4;
+  @apply title-secondary text-34 text-left mb-13;
 }
 .listFacts {
   @apply flex flex-wrap w-648;
@@ -18,15 +18,25 @@
 }
 
 .textContainer {
-  @apply w-50 h-36 bg-white rounded-2xl shadow-lg px-5 text-center flex flex-col justify-center ease-in duration-300 hover:shadow-2xl;
+  @apply w-50 h-36 bg-white rounded-2xl shadow-lg px-5 text-center flex flex-col justify-start ease-in duration-300 hover:shadow-2xl;
 }
 
 .textPr {
-  @apply text-mainSecond font-bold text-xl tracking-wide z-10;
+  @apply text-mainSecond font-bold text-xl tracking-wide z-10 mt-11;
 }
-.testSec {
+
+.itemFacts:nth-child(5) .textPr {
   @apply text-black text-sm z-10;
 }
+
+.testSec {
+  @apply text-sm z-10;
+}
+
+.itemFacts:nth-child(5) .testSec {
+  @apply text-mainSecond font-bold text-xl tracking-wide z-10;
+}
+
 .svgBgFacts {
   @apply stair-iconsBg fill-orangeContrast  mb-iconPercentTr;
 }
@@ -55,7 +65,7 @@
   @apply stair-icons fill-main mt-icon;
 }
 .svgBgFormula {
-  @apply stair-iconsBg fill-iconBg   ml-60%;
+  @apply stair-iconsBg fill-iconBg   ml-60% bottom-[18%];
 }
 
 .svgContainerFormula {

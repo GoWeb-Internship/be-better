@@ -2,7 +2,6 @@ import React from 'react'
 import Section from '../reusableComponents/Section'
 import { useTranslation } from 'gatsby-plugin-react-i18next';
 import { StaticImage } from 'gatsby-plugin-image';
-// import WhySteps from '../WhySteps';
 import List from '../reusableComponents/Steps';
 import svg from '../../images/iconsnew.svg';
 

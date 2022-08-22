@@ -1,14 +1,5 @@
 import React from 'react'
-import { titleFacts,
-    iconFacts,
-    listFacts,
-    itemFacts,
-    svgBgFacts,
-    svgContainerFacts,
-    textContainer,
-    textPr,
-    iconClass,
-    testSec,} from './Page.module.css'
+import { titleFacts,iconFacts, listFacts, itemFacts, svgBgFacts, svgContainerFacts, textContainer, textPr, iconClass, testSec,} from './Page.module.css'
 
 const Page = ({ icons = '', data = {}, img ='', icon='' }) => {
 

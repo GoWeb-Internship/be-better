@@ -39,7 +39,7 @@ const Couch = () => {
           width={366}
           height={520}
           layout="fixed"
-          formats={['auto', 'webp']}
+          formats={['auto', 'webp', 'avif']}
           alt="author with notebook"
           src="../../images/withNote.jpg"
           className={mainImg}
@@ -64,7 +64,7 @@ const Couch = () => {
           <StaticImage
             src="../../images/note.jpg"
             placeholder="blurred"
-            formats={['auto', 'webp']}
+            formats={['auto', 'webp', 'avif']}
             width={416}
             height={280}
             layout="fixed"
@@ -75,12 +75,12 @@ const Couch = () => {
           <StaticImage
             src="../../images/skyscraper.jpg"
             placeholder="blurred"
-            formats={['auto', 'webp']}
+            formats={['auto', 'webp', 'avif']}
             width={160}
             height={176}
             layout="fixed"
             alt="skyscraper"
-            className="rounded-2xl mt-[38px] mr-auto absolute right-0"
+            className="absolute right-0 rounded-2xl mt-[38px] mr-auto "
           />
         </div>
       </div>{' '}

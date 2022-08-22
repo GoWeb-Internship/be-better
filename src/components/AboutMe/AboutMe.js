@@ -42,7 +42,7 @@ const AboutMe = () => {
             height={480}
             className="rounded-2xl  "
             placeholder="blurred"
-            formats={['auto', 'webp']}
+            formats={['auto', 'webp', 'avif']}
           />
         </div>
         <div className={textContainer}>

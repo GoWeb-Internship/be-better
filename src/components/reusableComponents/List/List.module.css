@@ -14,11 +14,11 @@
 }
 
 .iconFacts {
-  @apply stair-icons fill-mainSecond mt-icon;
+  @apply stair-icons fill-mainSecond mt-[11px];
 }
 
 .textContainer {
-  @apply w-50 h-36 bg-white rounded-2xl shadow-lg px-5 text-center flex flex-col justify-start ease-in duration-300 hover:shadow-2xl;
+  @apply w-50 h-36 bg-white rounded-2xl shadow-lg px-4 text-center flex flex-col justify-start ease-in duration-300 hover:shadow-2xl;
 }
 
 .textPr {
@@ -26,7 +26,7 @@
 }
 
 .itemFacts:nth-child(5) .textPr {
-  @apply text-black text-sm z-10;
+  @apply text-black text-sm z-10 font-normal;
 }
 
 .testSec {
@@ -38,7 +38,7 @@
 }
 
 .svgBgFacts {
-  @apply stair-iconsBg fill-orangeContrast  mb-iconPercentTr;
+  @apply stair-iconsBg fill-orangeContrast;
 }
 
 .formulaContainer {
@@ -62,14 +62,14 @@
 }
 
 .iconFormula {
-  @apply stair-icons fill-main mt-icon;
+  @apply stair-icons fill-main mt-[10px];
 }
 .svgBgFormula {
-  @apply stair-iconsBg fill-iconBg   ml-60% bottom-[18%];
+  @apply stair-iconsBg fill-iconBg   right-[15px] bottom-[25px];
 }
 
 .svgContainerFormula {
-  @apply w-14 h-14 bg-white rounded-lg absolute shadow-you -top-icon left-2/4 -translate-x-1/2 z-10;
+  @apply w-14 h-14 bg-white rounded-lg absolute shadow-you -top-[20px] left-2/4 -translate-x-1/2 z-10;
 }
 
 .textContainerFormula {

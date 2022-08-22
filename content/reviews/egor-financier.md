@@ -8,11 +8,9 @@ ukText:
 enName: Egor
 enPosition: Financier
 enText:
-  I’d like to express my gratitude to you, Julia, for the coaching session! You
-  helped me to understand and determine the fact of the matter with which I came
-  to you! A very pleasant trust-based atmosphere helped me to talk about really
-  important things!!! I completed this session with a clear understanding of the
-  first steps I should take! Thank you 🙏 once again and see you soon 👏👍🤝💯👏
+  Very pleasant and trusting atmosphere helped me Speak very important points
+  !!! I left the session with you with certainty what the first steps I should
+  do!! Thank you 🙏 again and see you soon 👏👍🤝💯👏!!
 ruName: Егор
 ruPosition: Финансист
 ruText:

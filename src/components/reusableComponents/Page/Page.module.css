@@ -1,10 +1,10 @@
 
    .titleFacts {
-    @apply text-main font-semibold text-4xl  text-center pt-20 -top-20;
+    @apply text-main font-semibold text-4xl  text-center pt-20 -top-20 max-w-7xl;
   }
 
    .listFacts {
-    @apply flex  text-sm pr-4  text-start pl-4  w-40 pb-24  pt-2  ;
+    @apply flex  text-sm pr-4  text-start pl-4  w-40 pb-24  pt-2 max-w-7xl ;
   }
   
   .listFacts li:nth-child(1){
@@ -46,7 +46,7 @@
 
   
   .iconClass{
-   @apply m-0 pl-46 
+   @apply m-0 
   }
   
   

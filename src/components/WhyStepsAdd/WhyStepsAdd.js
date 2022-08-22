@@ -18,16 +18,17 @@ const StepsAdd = () => {
           src="../../images/background/str-min.png"
           alt=""
           style={{ position: 'absolute' }}
-          className="w-64 h-20 z-1  pl-40 left-2/4 top-3/4 "
+          className="w-[416px] h-[128px] z-1  pl-40 left-2/4 top-[35%] "
         />
-        <List data={data} icons={svg} />
+
         <StaticImage
           layout="fullWidth"
           src="../../images/background/features.jpg"
           alt=""
           style={{ position: 'absolute' }}
-          className="-z-20 w-full h-full top-[35%]"
+          className="-z-20 w-full h-full"
         />
+        <List data={data} icons={svg} />
         <Reviews />
       </div>
     </Section>

@@ -13,7 +13,7 @@
     "kaif": "in high spirits",
     "emotion": "without emotional",
     "burn": "burnouts",
-    "note": "Sign up today for the first coaching session with me and start living in a high tomorrow!",
+    "note": "Sign up today for the first coaching session with a 75% discount* and start living in a high tomorrow!",
     "if": "If you ",
     "emo": " are emotionally burnt out",
     "yourLife": "your life",
@@ -102,7 +102,8 @@
     "links": [
       { "name": "Privacy Policy", "id": "pk" },
       { "name": "Public offer", "id": "po" }
-    ]
+    ],
+    "priceByOne": "*The cost for one session 100$"
   },
   "littleComponents": {
     "button": "Sign up"

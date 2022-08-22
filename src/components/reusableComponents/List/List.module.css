@@ -6,7 +6,7 @@
 }
 
 .itemFacts {
-  @apply relative mr-4 mb-13 rounded-2xl bg-mainSecond shadow-orange hover:scale-105 ease-in duration-300;
+  @apply relative mr-4 mb-13 rounded-2xl bg-mainSecond shadow-you hover:scale-105 ease-in duration-300;
 }
 
 .svgContainerFacts {

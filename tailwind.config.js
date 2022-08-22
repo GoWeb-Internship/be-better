@@ -44,6 +44,7 @@ module.exports = {
         13: '52px',
         22: '92px',
         50: '200px',
+        74: '296px',
       },
       fontFamily: {
         caveat: 'Caveat,sans-serif',
@@ -165,12 +166,10 @@ module.exports = {
           height: '128px',
           margin: 'auto',
           position: 'absolute',
-          position: 'absolute'
         },
         '.stair-iconka': {
           width: '32px',
           height: '32px',
-
         },
       });
     }),

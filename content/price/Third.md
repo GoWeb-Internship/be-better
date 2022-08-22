@@ -1,7 +1,7 @@
 ---
-ukSubscription: Оптимальний
-enSubscription: Optimal
-ruSubscription: Оптимальный
+ukSubscription: Professional
+enSubscription: Professional
+ruSubscription: Professional
 price: 850
 economy: 110
 ukMonth: 3 місяці роботи

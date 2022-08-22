@@ -1,7 +1,7 @@
 ---
-ukSubscription: Базовий
-enSubscription: Base
-ruSubscription: Базовый
+ukSubscription: Standard
+enSubscription: Standard
+ruSubscription: Standard
 price: 600
 economy: 40
 ukMonth: 2 місяці роботи

@@ -10,9 +10,12 @@
 }
 
 .item {
-  @apply pt-6 pb-12 px-7 w-80 mr-8 rounded-lg last:mr-0 ease-in duration-300 hover:bg-hoverPrice shadow-you hover:scale-110;
+  @apply pt-6 pb-12 px-7 w-80 mr-8 rounded-lg last:mr-0  hover:bg-hoverPrice shadow-you hover:scale-105 ease-in duration-300;
 }
 
+.item:nth-child(2) {
+  @apply scale-105 bg-hoverPrice hover:bg-[#b9f4ff]  hover:scale-110 ease-in duration-300;
+}
 .modalform {
   @apply w-[440px] h-[560px] pt-14 text-xl bg-background;
 }

@@ -1,5 +1,5 @@
 .container {
-  @apply m-auto text-center pt-20 pb-23;
+  @apply m-auto text-center pt-20 pb-23 bg-background;
 }
 .title {
   @apply title-primary mb-8 desktop:text-34 desktop:tracking-wide desktop:mb-13;

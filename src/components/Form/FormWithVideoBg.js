@@ -4,16 +4,14 @@ import { TiSocialFacebook } from 'react-icons/ti';
 import { TbBrandInstagram } from 'react-icons/tb';
 import { TiSocialLinkedin } from 'react-icons/ti';
 import Video from '../Video';
+import Section from '../reusableComponents/Section';
 import { useTranslation } from 'gatsby-plugin-react-i18next';
 
 const FormWithVideoBg = ({ clickFrom }) => {
   const { t } = useTranslation();
   const hero = t('hero', { returnObjects: true });
   return (
-    <section
-      className="relative flex justify-end h-[760px] pr-6"
-      id="nav-feedback"
-    >
+    <Section className="flex justify-end h-[760px] pr-6" id="nav-feedback">
       <Video />
       <div className="text-left pt-20 ">
         <div className="w-81 text-black">
@@ -63,7 +61,7 @@ const FormWithVideoBg = ({ clickFrom }) => {
           </a>
         </li>
       </ul>
-    </section>
+    </Section>
   );
 };
 

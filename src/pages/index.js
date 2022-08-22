@@ -34,7 +34,7 @@ const IndexPage = () => {
         <Guarantee />
         <Couch />
         {/* <Video /> */}
-        <StepsAdd />
+        <Steps />
         <Change />
         <BeBetter />
       </Container>

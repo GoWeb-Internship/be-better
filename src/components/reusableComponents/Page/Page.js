@@ -29,7 +29,7 @@ const Page = ({ icons = '', data = {}, img ='', icon='' }) => {
                 </div>
                 <div className={iconClass}>
                 <svg className={icons}>
-                    <use href={`${icons}#icon-${icon}`} />
+                    <use  href={`${icons}#icon-${icon}`} />
                   </svg>
                 </div>
                 <div className={textContainer}>

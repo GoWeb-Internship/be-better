@@ -144,6 +144,14 @@ module.exports = {
           lineHeight: 1.36,
           letterSpacing: 0.25,
         },
+        '.text-oferta': {
+          color: theme('colors.orangeDark'),
+          fontFamily: 'Open Sans,sans-serif',
+          fontSize: 20,
+          fontWeight: 500,
+          lineHeight: 27,
+          letterSpacing: 0.25,
+        },
         '.stair-icons': {
           width: '32px',
           height: '32px',

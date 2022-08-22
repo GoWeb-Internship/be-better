@@ -58,6 +58,7 @@ const Change = () => {
                   alt=""
                   style={{ position: 'absolute' }}
                   className="w-3/4 -z-10 top-0 ml-80 mb-16 pr-0 max-w-5xl"
+                  formats={['auto', 'webp', 'avif']}
                 />
                 <StaticImage
                   layout="fullWidth"
@@ -65,6 +66,7 @@ const Change = () => {
                   alt=""
                   style={{ position: 'absolute' }}
                   className="-z-20 top-0 w-full h-full mt-20  max-w-full"
+                  formats={['auto', 'webp', 'avif']}
                 />
                 <h3 className={changeTitle}>{node.frontmatter.title}</h3>
                 <div className="flex ">
@@ -82,6 +84,7 @@ const Change = () => {
                       alt=""
                       style={{ position: 'absolute' }}
                       className="-z-10   top-0 mt-40 pt-36  ml-10 mr-20 "
+                      formats={['auto', 'webp', 'avif']}
                     />
                     <div>
                       <div>
@@ -125,6 +128,7 @@ const Change = () => {
                       alt=""
                       style={{ position: 'absolute' }}
                       className="-z-10 mt-20 ml-20 top-0 w-1/3 h-11/12 "
+                      formats={['auto', 'webp', 'avif']}
                     />
                     {/* <StaticImage
           

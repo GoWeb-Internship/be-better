@@ -15,7 +15,7 @@ import FormWithVideoBg from '../components/Form/FormWithVideoBg';
 import BeBetter from '../components/BeBetter';
 import Change from '../components/Change';
 import StepsAdd from '../components/StepsAdd';
-
+import Couch from '../components/Couch';
 import WhyStepsAdd from '../components/WhyStepsAdd';
 
 const IndexPage = () => {
@@ -32,6 +32,7 @@ const IndexPage = () => {
         <WhyStepsAdd />
         <Price />
         <Guarantee />
+        <Couch />
         {/* <Video /> */}
         <StepsAdd />
         <Change />

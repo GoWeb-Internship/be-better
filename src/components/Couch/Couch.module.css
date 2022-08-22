@@ -1,0 +1,23 @@
+.couchContainer {
+  @apply text-left px-20 pt-[22px] pb-[112px];
+}
+
+.flexContainer {
+  @apply flex justify-between;
+}
+
+.mainImg {
+  @apply rounded-2xl mt-[98px];
+}
+
+.title {
+  @apply title-primary desktop:text-34 mb-13 mt-[58px] text-left;
+}
+
+.caveat {
+  @apply text-caveat w-[360px] absolute left-[65%] bottom-[15%];
+}
+
+.button {
+  @apply h-12  w-70 border border-main rounded-full text-white z-10 mt-[110px];
+}

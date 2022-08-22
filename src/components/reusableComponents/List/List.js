@@ -84,6 +84,9 @@ const List = ({ icons = '', data = {}, formula = false }) => {
       )}
     </div>
   );
+
+
+  
 };
 
 export default List;

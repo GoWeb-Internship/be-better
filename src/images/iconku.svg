@@ -17,13 +17,13 @@
 <symbol id="icon-gone" viewBox="0 0 50 32">
 <path fill="#02a6cd" style="fill: var(--color4, #02a6cd)" d="M50 0h-50v32h6v-26h44v-6z"></path>
 </symbol>
-<symbol id="icon-gsix" viewBox="0 0 50 32">
+<symbol id="icon-gsix" viewBox="0 0 50 32" >
 <path fill="#9de9fa" style="fill: var(--color5, #9de9fa)" d="M50 0h-50v32h6v-26h44v-6z"></path>
 </symbol>
-<symbol id="icon-gthree" viewBox="0 0 50 32">
+<symbol id="icon-gthree" viewBox="0 0 50 32" >
 <path fill="#41c1df" style="fill: var(--color6, #41c1df)" d="M50 0h-50v32h6v-26h44v-6z"></path>
 </symbol>
-<symbol id="icon-gtwoo" viewBox="0 0 50 32">
+<symbol id="icon-gtwoo" viewBox="0 0 50 32" >
 <path fill="#27b6d8" style="fill: var(--color7, #27b6d8)" d="M50 0h-50v32h6v-26h44v-6z"></path>
 </symbol>
 <symbol id="icon-one" viewBox="0 0 32 32" width="22px" height="22px">

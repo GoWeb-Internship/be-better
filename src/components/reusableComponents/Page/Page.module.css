@@ -7,53 +7,59 @@
     @apply flex  text-sm pr-4  text-start  pb-24  pt-2  ;
 
   }
+
+    .listFacts {
+    @apply flex  text-sm pr-4 max-w-7xl text-start  pb-24  pt-2  ;
+  } 
+
   
-  .listFacts li:nth-child(1){
-    @apply mt-60 pt-14 ml-20 pr-4
+   .listFacts li:nth-child(1){
+    @apply mr-5 mt-64 w-48 ml-20
   }
   .listFacts li:nth-child(2){
-    @apply mt-48 pt-13  pr-4
-  }
+    @apply   mr-5  mt-52 w-48
+  } 
   .listFacts li:nth-child(3){
-    @apply mt-28 pt-13 pr-4 
+    @apply  mr-5 mt-40 w-48 
+  }
+  .listFacts p:nth-child(3){
+    @apply  -mt-40
   }
   .listFacts li:nth-child(4){
-    @apply mt-13 pt-13  pr-4
+    @apply   mr-5   mt-28  w-48
   }
  
   .listFacts li:nth-child(5){
-    @apply -mt-5  pt-13 pr-4
+    @apply  mr-5 mt-16 w-48
   }
   .listFacts li:nth-child(6){
-    @apply -mt-10  pt-10
-  }
+    @apply mr-5 mt-5  w-48
+  } 
   
-  .textPr {
-  @apply text-main list-none  list-inside font-normal ml-8  -mt-8  text-sm  ;
+   .textPr {
+  @apply text-main list-none  list-inside font-normal pl-4  -mt-36  text-sm  ;
   }
   
   .textContainer {
-  @apply w-50 h-36   px-5 text-center flex flex-col justify-center ;
+  @apply w-50 h-36 mt-36 text-center flex flex-col justify-center ;
   }
   
-  /* .testSec {
-  @apply  font-normal text-sm pr-4  text-start pl-4   pb-15 -mb-7    
-  }
-   */
+  
   .testSec {
-  @apply  font-normal text-sm pr-4  text-start pl-4 -mt-10    
+  @apply  font-normal text-sm pr-4 text-start pl-4 -mt-40    
   }
  
 
   
   .iconClass{
-   @apply m-0 
+    @apply  pl-40  -mb-56 pb-12
+
   }
   
   
   
   .itemFacts {
-    @apply relative;
+    @apply relative w-48;
   }
   
   .svgContainerFacts {
@@ -61,7 +67,7 @@
   }
   
   .iconFacts {
-    @apply stair-icons mt-40  ;
+    @apply   mt-20 -ml-4;
   }
   
   
@@ -70,4 +76,4 @@
     @apply icons-step fill-mainSecondLight  -mt-48 -ml-5;
   }
   
-  
+   

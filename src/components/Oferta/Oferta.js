@@ -1,7 +1,7 @@
 import React from 'react'
 import { graphql, useStaticQuery } from 'gatsby';
 import { StaticImage } from 'gatsby-plugin-image';
-import { text } from './Oferta.module.css';
+import { text, btn, img } from './Oferta.module.css';
 import { useTranslation } from 'gatsby-plugin-react-i18next';
 import Container from '../Container';
 import { Link } from 'gatsby';
@@ -33,7 +33,7 @@ const data = allMarkdownRemark.nodes;
             className="w-16 ml-20 mt-32 pl-96 -z-20 top-0 cursor-pointer  mb-16 pr-0"
           >
             <StaticImage
-              className="cursor-pointer visible box-content ml-40 mt-32 block w-12"
+              className={img}
               src="../../images/background/back.png"
               alt="background"
             />
@@ -56,7 +56,8 @@ const data = allMarkdownRemark.nodes;
                   formats={['auto', 'webp', 'avif']}
                 />
               
-    <div className="text-start tablet:pl-5 laptop:pl-28 desktop:pl-72">
+    <div className="text-start h-96 block tablet:pl-5 laptop:pl-28 desktop:pl-72">
+  
       {data.map(node => {
         if (node.frontmatter.language === i18n.language) {
           return (
@@ -75,12 +76,14 @@ const data = allMarkdownRemark.nodes;
         }
       })}
     </div>
+    <div>
     <Link
             to="/"
-            className="cursor-pointer font-normal -mt-40 pt-20 -ml-96 absolute  text-base font-sans visible shadow-none text-orangeDirty"
+            className={btn}
           ><span>{"< "}</span>
             На главную
           </Link>
+          </div>
   </div>
   </Container>
   )

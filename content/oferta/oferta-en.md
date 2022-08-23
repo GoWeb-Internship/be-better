@@ -3,7 +3,7 @@ title: Why is it better with a coach
 language: en
 ---
 
-<p><span>Public offer for the provision of paid and free consulting services</span></p>
+<span>Public offer for the provision of paid and free consulting services</span>
 
 20.04.2022 A real public offer, the text of which is constantly posted for
 information telecommunications network "Internet" (hereinafter - the Internet
@@ -34,9 +34,15 @@ coaching services specified in this public offer.
     Customer is also a person, who expressed a desire to become a Customer
     before the conclusion of the Agreement):
 
-           1.6.1. An adult capable individual who accepted the Offer and uses the Services for personal, business and/or general projects the Customer's living conditions and his professional self-realization.
+    1.6.1. An adult capable individual who accepted the Offer and uses the
+    Services for personal, business and/or general projects the Customer's
+    living conditions and his professional self-realization.
 
-           1.6.2. Legal entity, individual entrepreneur who accepted the Offer and entered into an Agreement with respect to third parties (Listeners). In cases established this clause, the rules established by this Offer for the Listener, They do not apply to the customer, unless otherwise expressly provided for in this Offer.
+    1.6.2. Legal entity, individual entrepreneur who accepted the Offer and
+    entered into an Agreement with respect to third parties (Listeners). In
+    cases established this clause, the rules established by this Offer for the
+    Listener, They do not apply to the customer, unless otherwise expressly
+    provided for in this Offer.
 
     1.7. "Listener" is the natural person specified in the Customer's
     Application, directly uses the Service, who has familiarized himself with
@@ -102,11 +108,14 @@ coaching services specified in this public offer.
     2.2. Acceptance of the Offer by the person indicated in Clause 1.6.2 of the
     Offer is carried out by performing the following actions in aggregate:
 
-        2.2.1. Familiarization and agreement of the Customer and Listeners with the terms of the Offer.
+    2.2.1. Familiarization and agreement of the Customer and Listeners with the
+    terms of the Offer.
 
-        2.2.2. Filling in and sending the Listener's personal data on the Performer's website by processing a request for payment.
+    2.2.2. Filling in and sending the Listener's personal data on the
+    Performer's website by processing a request for payment.
 
-        2.2.3. Made payment for the Services in the amount and within the period stipulated by this Offer.
+    2.2.3. Made payment for the Services in the amount and within the period
+    stipulated by this Offer.
 
     2.3. For the proper execution of the Acceptance of the Offer, the Customer
     in accordance with the clauses 2.1.3., 2.2.3., 5.4. of this Offer provides
@@ -138,26 +147,20 @@ coaching services specified in this public offer.
 
     4.1. RIGHTS AND OBLIGATIONS OF THE PERFORMER
 
-           4.1.1. The contractor undertakes to act in accordance with the Ethical Code
-
+    4.1.1. The contractor undertakes to act in accordance with the Ethical Code
     when providing the service ICF Code and base work on ICF Key Competencies.
 
-           4.1.2. The performer undertakes to treat any relationship
+    4.1.2. The performer undertakes to treat any relationship "Coach - Client",
+    regardless of the form of compensation provided for in this Agreement.
 
-    "Coach - Client", regardless of the form of compensation provided for in
-    this Agreement.
+    4.1.3. The Contractor undertakes to inform the Customer and agree with him
+    how it will be go through the coaching process, what are the terms and
+    limits of confidentiality, financial agreements and other conditions of
+    cooperation of the Parties.
 
-           4.1.3. The Contractor undertakes to inform the Customer
-
-    and agree with him how it will be go through the coaching process, what are
-    the terms and limits of confidentiality, financial agreements and other
-    conditions of cooperation of the Parties.
-
-           4.1.4 The Contractor
-
-    undertakes to maintain confidentiality regarding the circumstances which
-    became known to the Contractor in connection with the execution of this
-    Agreement, including:
+    4.1.4 The Contractor undertakes to maintain confidentiality regarding the
+    circumstances which became known to the Contractor in connection with the
+    execution of this Agreement, including:
 
     ● provision of services to the Customer within the framework of this
     Agreement;
@@ -167,35 +170,88 @@ coaching services specified in this public offer.
     ● contact data of the Customer, namely: phone, mobile phone, email mail,
     Skype, passport data.
 
-           4.1.5. The contractor has the right not to comply with the terms of the confidentiality agreement and to apply to the relevant state bodies, in the cases provided for the current legislation of Ukraine, including, but not limited to: in cases illegal activity of the Customer, on the basis of a court decision and/or a court summons, in the event of a risk of endangering one's own person or others. Signing under Under the terms of this Agreement, the Customer confirms his agreement with the data limitations of the confidentiality terms provided for in this Agreement.
+    4.1.5. The contractor has the right not to comply with the terms of the
+    confidentiality agreement and to apply to the relevant state bodies, in the
+    cases provided for the current legislation of Ukraine, including, but not
+    limited to: in cases illegal activity of the Customer, on the basis of a
+    court decision and/or a court summons, in the event of a risk of endangering
+    one's own person or others. Signing under Under the terms of this Agreement,
+    the Customer confirms his agreement with the data limitations of the
+    confidentiality terms provided for in this Agreement.
 
-           4.1.6. The Contractor has the right to recommend the Customer to contact another coach or to other specialized specialists whose services are not duplicative or substitutes, if it is considered that it will be more productive for the Customer and/or necessary in the relevant situation.
+    4.1.6. The Contractor has the right to recommend the Customer to contact
+    another coach or to other specialized specialists whose services are not
+    duplicative or substitutes, if it is considered that it will be more
+    productive for the Customer and/or necessary in the relevant situation.
 
-           4.1.7. The Contractor undertakes to notify the Customer of all anticipated remuneration that the Contractor may receive from third parties for the fact that recommends this Client or for having recommended the Client to the Contractor.
+    4.1.7. The Contractor undertakes to notify the Customer of all anticipated
+    remuneration that the Contractor may receive from third parties for the fact
+    that recommends this Client or for having recommended the Client to the
+    Contractor.
 
-           4.1.8. The contractor is obliged to monitor the risks of conflict of interests and potential conflicts of interest, openly discuss such situations with the Customer, and accept decision in favor of the Customer, up to the termination of this Agreement.
+    4.1.8. The contractor is obliged to monitor the risks of conflict of
+    interests and potential conflicts of interest, openly discuss such
+    situations with the Customer, and accept decision in favor of the Customer,
+    up to the termination of this Agreement.
 
-           4.1.9. The Contractor has the right to use information about the Customer for filling application form for renewal of the coach certificate in the ICF, in which the Executor can specify name, contact information, total number of hours of coaching.
+    4.1.9. The Contractor has the right to use information about the Customer
+    for filling application form for renewal of the coach certificate in the
+    ICF, in which the Executor can specify name, contact information, total
+    number of hours of coaching.
 
-           4.1.10. The executor is obliged to comply with the requirements of the applicable legislation on protection of personal data. Processing of the Customer's personal data, including transfer of personal data in the cases stipulated by this Agreement is necessary and sufficient for the provision of services within the framework of this Agreement, is carried out with the Customer's consent to the processing of his personal data.
+    4.1.10. The executor is obliged to comply with the requirements of the
+    applicable legislation on protection of personal data. Processing of the
+    Customer's personal data, including transfer of personal data in the cases
+    stipulated by this Agreement is necessary and sufficient for the provision
+    of services within the framework of this Agreement, is carried out with the
+    Customer's consent to the processing of his personal data.
 
     4.2. RIGHTS AND OBLIGATIONS OF THE CUSTOMER:
 
-           4.2.1. The Customer has the right to receive professional services from the Contractor, in accordance with the requirements stipulated by the ICF Code of Ethics and Key ICF competencies. By signing this contract, the Customer confirms that notified and accepts the level of qualification of the Executor in coaching received Executor of certificates and certifications in ICF.
+    4.2.1. The Customer has the right to receive professional services from the
+    Contractor, in accordance with the requirements stipulated by the ICF Code
+    of Ethics and Key ICF competencies. By signing this contract, the Customer
+    confirms that notified and accepts the level of qualification of the
+    Executor in coaching received Executor of certificates and certifications in
+    ICF.
 
-           4.2.2. The Customer has the right to ask the Contractor for information on issues related to organization and provision of proper performance of the services provided for in clause 2.1. of this agreement, other information related to rights and legitimate interests The customer.
+    4.2.2. The Customer has the right to ask the Contractor for information on
+    issues related to organization and provision of proper performance of the
+    services provided for in clause 2.1. of this agreement, other information
+    related to rights and legitimate interests The customer.
 
-           4.2.3. The Customer is obliged to pay the Contractor's services in a timely manner under the conditions, provided for in Section 5 of this Agreement.
+    4.2.3. The Customer is obliged to pay the Contractor's services in a timely
+    manner under the conditions, provided for in Section 5 of this Agreement.
 
-           4.2.4. The customer is obliged to postpone the time of the session by notifying the performer in writing later than 24 hours before the session deadline without any penalties. IN in case such notification was received by the Contractor later than the specified time, the session is considered completed and is subject to payment in full unless otherwise stated agreed by the Parties.
+    4.2.4. The customer is obliged to postpone the time of the session by
+    notifying the performer in writing later than 24 hours before the session
+    deadline without any penalties. IN in case such notification was received by
+    the Contractor later than the specified time, the session is considered
+    completed and is subject to payment in full unless otherwise stated agreed
+    by the Parties.
 
-           4.2.5. In the event of a claim to the held session, the Customer is obliged no later than 24 hours after the end of the session, send a motivation letter to the Performer objection in the form of a written notice. In the absence of a written motivated objection to the session, the service is considered provided and is subject to payment. The parties confirm that there is no additional signing of the Act on services provided necessary.
+    4.2.5. In the event of a claim to the held session, the Customer is obliged
+    no later than 24 hours after the end of the session, send a motivation
+    letter to the Performer objection in the form of a written notice. In the
+    absence of a written motivated objection to the session, the service is
+    considered provided and is subject to payment. The parties confirm that
+    there is no additional signing of the Act on services provided necessary.
 
-           4.2.6. The customer has the right to prematurely and unilaterally refuse the performance. The contract, which entails the termination of the provision of services by the Contractor. Such a breakup possible by means of a written notification by the Customer to the Contractor no later than 4 (four) days before the date of the regular session.
+    4.2.6. The customer has the right to prematurely and unilaterally refuse the
+    performance. The contract, which entails the termination of the provision of
+    services by the Contractor. Such a breakup possible by means of a written
+    notification by the Customer to the Contractor no later than 4 (four) days
+    before the date of the regular session.
 
-            4.2.7. The customer confirms that, signing under the terms of this contract, within the framework of cooperation under this Agreement, agree to all cases of receipt, processing, storage, transfer of his personal data, including all cases of receipt, processing, storage, transfer of his personal data to a third party.
+    4.2.7. The customer confirms that, signing under the terms of this contract,
+    within the framework of cooperation under this Agreement, agree to all cases
+    of receipt, processing, storage, transfer of his personal data, including
+    all cases of receipt, processing, storage, transfer of his personal data to
+    a third party.
 
-            4.2.7. In case of violations by the Coach of the norms of the ICF Code of Ethics, the Customer has the right to apply to the International Coachin Federation or one of its affiliates branches
+    4.2.7. In case of violations by the Coach of the norms of the ICF Code of
+    Ethics, the Customer has the right to apply to the International Coachin
+    Federation or one of its affiliates branches
 
 5.  FINANCIAL TERMS
 

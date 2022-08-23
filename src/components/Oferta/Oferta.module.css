@@ -2,7 +2,7 @@
     @apply text-orangeDirty -mt-5 pb-30;
 }
 .text{
-    @apply pt-0 h-96 mr-96
+    @apply pt-0 h-96 laptop:mr-56 desktop:mr-96
 }
 .btn{
     @apply cursor-pointer font-normal float-none table-cell align-middle text-base font-sans visible shadow-none text-orangeDirty;

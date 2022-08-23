@@ -73,5 +73,5 @@
 }
 
 .textContainerFormula {
-  @apply w-50 h-36 bg-white rounded-2xl shadow-lg px-5 text-center flex flex-col justify-center ease-in duration-300 hover:shadow-2xl laptop:w-[184px] desktop:w-50;
+  @apply w-50 h-36 bg-white rounded-2xl shadow-lg px-12 text-center flex flex-col justify-center ease-in duration-300 hover:shadow-2xl laptop:w-[184px] desktop:w-50;
 }

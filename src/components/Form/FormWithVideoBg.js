@@ -49,7 +49,12 @@ const FormWithVideoBg = ({ clickFrom }) => {
             formClassname="desktop:!m-0 desktop:!mr-auto desktop:!mb-6"
           />
           <p className="w-[426px] font-caveat text-black text-lg leading-[23px] text-left">
-            {hero.note}
+            {data[`${i18n.language}First`]}{' '}
+            <span className="text-mainSecond ">
+              {' '}
+              {data[`${i18n.language}Discount`]}
+            </span>{' '}
+            {data[`${i18n.language}Second`]}
           </p>
         </div>
       </div>

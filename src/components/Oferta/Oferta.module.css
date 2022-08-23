@@ -8,5 +8,5 @@
     @apply cursor-pointer font-normal float-none table-cell align-middle text-base font-sans visible shadow-none text-orangeDirty;
 }
 .img{
-    @apply block  cursor-pointer  visible box-content ml-40 mt-32 w-12
+    @apply !block  cursor-pointer  visible box-content ml-40 mt-32 w-12
 }

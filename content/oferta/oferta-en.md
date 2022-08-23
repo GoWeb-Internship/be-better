@@ -5,6 +5,7 @@ language: en
 <p><span>Public offer for the provision of paid and free consulting services</span></p>
 <br/>
 <br/>
+<br/>
 20.04.2022
 A real public offer, the text of which is constantly posted for information
 telecommunications network "Internet" (hereinafter - the Internet network) at the network address:
@@ -12,22 +13,24 @@ http://be-better.today is an offer addressed to an unlimited number of people
 enter into a contract for the provision of paid coaching services specified in this
 public offer.
 <br/>
+<br/>
 1. TERMS AND DEFINITIONS<br/>
 1.1. "Party", "Parties" - Customer, Listener, Performer.<br/>
-1.2. "Offer" - a real offer (public offer) that defines the rights and
-responsibilities of the Parties, as well as the procedure and conditions for the provision of Services. The concept of "Offer" and
-"Agreement", used in the text of this Offer, are synonymous.<br/>
+1.2. "Offer" - a real offer (public offer) that defines the rights and<br/>
+responsibilities of the Parties, as well as the procedure and conditions for the provision of Services. 
+The concept of "Offer" and
+"Agreement", used in the text of this Offer, are synonymous.
 1.3. "Acceptance of the Offer" - full and unconditional acceptance by the Customer, the Listener
 terms of the Offer in the manner provided for in section 2 of this Offer.<br/>
 1.4. "Consulting services", "Services", "Service" - provision to the Customer,
 To the listener after Acceptance of the offer of coaching sessions.<br/>
 1.5. "Executive" - ​​Yuliya Yuryivna Shayenko.<br/>
-1.6. "Customer" (for ease of understanding the text of the Offer, the Customer is also a person,
+1.6. "Customer" (for ease of understanding the text of the Offer, the Customer is also a person,<br/>
 who expressed a desire to become a Customer before the conclusion of the Agreement):<br/>
 1.6.1. An adult capable individual who accepted the Offer and
 uses the Services for personal, business and/or general projects
-the Customer's living conditions and his professional self-realization.<br/>
-1.6.2. Legal entity, individual entrepreneur who accepted the Offer and
+the Customer's living conditions and his professional self-realization.
+1.6.2. Legal entity, individual entrepreneur who accepted the Offer and<br/>
 entered into an Agreement with respect to third parties (Listeners). In cases established
 this clause, the rules established by this Offer for the Listener,
 They do not apply to the customer, unless otherwise expressly provided for in this Offer.<br/>
@@ -37,7 +40,7 @@ consent to the processing of personal data. It is assumed that the Listener spec
 The statement expresses the Acceptance of the Offer together with the Customer. The concept of "Listeners" further in
 the texts of this Offer are used in the sense defined by this clause.<br/>
 1.8. "Accounting period" — is determined in the amount of 1 (one) calendar month and
-aggregate forms the period of provision of consulting services.
+aggregate forms the period of provision of consulting services.<br/>
 1.9. Additional terminology<br/>
 Coaching is a process built on the principles of partnership, which stimulates
 reflection (research) and creativity of clients to inspire them to the maximum
@@ -70,29 +73,29 @@ with the use of means of communication), the main form of interaction of the par
 provision of services under the Agreement. It is conducted by the parties at the time and format agreed upon
 (face-to-face meeting, by phone, skype, zoom, etc.). The client chooses the purpose of the session at that time
 how the Coach listens and participates in the process in the form of observations, questions, other skills and
-Coaching skills provided by the ICF Key Competencies.
+Coaching skills provided by the ICF Key Competencies.<br/>
 <br/>
 <br/>
 2. OFFER ACCEPTANCE<br/>
-2.1. Acceptance of the Offer by the person specified in Clause 1.6.1 of the Offer is carried out by
-committing the following actions in total:<br/>
+2.1. Acceptance of the Offer by the person specified in Clause 1.6.1 of the Offer is carried out by<br/>
+committing the following actions in total:
 2.1.1. I have read and agree with the Offer.<br/>
-2.1.2. Filled in and sent personal data on the Contractor's website by registration
-payment requests.<br/>
+2.1.2. Filled in and sent personal data on the Contractor's website by registration<br/>
+payment requests.
 2.1.3. Made payment for the Services in the amount and within the period stipulated by this Offer.<br/>
-2.2. Acceptance of the Offer by the person indicated in Clause 1.6.2 of the Offer is carried out by
+2.2. Acceptance of the Offer by the person indicated in Clause 1.6.2 of the Offer is carried out by<br/>
 performing the following actions in aggregate:<br/>
 2.2.1. Familiarization and agreement of the Customer and Listeners with the terms of the Offer.<br/>
-2.2.2. Filling in and sending the Listener's personal data on the Performer's website by
-processing a request for payment.<br/>
+2.2.2. Filling in and sending the Listener's personal data on the Performer's website by<br/>
+processing a request for payment.
 2.2.3. Made payment for the Services in the amount and within the period stipulated by this Offer.<br/>
 2.4. For the proper execution of the Acceptance of the Offer, the Customer in accordance with the clauses<br/>
 2.1.3., 2.2.3., 5.4. of this Offer provides 100% payment for Consulting Services.<br/>
 2.5. The date of acceptance of the Offer by the Customer and the Listener is considered the date of receipt of the complete offer
 payment for Services no later than the date of provision of the relevant Service.<br/>
-<br/>
+
 3. SCOPE OF THE CONTRACT<br/>
-3.1. The Contractor undertakes to provide the Customer with services
+3.1. The Contractor undertakes to provide the Customer with services<br/>
 individual counseling in the form of coaching (hereinafter - "coaching"), and the Customer
 undertakes to pay for these services within the terms and in the manner stipulated by the terms hereof
 Agreement.<br/>
@@ -105,20 +108,20 @@ days from the end of the provision of the Service to the Contractor's address ha
 relevant statements or claims from the Customer and (or) Listener.<br/>
 <br/>
 
-4. RIGHTS AND DUTIES<br/>
+4.RIGHTS AND DUTIES<br/>
 4.1. RIGHTS AND OBLIGATIONS OF THE PERFORMER<br/>
 4.1.1. The contractor undertakes to act in accordance with the Ethical Code when providing the service<br/>
-ICF Code and base work on ICF Key Competencies.<br/>
+ICF Code and base work on ICF Key Competencies.
 4.1.2. The performer undertakes to treat any relationship "Coach -
 Client", regardless of the form of compensation provided for in this Agreement.<br/>
 4.1.3. The Contractor undertakes to inform the Customer and agree with him how it will be
 go through the coaching process, what are the terms and limits of confidentiality, financial
 agreements and other conditions of cooperation of the Parties.<br/>
 4.1.4 The Contractor undertakes to maintain confidentiality regarding the circumstances which
-became known to the Contractor in connection with the execution of this Agreement, including:<br/>
+became known to the Contractor in connection with the execution of this Agreement, including:
 ● provision of services to the Customer within the framework of this Agreement;<br/>
 ● content of coaching sessions;<br/>
-● contact data of the Customer, namely: phone, mobile phone, email
+● contact data of the Customer, namely: phone, mobile phone, email<br/>
 mail, Skype, passport data.<br/>
 4.1.5. The contractor has the right not to comply with the terms of the confidentiality agreement and
 to apply to the relevant state bodies, in the cases provided for
@@ -126,14 +129,14 @@ the current legislation of Ukraine, including, but not limited to: in cases
 illegal activity of the Customer, on the basis of a court decision and/or a court summons,
 in the event of a risk of endangering one's own person or others. Signing under
 Under the terms of this Agreement, the Customer confirms his agreement with the data
-limitations of the confidentiality terms provided for in this Agreement.<br/>
-4.1.6. The Contractor has the right to recommend the Customer to contact another coach or
+limitations of the confidentiality terms provided for in this Agreement.
+4.1.6. The Contractor has the right to recommend the Customer to contact another coach or<br/>
 to other specialized specialists whose services are not duplicative or
 substitutes, if it is considered that it will be more productive for the Customer and/or
 necessary in the relevant situation.<br/>
 4.1.7. The Contractor undertakes to notify the Customer of all anticipated
 remuneration that the Contractor may receive from third parties for the fact that
-recommends this Client or for having recommended the Client to the Contractor.<br/>
+recommends this Client or for having recommended the Client to the Contractor.
 4.1.8. The contractor is obliged to monitor the risks of conflict of interests and potential
 conflicts of interest, openly discuss such situations with the Customer, and accept
 decision in favor of the Customer, up to the termination of this Agreement.<br/>
@@ -179,9 +182,9 @@ processing, storage, transfer of his personal data to a third party.<br/>
 4.2.7. In case of violations by the Coach of the norms of the ICF Code of Ethics, the Customer
 has the right to apply to the International Coaching Federation or one of its affiliates
 branches<br/>
-<br/>
 
-5. FINANCIAL TERMS<br/>
+
+5.FINANCIAL TERMS<br/>
 5.1. The cost of the session regardless of the form of its conduct (face-to-face or with the help of funds
 communication: by phone, skype, zoom, etc.) is indicated on the artist's website be-better.today<br/>
 5.2. Payment for Services is subject to 100% prepayment.<br/>
@@ -204,16 +207,16 @@ services are not required.<br/>
 no later than 5 working days from the date of receipt of a written notice from the Customer about
 termination of the contract. At the same time, the funds are returned to the Customer by transfer to
 his current account or bank card.<br/>
-<br/>
-<br/>
-6. TERM OF THE CONTRACT
+
+
+6.TERM OF THE CONTRACT
 <br/>
 6.1. The contract is valid from the date of its conclusion by the Parties until the end of the period
 provision of Consulting Services to the Customer and Listeners, and in part others
 obligations of the Parties - until full fulfillment.
+
 <br/>
-<br/>
-7. RESPONSIBILITIES OF THE PARTIES. RESOLUTION OF DISPUTES. FORCE MAJEURE.
+7.RESPONSIBILITIES OF THE PARTIES. RESOLUTION OF DISPUTES. FORCE MAJEURE.
 MESSAGE.<br/>
 7.1. For non-fulfillment or improper fulfillment of the obligations accepted under this Agreement
 obligations, the Parties bear the responsibility provided for by law
@@ -276,10 +279,10 @@ by e-mail:<br/>
 e-mail addresses specified in section 8 of the Agreement are considered
 sent by the addressee party under the Agreement (sender
 electronic message) and received by the addressee-party under the Agreement
-(email recipient);<br/>
+(email recipient);
 - acceptance of legally significant messages by execution is recognized
 by the Parties to the Agreement as confirmation of receipt of the relevant
-electronic messages;<br/>
+electronic messages;
 - documents (including messages) sent by e-mail,
 have full legal effect for the Parties. At the same time, the Parties did not meet the deadline
 later than 2 (two) days from the date of drafting the documents in electronic form and
@@ -287,10 +290,10 @@ sending them by e-mail is allowed, but not obliged to send
 to the addressee the original of the corresponding electronic message, which is identical
 by text and documents sent by electronic message.<br/>
 7.14. The customer is a natural person.<br/>
-7.15 The executor is (taxpayer/natural person).<br/>
+7.15 The executor is (taxpayer/natural person).
 <br/>
 
-8. FINAL PROVISIONS<br/>
+8.FINAL PROVISIONS<br/>
 8.1. This Agreement enters into force from the moment of signing and remains in effect until complete
 performance by the Parties of their obligations.<br/>
 8.2. This Agreement enters into force at the time of payment and ends after
@@ -298,7 +301,7 @@ full fulfillment by the Parties of their obligations under this Agreement.<br/>
 8.3. Unless otherwise expressly provided for in this Agreement or in force in Ukraine
 legislation, changes and/or additions to this Agreement may be
 entered only by agreement of the Parties and formalized by an additional agreement to
-of this Agreement.<br/>
+of this Agreement.
 8.4. Amendments/additions and Addenda to this Agreement shall enter into force from
 at the time of proper registration by the Parties of the corresponding additional
 of the agreement/addendum to this Agreement, unless otherwise specified in the Agreement itself
@@ -306,21 +309,25 @@ additional agreement/addendum, this Agreement or the current one
 Ukrainian legislation.<br/>
 8.5. Additional agreements and Annexes to this Agreement are his
 an integral part and have legal force if they are issued in
-in writing and signed by both Parties.<br/>
-8.6. This Agreement is concluded with full understanding of its terms and conditions by the Parties
+in writing and signed by both Parties.
+8.6. This Agreement is concluded with full understanding of its terms and conditions by the Parties<br/>
 terminology in Russian in two authentic copies, one for each of
-Parties that have the same legal validity.<br/>
+Parties that have the same legal validity.
 <br/>
 
-9. DETAILS OF THE PERFORMER
-Recipient:
-Shayenko Yuliya Yuriivna
-IBAN - UA973220010000026004310078110
-EDRPOU - 3095913902
-Purpose of payment - Payment for coaching services
-Bank details:
-Joint-stock company UNIVERSAL BANK
-МФО 322001
-ЕГРПОУ Банка 21133352
-PayPal - yshayenko@gmail.com
-
+9.DETAILS OF THE PERFORMER<br/>
+Recipient:<br/>
+Shayenko Yuliya Yuriivna<br/>
+IBAN - UA973220010000026004310078110<br/>
+EDRPOU - 3095913902<br/>
+Purpose of payment - Payment for coaching services<br/>
+Bank details:<br/>
+Joint-stock company UNIVERSAL BANK<br/>
+МФО 322001<br/>
+ЕГРПОУ Банка 21133352<br/>
+PayPal - yshayenko@gmail.com<br/>
+<br/>
+<br/>
+<span>On the main one<span>
+<br/>
+<br/>

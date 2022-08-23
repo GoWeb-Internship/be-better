@@ -56,7 +56,7 @@ const data = allMarkdownRemark.nodes;
                   formats={['auto', 'webp', 'avif']}
                 />
               
-    <div className="text-start tablet:pl-5 laptop:pl-28 desktop:pl-72">
+    <div className="text-start h-96 block tablet:pl-5 laptop:pl-28 desktop:pl-72">
       {data.map(node => {
         if (node.frontmatter.language === i18n.language) {
           return (
@@ -77,7 +77,7 @@ const data = allMarkdownRemark.nodes;
     </div>
     <Link
             to="/"
-            className="cursor-pointer font-normal -mt-40 pt-20 -ml-96 absolute  text-base font-sans visible shadow-none text-orangeDirty"
+            className="cursor-pointer font-normal  text-base font-sans visible shadow-none text-orangeDirty"
           ><span>{"< "}</span>
             На главную
           </Link>

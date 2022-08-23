@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'gatsby';
 import { StaticImage } from 'gatsby-plugin-image';
+import ButtonUp from '../components/ButtonUp';
 
 const Pk = () => {
   return (
@@ -556,6 +557,7 @@ const Pk = () => {
           </div>
         </div>
       </div>
+      <ButtonUp />
     </div>
   );
 };

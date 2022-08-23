@@ -23,7 +23,7 @@ const Footer = () => {
       <div className="flex mb-7 px-20 pt-14">
         <div className="mr-[126px]">
           <StaticImage
-            src="../../images/logo.png"
+            src="../../images/logo.svg"
             width={90}
             height={56}
             layout="fixed"

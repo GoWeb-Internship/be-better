@@ -2,5 +2,5 @@
     @apply text-orangeDirty -mt-5 pb-30;
 }
 .text{
-    @apply pt-0
+    @apply pt-0 h-96 mr-96
 }

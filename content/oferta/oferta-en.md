@@ -2,317 +2,325 @@
 title: Why is it better with a coach
 language: en
 ---
+<p><span>Public offer for the provision of paid and free consulting services</span></p>
+<br/>
+<br/>
 20.04.2022
-Настоящая публичная оферта, текст которой постоянно размещен в информационно
-телекоммуникационной сети &quot;Интернет&quot; (далее - сеть Интернет) по сетевому адресу:
-http:/be-better.today является адресованным неограниченному кругу лиц предложением
-заключить договор на оказание платных коучинговых услуг, указанных в настоящей
-публичной оферте.
-1. ТЕРМИНЫ И ОПРЕДЕЛЕНИЯ
-1.1. «Сторона», «Стороны» — Заказчик, Слушатель, Исполнитель.
-1.2. «Оферта» — настоящее предложение (публичная оферта), определяющее права и
-обязанности Сторон, а также порядок и условия оказания Услуг. Понятия «Оферта» и
-«Договор», употребляемые в тексте настоящей Оферты, равнозначны.
-1.3. «Акцепт Оферты» — полное и безоговорочное принятие Заказчиком, Слушателем
-условий Оферты в порядке, предусмотренном разделом 2 настоящей Оферты.
-1.4. «Консультационные услуги», «Услуги», «Услуга» — предоставление Заказчику,
-Слушателю после Акцепта Оферты коучинговых сессий.
-1.5. «Исполнитель» — Шаенко Юлия Юрьевна.
-1.6. «Заказчик» (для удобства восприятия текста Оферты Заказчиком именуется также лицо,
-изъявившее желание стать Заказчиком до момента заключения Договора):
-1.6.1.Совершеннолетнее дееспособное физическое лицо, акцептовавшее Оферту и
-пользующееся Услугами для личных проектов, достижения успеха в бизнесе, и/или общих
-условиях жизни Заказчика и его профессиональной самореализации.
-1.6.2.Юридическое лицо, индивидуальный предприниматель, акцептовавшие Оферту и
-заключившие Договор в отношении третьих лиц (Слушателей). В случаях, установленных
-настоящим пунктом, правила, установленные настоящей Офертой для Слушателя, к
-Заказчику не применяются, если иное прямо не предусмотрено настоящей Офертой.
-1.7. «Слушатель» — физическое лицо, указанное в Заявлении Заказчика, непосредственно
-пользующееся Услугой, ознакомившееся и согласившееся с Офертой и давшее свое
-согласие на обработку персональных данных. Предполагается, что Слушатель, указанный в
-Заявлении, выражает Акцепт Оферты наряду с Заказчиком. Понятие «Слушатели» далее в
-тексте настоящей Оферты употребляется в значении, определенном настоящим пунктом.
-1.8. «Расчетный период» — определяется в количестве 1 (одного) календарного месяца и в
-совокупности образует период оказания Консультационных услуг.
-1.9. Дополнительная терминология
-Коучинг - процесс, построенный на принципах партнерства, который стимулирует
-рефлексию (исследование) и творчество клиентов, чтобы вдохновлять их на максимальное
-раскрытие своего потенциала (как личного, так и профессионального).
-Международная Федерация Коучинга (International Coach Federation) (далее – «ICF») -
-глобальная международная организация, которая занимается продвижением профессии
-Коуч, устанавливает высокие стандарты, обеспечивает независимую сертификацию, и
-выстраивает всемирную сеть сертифицированных коучей. Подробная информация об ICF,
-
-этические и профессиональные нормы, ключевые компетенции коуча расположены на сайте
+A real public offer, the text of which is constantly posted for information
+telecommunications network "Internet" (hereinafter - the Internet network) at the network address:
+http://be-better.today is an offer addressed to an unlimited number of people
+enter into a contract for the provision of paid coaching services specified in this
+public offer.
+<br/>
+1. TERMS AND DEFINITIONS<br/>
+1.1. "Party", "Parties" - Customer, Listener, Performer.<br/>
+1.2. "Offer" - a real offer (public offer) that defines the rights and
+responsibilities of the Parties, as well as the procedure and conditions for the provision of Services. The concept of "Offer" and
+"Agreement", used in the text of this Offer, are synonymous.<br/>
+1.3. "Acceptance of the Offer" - full and unconditional acceptance by the Customer, the Listener
+terms of the Offer in the manner provided for in section 2 of this Offer.<br/>
+1.4. "Consulting services", "Services", "Service" - provision to the Customer,
+To the listener after Acceptance of the offer of coaching sessions.<br/>
+1.5. "Executive" - ​​Yuliya Yuryivna Shayenko.<br/>
+1.6. "Customer" (for ease of understanding the text of the Offer, the Customer is also a person,
+who expressed a desire to become a Customer before the conclusion of the Agreement):<br/>
+1.6.1. An adult capable individual who accepted the Offer and
+uses the Services for personal, business and/or general projects
+the Customer's living conditions and his professional self-realization.<br/>
+1.6.2. Legal entity, individual entrepreneur who accepted the Offer and
+entered into an Agreement with respect to third parties (Listeners). In cases established
+this clause, the rules established by this Offer for the Listener,
+They do not apply to the customer, unless otherwise expressly provided for in this Offer.<br/>
+1.7. "Listener" is the natural person specified in the Customer's Application, directly
+uses the Service, who has familiarized himself with and agreed with the Offer and has given his opinion
+consent to the processing of personal data. It is assumed that the Listener specified in
+The statement expresses the Acceptance of the Offer together with the Customer. The concept of "Listeners" further in
+the texts of this Offer are used in the sense defined by this clause.<br/>
+1.8. "Accounting period" — is determined in the amount of 1 (one) calendar month and
+aggregate forms the period of provision of consulting services.
+1.9. Additional terminology<br/>
+Coaching is a process built on the principles of partnership, which stimulates
+reflection (research) and creativity of clients to inspire them to the maximum
+revealing one's potential (both personal and professional).
+International Coaching Federation (hereinafter - "ICF") -
+a global international organization dedicated to the advancement of the profession
+Coach, sets high standards, provides independent certification, and
+builds a worldwide network of certified coaches. Detailed information about the ICF,
+ethical and professional norms, key competencies of a coach are located on the website
 ICF (http://coachfederation.org).
-Этический кодекс ICF - свод этических и профессиональных норм, регулирующих этические
-и профессиональные стандарты коучинга (Приложение №1 к Договору).
-Ключевые компетенции коуча ICF - одиннадцать компетенций, разработанные ICF, которые
-отражают навыки коуча и подходы в современном коучинге как он определяется ICF.
-Сертификат – документ, подтверждающий прохождение коучем обучения на
-аккредитованной Международной Федерацией Коучинга по форме ACTP, ACSTH или ССЕ
-программе. Наличие у Коуча сертификата приведено в Приложении №2 к данному Договору,
-которое является неотъемлемой частью этого Договора.
-Сертификация ICF – получение Коучем одного из статусов (АСС (Ассоциированный
-Сертифицированный Коуч), PCC (Профессиональный Сертифицированный Коуч) или МСС
-(Мастер Сертифицированный Коуч)), который подтвержден соответствующим дипломом,
-приведен в Приложении №3 и является неотъемлемой частью этого Договора.
-Коуч - Исполнитель, который прошел обучение. Коуч соглашается применять Ключевые
-Компетенции ICF и берет на себя обязательства соблюдать Этический Кодекс ICF.
-Клиент - человек, с которым проводится коучинг.
-Конфликт интересов - ситуация, в которой Коуч имеет такой личный интерес, который может
-стать препятствием для исполнения его обязанностей.
-Коучинговая Сессия (далее – «Сессия») – одинарная встреча Коуча и Клиента (в том числе
-с использованием средств связи), основная форма взаимодействия сторон в рамках
-оказания услуги по Договору. Проводится сторонами в согласованное время и формате
-(очная встреча, по телефону, skype, zoom и т.п.). Клиент выбирает цель сессии, в то время
-как Коуч слушает и участвует в процессе в форме наблюдений, вопросов, иных навыков и
-умений Коуча, предусмотренных Ключевыми компетенциями ICF.
+The ICF Code of Ethics is a compilation of ethical and professional norms that regulate ethical
+and professional coaching standards (Appendix No. 1 to the Agreement).
+The ICF Core Coach Competencies are eleven competencies developed by the ICF that
+reflect coach skills and approaches in modern coaching as defined by the ICF.
+A certificate is a document confirming that a coach has completed training at
+accredited by the International Federation of Coaching in the form of ACTP, ACSTH or RCE
+program The availability of the Coach's certificate is indicated in Appendix No. 2 to this Agreement,
+which is an integral part of this Agreement.
+ICF certification – Coach receiving one of the statuses (ACC (Associate)
+Certified Coach), PCC (Professional Certified Coach) or MCC
+(Master Certified Coach)), which is confirmed by the relevant diploma,
+are listed in Appendix No. 3 and are an integral part of this Agreement.
+Coach – A trained performer. Coach agrees to apply Key
+Competencies of the ICF and undertakes to comply with the ICF Code of Ethics.
+A client is a person with whom coaching is conducted.
+A conflict of interest is a situation in which the Coach has such a personal interest that he can
+become an obstacle to the performance of his duties.
+Coaching Session (hereinafter - "Session") - a single meeting between the Coach and the Client (incl
+with the use of means of communication), the main form of interaction of the parties within the limits
+provision of services under the Agreement. It is conducted by the parties at the time and format agreed upon
+(face-to-face meeting, by phone, skype, zoom, etc.). The client chooses the purpose of the session at that time
+how the Coach listens and participates in the process in the form of observations, questions, other skills and
+Coaching skills provided by the ICF Key Competencies.
+<br/>
+<br/>
+2. OFFER ACCEPTANCE<br/>
+2.1. Acceptance of the Offer by the person specified in Clause 1.6.1 of the Offer is carried out by
+committing the following actions in total:<br/>
+2.1.1. I have read and agree with the Offer.<br/>
+2.1.2. Filled in and sent personal data on the Contractor's website by registration
+payment requests.<br/>
+2.1.3. Made payment for the Services in the amount and within the period stipulated by this Offer.<br/>
+2.2. Acceptance of the Offer by the person indicated in Clause 1.6.2 of the Offer is carried out by
+performing the following actions in aggregate:<br/>
+2.2.1. Familiarization and agreement of the Customer and Listeners with the terms of the Offer.<br/>
+2.2.2. Filling in and sending the Listener's personal data on the Performer's website by
+processing a request for payment.<br/>
+2.2.3. Made payment for the Services in the amount and within the period stipulated by this Offer.<br/>
+2.4. For the proper execution of the Acceptance of the Offer, the Customer in accordance with the clauses<br/>
+2.1.3., 2.2.3., 5.4. of this Offer provides 100% payment for Consulting Services.<br/>
+2.5. The date of acceptance of the Offer by the Customer and the Listener is considered the date of receipt of the complete offer
+payment for Services no later than the date of provision of the relevant Service.<br/>
+<br/>
+3. SCOPE OF THE CONTRACT<br/>
+3.1. The Contractor undertakes to provide the Customer with services
+individual counseling in the form of coaching (hereinafter - "coaching"), and the Customer
+undertakes to pay for these services within the terms and in the manner stipulated by the terms hereof
+Agreement.<br/>
+3.2. The scope of coaching services (number and duration of sessions), format of communication on
+sessions, terms of service provision and other characteristics of the service are agreed upon by the Parties
+additional application and depends on the needs of the Customer.<br/>
+3.3. The service is considered to be provided properly and in full for the invoice
+month and accepted by the Customer and (or) Listener, if within 3 (three) calendar days
+days from the end of the provision of the Service to the Contractor's address has not been received
+relevant statements or claims from the Customer and (or) Listener.<br/>
+<br/>
 
-2. АКЦЕПТ ОФЕРТЫ
-2.1. Акцепт Оферты лицом, указанным в п. 1.6.1 Оферты, осуществляется путем
-совершения в совокупности следующих действий:
-2.1.1. Ознакомился и согласен с Офертой.
-2.1.2. Заполнил и отправил персональные данные на сайте Исполнителя путем оформления
-заявки на оплату.
-2.1.3. Произвел оплату Услуг в размере и в срок предусмотренный настоящей Офертой.
-2.2. Акцепт Оферты лицом, указанным в п. 1.6.2 Оферты, осуществляется путем
-совершения следующих действий в совокупности:
-2.2.1. Ознакомление и согласие Заказчика и Слушателей с условиями Оферты.
-2.2.2. Заполнение и отправка персональных данных Слушателя на сайте Исполнителя путем
-оформления заявки на оплату.
+4. RIGHTS AND DUTIES<br/>
+4.1. RIGHTS AND OBLIGATIONS OF THE PERFORMER<br/>
+4.1.1. The contractor undertakes to act in accordance with the Ethical Code when providing the service<br/>
+ICF Code and base work on ICF Key Competencies.<br/>
+4.1.2. The performer undertakes to treat any relationship "Coach -
+Client", regardless of the form of compensation provided for in this Agreement.<br/>
+4.1.3. The Contractor undertakes to inform the Customer and agree with him how it will be
+go through the coaching process, what are the terms and limits of confidentiality, financial
+agreements and other conditions of cooperation of the Parties.<br/>
+4.1.4 The Contractor undertakes to maintain confidentiality regarding the circumstances which
+became known to the Contractor in connection with the execution of this Agreement, including:<br/>
+● provision of services to the Customer within the framework of this Agreement;<br/>
+● content of coaching sessions;<br/>
+● contact data of the Customer, namely: phone, mobile phone, email
+mail, Skype, passport data.<br/>
+4.1.5. The contractor has the right not to comply with the terms of the confidentiality agreement and
+to apply to the relevant state bodies, in the cases provided for
+the current legislation of Ukraine, including, but not limited to: in cases
+illegal activity of the Customer, on the basis of a court decision and/or a court summons,
+in the event of a risk of endangering one's own person or others. Signing under
+Under the terms of this Agreement, the Customer confirms his agreement with the data
+limitations of the confidentiality terms provided for in this Agreement.<br/>
+4.1.6. The Contractor has the right to recommend the Customer to contact another coach or
+to other specialized specialists whose services are not duplicative or
+substitutes, if it is considered that it will be more productive for the Customer and/or
+necessary in the relevant situation.<br/>
+4.1.7. The Contractor undertakes to notify the Customer of all anticipated
+remuneration that the Contractor may receive from third parties for the fact that
+recommends this Client or for having recommended the Client to the Contractor.<br/>
+4.1.8. The contractor is obliged to monitor the risks of conflict of interests and potential
+conflicts of interest, openly discuss such situations with the Customer, and accept
+decision in favor of the Customer, up to the termination of this Agreement.<br/>
+4.1.9. The Contractor has the right to use information about the Customer for filling
+application form for renewal of the coach certificate in the ICF, in which the Executor
+can specify name, contact information, total number of hours of coaching.<br/>
+4.1.10. The executor is obliged to comply with the requirements of the applicable legislation on
+protection of personal data. Processing of the Customer's personal data, including
+transfer of personal data in the cases stipulated by this Agreement is necessary
+and sufficient for the provision of services within the framework of this Agreement, is carried out with
+the Customer's consent to the processing of his personal data.<br/>
+4.2. RIGHTS AND OBLIGATIONS OF THE CUSTOMER:<br/>
+4.2.1. The Customer has the right to receive professional services from the Contractor,
+in accordance with the requirements stipulated by the ICF Code of Ethics and Key
+ICF competencies. By signing this contract, the Customer confirms that
+notified and accepts the level of qualification of the Executor in coaching received
+Executor of certificates and certifications in ICF.<br/>
+4.2.2. The Customer has the right to ask the Contractor for information on issues related to
+organization and provision of proper performance of the services provided for in clause 2.1.
+of this agreement, other information related to rights and legitimate interests
+The customer.<br/>
+4.2.3. The Customer is obliged to pay the Contractor's services in a timely manner under the conditions,
+provided for in Section 5 of this Agreement.<br/>
+4.2.4. The customer is obliged to postpone the time of the session by notifying the performer in writing
+later than 24 hours before the session deadline without any penalties. IN
+in case such notification was received by the Contractor later than the specified time,
+the session is considered completed and is subject to payment in full unless otherwise stated
+agreed by the Parties.<br/>
+4.2.5. In the event of a claim to the held session, the Customer is obliged no later than
+24 hours after the end of the session, send a motivation letter to the Performer
+objection in the form of a written notice. In the absence of a written
+motivated objection to the session, the service is considered provided and is subject to payment.
+The parties confirm that there is no additional signing of the Act on services provided
+necessary.<br/>
+4.2.6. The customer has the right to prematurely and unilaterally refuse the performance.
+The contract, which entails the termination of the provision of services by the Contractor. Such a breakup
+possible by means of a written notification by the Customer to the Contractor no later than 4
+(four) days before the date of the regular session.<br/>
+4.2.7. The customer confirms that, signing under the terms of this contract,
+within the framework of cooperation under this Agreement, agree to all cases of receipt,
+processing, storage, transfer of his personal data, including all cases of receipt,
+processing, storage, transfer of his personal data to a third party.<br/>
+4.2.7. In case of violations by the Coach of the norms of the ICF Code of Ethics, the Customer
+has the right to apply to the International Coaching Federation or one of its affiliates
+branches<br/>
+<br/>
 
-2.2.3. Произвел оплату Услуг в размере и в срок предусмотренный настоящей Офертой.
-2.4. Для надлежащего оформления Акцепта Оферты Заказчик в соответствии с пунктами
-2.1.3., 2.2.3., 5.4. настоящей Оферты осуществляет 100% оплату Консультационных услуг.
-2.5. Датой Акцепта Оферты Заказчиком и Слушателем считается дата поступления полной
-оплаты Услуг не позднее даты оказания соответствующей Услуги.
-3. ПРЕДМЕТ ДОГОВОРА
-3.1. Исполнитель принимает на себя обязательство оказывать Заказчику услуги
-индивидуального консультирования в форме коучинга (далее – «коучинга»), а Заказчик
-обязуется оплатить эти услуги в сроки и порядке, предусмотренном условиями настоящего
-Договора.
-3.2. Объем услуг коучинга (количество и продолжительность сессий), формат общения на
-сессиях, сроки оказания услуг и иные характеристики услуги согласовываются Сторонами в
-дополнительном приложении и зависит от потребностей Заказчика.
-3.3. Услуга считается оказанной надлежащим образом и в полном объеме за расчетный
-месяц и принятой Заказчиком и (или) Слушателем, если в течении 3 (трех) календарных
-дней с момента окончания предоставления Услуги в адрес Исполнителя не поступило
-соответствующих заявлений или претензий от Заказчика и (или) Слушателя.
-4. ПРАВА И ОБЯЗАННОСТИ СТОРОН
-4.1. ПРАВА И ОБЯЗАННОСТИ ИСПОЛНИТЕЛЯ
-4.1.1. Исполнитель обязуется при оказании услуги действовать в соответствии с Этическим
-Кодексом ICF и основываться в работе на Ключевых Компетенциях ICF.
-4.1.2. Исполнитель обязуется уважительно относиться к любым отношениям «Коуч –
-Клиент», вне зависимости от формы компенсации, предусмотренной настоящим Договором.
-4.1.3. Исполнитель обязуется донести до Заказчика и согласовать с ним, как будет
-проходить процесс коучинга, каковы условия и границы конфиденциальности, финансовые
-договоренности и иные условия сотрудничества Сторон.
-4.1.4 Исполнитель обязуется соблюдать конфиденциальность об обстоятельствах, которые
-стали известны Исполнителю в связи с исполнением настоящего Договора, в том числе:
-● предоставлении Заказчику услуг в рамках настоящего Договора;
-● содержании занятий коучинга;
-● контактных данных Заказчика, а именно: телефон, мобильный телефон, электронная
-почта, Skype, паспортные данные.
-4.1.5. Исполнитель вправе не соблюдать условия соглашения о конфиденциальности и
-обращаться в соответствующие государственные органы, в случаях, предусмотренных
-действующим законодательством Украины, в том числе, но не ограничиваясь: в случаях
-противоправной деятельности Заказчика, на основании решения суда и/или повестки в суд,
-в случаях риска угрозы собственной личности или окружающим. Подписываясь под
-условиями настоящего Договора, Заказчик подтверждает свое согласие с данными
-ограничениями условий о конфиденциальности, предусмотренных настоящим Договором.
+5. FINANCIAL TERMS<br/>
+5.1. The cost of the session regardless of the form of its conduct (face-to-face or with the help of funds
+communication: by phone, skype, zoom, etc.) is indicated on the artist's website be-better.today<br/>
+5.2. Payment for Services is subject to 100% prepayment.<br/>
+5.3. The total cost of services is determined by the number of sessions multiplied by
+the value specified in Clause 5.1 of this Agreement. The total amount is calculated
+By the executor and indicated in the Appendices "Parameters and cost of services" hereto
+Agreement.<br/>
+5.4. Payment for services in accordance with this Agreement is made by the Customer in the order,
+defined in the Appendix "Parameters and cost of services" to this Agreement.<br/>
+5.5. Payment for services by the Customer is made by transferring funds to
+the current account of the Contractor specified in section 8 of this Agreement.<br/>
+5.6. The fact of advance payment by the Customer for Coach services means that the Customer has accepted the terms
+the real deal.<br/>
+5.7. The fact of overpayment of the sessions conducted by the Coach confirms the absence
+motivated objections by the Customer to the service provided by the Contractor.
+The parties once again confirm that the additional signing of the Act on granted
+services are not required.<br/>
+5.8. In case of termination of the contract unilaterally at the initiative of the Customer
+(The customer) will be refunded after deducting the cost of the sessions
+no later than 5 working days from the date of receipt of a written notice from the Customer about
+termination of the contract. At the same time, the funds are returned to the Customer by transfer to
+his current account or bank card.<br/>
+<br/>
+<br/>
+6. TERM OF THE CONTRACT
+<br/>
+6.1. The contract is valid from the date of its conclusion by the Parties until the end of the period
+provision of Consulting Services to the Customer and Listeners, and in part others
+obligations of the Parties - until full fulfillment.
+<br/>
+<br/>
+7. RESPONSIBILITIES OF THE PARTIES. RESOLUTION OF DISPUTES. FORCE MAJEURE.
+MESSAGE.<br/>
+7.1. For non-fulfillment or improper fulfillment of the obligations accepted under this Agreement
+obligations, the Parties bear the responsibility provided for by law
+of Ukraine. The terms of responsibility are regulated in particular by the ICF Code of Ethics.<br/>
+7.2. If the Customer violates the terms of this Agreement, the Contractor shall have
+the right to suspend or terminate the performance of its obligations in effect
+Agreement at its sole discretion by sending a written notice
+The customer no later than 4 (four) days before the date of the next session.<br/>
+7.3. The customer understands that he himself is responsible for his results and achievements,
+and that the efficiency of work when interacting with the Contractor can be ensured
+only by themselves, and as a Client, agrees with this.<br/>
+7.4. If the Customer believes that the coaching service provided to him does not advance him to
+to the parameters of the result announced by him to the Coach, he has the right to inform about it
+Executor and discuss what requires any changes to return
+efficiency of interaction with the Contractor.<br/>
+7.5. In case of delay in the fulfillment of financial obligations, the Party whose rights
+violated, have the right to charge a penalty in the form of 0.1% of the overdue amount each
+due date A written notice of penalty is the basis for
+remittance of the penalty in the amount and within the terms stipulated in the notice.<br/>
+7.6. Disputes between the parties are resolved through negotiations. Review period
+written claims 5 (five) days from the date of receipt. If no agreement is reached
+in the course of negotiations, the dispute is allowed in accordance with the procedure established by law.<br/>
+7.7. The parties are released from responsibility for partial or total non-performance
+obligations under this Agreement during its validity period, if it is caused
+by circumstances of force majeure, namely: fire, flood,
+earthquake, war, prohibitive acts or other actions of authorities
+state power and management, and others (internet network malfunctions, for example),
+circumstances beyond the control of the Parties. At the same time, the fulfillment of obligations regarding
+of this Agreement changes in proportion to the time during which it was in effect
+such circumstances, taking into account existing loading and other technical capabilities
+Parties<br/>
+7.8. The parties are obliged to notify each other in writing of a change in their details.
+(location or actual (postal) address, telephone numbers, numbers
+current accounts) within 2 (two) days from the moment of the relevant changes. In case
+violations of the terms of the contract due to the details of the Party that have changed, in a timely manner
+which has fulfilled its obligations, bears no responsibility.<br/>
+7.9. The parties are obliged to inform each other in writing about the influencing circumstances
+execution of this contract, in advance in order to prevent negative
+the consequences of such circumstances for the outcome of the contractual relations of the parties.
+Legally significant messages (letters, messages, messages) sent
+by the Parties by e-mail to the addresses specified in the details of the Parties
+(Chapter 8 of the Agreement), are considered to be directed accordingly and are subject to
+application along with correspondence sent by post.<br/>
+7.10. After signing this Agreement, all previous negotiations regarding it,
+correspondence, preliminary agreements, letters of intent and any other oral
+or written agreements of the Parties on issues that in one way or another relate to it
+Contracts lose legal force, but may be taken into account when interpreting the terms
+the real deal.<br/>
+7.11. Each Party bears full responsibility for the correctness of the information specified by it
+details of this Agreement and undertakes to notify in writing in a timely manner
+to the other Party about their change, and in case of non-notification is responsible for the risk
+occurrence of adverse consequences associated with it.<br/>
+7.12. Assignment of the right of claim and (or) transfer of debt under this Agreement by one of
+Parties to third parties are allowed only under the condition of written consent
+this with the other Party.<br/>
+7.13. For the purpose of operational document circulation regarding the execution of this Agreement
+The parties have agreed on such a procedure for exchanging legally significant messages
+by e-mail:<br/>
+- legally significant messages sent/received by the Parties
+e-mail addresses specified in section 8 of the Agreement are considered
+sent by the addressee party under the Agreement (sender
+electronic message) and received by the addressee-party under the Agreement
+(email recipient);<br/>
+- acceptance of legally significant messages by execution is recognized
+by the Parties to the Agreement as confirmation of receipt of the relevant
+electronic messages;<br/>
+- documents (including messages) sent by e-mail,
+have full legal effect for the Parties. At the same time, the Parties did not meet the deadline
+later than 2 (two) days from the date of drafting the documents in electronic form and
+sending them by e-mail is allowed, but not obliged to send
+to the addressee the original of the corresponding electronic message, which is identical
+by text and documents sent by electronic message.<br/>
+7.14. The customer is a natural person.<br/>
+7.15 The executor is (taxpayer/natural person).<br/>
+<br/>
 
-4.1.6. Исполнитель имеет право рекомендовать Заказчику обратиться к другому коучу или
-другим профильным специалистам, чьи услуги не являются дублирующими или
-заменяющими, если посчитает, что это будет для Заказчика более продуктивно и/или
-необходимо в соответствующей ситуации.
-4.1.7. Исполнитель обязуется извещать Заказчика обо всех предполагаемых
-вознаграждениях, которые Исполнитель может получить от третьих сторон за то, что
-рекомендует данного Клиента, или за то, что Клиента порекомендовали Исполнителю.
-4.1.8. Исполнитель обязан отслеживать риски конфликта интересов и потенциальных
-конфликтов интересов, открыто обсуждать такие ситуации с Заказчиком, и принимать
-решения в интересах Заказчика, вплоть до прекращения настоящего Договора.
-4.1.9. Исполнитель вправе использовать информацию о Заказчике для заполнения
-аппликационной формы для продления сертификата коуча в ICF, в которой Исполнитель
-может указать имя, контактную информацию, общее количество часов коучинга.
-4.1.10. Исполнитель обязан соблюдать требования применимого к нему законодательства о
-защите персональных данных. Обработка персональных данных Заказчика, в том числе
-передача персональных данных в случаях, предусмотренных этим Договором, необходимая
-и достаточная для оказания услуг в рамках настоящего Договора, осуществляется с
-согласия Заказчика на обработку его персональных данных.
-4.2. ПРАВА И ОБЯЗАННОСТИ ЗАКАЗЧИКА:
-4.2.1. Заказчик имеет право на получение профессиональной услуги от Исполнителя, в
-соответствии с требованиями, предусмотренными Этическим Кодексом ICF и Ключевыми
-Компетенциями ICF. Подписанием настоящего договора Заказчик подтверждает, что
-уведомлен и принимает уровень квалификации Исполнителя в коучинге, полученные
-Исполнителем сертификаты и сертификации в ICF.
-4.2.2. Заказчик вправе запрашивать у Исполнителя информацию по вопросам, касающимся
-организации и обеспечения надлежащего исполнения услуг, предусмотренных п. 2.1.
-настоящего договора, иную информацию, затрагивающую права и законные интересы
-Заказчика.
-4.2.3. Заказчик обязан своевременно производить оплату услуг Исполнителя на условиях,
-предусмотренных разделом 5 настоящего Договора.
-4.2.4. Заказчик обязан переносить время сессии, письменно уведомив Исполнителя не
-позднее, чем за 24 часа до срока проведения сессии без каких-либо штрафных санкций. В
-случае, если такое уведомление поступило Исполнителю позднее указанного времени,
-сессия считается проведённой и подлежит оплате в полном объёме, если иное не будет
-согласовано Сторонами.
-4.2.5. В случае возникновения претензии к проведенной сессии, Заказчик обязан не позднее
-24-х часов с момента окончания сессии, направить Исполнителю мотивированное
-возражение в форме письменного уведомления. При отсутствии письменного
-мотивированного возражения к сессии услуга считается оказанной и подлежит оплате.
-Стороны подтверждают, что дополнительного подписания Акта об оказанных услугах не
-требуется.
+8. FINAL PROVISIONS<br/>
+8.1. This Agreement enters into force from the moment of signing and remains in effect until complete
+performance by the Parties of their obligations.<br/>
+8.2. This Agreement enters into force at the time of payment and ends after
+full fulfillment by the Parties of their obligations under this Agreement.<br/>
+8.3. Unless otherwise expressly provided for in this Agreement or in force in Ukraine
+legislation, changes and/or additions to this Agreement may be
+entered only by agreement of the Parties and formalized by an additional agreement to
+of this Agreement.<br/>
+8.4. Amendments/additions and Addenda to this Agreement shall enter into force from
+at the time of proper registration by the Parties of the corresponding additional
+of the agreement/addendum to this Agreement, unless otherwise specified in the Agreement itself
+additional agreement/addendum, this Agreement or the current one
+Ukrainian legislation.<br/>
+8.5. Additional agreements and Annexes to this Agreement are his
+an integral part and have legal force if they are issued in
+in writing and signed by both Parties.<br/>
+8.6. This Agreement is concluded with full understanding of its terms and conditions by the Parties
+terminology in Russian in two authentic copies, one for each of
+Parties that have the same legal validity.<br/>
+<br/>
 
-4.2.6. Заказчик вправе досрочно и в одностороннем порядке отказаться от исполнения
-Договора, что влечёт прекращение оказания услуг Исполнителем. Такое расторжение
-возможно путем письменного уведомления Заказчиком Исполнителя не позднее, чем за 4
-(четыре) дня до даты проведения очередной сессии.
-4.2.7. Заказчик подтверждает, что, подписываясь под условиями настоящего договора, в
-рамках сотрудничества по настоящему Договору согласен со всеми случаями получения,
-обработки, хранения, передачи его персональных данных, включая все случаи получения,
-обработки, хранения, передачи его персональных данных третьей стороне.
-4.2.7. В случае обнаружения нарушений Коучем норм Этического Кодекса ICF Заказчик
-имеет право обратиться в Международную Федерацию Коучинга или в одно из ее
-отделений.
-
-5. ФИНАНСОВЫЕ УСЛОВИЯ
-5.1. Стоимость сессии независимо от формы ее проведения (очная или при помощи средств
-связи: по телефону, skype, zoom и т.д.) указана на сайте исполнителя be-better.today
-5.2. Оплата Услуг осуществляется на условиях 100% предоплаты.
-5.3. Общая стоимость услуг определяется по количеству сессий, умноженному на
-стоимость, которая указана в п. 5.1 данного Договора. Общая сумма рассчитывается
-Исполнителем и указывается в Приложениях «Параметры и стоимость услуг» к данному
-Договору.
-5.4. Оплата услуг согласно с данным Договором осуществляется Заказчиком в порядке,
-определенном в Приложениях «Параметры и стоимость услуг» к данному Договору.
-5.5. Оплата услуг Заказчиком производится путем перечисления денежных средств на
-расчетный счет Исполнителя, указанный в разделе 8 настоящего Договора.
-5.6. Факт авансовой оплаты Заказчиком услуг Коуча означает, что Заказчик принял условия
-настоящего Договора.
-5.7. Факт постоплаты проведенных Коучем сессий подтверждает отсутствие
-мотивированных возражений со стороны Заказчика к оказанной Исполнителем услуге.
-Стороны еще раз подтверждают, что дополнительного подписания Акта об оказанных
-услугах не требуется.
-5.8. В случае расторжения договора в одностороннем порядке по инициативе Заказчика ему
-(Заказчику) возвращаются денежные средства за вычетом стоимости проведённых сессий в
-срок не позднее 5 рабочих дней с даты получения письменного уведомления от Заказчика о
-расторжении договора. При этом Заказчику возвращаются средства путем перечисления на
-его расчетный счет или банковскую карту.
-
-6. СРОК ДЕЙСТВИЯ ДОГОВОРА
-
-6.1. Договор действует с даты его заключения Сторонами до окончания периода
-предоставления Консультационных услуг Заказчику и Слушателям, а в части иных
-обязательств Сторон - до полного их исполнения.
-7. ОТВЕТСТВЕННОСТЬ СТОРОН. РАЗРЕШЕНИЕ СПОРОВ. ФОРС-МАЖОР.
-УВЕДОМЛЕНИЯ.
-7.1. За невыполнение или ненадлежащее выполнение принятых по настоящему Договору
-обязательств Стороны несут ответственность, предусмотренную законодательством
-Украины. Условия ответственности регулируются в том числе Этическим Кодексом ICF.
-7.2. В случае нарушения Заказчиком условий настоящего Договора Исполнитель имеет
-право приостановить или прекратить выполнение своих обязательств по настоящему
-Договору по собственному усмотрению путем направления письменного уведомления
-Заказчику не позднее, чем за 4 (четыре) дня до даты проведения очередной сессии.
-7.3. Заказчик понимает, что он сам несет ответственность за свои результаты и достижения,
-и что эффективность работы при взаимодействии с Исполнителем может быть обеспечена
-только им самим, и, как Клиент, согласен с этим.
-7.4. Если Заказчик считает, что оказываемая ему услуга коучинга не продвигает его к
-озвученным им Коучу параметрам результата, он имеет право сообщить об этом
-Исполнителю и обсудить то, что требует каких-либо изменений, чтобы вернуть
-эффективность взаимодействию с Исполнителем.
-7.5. В случае просрочки выполнения финансовых обязательств, Сторона, чьи права
-нарушены, вправе взыскать неустойку в размере 0,1 % от просроченной суммы за каждый
-день просрочки. Письменное уведомление о взыскании неустойки является основанием для
-перечисления неустойки в размере и в сроки, предусмотренные в уведомлении.
-7.6. Споры, возникшие между сторонами, решаются путем переговоров. Срок рассмотрения
-письменных претензий 5 (пять) дней с даты получения. В случае не достижения соглашения
-в ходе переговоров спор разрешается в установленном законом порядке.
-7.7. Стороны освобождаются от ответственности за частичное или полное неисполнение
-обязательств по настоящему Договору в период его действия, если это вызвано
-обстоятельствами непреодолимой силы, а именно: пожаром, наводнением,
-землетрясением, войной, запретительными актами или иными действиями органов
-государственной власти и управления, и другими (неполадками сети интернет, например),
-не зависящими от Сторон обстоятельствами. При этом исполнение обязательств по
-настоящему Договору изменяется соразмерно времени, в течение которого действовали
-такие обстоятельства, с учетом существующей загрузки и других технических возможностей
-Сторон.
-7.8. Стороны обязаны письменно уведомлять друг друга об изменении своих реквизитов
-(места нахождения или фактического (почтового) адреса, номеров телефонов, номеров
-расчетных счетов) в течение 2 (двух) дней с момента соответствующих изменений. В случае
-нарушений условий договора по причине изменившихся реквизитов Сторона, своевременно
-выполнившая обязательства, не несет ответственность.
-7.9. Стороны обязаны письменно уведомлять друг друга об обстоятельствах, влияющих на
-исполнение настоящего договора, заранее с целью предотвращения негативных
-
-последствий таких обстоятельств для результата договорных отношений сторон.
-Юридически значимые сообщения (письма, уведомления, сообщения), направленные
-Сторонами посредством электронной почты в адреса, указанные в реквизитах Сторон
-(раздел 8 Договора), считаются направленными соответствующим образом и подлежат
-применению наряду с корреспонденцией, направленной почтовой связью.
-7.10. После подписания настоящего Договора все предыдущие переговоры по нему,
-переписка, предварительные договоры, протоколы о намерениях и любые другие устные
-или письменные договоренности Сторон по вопросам, которые так или иначе касаются этого
-Договора, теряют юридическую силу, но могут учитываться при толковании условий
-настоящего Договора.
-7.11. Каждая Сторона несет полную ответственность за правильность указанных ею в
-настоящем Договоре реквизитов и обязуется своевременно в письменной форме сообщать
-другой Стороне об их изменении, а в случае несообщения ответственна за риск
-наступления связанных с ним неблагоприятных последствий.
-7.12. Переуступка права требования и (или) перевода долга по этому Договору одной из
-Сторон к третьим лицам допускается исключительно при условии письменного согласования
-этого с другой Стороной.
-7.13. В целях оперативного документооборота по исполнению настоящего Договора
-Стороны договорились о следующем порядке обмена юридически значимыми сообщениями
-при помощи электронной почты:
-
-- юридически значимые сообщения, направленные/полученные Сторонами в
-адреса электронной почты, указанные в разделе 8 Договора, считаются
-направленными адресантом-Стороной по Договору (отправитель
-электронного сообщения) и полученными адресатом-Стороной по Договору
-(получатель электронного сообщения);
-- акцепт юридически значимых сообщений путем исполнения признается
-Сторонами Договора в качестве подтверждения получения соответствующих
-электронных сообщений;
-- документы (включая уведомления), переданные по электронной почте,
-имеют полную юридическую силу для Сторон. При этом Стороны в срок не
-позднее 2 (двух) дней с даты составления документов в электронном виде и
-направления их по электронной почте вправе, но не обязаны направлять
-адресату оригинал соответствующего электронного сообщения, идентичный
-по тексту, и документов, направленных электронным сообщением.
-
-7.14 Заказчик является физическим лицом.
-7.15 Исполнитель является (плательщиком налога/физическим лицом).
-8. ЗАКЛЮЧИТЕЛЬНЫЕ ПОЛОЖЕНИЯ
-8.1. Настоящий Договор вступает в силу с момента подписания и действует до полного
-исполнения Сторонами своих обязательств.
-8.2. Настоящий Договор вступает в действие в момент оплаты и заканчивается после
-полного исполнения Сторонами своих обязательств по настоящему Договору.
-
-8.3. Если иное прямо не предусмотрено настоящим Договором или действующим в Украине
-законодательством, изменения и/или дополнения к настоящему Договору могут быть
-внесены только по договоренности Сторон и оформляются дополнительным соглашением к
-настоящему Договору.
-8.4. Изменения/дополнения и Приложения к настоящему Договору вступают в силу с
-момента надлежащего оформления Сторонами соответствующего дополнительного
-соглашения/приложении к настоящему Договору, если иное не установлено в самом
-дополнительном соглашении/приложении, настоящем Договоре или в действующем в
-Украине законодательстве.
-8.5. Дополнительные соглашения и Приложения к настоящему Договору являются его
-неотъемлемой частью и имеют юридическую силу в случае, если они оформлены в
-письменной форме и подписаны обеими Сторонами.
-8.6. Настоящий Договор составлен при полном понимании Сторонами его условий и
-терминологии на русском языке в двух аутентичных экземплярах по одному для каждой из
-Сторон, имеющих одинаковую юридическую силу.
-
-9. РЕКВИЗИТЫ ИСПОЛНИТЕЛЯ
-Получатель:
-Шаєнко Юлія Юріївна
+9. DETAILS OF THE PERFORMER
+Recipient:
+Shayenko Yuliya Yuriivna
 IBAN - UA973220010000026004310078110
-ЕГРПОУ - 3095913902
-Назначение платежа - Оплата Коучинговых Услуг
-Реквизиты Банка:
-Акционерное Общество УНИВЕРСАЛ БАНК
+EDRPOU - 3095913902
+Purpose of payment - Payment for coaching services
+Bank details:
+Joint-stock company UNIVERSAL BANK
 МФО 322001
 ЕГРПОУ Банка 21133352
 PayPal - yshayenko@gmail.com
+

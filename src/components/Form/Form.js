@@ -163,12 +163,12 @@ const Form = ({
           rules={{ required: true }}
           render={({ field }) => (
             <div className={`relative ${checkboxClassname}`}>
-              <label className="flex items-center mt-1 pl-2 py-1">
+              <label className="flex items-start mt-1 mb-7 pl-2 py-1">
                 <input className={checkbox} type="checkbox" {...field} />
                 <span className={check}></span>
-                <span className="ml-2	text-[9px] text-black">{data.accept}</span>
+                <span className="ml-3	text-xs text-black">{data.accept}</span>
               </label>
-              <p className="absolute top-6 text-error text-[8px]">
+              <p className="absolute top-8 left-8 text-error text-xs">
                 {errors.checkbox?.message}
               </p>
             </div>

@@ -1,7 +1,5 @@
 import React from 'react';
 import { FaLinkedinIn, FaFacebookF, FaInstagram } from 'react-icons/fa';
-import { TbBrandInstagram } from 'react-icons/tb';
-import { TiSocialLinkedin } from 'react-icons/ti';
 import { list, link } from './Social.module.css';
 
 const Social = () => {

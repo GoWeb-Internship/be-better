@@ -25,7 +25,7 @@
         }
 
 .error {
-    @apply absolute -top-1 right-8 z-10 text-error text-[8px];
+    @apply absolute -top-2 right-8 z-10 text-error text-xs;
 }
 .modalsuccess{
     @apply w-[456px] h-[225px] pt-14 px-[68px] bg-white

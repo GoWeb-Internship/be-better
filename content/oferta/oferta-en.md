@@ -100,11 +100,11 @@ language: en
 <p>2.1.3., 2.2.3., 5.4. of this Offer provides 100% payment for Consulting Services.</p>
 <p>2.5. The date of accptance of the Offer by the Customer and the Listener is considered the date of receipt of the complete offer</p>
 <p>payment for Services no later than the date of provision of the relevant Service.</p>
-</p>
+
 <br>
 <br>
 <p>
-3. SCOPE OF THE CONTRACT</p>
+1. SCOPE OF THE CONTRACT</p>
 <br>
 <p>3.1. The Contractor undertakes to provide the Customer with services</p>
 <p>individual counseling in the form of coaching (hereinafter referred to as "coaching"), and the Customer</p>
@@ -230,7 +230,7 @@ language: en
 <p>6.1. The contract is valid from the date of its conclusion by the Parties until the end of the period</p>
 <p>provision of Consulting Services to the Customer and Listeners, and in part others</p>
 <p>obligations of the Parties - until full fulfillment.</p>
-</p>
+
 <br>
 <br>
 <p>7. RESPONSIBILITIES OF THE PARTIES. RESOLUTION OF DISPUTES. FORCE MAJEURE.</p>

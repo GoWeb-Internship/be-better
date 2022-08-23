@@ -8,16 +8,15 @@ language: en
 <br>
 <br>
 <br>
-<p>20.04.2022</p>
+20.04.2
 <p>A real public offer, the text of which is constantly posted for information</p>
-<p>telecommunications network "Internet" (hereinafter - the Internet network) at the network address:</p>
+<p>telecommunications network "Internet" (hereinafter - the Internet network) at the network address:<p/>
 <p>http://be-better.today is an offer addressed to an unlimited number of people</p>
 <p>enter into a contract for the provision of paid coaching services specified in this</p>
-<p>public offer.</p>
+<p>public offer.<p/>
 <br>
 <br>
-<p>1. TERMS AND DEFINITIONS
-</p>
+1. TERMS AND DEFINITIONS
 <br>
 <p>1.1. "Party", "Parties" - Customer, Listener, Performer.</p>
 <p>1.2. "Offer" - a real offer (public offer) that defines the rights and</p>
@@ -352,3 +351,4 @@ language: en
 <br>
 <br>
 <br>
+

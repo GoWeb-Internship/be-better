@@ -349,5 +349,3 @@ language: ru
 <br>
 <br>
 <br>
-<br>
-<br>

@@ -96,19 +96,24 @@ collections:
         }
       - { label: 'Text Ru', name: 'ruText', widget: 'string' }
       - { label: 'Language', name: 'language', widget: 'hidden', default: 'uk' }
-  # Policy
-  - name: 'policy'
-    label: 'Policy'
-    folder: 'content/policy'
-    create: true
-    delete: true
+  # Discount
+  - name: 'discount'
+    label: 'Discount'
+    folder: 'content/discount'
+    create: false
+    delete: false
     editor:
       preview: true
     fields:
-      - { label: 'Text Uk', name: 'ukText', widget: 'string' }
-      - { label: 'Text En', name: 'enText', widget: 'string' }
-      - { label: 'Text Ru', name: 'ruText', widget: 'string' }
-
+      - { label: 'First Uk', name: 'ukFirst', widget: 'string' }
+      - { label: 'First En', name: 'enFirst', widget: 'string' }
+      - { label: 'First Ru', name: 'ruFirst', widget: 'string' }
+      - { label: 'Discount Uk', name: 'ukDiscount', widget: 'string' }
+      - { label: 'Discount En', name: 'enDiscount', widget: 'string' }
+      - { label: 'Discount Ru', name: 'ruDiscount', widget: 'string' }
+      - { label: 'Second Uk', name: 'ukSecond', widget: 'string' }
+      - { label: 'Second En', name: 'enSecond', widget: 'string' }
+      - { label: 'Second Ru', name: 'ruSecond', widget: 'string' }
   # - name: 'aboutMe'
   #   label: 'About me'
   #   folder: 'content/aboutMe'

@@ -50,7 +50,7 @@ const List = ({ icons = '', data = {}, formula = false }) => {
                       <use href={`${icons}#icon-${svg}`} />
                     </svg>
                   </li>
-                  <IoIosArrowRoundDown className={iconArrow} />
+                  <IoIosArrowRoundDown size={60} className={iconArrow} />
                 </div>
               );
             })}

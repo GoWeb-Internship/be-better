@@ -4,11 +4,11 @@ import { useTranslation } from 'gatsby-plugin-react-i18next';
 import Section from '../reusableComponents/Section';
 import Slider from '../reusableComponents/Slider';
 import { graphql, useStaticQuery } from 'gatsby';
-import { BsPerson } from 'react-icons/bs';
-import { CgQuote } from 'react-icons/cg';
 
+import { CgQuote } from 'react-icons/cg';
+import Review from './Review';
 const Reviews = () => {
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
   const { allMarkdownRemark } = useStaticQuery(graphql`
     query {
       allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/reviews/" } }) {
@@ -47,23 +47,8 @@ const Reviews = () => {
         {!!clients.length &&
           clients.map(({ frontmatter }, id) => {
             return (
-              <SwiperSlide key={id}>
-                <div className="flex flex-col justify-between w-80 h-[360px] text-left px-8 pb-8 pt-10 bg-white rounded-2xl shadow-you">
-                  <div>
-                    <p>{frontmatter[`${i18n.language}Text`]}</p>
-                  </div>
-                  <div className="flex items-center">
-                    <div className="rounded-full mr-6 ">
-                      <BsPerson size={24} />
-                    </div>
-                    <div>
-                      <p className="text-xl font-bold">
-                        {frontmatter[`${i18n.language}Name`]}
-                      </p>
-                      <p>{frontmatter[`${i18n.language}Position`]}</p>
-                    </div>
-                  </div>
-                </div>
+              <SwiperSlide key={id} className="slide h-auto  slider-item-width">
+                <Review frontmatter={frontmatter} />
               </SwiperSlide>
             );
           })}

@@ -117,7 +117,7 @@ module.exports = {
         '.title-primary': {
           color: theme('colors.main'),
           fontSize: 20,
-          fontWeight: 600,
+          fontWeight: 500,
           lineHeight: 1.32,
           textAlign: 'center',
           letterSpacing: 0.15,

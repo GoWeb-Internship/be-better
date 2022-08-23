@@ -2,6 +2,13 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 import Button from '../reusableComponents/Button';
 import PropTypes from 'prop-types';
+import {
+  subscription,
+  priceStyle,
+  economyStyle,
+  buttonStyled,
+} from './Price.module.css';
+
 const PriceCard = ({ priceData = {}, onClick }) => {
   const { t, i18n } = useTranslation();
   const buttonTranslate = t('littleComponents', { returnObjects: true });
@@ -10,19 +17,20 @@ const PriceCard = ({ priceData = {}, onClick }) => {
   const economy = Boolean(priceData.economy) ? 'opacity-100' : 'opacity-0';
   return (
     <>
-      <p className=" text-xl font-medium mb-14  ">
+      <p className={subscription}>
         {priceData[`${i18n.language}Subscription`]}
       </p>
-      <p className=" mb-2 font-semibold text-34 ">${priceData.price}</p>
-      <p className={`${economy} mb-16 text-main `}>
+      <p className={priceStyle}>${priceData.price}</p>
+      <p className={`${economy} ${economyStyle} `}>
         {price.economy} ${priceData.economy}
       </p>
 
-      <p className=" mb-2">{priceData[`${i18n.language}Month`]}</p>
+      <p className="mb-2 font-medium">{priceData[`${i18n.language}Month`]}</p>
       <p className="mb-6 text-likeGrey ">{priceData[`${i18n.language}Hour`]}</p>
+
       <Button
         type="button"
-        className="border border-gray-300 px-16 py-2 rounded-3xl"
+        className={buttonStyled}
         doAction={() => onClick(priceData.price)}
       >
         {buttonTranslate.button}

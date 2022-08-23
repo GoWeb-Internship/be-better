@@ -51,32 +51,38 @@
       {
         "textPrimary": "15 років ",
         "textSecondary": "у міжнародному бізнесі",
-        "svg": "bag"
+        "svg": "bag",
+        "bg": "15"
       },
       {
         "textPrimary": "30+",
         "textSecondary": "задоволених клієнтів",
-        "svg": "ok"
+        "svg": "ok",
+        "bg": "30"
       },
       {
         "textPrimary": "7 років ",
         "textSecondary": "у продажах і розвитку стартапів",
-        "svg": "scale"
+        "svg": "scale",
+        "bg": "7"
       },
       {
         "textPrimary": "6 років ",
         "textSecondary": "роботи з керівниками бізнесів",
-        "svg": "house"
+        "svg": "house",
+        "bg": "6"
       },
       {
         "textPrimary": "Лайф-коуч",
         "textSecondary": "ICF з 2021",
-        "svg": "icf"
+        "svg": "icf",
+        "bg": "ICF"
       },
       {
         "textPrimary": "15 років ",
         "textSecondary": "годин практики",
-        "svg": "clock"
+        "svg": "clock",
+        "bg": "15"
       }
     ]
   },
@@ -108,7 +114,6 @@
       { "name": "Публічна оферта", "id": "po" }
     ],
     "priceByOne": "*Вартість разової сессії 100$"
-
   },
   "littleComponents": {
     "button": "Записатись"

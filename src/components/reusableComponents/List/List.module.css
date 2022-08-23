@@ -18,7 +18,7 @@
 }
 
 .textContainer {
-  @apply w-50 h-36 bg-white rounded-2xl shadow-lg px-4 text-center flex flex-col justify-start ease-in duration-300 hover:shadow-2xl;
+  @apply relative  w-50 h-36 bg-white rounded-2xl shadow-lg px-4 text-center flex flex-col justify-start ease-in duration-300 hover:shadow-2xl;
 }
 
 .textPr {
@@ -37,8 +37,8 @@
   @apply text-mainSecond font-bold text-xl tracking-wide z-10;
 }
 
-.svgBgFacts {
-  @apply stair-iconsBg fill-orangeContrast;
+.bgFacts {
+  @apply absolute text-orangeContrast left-[5px] text-[52px] font-extrabold;
 }
 
 .formulaContainer {

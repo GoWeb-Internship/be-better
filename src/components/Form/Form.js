@@ -35,6 +35,7 @@ const Form = ({
 }) => {
   const [userLocation, setUserLocation] = React.useState('');
   const [successModal, setSuccessModal] = React.useState(false);
+
   const { t } = useTranslation();
   const data = t('form', { returnObjects: true });
   const {
@@ -45,17 +46,10 @@ const Form = ({
     reset,
     watch,
     setValue,
-  } = useForm(
-    {
-      resolver: yupResolver(schema),
-    },
-    {
-      defaultValues: {
-        checkbox: false,
-      },
-      mode: 'onBlur',
-    }
-  );
+  } = useForm({
+    resolver: yupResolver(schema),
+    mode: 'onSubmit',
+  });
 
   useFormPersist(`form-${clickFrom}`, {
     watch,
@@ -157,23 +151,25 @@ const Form = ({
             </div>
           )}
         />
-        <Controller
-          name="checkbox"
-          control={control}
-          rules={{ required: true }}
-          render={({ field }) => (
-            <div className={`relative ${checkboxClassname}`}>
-              <label className="flex items-start mt-1 mb-7 pl-2 py-1">
-                <input className={checkbox} type="checkbox" {...field} />
-                <span className={check}></span>
-                <span className="ml-3	text-xs text-black">{data.accept}</span>
-              </label>
-              <p className="absolute top-8 left-8 text-error text-xs">
-                {errors.checkbox?.message}
-              </p>
-            </div>
-          )}
-        />
+        <div className={`relative ${checkboxClassname}`}>
+          <label className="flex items-start mt-1 mb-7 pl-2 py-1">
+            <input
+              type="checkbox"
+              name="checkbox"
+              {...register('checkbox')}
+              className={checkbox}
+            />
+            <div
+              className={`${check} ${errors.checkbox ? '!border-error' : ''}`}
+            ></div>
+            <span className="ml-2	text-left text-xs text-black ">
+              {data.accept}
+            </span>
+          </label>
+          <p className="absolute top-10 left-8 text-error text-xs">
+            {errors.checkbox?.message}
+          </p>
+        </div>
         <Button
           type="submit"
           className="h-12 w-full border border-main rounded-full text-white z-10"

@@ -4,8 +4,8 @@ import Form from '../Form';
 import Social from '../Social';
 import FooterNext from '../FooterNext';
 import { StaticImage } from 'gatsby-plugin-image';
-import { footerContainer, list, link, container } from './Footer.module.css';
-import Container from '../Container';
+import { footerContainer, list, link } from './Footer.module.css';
+
 const Footer = () => {
   const { t } = useTranslation();
   const { links } = t('footer', { returnObjects: true });
@@ -56,7 +56,6 @@ const Footer = () => {
         </ul>
         <p className="text-sm">{priceByOne}</p>
       </div>
-   
     </footer>
   );
 };

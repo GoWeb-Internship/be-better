@@ -1,12 +1,14 @@
-import React from 'react'
-import Oferta from '../components/Oferta'
+import React from 'react';
+import Oferta from '../components/Oferta';
+import ButtonUp from '../components/ButtonUp';
 
 const po = () => {
   return (
     <div>
-      <Oferta/>
+      <Oferta />
+      <ButtonUp />
     </div>
-  )
-}
+  );
+};
 
-export default po
+export default po;

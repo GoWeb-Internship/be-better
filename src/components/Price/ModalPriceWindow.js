@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import ModalWindow from '../ModalWindow';
 import Form from '../Form';
 import { useTranslation } from 'gatsby-plugin-react-i18next';
@@ -27,7 +27,7 @@ const ModalPriceWindow = ({ hideModal, currentPrice, currentRate }) => {
         <Form
           clickFrom={currentPrice}
           formClassname={formmargin}
-          checkboxClassname="mb-8"
+          checkboxClassname="mb-9"
           closeFormModal={hideModal}
         />
         <p className={formtext}>{form.connection}</p>

@@ -78,7 +78,7 @@ const data = allMarkdownRemark.nodes;
     <Link
             to="/"
             className="cursor-pointer font-normal -mt-40 pt-20 -ml-96 absolute  text-base font-sans visible shadow-none text-orangeDirty"
-          >
+          ><span>{"< "}</span>
             На главную
           </Link>
   </div>

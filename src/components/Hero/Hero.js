@@ -1,9 +1,6 @@
 import React from 'react';
 // import { StaticImage } from 'gatsby-plugin-image';
 // import { useTranslation } from 'gatsby-plugin-react-i18next';
-import { TiSocialFacebook } from 'react-icons/ti';
-import { TbBrandInstagram } from 'react-icons/tb';
-import { TiSocialLinkedin } from 'react-icons/ti';
 import HeroBackground from './HeroBackground';
 import { useTranslation } from 'gatsby-plugin-react-i18next';
 import Form from '../Form';
@@ -93,40 +90,11 @@ const Hero = () => {
       </div> */}
       {/* <FormWithBackground clickFrom="hero" /> */}
       {/* Desktop version */}
-      <div className="relative flex items-start pt-11 px-20 h-[700px]">
+      <div className="relative flex items-start pt-10 px-20 h-[700px]">
         <HeroBackground />
         <div className="mr-[172px]">
           <Social />
         </div>
-        {/* <ul className="flex flex-col space-y-8 mr-[172px]">
-          <li className="flex justify-center items-center w-11 h-11 bg-main text-white border border-main rounded-2xl hover:bg-white hover:text-main transition">
-            <a
-              href="https://instagram.com/yuliya_shayenko?igshid=YmMyMTA2M2Y="
-              target="blank"
-              rel="noreferrer noopener"
-            >
-              <TbBrandInstagram className="w-6 h-6  fill-inherit" />
-            </a>
-          </li>
-          <li className="flex justify-center items-center w-11 h-11 bg-main text-white border border-main rounded-2xl hover:bg-white hover:text-main transition">
-            <a
-              href="https://www.facebook.com/Yuliya.Shayenko"
-              target="blank"
-              rel="noreferrer noopener"
-            >
-              <TiSocialFacebook className="w-6 h-6  fill-inherit" />
-            </a>
-          </li>
-          <li className="flex justify-center items-center w-11 h-11 bg-main text-white border border-main rounded-2xl hover:bg-white hover:text-main transition">
-            <a
-              href="https://www.linkedin.com/in/yshayenko/"
-              target="blank"
-              rel="noreferrer noopener"
-            >
-              <TiSocialLinkedin className="w-6 h-6 fill-inherit " />
-            </a>
-          </li>
-        </ul> */}
         <div className="text-left">
           <div className=" text-black">
             <p className="text-32 font-caveat">{hero.teach}</p>
@@ -135,13 +103,13 @@ const Hero = () => {
               <br />
               <span className="font-light text-59">{hero.kaif}</span>
             </h1>
-            <p className="mb-10 text-32 font-caveat">
+            <p className="mb-5 text-32 font-caveat">
               {hero.emotion} <br />
               {hero.burn}
             </p>
             <Form
               clickFrom="hero"
-              formClassname="desktop:!m-0 desktop:!mr-auto desktop:!mb-6"
+              formClassname="desktop:!m-0 desktop:!mr-auto desktop:!mb-2"
             />
             <p className="w-81 font-caveat text-black text-lg leading-[23px] text-left">
               {hero.note}

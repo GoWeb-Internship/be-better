@@ -65,7 +65,7 @@ const AboutMe = () => {
 
       <StaticImage
         className="ml-auto mt-13"
-        src="../../images/signature.jpg"
+        src="../../images/signature.png"
         width={265}
         height={80}
         layout="fixed"

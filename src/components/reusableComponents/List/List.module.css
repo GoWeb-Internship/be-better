@@ -48,7 +48,7 @@
   @apply hidden;
 }
 .iconArrow {
-  @apply mt-2 mb-[36px] w-12 h-12 laptop:h-8 laptop:w-8 desktop:w-12 desktop:h-12 text-likeGrey laptop:mt-[6px] laptop:mb-[6px] laptop:-rotate-90 desktop:mr-[38px] desktop:ml-[38px];
+  @apply mt-2 mb-[36px] laptop:h-8 laptop:w-8 desktop:w-12 desktop:h-12 text-likeGrey laptop:mt-[6px] laptop:mb-[6px] laptop:-rotate-90 desktop:mr-[38px] desktop:ml-[38px];
 }
 
 .titleFormula {

@@ -1,21 +1,24 @@
+/* List */
 .container {
-  @apply m-auto text-center pt-20 pb-23 bg-background;
+  @apply m-auto text-center pb-2 pt-8 laptop:pb-[106px] laptop:pt-12  desktop:pt-20 desktop:pb-23 bg-background;
 }
 .title {
-  @apply title-primary mb-8 desktop:text-34 desktop:tracking-wide desktop:mb-13;
+  @apply title-primary px-10 mb-8 laptop:text-34 laptop:font-semibold laptop:tracking-wide laptop:mb-8 desktop:mb-13;
 }
 
 .list {
-  @apply flex mt-4 text-center justify-center;
+  @apply items-center flex flex-col text-center justify-center laptop:flex-row;
 }
 
 .item {
-  @apply pt-6 pb-12 px-7 w-80 mr-8 rounded-lg last:mr-0  hover:bg-hoverPrice shadow-you hover:scale-105 ease-in duration-300;
+  @apply pt-10 pb-8  mb-4 w-70 laptop:mb-0 laptop:w-50 laptop:mr-5 desktop:pt-6 desktop:pb-12 desktop:px-7 desktop:w-[336px] desktop:mr-4 rounded-lg last:mr-0 last:mb-0  hover:bg-hoverPrice shadow-you hover:scale-105 ease-in duration-300;
 }
 
 .item:nth-child(2) {
-  @apply scale-105 bg-hoverPrice hover:bg-[#b9f4ff]  hover:scale-110 ease-in duration-300;
+  @apply desktop:scale-105 bg-hoverPrice hover:bg-[#b9f4ff]  desktop:hover:scale-110 ease-in duration-300;
 }
+
+/* Form */
 .modalform {
   @apply w-[440px] h-[560px] pt-14 text-xl bg-background;
 }
@@ -38,4 +41,20 @@
 
 .price {
   @apply mb-[34px] text-xl text-main font-bold;
+}
+
+/* Card */
+.subscription {
+  @apply text-main mb-2 desktop:text-xl font-medium desktop:mb-14;
+}
+
+.priceStyle {
+  @apply mb-1 desktop:mb-2 font-semibold desktop:text-34;
+}
+.economyStyle {
+  @apply mb-5 desktop:mb-16 text-main;
+}
+
+.buttonStyled {
+  @apply px-20 rounded-3xl border border-none laptop:px-10 desktop:px-[88px] py-[11px];
 }

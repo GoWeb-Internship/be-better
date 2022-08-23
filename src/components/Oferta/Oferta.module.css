@@ -1,6 +1,6 @@
 .text span{
-    @apply text-orangeDirty mt-40 pb-30;
+    @apply text-orangeDirty -mt-5 pb-30;
 }
 .text{
-    @apply pt-48 
+    @apply pt-0
 }

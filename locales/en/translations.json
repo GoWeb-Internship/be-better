@@ -7,13 +7,16 @@
       { "name": "Feedback", "id": "nav-feedback" }
     ]
   },
+  "modalSuccess": {
+    "gratitude": "Thanks for the application!",
+    "text": "Now you are one step closer to the moment of your happy life!"
+  },
   "hero": {
     "teach": "I will teach you",
     "life": "  to live",
     "kaif": "in high spirits",
     "emotion": "without emotional",
     "burn": "burnouts",
-    "note": "Sign up today for the first coaching session with a 75% discount* and start living in a high tomorrow!",
     "if": "If you ",
     "emo": " are emotionally burnt out",
     "yourLife": "your life",

@@ -6,15 +6,40 @@ import { useTranslation } from 'gatsby-plugin-react-i18next';
 import Form from '../Form';
 import Section from '../reusableComponents/Section';
 import Social from '../Social';
+import { graphql, useStaticQuery } from 'gatsby';
+
 // import FormWithBackground from '../Form/FormWithBackground';
 // import Button from '../reusableComponents/Button';
 
 const Hero = () => {
   // const { t } = useTranslation();
   // const data = t('form', { returnObjects: true });
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
 
+  const { allMarkdownRemark } = useStaticQuery(graphql`
+    query {
+      allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/discount/" } }) {
+        nodes {
+          frontmatter {
+            ukFirst
+            ukDiscount
+            ukSecond
+            enFirst
+            enDiscount
+            enSecond
+            ruFirst
+            ruDiscount
+            ruSecond
+          }
+          id
+        }
+      }
+    }
+  `);
+  const [frontmatter] = allMarkdownRemark.nodes;
   const hero = t('hero', { returnObjects: true });
+  const data = frontmatter.frontmatter;
+
   return (
     <Section id="home">
       {/* Mobile version */}
@@ -112,7 +137,12 @@ const Hero = () => {
               formClassname="desktop:!m-0 desktop:!mr-auto desktop:!mb-2"
             />
             <p className="w-81 font-caveat text-black text-lg leading-[23px] text-left">
-              {hero.note}
+              {data[`${i18n.language}First`]}{' '}
+              <span className="text-mainSecond ">
+                {' '}
+                {data[`${i18n.language}Discount`]}
+              </span>{' '}
+              {data[`${i18n.language}Second`]}
             </p>
           </div>
         </div>

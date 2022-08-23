@@ -389,5 +389,5 @@ language: uk
     Реквізити банку: Акціонерне товариство УНІВЕРСАЛ БАНК  
     МФО 322001  
     ЕГРПОУ Банка 21133352  
-    PayPal - yshayenko@gmail.com  
+    PayPal - [link](yshayenko@gmail.com)  
     <span>На головну</span>

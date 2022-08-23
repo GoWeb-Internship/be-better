@@ -422,6 +422,6 @@ language: ru
    Акционерное Общество УНИВЕРСАЛ БАНК  
    МФО 322001  
    ЕГРПОУ Банка 21133352  
-   PayPal - yshayenko@gmail.com
+   PayPal - [link](yshayenko@gmail.com)
 
    <span>На главную</span>

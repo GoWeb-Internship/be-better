@@ -430,6 +430,6 @@ coaching services specified in this public offer.
    Joint-stock company UNIVERSAL BANK  
    МФО 322001  
    ЕГРПОУ Банка 21133352  
-   PayPal - yshayenko@gmail.com
+   PayPal - [link](yshayenko@gmail.com)
 
    <span>On the main one<span>

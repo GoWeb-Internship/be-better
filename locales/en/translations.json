@@ -51,32 +51,38 @@
       {
         "textPrimary": "15 years",
         "textSecondary": "in international business",
-        "svg": "bag"
+        "svg": "bag",
+        "bg": "15"
       },
       {
         "textPrimary": "30+",
         "textSecondary": "satisfied customers",
-        "svg": "ok"
+        "svg": "ok",
+        "bg": "30"
       },
       {
         "textPrimary": "7 years",
         "textSecondary": "in sales and startup development",
-        "svg": "scale"
+        "svg": "scale",
+        "bg": "7"
       },
       {
         "textPrimary": "6 years",
         "textSecondary": "of work with business managers",
-        "svg": "house"
+        "svg": "house",
+        "bg": "6"
       },
       {
         "textPrimary": "life coach",
         "textSecondary": "ICF since 2021",
-        "svg": "icf"
+        "svg": "icf",
+        "bg": "ICF"
       },
       {
         "textPrimary": "15 years",
         "textSecondary": "500+ hours of practice",
-        "svg": "clock"
+        "svg": "clock",
+        "bg": "500"
       }
     ]
   },

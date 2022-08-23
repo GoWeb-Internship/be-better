@@ -72,7 +72,7 @@ const Couch = () => {
             className="rounded-2xl"
           />
           <p className="mt-[58px] w-81">{couch.why}</p>
-          <StaticImage
+          {/* <StaticImage
             src="../../images/skyscraper.jpg"
             placeholder="blurred"
             formats={['auto', 'webp', 'avif']}
@@ -81,7 +81,7 @@ const Couch = () => {
             layout="fixed"
             alt="skyscraper"
             className="absolute right-0 rounded-2xl mt-[38px] mr-auto "
-          />
+          /> */}
         </div>
       </div>{' '}
       {modal && (

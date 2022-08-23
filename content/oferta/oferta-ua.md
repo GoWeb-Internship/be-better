@@ -348,6 +348,3 @@ language: uk
 <p>PayPal - yshayenko@gmail.com</p>
 <br>
 <br>
-<br>
-<br>
-<br>

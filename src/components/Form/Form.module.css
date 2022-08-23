@@ -25,7 +25,7 @@
         }
 
 .error {
-    @apply absolute -top-2 right-8 z-10 text-error text-xs;
+    @apply absolute -top-2 left-8 z-10 text-error text-xs;
 }
 .modalsuccess{
     @apply w-[456px] h-[225px] pt-14 px-[68px] bg-white
@@ -39,9 +39,7 @@
 
 .input:focus + .label,
 .input:not(:placeholder-shown) + .label {
-    font-size: 8px;
-    color: #00A5CC;
-    transform: translateY(-20px);
+    @apply text-xs text-main -translate-y-20;
 }
 .checkbox {
     position: absolute;
@@ -49,15 +47,21 @@
 }
 
 .checkbox:checked + .check {
-    background-image: url('../../images/check.svg');
-}
+  @apply  bg-[url('../../images/check.svg')] bg-no-repeat bg-left;
 
-.checkbox:invalid +.check {
-    background-image: url('../../images/errorcheck.svg');
 }
 
 .check {
-    width: 16px;
-    height: 16px;
-    background-image: url('../../images/notcheck.svg');
+    @apply mt-1 w-4 h-4 border-2 border-likeGrey rounded-[5px];
 }
+/* анимация галочки */
+/* #anim-one {
+text-align: center;
+padding-top: 100px;
+ font-size: 0;
+  font-weight: 700;
+   color: #00CED2;
+    animation: bounce-text 2s infinite cubic-bezier(0.245, 0.325, 0.670, 1.510);
+ }
+ 
+ @keyframes bounce-text 60% font-size: 60px 100% font-size: 60px */

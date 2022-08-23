@@ -30,7 +30,7 @@ const data = allMarkdownRemark.nodes;
      
           <Link
             to="/"
-            className="w-16 ml-20 mt-32 pl-96 -z-20 top-0 cursor-pointer  mb-16 pr-0"
+            className="w-16 ml-20 mt-32  -z-20 top-0 cursor-pointer  mb-16 pr-0"
           >
             <StaticImage
               className={img}

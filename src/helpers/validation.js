@@ -30,7 +30,7 @@ export const schema = yup
       .min(9, 'Phone number must contain at least 8 digits')
       .max(13, 'Phone number cannot contain more than 13 digits')
       .required('Phone number is required'),
-    checkbox: yup.boolean().required('You must accept the terms'),
+    checkbox: yup.boolean().oneOf([true], 'You must accept the terms'),
   })
   .required();
 

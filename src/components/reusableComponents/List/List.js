@@ -8,7 +8,7 @@ import {
   iconFormula,
   itemFacts,
   itemFormula,
-  svgBgFacts,
+  bgFacts,
   svgBgFormula,
   svgContainerFacts,
   textContainer,
@@ -64,7 +64,7 @@ const List = ({ icons = '', data = {}, formula = false }) => {
       <h3 className={titleFacts}>{data.title}</h3>
       {!!data.list.length && (
         <ul className={`${listFacts}`}>
-          {data.list.map(({ textPrimary, svg, textSecondary }) => {
+          {data.list.map(({ textPrimary, svg, textSecondary, bg }) => {
             return (
               <li className={itemFacts} key={icons}>
                 <div className={svgContainerFacts}>
@@ -75,9 +75,7 @@ const List = ({ icons = '', data = {}, formula = false }) => {
                 <div className={textContainer}>
                   <p className={textPr}>{textPrimary}</p>
                   <p className={testSec}>{textSecondary}</p>
-                  <svg className={svgBgFacts}>
-                    <use href={`${icons}#icon-${svg}`} />
-                  </svg>
+                  <p className={bgFacts}>{bg}</p>
                 </div>
               </li>
             );

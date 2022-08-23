@@ -73,32 +73,38 @@
       {
         "textPrimary": "15 лет",
         "textSecondary": "в международном бизнесе",
-        "svg": "bag"
+        "svg": "bag",
+        "bg": "15"
       },
       {
         "textPrimary": "30+",
         "textSecondary": "довольных клиентов",
-        "svg": "ok"
+        "svg": "ok",
+        "bg": "30"
       },
       {
         "textPrimary": "7 лет",
-        "textSecondary": " в продажах и развитии стартапов",
-        "svg": "scale"
+        "textSecondary": "в продажах и развитии стартапов",
+        "svg": "scale",
+        "bg": "7"
       },
       {
         "textPrimary": "6 лет",
         "textSecondary": "работы с управленцами бизнесов",
-        "svg": "house"
+        "svg": "house",
+        "bg": "6"
       },
       {
         "textPrimary": "Лайф-коуч",
         "textSecondary": "ICF с 2021",
-        "svg": "icf"
+        "svg": "icf",
+        "bg": "ICF"
       },
       {
         "textPrimary": "15 лет",
         "textSecondary": "500+ часов практики",
-        "svg": "clock"
+        "svg": "clock",
+        "bg": "500"
       }
     ]
   },
@@ -109,7 +115,6 @@
         "id": "pk"
       },
       { "name": "Публичная оферта", "id": "po" }
-
     ],
     "priceByOne": "*Стоимость разовой сессии 100$"
   },

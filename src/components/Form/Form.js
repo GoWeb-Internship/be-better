@@ -37,7 +37,9 @@ const Form = ({
   const [successModal, setSuccessModal] = React.useState(false);
 
   const { t } = useTranslation();
+
   const data = t('form', { returnObjects: true });
+  const modalSuccess = t('modalSuccess', { returnObjects: true });
   const {
     register,
     control,
@@ -183,10 +185,8 @@ const Form = ({
           handleClose={() => setSuccessModal(false)}
         >
           <div>
-            <h2 className={modaltitle}>Благодарю за заявку! </h2>
-            <p className={modaltext}>
-              Теперь ты на шаг ближе к моменту своей счастливой жизни!
-            </p>
+            <h2 className={modaltitle}>{modalSuccess.gratitude} </h2>
+            <p className={modaltext}>{modalSuccess.text}</p>
           </div>
         </ModalWindow>
       )}

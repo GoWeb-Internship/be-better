@@ -432,4 +432,4 @@ coaching services specified in this public offer.
    ЕГРПОУ Банка 21133352  
    PayPal - [yshayenko@gmail.com](yshayenko@gmail.com)
 
-   <span>On the main one</span>
+   

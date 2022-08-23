@@ -429,4 +429,4 @@ language: ru
    ЕГРПОУ Банка 21133352  
    PayPal - [yshayenko@gmail.com](yshayenko@gmail.com)
 
-   <span>На главную</span>
+

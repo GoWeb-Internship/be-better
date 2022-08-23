@@ -406,4 +406,4 @@ language: uk
     МФО 322001  
     ЕГРПОУ Банка 21133352  
     PayPal - [yshayenko@gmail.com](yshayenko@gmail.com)  
-    <span>На головну</span>
+

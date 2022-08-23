@@ -1,7 +1,7 @@
 import React from 'react'
 import { graphql, useStaticQuery } from 'gatsby';
 import { StaticImage } from 'gatsby-plugin-image';
-import { text, btn, img } from './Oferta.module.css';
+import { text, btn, img, people , arrow, svg} from './Oferta.module.css';
 import { useTranslation } from 'gatsby-plugin-react-i18next';
 import Container from '../Container';
 import { Link } from 'gatsby';
@@ -25,25 +25,34 @@ const Oferta = () => {
 `);
 const data = allMarkdownRemark.nodes;
   return (
-    <Container>
-    <div className='relative'>
-     
-          <Link
-            to="/"
-            className="w-16 ml-20 mt-32 pl-96 -z-20 top-0 cursor-pointer  mb-16 pr-0"
-          >
+    <Container className="">
+    <div className='relative w-full'>
+      <div className='flex desktop:flex-row'>
+    <Link to="/" className="w-9 h-5 hover:scale-110 mr-20 transition-transform tablet:ml-1 tablet:mt-1 tablet:mt-4 laptop:mt-5 laptop:ml-13 laptop:mr-40 laptop:pl-14 ">
+          <StaticImage
+            src="../../images/logo.svg"
+            width={90}
+            height={56}
+            className=""
+            layout="fixed"
+            alt="logo"
+          />
+        </Link>
+          <Link to="/" className="max-w-xs cursor-pointer  mb-16  tablet:ml-96 desktop:mt-24 desktop:-ml-52">
             <StaticImage
-              className={img}
+              className="mt-8 cursor-pointer m-auto w-8 h-5 -ml-96 laptop:ml-0 laptop:h-7"
               src="../../images/background/back.png"
               alt="background"
             />
           </Link>
+          
+          </div>
          <StaticImage
                   layout="fullWidth"
                   src="../../images/background/ofertar-min.png"
                   alt=""
                   style={{ position: 'absolute' }}
-                  className="w-3/4 -z-20 top-0 ml-80 mb-16 pr-0 max-w-5xl"
+                  className="-z-20 top-11  tablet:object tablet:mt-6 tablet:h-20 tablet:w-36 laptop:w-96 laptop:mt-5 laptop:ml-80 -cover mt-20 h-20 ml-40   laptop:ml-40 mt-0  desktop:ml-80 mb-16 pr-0 max-w-5xl desktop:w-60% desktop:h-36 desktop:-mt-12 desktop:ml-96 desktop:w-3/4"
                   formats={['auto', 'webp', 'avif']}
                 />
               
@@ -52,7 +61,7 @@ const data = allMarkdownRemark.nodes;
                   src="../../images/background/ofertal-min.png"
                   alt=""
                   style=""
-                  className="w-3/4 -z-10 top-0  max-w-md  !float-right mr-40  -mt-32 mb-16  h-60 rounded-lg "
+                  className="tablet:hidden desktop:block w-3/4 -z-10 top-0  max-w-md  !float-right mr-40  -mt-32 mb-16  h-60 rounded-lg "
                   formats={['auto', 'webp', 'avif']}
                 />
               
@@ -62,12 +71,12 @@ const data = allMarkdownRemark.nodes;
         if (node.frontmatter.language === i18n.language) {
           return (
             <>
-              <h3 className="text-orangeDark font-semibold text-4xl absolute mb-2 -mt-20">
+              <h3 className="text-orangeDark  font-semibold text-4xl absolute mb-2 -mt-32">
                 {node.frontmatter.title}
               </h3>
               <div
                 key={node.frontmatter.language}
-                className={text}
+                className="pt-0 h-96 mt-32 tablet:mr-10 laptop:mt-34px laptop:mr-32 desktop:mt-6 desktop:mr-52"
                 dangerouslySetInnerHTML={{ __html: node.html }}
               />
             </>
@@ -76,15 +85,15 @@ const data = allMarkdownRemark.nodes;
         }
       })}
     </div>
-    <div>
+  </div>
+  {/* <div>
     <Link
             to="/"
             className={btn}
           ><span>{"< "}</span>
             На главную
           </Link>
-          </div>
-  </div>
+          </div> */}
   </Container>
   )
 }

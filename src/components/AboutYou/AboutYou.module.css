@@ -1,5 +1,5 @@
 .container {
-  @apply mx-auto laptop:max-w-3xl w-[280px] py-6 desktop:absolute desktop:left-[85px] bg-white rounded-2xl desktop:bottom-[175px]  shadow-you px-11;
+  @apply mx-auto laptop:max-w-3xl w-[280px] py-6 laptop:absolute laptop:-left-[45px] laptop:top-[310px] desktop:left-[75px] desktop:top-[395px] bg-white rounded-2xl   shadow-you px-11;
 }
 
 .title {
@@ -7,9 +7,13 @@
 }
 
 .listContainer {
-  @apply text-sm;
+  @apply text-sm list-outside;
+}
+
+.listContainer ul {
+  @apply list-outside list-disc marker:text-main;
 }
 
 .listContainer li {
-  @apply mb-3 marker:text-main list-disc;
+  @apply mb-3;
 }

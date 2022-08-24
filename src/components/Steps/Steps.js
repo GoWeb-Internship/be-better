@@ -18,7 +18,7 @@ const Steps = () => {
           src="../../images/background/Frame-min.png"
           alt=""
           style={{ position: 'absolute' }}
-          className="w-96 h-52 -z-10  pl-40 left-2/4 top-2/4 "
+          className="tablet:hidden laptop:block  laptop:top-3/4 laptop:left-1/4 w-96 h-52 -z-10  desktop:pl-40 desktop:left-2/4 desktop:top-2/4 "
         />
         <StaticImage
           layout="fullWidth"

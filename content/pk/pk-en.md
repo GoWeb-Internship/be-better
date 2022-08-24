@@ -1,4 +1,4 @@
----
+<!-- ---
 title: Privacy Policy
 language: en
 ---
@@ -205,7 +205,7 @@ This personal data processing policy has been compiled in accordance with the re
 
     13.Confidentiality of personal data
     
-    14.1. The User can get any clarifications on issues related to the processing of his personal data by contacting the Operator via PayPal - [yshayenko@gmail.com](yshayenko@gmail.com)
+    14.1. The User can get any clarifications on issues related to the processing of his personal data by contacting the Operator via PayPal - [yshayenko@gmail.com](yshayenko@gmail.com) -->
 
     
 

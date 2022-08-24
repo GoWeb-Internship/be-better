@@ -1,5 +1,5 @@
 ---
-title: Why is it better with a coach
+title: Public offer
 language: en
 ---
 

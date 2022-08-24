@@ -49,7 +49,7 @@ const FooterNext = () => {
               <div>
                 <p className=" text-caveat">
                   {disc[`${i18n.language}First`]}{' '}
-                  <span className="  text-mainSecond ">
+                  <span className="text-mainSecond font-semibold">
                     {' '}
                     {disc[`${i18n.language}Discount`]}
                   </span>{' '}

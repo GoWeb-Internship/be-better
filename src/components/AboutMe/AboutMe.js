@@ -1,5 +1,4 @@
 import React from 'react';
-import { graphql, useStaticQuery } from 'gatsby';
 import { StaticImage } from 'gatsby-plugin-image';
 import AboutYou from '../AboutYou';
 import { useTranslation } from 'gatsby-plugin-react-i18next';
@@ -8,31 +7,18 @@ import {
   title,
   sectionContainer,
   textContainer,
-  text,
+  caveat,
+  aboutMeContainer,
 } from './AboutMe.module.css';
 
 const AboutMe = () => {
-  const { i18n } = useTranslation();
+  const { t } = useTranslation();
 
-  const { allMarkdownRemark } = useStaticQuery(graphql`
-    query {
-      allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/aboutMe/" } }) {
-        nodes {
-          html
-          frontmatter {
-            title
-            language
-          }
-          id
-        }
-      }
-    }
-  `);
-  const data = allMarkdownRemark.nodes;
+  const data = t('aboutMe', { returnObjects: true });
 
   return (
     <Section className={sectionContainer} id="nav-about">
-      <div className="flex justify-center">
+      <div className={aboutMeContainer}>
         <div>
           <StaticImage
             src="../../images/aboutMe.jpeg"
@@ -46,20 +32,26 @@ const AboutMe = () => {
           />
         </div>
         <div className={textContainer}>
-          {data.map(node => {
-            if (node.frontmatter.language === i18n.language) {
-              return (
-                <div key={node.frontmatter.language}>
-                  <h3 className={title}>{node.frontmatter.title}</h3>
-                  <AboutYou />
-                  <div
-                    className={text}
-                    dangerouslySetInnerHTML={{ __html: node.html }}
-                  />
-                </div>
-              );
-            }
-          })}
+          <h1 className={title}>{data.title}</h1>
+          <p className="mb-8">
+            {data.oneParagraphFirst}
+            <span className={caveat}> {data.oneParagraphSpan}</span>
+            {data.oneParagraphThird}
+          </p>
+          <p className="mb-[26px]">
+            <span className={caveat}> {data.twoParagraphSpan}</span>
+            {data.twoParagraphThird}
+          </p>
+          <p className="mb-8">
+            {data.threeParagraphFirst}
+            <span className={caveat}>{data.threeParagraphSpan}</span>
+            {data.threeParagraphThird}
+          </p>
+          <p>{data.fourParagraph}</p>
+          <p>
+            <span className={caveat}>{data.fiveParagraphSpan}</span>
+          </p>
+          <AboutYou />
         </div>
       </div>
 

@@ -112,7 +112,7 @@ const Change = () => {
                           />
                           <p className={discountStyle}>
                             {disc[`${i18n.language}First`]}{' '}
-                            <span className="text-black ">
+                            <span className="text-black font-semibold">
                               {' '}
                               {disc[`${i18n.language}Discount`]}
                             </span>{' '}

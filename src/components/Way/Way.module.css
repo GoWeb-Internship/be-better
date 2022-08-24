@@ -1,13 +1,13 @@
 .wayContainer {
-  @apply text-left m-auto w-630 mt-50;
+  @apply text-left w-70 m-auto mt-[105px] laptop:w-[594px] desktop:w-630 desktop:mt-50;
 }
 
 .title {
-  @apply title-secondary mb-13 text-34;
+  @apply title-secondary mb-4 laptop:text-34 laptop:mb-8 desktop:mb-13;
 }
 
 .listContainer {
-  @apply text-base text-black;
+  @apply text-xs mx-auto w-[244px] laptop:w-[594px] laptop:text-base;
 }
 
 .listContainer span {
@@ -15,5 +15,5 @@
 }
 
 .listContainer li {
-  @apply mb-5 marker:text-mainSecond list-disc;
+  @apply mb-3 desktop:mb-5 marker:text-mainSecond list-disc;
 }

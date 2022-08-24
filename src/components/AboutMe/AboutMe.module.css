@@ -6,13 +6,13 @@
   @apply flex flex-col justify-center desktop:flex-row;
 }
 .title {
-  @apply title-primary text-left mb-4 laptop:mb-13 laptop:font-semibold laptop:text-34;
+  @apply hidden laptop:block title-primary text-left mb-4 laptop:mb-13 laptop:font-semibold laptop:text-34;
 }
 
 .textContainer {
-  @apply w-70 desktop:w-524 text-left desktop:ml-20;
+  @apply w-70 text-sm laptop:text-base desktop:w-524 text-left desktop:ml-20;
 }
 
 .caveat {
-  @apply text-caveat;
+  @apply text-caveat text-lg laptop:text-2xl;
 }

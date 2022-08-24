@@ -16,8 +16,6 @@ module.exports = {
         iconPercentTrF: '45%',
       },
       boxShadow: {
-        orange:
-          '0px 1px 2px rgba(1, 66, 82, 0.3), 0px 1px 3px 1px rgba(1, 66, 82, 0.15)',
         you: '0px 1px 2px rgba(1, 66, 82, 0.3), 0px 1px 3px 1px rgba(1, 66, 82, 0.15)',
         formInput: 'inset 0px -1px 3px 1px rgba(0, 0, 0, 0.15)',
       },
@@ -87,7 +85,7 @@ module.exports = {
       realWrite: '#FFFFFF',
       iconBg: '#DCF2F6',
       buttonMobile: '#01BBD4',
-      oferta: "#FFF8F4",
+      oferta: '#FFF8F4',
     },
     screens: {
       tablet: '320px',

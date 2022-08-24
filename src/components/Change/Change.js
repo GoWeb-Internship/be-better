@@ -9,6 +9,7 @@ import {
   modalform,
   formtext,
   formtextmain,
+  discountStyle,
 } from './Change.module.css';
 import ModalWindow from '../ModalWindow';
 import Form from '../Form';
@@ -21,9 +22,11 @@ const Change = () => {
   const buttonTranslate = t('littleComponents', { returnObjects: true });
   const modalForm = t('modalForm', { returnObjects: true });
 
-  const { allMarkdownRemark } = useStaticQuery(graphql`
+  const markdown = useStaticQuery(graphql`
     query {
-      allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/change/" } }) {
+      text: allMarkdownRemark(
+        filter: { fileAbsolutePath: { regex: "/change/" } }
+      ) {
         nodes {
           html
           frontmatter {
@@ -33,9 +36,23 @@ const Change = () => {
           id
         }
       }
+      discount: markdownRemark(fileAbsolutePath: { regex: "/discount/" }) {
+        frontmatter {
+          ukFirst
+          ukDiscount
+          ukSecond
+          enFirst
+          enDiscount
+          enSecond
+          ruFirst
+          ruDiscount
+          ruSecond
+        }
+      }
     }
   `);
-  const data = allMarkdownRemark.nodes;
+  const data = markdown.text.nodes;
+  const disc = markdown.discount.frontmatter;
 
   const showModal = change => {
     setCurrentChange(change);
@@ -88,11 +105,20 @@ const Change = () => {
                     />
                     <div>
                       <div>
-                        <div
-                          key={node.frontmatter.language}
-                          className={text}
-                          dangerouslySetInnerHTML={{ __html: node.html }}
-                        />
+                        <div className={text}>
+                          <div
+                            key={node.frontmatter.language}
+                            dangerouslySetInnerHTML={{ __html: node.html }}
+                          />
+                          <p className={discountStyle}>
+                            {disc[`${i18n.language}First`]}{' '}
+                            <span className="text-black ">
+                              {' '}
+                              {disc[`${i18n.language}Discount`]}
+                            </span>{' '}
+                            {disc[`${i18n.language}Second`]}
+                          </p>
+                        </div>
                         <Button
                           type="button"
                           className="!bg-mainSecond border !mt-5 px-16 !ml-28 py-2 rounded-3xl hover:!bg-[#d46828] ease-in duration-300"

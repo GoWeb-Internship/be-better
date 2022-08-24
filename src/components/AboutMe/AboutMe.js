@@ -44,7 +44,7 @@ const AboutMe = () => {
             src="../../images/about.jpg"
             layout="constrained"
             alt="author"
-            className="hidden desktop:block  desktop:w-[456px] desktop:h-[480px]"
+            className="hidden laptop:hidden desktop:block  desktop:w-[456px] desktop:h-[480px]"
             placeholder="blurred"
             formats={['auto', 'webp', 'avif']}
           />

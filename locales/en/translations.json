@@ -11,6 +11,19 @@
     "gratitude": "Thanks for the application!",
     "text": "Now you are one step closer to the moment of your happy life!"
   },
+  "aboutMe": {
+    "title": "Let's get acquainted",
+    "oneParagraphFirst": "Hello, I'm Yuliya and ",
+    "oneParagraphSpan": "my motto is - to live it up! ",
+    "oneParagraphThird": "I always do what brings me pleasure and fun, I like to discover new cities, countries, continents and I can’t stop doing it. ",
+    "twoParagraphSpan": "For more than 7 years",
+    "twoParagraphThird": "I have been helping start-up companies to develop and optimize their business. ",
+    "threeParagraphFirst": "My goal is to make this world a little better and increase the number of ",
+    "threeParagraphSpan": "conscious happy people. ",
+    "threeParagraphThird": "That’s why, since 2021, I decided to devote myself to coaching and use all my experience to help those who are lost and can’t see any prospects or don’t know where to start.",
+    "fourParagraph": "Together we will reveal your potential, analyze your desires and determine what slows down you along the way to your goals.",
+    "fiveParagraphSpan": "And you will definitely get to know what it is to live it up!"
+  },
   "hero": {
     "teach": "I will teach you",
     "life": "  to live",
@@ -82,10 +95,10 @@
         "bg": "ICF"
       },
       {
-        "textPrimary": "15 years",
-        "textSecondary": "500+ hours of practice",
+        "textPrimary": "500+",
+        "textSecondary": "hours of practice",
         "svg": "clock",
-        "bg": "500"
+        "bg": "500+"
       }
     ]
   },

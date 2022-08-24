@@ -73,7 +73,12 @@ const List = ({ icons = '', data = {}, formula = false }) => {
                   </svg>
                 </div>
                 <div className={textContainer}>
-                  <p className={textPr}>{textPrimary}</p>
+                  <div className="flex mt-11 laptop:block laptop:mt-0">
+                    <svg className=" w-4 h-4 fill-mainSecond mr-2 laptop:hidden ">
+                      <use href={`${icons}#icon-${svg}`} />
+                    </svg>
+                    <p className={textPr}>{textPrimary}</p>
+                  </div>
                   <p className={testSec}>{textSecondary}</p>
                   <p className={bgFacts}>{bg}</p>
                 </div>

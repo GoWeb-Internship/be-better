@@ -121,7 +121,7 @@ const Hero = () => {
           <Social />
         </div>
         <div className="text-left">
-          <div className=" text-black">
+          <div className=" ">
             <p className="text-32 font-caveat">{hero.teach}</p>
             <h1 className="font-normal text-5xl leading-[65px]">
               {hero.life}
@@ -136,10 +136,11 @@ const Hero = () => {
               clickFrom="hero"
               formClassname="desktop:!m-0 desktop:!mr-auto desktop:!mb-2"
             />
-            <p className="w-81 font-caveat text-black text-lg leading-[23px] text-left">
+            <p className="w-81 font-caveat  text-lg leading-[23px] text-left">
               {data[`${i18n.language}First`]}{' '}
-              <span className="text-mainSecond ">
-                {' '}
+            </p>
+            <p>
+              <span className="text-mainSecond font-semibold ">
                 {data[`${i18n.language}Discount`]}
               </span>{' '}
               {data[`${i18n.language}Second`]}

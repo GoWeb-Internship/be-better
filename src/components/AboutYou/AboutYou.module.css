@@ -1,5 +1,5 @@
 .container {
-  @apply laptop:max-w-3xl w-72 py-6 absolute left-9 bg-white rounded-2xl top-44 -translate-x-yS shadow-you px-11;
+  @apply mx-auto laptop:max-w-3xl w-[280px] py-6 desktop:absolute desktop:left-[85px] bg-white rounded-2xl desktop:bottom-[175px]  shadow-you px-11;
 }
 
 .title {

@@ -1,16 +1,16 @@
 .titleFacts {
-  @apply title-secondary text-34 text-left mb-13;
+  @apply hidden desktop:block title-secondary text-34 text-left mb-13;
 }
 .listFacts {
-  @apply flex flex-wrap w-648;
+  @apply flex flex-wrap justify-between w-70  laptop:mt-[76px] laptop:w-[648px] desktop:mt-0;
 }
 
 .itemFacts {
-  @apply relative mr-4 mb-13 rounded-2xl bg-mainSecond shadow-you hover:scale-105 ease-in duration-300;
+  @apply relative laptop:mr-4 desktop:mr-4  laptop:rounded-2xl  laptop:shadow-you laptop:hover:scale-105 laptop:ease-in laptop:duration-300;
 }
 
 .svgContainerFacts {
-  @apply w-14 h-14 bg-white rounded-lg absolute shadow-you -top-icon left-2/4 -translate-x-1/2 z-10;
+  @apply hidden laptop:block laptop:w-14 h-14 laptop:bg-white laptop:rounded-lg absolute laptop:shadow-you laptop:-top-icon left-2/4 laptop:-translate-x-1/2 z-10;
 }
 
 .iconFacts {
@@ -18,27 +18,31 @@
 }
 
 .textContainer {
-  @apply relative  w-50 h-36 bg-white rounded-2xl shadow-lg px-4 text-center flex flex-col justify-start ease-in duration-300 hover:shadow-2xl;
+  @apply relative w-[134px] text-left  laptop:w-50 laptop:h-36 laptop:bg-white laptop:rounded-2xl laptop:shadow-lg laptop:px-4 laptop:text-center flex flex-col justify-start laptop:ease-in laptop:duration-300 laptop:hover:shadow-2xl;
 }
 
 .textPr {
-  @apply text-mainSecond font-bold text-xl tracking-wide z-10 mt-11;
+  @apply text-mainSecond text-xs font-bold  laptop:text-xl desktop:text-xl tracking-wide z-10 laptop:mt-11;
 }
 
 .itemFacts:nth-child(5) .textPr {
-  @apply text-black text-sm z-10 font-normal;
+  @apply laptop:text-black laptop:text-sm laptop:z-10 laptop:font-normal;
 }
-
+.itemFacts:nth-child(3n + 3) {
+  @apply mr-0;
+}
+.itemFacts:nth-child(-n + 3) {
+  @apply laptop:mb-13;
+}
 .testSec {
-  @apply text-sm z-10;
+  @apply text-xs laptop:text-sm z-10;
 }
-
 .itemFacts:nth-child(5) .testSec {
-  @apply text-mainSecond font-bold text-xl tracking-wide z-10;
+  @apply laptop:text-mainSecond laptop:font-bold laptop:laptop:text-xl laptop:tracking-wide laptop:z-10;
 }
 
 .bgFacts {
-  @apply absolute text-orangeContrast left-[5px] text-[52px] font-extrabold;
+  @apply absolute text-[#fccdb244] -left-[5px] laptop:left-[5px]  text-[52px] font-extrabold;
 }
 
 .formulaContainer {

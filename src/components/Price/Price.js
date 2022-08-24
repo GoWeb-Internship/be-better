@@ -39,20 +39,19 @@ const Price = () => {
   const { t } = useTranslation();
 
   const pricePac = t('price', { returnObjects: true });
-  const form = t('form', { returnObjects: true });
 
   useEffect(() => {
     switch (currentPrice) {
       case '$320':
-        setCurrentRate(`${form.minimum}`);
+        setCurrentRate('Basic');
         break;
 
       case '$600':
-        setCurrentRate(`${form.base}`);
+        setCurrentRate('Standard');
         break;
 
       case '$850':
-        setCurrentRate(`${form.optimal}`);
+        setCurrentRate('Professional');
         break;
 
       default:

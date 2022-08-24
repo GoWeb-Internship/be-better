@@ -3,9 +3,10 @@
     "nav": [
       { "name": "Про меня", "id": "nav-about" },
       { "name": "Отзывы", "id": "nav-reviews" },
-      { "name": "Цена", "id": "nav-price" },
+      { "name": "Стоимость", "id": "nav-price" },
       { "name": "Обратная связь", "id": "nav-feedback" }
-    ]
+    ],
+    "toMain": "На главную"
   },
   "modalSuccess": {
     "gratitude": "Благодарю за заявку!",

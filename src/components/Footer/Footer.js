@@ -40,8 +40,9 @@ const Footer = () => {
         </div>
 
         <FooterNext className="absolute" />
-
-        <Form clickFrom="footer" className="-mb-4" />
+        <div className="hidden laptop:block">
+          <Form clickFrom="footer" className="-mb-4" />
+        </div>
         <Social />
       </div>
       <div className="flex items-center">

@@ -25,7 +25,7 @@ const ButtonUp = () => {
     return (
       <button
         type="button"
-        className="fixed right-20 bottom-11"
+        className="hidden desktop:block fixed right-20 bottom-11"
         onClick={() => animateScroll.scrollToTop()}
       >
         <svg width={44} height={44}>

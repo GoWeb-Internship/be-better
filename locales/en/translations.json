@@ -5,7 +5,8 @@
       { "name": "Reviews", "id": "nav-reviews" },
       { "name": "Price", "id": "nav-price" },
       { "name": "Feedback", "id": "nav-feedback" }
-    ]
+    ],
+    "toMain": "To main"
   },
   "modalSuccess": {
     "gratitude": "Thanks for the application!",

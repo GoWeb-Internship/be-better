@@ -20,19 +20,19 @@
 
 /* Form */
 .modalform {
-  @apply w-[440px] h-[560px] pt-14 text-xl bg-background;
+  @apply w-80 pt-10 text-base desktop:w-[440px] desktop:h-[560px] desktop:pt-14 bg-background;
 }
 
 .formtitle {
-  @apply mb-1 font-medium text-xl;
+  @apply mb-1 desktop:font-medium desktop:text-xl;
 }
 
 .formmargin {
-  @apply mb-8;
+  @apply mb-2 desktop:mb-8;
 }
 
 .formtext {
-  @apply text-base;
+  @apply mb-2 text-base;
 }
 
 .accenttext {
@@ -43,6 +43,9 @@
   @apply mb-[34px] text-xl text-main font-bold;
 }
 
+.underformtext {
+  @apply mb-6 text-sm;
+}
 /* Card */
 .subscription {
   @apply text-main mb-2 desktop:text-xl font-medium desktop:mb-14;

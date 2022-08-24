@@ -23,7 +23,7 @@
     @apply  mr-5 mt-40 w-48 
   }
   .listFacts p:nth-child(3){
-    @apply  -mt-40
+    @apply  mt-48 ml-4
   }
   .listFacts li:nth-child(4){
     @apply   mr-5   mt-28  w-48
@@ -37,7 +37,7 @@
   } 
   
    .textPr {
-  @apply text-main list-none  list-inside font-normal pl-4  -mt-36  text-sm  ;
+  @apply text-main list-none  list-inside font-normal pl-15  mt-10  text-sm  ;
   }
   
   .textContainer {
@@ -46,7 +46,7 @@
   
   
   .testSec {
-  @apply  font-normal text-sm pr-4 text-start pl-4 -mt-40    
+  @apply  font-normal text-sm pr-4 text-start pl-8 mt-56 
   }
  
 
@@ -67,7 +67,7 @@
   }
   
   .iconFacts {
-    @apply   mt-20 -ml-4;
+    @apply   mt-14 ml-0;
   }
   
   
@@ -76,4 +76,75 @@
     @apply icons-step fill-mainSecondLight  -mt-48 -ml-5;
   }
   
-   
+  .listFacts{
+    @apply relative w-48
+   }
+  /* .iconFacts-template{
+    @apply absolute block t-0 l-0 bg-black
+  } */
+  /* .listFacts::before{
+    @apply   w-3 ;
+  
+  } */
+  /* .listFacts::after{
+    @apply iconFacts-template w-32 h-3
+  } */
+
+  /* .listFacts:nth-child(2)::before,
+  .listFacts:nth-child(2)::before{
+    @apply bg-black w-3 h-4 absolute
+  }
+  .listFacts:nth-child(3)::before,
+  .listFacts:nth-child(3)::before{
+    @apply bg-likeGrey
+  } */
+  .itemFacts {
+    @apply relative w-48;
+  }
+  
+  .iconFacts-template {
+    position: absolute;
+    display: block;
+    content: '';
+  
+    top: 0;
+    left: 0;
+  
+    background-color: #02A6CD;
+  }
+  
+  .itemFacts::before {
+    @apply iconFacts-template;
+  
+    width: 24px;
+    height: 104px;
+  }
+  
+  .itemFacts::after {
+    @apply iconFacts-template;
+  
+    width: 200px;
+    height: 24px;
+  }
+  
+  .itemFacts:nth-child(2)::before,
+  .itemFacts:nth-child(2)::after {
+    background-color: #27B6D8;
+  }
+  
+  .itemFacts:nth-child(3)::before,
+  .itemFacts:nth-child(3)::after {
+    background-color: #41C1DF;
+  }
+  .itemFacts:nth-child(4)::before,
+  .itemFacts:nth-child(4)::after {
+    background-color: #5DCEE7;
+  }
+  .itemFacts:nth-child(5)::before,
+  .itemFacts:nth-child(5)::after {
+    background-color: #7FDCF1;
+  }
+  .itemFacts:nth-child(6)::before,
+  .itemFacts:nth-child(6)::after {
+    background-color: #9DE9FA;
+  }

@@ -11,7 +11,7 @@ const Pk = () => {
 
 const { allMarkdownRemark } = useStaticQuery(graphql`
 query {
-allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/pk/" } }) {
+allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/oferta/" } }) {
   nodes {
     html
     frontmatter {

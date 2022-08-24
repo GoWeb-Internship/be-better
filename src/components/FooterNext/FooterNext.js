@@ -6,9 +6,11 @@ import { useTranslation } from 'gatsby-plugin-react-i18next';
 const FooterNext = () => {
   const { i18n } = useTranslation();
 
-  const { allMarkdownRemark } = useStaticQuery(graphql`
+  const markdown = useStaticQuery(graphql`
     query {
-      allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/footer/" } }) {
+      text: allMarkdownRemark(
+        filter: { fileAbsolutePath: { regex: "/footer/" } }
+      ) {
         nodes {
           html
           frontmatter {
@@ -18,9 +20,23 @@ const FooterNext = () => {
           id
         }
       }
+      discount: markdownRemark(fileAbsolutePath: { regex: "/discount/" }) {
+        frontmatter {
+          ukFirst
+          ukDiscount
+          ukSecond
+          enFirst
+          enDiscount
+          enSecond
+          ruFirst
+          ruDiscount
+          ruSecond
+        }
+      }
     }
   `);
-  const data = allMarkdownRemark.nodes;
+  const data = markdown.text.nodes;
+  const disc = markdown.discount.frontmatter;
 
   return (
     <div className={containerFooter}>
@@ -29,10 +45,21 @@ const FooterNext = () => {
           return (
             <div key={node.frontmatter.language}>
               <h3 className={textFooter}>{node.frontmatter.title}</h3>
-              <div
-                className={text}
-                dangerouslySetInnerHTML={{ __html: node.html }}
-              />
+
+              <div>
+                <p className=" text-caveat">
+                  {disc[`${i18n.language}First`]}{' '}
+                  <span className="  text-mainSecond ">
+                    {' '}
+                    {disc[`${i18n.language}Discount`]}
+                  </span>{' '}
+                  {disc[`${i18n.language}Second`]}
+                </p>
+                <div
+                  className={text}
+                  dangerouslySetInnerHTML={{ __html: node.html }}
+                />
+              </div>
             </div>
           );
         }

@@ -138,7 +138,6 @@ module.exports = {
           letterSpacing: 0.25,
         },
         '.text-change': {
-          color: theme('colors.mainSecond'),
           fontFamily: 'Caveat,sans-serif',
           fontSize: 24,
           lineHeight: 1.36,

@@ -207,6 +207,6 @@ This personal data processing policy has been compiled in accordance with the re
     
     14.1. The User can get any clarifications on issues related to the processing of his personal data by contacting the Operator via PayPal - [yshayenko@gmail.com](yshayenko@gmail.com)
 
-    14.2.This document will reflect any changes to the Operator's personal data processing policy. The policy is valid indefinitely until it is replaced by a new version.
+    
 
     

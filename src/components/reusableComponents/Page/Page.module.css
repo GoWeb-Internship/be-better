@@ -39,7 +39,7 @@
   } 
   
    .textPr {
-  @apply text-main list-none  list-inside font-normal pl-15  mt-10  text-sm  ;
+  @apply text-main list-none  list-inside font-normal pl-15   laptop:mt-10  text-sm  ;
   }
   
   .textContainer {

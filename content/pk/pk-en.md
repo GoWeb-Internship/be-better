@@ -1,9 +1,9 @@
-<!-- ---
+ ---
 title: Privacy Policy
 language: en
 ---
 
-<h3><span>Personal data processing policy</span><h3>
+<span>Personal data processing policy</span>
 
 
 1. Terms
@@ -13,7 +13,7 @@ This personal data processing policy has been compiled in accordance with the re
  1.1. The operator sets as its most important goal and condition for the implementation of its activity the observance of the rights and freedoms of a person and a citizen when processing his personal data, including the protection of the rights to privacy, personal and family secrets.
 
 
-1.2. This policy of the Operator on the processing of personal data (hereinafter - the Policy) applies to all information that the Operator can obtain about visitors to the website https://be-better.today.
+ 1.2. This policy of the Operator on the processing of personal data (hereinafter - the Policy) applies to all information that the  Operator can obtain about visitors to the website https://be-better.today.
 
 2. Basic concepts used in the Policy
 
@@ -72,7 +72,7 @@ This personal data processing policy has been compiled in accordance with the re
     - stop the transfer (distribution, provision, access) of personal data, stop processing and destroy personal data in the manner and cases provided for by the Law on Personal Data;
     - Perform other duties stipulated by the Law on Personal Data.
 
-     4.Basic rights and obligations of subjects of personal data
+4.Basic rights and obligations of subjects of personal data
 
     4.1.Subjects of personal data have the right to:
      - To receive information related to the processing of his personal data, with the exception of cases provided for by federal laws. Information is provided to the subject of personal data by the Operator in an accessible form, and it should not contain personal data belonging to other subjects of personal data, except when there are legal grounds for disclosing such personal data. The list of information and the procedure for obtaining it is established by the Personal Data Law;
@@ -83,27 +83,27 @@ This personal data processing policy has been compiled in accordance with the re
      - To exercise other rights provided for by the legislation of the RU.
 
 
-    4.2. Subjects of personal data are obliged to:
-    - provide the Operator with reliable data about yourself;
-    - notify the Operator about clarification (update, change) of their personal data.
+     4.2. Subjects of personal data are obliged to:
+     - provide the Operator with reliable data about yourself;
+     - notify the Operator about clarification (update, change) of their personal data.
 
-    4.3. Persons who have provided the Operator with inaccurate information about themselves or information about another subject of personal data without the latter's consent are responsible in accordance with the legislation of the RU.
+     4.3. Persons who have provided the Operator with inaccurate information about themselves or information about another subject of  personal data without the latter's consent are responsible in accordance with the legislation of the RU.
 
-    5. The Operator may process such personal data of the User
+     5. The Operator may process such personal data of the User
 
-    5.1. Full Name.
+     5.1. Full Name.
 
-    5.2.E-mail address.
+     5.2.E-mail address.
 
-    5.3. Phone numbers.
+     5.3. Phone numbers.
     
-    5.4. The website also collects and processes depersonalized data about visitors (including cookie files) using Internet statistics services (Yandex Metrics, Google Analytics, and others).
+     5.4. The website also collects and processes depersonalized data about visitors (including cookie files) using Internet statistics  services (Yandex Metrics, Google Analytics, and others).
 
-    5.5. Further, according to the text of the Policy, the general term Personal data is combined.
+     5.5. Further, according to the text of the Policy, the general term Personal data is combined.
 
-    5.6. Processing of special categories of personal data related to race, nationality, political views, religious or philosophical beliefs, intimate life is not carried out by the Operator.
+     5.6. Processing of special categories of personal data related to race, nationality, political views, religious or philosophical  beliefs, intimate life is not carried out by the Operator.
 
-    5.7. Processing of personal data authorized for distribution from among the special categories of personal data specified in Articles 13 and 14 GDPR of the Law on Personal Data is allowed if the prohibitions and conditions provided for in Art. 10.1 of the Personal Data Act.
+     5.7. Processing of personal data authorized for distribution from among the special categories of personal data specified in  Articles 13 and 14 GDPR of the Law on Personal Data is allowed if the prohibitions and conditions provided for in Art. 10.1 of the  Personal Data Act.
 
     5.8. The User's consent to the processing of personal data permitted for distribution is issued separately from other consents to the processing of his personal data. At the same time, the conditions stipulated, in particular, in Art. 13 and 14 GDPR of the Personal Data Act. The requirements for the content of such consent are established by the authorized body for the protection of the rights of the subjects of personal data.
 
@@ -207,6 +207,6 @@ This personal data processing policy has been compiled in accordance with the re
     
     14.1. The User can get any clarifications on issues related to the processing of his personal data by contacting the Operator via PayPal - [yshayenko@gmail.com](yshayenko@gmail.com) -->
 
-    
+     
 
     

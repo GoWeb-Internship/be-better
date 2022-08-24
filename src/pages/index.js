@@ -10,7 +10,7 @@ import Container from '../components/Container';
 import AboutMe from '../components/AboutMe';
 import Facts from '../components/Facts';
 import Hero from '../components/Hero';
-// import FormWithBackground from '../components/Form/FormWithBackground';
+import FormWithBackground from '../components/Form/FormWithBackground';
 import FormWithVideoBg from '../components/Form/FormWithVideoBg';
 import BeBetter from '../components/BeBetter';
 import Change from '../components/Change';
@@ -23,22 +23,25 @@ const IndexPage = () => {
   return (
     <Layout id="home">
       {/* <main> */}
+      <Hero />
       <Container>
         {/* <Hero /> */}
         <AboutMe />
         <Facts />
-        {/* <ClientHistory /> */}
-        {/* <Formula /> */}
-        {/* <FormWithVideoBg clickFrom="main" /> */}
-        {/* <WhyStepsAdd /> */}
-        {/* <Price /> */}
-        {/* <Guarantee /> */}
-        {/* <Couch /> */}
+        <ClientHistory />
+        <Formula />
+        <FormWithVideoBg clickFrom="main" />
+        <WhyStepsAdd />
+        <Price />
+        <Guarantee />
+        <Couch />
         {/* <Video /> */}
-        {/* <Steps /> */}
-        {/* <Change /> */}
-        {/* <BeBetter /> */}
+        <Steps />
+        <Change />
+        <BeBetter />
       </Container>
+      <FormWithBackground clickFrom="footer" />
+
       {/* </main> */}
       <script
         dangerouslySetInnerHTML={{

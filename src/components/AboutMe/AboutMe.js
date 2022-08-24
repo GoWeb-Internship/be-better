@@ -78,7 +78,7 @@ const AboutMe = () => {
       </div>
       <div>
         <div className=" hidden laptop:block laptop:w-[420px] laptop:ml-auto  desktop:hidden text-left">
-          <p className="mb-2    desktop:mb-8">
+          <p className="mb-2  desktop:mb-8">
             {data.threeParagraphFirst}
             <span className={caveat}>{data.threeParagraphSpan}</span> <br />
             <span className="text-black block mt-4">
@@ -86,7 +86,7 @@ const AboutMe = () => {
             </span>
           </p>
         </div>
-        <div className="text-left hidden laptop:block laptop:mt-4 desktop:hidden ">
+        <div className="text-left hidden  laptop:block laptop:w-[640px] laptop:mt-12  desktop:hidden ">
           <p className="mb-6 laptop:mb-0">{data.fourParagraph}</p>
           <p className="mb-4 laptop:mt-8 laptop:mb-0">
             <span className="text-caveat">{data.fiveParagraphSpan}</span>

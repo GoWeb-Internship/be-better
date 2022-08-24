@@ -7,5 +7,5 @@
 }
 
 .icon {
-    @apply absolute top-6 right-6 w-7 h-7 z-20 hover:text-main;
+    @apply absolute top-4 right-4 desktop:top-6 desktop:right-6 w-7 h-7 z-20 transition-colors hover:fill-main;
 }

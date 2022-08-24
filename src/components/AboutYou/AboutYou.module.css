@@ -1,9 +1,9 @@
 .container {
-  @apply mx-auto laptop:max-w-3xl w-[280px] py-6 laptop:absolute laptop:-left-[45px] laptop:top-[310px] desktop:left-[75px] desktop:top-[395px] bg-white rounded-2xl   shadow-you px-11;
+  @apply mx-auto px-11  w-[280px] py-6  laptop:px-[10px] laptop:absolute laptop:w-50 laptop:pt-4 laptop:pb-7 laptop:left-[30px] laptop:top-[310px] desktop:w-[284px] desktop:py-6 desktop:left-[75px] desktop:top-[395px] bg-white rounded-2xl   shadow-you;
 }
 
 .title {
-  @apply text-main mb-3 text-base;
+  @apply text-main mb-3 text-base laptop:w-[148px] laptop:m-auto laptop:mb-2;
 }
 
 .listContainer {
@@ -11,9 +11,9 @@
 }
 
 .listContainer ul {
-  @apply list-outside list-disc marker:text-main;
+  @apply list-outside list-disc marker:text-main laptop:w-[148px] laptop:m-auto desktop:w-[220px] desktop:mr-0;
 }
 
 .listContainer li {
-  @apply mb-3;
+  @apply mb-3 text-sm laptop:text-xs desktop:text-sm;
 }

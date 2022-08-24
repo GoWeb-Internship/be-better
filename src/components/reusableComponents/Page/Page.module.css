@@ -79,25 +79,6 @@
   .listFacts{
     @apply relative w-48
    }
-  /* .iconFacts-template{
-    @apply absolute block t-0 l-0 bg-black
-  } */
-  /* .listFacts::before{
-    @apply   w-3 ;
-  
-  } */
-  /* .listFacts::after{
-    @apply iconFacts-template w-32 h-3
-  } */
-
-  /* .listFacts:nth-child(2)::before,
-  .listFacts:nth-child(2)::before{
-    @apply bg-black w-3 h-4 absolute
-  }
-  .listFacts:nth-child(3)::before,
-  .listFacts:nth-child(3)::before{
-    @apply bg-likeGrey
-  } */
   .itemFacts {
     @apply relative w-48;
   }

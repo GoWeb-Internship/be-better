@@ -11,9 +11,9 @@ const Page = ({ icons = '', data = {}, img ='', icon='' }) => {
           {data.page.map(({ textPrimary, svg, img, icon, textSecondary }) => {
             return (
               <li className={itemFacts} key={icons}>
-  <div><p className={textPr}>{textPrimary}</p></div>
+            <div><p className={textPr}>{textPrimary}</p></div>
 
-  <div className={iconClass}>
+            <div className={iconClass}>
                 <svg className="w-10 h-10 -mt-20 ml-6">
                     <use className='w-10 h-10 -mt-40'  href={`${icons}#icon-${icon}`} />
                   </svg>

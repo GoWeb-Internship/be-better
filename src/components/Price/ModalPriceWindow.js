@@ -9,6 +9,7 @@ import {
   formtext,
   accenttext,
   price,
+  underformtext,
 } from './Price.module.css';
 
 const ModalPriceWindow = ({ hideModal, currentPrice, currentRate }) => {
@@ -30,7 +31,7 @@ const ModalPriceWindow = ({ hideModal, currentPrice, currentRate }) => {
           checkboxClassname="mb-9"
           closeFormModal={hideModal}
         />
-        <p className={formtext}>{form.connection}</p>
+        <p className={underformtext}>{form.connection}</p>
       </>
     </ModalWindow>
   );

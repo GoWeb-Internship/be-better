@@ -32,7 +32,10 @@ const FormWithVideoBg = ({ clickFrom }) => {
   const [frontmatter] = allMarkdownRemark.nodes;
   const data = frontmatter.frontmatter;
   return (
-    <Section className="flex justify-end h-[760px] pr-6" id="nav-feedback">
+    <Section
+      className="hidden desktop:flex justify-end h-[760px] pr-6"
+      id="nav-feedback"
+    >
       <Video />
       <div className="text-left pt-20 ">
         <div className="w-81 text-black">
@@ -48,7 +51,7 @@ const FormWithVideoBg = ({ clickFrom }) => {
             clickFrom={clickFrom}
             formClassname="desktop:!m-0 desktop:!mr-auto desktop:!mb-6"
           />
-          <p className="w-[426px] font-caveat text-black text-lg leading-[23px] text-left">
+          <p className="font-caveat text-black text-lg leading-[23px] text-left">
             {data[`${i18n.language}First`]}{' '}
             <span className="text-mainSecond ">
               {' '}

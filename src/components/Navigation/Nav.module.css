@@ -1,5 +1,5 @@
 .navContainer {
-  @apply flex justify-between;
+  @apply hidden laptop:flex justify-between;
 }
 
 .links {

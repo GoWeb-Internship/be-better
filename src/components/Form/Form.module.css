@@ -28,13 +28,13 @@
     @apply absolute -top-2 left-8 z-10 text-error text-xs;
 }
 .modalsuccess{
-    @apply w-[456px] h-[225px] pt-14 px-[68px] bg-white
+    @apply w-80 desktop:w-[456px] py-[72px] desktop:px-[68px] bg-white
 }
 .modaltitle {
-    @apply mb-1 text-2xl font-semibold text-main;
+    @apply mb-[10px] desktop:mb-1 text-xl desktop:text-2xl font-medium desktop:font-semibold text-main;
 }
 .modaltext {
-    @apply font-medium text-xl text-black;
+    @apply desktop:font-medium text-base desktop:text-xl text-black;
 }
 
 .input:focus + .label,
@@ -52,7 +52,7 @@
 }
 
 .check {
-    @apply mt-1 w-4 h-4 border-2 border-likeGrey rounded-[5px];
+    @apply mt-1 min-w-[16px] min-h-[16px] border-2 border-main desktop:border-likeGrey rounded-[5px];
 }
 /* анимация галочки */
 /* #anim-one {

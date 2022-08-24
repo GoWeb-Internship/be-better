@@ -27,18 +27,18 @@ const Guarantee = () => {
   const data = allMarkdownRemark.nodes;
 
   return (
-    <Section className="h-[568px] pt-30 pl-74 text-left">
+    <Section className="h-[480px] pt-8 pb-16 px-5 desktop:h-[568px] desktop:pt-30 desktop:pl-74 text-left">
       <GuaranteeBg />
       {data.map(node => {
         if (node.frontmatter.language === i18n.language) {
           return (
             <div key={node.frontmatter.title}>
-              <h2 className="mb-20 text-mainSecond text-34 font-semibold">
+              <h2 className="mb-[173px] desktop:mb-20 text-center text-mainSecond text-xl font-medium desktop:text-34 desktop:font-semibold">
                 {node.frontmatter.title}
               </h2>
               <div
                 dangerouslySetInnerHTML={{ __html: node.html }}
-                className="w-[432px] text-xl	"
+                className="w-[220px] text-sm desktop:w-[432px] desktop:text-xl	"
               />
             </div>
           );

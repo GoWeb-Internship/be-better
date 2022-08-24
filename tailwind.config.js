@@ -87,6 +87,7 @@ module.exports = {
       realWrite: '#FFFFFF',
       iconBg: '#DCF2F6',
       buttonMobile: '#01BBD4',
+      oferta: "#FFF8F4",
     },
     screens: {
       tablet: '320px',
@@ -94,6 +95,8 @@ module.exports = {
 
       laptop: '768px',
       // => @media (min-width: 768px) { ... }
+      lg: '1024px',
+      //@media (min-width: 1024px) { ... }
 
       desktop: '1440px',
       // => @media (min-width: 1280px) { ... }
@@ -138,7 +141,6 @@ module.exports = {
           letterSpacing: 0.25,
         },
         '.text-change': {
-          color: theme('colors.mainSecond'),
           fontFamily: 'Caveat,sans-serif',
           fontSize: 24,
           lineHeight: 1.36,

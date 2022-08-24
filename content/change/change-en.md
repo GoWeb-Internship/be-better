@@ -11,5 +11,4 @@ language: en
 
 <p>Don't put off your life for later! People who live a happy life achieve the best results! Do you want to know how?</p>
 
-<span class='text-change'>Sign up today for your first coaching session. with a
-75% discount and start living it up tomorrow! </span>
+

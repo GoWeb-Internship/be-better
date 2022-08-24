@@ -11,7 +11,11 @@ const Facts = () => {
   const data = t('facts', { returnObjects: true });
 
   return (
-    <Section className="pt-20 pb-16 relative">
+    <Section className="relative py-8   laptop:pt-12 laptop:pb-[104px] desktop:pt-20 desktop:pb-16 ">
+      <h3 className="title-secondary mb-4 laptop:mb-8 desktop:hidden laptop:text-34">
+        {data.title}
+      </h3>
+
       <StaticImage
         layout="fullWidth"
         src="../../images/background/features.jpg"
@@ -19,14 +23,19 @@ const Facts = () => {
         style={{ position: 'absolute' }}
         className="w-full h-full -z-10 top-0"
       />
-      <div className="flex px-46 ">
+      <div className="flex flex-col-reverse desktop:flex-row px-5 laptop:px-16  desktop:px-46 ">
         <List data={data} icons={svg} />
         <StaticImage
-          alt=""
-          src="../../images/factsFoto.jpg"
-          width={380}
-          height={560}
-          className="rounded-2xl ml-13 "
+          alt="foto"
+          src="../../images/factMob.jpg"
+          className="rounded-2xl desktop:ml-13 w-70 h-[200px] laptop:w-[640px] laptop:h-[440px] desktop:hidden "
+          placeholder="blurred"
+          formats={['auto', 'webp', 'avif']}
+        />
+        <StaticImage
+          alt="foto"
+          src="../../images/factFoto.jpg"
+          className="hidden rounded-2xl desktop:ml-13 desktop:block desktop:w-[380px] desktop:h-[560px] "
           placeholder="blurred"
           formats={['auto', 'webp', 'avif']}
         />

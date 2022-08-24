@@ -4,8 +4,8 @@
 .text {
   @apply font-normal text-base text-start max-w-xl pt-14 ml-20 pl-10 mr-10 mt-12;
 }
-.text span {
-  @apply text-change text-start  pt-16  w-80;
+.discountStyle {
+  @apply text-change text-2xl text-mainSecond w-[430px];
 }
 .text p {
   @apply pb-6;

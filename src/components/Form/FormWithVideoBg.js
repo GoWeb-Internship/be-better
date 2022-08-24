@@ -53,7 +53,7 @@ const FormWithVideoBg = ({ clickFrom }) => {
           />
           <p className="font-caveat text-black text-lg leading-[23px] text-left">
             {data[`${i18n.language}First`]}{' '}
-            <span className="text-mainSecond ">
+            <span className="text-mainSecond font-semibold ">
               {' '}
               {data[`${i18n.language}Discount`]}
             </span>{' '}

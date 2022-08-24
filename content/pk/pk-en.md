@@ -204,8 +204,7 @@ This personal data processing policy has been compiled in accordance with the re
     12.2. Cross-border transfer of personal data on the territory of foreign countries that do not meet the above requirements can be carried out only in the case of the consent in writing of the subject of personal data to the cross-border transfer of his personal data and/or the performance of a contract to which the subject of personal data is a party .
 
     13.Confidentiality of personal data
-    The operator and other persons who gained access to personal data are obliged not to disclose to third parties and not to distribute personal data without the consent of the subject of personal data, unless otherwise provided by federal law.
-
+    
     14.1. The User can get any clarifications on issues related to the processing of his personal data by contacting the Operator via PayPal - [yshayenko@gmail.com](yshayenko@gmail.com)
 
     14.2.This document will reflect any changes to the Operator's personal data processing policy. The policy is valid indefinitely until it is replaced by a new version.

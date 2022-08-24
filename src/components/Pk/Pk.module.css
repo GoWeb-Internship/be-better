@@ -1,0 +1,21 @@
+h3 span{
+    @apply text-main desktop:-mt-5 pb-30;
+}
+.text{
+    @apply   pt-0 h-96 tablet:mr-10 laptop:mr-32  desktop:mr-96
+}
+/* .btn{
+    @apply cursor-pointer font-normal float-none table-cell align-middle text-base font-sans visible shadow-none text-orangeDirty;
+}
+.img{
+    @apply  !block   cursor-pointer  visible box-content -ml-80 laptop:-mt-28 -z-20 tablet:-mt-32 w-2 h-2 desktop:-mt-8 desktop:w-16 desktop:h-8
+}
+.people{
+    @apply tablet:hidden desktop:block w-3/4 -z-10 top-0  max-w-md  !float-right mr-40  -mt-32 mb-16  h-60 rounded-lg
+}
+.arrow{
+    @apply w-16 ml-20 mt-32 pl-96 -z-20 top-0 cursor-pointer  mb-16 pr-0
+}
+.svg{
+    @apply -z-20 top-0 w-3/4 tablet:object-cover mt-20 h-20 ml-40   laptop:ml-40 mt-0  desktop:ml-80 mb-16 pr-0 max-w-5xl 
+} */

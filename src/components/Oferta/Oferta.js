@@ -38,9 +38,9 @@ return (
         alt="logo"
       />
     </Link>
-      <Link to="/" className="max-w-xs cursor-pointer  mb-16  tablet:ml-96 desktop:mt-24 desktop:-ml-52">
+      <Link to="/" className="max-w-xs cursor-pointer  mb-16   desktop:mt-24">
         <StaticImage
-          className="mt-8 cursor-pointer m-auto w-8 h-5 -ml-96 laptop:ml-0 laptop:h-7"
+          className="mt-8 cursor-pointer m-auto w-8 tablet:ml-40 h-5 -ml-96  laptop:ml-80 laptop:h-7 desktop:-ml-60"
           src="../../images/background/back.png"
           alt="background"
         />

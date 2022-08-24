@@ -3,7 +3,7 @@ title: Public offer
 language: en
 ---
 
-<span>Public offer for the provision of paid and free consulting services</span>
+<h4><span>Public offer for the provision of paid and free consulting services</span></h4>
 
 20.04.2022 A real public offer, the text of which is constantly posted for
 information telecommunications network "Internet" (hereinafter - the Internet

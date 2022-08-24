@@ -27,7 +27,7 @@ const data = allMarkdownRemark.nodes;
   return (
     <Container className="">
     <div className='relative w-full'>
-      <div className='flex desktop:flex-row'>
+      <div className='flex desktop:flex-row '>
     <Link to="/" className="w-9 h-5 hover:scale-110 mr-20 transition-transform tablet:ml-1 tablet:mt-1 tablet:mt-4 laptop:mt-5 laptop:ml-13 laptop:mr-40 laptop:pl-14 ">
           <StaticImage
             src="../../images/logo.svg"
@@ -38,9 +38,9 @@ const data = allMarkdownRemark.nodes;
             alt="logo"
           />
         </Link>
-          <Link to="/" className="max-w-xs cursor-pointer  mb-16  tablet:ml-96 desktop:mt-24 desktop:-ml-52">
+          <Link to="/" className="max-w-xs cursor-pointer  mb-16   desktop:mt-24 ">
             <StaticImage
-              className="mt-8 cursor-pointer m-auto w-8 h-5 -ml-96 laptop:ml-0 laptop:h-7"
+              className="mt-8 cursor-pointer m-auto w-8 tablet:ml-40 h-5 -ml-96  laptop:ml-80 laptop:h-7 desktop:-ml-60"
               src="../../images/background/back.png"
               alt="background"
             />

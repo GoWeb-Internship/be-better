@@ -206,7 +206,9 @@ This personal data processing policy has been compiled in accordance with the re
 13.Confidentiality of personal data
     
       14.1. The User can get any clarifications on issues related to the processing of his personal data by contacting the Operator via PayPa
-      - [yshayenko@gmail.com](yshayenko@gmail.com) -->
+      - [yshayenko@gmail.com](yshayenko@gmail.com) 
+
+      14.2. For any document, it will be possible to change the policy of processing personal data by the Operator. Replace the policy without a line with a new version.
 
      
 

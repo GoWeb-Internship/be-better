@@ -9,9 +9,7 @@ language: en
 1. Terms
 This personal data processing policy has been compiled in accordance with the requirements of the Law of Ukraine "On the Protection of Personal Data" dated 01.06.2010 No. 2297-VI (hereinafter - the Law), as well as the General Data Protection Regulation (EU) 2016/679 dated 27.04. 2016 (hereinafter - the Law on Personal Data) and determines the procedure for processing personal data and measures to ensure the security of personal data used by Yuliya Shayenko (hereinafter - the Operator).
 
-
       1.1. The operator sets as its most important goal and condition for the implementation of its activity the observance of the rights and freedoms of a person and a citizen when processing his personal data, including the protection of the rights to privacy, personal and family secrets.
-
 
       1.2. This policy of the Operator on the processing of personal data (hereinafter - the Policy) applies to all information that the  Operator can obtain about visitors to the website https://be-better.today.
 
@@ -48,8 +46,7 @@ This personal data processing policy has been compiled in accordance with the re
 3.Basic rights and obligations of the Operator
 
       3.1.The operator has the right to:
-– to receive reliable information from the subject of personal data and/or
-  documents containing personal data;
+– to receive reliable information from the subject of personal data and/or documents containing personal data;
 
 – in case of withdrawal of consent to processing of personal data by the   subject
   personal data The Operator has the right to continue processing personal data
@@ -65,7 +62,7 @@ This personal data processing policy has been compiled in accordance with the re
       3.2.The operator is obliged to:
 – to provide the subject of personal data at his request with information regarding the processing of his personal data;
 - Organize the processing of personal data in accordance with the procedure established by the current legislation of the RU;
-- respond to appeals and requests of personal data subjects and their legal representatives in accordance with the requirements of the Law on Personal Data;
+- respond to appeals and requests of personal data subjects and their legal representatives in accordance with the requirements of the   Law on Personal Data;
 - to notify the authorized body for the protection of the rights of personal data subjects at the request of this body, the necessary information within 30 days from the date of receipt of such a request;
 - publish or otherwise provide unrestricted access to this Policy on the processing of personal data;
 – take legal, organizational and technical measures to protect personal data from illegal or accidental access to them, destruction, changes, blocking, copying, provision, distribution of personal data, as well as from other illegal actions regarding personal data;

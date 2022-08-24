@@ -210,4 +210,4 @@ This personal data processing policy has been compiled in accordance with the re
 
     14.2.This document will reflect any changes to the Operator's personal data processing policy. The policy is valid indefinitely until it is replaced by a new version.
 
-    14.3. The current version of the Policy is freely available on the Internet at https://be-better.today/pk.
+    

@@ -74,7 +74,7 @@ const Change = () => {
                   src="../../images/background/fon-min.png"
                   alt=""
                   style={{ position: 'absolute' }}
-                  className="tablet:w-[47%] tablet:ml-40 tablet:pb-10 -z-10 mt-5  laptop:w-[57%] ml-80 mb-16 pr-0 desktop:top-0 desktop:mt-0 desktop:w-3/4 max-w-5xl"
+                  className="tablet:w-[47%] tablet:ml-40 tablet:pb-10 -z-10 mt-5 laptop:-mt-8 laptop:h-28 laptop:w-[100%] ml-80 mb-16 pr-0 desktop:top-0 desktop:mt-0 desktop:w-3/4 max-w-5xl"
                   formats={['auto', 'webp', 'avif']}
                 />
                 <StaticImage
@@ -108,7 +108,7 @@ const Change = () => {
                       src="../../images/background/union-min.png"
                       alt=""
                       style={{ position: 'absolute' }}
-                      className="tablet:w-[10%] tablet:h-[56%]  tablet:ml-20 desktop:hidden laptop:h-[50%] laptop:w-[5%] -z-10 tablet:top-[19%]  laptop:top-[10%] mt-36 pt-0 ml-[10%] mr-20 "
+                      className="tablet:w-[8%] tablet:h-[54%] tablet:mt-[49%]  tablet:ml-20 desktop:hidden laptop:mt-[14%] laptop:h-[50%] laptop:w-[5%] -z-10 tablet:top-[20%]  laptop:top-[13%] mt-36 pt-0 ml-[10%] mr-20 "
                       formats={['auto', 'webp', 'avif']}
                     />
                   
@@ -121,7 +121,7 @@ const Change = () => {
                       src="../../images/background/shadow-min.png"
                       alt=""
                       style={{ position: 'absolute' }}
-                      className=" laptop:hidden mt-[190%] -ml-5"
+                      className=" laptop:hidden mt-[180%] -ml-5"
                       formats={['auto', 'webp', 'avif']}
                     />
                           </div>
@@ -142,7 +142,7 @@ const Change = () => {
                         </div>
                         <Button
                           type="button"
-                          className="!bg-mainSecond border !mt-5 px-16 !ml-8 desktop:!ml-28 py-2 rounded-3xl hover:!bg-[#d46828] ease-in duration-300"
+                          className="!bg-mainSecond -mt-[50%] border tablet:!-mt-16 laptop:!mt-5 px-16 !ml-8 desktop:!ml-28 py-2 rounded-3xl hover:!bg-[#d46828] ease-in duration-300"
                           doAction={() => showModal()}
                         >
                           {buttonTranslate.button}

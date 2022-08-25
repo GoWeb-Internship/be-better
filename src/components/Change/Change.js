@@ -74,7 +74,7 @@ const Change = () => {
                   src="../../images/background/fon-min.png"
                   alt=""
                   style={{ position: 'absolute' }}
-                  className="tablet:w-[47%] tablet:ml-40 tablet:pb-10 -z-10 mt-5 laptop:-mt-8 laptop:h-28 laptop:w-[100%] ml-80 mb-16 pr-0 desktop:top-0 desktop:mt-0 desktop:w-3/4 max-w-5xl"
+                  className="tablet:w-[47%] tablet:ml-40 tablet:pb-10 -z-10 mt-5 laptop:-mt-8 laptop:h-28 laptop:w-[79%] ml-80 mb-16 pr-0 desktop:top-0 desktop:mt-0 desktop:w-3/4 max-w-5xl"
                   formats={['auto', 'webp', 'avif']}
                 />
                 <StaticImage

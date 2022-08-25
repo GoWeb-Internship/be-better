@@ -100,6 +100,7 @@ collections:
   - name: 'discount'
     label: 'Discount'
     folder: 'content/discount'
+    slug: '{{slug}}'
     create: false
     delete: false
     editor:
@@ -114,6 +115,31 @@ collections:
       - { label: 'Second Uk', name: 'ukSecond', widget: 'string' }
       - { label: 'Second En', name: 'enSecond', widget: 'string' }
       - { label: 'Second Ru', name: 'ruSecond', widget: 'string' }
+
+  #oferta
+  - name: 'oferta'
+    label: 'Oferta'
+    folder: 'content/oferta'
+    create: false
+    delete: false
+    editor:
+      preview: true
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Language', name: 'language', widget: 'hidden', default: 'uk' }
+      - { label: 'Body', name: 'body', widget: 'markdown' }
+  #Policy
+  - name: 'policy'
+    label: 'Policy'
+    folder: 'content/pk'
+    create: false
+    delete: false
+    editor:
+      preview: true
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Language', name: 'language', widget: 'hidden', default: 'uk' }
+      - { label: 'Body', name: 'body', widget: 'markdown' }
   # - name: 'aboutMe'
   #   label: 'About me'
   #   folder: 'content/aboutMe'

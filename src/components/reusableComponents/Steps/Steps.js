@@ -23,8 +23,8 @@ const Steps = ({ icons = '', data = {}, img ='', icon='' }) => {
             <div><p className={textPrP}>{textPrimary}</p></div>
 
             <div className={iconClass}>
-                <svg className="w-10 h-10 -mt-20 ml-6">
-                    <use className='w-10 h-10 -mt-40'  href={`${icons}#icon-${icon}`} />
+                <svg className="tablet:hidden desktop:block  desktop:w-10 desktop:h-10 desktop:-mt-20 desktop:ml-6">
+                    <use className='desktop:w-10 desktop:h-10 desktop:-mt-40'  href={`${icons}#icon-${icon}`} />
                   </svg>
                 </div> 
 

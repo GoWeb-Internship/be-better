@@ -1,5 +1,5 @@
 .changeTitle {
-  @apply font-semibold text-3xl   text-orangeDark pt-13 text-start max-w-xs desktop:max-w-xl ml-11;
+  @apply tablet:text-xl tablet:font-medium font-semibold text-3xl   text-orangeDark pt-13 text-start max-w-xs desktop:max-w-xl ml-11;
 }
 .text {
   @apply font-normal  text-sm laptop:text-base text-start max-w-3xl tablet:pt-64 laptop:pt-0 desktop:max-w-xl  desktop:pt-14 desktop:ml-20 pl-10 desktop:mr-10 mt-12;

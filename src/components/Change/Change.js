@@ -74,7 +74,7 @@ const Change = () => {
                   src="../../images/background/fon-min.png"
                   alt=""
                   style={{ position: 'absolute' }}
-                  className=" -z-10 mt-5  laptop:w-[57%] ml-80 mb-16 pr-0 desktop:top-0 desktop:mt-0 desktop:w-3/4 max-w-5xl"
+                  className="tablet:w-[47%] tablet:ml-40 tablet:pb-10 -z-10 mt-5  laptop:w-[57%] ml-80 mb-16 pr-0 desktop:top-0 desktop:mt-0 desktop:w-3/4 max-w-5xl"
                   formats={['auto', 'webp', 'avif']}
                 />
                 <StaticImage
@@ -108,7 +108,7 @@ const Change = () => {
                       src="../../images/background/union-min.png"
                       alt=""
                       style={{ position: 'absolute' }}
-                      className="tablet:w-[10%] tablet:h-[54%]  tablet:ml-20 desktop:hidden laptop:h-[50%] laptop:w-[5%] -z-10 tablet:top-[23%]  laptop:top-[10%] mt-36 pt-0 ml-[10%] mr-20 "
+                      className="tablet:w-[10%] tablet:h-[56%]  tablet:ml-20 desktop:hidden laptop:h-[50%] laptop:w-[5%] -z-10 tablet:top-[19%]  laptop:top-[10%] mt-36 pt-0 ml-[10%] mr-20 "
                       formats={['auto', 'webp', 'avif']}
                     />
                   
@@ -175,7 +175,7 @@ const Change = () => {
                       src="../../images/background/julia-min.png"
                       alt=""
                       style={{ position: 'absolute' }}
-                      className="tablet:-ml-[70%] z-10 tablet:mt-50 tablet:w-2/3 -z-10 -20 laptop:ml-0 laptop:mt-8  desktop:mt top-0 laptop:w-1/3 h-11/12 "
+                      className="tablet:-ml-[70%] z-10 tablet:mt-32 tablet:w-2/3 -z-10 -20 laptop:ml-0 laptop:mt-8  desktop:mt top-0 laptop:w-1/3 h-11/12 "
                       formats={['auto', 'webp', 'avif']}
                     />
                     </div>

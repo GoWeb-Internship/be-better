@@ -25,7 +25,6 @@ const IndexPage = () => {
       {/* <main> */}
       <Hero />
       <Container>
-        {/* <Hero /> */}
         <AboutMe />
         <Facts />
         <ClientHistory />
@@ -38,7 +37,6 @@ const IndexPage = () => {
         <Price />
         <Guarantee />
         <Couch />
-        {/* <Video /> */}
         <Steps />
         <Change />
         <BeBetter />

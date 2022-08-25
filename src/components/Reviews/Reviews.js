@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
+import { useMedia } from 'react-use';
 import { SwiperSlide } from 'swiper/react';
 import { useTranslation } from 'gatsby-plugin-react-i18next';
 import Section from '../reusableComponents/Section';
@@ -9,20 +10,6 @@ import { CgQuote } from 'react-icons/cg';
 import Review from './Review';
 
 const Reviews = () => {
-  const [slides, setSlides] = useState(3);
-
-  useEffect(() => {
-    if (
-      /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
-        navigator.userAgent
-      )
-    ) {
-      setSlides(2);
-    } else {
-      setSlides(3);
-    }
-  }, []);
-
   const { t } = useTranslation();
   const { allMarkdownRemark } = useStaticQuery(graphql`
     query {
@@ -44,11 +31,16 @@ const Reviews = () => {
       }
     }
   `);
+  const isWide = useMedia('(min-width:1440px');
   const clients = allMarkdownRemark.nodes;
+  const slides = isWide ? 3 : 2;
 
   const reviews = t('reviews', { returnObjects: true });
   return (
-    <Section id="nav-reviews" className="mt-[181px] pb-[142px]">
+    <Section
+      id="nav-reviews"
+      className="px-5 mt-[73px] laptop:mt-[324px] desktop:mt-[181px] pb-[83px] laptop:pb-[131px] desktop:pb-[142px]"
+    >
       <h3 className={title}>{reviews.title}</h3>
 
       <CgQuote
@@ -67,10 +59,12 @@ const Reviews = () => {
           })}
       </Slider>
 
-      <CgQuote
-        className="text-mainSecond absolute right-[100px] bottom-[50px]"
-        size={120}
-      />
+      {isWide && (
+        <CgQuote
+          className="text-mainSecond absolute right-[100px] bottom-[50px]"
+          size={120}
+        />
+      )}
     </Section>
   );
 };

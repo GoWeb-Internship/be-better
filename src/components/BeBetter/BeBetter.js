@@ -29,7 +29,7 @@ const BeBetter = () => {
           if (node.frontmatter.language === i18n.language) {
             return (
               <>
-                <h3 className="tablet:text-xl laptop:text-left laptop:w-[80%] desktop:w-[90%] tablet:text-center desktop:w-[50%]  tablet:font-medium laptop:font-semibold laptop:text-3xl laptop:pl-10 text-buttonMobile pb-8">
+                <h3 className="tablet:text-xl laptop:text-left laptop:w-[80%] desktop:w-[90%] tablet:text-center desktop:w-[50%]  tablet:font-medium laptop:font-semibold laptop:text-3xl laptop:pl-10 desktop:pl-0 text-buttonMobile pb-8">
                   {node.frontmatter.title}
                 </h3>
                 <div
@@ -54,7 +54,7 @@ const BeBetter = () => {
           formats={['auto', 'webp', 'avif']}
         />
         </div>
-        <div className='tablet:hidden laptop:block laptop:mt-[62%]  laptop:-mr-[40%] desktop:mt-[2%] desktop:ml-[15%]  desktop:-mr-0 '>
+        <div className='tablet:hidden desktop:block laptop:mt-[62%]  laptop:-mr-[40%] desktop:mt-[2%] desktop:ml-[15%]  desktop:-mr-0 '>
         <StaticImage
           alt=""
           src="../../images/three-min.png"
@@ -66,7 +66,7 @@ const BeBetter = () => {
         </div>
         </div>
       </div>
-      <div className="tablet:hidden desktop:block  -ml-3 w-[90%] h-[5%]  z-10 -mt-[2%] desktop:-mr-[60%]">
+      <div className="tablet:hidden desktop:block  -ml-3 w-[90%] h-[5%]  z-10 -mt-[2%] desktop:-mr-[58%]">
         <StaticImage
           alt=""
           src="../../images/two-min.png"
@@ -76,7 +76,7 @@ const BeBetter = () => {
           formats={['auto', 'webp', 'avif']}
         />
       </div>
-      <div className='tablet:hidden  laptop:mt-[62%]  laptop:-mr-[40%] desktop:mt-[10%] desktop:-ml-[120%] desktop:-mr-0'>
+      <div className='tablet:hidden laptop:block laptop:mt-[60%] laptop:-mr-[100%] '>
         <StaticImage
           alt=""
           src="../../images/three-min.png"
@@ -86,7 +86,7 @@ const BeBetter = () => {
           formats={['auto', 'webp', 'avif']}
         />
         </div>
-      <div className="desktop:hidden  -mt-[2%] mr-[4%]  ml-3 w-[90%] h-[5%] desktop:mr-40 z-10 laptop:ml-8">
+      <div className="desktop:hidden  -mt-[2%] mr-[4%]  ml-3 w-[90%] h-[5%]  z-10 laptop:ml-[100%]">
         <StaticImage
           alt=""
           src="../../images/background/bokalu.png"

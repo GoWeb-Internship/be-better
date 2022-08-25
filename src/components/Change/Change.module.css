@@ -20,7 +20,7 @@
   @apply tablet:w-56  laptop:w-648 laptop:max-w-2xl desktop:w-full  
 }
 .text p:nth-child(4){
-  @apply tablet:mt-[65%] tablet:-mb-[33%] tablet:w-56 mt-50 laptop:w-648  laptop:max-w-2xl laptop:-mb-[10%] laptop:mt-[0%]  desktop:w-full desktop:-mb-96
+  @apply tablet:-mt-[37%] tablet:-mb-[33%] tablet:w-56 mt-50 laptop:w-648  laptop:max-w-2xl laptop:-mb-[10%] laptop:mt-[0%]  desktop:w-full desktop:-mb-96
 }
 .modalform {
   @apply w-[440px] h-[560px] pt-14 text-xl bg-background text-center;

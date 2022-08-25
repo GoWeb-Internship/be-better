@@ -36,24 +36,24 @@ const Couch = () => {
       <div className={flexContainer}>
         <div className="flex laptop:block">
           <h3 className={`${title} laptop:hidden`}>{couch.title}</h3>
-          <div>
+          <div className=" hidden laptop:block">
             <StaticImage
               placeholder="blurred"
               layout="constrained"
               formats={['auto', 'webp', 'avif']}
               alt="author with notebook"
               src="../../images/withNote.jpg"
-              className={`${mainImg} hidden laptop:block`}
+              className={`${mainImg}`}
             />
           </div>
-          <div>
+          <div className="laptop:hidden">
             <StaticImage
               placeholder="blurred"
               layout="constrained"
               formats={['auto', 'webp', 'avif']}
               alt="author with notebook"
               src="../../images/withNoteMob.jpg"
-              className={`${mainImg} laptop:hidden`}
+              className={`${mainImg} `}
             />
           </div>
         </div>

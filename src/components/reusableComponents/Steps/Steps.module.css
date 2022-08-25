@@ -1,8 +1,8 @@
 .titleFacts {
-  @apply text-mainSecondLight font-semibold text-4xl  text-center pt-20 -top-20 laptop:mb-4 desktop:mb-0;
+  @apply text-mainSecondLight font-semibold text-4xl  text-center laptop:pt-6 desktop:pt-20 laptop:w-96 laptop:ml-64 desktop:ml-0 desktop:w-[100%]  -top-20 laptop:mb-4 desktop:mb-0;
 }
 .listFacts {
-  @apply flex  text-sm pr-4  text-start  pb-24  pt-2 min-w-min justify-center flex-wrap text-start laptop:pb-32  desktop:pb-24  pt-2  desktop:flex-nowrap ;
+  @apply flex  text-sm pr-4   pb-24  pt-2 min-w-min justify-center flex-wrap text-start laptop:pb-32  desktop:pb-24  pt-2  desktop:flex-nowrap ;
 
 }
 
@@ -26,7 +26,7 @@
   @apply  desktop:mt-48 ml-4
 }
 .listFacts li:nth-child(4){
-  @apply  laptop:ml-8 mr-5   desktop:mt-28  w-48
+  @apply  laptop:ml-8 mr-5 desktop:ml-0  desktop:mt-28  w-48
 }
 
 .listFacts li:nth-child(5){

@@ -1,6 +1,6 @@
 
    .titleFacts {
-    @apply text-main font-semibold text-4xl  text-center pt-20 -top-20 max-w-7xl laptop:mb-4 desktop:mb-0;
+    @apply text-main font-semibold text-4xl  text-center laptop:w-[68%] laptop:ml-32 pl-6 desktop:pl-0 desktop:ml-0 desktop:w-[100%]  laptop:pt-6 desktop:pt-20 -top-20 max-w-7xl laptop:mb-4 desktop:mb-0;
   }
 
    .listFacts {

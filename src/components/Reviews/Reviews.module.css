@@ -1,0 +1,7 @@
+.reviewContainer {
+  @apply flex flex-col justify-between w-80 h-[360px] text-left px-8 pb-8 pt-10 bg-white rounded-2xl shadow-you;
+}
+
+.title {
+  @apply title-primary text-orangeDark px-5 mb-6 laptop:mb-[58px] laptop:px-15 laptop:text-34 desktop:mb-11;
+}

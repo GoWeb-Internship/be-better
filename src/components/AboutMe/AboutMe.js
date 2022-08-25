@@ -32,22 +32,26 @@ const AboutMe = () => {
             </span>
           </div>
 
-          <StaticImage
-            src="../../images/aboutMe.jpeg"
-            layout="constrained"
-            alt="author"
-            className=" w-[134px] h-[160px] laptop:w-[270px]  laptop:h-[342px] laptop:mr-5  rounded-2xl desktop:hidden"
-            placeholder="blurred"
-            formats={['auto', 'webp', 'avif']}
-          />
-          <StaticImage
-            src="../../images/about.jpg"
-            layout="constrained"
-            alt="author"
-            className="hidden laptop:hidden desktop:block  desktop:w-[456px] desktop:h-[480px]"
-            placeholder="blurred"
-            formats={['auto', 'webp', 'avif']}
-          />
+          <div className="desktop:hidden">
+            <StaticImage
+              src="../../images/aboutMe.jpeg"
+              layout="constrained"
+              alt="author"
+              className=" w-[134px] h-[160px] laptop:w-[270px]  laptop:h-[342px] laptop:mr-5  rounded-2xl "
+              placeholder="blurred"
+              formats={['auto', 'webp', 'avif']}
+            />
+          </div>
+          <div className="hidden laptop:hidden desktop:block">
+            <StaticImage
+              src="../../images/about.jpg"
+              layout="constrained"
+              alt="author"
+              className="  desktop:w-[456px] desktop:h-[480px]"
+              placeholder="blurred"
+              formats={['auto', 'webp', 'avif']}
+            />
+          </div>
         </div>
         <div className={textContainer}>
           <h1 className={title}>{data.title}</h1>

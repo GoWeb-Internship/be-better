@@ -1,6 +1,7 @@
 import React from 'react';
 import HeroBackground from './HeroBackground';
 import { useTranslation } from 'gatsby-plugin-react-i18next';
+import { StaticImage } from 'gatsby-plugin-image';
 import Form from '../Form';
 import Section from '../reusableComponents/Section';
 import Social from '../Social';
@@ -39,46 +40,61 @@ const Hero = () => {
 
   return (
     <Section id="home">
-      <div className="relative h-[532px] laptop:h-[1053px] desktop:h-[700px]">
+      <div className="relative h-[532px] laptop:h-[1133px] desktop:h-[780px]">
         <HeroBackground />
         <Container>
-          <div className="flex justify-between mb-[150px] pt-[100px] text-left desktop:items-start desktop:pt-10 desktop:px-20 desktop:h-[700px]">
-            <div className=" pl-5">
-              <p className="text-xl text-white font-caveat desktop:text-32">
+          <div className="hidden desktop:block w-[1440px] h-[780px] -z-10 absolute">
+            <StaticImage
+              layout="fullWidth"
+              src="../../images/background/heroDesktop.png"
+              alt=""
+              style={{ position: 'absolute' }}
+              className="w-1036 h-full -z-10 top-0 right-0"
+            />
+          </div>
+          <div className="flex justify-between desktop:flex-row-reverse desktop:justify-end mb-[150px] pt-[100px] laptop:pt-[200px] laptop:px-16 laptop:mb-50 text-left desktop:items-start desktop:pt-30 desktop:px-20 desktop:mb-0">
+            <p className="hidden desktop:block ml-auto font-caveat text-white text-28">
+              {hero.if}
+              {hero.emo} <br />
+              {hero.yourLife} {hero.pleasure}
+            </p>
+            <div className="pl-5 desktop:pl-0">
+              <p className="text-xl text-white font-caveat laptop:text-32 desktop:text-black">
                 {hero.teach}
               </p>
-              <h1 className="font-medium text-white desktop:text-black text-xl desktop:font-normal desktop:text-5xl desktop:leading-[65px]">
+              <h1 className="font-medium text-white desktop:text-black text-xl laptop:font-normal laptop:text-5xl laptop:leading-[65px]">
                 {hero.life}
                 <br />
-                <span className="font-semibold text-white desktop:text-black text-2xl desktop:font-light desktop:text-59">
+                <span className="font-semibold text-white desktop:text-black text-2xl laptop:font-light laptop:text-59">
                   {hero.kaif}
                 </span>
               </h1>
-              <p className="text-xl text-white desktop:text-black font-caveat desktop:mb-5 desktop:text-32">
+              <p className="text-xl text-white desktop:text-black font-caveat desktop:mb-5 laptop:text-32">
                 {hero.emotion} <br />
                 {hero.burn}
               </p>
             </div>
             <div className="pr-[30px] desktop:mr-[172px]">
-              <Social />
+              <Social classNameList="space-y-2 laptop:space-y-4 desktop:space-y-8" />
             </div>
           </div>
-          <Button
-            type="button"
-            className="h-12 w-[280px] text-white rounded-full !bg-buttonMobile mb-4"
-          >
-            {button}
-          </Button>
-          <div className="hidden laptop:block text-left">
+          <div className="laptop:hidden">
+            <Button
+              type="button"
+              className="h-12 w-[280px] text-white rounded-full !bg-buttonMobile mb-4"
+            >
+              {button}
+            </Button>
+          </div>
+          <div className="hidden laptop:block laptop:pl-16 desktop:pl-80 text-left">
             <Form
               clickFrom="hero"
-              formClassname="desktop:!m-0 desktop:!mr-auto desktop:!mb-2"
+              formClassname="laptop:mr-auto laptop:mb-13 desktop:mb-2"
             />
           </div>
-          <p className="px-5 font-caveat text-orangeDark text-lg leading-[18px] text-left">
+          <p className="px-5 font-caveat text-orangeDark text-lg leading-[18px] laptop:w-81 laptop:leading-[23px] laptop:ml-16 laptop:p-0 laptop:text-black desktop:ml-80 text-left">
             {data[`${i18n.language}First`]}{' '}
-            <span className="text-black desktop:text-mainSecond">
-              {' '}
+            <span className="text-black laptop:text-orangeDark laptop:font-medium desktop:text-mainSecond">
               {data[`${i18n.language}Discount`]}
             </span>{' '}
             {data[`${i18n.language}Second`]}
@@ -86,16 +102,6 @@ const Hero = () => {
         </Container>
       </div>
       <FormWithBackground clickFrom="hero" />
-      {/* Desktop version */}
-      {/* <div className="relative flex items-start pt-10 px-20 h-[700px]">
-
-        </div>
-        <p className="ml-auto text-28 font-caveat text-white text-left">
-          {hero.if}
-          {hero.emo} <br />
-          {hero.yourLife} {hero.pleasure}
-        </p>
-      </div> */}
     </Section>
   );
 };

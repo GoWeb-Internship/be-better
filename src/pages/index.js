@@ -25,22 +25,24 @@ const IndexPage = () => {
       {/* <main> */}
       <Hero />
       <Container>
-        <Hero />
+        {/* <Hero /> */}
         <AboutMe />
         <Facts />
         <ClientHistory />
         <Formula />
+      </Container>
+      <FormWithBackground clickFrom="main" />
+      <Container>
         <FormWithVideoBg clickFrom="main" />
         <WhyStepsAdd />
         <Price />
         <Guarantee />
         <Couch />
-        <Video />
+        {/* <Video /> */}
         <Steps />
         <Change />
         <BeBetter />
       </Container>
-      <FormWithBackground clickFrom="footer" />
 
       {/* </main> */}
       <script

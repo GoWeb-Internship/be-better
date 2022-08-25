@@ -6,7 +6,7 @@ const NavList = ({ navigation }) => {
   return (
     <ul className="flex">
       {navigation.map(({ id, name }) => (
-        <li key={id} className="mr-10 cursor-pointer">
+        <li key={id} className="cursor-pointer">
           <Link
             to={`${id}`}
             smooth

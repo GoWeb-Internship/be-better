@@ -22,7 +22,7 @@ const HeroBackground = () => {
           className="w-full h-full -z-10 top-0"
         />
       </div>
-      <div className="hidden desktop:block">
+      {/* <div className="hidden desktop:block container m-auto w-[1440px] h-[780px] -z-10 absolute">
         <StaticImage
           layout="fullWidth"
           src="../../images/background/heroDesktop.png"
@@ -30,7 +30,7 @@ const HeroBackground = () => {
           style={{ position: 'absolute' }}
           className="w-1036 h-full -z-10 top-0 right-0"
         />
-      </div>
+      </div> */}
     </>
   );
 };

@@ -154,7 +154,7 @@ const Form = ({
           )}
         />
         <div className={`relative ${checkboxClassname}`}>
-          <label className="flex items-start mt-1 mb-8 pl-2 pt-1">
+          <label className="flex items-start mt-1 mb-8 pl-2 pt-1 laptop:mb-9">
             <input
               type="checkbox"
               name="checkbox"
@@ -164,7 +164,7 @@ const Form = ({
             <div
               className={`${check} ${errors.checkbox ? '!border-error' : ''}`}
             ></div>
-            <span className="ml-3	text-left text-xs text-black ">
+            <span className="ml-3	text-left text-xs text-black laptop:text-white desktop:text-black">
               {data.accept}
             </span>
           </label>

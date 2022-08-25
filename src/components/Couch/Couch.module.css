@@ -1,23 +1,23 @@
 .couchContainer {
-  @apply text-left px-20 pt-[22px] pb-[112px];
+  @apply text-left px-5 pt-8 pb-[38px] laptop:pt-12 laptop:pb-[132px] laptop:px-16 desktop:px-20 desktop:pt-[22px] desktop:pb-[112px];
 }
 
 .flexContainer {
-  @apply flex justify-between;
+  @apply laptop:flex laptop:justify-between text-sm laptop:text-base;
 }
 
 .mainImg {
-  @apply rounded-2xl mt-[98px];
+  @apply rounded-2xl desktop:mt-[98px] w-[134px] h-[160px] laptop:w-[310px] laptop:h-[398px] desktop:w-[366px] desktop:h-[520px];
 }
 
 .title {
-  @apply title-primary desktop:text-34 mb-13 mt-[58px] text-left;
+  @apply w-[134px] title-primary mr-3 laptop:mr-0 laptop:mb-8  laptop:w-[282px] laptop:text-34 desktop:mb-13 desktop:mt-[58px] text-left;
 }
 
 .caveat {
-  @apply text-caveat w-[360px] absolute left-[65%] bottom-[15%];
+  @apply text-caveat w-[360px] absolute left-[210px] bottom-[60px];
 }
 
 .button {
-  @apply h-12  w-70 border border-main rounded-full text-white z-10 mt-[110px];
+  @apply h-12 w-70 border mt-8 border-main rounded-full text-white z-10 laptop:mt-[110px];
 }

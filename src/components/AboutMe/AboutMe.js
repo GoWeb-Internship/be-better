@@ -10,6 +10,7 @@ import {
   caveat,
   aboutMeContainer,
 } from './AboutMe.module.css';
+import icon from '../../images/signature.svg';
 
 const AboutMe = () => {
   const { t } = useTranslation();
@@ -97,14 +98,19 @@ const AboutMe = () => {
           </p>
         </div>
       </div>
-      <StaticImage
+      <div className="w-[265px] mt-8  ml-auto laptop:mr-0 laptop:mt-16 desktop:mt-13">
+        <svg className="w-[212px] ml-auto h-16 laptop:w-[265px] laptop:h-20">
+          <use href={`${icon}#icon-signature`} />
+        </svg>
+      </div>
+      {/* <StaticImage
         className="mx-auto mt-8  laptop:ml-auto laptop:mr-0 laptop:mt-16 desktop:mt-13"
         src="../../images/signature.png"
         width={265}
         height={80}
         layout="fixed"
         alt=""
-      />
+      /> */}
     </Section>
   );
 };

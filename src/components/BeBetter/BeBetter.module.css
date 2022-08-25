@@ -14,14 +14,20 @@
 @apply tablet:text-center tablet:pb-0 tablet:pl-0 laptop:pl-10 text-center 
 }
 .text p{
-    @apply tablet:-ml-8 laptop:w-[120%] laptop:ml-2 text-left
+    @apply tablet:-ml-8 laptop:w-[120%] laptop:ml-2  text-left
 }
 .text li:nth-child(1){
-    @apply laptop:w-72
+    @apply laptop:w-72 desktop:w-[50%]
 }
 .text li:nth-child(2){
-    @apply laptop:w-[140%]
+    @apply laptop:w-[140%] desktop:w-[50%]
 }
 .text li:nth-child(3){
-    @apply laptop:w-[140%]
+    @apply laptop:w-[140%] desktop:w-[50%]
+}
+.text li:nth-child(4){
+    @apply laptop:w-[140%] desktop:w-[50%]
+}
+.text li:nth-child(5){
+    @apply laptop:w-[140%] desktop:w-[50%]
 }

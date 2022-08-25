@@ -111,7 +111,7 @@ const Change = () => {
                       src="../../images/background/union-min.png"
                       alt=""
                       style={{ position: 'absolute' }}
-                      className="tablet:w-[8%] tablet:h-[54%] tablet:mt-[49%]  tablet:ml-20  laptop:mt-[10%] laptop:h-[50%] laptop:w-[5%] -z-10 tablet:top-[20%]  laptop:top-[13%] mt-36 pt-0 ml-[10%] mr-20 "
+                      className="tablet:w-[8%] tablet:h-[48%] tablet:mt-[65%]  tablet:ml-20  laptop:mt-[10%] laptop:h-[55%] laptop:w-[5%] -z-10 tablet:top-[20%]  laptop:top-[13%] mt-36 pt-0 ml-[10%] mr-20 "
                       formats={['auto', 'webp', 'avif']}
                     />
                   </div>
@@ -119,16 +119,7 @@ const Change = () => {
                       <div>
                         <div className={text}>
                         <div className=''>
-                          <div className='laptop:hidden desktop:block'>
-                          <StaticImage
-                      // layout="fullWidth"
-                      src="../../images/background/shadow-min.png"
-                      alt=""
-                      style={{ position: 'absolute' }}
-                      className="mt-[180%] -ml-5"
-                      formats={['auto', 'webp', 'avif']}
-                    />
-                    </div>
+                      
                     
                           </div>
                           <div
@@ -185,7 +176,16 @@ const Change = () => {
                       formats={['auto', 'webp', 'avif']}
                     />
                     </div>
-           
+                    {/* <div className='laptop:hidden desktop:block'>
+                          <StaticImage
+                      // layout="fullWidth"
+                      src="../../images/background/shadow-min.png"
+                      alt=""
+                      style={{ position: 'absolute' }}
+                      className="bottom-0 -mb-32 -ml-56 w-[70%] "
+                      formats={['auto', 'webp', 'avif']}
+                    />
+                    </div> */}
                   </div>
                 </div>
               </div>

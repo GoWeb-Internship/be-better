@@ -29,7 +29,7 @@ const BeBetter = () => {
           if (node.frontmatter.language === i18n.language) {
             return (
               <>
-                <h3 className="tablet:text-xl laptop:text-left laptop:w-[80%] tablet:text-center  tablet:font-medium laptop:font-semibold laptop:text-3xl laptop:pl-10 text-buttonMobile pb-8">
+                <h3 className="tablet:text-xl laptop:text-left laptop:w-[80%] desktop:w-[90%] tablet:text-center desktop:w-[50%]  tablet:font-medium laptop:font-semibold laptop:text-3xl laptop:pl-10 text-buttonMobile pb-8">
                   {node.frontmatter.title}
                 </h3>
                 <div
@@ -42,6 +42,7 @@ const BeBetter = () => {
           }
         })}
       </div>
+      <div className='wr -ml-[30%] -mt-[1%]'>
       <div className=" desktop:mt-8">
         <div className='tablet:hidden desktop:block'>
         <StaticImage
@@ -53,8 +54,19 @@ const BeBetter = () => {
           formats={['auto', 'webp', 'avif']}
         />
         </div>
+        <div className='tablet:hidden laptop:block laptop:mt-[62%]  laptop:-mr-[40%] desktop:mt-[2%] desktop:ml-[15%]  desktop:-mr-0 '>
+        <StaticImage
+          alt=""
+          src="../../images/three-min.png"
+          width=""
+          height=""
+          className=""
+          formats={['auto', 'webp', 'avif']}
+        />
+        </div>
+        </div>
       </div>
-      <div className="tablet:hidden desktop:block  ml-3 w-[90%] h-[5%] desktop:mr-40 z-10 -mt-[2%] -mr-[12%]">
+      <div className="tablet:hidden desktop:block  -ml-3 w-[90%] h-[5%]  z-10 -mt-[2%] desktop:-mr-[60%]">
         <StaticImage
           alt=""
           src="../../images/two-min.png"
@@ -64,17 +76,17 @@ const BeBetter = () => {
           formats={['auto', 'webp', 'avif']}
         />
       </div>
-      <div className='tablet:hidden laptop:block laptop:mt-[62%] -mr-[40%] '>
+      <div className='tablet:hidden  laptop:mt-[62%]  laptop:-mr-[40%] desktop:mt-[10%] desktop:-ml-[120%] desktop:-mr-0'>
         <StaticImage
           alt=""
           src="../../images/three-min.png"
           width=""
           height=""
-          className="desktop:ml-12 desktop:mt-5"
+          className=""
           formats={['auto', 'webp', 'avif']}
         />
         </div>
-      <div className="desktop:hidden -mt-[2%] mr-[4%]  ml-8 w-[90%] h-[5%] desktop:mr-40 z-10 ">
+      <div className="desktop:hidden  -mt-[2%] mr-[4%]  ml-3 w-[90%] h-[5%] desktop:mr-40 z-10 laptop:ml-8">
         <StaticImage
           alt=""
           src="../../images/background/bokalu.png"

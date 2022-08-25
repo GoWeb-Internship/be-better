@@ -1,5 +1,5 @@
     .form {
-        @apply relative w-70 m-auto z-10 desktop:w-81;
+        @apply relative w-70 z-10 laptop:w-80
     }
     .input {
         @apply w-full mb-3 pl-8 h-11 border border-main rounded-full outline-none text-main desktop:border-transparent desktop:shadow-formInput;
@@ -15,7 +15,7 @@
         @apply !pl-[72px] !h-11 text-main !border-buttonMobile desktop:!border-hidden !w-full !rounded-full desktop:shadow-formInput desktop:text-likeGrey;
     }
     .phonedropdown {
-        @apply left-0 top-0 !m-0 !pl-8 !w-70 desktop:!w-81 text-left !rounded-2xl snap-start;
+        @apply left-0 top-0 !m-0 !pl-8 !w-70 laptop:!w-80 text-left !rounded-2xl snap-start;
     }
         .phonedropdown::-webkit-scrollbar {
             @apply w-4 bg-[#e4eaeb];
@@ -47,12 +47,12 @@
 }
 
 .checkbox:checked + .check {
-  @apply  bg-[url('../../images/check.svg')] bg-no-repeat bg-left;
+  @apply  bg-[url('../../images/check.svg')] bg-no-repeat bg-left laptop:bg-[url('../../images/checkWhite.svg')] desktop:bg-[url('../../images/check.svg')];
 
 }
 
 .check {
-    @apply mt-1 min-w-[16px] min-h-[16px] border-2 border-main desktop:border-likeGrey rounded-[5px];
+    @apply mt-1 min-w-[16px] min-h-[16px] border-2 border-main  desktop:border-likeGrey rounded-[5px];
 }
 /* анимация галочки */
 /* #anim-one {

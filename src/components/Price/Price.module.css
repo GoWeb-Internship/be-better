@@ -28,7 +28,7 @@
 }
 
 .formmargin {
-  @apply mb-2 desktop:mb-8;
+  @apply mb-2 m-auto desktop:mb-8;
 }
 
 .formtext {
@@ -60,4 +60,8 @@
 
 .buttonStyled {
   @apply px-20 rounded-3xl border border-none laptop:px-10 desktop:px-[88px] py-[11px];
+}
+
+.donation {
+  @apply text-center m-auto w-70 mt-4 text-[9px] laptop:mt-12 laptop:text-base laptop:w-480 desktop:mt-14;
 }

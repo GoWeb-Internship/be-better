@@ -1,5 +1,5 @@
 .list {
-  @apply flex flex-col space-y-2 desktop:space-y-8;
+  @apply flex flex-col;
 }
 
 .link {

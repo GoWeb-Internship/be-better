@@ -1,8 +1,8 @@
 import React from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
 import { useTranslation } from 'gatsby-plugin-react-i18next';
-import { donation } from './Donation.module.css';
-const Donations = () => {
+
+const Donations = ({ className = '', classNameText = '' }) => {
   const { i18n } = useTranslation();
   const { allMarkdownRemark } = useStaticQuery(graphql`
     query {
@@ -22,8 +22,8 @@ const Donations = () => {
   const [frontmatter] = allMarkdownRemark.nodes;
   const text = frontmatter.frontmatter[`${i18n.language}Donations`];
   return (
-    <div className={donation}>
-      <p>{text}</p>
+    <div className={`${className}`}>
+      <p className={`${classNameText}`}>{text}</p>
     </div>
   );
 };

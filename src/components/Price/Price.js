@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
 import Section from '../reusableComponents/Section';
-import { container, list, item, title } from './Price.module.css';
+import { container, list, item, title, donation } from './Price.module.css';
 import { useTranslation } from 'gatsby-plugin-react-i18next';
 import PriceCard from './PriceCard';
 import Donations from '../Donations';
@@ -88,7 +88,7 @@ const Price = () => {
           currentPrice={currentPrice}
         />
       )}
-      <Donations />
+      <Donations className={donation} />
     </Section>
   );
 };

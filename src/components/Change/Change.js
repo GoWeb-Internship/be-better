@@ -100,7 +100,15 @@ const Change = () => {
                       src="../../images/background/arrow-min.png"
                       alt=""
                       style={{ position: 'absolute' }}
-                      className="-z-10   top-0 mt-40 pt-36 tablet:hidden desktop:block desktop:ml-10 mr-20 "
+                      className="tablet:hidden desktop:block -z-10   top-0 mt-40 pt-36  desktop:ml-10 mr-20 "
+                      formats={['auto', 'webp', 'avif']}
+                    />
+                    <StaticImage
+                      // layout="fullWidth"
+                      src="../../images/background/union-min.png"
+                      alt=""
+                      style={{ position: 'absolute' }}
+                      className=" desktop:hidden -z-10   top-[10%] mt-36 pt-0 ml-[10%] mr-20 "
                       formats={['auto', 'webp', 'avif']}
                     />
                     <div>

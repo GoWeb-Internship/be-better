@@ -1,5 +1,5 @@
 .changeTitle {
-  @apply font-semibold text-3xl  text-orangeDark pt-6 text-start max-w-xs desktop:max-w-xl ml-11;
+  @apply font-semibold text-3xl   text-orangeDark pt-13 text-start max-w-xs desktop:max-w-xl ml-11;
 }
 .text {
   @apply font-normal text-base text-start max-w-3xl desktop:max-w-xl pt-0 desktop:pt-14 desktop:ml-20 pl-10 desktop:mr-10 mt-12;
@@ -14,13 +14,13 @@
   @apply laptop:w-96 desktop:w-full
 }
 .text p:nth-child(2){
-  @apply laptop:max-w-3xl desktop:w-full
+  @apply laptop:max-w-2xl desktop:w-full
 }
 .text p:nth-child(3){
-  @apply laptop:max-w-3xl desktop:w-full
+  @apply laptop:max-w-2xl desktop:w-full
 }
 .text p:nth-child(4){
-  @apply laptop:max-w-3xl desktop:w-full
+  @apply laptop:max-w-2xl desktop:w-full
 }
 .modalform {
   @apply w-[440px] h-[560px] pt-14 text-xl bg-background text-center;
@@ -29,5 +29,5 @@
   @apply text-base pb-5;
 }
 .formtextmain {
-  @apply text-base pt-5;
+  @apply laptop:max-w-3xl desktop:w-full text-base pt-5;
 }

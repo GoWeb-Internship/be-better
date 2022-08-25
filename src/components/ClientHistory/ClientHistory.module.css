@@ -8,3 +8,7 @@
 .profession {
   @apply text-likeGrey laptop:mb-4;
 }
+
+.screenCss {
+  @apply tablet:w-80;
+}

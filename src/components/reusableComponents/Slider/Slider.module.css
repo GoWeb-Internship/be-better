@@ -1,0 +1,3 @@
+.slider {
+  @apply mx-auto w-80 laptop:w-[600px]  desktop:w-[1248px] pb-[5px];
+}

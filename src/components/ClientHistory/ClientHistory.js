@@ -4,8 +4,9 @@ import { graphql, useStaticQuery } from 'gatsby';
 import Section from '../reusableComponents/Section';
 import { SwiperSlide } from 'swiper/react';
 import Slider from '../reusableComponents/Slider';
-import { title, name, profession } from './ClientHistory.module.css';
+import { title, name, profession, screenCss } from './ClientHistory.module.css';
 import { FaQuoteLeft } from 'react-icons/fa';
+
 const ClientHistory = () => {
   const { t, i18n } = useTranslation();
 

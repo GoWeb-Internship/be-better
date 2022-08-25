@@ -1,12 +1,13 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { BsPerson } from 'react-icons/bs';
+import { reviewContainer } from './Reviews.module.css';
 
 const Review = ({ frontmatter }) => {
   const { i18n } = useTranslation();
 
   return (
-    <div className="flex flex-col justify-between w-80 h-[360px] text-left px-8 pb-8 pt-10 bg-white rounded-2xl shadow-you">
+    <div className={reviewContainer}>
       <div>
         <p>{frontmatter[`${i18n.language}Text`]}</p>
       </div>

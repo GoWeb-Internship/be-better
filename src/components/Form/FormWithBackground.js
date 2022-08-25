@@ -22,7 +22,7 @@ const FormWithBackground = ({ clickFrom }) => {
           {hero.emo} <br />
           {hero.yourLife} {hero.pleasure}
         </p>
-        <Form clickFrom={clickFrom} />
+        <Form clickFrom={clickFrom} formClassname="m-auto" />
       </Container>
     </div>
   );

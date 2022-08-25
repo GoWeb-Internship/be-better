@@ -1,9 +1,13 @@
 .footerContainer{
-    @apply container m-auto relative h-[420px] ;
+    @apply relative w-full h-[480px] desktop:h-[420px] bg-bright;
 }
 .list{
-    @apply flex text-left ml-74 mr-[420px];
+    @apply flex space-x-2 ml-[70px] desktop:mr-[420px];
 }
 .link{
-    @apply text-black font-normal text-sm ;
+    @apply text-black text-xs text-left laptop:text-sm ;
+}
+
+.donate {
+    @apply ml-[70px] text-xs mb-6 text-left;
 }

@@ -21,12 +21,12 @@ const Header = ({ siteTitle }) => {
       {showNav ? (
         <BurgerMenu toggleNav={toggleNav} />
       ) : (
-        <div className="container m-auto  flex justify-end laptop:justify-between w-80 laptop:h-20 desktop:w-[1440px] py-1 px-5 desktop:px-20  items-center">
+        <div className="container m-auto flex justify-end laptop:justify-between w-80 laptop:h-20 laptop:w-768 desktop:w-[1440px] py-1 px-5 laptop:px-16 desktop:px-20  items-center">
           <Link
             to="#home"
-            className="mr-auto hover:scale-110 transition-transform"
+            className="mr-auto laptop:mr-2 hover:scale-110 transition-transform"
           >
-            <svg className="w-[72px] h-11">
+            <svg className="w-[72px] h-11 laptop:w-20 laptop:h-12 desktop:w-[90px] desktop:h-14">
               <use href={`${icons}#logo`} />
             </svg>
           </Link>

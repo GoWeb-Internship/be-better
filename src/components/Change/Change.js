@@ -108,22 +108,23 @@ const Change = () => {
                       src="../../images/background/union-min.png"
                       alt=""
                       style={{ position: 'absolute' }}
-                      className=" desktop:hidden h-[50%] w-[10%] -z-10 tablet:top-[27%]  laptop:top-[10%] mt-36 pt-0 ml-[10%] mr-20 "
+                      className="tablet:w-[10%] tablet:h-[54%]  tablet:ml-20 desktop:hidden laptop:h-[50%] laptop:w-[5%] -z-10 tablet:top-[23%]  laptop:top-[10%] mt-36 pt-0 ml-[10%] mr-20 "
                       formats={['auto', 'webp', 'avif']}
                     />
-                   <div className='mt-96'>
+                  
+                    <div>
+                      <div>
+                        <div className={text}>
+                        <div className=''>
                           <StaticImage
                       // layout="fullWidth"
                       src="../../images/background/shadow-min.png"
                       alt=""
                       style={{ position: 'absolute' }}
-                      className=" laptop:hidden "
+                      className=" laptop:hidden mt-[190%] -ml-5"
                       formats={['auto', 'webp', 'avif']}
                     />
                           </div>
-                    <div>
-                      <div>
-                        <div className={text}>
                           <div
                             key={node.frontmatter.language}
                             dangerouslySetInnerHTML={{ __html: node.html }}

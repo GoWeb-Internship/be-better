@@ -108,9 +108,19 @@ const Change = () => {
                       src="../../images/background/union-min.png"
                       alt=""
                       style={{ position: 'absolute' }}
-                      className=" desktop:hidden -z-10   top-[10%] mt-36 pt-0 ml-[10%] mr-20 "
+                      className=" desktop:hidden h-[50%] w-[10%] -z-10 tablet:top-[27%]  laptop:top-[10%] mt-36 pt-0 ml-[10%] mr-20 "
                       formats={['auto', 'webp', 'avif']}
                     />
+                   <div className='mt-96'>
+                          <StaticImage
+                      // layout="fullWidth"
+                      src="../../images/background/shadow-min.png"
+                      alt=""
+                      style={{ position: 'absolute' }}
+                      className=" laptop:hidden "
+                      formats={['auto', 'webp', 'avif']}
+                    />
+                          </div>
                     <div>
                       <div>
                         <div className={text}>
@@ -118,6 +128,7 @@ const Change = () => {
                             key={node.frontmatter.language}
                             dangerouslySetInnerHTML={{ __html: node.html }}
                           />
+                          
                           <p className={discountStyle}>
                             {disc[`${i18n.language}First`]}{' '}
                             <span className="text-black font-semibold">
@@ -126,6 +137,7 @@ const Change = () => {
                             </span>{' '}
                             {disc[`${i18n.language}Second`]}
                           </p>
+                  
                         </div>
                         <Button
                           type="button"
@@ -162,7 +174,7 @@ const Change = () => {
                       src="../../images/background/julia-min.png"
                       alt=""
                       style={{ position: 'absolute' }}
-                      className="-z-10 -20  laptop:mt-8  desktop:mt top-0 w-1/3 h-11/12 "
+                      className="tablet:-ml-[70%] z-10 tablet:mt-50 tablet:w-2/3 -z-10 -20 laptop:ml-0 laptop:mt-8  desktop:mt top-0 laptop:w-1/3 h-11/12 "
                       formats={['auto', 'webp', 'avif']}
                     />
                     </div>

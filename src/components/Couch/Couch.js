@@ -34,56 +34,105 @@ const Couch = () => {
   return (
     <Section className={couchContainer}>
       <div className={flexContainer}>
-        <StaticImage
-          placeholder="blurred"
-          width={366}
-          height={520}
-          layout="fixed"
-          formats={['auto', 'webp', 'avif']}
-          alt="author with notebook"
-          src="../../images/withNote.jpg"
-          className={mainImg}
-        />
+        <div className="flex laptop:block">
+          <h3 className={`${title} laptop:hidden`}>{couch.title}</h3>
+          <StaticImage
+            placeholder="blurred"
+            layout="constrained"
+            formats={['auto', 'webp', 'avif']}
+            alt="author with notebook"
+            src="../../images/withNote.jpg"
+            className={`${mainImg} hidden laptop:block`}
+          />
+          <StaticImage
+            placeholder="blurred"
+            layout="constrained"
+            formats={['auto', 'webp', 'avif']}
+            alt="author with notebook"
+            src="../../images/withNoteMob.jpg"
+            className={`${mainImg} laptop:hidden`}
+          />
+        </div>
+
         <div>
-          <div className="w-[326px] relative">
-            <h3 className={title}>{couch.title}</h3>
-            <p className="pb-6 ">{couch.mySelf}</p>
-            <p className="pb-6 ">{couch.course}</p>
-            <p className="pb-12 ">{couch.noTime}</p>
-            <p className={caveat}>{couch.mySelf}</p>
+          <div className="laptop:w-[310px] desktop:w-[326px] relative laptop:leading-[1.36]">
+            <h3 className={`${title} hidden laptop:block`}>{couch.title}</h3>
+            <p className="mb-2 laptop:mb-4 desktop:mb-6 ">{couch.mySelf}</p>
+            <p className="mb-2 laptop:mb-4 desktop:mb-6 ">{couch.course}</p>
+            <p className="desktop:mb-12 ">{couch.noTime}</p>
+            <p className={`${caveat} hidden laptop:hidden desktop:block`}>
+              {couch.mySelf}
+            </p>
+            <div className=" hidden desktop:block">
+              <Button
+                type="button"
+                className={`${button} !mt-[180px]`}
+                doAction={() => showModal()}
+              >
+                {form.button}
+              </Button>
+            </div>
+          </div>
+        </div>
+        <div className="relative laptop:hidden desktop:block">
+          <div className=" laptop:hidden desktop:block">
+            <StaticImage
+              src="../../images/note.jpg"
+              placeholder="blurred"
+              formats={['auto', 'webp', 'avif']}
+              layout="fullWidth"
+              alt="notebook"
+              className="mt-4 rounded-2xl desktop:w-[416px] desktop:h-[280px]"
+            />
+            <p className="mt-[58px] w-81">{couch.why}</p>
+            <div className="desktop:hidden">
+              <Button
+                type="button"
+                className={`${button}  !ml-0  !mt-12 `}
+                doAction={() => showModal()}
+              >
+                {form.button}
+              </Button>
+            </div>
+            <div className="hidden laptop:block absolute right-0 rounded-2xl mt-[20px] mr-auto">
+              <StaticImage
+                src="../../images/skyscraper.jpg"
+                placeholder="blurred"
+                formats={['auto', 'webp', 'avif']}
+                width={160}
+                height={176}
+                layout="fixed"
+                alt="skyscraper"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="hidden laptop:block laptop:mt-8 laptop:w-auto desktop:hidden">
+        <p className="laptop:w-auto">{couch.why}</p>
+        <div className="flex justify-between mt-8">
+          <div className="w-[420px] ">
+            <p className="text-caveat leading-[1.08]">{couch.mySelf}</p>
             <Button
               type="button"
-              className={button}
+              className={`${button} !ml-0  !mt-12 `}
               doAction={() => showModal()}
             >
               {form.button}
             </Button>
           </div>
+          <div className="w-[201px] h-[174px]">
+            <StaticImage
+              src="../../images/skyscraperMob.jpg"
+              placeholder="blurred"
+              formats={['auto', 'webp', 'avif']}
+              layout="fullWidth"
+              alt="skyscraper"
+            />
+          </div>
         </div>
-        <div className="relative">
-          <StaticImage
-            src="../../images/note.jpg"
-            placeholder="blurred"
-            formats={['auto', 'webp', 'avif']}
-            width={416}
-            height={280}
-            layout="fixed"
-            alt="notebook"
-            className="rounded-2xl"
-          />
-          <p className="mt-[58px] w-81">{couch.why}</p>
-          {/* <StaticImage
-            src="../../images/skyscraper.jpg"
-            placeholder="blurred"
-            formats={['auto', 'webp', 'avif']}
-            width={160}
-            height={176}
-            layout="fixed"
-            alt="skyscraper"
-            className="absolute right-0 rounded-2xl mt-[38px] mr-auto "
-          /> */}
-        </div>
-      </div>{' '}
+      </div>
       {modal && (
         <ModalWindow className={modalform} handleClose={hideModal}>
           <>

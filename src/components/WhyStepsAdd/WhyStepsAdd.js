@@ -18,7 +18,7 @@ const StepsAdd = () => {
           src="../../images/background/str-min.png"
           alt=""
           style={{ position: 'absolute' }}
-          className="w-[416px] h-[128px] z-1  pl-40 left-2/4 top-[35%] "
+          className="w-[416px] h-[128px] tablet:hidden laptop:block  laptop:left-1/4 z-1 laptop:top-[45%]  desktop:pl-40 desktop:left-2/4 desktop:top-[35%] "
         />
 
         <StaticImage

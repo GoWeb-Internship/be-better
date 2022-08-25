@@ -74,7 +74,7 @@ const Change = () => {
                   src="../../images/background/fon-min.png"
                   alt=""
                   style={{ position: 'absolute' }}
-                  className="w-3/4 -z-10 top-0 ml-80 mb-16 pr-0 max-w-5xl"
+                  className=" -z-10 mt-5  laptop:w-[57%] ml-80 mb-16 pr-0 desktop:top-0 desktop:mt-0 desktop:w-3/4 max-w-5xl"
                   formats={['auto', 'webp', 'avif']}
                 />
                 <StaticImage
@@ -82,7 +82,7 @@ const Change = () => {
                   src="../../images/background/fontwo-min.png"
                   alt=""
                   style={{ position: 'absolute' }}
-                  className="-z-20 top-0 w-full h-full mt-20  max-w-full"
+                  className="-z-20 top-0 w-full h-full   mt-20  max-w-full"
                   formats={['auto', 'webp', 'avif']}
                 />
                 <h3 className={changeTitle}>{node.frontmatter.title}</h3>
@@ -100,7 +100,7 @@ const Change = () => {
                       src="../../images/background/arrow-min.png"
                       alt=""
                       style={{ position: 'absolute' }}
-                      className="-z-10   top-0 mt-40 pt-36  ml-10 mr-20 "
+                      className="-z-10   top-0 mt-40 pt-36 tablet:hidden desktop:block desktop:ml-10 mr-20 "
                       formats={['auto', 'webp', 'avif']}
                     />
                     <div>
@@ -121,7 +121,7 @@ const Change = () => {
                         </div>
                         <Button
                           type="button"
-                          className="!bg-mainSecond border !mt-5 px-16 !ml-28 py-2 rounded-3xl hover:!bg-[#d46828] ease-in duration-300"
+                          className="!bg-mainSecond border !mt-5 px-16 !ml-8 desktop:!ml-28 py-2 rounded-3xl hover:!bg-[#d46828] ease-in duration-300"
                           doAction={() => showModal()}
                         >
                           {buttonTranslate.button}
@@ -148,22 +148,17 @@ const Change = () => {
                     )}
                   </div>
                   <div>
+                    <div className='laptop:-ml-72 desktop:ml-20'>
                     <StaticImage
                       layout="fullWidth"
                       src="../../images/background/julia-min.png"
                       alt=""
                       style={{ position: 'absolute' }}
-                      className="-z-10 mt-20 ml-20 top-0 w-1/3 h-11/12 "
+                      className="-z-10 -20  laptop:mt-8  desktop:mt top-0 w-1/3 h-11/12 "
                       formats={['auto', 'webp', 'avif']}
                     />
-                    {/* <StaticImage
-          
-          src="../../images/julia-min.png"
-          className='w-120 h-177  mr-4 -z-10 ml-20'
-          style={{ position: 'absolute' }}
-          alt=""
-          layout="fullWidth"
-        /> */}
+                    </div>
+           
                   </div>
                 </div>
               </div>

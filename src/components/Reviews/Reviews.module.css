@@ -1,5 +1,5 @@
 .reviewContainer {
-  @apply flex flex-col justify-between w-80 h-[360px] text-left px-8 pb-8 pt-10 bg-white rounded-2xl shadow-you;
+  @apply text-xs flex  flex-col px-2 py-4 justify-between w-[176px] h-[184px] laptop:text-base desktop:w-80 desktop:h-[360px] text-left desktop:px-8 desktop:pb-8 desktop:pt-10 bg-white rounded-2xl shadow-you;
 }
 
 .title {

@@ -70,7 +70,11 @@ img {
 .react-tel-input .country-list .country:hover {
   @apply text-main !bg-transparent;
 }
-/*  */
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  display: none;
+}
 
 .prev-slider,
 .next-slider {
@@ -82,14 +86,15 @@ img {
   cursor: pointer;
   transition: opacity 200ms linear;
   z-index: 1000;
+  color: #00a5cc;
 }
 
 .prev-slider {
-  left: 0;
+  left: 80px;
 }
 
 .next-slider {
-  right: 0;
+  right: 80px;
 }
 
 .slide.h-auto {

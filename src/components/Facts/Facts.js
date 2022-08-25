@@ -34,7 +34,7 @@ const Facts = () => {
         />
         <StaticImage
           alt="foto"
-          src="../../images/factFoto.jpg"
+          src="../../images/factsFoto.jpg"
           className="hidden rounded-2xl desktop:ml-13 desktop:block desktop:w-[380px] desktop:h-[560px] "
           placeholder="blurred"
           formats={['auto', 'webp', 'avif']}

@@ -16,7 +16,7 @@ const Review = ({ frontmatter }) => {
           <BsPerson size={24} />
         </div>
         <div>
-          <p className="text-xl font-bold">
+          <p className="  laptop:text-xl font-bold">
             {frontmatter[`${i18n.language}Name`]}
           </p>
           <p>{frontmatter[`${i18n.language}Position`]}</p>

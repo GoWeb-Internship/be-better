@@ -31,7 +31,7 @@ const BeBetter = () => {
           if (node.frontmatter.language === i18n.language) {
             return (
               <>
-                <h3 className='text-buttonMobile font-medium text-xl text-center ml-2 mr-2 mt-4 mb-3 laptop:font-semibold laptop:text-4xl laptop:pl-18 laptop:ml-32 desktop:w-[500px] desktop:ml-48 desktop:text-left desktop:pr-10'>
+                <h3 className='text-buttonMobile font-medium text-xl text-center ml-2 mr-2 mt-4 mb-3 laptop:mb-12 laptop:font-semibold laptop:text-4xl laptop:pl-18 laptop:ml-32 desktop:w-[500px] desktop:ml-36 desktop:text-left desktop:pr-10'>
                   {node.frontmatter.title}
                 </h3>
                 <div
@@ -45,7 +45,7 @@ const BeBetter = () => {
         })}
       </div>
       <div className='desktop:flex desktop:-mr-40'>
-      <div className='laptop:-ml-24 desktop:-ml-16'>
+      <div className='laptop:-ml-24 desktop:-ml-16 desktop:pr-2'>
         <div className="tablet:hidden desktop:block desktop:mt-14 desktop:mb-8">
             <StaticImage
               alt=""
@@ -62,7 +62,7 @@ const BeBetter = () => {
             src="../../images/three-min.png"
             width=""
             height=""
-            className="ml-8 rounded-2xl laptop:w-[200px] laptop:h-[162px] mb-4 desktop:w-[204px] desktop:h-[280]"
+            className="ml-8 rounded-2xl laptop:w-[200px] laptop:h-[162px] laptop:-ml-10 mb-4 mt-2 desktop:-ml-2 desktop:w-[204px] desktop:h-[280]"
             formats={['auto', 'webp', 'avif']}
           />
         </div>
@@ -71,7 +71,7 @@ const BeBetter = () => {
           <StaticImage
             alt=""
             src="../../images/background/bokalu.png"
-            className="laptop:pt-20  laptop:w-[310px] laptop:h-[450px] rounded-2xl desktop:w-[308] desktop:h-[440]"
+            className="laptop:pt-20 laptop:-ml-10  laptop:w-[250px] laptop:h-[382px] mr-5 rounded-2xl desktop:ml-0 desktop:w-[308] desktop:h-[440]"
             width=""
             height=""
             formats={['auto', 'webp', 'avif']}

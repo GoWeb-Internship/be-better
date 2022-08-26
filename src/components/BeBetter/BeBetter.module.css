@@ -8,30 +8,11 @@
     @apply pb-3 text-start font-normal text-base list-disc mb-2 marker:text-main 
 }
 .textBeBetter{
-    @apply font-normal text-xs laptop:w-[500px] laptop:pl-8 desktop:pl-32 desktop:w-[576px]
+    @apply font-normal text-xs laptop:w-[500px] laptop:pl-8 desktop:pl-40 desktop:w-[576px]
 }
 .text-caveat{
-    @apply pt-40 desktop:-ml-10
+    @apply pt-40 desktop:-ml-6
 }
-
-/* .text ol{
-@apply tablet:text-center tablet:pb-0 tablet:pl-0 laptop:pl-10 text-center desktop:pl-0
-}
-.text p{
-    @apply tablet:-ml-8 laptop:w-[120%] laptop:ml-2  text-left
-}
-.text li:nth-child(1){
-    @apply laptop:w-[74%] pt-2 desktop:w-[50%]
-}
-.text li:nth-child(2){
-    @apply laptop:w-[99%] desktop:w-[50%]
-}
-.text li:nth-child(3){
-    @apply laptop:w-[74%] desktop:w-[50%]
-}
-.text li:nth-child(4){
-    @apply laptop:w-[74%] desktop:w-[50%]
-}
-.text li:nth-child(5){
-    @apply laptop:w-[74%] desktop:w-[50%]
+/* .titleBeBetter{
+    @apply text-buttonMobile font-medium text-xl text-center ml-2 mt-4 mb-3 laptop:mb-12 laptop:font-semibold laptop:text-4xl laptop:pl-18 laptop:ml-32 desktop:w-[500px] desktop:ml-36 desktop:mb-4 desktop:text-left desktop:pr-10
 } */

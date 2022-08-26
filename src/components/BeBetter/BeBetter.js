@@ -2,7 +2,7 @@ import React from 'react';
 import { StaticImage } from 'gatsby-plugin-image';
 import { graphql, useStaticQuery } from 'gatsby';
 import { useTranslation } from 'gatsby-plugin-react-i18next';
-import { textBeBetter } from './BeBetter.module.css';
+import { textBeBetter, title } from './BeBetter.module.css';
 import Section from '../reusableComponents/Section';
 
 const BeBetter = () => {
@@ -31,7 +31,7 @@ const BeBetter = () => {
           if (node.frontmatter.language === i18n.language) {
             return (
               <>
-                <h3 className='text-buttonMobile font-medium text-xl text-center ml-2 mr-2 mt-4 mb-3 laptop:mb-12 laptop:font-semibold laptop:text-4xl laptop:pl-18 laptop:ml-32 desktop:w-[500px] desktop:ml-36 desktop:text-left desktop:pr-10'>
+                <h3 className=' text-buttonMobile font-medium text-xl text-center ml-2 mt-4 mb-3 laptop:mb-12 laptop:font-semibold laptop:text-4xl laptop:pl-18 laptop:ml-32 desktop:w-[500px] desktop:ml-40 desktop:mb-4 desktop:text-left desktop:pr-10'>
                   {node.frontmatter.title}
                 </h3>
                 <div
@@ -44,7 +44,7 @@ const BeBetter = () => {
           }
         })}
       </div>
-      <div className='desktop:flex desktop:-mr-40'>
+      <div className='desktop:flex '>
       <div className='laptop:-ml-24 desktop:-ml-16 desktop:pr-2'>
         <div className="tablet:hidden desktop:block desktop:mt-14 desktop:mb-8">
             <StaticImage
@@ -71,7 +71,7 @@ const BeBetter = () => {
           <StaticImage
             alt=""
             src="../../images/background/bokalu.png"
-            className="laptop:pt-20 laptop:-ml-10  laptop:w-[250px] laptop:h-[382px] mr-5 rounded-2xl desktop:ml-0 desktop:w-[308] desktop:h-[440]"
+            className="tablet:ml-[10px] laptop:pt-20 laptop:-ml-10  laptop:w-[250px] laptop:h-[382px] mr-5 rounded-2xl desktop:ml-0 desktop:w-[308] desktop:h-[440]"
             width=""
             height=""
             formats={['auto', 'webp', 'avif']}

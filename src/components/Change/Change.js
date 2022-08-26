@@ -95,6 +95,7 @@ const Change = () => {
           style={{ position: 'absolute' }}
           className="top-0 mt-48 pt-16  ml-10 mr-20 "
         /> */}
+        <div className='tablet:hidden desktop:block'>
                     <StaticImage
                       // layout="fullWidth"
                       src="../../images/background/arrow-min.png"
@@ -103,27 +104,23 @@ const Change = () => {
                       className="tablet:hidden desktop:block -z-10   top-0 mt-40 pt-36  desktop:ml-10 mr-20 "
                       formats={['auto', 'webp', 'avif']}
                     />
+                    </div>
+                    <div className='desktop:hidden'>
                     <StaticImage
                       // layout="fullWidth"
                       src="../../images/background/union-min.png"
                       alt=""
                       style={{ position: 'absolute' }}
-                      className="tablet:w-[8%] tablet:h-[54%] tablet:mt-[49%]  tablet:ml-20 desktop:hidden laptop:mt-[14%] laptop:h-[50%] laptop:w-[5%] -z-10 tablet:top-[20%]  laptop:top-[13%] mt-36 pt-0 ml-[10%] mr-20 "
+                      className="tablet:w-[5%] tablet:h-[47%] tablet:mt-[62%]  tablet:ml-20  laptop:mt-[10%] laptop:h-[50%] laptop:w-[5%] -z-10 tablet:top-[20%]  laptop:top-[17%] mt-36 pt-0 ml-[10%] mr-20 "
                       formats={['auto', 'webp', 'avif']}
                     />
-                  
+                  </div>
                     <div>
                       <div>
                         <div className={text}>
                         <div className=''>
-                          <StaticImage
-                      // layout="fullWidth"
-                      src="../../images/background/shadow-min.png"
-                      alt=""
-                      style={{ position: 'absolute' }}
-                      className=" laptop:hidden mt-[180%] -ml-5"
-                      formats={['auto', 'webp', 'avif']}
-                    />
+                      
+                    
                           </div>
                           <div
                             key={node.frontmatter.language}
@@ -179,7 +176,16 @@ const Change = () => {
                       formats={['auto', 'webp', 'avif']}
                     />
                     </div>
-           
+                    {/* <div className='laptop:hidden desktop:block'>
+                          <StaticImage
+                      // layout="fullWidth"
+                      src="../../images/background/shadow-min.png"
+                      alt=""
+                      style={{ position: 'absolute' }}
+                      className="bottom-0 -mb-32 -ml-56 w-[70%] "
+                      formats={['auto', 'webp', 'avif']}
+                    />
+                    </div> */}
                   </div>
                 </div>
               </div>

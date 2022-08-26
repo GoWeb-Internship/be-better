@@ -82,7 +82,9 @@
   .itemFacts {
     @apply relative w-48;
   }
-  
+  .itemFactsMob{
+    @apply relative w-48;
+  }
   .iconFacts-template {
     position: absolute;
     display: block;
@@ -130,10 +132,18 @@
     background-color: #9DE9FA;
 
   }
-/* 
-  .iconFacts-template{
-    @apply iconFacts-template;
-    tablet:visible ;
-    laptop:block
-  } */
- 
+
+  .itemFacts::after{
+    @apply tablet:visible laptop:block
+  }
+
+  @media screen and (tablet){
+    .iconFacts-template{
+      visibility: visible;
+    }
+  }
+  @media screen and (min-width: 768px){
+    .iconFacts-template{
+      display: block;
+    }
+  }

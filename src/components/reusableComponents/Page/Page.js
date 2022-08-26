@@ -1,6 +1,7 @@
 import React from 'react'
 import { titleFacts,iconFacts, listFacts, itemFacts, svgBgFacts, svgContainerFacts, textContainer, textPr, iconClass, testSec,} from './Page.module.css'
 
+
 const Page = ({ icons = '', data = {}, img ='', icon='' }) => {
 
   return (
@@ -12,7 +13,6 @@ const Page = ({ icons = '', data = {}, img ='', icon='' }) => {
             return (
               <li className={itemFacts} key={icons}>
             <div><p className={textPr}>{textPrimary}</p></div>
-
             <div className={iconClass}>
                 <svg className="tablet:hidden desktop:block  desktop:w-10 desktop:h-10 desktop:-mt-20 desktop:ml-6">
                     <use className='desktop:w-10 desktop:h-10 desktop:-mt-40'  href={`${icons}#icon-${icon}`} />

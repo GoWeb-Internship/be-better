@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { BsPerson } from 'react-icons/bs';
-import { reviewContainer, button } from './Reviews.module.css';
+import { reviewContainer, textContainer } from './Reviews.module.css';
 import Button from '../reusableComponents/Button';
 
 const Review = ({ frontmatter }) => {
@@ -10,7 +10,7 @@ const Review = ({ frontmatter }) => {
 
   useEffect(() => {
     if (showAllReview) {
-      setOverflow('overflow-x-scroll');
+      setOverflow('overflow-auto');
       return;
     } else {
       setOverflow('overflow-hidden');
@@ -26,7 +26,7 @@ const Review = ({ frontmatter }) => {
   const button = t('littleComponents', { returnObjects: true });
   return (
     <div className={reviewContainer}>
-      <div className={overflow}>
+      <div className={`${overflow} ${textContainer}`}>
         <div>
           <p>{frontmatter[`${i18n.language}Text`]}</p>
         </div>

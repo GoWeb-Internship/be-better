@@ -23,13 +23,13 @@ const BeBetter = () => {
   `);
   const data = allMarkdownRemark.nodes;
   return (
-    <div className="laptop:flex laptop:justify-between laptop:pb-24 laptop:text-left ">
-      <div className="tablet:mr-10 tablet:ml-10 desktop:mr-10  desktop:ml-40">
+    <div className="laptop:flex laptop:justify-between  laptop:text-left ">
+      <div className="tablet:mr-10 tablet:ml-10  desktop:mr-10  desktop:ml-40">
         {data.map(node => {
           if (node.frontmatter.language === i18n.language) {
             return (
               <>
-                <h3 className="tablet:text-xl laptop:text-left laptop:w-[80%] desktop:w-[90%] tablet:text-center desktop:w-[50%]  tablet:font-medium laptop:font-semibold laptop:text-3xl laptop:pl-10 desktop:pl-0 text-buttonMobile pb-8">
+                <h3 className="tablet:text-xl laptop:text-left laptop:w-[80%] desktop:w-[90%] tablet:text-center desktop:w-[50%]  tablet:font-medium laptop:w-[50%] laptop:font-semibold laptop:text-3xl laptop:pl-10 desktop:pl-0 text-buttonMobile pb-8">
                   {node.frontmatter.title}
                 </h3>
                 <div
@@ -76,17 +76,9 @@ const BeBetter = () => {
           formats={['auto', 'webp', 'avif']}
         />
       </div>
-      <div className='tablet:hidden laptop:block laptop:mt-[60%] laptop:-mr-[100%] '>
-        <StaticImage
-          alt=""
-          src="../../images/three-min.png"
-          width=""
-          height=""
-          className=""
-          formats={['auto', 'webp', 'avif']}
-        />
-        </div>
-      <div className="desktop:hidden  -mt-[2%] mr-[4%]  ml-3 w-[90%] h-[5%]  z-10 laptop:ml-[100%]">
+      <div className='laptop:flex-wrap'>
+      
+      <div className="desktop:hidden  -mt-[2%] mr-[4%]  ml-3 w-[90%] h-[5%]  z-10 laptop:ml-[2%] laptop:-mt-[7%]">
         <StaticImage
           alt=""
           src="../../images/background/bokalu.png"
@@ -95,6 +87,17 @@ const BeBetter = () => {
           height=""
           formats={['auto', 'webp', 'avif']}
         />
+      </div>
+      <div className='tablet:hidden laptop:block desktop:hidden laptop:mt-[155%] laptop:mr-[12%] '>
+        <StaticImage
+          alt=""
+          src="../../images/three-min.png"
+          width=""
+          height="mr-20"
+          className="ml-8"
+          formats={['auto', 'webp', 'avif']}
+        />
+        </div>
       </div>
     </div>
   );

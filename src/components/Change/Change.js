@@ -111,7 +111,7 @@ const Change = () => {
                       src="../../images/background/union-min.png"
                       alt=""
                       style={{ position: 'absolute' }}
-                      className="tablet:w-[8%] tablet:h-[48%] tablet:mt-[65%]  tablet:ml-20  laptop:mt-[10%] laptop:h-[55%] laptop:w-[5%] -z-10 tablet:top-[20%]  laptop:top-[13%] mt-36 pt-0 ml-[10%] mr-20 "
+                      className="tablet:w-[8%] tablet:h-[48%] tablet:mt-[62%]  tablet:ml-20  laptop:mt-[10%] laptop:h-[50%] laptop:w-[5%] -z-10 tablet:top-[20%]  laptop:top-[17%] mt-36 pt-0 ml-[10%] mr-20 "
                       formats={['auto', 'webp', 'avif']}
                     />
                   </div>

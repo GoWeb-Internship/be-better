@@ -1,0 +1,19 @@
+.section {
+  @apply relative py-8   laptop:pt-12 laptop:pb-[104px] desktop:pt-20 desktop:pb-16;
+}
+
+.title {
+  @apply title-secondary mb-4 laptop:mb-8 desktop:hidden laptop:text-34;
+}
+
+.contentContainer {
+  @apply flex flex-col-reverse desktop:flex-row px-5 laptop:px-16  desktop:px-46;
+}
+
+.imgMob {
+  @apply rounded-2xl desktop:ml-13 w-70 h-[200px] laptop:w-[640px] laptop:h-[440px];
+}
+
+.img {
+  @apply rounded-2xl desktop:ml-13  desktop:w-[380px] desktop:h-[560px];
+}

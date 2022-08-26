@@ -75,7 +75,7 @@ const Change = () => {
                   src="../../images/background/fon-min.png"
                   alt=""
                   style={{ position: 'absolute' }}
-                  className="tablet:w-[47%] tablet:ml-40 tablet:pb-10 -z-10 mt-5 laptop:-mt-8 laptop:h-28 laptop:w-[79%] desktop:w-[100%] desktop:ml-[29%] ml-80 mb-16 pr-0 desktop:top-0 desktop:mt-0  max-w-5xl"
+                  className=""
                   formats={['auto', 'webp', 'avif']}
                 />
                 <StaticImage
@@ -83,39 +83,41 @@ const Change = () => {
                   src="../../images/background/fontwo-min.png"
                   alt=""
                   style={{ position: 'absolute' }}
-                  className="-z-20 top-0 w-full h-full   mt-20  max-w-full"
+                  className="-z-20  top-0 w-full h-full   mt-20  max-w-full"
                   formats={['auto', 'webp', 'avif']}
                 />
                 <h3 className={changeTitle}>{node.frontmatter.title}</h3>
+
+                <div className="">
+                      <StaticImage
+                        src="../../images/background/julia-min.png"
+                        alt="z-10"
+                        style={{ position: 'absolute' }}
+                        className="w-[280px] h-[280px] -ml-44 rounded-2xl"
+                        formats={['auto', 'webp', 'avif']}
+                      />
+                    </div>
                 <div className="flex ">
                   <div className="flex justify-between">
-                    {/* <StaticImage
-          layout="fullWidth"
-          src="../../images/arrow-min.png"
-          alt=""
-          style={{ position: 'absolute' }}
-          className="top-0 mt-48 pt-16  ml-10 mr-20 "
-        /> */}
+           
                     <div className="tablet:hidden desktop:block">
                       <StaticImage
-                        // layout="fullWidth"
                         src="../../images/background/arrow-min.png"
                         alt=""
                         style={{ position: 'absolute' }}
-                        className="tablet:hidden desktop:block -z-10   top-0 mt-40 pt-36  desktop:ml-10 mr-20 "
+                        className=""
                         formats={['auto', 'webp', 'avif']}
                       />
                     </div>
-                    <div className="desktop:hidden">
+                    {/* <div className="desktop:hidden">
                       <StaticImage
-                        // layout="fullWidth"
                         src="../../images/background/union-min.png"
                         alt=""
                         style={{ position: 'absolute' }}
-                        className="tablet:w-[5%] tablet:h-[47%] tablet:mt-[62%]  tablet:ml-20  laptop:mt-[10%] laptop:h-[50%] laptop:w-[5%] -z-10 tablet:top-[20%]  laptop:top-[17%] mt-36 pt-0 ml-[10%] mr-20 "
+                        className=""
                         formats={['auto', 'webp', 'avif']}
                       />
-                    </div>
+                    </div> */}
                     <div>
                       <div>
                         <div className={text}>
@@ -163,26 +165,6 @@ const Change = () => {
                     )}
                   </div>
                   <div>
-                    <div className="laptop:-ml-72 desktop:ml-20">
-                      <StaticImage
-                        layout="fullWidth"
-                        src="../../images/background/julia-min.png"
-                        alt=""
-                        style={{ position: 'absolute' }}
-                        className="tablet:-ml-[70%] z-10 tablet:mt-32 tablet:w-2/3 -z-10 -20 laptop:ml-0 laptop:mt-8  desktop:mt top-0 laptop:w-1/3 h-11/12 "
-                        formats={['auto', 'webp', 'avif']}
-                      />
-                    </div>
-                    {/* <div className='laptop:hidden desktop:block'>
-                          <StaticImage
-                      // layout="fullWidth"
-                      src="../../images/background/shadow-min.png"
-                      alt=""
-                      style={{ position: 'absolute' }}
-                      className="bottom-0 -mb-32 -ml-56 w-[70%] "
-                      formats={['auto', 'webp', 'avif']}
-                    />
-                    </div> */}
                   </div>
                 </div>
               </div>

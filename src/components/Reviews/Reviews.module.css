@@ -1,5 +1,5 @@
 .reviewContainer {
-  @apply overflow-auto text-xs flex ml-1 mt-1 mb-6  flex-col px-2 py-4 justify-between w-[185px] h-[250px] laptop:text-base desktop:w-80 desktop:h-[360px] text-left desktop:px-8 desktop:pb-8 desktop:pt-10 bg-white rounded-2xl shadow-you;
+  @apply relative overflow-auto text-xs  ml-1 mt-1 mb-6   px-2 py-4  w-[185px] h-[250px] laptop:text-base desktop:w-80 desktop:h-[360px] text-left desktop:px-8 desktop:pb-8 desktop:pt-10 bg-white rounded-2xl shadow-you;
 }
 
 .title {
@@ -10,8 +10,8 @@
   @apply w-[200px]  laptop:w-[600px]  desktop:w-[1064px] pb-[5px];
 }
 
-.button {
-  @apply bg-white text-mainSecond text-sm;
+.buttonCss {
+  @apply bg-white text-mainSecond text-sm absolute bottom-0 left-1/2 -translate-x-2/4;
 }
 
 .textContainer::-webkit-scrollbar-thumb {

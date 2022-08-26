@@ -61,7 +61,9 @@
   .itemFacts {
     @apply relative w-48;
   }
-  
+  .itemFactsMob{
+    @apply relative w-48;
+  }
   .svgContainerFacts {
     @apply w-5 h-5   absolute -top-5  left-7   z-10;
   }

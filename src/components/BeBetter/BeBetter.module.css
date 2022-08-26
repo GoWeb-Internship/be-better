@@ -8,10 +8,10 @@
     @apply pb-3 text-start font-normal text-base list-disc mb-2 marker:text-main 
 }
 .textBeBetter{
-    @apply font-normal text-xs laptop:pl-8
+    @apply font-normal text-xs laptop:pl-8 desktop:pl-40 desktop:w-[576px]
 }
 .text-caveat{
-    @apply pt-40 laptop:ml-8
+    @apply pt-40 laptop:ml-8 desktop:-ml-10
 }
 
 /* .text ol{

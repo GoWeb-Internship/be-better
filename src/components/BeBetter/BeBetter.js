@@ -31,7 +31,7 @@ const BeBetter = () => {
           if (node.frontmatter.language === i18n.language) {
             return (
               <>
-                <h3 className='text-buttonMobile font-medium text-xl text-center ml-2 mr-2 mt-4 mb-3 laptop:font-semibold laptop:text-4xl laptop:pl-18 laptop:ml-32'>
+                <h3 className='text-buttonMobile font-medium text-xl text-center ml-2 mr-2 mt-4 mb-3 laptop:font-semibold laptop:text-4xl laptop:pl-18 laptop:ml-32 desktop:w-[500px] desktop:ml-48 desktop:text-left desktop:pr-10'>
                   {node.frontmatter.title}
                 </h3>
                 <div
@@ -44,15 +44,15 @@ const BeBetter = () => {
           }
         })}
       </div>
-      <div className='desktop:flex'>
-      <div className='laptop:-ml-24'>
-        <div className="tablet:hidden desktop:block">
+      <div className='desktop:flex desktop:-mr-40'>
+      <div className='laptop:-ml-24 desktop:-ml-16'>
+        <div className="tablet:hidden desktop:block desktop:mt-14 desktop:mb-8">
             <StaticImage
               alt=""
               src="../../images/one-min.png"
               width=""
               height=""
-              className="tablet:hidden laptop:block"
+              className="tablet:hidden laptop:block desktop:w-[341] desktop:h-[240]"
               formats={['auto', 'webp', 'avif']}
             />
           </div>
@@ -62,7 +62,7 @@ const BeBetter = () => {
             src="../../images/three-min.png"
             width=""
             height=""
-            className="ml-8 rounded-2xl laptop:w-[200px] laptop:h-[162px] mb-4 "
+            className="ml-8 rounded-2xl laptop:w-[200px] laptop:h-[162px] mb-4 desktop:w-[204px] desktop:h-[280]"
             formats={['auto', 'webp', 'avif']}
           />
         </div>
@@ -71,7 +71,7 @@ const BeBetter = () => {
           <StaticImage
             alt=""
             src="../../images/background/bokalu.png"
-            className="laptop:pt-20  laptop:w-[310px] laptop:h-[450px] rounded-2xl "
+            className="laptop:pt-20  laptop:w-[310px] laptop:h-[450px] rounded-2xl desktop:w-[308] desktop:h-[440]"
             width=""
             height=""
             formats={['auto', 'webp', 'avif']}

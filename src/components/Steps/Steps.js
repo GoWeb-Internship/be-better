@@ -11,7 +11,19 @@ const Steps = () => {
   const data = t('steps', { returnObjects: true });
 
   return (
-    <Section className="pt-20 pb-16 relative">
+    <Section className="pt-20 pb-16  relative">
+        <div className="laptop:hidden  z-1">
+          <StaticImage
+          layout="fullWidth"
+          alt=""
+          src="../../images/background/van-min.png"
+          className=""
+          width=""
+          height=""
+          style={{ position: 'absolute' }}
+          formats={['auto', 'webp', 'avif']}
+        />
+      </div>
       <div className="relative max-h-full">
         <StaticImage
           layout="fullWidth"

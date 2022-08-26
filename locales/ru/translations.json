@@ -136,7 +136,9 @@
     "priceByOne": "*Стоимость разовой сессии 100$"
   },
   "littleComponents": {
-    "button": "Записаться"
+    "button": "Записаться",
+    "reviewButtonMore": "Читать больше...",
+    "reviewButtonLess": "Читать меньше..."
   },
   "clientHistory": {
     "title": "Невероятные истории моих клиентов"

@@ -1,15 +1,35 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { BsPerson } from 'react-icons/bs';
-import { reviewContainer } from './Reviews.module.css';
+import { reviewContainer, button } from './Reviews.module.css';
+import Button from '../reusableComponents/Button';
 
 const Review = ({ frontmatter }) => {
-  const { i18n } = useTranslation();
+  const [showAllReview, setShowAllReview] = useState(false);
+  const [overflow, setOverflow] = useState('overflow-hidden');
 
+  useEffect(() => {
+    if (showAllReview) {
+      setOverflow('overflow-x-scroll');
+      return;
+    } else {
+      setOverflow('overflow-hidden');
+      return;
+    }
+  }, [showAllReview]);
+
+  const { t, i18n } = useTranslation();
+
+  const showMore = () => {
+    setShowAllReview(!showAllReview);
+  };
+  const button = t('littleComponents', { returnObjects: true });
   return (
     <div className={reviewContainer}>
-      <div>
-        <p>{frontmatter[`${i18n.language}Text`]}</p>
+      <div className={overflow}>
+        <div>
+          <p>{frontmatter[`${i18n.language}Text`]}</p>
+        </div>
       </div>
       <div className="flex items-center">
         <div className="rounded-full mr-6 ">
@@ -22,6 +42,17 @@ const Review = ({ frontmatter }) => {
           <p>{frontmatter[`${i18n.language}Position`]}</p>
         </div>
       </div>
+
+      <Button
+        doAction={showMore}
+        className="!bg-white !text-mainSecond !text-sm mt-1"
+      >
+        {showAllReview ? (
+          <p className="!text-mainSecond">{button.reviewButtonLess}</p>
+        ) : (
+          <p className="!text-mainSecond">{button.reviewButtonMore}</p>
+        )}
+      </Button>
     </div>
   );
 };

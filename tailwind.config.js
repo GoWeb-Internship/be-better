@@ -2,7 +2,10 @@ const plugin = require('tailwindcss/plugin');
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ['./src/pages/**/*.{js,jsx}', './src/components/**/*.{js,jsx}'],
+  content: [
+    './src/pages/**/*.{html,js,jsx}',
+    './src/components/**/*.{html,js,jsx}',
+  ],
   theme: {
     extend: {
       spacing: {

@@ -133,7 +133,9 @@
     "priceByOne": "*Вартість разової сессії 100$"
   },
   "littleComponents": {
-    "button": "Записатись"
+    "button": "Записатись",
+    "reviewButtonMore": "Читать більше...",
+    "reviewButtonLess": "Читать меньше..."
   },
   "clientHistory": {
     "title": "Неймовірні історії моїх клієнтів"

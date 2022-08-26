@@ -33,8 +33,9 @@ const Reviews = () => {
   `);
   const clients = allMarkdownRemark.nodes;
 
-  const isWide = useMedia('(min-width:1440px');
-  const slides = isWide ? 3 : 1;
+  const isMobile = useMedia('(max-width:768px)');
+
+  const slides = isMobile ? 1 : 3;
 
   const reviews = t('reviews', { returnObjects: true });
 
@@ -64,7 +65,7 @@ const Reviews = () => {
           })}
       </Slider>
 
-      {isWide && (
+      {!isMobile && (
         <CgQuote
           className="text-mainSecond absolute right-[100px] bottom-[50px]"
           size={120}

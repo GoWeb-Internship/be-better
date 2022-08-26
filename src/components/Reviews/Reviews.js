@@ -5,7 +5,7 @@ import { useTranslation } from 'gatsby-plugin-react-i18next';
 import Section from '../reusableComponents/Section';
 import Slider from '../reusableComponents/Slider';
 import { graphql, useStaticQuery } from 'gatsby';
-import { title } from './Reviews.module.css';
+import { title, sliderRev } from './Reviews.module.css';
 import { CgQuote } from 'react-icons/cg';
 import Review from './Review';
 
@@ -31,11 +31,13 @@ const Reviews = () => {
       }
     }
   `);
-  const isWide = useMedia('(min-width:1440px');
   const clients = allMarkdownRemark.nodes;
-  const slides = isWide ? 3 : 2;
+
+  const isWide = useMedia('(min-width:1440px');
+  const slides = isWide ? 3 : 1;
 
   const reviews = t('reviews', { returnObjects: true });
+
   return (
     <Section
       id="nav-reviews"
@@ -44,15 +46,18 @@ const Reviews = () => {
       <h3 className={title}>{reviews.title}</h3>
 
       <CgQuote
-        className="text-mainSecond   absolute top-0 left-[60px] "
+        className="text-mainSecond absolute top-0 -left-[15px] desktop:left-[60px] "
         size={120}
       />
 
-      <Slider slidesPerView={slides}>
+      <Slider slidesPerView={slides} className={sliderRev}>
         {!!clients.length &&
           clients.map(({ frontmatter }, id) => {
             return (
-              <SwiperSlide key={id} className="slide h-auto  slider-item-width">
+              <SwiperSlide
+                key={id}
+                className="slide h-auto  slider-item-width "
+              >
                 <Review frontmatter={frontmatter} />
               </SwiperSlide>
             );

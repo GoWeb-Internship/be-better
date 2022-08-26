@@ -12,3 +12,7 @@
 .screenCss {
   @apply tablet:w-80;
 }
+
+.sliderHistory {
+  @apply w-80 laptop:w-[600px]  desktop:w-[1064px] pb-[5px];
+}

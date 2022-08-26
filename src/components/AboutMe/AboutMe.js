@@ -25,7 +25,7 @@ const AboutMe = () => {
             <h1 className="title-primary text-left mb-4 laptop:mb-13 laptop:font-semibold laptop:text-34">
               {data.title}
             </h1>
-            <span className="text-black text-left">
+            <span className="text-black text-left text-sm">
               {data.oneParagraphFirst}
               <span className="text-caveat leading-[0.9]">
                 {data.oneParagraphSpan}
@@ -103,14 +103,6 @@ const AboutMe = () => {
           <use href={`${icon}#icon-signature`} />
         </svg>
       </div>
-      {/* <StaticImage
-        className="mx-auto mt-8  laptop:ml-auto laptop:mr-0 laptop:mt-16 desktop:mt-13"
-        src="../../images/signature.png"
-        width={265}
-        height={80}
-        layout="fixed"
-        alt=""
-      /> */}
     </Section>
   );
 };

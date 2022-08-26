@@ -2,14 +2,18 @@
     @apply  !text-left text-caveat ;
   }
 .textBeBetter ol{
-    @apply  text-start font-normal  pl-6 pr-2;
+    @apply  text-start font-normal  pl-6 pr-2 laptop:pl-8;
 }
 .textBeBetter li{
-    @apply pb-3 text-start font-normal text-base list-disc mb-2 marker:text-main
+    @apply pb-3 text-start font-normal text-base list-disc mb-2 marker:text-main 
 }
 .textBeBetter{
-    @apply font-normal text-xs
+    @apply font-normal text-xs laptop:pl-8
 }
+.text-caveat{
+    @apply pt-40 laptop:ml-8
+}
+
 /* .text ol{
 @apply tablet:text-center tablet:pb-0 tablet:pl-0 laptop:pl-10 text-center desktop:pl-0
 }

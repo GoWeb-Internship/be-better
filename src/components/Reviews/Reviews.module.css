@@ -13,3 +13,10 @@
 .button {
   @apply bg-white text-mainSecond text-sm;
 }
+
+.textContainer::-webkit-scrollbar-thumb {
+  @apply bg-[#F7B188] rounded-xl;
+}
+.textContainer::-webkit-scrollbar {
+  @apply bg-[#FCD9C4] rounded-xl;
+}

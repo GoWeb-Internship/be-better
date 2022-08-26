@@ -12,6 +12,7 @@ const Steps = () => {
 
   return (
     <Section className="pt-20 pb-16  relative">
+      <div className='relative'>
         <div className="laptop:hidden  z-1">
           <StaticImage
           layout="fullWidth"
@@ -21,7 +22,6 @@ const Steps = () => {
           width=""
           height=""
           style={{ position: 'absolute' }}
-          formats={['auto', 'webp', 'avif']}
         />
       </div>
       <div className="relative max-h-full">
@@ -40,6 +40,7 @@ const Steps = () => {
           className="-z-20 w-full h-full"
         />
         <List data={data} icons={svg} />
+      </div>
       </div>
     </Section>
   );

@@ -130,4 +130,10 @@
     background-color: #9DE9FA;
 
   }
-
+/* 
+  .iconFacts-template{
+    @apply iconFacts-template;
+    tablet:visible ;
+    laptop:block
+  } */
+ 

@@ -1,8 +1,9 @@
 import React from 'react'
-import { titleFacts,iconFacts, listFacts, itemFacts, svgBgFacts, svgContainerFacts, textContainer, textPr, iconClass, testSec,} from './Page.module.css'
-
+import { titleFacts,iconFacts, listFacts, itemFacts,itemFactsMob, svgBgFacts, svgContainerFacts, textContainer, textPr, iconClass, testSec,} from './Page.module.css'
+import {useMedia} from 'react-use'
 
 const Page = ({ icons = '', data = {}, img ='', icon='' }) => {
+const isTablet = useMedia('(min-width: 768px)');
 
   return (
     <div className='max-w-full'>
@@ -11,7 +12,7 @@ const Page = ({ icons = '', data = {}, img ='', icon='' }) => {
         <ul className={`${listFacts}`}>
           {data.page.map(({ textPrimary, svg, img, icon, textSecondary }) => {
             return (
-              <li className={itemFacts} key={icons}>
+              <li className={isTablet ? itemFacts : itemFactsMob} key={icons}>
             <div><p className={textPr}>{textPrimary}</p></div>
             <div className={iconClass}>
                 <svg className="tablet:hidden desktop:block  desktop:w-10 desktop:h-10 desktop:-mt-20 desktop:ml-6">

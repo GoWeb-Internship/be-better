@@ -6,11 +6,14 @@ import { titleFacts,
     svgBgFacts,
     svgContainerFacts,
     textContainer,
+    itemFactsMob,
     textPrP,
     iconClass,
     testSecS,} from './Steps.module.css'
+    import {useMedia} from 'react-use'
 
 const Steps = ({ icons = '', data = {}, img ='', icon='' }) => {
+const isTablet = useMedia('(min-width: 768px)');
 
   return (
     <div className='max-w-full'>
@@ -19,7 +22,7 @@ const Steps = ({ icons = '', data = {}, img ='', icon='' }) => {
         <ul className={`${listFacts}`}>
           {data.steps.map(({ textPrimary, svg, img, icon, textSecondary }) => {
             return (
-              <li className={itemFacts} key={icons}>
+              <li className={isTablet ? itemFacts : itemFactsMob} key={icons}>
             <div><p className={textPrP}>{textPrimary}</p></div>
 
             <div className={iconClass}>

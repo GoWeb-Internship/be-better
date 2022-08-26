@@ -1,5 +1,5 @@
 .title {
-  @apply mb-2 font-bold text-base desktop:font-semibold text-main desktop:text-2xl desktop:pb-4 desktop:text-black;
+  @apply mb-2 font-bold text-base laptop:font-semibold text-main laptop:text-black laptop:text-2xl desktop:pb-4 desktop:text-black desktop:w-[416px];
 }
 
 .text {

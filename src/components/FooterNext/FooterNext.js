@@ -45,12 +45,12 @@ const FooterNext = () => {
           return (
             <div
               key={node.frontmatter.language}
-              className="ml-7 mb-5 text-start"
+              className="ml-7 mb-5 text-start laptop:mb-4 laptop:ml-[66px] desktop:mr-[600px]"
             >
               <h3 className={title}>{node.frontmatter.title}</h3>
-              <p className="text-black text-lg leading-[23px] text-caveat ">
+              <p className="text-black text-lg leading-[23px] text-caveat laptop:text-2xl laptop:leading-[30px] laptop:text-main laptop:w-[440px]">
                 {disc[`${i18n.language}First`]}{' '}
-                <span className="text-mainSecond font-semibold">
+                <span className="text-mainSecond font-medium">
                   {' '}
                   {disc[`${i18n.language}Discount`]}
                 </span>{' '}

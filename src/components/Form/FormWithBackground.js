@@ -17,7 +17,7 @@ const FormWithBackground = ({ clickFrom }) => {
         className="w-full h-full -z-10 top-0"
       />
       <Container>
-        <p className="mb-[152px] px-8 pt-[60px] font-caveat text-orangeDark text-2xl">
+        <p className="mb-[152px] px-6 pt-12 font-caveat text-orangeDark text-2xl">
           {hero.if}
           {hero.emo} <br />
           {hero.yourLife} {hero.pleasure}

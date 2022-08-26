@@ -1,7 +1,11 @@
 .reviewContainer {
-  @apply text-xs flex  flex-col px-2 py-4 justify-between w-[176px] h-[184px] laptop:text-base desktop:w-80 desktop:h-[360px] text-left desktop:px-8 desktop:pb-8 desktop:pt-10 bg-white rounded-2xl shadow-you;
+  @apply text-xs flex ml-1 mt-1 mb-6  flex-col px-2 py-4 justify-between w-[185px] h-[250px] laptop:text-base desktop:w-80 desktop:h-[360px] text-left desktop:px-8 desktop:pb-8 desktop:pt-10 bg-white rounded-2xl shadow-you;
 }
 
 .title {
-  @apply title-primary text-orangeDark px-5 mb-6 laptop:mb-[58px] laptop:px-15 laptop:text-34 desktop:mb-11;
+  @apply title-primary text-orangeDark  mb-14 laptop:mb-[76px]  laptop:text-34 desktop:mb-11;
+}
+
+.sliderRev {
+  @apply w-[200px]  laptop:w-[600px]  desktop:w-[1064px] pb-[5px];
 }

@@ -4,7 +4,12 @@ import { graphql, useStaticQuery } from 'gatsby';
 import Section from '../reusableComponents/Section';
 import { SwiperSlide } from 'swiper/react';
 import Slider from '../reusableComponents/Slider';
-import { title, name, profession, screenCss } from './ClientHistory.module.css';
+import {
+  title,
+  name,
+  profession,
+  sliderHistory,
+} from './ClientHistory.module.css';
 import { FaQuoteLeft } from 'react-icons/fa';
 
 const ClientHistory = () => {
@@ -40,12 +45,12 @@ const ClientHistory = () => {
     <Section className="py-20">
       <h3 className={title}>{data.title}</h3>
 
-      <Slider slidesPerView={1}>
+      <Slider slidesPerView={1} className={sliderHistory}>
         {!!clients.length &&
           clients.map(({ frontmatter }, id) => {
             return (
               <SwiperSlide key={id}>
-                <div className="m-auto px-5 flex flex-col text-left laptop:w-80  desktop:w-[716px] desktop:flex-row">
+                <div className="m-auto px-5 mb-5 flex flex-col text-left laptop:mb-4 laptop:w-80  desktop:w-[716px] desktop:flex-row">
                   <div>
                     <p className={name}>
                       {frontmatter[`${i18n.language}Name`]}

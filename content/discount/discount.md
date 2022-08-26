@@ -1,6 +1,6 @@
 ---
-ukFirst: Записуйся сьогодні на першу коуч-сесію з
-enFirst: Sign up today for the first coaching session with a
+ukFirst: Записуйся сьогодні на першу коуч-сесію
+enFirst: Sign up today for the first coaching session
 ruFirst: Записывайся  сегодня ко мне на первую коуч-сессию
 ukDiscount: з 75% знижкою*
 enDiscount: 'with a 75% discount* '

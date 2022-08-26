@@ -70,12 +70,10 @@ const Form = ({
     Email: ${data.email}
     Phone: ${data.phone}
     Checkbox: yes
-    Form send from: ${clickFrom}
     
     <b>Additional information:</b>
-    <i>TransactionID: 11111111</i>
-    <i>BlockID: 22222222</i>
     <i>Form name: contact</i>
+    <i>Form send from:</i> ${clickFrom}
     <a href="https://be-better.today">https://be-better.today</a>
     ------
     `;

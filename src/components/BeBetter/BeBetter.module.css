@@ -1,16 +1,16 @@
-.text span {
-    @apply  !text-left text-caveat laptop:ml-8 desktop:-ml-3 pb-5 pt-16;
+.textBeBetter span {
+    @apply  !text-left text-caveat ;
   }
-.text ol{
-    @apply pb-10 text-start pl-10;
+.textBeBetter ol{
+    @apply  text-start font-normal  pl-6 pr-2;
 }
-.text li{
-    @apply pb-3 text-start font-normal text-base list-disc mb-3 marker:text-main
+.textBeBetter li{
+    @apply pb-3 text-start font-normal text-base list-disc mb-2 marker:text-main
 }
-/* .text{
-    @apply laptop:mt-5
-} */
-.text ol{
+.textBeBetter{
+    @apply font-normal text-xs
+}
+/* .text ol{
 @apply tablet:text-center tablet:pb-0 tablet:pl-0 laptop:pl-10 text-center desktop:pl-0
 }
 .text p{
@@ -30,4 +30,4 @@
 }
 .text li:nth-child(5){
     @apply laptop:w-[74%] desktop:w-[50%]
-}
+} */

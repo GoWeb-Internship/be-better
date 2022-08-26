@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { useMedia } from 'react-use';
 import { SwiperSlide } from 'swiper/react';
 import { useTranslation } from 'gatsby-plugin-react-i18next';
@@ -10,6 +10,8 @@ import { CgQuote } from 'react-icons/cg';
 import Review from './Review';
 
 const Reviews = () => {
+  const [slide, setSlide] = useState(3);
+
   const { t } = useTranslation();
   const { allMarkdownRemark } = useStaticQuery(graphql`
     query {
@@ -33,9 +35,19 @@ const Reviews = () => {
   `);
   const clients = allMarkdownRemark.nodes;
 
-  const isMobile = useMedia('(max-width:768px)');
+  const isMobile = useMedia('(max-width:767px)');
 
-  const slides = isMobile ? 1 : 3;
+  const isDesktop = useMedia('(min-width:1440px)');
+
+  useEffect(() => {
+    if (isMobile) {
+      setSlide(1);
+    } else if (isDesktop) {
+      setSlide(3);
+    } else {
+      setSlide(2);
+    }
+  }, [isMobile, isDesktop, slide]);
 
   const reviews = t('reviews', { returnObjects: true });
 
@@ -51,7 +63,7 @@ const Reviews = () => {
         size={120}
       />
 
-      <Slider slidesPerView={slides} className={sliderRev}>
+      <Slider slidesPerView={slide} className={sliderRev}>
         {!!clients.length &&
           clients.map(({ frontmatter }, id) => {
             return (

@@ -25,20 +25,26 @@ const Facts = () => {
       />
       <div className="flex flex-col-reverse desktop:flex-row px-5 laptop:px-16  desktop:px-46 ">
         <List data={data} icons={svg} />
-        <StaticImage
-          alt="foto"
-          src="../../images/factMob.jpg"
-          className="rounded-2xl desktop:ml-13 w-70 h-[200px] laptop:w-[640px] laptop:h-[440px] desktop:hidden "
-          placeholder="blurred"
-          formats={['auto', 'webp', 'avif']}
-        />
-        <StaticImage
-          alt="foto"
-          src="../../images/factsFoto.jpg"
-          className="hidden rounded-2xl desktop:ml-13 desktop:block desktop:w-[380px] desktop:h-[560px] "
-          placeholder="blurred"
-          formats={['auto', 'webp', 'avif']}
-        />
+
+        <div className="desktop:hidden ">
+          <StaticImage
+            alt="foto"
+            src="../../images/factMob.jpg"
+            className="rounded-2xl desktop:ml-13 w-70 h-[200px] laptop:w-[640px] laptop:h-[440px] "
+            placeholder="blurred"
+            formats={['auto', 'webp', 'avif']}
+          />
+        </div>
+
+        <div className="hidden desktop:block">
+          <StaticImage
+            alt="foto"
+            src="../../images/factsFoto.jpg"
+            className="rounded-2xl desktop:ml-13  desktop:w-[380px] desktop:h-[560px] "
+            placeholder="blurred"
+            formats={['auto', 'webp', 'avif']}
+          />
+        </div>
       </div>
       <Way />
     </Section>

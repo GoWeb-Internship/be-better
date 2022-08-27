@@ -13,27 +13,28 @@
 .text p:nth-child(1){
   @apply laptop:w-96 laptop:pr-[21px] desktop:w-[624px] desktop:pr-[60px]
 }
-/* .text p {
-  @apply w-56 pb-24 laptop:pb-24 laptop:-mb-16;
-}
-.text p:nth-child(1){
-  @apply mt-10  tablet:w-56 laptop:w-96 laptop:-mt-10 desktop:w-full 
-}
-.text p:nth-child(2){
-  @apply  tablet:-mt-[39%] tablet:w-56 laptop:w-11/12  laptop:max-w-2xl laptop:-mt-[11%]  desktop:w-full   -mb-20 
-}
-.text p:nth-child(3){
-  @apply tablet:w-56  laptop:w-648 laptop:max-w-2xl desktop:w-full  
-}
-.text p:nth-child(4){
-  @apply tablet:-mt-[37%] tablet:-mb-[33%] tablet:w-56 mt-50 laptop:w-648  laptop:max-w-2xl laptop:-mb-[10%] laptop:mt-[0%]  desktop:w-full desktop:-mb-96
-}
+
 .modalform {
-  @apply w-[440px] h-[560px] pt-14 text-xl bg-background text-center;
+  @apply w-80 pt-10 text-base desktop:w-[440px] desktop:h-[560px] desktop:pt-14 bg-background;
 }
+
+.formtitle {
+  @apply mb-1 desktop:font-medium desktop:text-xl;
+} 
+
+.formmargin {
+  @apply mb-2 m-auto desktop:mb-8;
+} 
+
 .formtext {
-  @apply text-base pb-5;
+  @apply mb-2 text-base;
 }
-.formtextmain {
-  @apply w-10 -mt-20 laptop:max-w-3xl laptop:pt-[5%] desktop:w-full text-base pt-5;
-} */
+.formtextmain{
+  @apply text-base mb-2
+}
+
+.accenttext {
+  @apply text-main font-bold;
+}
+
+

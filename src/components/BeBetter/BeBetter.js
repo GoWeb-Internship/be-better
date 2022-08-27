@@ -24,7 +24,7 @@ const BeBetter = () => {
   `);
   const data = allMarkdownRemark.nodes;
   return (
-    <Section >
+    <Section className='desktop:w-[1440px] desktop:h-[800px] desktop:mt-[150px] desktop:-mb-[200px]'>
       <div className='laptop:flex'>
       <div>
         {data.map(node => {

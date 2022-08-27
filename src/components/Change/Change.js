@@ -70,13 +70,13 @@ const Change = () => {
           return (
             <>
               <div className="relative mb-24 mt-24">
-                <div className='ml-[152px] -z-10'>
+                <div className='ml-[152px] -z-10 laptop:ml-[265px] laptop:-mt-40'>
                 <StaticImage
                   layout="fullWidth"
                   src="../../images/background/fon-min.png"
                   alt=""
                   style={{ position: 'absolute' }}
-                  className="w-[154px] h-[64px] float-right move-right -z-10"
+                  className="w-[154px] h-[64px] float-right move-right -z-10 laptop:w-[504px] laptop:h-[96px]"
                   formats={['auto', 'webp', 'avif']}
                 />
                 </div>
@@ -85,25 +85,27 @@ const Change = () => {
                   src="../../images/background/fontwo-min.png"
                   alt=""
                   style={{ position: 'absolute' }}
-                  className="-z-20  w-full h-full mt-6 max-w-full"
+                  className="-z-20  w-full h-full mt-6 max-w-full laptop:mt-24"
                   formats={['auto', 'webp', 'avif']}
                 />
+              
                 <h3 className={changeTitle}>{node.frontmatter.title}</h3>
-                <div className="">
+                <div className="laptop:float-right laptop:-mt-40">
                       <StaticImage
                         src="../../images/background/julia-min.png"
                         alt="z-10"
                         style={{ position: 'absolute' }}
-                        className="w-[280px] h-[280px] -ml-44 rounded-2xl"
+                        className="w-[280px] h-[280px] -ml-44 rounded-2xl laptop:w-[310px] laptop:h-[442px]"
                         formats={['auto', 'webp', 'avif']}
                       />
                     </div>
+                    
                     <div className="desktop:hidden">
                       <StaticImage
                         src="../../images/background/union-min.png"
                         alt=""
                         style={{ position: 'absolute' }}
-                        className="w-[88px] h-[476px] -z-10 -ml-32 mt-[300px]  "
+                        className="w-[88px] h-[476px] -z-10 -ml-32 mt-[300px] laptop:w-[88px] laptop:h-[444px] laptop:mt-8 laptop:-ml-64"
                         formats={['auto', 'webp', 'avif']}
                       />
                     </div>
@@ -125,6 +127,7 @@ const Change = () => {
                         <div className={text}>
                           <div className=""></div>
                           <div
+                            className='laptop:-mt-[255px]'
                             key={node.frontmatter.language}
                             dangerouslySetInnerHTML={{ __html: node.html }}
                           />
@@ -140,7 +143,7 @@ const Change = () => {
                         </div>
                         <Button
                           type="button"
-                          className="!bg-mainSecond  border   px-16 !ml-8 desktop:!ml-28 py-2 rounded-3xl hover:!bg-[#d46828] ease-in duration-300"
+                          className="!bg-mainSecond  border   px-16 !ml-8 desktop:!ml-28 py-2 rounded-3xl hover:!bg-[#d46828] ease-in duration-300 laptop:!ml-[80px]"
                           doAction={() => showModal()}
                         >
                           {buttonTranslate.button}

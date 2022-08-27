@@ -11,7 +11,7 @@
     @apply font-normal text-xs laptop:w-[500px] laptop:pl-8 desktop:pl-40 desktop:w-[576px]
 }
 .text-caveat{
-    @apply pt-40 desktop:-ml-6
+    @apply pt-40 laptop:-ml-16 desktop:-ml-6
 }
 /* .titleBeBetter{
     @apply text-buttonMobile font-medium text-xl text-center ml-2 mt-4 mb-3 laptop:mb-12 laptop:font-semibold laptop:text-4xl laptop:pl-18 laptop:ml-32 desktop:w-[500px] desktop:ml-36 desktop:mb-4 desktop:text-left desktop:pr-10

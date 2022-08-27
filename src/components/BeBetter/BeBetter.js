@@ -44,7 +44,7 @@ const BeBetter = () => {
           }
         })}
       </div>
-      <div className='desktop:flex ml-[65px]'>
+      <div className='desktop:flex desktop:ml-[65px]'>
       <div className='laptop:-ml-24 desktop:-ml-16 desktop:pr-2'>
         <div className="tablet:hidden desktop:block desktop:mt-14 desktop:mb-8">
             <StaticImage

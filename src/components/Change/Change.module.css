@@ -1,13 +1,16 @@
 .changeTitle {
-  @apply tablet:text-xl tablet:font-medium mt-24 laptop:font-semibold laptop:text-3xl   text-orangeDark pl-2 pr-2 text-center
+  @apply tablet:text-xl tablet:font-medium  text-orangeDark  text-center mb-[32px]
 }
 .text {
-  @apply font-normal  text-sm laptop:text-base text-start max-w-3xl tablet:pt-64 laptop:pt-0 desktop:max-w-xl  desktop:pt-14 desktop:ml-20 pl-10 desktop:mr-10 mt-12;
+  @apply font-normal  text-sm laptop:text-base text-start max-w-3xl tablet:pt-72 pl-[20px] pr-[20px];
 }
-/* .discountStyle {
-  @apply tablet:-mt-20   text-change desktop:mt-80 laptop:mt-0 text-2xl text-mainSecond w-[430px];
+.discountStyle {
+  @apply    text-change  text-2xl text-mainSecond pt-[16px] pb-[16px] ;
 }
-.text p {
+.text p{
+  @apply pb-[8px]
+}
+/* .text p {
   @apply w-56 pb-24 laptop:pb-24 laptop:-mb-16;
 }
 .text p:nth-child(1){

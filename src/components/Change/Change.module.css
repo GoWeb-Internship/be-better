@@ -30,7 +30,7 @@
   @apply mb-2 text-base;
 }
 .formtextmain{
-  @apply text-base mb-2
+  @apply text-base 
 }
 
 .accenttext {

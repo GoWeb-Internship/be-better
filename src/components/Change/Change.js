@@ -160,10 +160,10 @@ const Change = () => {
                           <p className={formtext}>{modalForm.connection}</p>
                           <Form
                             clickFrom={currentChange}
-                            formClassname="text-center !pl-32"
+                            formClassname=""
                             checkboxClassname="mb-8"
                             closeFormModal={hideModal}
-                            className='text-center !pl-20'
+                            className=''
                           />
                           <p className={formtextmain}>{modalForm.seeYou}</p>
                         </>

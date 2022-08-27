@@ -70,13 +70,13 @@ const Change = () => {
           return (
             <>
               <div className="relative mb-24 mt-24">
-                <div className='ml-[152px] -z-10 laptop:ml-[265px] laptop:-mt-40'>
+                <div className='ml-[152px] -z-10 laptop:ml-[265px] laptop:-mt-40 desktop:ml-[404px] '>
                 <StaticImage
                   layout="fullWidth"
                   src="../../images/background/fon-min.png"
                   alt=""
                   style={{ position: 'absolute' }}
-                  className="w-[154px] h-[64px] float-right move-right -z-10 laptop:w-[504px] laptop:h-[96px]"
+                  className="w-[154px] h-[64px] float-right move-right -z-10 laptop:w-[504px] laptop:h-[96px] desktop:w-[1036px] desktop:h-[152px]"
                   formats={['auto', 'webp', 'avif']}
                 />
                 </div>
@@ -85,17 +85,17 @@ const Change = () => {
                   src="../../images/background/fontwo-min.png"
                   alt=""
                   style={{ position: 'absolute' }}
-                  className="-z-20  w-full h-full mt-6 max-w-full laptop:mt-24"
+                  className="-z-20  w-full h-full mt-6 max-w-full laptop:mt-24 desktop:mt-[149px]"
                   formats={['auto', 'webp', 'avif']}
                 />
               
                 <h3 className={changeTitle}>{node.frontmatter.title}</h3>
-                <div className="laptop:float-right laptop:-mt-40">
+                <div className="laptop:float-right laptop:-mt-40  desktop:-mt-[77px]">
                       <StaticImage
                         src="../../images/background/julia-min.png"
                         alt="z-10"
                         style={{ position: 'absolute' }}
-                        className="w-[280px] h-[280px] -ml-44 rounded-2xl laptop:w-[310px] laptop:h-[442px]"
+                        className="w-[280px] h-[280px] -ml-44 rounded-2xl laptop:w-[310px] laptop:h-[442px] desktop:w-[480px] desktop:h-[734px] desktop:pr-[60px]"
                         formats={['auto', 'webp', 'avif']}
                       />
                     </div>
@@ -112,12 +112,12 @@ const Change = () => {
                 <div className="flex ">
                   <div className="flex justify-between">
            
-                    <div className="tablet:hidden desktop:block">
+                    <div className="tablet:hidden desktop:block ml-[188px] mt-[33px]">
                       <StaticImage
                         src="../../images/background/arrow-min.png"
                         alt=""
                         style={{ position: 'absolute' }}
-                        className=""
+                        className="h-[574px] "
                         formats={['auto', 'webp', 'avif']}
                       />
                     </div>
@@ -127,7 +127,7 @@ const Change = () => {
                         <div className={text}>
                           <div className=""></div>
                           <div
-                            className='laptop:-mt-[255px]'
+                            className='laptop:-mt-[255px] desktop:w-[624px] '
                             key={node.frontmatter.language}
                             dangerouslySetInnerHTML={{ __html: node.html }}
                           />

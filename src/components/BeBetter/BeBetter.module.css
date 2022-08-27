@@ -2,7 +2,7 @@
     @apply  !text-left text-caveat ;
   }
 .textBeBetter ol{
-    @apply  text-start font-normal  pl-6 pr-2 laptop:pl-8;
+    @apply  text-start font-normal  pl-6 pr-2 laptop:pl-8 desktop:ml-[10px];
 }
 .textBeBetter li{
     @apply pb-3 text-start font-normal text-base list-disc mb-2 marker:text-main 

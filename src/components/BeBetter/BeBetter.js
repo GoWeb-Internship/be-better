@@ -31,7 +31,7 @@ const BeBetter = () => {
           if (node.frontmatter.language === i18n.language) {
             return (
               <>
-                <h3 className=' text-buttonMobile font-medium text-xl text-center ml-2 mt-4 mb-3 laptop:mb-12 laptop:font-semibold laptop:text-4xl laptop:pl-18 laptop:ml-32 desktop:w-[500px] desktop:ml-40 desktop:mb-4 desktop:text-left desktop:pr-10'>
+                <h3 className=' text-buttonMobile font-medium text-xl text-center ml-2 mt-4 mb-3 laptop:mb-12 laptop:font-semibold laptop:text-4xl laptop:pl-18 laptop:ml-32 desktop:w-[500px] desktop:ml-[180px] desktop:mb-4 desktop:text-left desktop:pr-10 '>
                   {node.frontmatter.title}
                 </h3>
                 <div
@@ -44,7 +44,7 @@ const BeBetter = () => {
           }
         })}
       </div>
-      <div className='desktop:flex '>
+      <div className='desktop:flex ml-[65px]'>
       <div className='laptop:-ml-24 desktop:-ml-16 desktop:pr-2'>
         <div className="tablet:hidden desktop:block desktop:mt-14 desktop:mb-8">
             <StaticImage

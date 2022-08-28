@@ -53,7 +53,7 @@ const Review = ({ frontmatter }) => {
       <div className="flex items-center">
         <div className="rounded-full mr-6 ">
           <GatsbyImage
-            image={`../../../static${frontmatter.image}`}
+            image={frontmatter.image}
             alt="foto"
             className="w-6 h-6"
           />

@@ -11,9 +11,7 @@ import {
   button,
 } from './Couch.module.css';
 import Button from '../reusableComponents/Button';
-import ModalWindow from '../ModalWindow';
-import Form from '../Form';
-import { modalform, formtext, formtextmain } from '../Change/Change.module.css';
+import FormInModal from '../Form/FormInModal';
 
 const Couch = () => {
   const [modal, setModal] = useState(false);
@@ -21,7 +19,6 @@ const Couch = () => {
   const { t } = useTranslation();
 
   const form = t('form', { returnObjects: true });
-  const modalForm = t('modalForm', { returnObjects: true });
   const couch = t('couch', { returnObjects: true });
 
   const showModal = change => {
@@ -137,21 +134,7 @@ const Couch = () => {
           </div>
         </div>
       </div>
-      {modal && (
-        <ModalWindow className={modalform} handleClose={hideModal}>
-          <>
-            <h2 className={formtext}>{modalForm.hi}!</h2>
-            <p className={formtext}>{modalForm.connection}</p>
-            <Form
-              clickFrom={currentChange}
-              formClassname=""
-              checkboxClassname="mb-8"
-              closeFormModal={hideModal}
-            />
-            <p className={formtextmain}>{modalForm.seeYou}</p>
-          </>
-        </ModalWindow>
-      )}
+      {modal && <FormInModal hideModal={hideModal} currentPlace="with couch" />}
     </Section>
   );
 };

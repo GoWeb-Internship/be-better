@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import { useStaticQuery, graphql } from 'gatsby';
 import Footer from '../Footer';
 import Header from '../Header';
-import ButtonUp from '../ButtonUp';
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -21,7 +20,6 @@ const Layout = ({ children }) => {
       <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
       <main>{children}</main>
       <Footer />
-      <ButtonUp />
     </>
   );
 };

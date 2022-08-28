@@ -27,6 +27,7 @@ const Reviews = () => {
             ruName
             ruPosition
             ruText
+            image
           }
           id
         }

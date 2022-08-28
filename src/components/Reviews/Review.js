@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next';
 import { BsPerson } from 'react-icons/bs';
 import { reviewContainer, textContainer } from './Reviews.module.css';
 import { useMedia } from 'react-use';
-import { GatsbyImage, StaticImage } from 'gatsby-plugin-image';
+import { GatsbyImage } from 'gatsby-plugin-image';
 
 const Review = ({ frontmatter }) => {
   const [overflow, setOverflow] = useState('overflow-hidden');

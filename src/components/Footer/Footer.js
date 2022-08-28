@@ -23,7 +23,7 @@ const Footer = () => {
           <div className="hidden desktop:block w-1036 h-[420px] -z-10 absolute top-0">
             <div className="bg-bright  w-1036 h-[420px] "></div>
           </div>
-          <div className="px-5 pt-10 pb-6 laptop:px-16 laptop:pt-12 desktop:mb-7 desktop:px-20 desktop:pt-14">
+          <div className="px-5 pt-10 pb-6 laptop:px-16 laptop:pt-12 desktop:px-20 desktop:pt-14">
             <svg className=" hidden desktop:block desktop:w-[90px] desktop:h-14">
               <use href={`${icons}#logo`} />
             </svg>

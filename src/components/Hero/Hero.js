@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import HeroBackground from './HeroBackground';
 import { useTranslation } from 'gatsby-plugin-react-i18next';
 import { StaticImage } from 'gatsby-plugin-image';
@@ -9,8 +9,10 @@ import { graphql, useStaticQuery } from 'gatsby';
 import Container from '../Container';
 import FormWithBackground from '../Form/FormWithBackground';
 import Button from '../reusableComponents/Button';
+import FormInModal from '../Form/FormInModal';
 
 const Hero = () => {
+  const [showModal, setShowModal] = useState(false);
   const { t, i18n } = useTranslation();
   const { button } = t('form', { returnObjects: true });
 
@@ -37,6 +39,13 @@ const Hero = () => {
   const [frontmatter] = allMarkdownRemark.nodes;
   const hero = t('hero', { returnObjects: true });
   const data = frontmatter.frontmatter;
+
+  const openForm = () => {
+    setShowModal(true);
+  };
+  const closeForm = () => {
+    setShowModal(false);
+  };
 
   return (
     <Section id="home">
@@ -82,6 +91,7 @@ const Hero = () => {
             <Button
               type="button"
               className="h-12 w-[280px] text-white rounded-full !bg-buttonMobile mb-4"
+              doAction={openForm}
             >
               {button}
             </Button>
@@ -102,6 +112,7 @@ const Hero = () => {
         </Container>
       </div>
       <FormWithBackground clickFrom="hero" />
+      {showModal && <FormInModal hideModal={closeForm} currentPlace="hero" />}
     </Section>
   );
 };

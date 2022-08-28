@@ -38,7 +38,6 @@ const BurgerMenu = ({ toggleNav }) => {
               to={'home'}
               smooth
               spy
-              offset={-52}
               className="hover:border-b-2 border-main"
               onClick={toggleNav}
             >

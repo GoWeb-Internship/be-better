@@ -11,8 +11,7 @@ import {
   formtextmain,
   discountStyle,
 } from './Change.module.css';
-import ModalWindow from '../ModalWindow';
-import Form from '../Form';
+import FormInModal from '../Form/FormInModal';
 
 const Change = () => {
   const { i18n } = useTranslation();
@@ -63,7 +62,7 @@ const Change = () => {
   };
 
   return (
-    <div className='tablet:-mt-[57%] laptop:-mt-[17%] desktop:-mt-[11%]'>
+    <div className="tablet:-mt-[57%] laptop:-mt-[17%] desktop:-mt-[11%]">
       {data.map(node => {
         if (node.frontmatter.language === i18n.language) {
           return (
@@ -95,38 +94,35 @@ const Change = () => {
           style={{ position: 'absolute' }}
           className="top-0 mt-48 pt-16  ml-10 mr-20 "
         /> */}
-        <div className='tablet:hidden desktop:block'>
-                    <StaticImage
-                      // layout="fullWidth"
-                      src="../../images/background/arrow-min.png"
-                      alt=""
-                      style={{ position: 'absolute' }}
-                      className="tablet:hidden desktop:block -z-10   top-0 mt-40 pt-36  desktop:ml-10 mr-20 "
-                      formats={['auto', 'webp', 'avif']}
-                    />
+                    <div className="tablet:hidden desktop:block">
+                      <StaticImage
+                        // layout="fullWidth"
+                        src="../../images/background/arrow-min.png"
+                        alt=""
+                        style={{ position: 'absolute' }}
+                        className="tablet:hidden desktop:block -z-10   top-0 mt-40 pt-36  desktop:ml-10 mr-20 "
+                        formats={['auto', 'webp', 'avif']}
+                      />
                     </div>
-                    <div className='desktop:hidden'>
-                    <StaticImage
-                      // layout="fullWidth"
-                      src="../../images/background/union-min.png"
-                      alt=""
-                      style={{ position: 'absolute' }}
-                      className="tablet:w-[5%] tablet:h-[47%] tablet:mt-[62%]  tablet:ml-20  laptop:mt-[10%] laptop:h-[50%] laptop:w-[5%] -z-10 tablet:top-[20%]  laptop:top-[17%] mt-36 pt-0 ml-[10%] mr-20 "
-                      formats={['auto', 'webp', 'avif']}
-                    />
-                  </div>
+                    <div className="desktop:hidden">
+                      <StaticImage
+                        // layout="fullWidth"
+                        src="../../images/background/union-min.png"
+                        alt=""
+                        style={{ position: 'absolute' }}
+                        className="tablet:w-[5%] tablet:h-[47%] tablet:mt-[62%]  tablet:ml-20  laptop:mt-[10%] laptop:h-[50%] laptop:w-[5%] -z-10 tablet:top-[20%]  laptop:top-[17%] mt-36 pt-0 ml-[10%] mr-20 "
+                        formats={['auto', 'webp', 'avif']}
+                      />
+                    </div>
                     <div>
                       <div>
                         <div className={text}>
-                        <div className=''>
-                      
-                    
-                          </div>
+                          <div className=""></div>
                           <div
                             key={node.frontmatter.language}
                             dangerouslySetInnerHTML={{ __html: node.html }}
                           />
-                          
+
                           <p className={discountStyle}>
                             {disc[`${i18n.language}First`]}{' '}
                             <span className="text-black font-semibold">
@@ -135,7 +131,6 @@ const Change = () => {
                             </span>{' '}
                             {disc[`${i18n.language}Second`]}
                           </p>
-                  
                         </div>
                         <Button
                           type="button"
@@ -147,34 +142,22 @@ const Change = () => {
                       </div>
                     </div>
                     {modal && (
-                      <ModalWindow
-                        className={modalform}
-                        handleClose={hideModal}
-                      >
-                        <>
-                          <h2 className={formtext}>{modalForm.hi}!</h2>
-                          <p className={formtext}>{modalForm.connection}</p>
-                          <Form
-                            clickFrom={currentChange}
-                            formClassname=""
-                            checkboxClassname="mb-8"
-                            closeFormModal={hideModal}
-                          />
-                          <p className={formtextmain}>{modalForm.seeYou}</p>
-                        </>
-                      </ModalWindow>
+                      <FormInModal
+                        hideModal={hideModal}
+                        currentPlace="change in life"
+                      />
                     )}
                   </div>
                   <div>
-                    <div className='laptop:-ml-72 desktop:ml-20'>
-                    <StaticImage
-                      layout="fullWidth"
-                      src="../../images/background/julia-min.png"
-                      alt=""
-                      style={{ position: 'absolute' }}
-                      className="tablet:-ml-[70%] z-10 tablet:mt-32 tablet:w-2/3 -z-10 -20 laptop:ml-0 laptop:mt-8  desktop:mt top-0 laptop:w-1/3 h-11/12 "
-                      formats={['auto', 'webp', 'avif']}
-                    />
+                    <div className="laptop:-ml-72 desktop:ml-20">
+                      <StaticImage
+                        layout="fullWidth"
+                        src="../../images/background/julia-min.png"
+                        alt=""
+                        style={{ position: 'absolute' }}
+                        className="tablet:-ml-[70%] z-10 tablet:mt-32 tablet:w-2/3 -z-10 -20 laptop:ml-0 laptop:mt-8  desktop:mt top-0 laptop:w-1/3 h-11/12 "
+                        formats={['auto', 'webp', 'avif']}
+                      />
                     </div>
                     {/* <div className='laptop:hidden desktop:block'>
                           <StaticImage

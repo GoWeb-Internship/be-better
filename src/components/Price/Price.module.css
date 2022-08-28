@@ -20,15 +20,15 @@
 
 /* Form */
 .modalform {
-  @apply w-80 pt-10 text-base desktop:w-[440px] desktop:h-[560px] desktop:pt-14 bg-background;
+  @apply w-80 py-10 px-5 text-base laptop:w-[440px] laptop:py-14 laptop:px-14 bg-background;
 }
 
 .formtitle {
-  @apply mb-1 desktop:font-medium desktop:text-xl;
+  @apply mb-1 laptop:font-medium laptop:text-xl;
 }
 
 .formmargin {
-  @apply mb-2 m-auto desktop:mb-8;
+  @apply mb-2 laptop:mb-8;
 }
 
 .formtext {
@@ -44,7 +44,7 @@
 }
 
 .underformtext {
-  @apply mb-6 text-sm;
+  @apply text-sm laptop:text-base;
 }
 /* Card */
 .subscription {

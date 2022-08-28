@@ -1,7 +1,8 @@
 import React from 'react';
 import Section from '../reusableComponents/Section';
+import { graphql, useStaticQuery } from 'gatsby';
 import { useTranslation } from 'gatsby-plugin-react-i18next';
-import { StaticImage } from 'gatsby-plugin-image';
+import { StaticImage, GatsbyImage } from 'gatsby-plugin-image';
 import List from '../reusableComponents/List';
 import svg from '../../images/factsIcons.svg';
 import Way from '../Way';
@@ -15,9 +16,33 @@ import {
 import { useMedia } from 'react-use';
 
 const Facts = () => {
+  const foto = useStaticQuery(graphql`
+    query {
+      mob: file(name: { eq: "factMob" }) {
+        id
+        publicURL
+        childImageSharp {
+          id
+          gatsbyImageData
+        }
+      }
+      desk: file(name: { eq: "factsFoto" }) {
+        id
+        publicURL
+        childImageSharp {
+          id
+          gatsbyImageData
+        }
+      }
+    }
+  `);
+
   const { t } = useTranslation();
   const data = t('facts', { returnObjects: true });
   const isWide = useMedia('(min-width:1440px');
+
+  const fotoMob = foto.mob.childImageSharp.gatsbyImageData;
+  const fotoDesk = foto.desk.childImageSharp.gatsbyImageData;
 
   return (
     <Section className={section}>
@@ -32,9 +57,7 @@ const Facts = () => {
       />
       <div className={contentContainer}>
         <List data={data} icons={svg} />
-
-        {isWide ? (
-          <div className="hidden desktop:block">
+        {/* <div className="hidden desktop:block">
             <StaticImage
               alt="foto"
               src="../../images/factsFoto.jpg"
@@ -42,9 +65,8 @@ const Facts = () => {
               placeholder="blurred"
               formats={['auto', 'webp', 'avif']}
             />
-          </div>
-        ) : (
-          <div className="desktop:hidden ">
+          {/* </div> */}
+        {/* <div className="desktop:hidden ">
             <StaticImage
               alt="foto"
               src="../../images/factMob.jpg"
@@ -52,7 +74,11 @@ const Facts = () => {
               placeholder="blurred"
               formats={['auto', 'webp', 'avif']}
             />
-          </div>
+          </div>  */}
+        {isWide ? (
+          <GatsbyImage image={fotoDesk} alt="foto" className={img} />
+        ) : (
+          <GatsbyImage image={fotoMob} alt="foto" className={imgMob} />
         )}
       </div>
       <Way />

@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next';
 import { BsPerson } from 'react-icons/bs';
 import { reviewContainer, textContainer } from './Reviews.module.css';
 import { useMedia } from 'react-use';
-import { use } from 'i18next';
+
 
 const Review = ({ frontmatter }) => {
   const [overflow, setOverflow] = useState('overflow-hidden');

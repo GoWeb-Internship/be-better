@@ -90,7 +90,7 @@ const Change = () => {
                 />
               
                 <h3 className={changeTitle}>{node.frontmatter.title}</h3>
-                <div className="laptop:float-right laptop:-mt-40  desktop:-mt-[77px]">
+                <div className="laptop:float-right laptop:-mt-40 display:block desktop:-mt-[77px]">
                       <StaticImage
                         src="../../images/background/julia-min.png"
                         alt="z-10"
@@ -123,15 +123,18 @@ const Change = () => {
                     </div>
                    
                     <div>
-                      <div>
+                      <div className='float-left'>
                         <div className={text}>
-                          <div className=""></div>
+                          
+                         
+                            <div>
                           <div
-                            className='laptop:-mt-[255px] desktop:w-[624px] '
+                            className='laptop:-mt-[255px] desktop:w-[624px] float-left block'
                             key={node.frontmatter.language}
                             dangerouslySetInnerHTML={{ __html: node.html }}
                           />
-
+                          </div>
+                   
                           <p className={discountStyle}>
                             {disc[`${i18n.language}First`]}{' '}
                             <span className="text-black font-semibold">

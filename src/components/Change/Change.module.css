@@ -8,7 +8,7 @@
   @apply    text-change  text-2xl text-mainSecond pt-[16px] pb-[16px];
 }
 .text p{
-  @apply pb-[8px] laptop:pl-[63px] laptop:pr-[64px]
+  @apply pb-[8px] laptop:pl-[63px] laptop:pr-[64px] 
 }
 .text p:nth-child(1){
   @apply laptop:w-96 laptop:pr-[21px] desktop:w-[624px] desktop:pr-[60px]

@@ -28,14 +28,9 @@
     @apply absolute -top-2 left-8 z-10 text-error text-xs;
 }
 .modalsuccess{
-    @apply w-80 desktop:w-[456px] py-[72px] desktop:px-[68px] bg-white
+    @apply w-80 laptop:w-[440px] py-[72px] laptop:px-[68px] bg-white text-center;
 }
-.modaltitle {
-    @apply mb-[10px] desktop:mb-1 text-xl desktop:text-2xl font-medium desktop:font-semibold text-main;
-}
-.modaltext {
-    @apply desktop:font-medium text-base desktop:text-xl text-black;
-}
+
 
 .input:focus + .label,
 .input:not(:placeholder-shown) + .label {
@@ -47,8 +42,8 @@
 }
 
 .checkbox:checked + .check {
-  @apply  bg-[url('../../images/check.svg')] bg-no-repeat bg-left laptop:bg-[url('../../images/checkWhite.svg')] desktop:bg-[url('../../images/check.svg')];
-
+    @apply  bg-[url('../../images/check.svg')] bg-no-repeat bg-left laptop:bg-[url('../../images/checkWhite.svg')] desktop:bg-[url('../../images/check.svg')];
+    
 }
 
 .check {
@@ -56,12 +51,23 @@
 }
 /* анимация галочки */
 /* #anim-one {
-text-align: center;
-padding-top: 100px;
- font-size: 0;
-  font-weight: 700;
-   color: #00CED2;
+    text-align: center;
+    padding-top: 100px;
+    font-size: 0;
+    font-weight: 700;
+    color: #00CED2;
     animation: bounce-text 2s infinite cubic-bezier(0.245, 0.325, 0.670, 1.510);
- }
- 
- @keyframes bounce-text 60% font-size: 60px 100% font-size: 60px */
+}
+
+@keyframes bounce-text 60% font-size: 60px 100% font-size: 60px */
+
+/* FormInModal */
+.modalform {
+    @apply w-[320px] laptop:w-[440px] py-10 px-5 bg-background text-center;
+}
+.modaltitle {
+    @apply mb-[10px] laptop:mb-1 text-xl laptop:text-2xl font-medium laptop:font-semibold text-main;
+}
+.modaltext {
+    @apply laptop:font-medium text-base laptop:text-xl text-black;
+}

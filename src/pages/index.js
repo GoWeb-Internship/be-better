@@ -18,6 +18,7 @@ import Change from '../components/Change';
 import Couch from '../components/Couch';
 import WhyStepsAdd from '../components/WhyStepsAdd';
 import Steps from '../components/Steps';
+import ButtonUp from '../components/ButtonUp';
 
 const IndexPage = () => {
   return (
@@ -40,6 +41,7 @@ const IndexPage = () => {
         <Steps />
         <Change />
         <BeBetter />
+        <ButtonUp/>
       </Container>
 
       {/* </main> */}

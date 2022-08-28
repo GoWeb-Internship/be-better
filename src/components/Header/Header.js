@@ -16,7 +16,7 @@ const Header = ({ siteTitle }) => {
   return (
     <header
       className="h-[52px] fixed bg-white w-full laptop:h-20 z-20"
-      id="home"
+      id="#home"
     >
       {showNav ? (
         <BurgerMenu toggleNav={toggleNav} />

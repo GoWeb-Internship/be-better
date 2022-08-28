@@ -57,24 +57,7 @@ const Facts = () => {
       />
       <div className={contentContainer}>
         <List data={data} icons={svg} />
-        {/* <div className="hidden desktop:block">
-            <StaticImage
-              alt="foto"
-              src="../../images/factsFoto.jpg"
-              className={img}
-              placeholder="blurred"
-              formats={['auto', 'webp', 'avif']}
-            />
-          {/* </div> */}
-        {/* <div className="desktop:hidden ">
-            <StaticImage
-              alt="foto"
-              src="../../images/factMob.jpg"
-              className={imgMob}
-              placeholder="blurred"
-              formats={['auto', 'webp', 'avif']}
-            />
-          </div>  */}
+
         {isWide ? (
           <GatsbyImage image={fotoDesk} alt="foto" className={img} />
         ) : (

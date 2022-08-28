@@ -129,7 +129,9 @@
     "priceByOne": "*The cost for one session 100$"
   },
   "littleComponents": {
-    "button": "Sign up"
+    "button": "Sign up",
+    "reviewButtonMore": "Read more...",
+    "reviewButtonLess": "Read less..."
   },
   "clientHistory": {
     "title": "Incredible customer stories"

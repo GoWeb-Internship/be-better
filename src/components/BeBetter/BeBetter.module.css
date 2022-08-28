@@ -1,33 +1,18 @@
-.text span {
-    @apply  !text-left text-caveat laptop:ml-8 desktop:-ml-3 pb-5 pt-16;
+.textBeBetter span {
+    @apply  !text-left text-caveat ;
   }
-.text ol{
-    @apply pb-10 text-start pl-10;
+.textBeBetter ol{
+    @apply  text-start font-normal  pl-6 pr-2 laptop:pl-8 desktop:ml-[10px];
 }
-.text li{
-    @apply pb-3 text-start font-normal text-base list-disc mb-3 marker:text-main
+.textBeBetter li{
+    @apply pb-3 text-start font-normal text-base list-disc mb-2 marker:text-main 
 }
-/* .text{
-    @apply laptop:mt-5
+.textBeBetter{
+    @apply font-normal text-xs laptop:w-[500px] laptop:pl-8 desktop:pl-40 desktop:w-[576px]
+}
+.text-caveat{
+    @apply pt-40 laptop:-ml-16 desktop:-ml-6
+}
+/* .titleBeBetter{
+    @apply text-buttonMobile font-medium text-xl text-center ml-2 mt-4 mb-3 laptop:mb-12 laptop:font-semibold laptop:text-4xl laptop:pl-18 laptop:ml-32 desktop:w-[500px] desktop:ml-36 desktop:mb-4 desktop:text-left desktop:pr-10
 } */
-.text ol{
-@apply tablet:text-center tablet:pb-0 tablet:pl-0 laptop:pl-10 text-center desktop:pl-0
-}
-.text p{
-    @apply tablet:-ml-8 laptop:w-[120%] laptop:ml-2  text-left
-}
-.text li:nth-child(1){
-    @apply laptop:w-[74%] pt-2 desktop:w-[50%]
-}
-.text li:nth-child(2){
-    @apply laptop:w-[99%] desktop:w-[50%]
-}
-.text li:nth-child(3){
-    @apply laptop:w-[74%] desktop:w-[50%]
-}
-.text li:nth-child(4){
-    @apply laptop:w-[74%] desktop:w-[50%]
-}
-.text li:nth-child(5){
-    @apply laptop:w-[74%] desktop:w-[50%]
-}

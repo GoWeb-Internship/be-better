@@ -21,18 +21,18 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
-    {
-      resolve: `gatsby-source-cloudinary`,
-      options: {
-        cloudName: process.env.CLOUD_NAME,
-        apiKey: process.env.CLOUD_API,
-        apiSecret: process.env.CLOUD_API_SECRET,
-        resourceType: `image`,
-        context: true,
-        tags: true,
-        maxResults: 50,
-      },
-    },
+    // {
+    //   resolve: `gatsby-source-cloudinary`,
+    //   options: {
+    //     cloudName: process.env.CLOUD_NAME,
+    //     apiKey: process.env.CLOUD_API,
+    //     apiSecret: process.env.CLOUD_API_SECRET,
+    //     resourceType: `image`,
+    //     context: true,
+    //     tags: true,
+    //     maxResults: 50,
+    //   },
+    // },
 
     {
       resolve: `gatsby-plugin-netlify-cms`,

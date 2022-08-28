@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next';
 import { BsPerson } from 'react-icons/bs';
 import { reviewContainer, textContainer } from './Reviews.module.css';
 import { useMedia } from 'react-use';
-import { GatsbyImage, StaticImage } from 'gatsby-plugin-image';
+import { GatsbyImage } from 'gatsby-plugin-image';
 
 const Review = ({ frontmatter }) => {
   const [overflow, setOverflow] = useState('overflow-hidden');
@@ -52,13 +52,15 @@ const Review = ({ frontmatter }) => {
 
       <div className="flex items-center">
         <div className="rounded-full mr-6 ">
-          <GatsbyImage
-            image={frontmatter.image}
-            alt="foto"
-            className="w-6 h-6"
-          />
-
-          {/* <BsPerson size={24} /> */}
+          {frontmatter.image ? (
+            <GatsbyImage
+              image={frontmatter.image}
+              alt="foto"
+              className="w-6 h-6"
+            />
+          ) : (
+            <BsPerson size={24} />
+          )}
         </div>
         <div>
           <p className={`{${position}} laptop:text-xl font-bold`}>

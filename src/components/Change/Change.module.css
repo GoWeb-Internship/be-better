@@ -1,33 +1,40 @@
 .changeTitle {
-  @apply tablet:text-xl tablet:font-medium laptop:font-semibold laptop:text-3xl   text-orangeDark pt-13 text-start max-w-xs desktop:max-w-xl ml-11;
+  @apply tablet:text-xl tablet:font-medium text-orangeDark text-center mb-[32px] laptop:font-semibold laptop:text-4xl laptop:w-[310px] laptop:pt-[49px] laptop:mb-[16px] laptop:pl-[80px] laptop:text-start desktop:w-[704px] desktop:pl-[188px] 
 }
 .text {
-  @apply font-normal  text-sm laptop:text-base text-start max-w-3xl tablet:pt-64 laptop:pt-0 desktop:max-w-xl  desktop:pt-14 desktop:ml-20 pl-10 desktop:mr-10 mt-12;
+  @apply font-normal  text-sm laptop:text-base text-start max-w-3xl tablet:pt-72 pl-[20px] pr-[20px] desktop:w-[534px] desktop:pr-[60px];
 }
 .discountStyle {
-  @apply tablet:-mt-20   text-change desktop:mt-80 laptop:mt-0 text-2xl text-mainSecond w-[430px];
+  @apply    text-change  text-2xl text-mainSecond pt-[16px] pb-[16px];
 }
-.text p {
-  @apply w-56 pb-24 laptop:pb-24 laptop:-mb-16;
+.text p{
+  @apply pb-[8px] laptop:pl-[63px] laptop:pr-[64px] 
 }
 .text p:nth-child(1){
-  @apply mt-10  tablet:w-56 laptop:w-96 laptop:-mt-10 desktop:w-full 
+  @apply laptop:w-96 laptop:pr-[21px] desktop:w-[624px] desktop:pr-[60px]
 }
-.text p:nth-child(2){
-  @apply  tablet:-mt-[39%] tablet:w-56 laptop:w-11/12  laptop:max-w-2xl laptop:-mt-[11%]  desktop:w-full   -mb-20 
-}
-.text p:nth-child(3){
-  @apply tablet:w-56  laptop:w-648 laptop:max-w-2xl desktop:w-full  
-}
-.text p:nth-child(4){
-  @apply tablet:-mt-[37%] tablet:-mb-[33%] tablet:w-56 mt-50 laptop:w-648  laptop:max-w-2xl laptop:-mb-[10%] laptop:mt-[0%]  desktop:w-full desktop:-mb-96
-}
+
 .modalform {
-  @apply w-[440px] h-[560px] pt-14 text-xl bg-background text-center;
+  @apply w-80 pt-10 text-base desktop:w-[440px] desktop:h-[560px] desktop:pt-14 bg-background;
 }
+
+.formtitle {
+  @apply mb-1 desktop:font-medium desktop:text-xl;
+} 
+
+.formmargin {
+  @apply mb-2 m-auto desktop:mb-8;
+} 
+
 .formtext {
-  @apply text-base pb-5;
+  @apply mb-2 text-base;
 }
-.formtextmain {
-  @apply w-10 -mt-20 laptop:max-w-3xl laptop:pt-[5%] desktop:w-full text-base pt-5;
+.formtextmain{
+  @apply text-base 
 }
+
+.accenttext {
+  @apply text-main font-bold;
+}
+
+

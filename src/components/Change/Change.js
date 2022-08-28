@@ -70,61 +70,71 @@ const Change = () => {
           return (
             <>
               <div className="relative mb-24 mt-24">
+                <div className='ml-[152px] -z-10 laptop:ml-[265px] laptop:-mt-40 desktop:ml-[404px] '>
                 <StaticImage
                   layout="fullWidth"
                   src="../../images/background/fon-min.png"
                   alt=""
                   style={{ position: 'absolute' }}
-                  className="tablet:w-[47%] tablet:ml-40 tablet:pb-10 -z-10 mt-5 laptop:-mt-8 laptop:h-28 laptop:w-[79%] desktop:w-[100%] desktop:ml-[29%] ml-80 mb-16 pr-0 desktop:top-0 desktop:mt-0  max-w-5xl"
+                  className="w-[154px] h-[64px] float-right move-right -z-10 laptop:w-[504px] laptop:h-[96px] desktop:w-[1036px] desktop:h-[152px]"
                   formats={['auto', 'webp', 'avif']}
                 />
+                </div>
                 <StaticImage
                   layout="fullWidth"
                   src="../../images/background/fontwo-min.png"
                   alt=""
                   style={{ position: 'absolute' }}
-                  className="-z-20 top-0 w-full h-full   mt-20  max-w-full"
+                  className="-z-20  w-full h-full mt-6 max-w-full laptop:mt-24 desktop:mt-[149px]"
                   formats={['auto', 'webp', 'avif']}
                 />
+              
                 <h3 className={changeTitle}>{node.frontmatter.title}</h3>
-                <div className="flex ">
-                  <div className="flex justify-between">
-                    {/* <StaticImage
-          layout="fullWidth"
-          src="../../images/arrow-min.png"
-          alt=""
-          style={{ position: 'absolute' }}
-          className="top-0 mt-48 pt-16  ml-10 mr-20 "
-        /> */}
-                    <div className="tablet:hidden desktop:block">
+                <div className="laptop:float-right laptop:-mt-40 display:block desktop:-mt-[77px]">
                       <StaticImage
-                        // layout="fullWidth"
-                        src="../../images/background/arrow-min.png"
-                        alt=""
+                        src="../../images/background/julia-min.png"
+                        alt="z-10"
                         style={{ position: 'absolute' }}
-                        className="tablet:hidden desktop:block -z-10   top-0 mt-40 pt-36  desktop:ml-10 mr-20 "
+                        className="w-[280px] h-[280px] -ml-44 rounded-2xl laptop:w-[310px] laptop:h-[442px] desktop:w-[480px] desktop:h-[734px] desktop:pr-[60px]"
                         formats={['auto', 'webp', 'avif']}
                       />
                     </div>
+                    
                     <div className="desktop:hidden">
                       <StaticImage
-                        // layout="fullWidth"
                         src="../../images/background/union-min.png"
                         alt=""
                         style={{ position: 'absolute' }}
-                        className="tablet:w-[5%] tablet:h-[47%] tablet:mt-[62%]  tablet:ml-20  laptop:mt-[10%] laptop:h-[50%] laptop:w-[5%] -z-10 tablet:top-[20%]  laptop:top-[17%] mt-36 pt-0 ml-[10%] mr-20 "
+                        className="w-[88px] h-[476px] -z-10 -ml-32 mt-[300px] laptop:w-[88px] laptop:h-[444px] laptop:mt-8 laptop:-ml-64"
                         formats={['auto', 'webp', 'avif']}
                       />
                     </div>
+                <div className="flex ">
+                  <div className="flex justify-between">
+           
+                    <div className="tablet:hidden desktop:block ml-[188px] mt-[33px]">
+                      <StaticImage
+                        src="../../images/background/arrow-min.png"
+                        alt=""
+                        style={{ position: 'absolute' }}
+                        className="h-[574px] "
+                        formats={['auto', 'webp', 'avif']}
+                      />
+                    </div>
+                   
                     <div>
-                      <div>
+                      <div className='float-left'>
                         <div className={text}>
-                          <div className=""></div>
+                          
+                         
+                            <div>
                           <div
+                            className='laptop:-mt-[255px] desktop:w-[624px] float-left block'
                             key={node.frontmatter.language}
                             dangerouslySetInnerHTML={{ __html: node.html }}
                           />
-
+                          </div>
+                   
                           <p className={discountStyle}>
                             {disc[`${i18n.language}First`]}{' '}
                             <span className="text-black font-semibold">
@@ -136,7 +146,7 @@ const Change = () => {
                         </div>
                         <Button
                           type="button"
-                          className="!bg-mainSecond -mt-[50%] border tablet:!-mt-16 laptop:!mt-5 px-16 !ml-8 desktop:!ml-28 py-2 rounded-3xl hover:!bg-[#d46828] ease-in duration-300"
+                          className="!bg-mainSecond  border   px-16 !ml-8 desktop:!ml-28 py-2 rounded-3xl hover:!bg-[#d46828] ease-in duration-300 laptop:!ml-[80px]"
                           doAction={() => showModal()}
                         >
                           {buttonTranslate.button}
@@ -152,10 +162,12 @@ const Change = () => {
                           <h2 className={formtext}>{modalForm.hi}!</h2>
                           <p className={formtext}>{modalForm.connection}</p>
                           <Form
+                          className='ml-5'
                             clickFrom={currentChange}
-                            formClassname=""
+                            formClassname="!ml-5 laptop:!ml-0 desktop:!ml-12"
                             checkboxClassname="mb-8"
                             closeFormModal={hideModal}
+                            
                           />
                           <p className={formtextmain}>{modalForm.seeYou}</p>
                         </>
@@ -163,26 +175,6 @@ const Change = () => {
                     )}
                   </div>
                   <div>
-                    <div className="laptop:-ml-72 desktop:ml-20">
-                      <StaticImage
-                        layout="fullWidth"
-                        src="../../images/background/julia-min.png"
-                        alt=""
-                        style={{ position: 'absolute' }}
-                        className="tablet:-ml-[70%] z-10 tablet:mt-32 tablet:w-2/3 -z-10 -20 laptop:ml-0 laptop:mt-8  desktop:mt top-0 laptop:w-1/3 h-11/12 "
-                        formats={['auto', 'webp', 'avif']}
-                      />
-                    </div>
-                    {/* <div className='laptop:hidden desktop:block'>
-                          <StaticImage
-                      // layout="fullWidth"
-                      src="../../images/background/shadow-min.png"
-                      alt=""
-                      style={{ position: 'absolute' }}
-                      className="bottom-0 -mb-32 -ml-56 w-[70%] "
-                      formats={['auto', 'webp', 'avif']}
-                    />
-                    </div> */}
                   </div>
                 </div>
               </div>

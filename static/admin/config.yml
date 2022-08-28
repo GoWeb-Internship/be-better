@@ -95,6 +95,7 @@ collections:
           required: false,
         }
       - { label: 'Text Ru', name: 'ruText', widget: 'string' }
+      - { label: 'Avatar', name: 'image', widget: image, required: false }
       - { label: 'Language', name: 'language', widget: 'hidden', default: 'uk' }
   # Discount
   - name: 'discount'

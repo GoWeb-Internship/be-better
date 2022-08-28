@@ -52,13 +52,15 @@ const Review = ({ frontmatter }) => {
 
       <div className="flex items-center">
         <div className="rounded-full mr-6 ">
-          <GatsbyImage
-            image={frontmatter.image}
-            alt="foto"
-            className="w-6 h-6"
-          />
-
-          {/* <BsPerson size={24} /> */}
+          {frontmatter.image ? (
+            <GatsbyImage
+              image={frontmatter.image}
+              alt="foto"
+              className="w-6 h-6"
+            />
+          ) : (
+            <BsPerson size={24} />
+          )}
         </div>
         <div>
           <p className={`{${position}} laptop:text-xl font-bold`}>

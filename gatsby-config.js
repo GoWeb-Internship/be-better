@@ -28,12 +28,12 @@ module.exports = {
         apiKey: process.env.CLOUD_API,
         apiSecret: process.env.CLOUD_API_SECRET,
         resourceType: `image`,
-        prefix: `dogs/`,
         context: true,
         tags: true,
         maxResults: 50,
       },
     },
+
     {
       resolve: `gatsby-plugin-netlify-cms`,
       options: {

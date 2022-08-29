@@ -24,14 +24,14 @@ const BeBetter = () => {
   `);
   const data = allMarkdownRemark.nodes;
   return (
-    <Section className="desktop:w-[1440px] desktop:h-[800px] desktop:mt-[150px] desktop:-mb-[200px]">
+    <Section className="desktop:w-[1440px] desktop:h-[800px] desktop:mt-[150px] ">
       <div className="laptop:flex">
         <div>
           {data.map(node => {
             if (node.frontmatter.language === i18n.language) {
               return (
                 <div key={node.frontmatter.title}>
-                  <h3 className=" text-buttonMobile font-medium text-xl text-center ml-2 mt-4 mb-3 laptop:mb-12 laptop:font-semibold laptop:text-4xl laptop:pl-18 laptop:ml-32 desktop:w-[500px] desktop:ml-[180px] desktop:mb-4 desktop:text-left desktop:pr-10 ">
+                  <h3 className=" text-buttonMobile font-medium text-xl text-center ml-2 mt-4 mb-3 laptop:mb-12 laptop:font-semibold laptop:text-4xl laptop:pl-18 laptop:ml-32 desktop:w-[500px] desktop:ml-[180px] desktop:mb-4 desktop:text-left desktop:pr-10 desktop:mt-[80px]">
                     {node.frontmatter.title}
                   </h3>
                   <div
@@ -45,7 +45,7 @@ const BeBetter = () => {
           })}
         </div>
         <div className="desktop:flex desktop:ml-[65px]">
-          <div className="laptop:-ml-24 desktop:-ml-16 desktop:pr-2">
+          <div className="laptop:-ml-24 desktop:-ml-16 desktop:pr-2 desktop:mt-[80px]">
             <div className="tablet:hidden desktop:block desktop:mt-14 desktop:mb-8">
               <StaticImage
                 alt=""
@@ -71,7 +71,7 @@ const BeBetter = () => {
             <StaticImage
               alt=""
               src="../../images/background/bokalu.png"
-              className="tablet:ml-[10px] laptop:pt-20 laptop:-ml-10  laptop:w-[250px] laptop:h-[382px] mr-5 rounded-2xl desktop:ml-0 desktop:w-[308] desktop:h-[440]"
+              className="tablet:ml-[10px] laptop:pt-20 laptop:-ml-10  laptop:w-[250px] laptop:h-[382px] mr-5 rounded-2xl desktop:ml-0 desktop:w-[308] desktop:h-[440] desktop:mt-[80px]"
               width=""
               height=""
               formats={['auto', 'webp', 'avif']}

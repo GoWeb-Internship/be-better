@@ -2,7 +2,7 @@ import React from 'react';
 import { useTranslation } from 'gatsby-plugin-react-i18next';
 import JustForm from './JustForm';
 import ModalWindow from '../ModalWindow';
-import { modalform, modaltitle, modaltext } from './Form.module.css';
+import { modalform, modaltitle, modaltext, modalcheck } from './Form.module.css';
 
 const FormInModal = ({ hideModal, currentPlace = '' }) => {
   const [successMessage, setSuccessMessage] = React.useState(false);
@@ -26,7 +26,7 @@ const FormInModal = ({ hideModal, currentPlace = '' }) => {
           <JustForm
             clickFrom={currentPlace}
             formClassname="m-auto mb-2 laptop:mb-8"
-            checkboxClassname="mb-8 text-black"
+            checkboxClassname={modalcheck}
             openModal={setSuccessMessage}
           />
           <p className="text-center text-sm laptop:text-base">

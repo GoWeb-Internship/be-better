@@ -23,6 +23,14 @@
   @apply w-80 py-10 px-5 text-base laptop:w-[440px] laptop:py-14 laptop:px-14 bg-background;
 }
 
+.modalform input {
+  @apply laptop:!border-transparent laptop:shadow-formInput
+}
+
+.modalform label {
+  @apply laptop:text-main;
+}
+
 .formtitle {
   @apply mb-1 laptop:font-medium laptop:text-xl;
 }
@@ -43,6 +51,16 @@
   @apply mb-[34px] text-xl text-main font-bold;
 }
 
+.checkbox {
+  @apply mb-9;
+}
+.checkbox div {
+  @apply laptop:bg-[#7FDCF1] laptop:border-main desktop:border-likeGrey desktop:bg-transparent;
+}
+
+.checkbox span {
+  @apply laptop:text-black;
+}
 .underformtext {
   @apply text-sm laptop:text-base;
 }

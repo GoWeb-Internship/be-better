@@ -4,16 +4,16 @@ backend:
   branch: master
 media_folder: 'static/image'
 public_folder: '/image'
-media_library:
-  name: cloudinary
-  output_filename_only: false
-  config:
-    cloud_name: be-better
-    api_key: 633163553752424
-    default_transformations:
-      - - fetch_format: auto
-          quality: auto
-          crop: scale
+# media_library:
+#   name: cloudinary
+#   output_filename_only: false
+#   config:
+#     cloud_name: be-better
+#     api_key: 633163553752424
+#     default_transformations:
+#       - - fetch_format: auto
+#           quality: auto
+#           crop: scale
 
 collections:
   # Price

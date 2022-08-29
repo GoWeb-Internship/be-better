@@ -1,5 +1,5 @@
 .titleFacts {
-  @apply text-mainSecondLight text-xl font-medium laptop:font-semibold laptop:text-4xl  text-center laptop:w-[68%] laptop:ml-32 laptop:pl-6 desktop:pl-0 desktop:ml-0 desktop:w-[100%]  pt-6 desktop:pt-20 -top-20 max-w-7xl laptop:mb-4 desktop:mb-0;
+  @apply text-mainSecondLight text-xl font-medium laptop:font-semibold laptop:text-4xl  text-center laptop:w-[68%] laptop:ml-32 laptop:pl-6 desktop:pl-0 desktop:ml-16 desktop:w-[100%]  pt-6 desktop:pt-20 -top-20 max-w-7xl laptop:mb-4 desktop:mb-0;
 }
 .listFacts {
   @apply flex  text-sm pr-4   pb-24  pt-2 min-w-min justify-center flex-wrap text-start pb-32  desktop:pb-24  pt-2  desktop:flex-nowrap ;
@@ -14,26 +14,26 @@
  }
 
  .listFacts li:nth-child(1){
-  @apply mb-3 desktop:mb-0 mr-5 desktop:mt-64 w-48 laptop:ml-20
+  @apply mb-3 laptop:ml-[2rem] laptop:mr-[1.25rem] desktop:mb-0 -mr-[1.75rem] desktop:mt-64 w-48 desktop:ml-20
 }
 .listFacts li:nth-child(2){
-  @apply  mb-3 desktop:mb-0 mr-5  desktop:mt-52 w-48
+  @apply  mb-3 laptop:mr-[0.25rem]  desktop:mb-0 -mr-[1.75rem] desktop:mt-52 w-48
 } 
 .listFacts li:nth-child(3){
-  @apply mb-3 desktop:mb-0 mr-5 desktop:mt-40 w-48 
+  @apply mb-3 laptop:ml-5 laptop:mr-5 desktop:mb-0 -mr-[1.75rem] desktop:mt-40 w-48 
 }
 .listFacts p:nth-child(3){
   @apply  desktop:mt-48 ml-4
 }
 .listFacts li:nth-child(4){
-  @apply tablet:mr-10 ml-8 laptop:mr-5 desktop:ml-0  desktop:mt-28  w-48
+  @apply -mr-[0.5rem]  ml-8 laptop:mr-5 desktop:ml-0  desktop:mt-28  w-48
 }
 
 .listFacts li:nth-child(5){
-  @apply tablet:mr-2  laptop:mr-5 desktop:mt-16 w-48
+  @apply -mr-[1.75rem]   laptop:mr-5 desktop:mt-16 w-48
 }
 .listFacts li:nth-child(6){
-  @apply laptop:-mr-5 desktop:mr-5 desktop:mt-5  w-48
+  @apply -mr-[1.75rem] laptop:-mr-5 desktop:mr-5 desktop:mt-5  w-48
 } 
 
 
@@ -41,14 +41,16 @@
 @apply text-mainSecond list-none  list-inside font-normal pl-16  mt-8  text-sm  ;
 }
 .textContainer {
-  @apply w-50 h-36 mt-36 text-center flex flex-col justify-center ;
+  @apply  w-50 h-36 mt-36 text-center flex flex-col justify-center ;
   }
   
   
   .testSecS {
-  @apply  font-normal text-sm pr-4 text-start pl-8 mt-48 desktop:mt-56 
+  @apply  font-normal text-sm pr-4 text-start pl-8 -mt-[3rem] desktop:-mt-[4rem] 
   }
- 
+  .testSecS{
+    @apply -mt-[6rem] desktop:-mt-[4rem]
+  }
 
   
   .iconClass{
@@ -68,7 +70,7 @@
     @apply w-5 h-5   absolute -top-5  left-7   z-10;
   }
   
-  .iconFacts {
+  .iconFactsSteps {
     @apply   mt-14 ml-0 w-[22px] h-[22px];
   }
   
@@ -76,13 +78,13 @@
   
   
   .svgBgFacts {
-    @apply icons-step fill-mainSecondLight  -mt-48 -ml-5;
+    @apply icons-step fill-mainSecondLight -mt-[5.5rem]  desktop:-mt-[3.5rem] -ml-[0.25rem];
   }
   
   .itemFacts {
     @apply relative w-48;
   }
-  
+/*   
   .iconFacts-template {
     position: absolute;
     display: block;
@@ -129,4 +131,4 @@
   .itemFacts:nth-child(6)::after {
     background-color: #FCD9C4;
   }
-   
+    */

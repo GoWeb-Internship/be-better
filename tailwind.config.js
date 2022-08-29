@@ -180,10 +180,6 @@ module.exports = {
           margin: 'auto',
           position: 'absolute',
         },
-        '.stair-iconka': {
-          width: '32px',
-          height: '32px',
-        },
       });
     }),
   ],

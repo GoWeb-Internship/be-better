@@ -58,37 +58,38 @@ const List = ({ icons = '', data = {}, formula = false }) => {
         )}
       </div>
     );
-  }
-  return (
-    <div>
-      <h3 className={titleFacts}>{data.title}</h3>
-      {!!data.list.length && (
-        <ul className={`${listFacts}`}>
-          {data.list.map(({ textPrimary, svg, textSecondary, bg }) => {
-            return (
-              <li className={itemFacts} key={icons}>
-                <div className={svgContainerFacts}>
-                  <svg className={iconFacts}>
-                    <use href={`${icons}#icon-${svg}`} />
-                  </svg>
-                </div>
-                <div className={textContainer}>
-                  <div className="flex mt-11 laptop:block laptop:mt-0">
-                    <svg className=" w-4 h-4 fill-mainSecond mr-2 laptop:hidden ">
+  } else {
+    return (
+      <div>
+        <h3 className={titleFacts}>{data.title}</h3>
+        {!!data.list.length && (
+          <ul className={`${listFacts}`}>
+            {data.list.map(({ textPrimary, svg, textSecondary, bg }) => {
+              return (
+                <li className={itemFacts} key={icons}>
+                  <div className={svgContainerFacts}>
+                    <svg className={iconFacts}>
                       <use href={`${icons}#icon-${svg}`} />
                     </svg>
-                    <p className={textPr}>{textPrimary}</p>
                   </div>
-                  <p className={testSec}>{textSecondary}</p>
-                  <p className={bgFacts}>{bg}</p>
-                </div>
-              </li>
-            );
-          })}
-        </ul>
-      )}
-    </div>
-  );
+                  <div className={textContainer}>
+                    <div className="flex mt-11 laptop:block laptop:mt-0">
+                      <svg className=" w-4 h-4 fill-mainSecond mr-2 laptop:hidden ">
+                        <use href={`${icons}#icon-${svg}`} />
+                      </svg>
+                      <p className={textPr}>{textPrimary}</p>
+                    </div>
+                    <p className={testSec}>{textSecondary}</p>
+                    <p className={bgFacts}>{bg}</p>
+                  </div>
+                </li>
+              );
+            })}
+          </ul>
+        )}
+      </div>
+    );
+  }
 };
 
 export default List;

@@ -85,7 +85,7 @@ const Couch = () => {
               alt="notebook"
               className="mt-4 rounded-2xl desktop:w-[416px] desktop:h-[280px]"
             />
-            <p className="mt-[58px] w-81">{couch.why}</p>
+            <p className="mt-[58px] w-[280px]">{couch.why}</p>
             <div className="desktop:hidden">
               <Button
                 type="button"

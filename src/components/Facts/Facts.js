@@ -36,7 +36,7 @@ const Facts = () => {
       }
     }
   `);
-
+ 
   const { t } = useTranslation();
   const data = t('facts', { returnObjects: true });
   const isWide = useMedia('(min-width:1440px');

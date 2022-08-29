@@ -118,3 +118,12 @@ img {
 .slider-item-width {
   max-width: calc(100vw - 80px);
 }
+
+span.swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background-color: #4d2107;
+  opacity: 1;
+}
+.swiper-pagination-bullet {
+  background-color: red;
+  opacity: 1;
+}

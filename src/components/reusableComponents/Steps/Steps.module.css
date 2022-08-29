@@ -69,7 +69,7 @@
   }
   
   .iconFacts {
-    @apply   mt-14 ml-0;
+    @apply   mt-14 ml-0 w-[22px] h-[22px];
   }
   
   

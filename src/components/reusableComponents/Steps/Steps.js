@@ -1,7 +1,7 @@
 import React from 'react';
 import {
   titleFacts,
-  iconFacts,
+  iconFactsSteps,
   listFacts,
   itemFacts,
   svgBgFacts,
@@ -38,19 +38,20 @@ const Steps = ({ icons = '', data = {}, img = '', icon = '' }) => {
                   </svg>
                 </div>
 
-                <div className={svgContainerFacts}>
-                  <svg className={iconFacts}>
+                <div className='w-5 h-5   absolute -top-5  left-7   z-10'>
+                  <svg className='mt-14 ml-0 w-[22px] h-[22px]'>
                     <use href={`${icons}#icon-${img}`} />
                   </svg>
                 </div>
 
-                {/* <div className={textContainer}>
+                <div className={textContainer}>
                  
-                 
+                 <div className='tablet:hidden laptop:block'>
                   <svg className={svgBgFacts}>
                     <use href={`${icons}#icon-${svg}`} />
                   </svg>
-                </div> */}
+                  </div>
+                </div>
                 <p className={testSecS}>{textSecondary}</p>
               </li>
             );

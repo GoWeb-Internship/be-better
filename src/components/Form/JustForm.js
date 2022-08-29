@@ -99,7 +99,7 @@ const JustForm = ({
           className={input}
           placeholder=" "
         />
-        <label className={label} htmlFor="name">
+        <label className={label}>
           {data.nameInput}
         </label>
         <p className={error}>{errors.name?.message}</p>

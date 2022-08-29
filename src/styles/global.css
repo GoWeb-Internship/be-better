@@ -46,7 +46,7 @@ img {
 
 /* phone-input styles */
 .react-tel-input .country-list .search-box {
-  @apply !-ml-10 !w-[256px] desktop:!w-[300px] !pl-8 !border-x-transparent !border-t-transparent !border-b-main text-main;
+  @apply !-ml-10 !w-[256px] desktop:!w-[300px] !pl-8 !border-x-transparent !border-t-transparent !border-b-main text-main !shadow-none;
 }
 .react-tel-input .country-list .search-box::placeholder {
   @apply text-main;
@@ -64,10 +64,16 @@ img {
   margin: 0 6px 0 0;
 }
 
+.react-tel-input .selected-flag:hover {
+  @apply !bg-transparent;
+}
 .react-tel-input .country-list .country.highlight {
   @apply !bg-transparent;
 }
-.react-tel-input .country-list .country:hover {
+.react-tel-input .country-list .country-name {
+  @apply text-black;
+}
+.react-tel-input .country-list .country-name:hover {
   @apply text-main !bg-transparent;
 }
 

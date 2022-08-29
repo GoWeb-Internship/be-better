@@ -41,6 +41,7 @@ const Review = ({ frontmatter }) => {
   const positionLength = frontmatter[`${i18n.language}Position`];
 
   const position = positionLength === null ? 'mb-6' : 'opacity-0';
+  const image = frontmatter.image.childImageSharp.gatsbyImageData;
 
   return (
     <div className={reviewContainer}>
@@ -52,7 +53,11 @@ const Review = ({ frontmatter }) => {
 
       <div className="flex items-center">
         <div className="rounded-full mr-6 ">
-          <BsPerson size={24} />
+          {image ? (
+            <GatsbyImage image={image} className="h-6 w-6 rounded-full  " />
+          ) : (
+            <BsPerson size={24} />
+          )}
         </div>
         <div>
           <p className={`{${position}} laptop:text-xl font-bold`}>

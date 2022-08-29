@@ -27,6 +27,13 @@ const Reviews = () => {
             ruName
             ruPosition
             ruText
+            image {
+              id
+              childImageSharp {
+                gatsbyImageData
+                id
+              }
+            }
           }
           id
         }

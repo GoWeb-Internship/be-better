@@ -1,16 +1,20 @@
 import React from 'react';
 import { useTranslation } from 'gatsby-plugin-react-i18next';
 import { StaticImage } from 'gatsby-plugin-image';
+import { useMedia } from 'react-use';
+import { graphql, useStaticQuery } from 'gatsby';
 import Section from '../reusableComponents/Section';
 import Container from '../Container';
 import Video from '../Video';
 import Form from './Form';
 import Social from '../Social';
-import { graphql, useStaticQuery } from 'gatsby';
+import FormWithBackground from '../Form/FormWithBackground';
 
 const FormWithVideoBg = ({ clickFrom }) => {
   const { t, i18n } = useTranslation();
   const hero = t('hero', { returnObjects: true });
+  const isMobile = useMedia('(max-width:767px');
+  const isDesktop = useMedia('(min-width:1440px');
   const { allMarkdownRemark } = useStaticQuery(graphql`
     query {
       allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/discount/" } }) {
@@ -34,22 +38,19 @@ const FormWithVideoBg = ({ clickFrom }) => {
   const [frontmatter] = allMarkdownRemark.nodes;
   const data = frontmatter.frontmatter;
   return (
-    <Section
+    <Section id="nav-feedback">
+    {isMobile ? <FormWithBackground clickFrom="main" /> : 
+    <div
       className="hidden laptop:block laptop:h-[1053px] desktop:h-[760px] desktop:pr-6"
-      id="nav-feedback"
+      
     >
-      <div className="hidden laptop:block w-[768px] h-[1053px] absolute -z-10 desktop:hidden">
-        <StaticImage
+      {isDesktop ? <Video /> : <StaticImage
           layout="fullWidth"
           src="../../images/background/formTablet.jpg"
           alt=""
           style={{ position: 'absolute' }}
           className="w-full h-full -z-10 top-0"
-        />
-      </div>
-      <div className="hidden desktop:block">
-        <Video />
-      </div>
+        />}
       <Container>
         <div className="laptop:px-16 laptop:pt-40 desktop:pr-6 flex justify-end ">
           <div className="text-left ">
@@ -84,6 +85,7 @@ const FormWithVideoBg = ({ clickFrom }) => {
           </div>
         </div>
       </Container>
+    </div>}
     </Section>
   );
 };

@@ -186,6 +186,12 @@
       }
     ]
   },
+  "notFound": {
+    "something": "Something went wrong(",
+    "work": "We are already working to fix this!",
+    "timeToReturn": "In the meantime, you can return to the main page",
+    "returnLink": "Return to main"
+  },
   "stepsnew": {
     "title": "How we do it in 6 easy steps",
     "steps": [

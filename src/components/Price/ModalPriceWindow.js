@@ -9,6 +9,7 @@ import {
   formtext,
   accenttext,
   price,
+  checkbox,
   underformtext,
 } from './Price.module.css';
 
@@ -40,7 +41,7 @@ const ModalPriceWindow = ({ hideModal, currentPrice, currentRate }) => {
           <JustForm
             clickFrom={currentPrice}
             formClassname={formmargin}
-            checkboxClassname="mb-9"
+            checkboxClassname={checkbox}
             openModal={setSuccessMessage}
           />
           <p className={underformtext}>{form.connection}</p>

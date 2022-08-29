@@ -6,7 +6,7 @@
 }
 
 .itemFacts {
-  @apply relative laptop:mr-4 desktop:mr-4  laptop:rounded-2xl  laptop:shadow-you laptop:hover:scale-105 laptop:ease-in laptop:duration-300;
+  @apply relative laptop:mr-4 desktop:mr-4  laptop:rounded-2xl  laptop:shadow-[#B1ACA0] laptop:hover:scale-105 laptop:ease-in laptop:duration-300;
 }
 
 .svgContainerFacts {
@@ -62,7 +62,7 @@
   @apply flex flex-col laptop:flex-row justify-center;
 }
 .itemFormula {
-  @apply relative flex flex-col items-center desktop:flex-row;
+  @apply relative flex flex-col items-center desktop:flex-row shadow-[#AAC1C6];
 }
 
 .iconFormula {

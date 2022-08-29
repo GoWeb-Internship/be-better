@@ -1,0 +1,11 @@
+.container {
+  @apply pt-[72px] px-5  laptop:pt-[220px] desktop:pt-[224px]  h-[100vh];
+}
+
+.textContainer {
+  @apply w-[310px] text-left desktop:w-[416px];
+}
+
+.title {
+  @apply mb-6 laptop:mb-10  text-[59px] font-bold leading-[80.35px] desktop:mb-6;
+}

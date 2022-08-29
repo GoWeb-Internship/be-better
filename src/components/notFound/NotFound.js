@@ -3,7 +3,16 @@ import { graphql, useStaticQuery } from 'gatsby';
 import { GatsbyImage } from 'gatsby-plugin-image';
 import { useMedia } from 'react-use';
 import { Link } from 'gatsby';
-import { title, container, textContainer } from './NotFound.module.css';
+import {
+  title,
+  container,
+  textContainer,
+  something,
+  work,
+  timeReturn,
+  link,
+  img,
+} from './NotFound.module.css';
 import { useTranslation } from 'gatsby-plugin-react-i18next';
 
 const NotFound = () => {
@@ -39,29 +48,15 @@ const NotFound = () => {
       <div className=" laptop:flex laptop:justify-around">
         <div className={textContainer}>
           <h1 className={title}>404</h1>
-          <p className="mb-2 text-2xl desktop:text-34 desktop:leading-[46.3px] font-semibold desktop:mb-4">
-            {data.something}
-          </p>
-          <p className="mb-[56px] laptop:mb-[93px] laptop:text-2xl desktop:text-34 desktop:leading-[46.3px] font-semibold desktop:mb-[72px]  text-main">
-            {data.work}
-          </p>
-          <p className="mb-20  laptop:text-base laptop:mb-6   desktop:text-xl  leading-[27.24px] font-medium desktop:mb-20 ">
-            {data.timeToReturn}
-          </p>
-          <Link
-            to="/"
-            className="px-[39px] laptop:px-[53px] font-bold text-lg text-white bg-main rounded-full py-3 desktop:px-15 hover:bg-[#038bab] ease-in duration-300"
-          >
+          <p className={something}>{data.something}</p>
+          <p className={work}>{data.work}</p>
+          <p className={timeReturn}>{data.timeToReturn}</p>
+          <Link to="/" className={link}>
             {data.returnLink}
           </Link>
         </div>
         <div>
-          {!isMobile && (
-            <GatsbyImage
-              image={badWeather}
-              className="laptop:w-[310px] laptop:h-[436px] desktop:w-[390px] desktop:h-[512px]"
-            />
-          )}
+          {!isMobile && <GatsbyImage image={badWeather} className={img} />}
         </div>
       </div>
     </div>

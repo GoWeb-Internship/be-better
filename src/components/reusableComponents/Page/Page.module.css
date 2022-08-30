@@ -10,15 +10,12 @@
   @apply flex  text-sm pr-4 desktop:max-w-7xl text-start  pb-24  pt-2;
 }
 .listFacts {
-  @apply relative desktop:w-48 desktop:flex;
+  @apply relative desktop:w-48 desktop:flex mt-0;
+}
+.listFacts li {
+  @apply pt-[16px] pl-[16px] relative;
 }
 
-/* .listFacts li:nth-child(6)  {
-    @apply laptop:h-[180px] laptop:border-t-[20px] laptop:border-l-[20px] laptop:border-l-stepsFive laptop:border-t-stepsFive
-   }  */
-/* .stepsHeih:nth-child(1){
-@apply h-[180px] laptop:border-t-[20px] laptop:border-l-[20px] laptop:border-l-stepsFive laptop:border-t-stepsFive
-   } */
 .listFacts li:nth-child(1) {
   @apply mb-3 ml-[2rem] laptop:mr-[0.75rem] laptop:ml-12 desktop:mb-0 mr-5 desktop:mt-64 desktop:-mr-[0.25rem] w-48 desktop:ml-20 laptop:h-[180px] laptop:border-t-[20px] laptop:border-l-[20px] laptop:border-l-main laptop:border-t-main;
 }
@@ -28,9 +25,7 @@
 .listFacts li:nth-child(3) {
   @apply mb-3 ml-[2rem]  desktop:mb-0 mr-5 desktop:mt-40 desktop:mr-[1.75rem] w-48 laptop:mb-[70px] laptop:h-[180px] laptop:border-t-[20px] laptop:border-l-[20px] laptop:border-l-stepsTwo laptop:border-t-stepsTwo;
 }
-.listFacts p:nth-child(3) {
-  @apply desktop:mt-48 ml-4;
-}
+
 .listFacts li:nth-child(4) {
   @apply ml-[3rem] laptop:mr-[0.75rem] laptop:ml-[1rem] tablet:mr-10  desktop:-mr-[0.25rem]  desktop:mt-28 desktop:ml-0 w-48 laptop:h-[180px] laptop:border-t-[20px] laptop:border-l-[20px] laptop:border-l-stepsThree laptop:border-t-stepsThree;
 }
@@ -43,7 +38,7 @@
 }
 
 .textPr {
-  @apply text-main list-none  list-inside font-normal pl-15  mt-[0.95rem]  text-sm;
+  @apply text-main list-none  list-inside font-normal text-sm  text-sm;
 }
 
 .textContainer {
@@ -51,11 +46,11 @@
 }
 
 .testSec {
-  @apply font-normal text-sm pr-4 text-start -mt-[6rem] laptop:pl-[1rem] pl-8  laptop:-mt-[7rem] desktop:-mt-[5rem];
+  @apply font-normal text-sm ;
 }
 
 .iconClass {
-  @apply pl-[9rem]  -mb-[13rem] pb-[3rem];
+  @apply tablet:hidden desktop:flex items-center justify-center desktop:w-[16px] desktop:h-[16px] absolute top-[-46px] right-0;
 }
 
 .itemFacts {

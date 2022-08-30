@@ -1,7 +1,21 @@
 import React from 'react'
-import { titleFacts,iconFacts, listFacts,stepsHeih, itemFacts,itemFactsMob, svgBgFacts, svgContainerFacts, textContainer, textPr, iconClass, testSec,} from './Page.module.css'
+import { IconContext } from 'react-icons';
+import { titleFacts, listFacts, itemFacts,itemFactsMob,  textContainer, textPr, iconClass, testSec,} from './Page.module.css'
 import {useMedia} from 'react-use'
+import {FaRocketchat} from 'react-icons/fa'
+import {MdBookmarks, MdCenterFocusWeak} from 'react-icons/md'
+import {CgArrowAlignV} from 'react-icons/cg'
+import {TiArrowRepeatOutline} from 'react-icons/ti'
+import {BiMedal} from 'react-icons/bi'
 
+const stepsIcons = [
+  <FaRocketchat/>,
+  <MdBookmarks/>,
+  <MdCenterFocusWeak/>,
+  <CgArrowAlignV/>,
+  <TiArrowRepeatOutline/>,
+  <BiMedal/>
+]
 const Page = ({ icons = '', data = {}, img ='', icon='' }) => {
 const isTablet = useMedia('(min-width: 768px)');
 
@@ -10,34 +24,30 @@ const isTablet = useMedia('(min-width: 768px)');
       <h3 className={titleFacts}>{data.title}</h3>
       {!!data.page.length && (
         <ul className={`${listFacts}`}>
-          {data.page.map(({ textPrimary, svg, img, icon, textSecondary }) => {
+          {data.page.map(({ textPrimary, svg, img, icon, textSecondary }, index) => {
             return (
               <li className={isTablet ? itemFacts : itemFactsMob} key={icons}>
-                <div className={stepsHeih}>
-            <div><p className={textPr}>{textPrimary}</p></div>
-            <div className={iconClass}>
-                <svg className="tablet:hidden desktop:block  desktop:w-10 desktop:h-10 desktop:-mt-20 desktop:ml-6">
-                    <use className='desktop:w-10 desktop:h-10 desktop:-mt-40'  href={`${icons}#icon-${icon}`} />
-                  </svg>
+                
+            <div className='flex items-center gap-[10px] mb-1'>
+            <IconContext.Provider
+                 value={{
+                  className: 'm-0 w-[22px] h-[22px]',
+                  color: '#27B6D8'
+                }}
+                  >
+                    {stepsIcons[index]}
+                    </IconContext.Provider>
+
+                    <h3 className={textPr}>{textPrimary}</h3>
                 </div> 
 
-                <div className="w-5 h-5   absolute -top-10  left-7   z-10">
-                  <svg className='mt-14 ml-0 w-[22px] h-[22px]'>
-                    <use href={`${icons}#icon-${img}`} />
+                <div className={iconClass}>
+                  <svg className='desktop:w-[16px] desktop:h-[16px]'>
+                    <use href={`${icons}#icon-${icon}`} />
                   </svg>
-                  
                 </div>
                 
-                <div className={textContainer}>
-                 
-                 {/* <div className='tablet:hidden laptop:block'>
-                  <svg className={svgBgFacts}>
-                    <use href={`${icons}#icon-${svg}`} />
-                  </svg>
-                  </div> */}
-                </div>
                   <p className={testSec}>{textSecondary}</p>
-                  </div>
               </li>
             );
           })}

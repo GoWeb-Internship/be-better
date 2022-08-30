@@ -1,5 +1,8 @@
 span{
-    @apply text-orangeDirty;
+    @apply text-orangeDirty ;
+}
+p{
+    @apply mb-[1rem]
 }
 .text{
     @apply   pt-0 h-96 tablet:mr-10 laptop:mr-32  desktop:mr-96

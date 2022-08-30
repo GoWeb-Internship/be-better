@@ -76,7 +76,7 @@ return (
           </h3>
           <div
             key={node.frontmatter.language}
-            className="pt-0 h-96 mt-32 tablet:mr-10 laptop:mt-34px laptop:mr-32 desktop:mt-6 desktop:mr-52"
+            className="pt-0 h-96 mt-32 tablet:mr-10 laptop:mt-34px laptop:mr-32 desktop:mt-6 desktop:mr-52 "
             dangerouslySetInnerHTML={{ __html: node.html }}
           />
         </>

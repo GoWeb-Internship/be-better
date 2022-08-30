@@ -5,15 +5,16 @@ import { useTranslation } from 'gatsby-plugin-react-i18next';
 import { StaticImage, GatsbyImage } from 'gatsby-plugin-image';
 import icons from '../../images/factsIcons.svg';
 import Way from '../Way';
+import { IconContext } from 'react-icons';
 import {
   MdBusinessCenter,
   MdOutlineThumbUp,
   MdOutlineStackedLineChart,
   MdOutlineDomain,
   MdOutlineMoreTime,
-} from 'react-icons';
-
-import { ReactComponent as Icf } from '../../images/icf.svg';
+  MdFactCheck,
+} from 'react-icons/md';
+import { GrCertificate } from 'react-icons/gr';
 
 import {
   section,
@@ -32,6 +33,15 @@ import {
   bgFacts,
 } from './Facts.module.css';
 import { useMedia } from 'react-use';
+
+const factsIcons = [
+  <MdBusinessCenter />,
+  <MdOutlineThumbUp />,
+  <MdOutlineStackedLineChart />,
+  <MdOutlineDomain />,
+  <MdFactCheck />,
+  <MdOutlineMoreTime />,
+];
 
 const Facts = () => {
   const foto = useStaticQuery(graphql`
@@ -62,17 +72,6 @@ const Facts = () => {
   const fotoMob = foto.mob.childImageSharp.gatsbyImageData;
   const fotoDesk = foto.desk.childImageSharp.gatsbyImageData;
 
-  const iconObject = [
-    {
-      bag: <MdBusinessCenter />,
-      ok: <MdOutlineThumbUp />,
-      scale: <MdOutlineStackedLineChart />,
-      house: <MdOutlineDomain />,
-      icf: <Icf />,
-      clock: <MdOutlineMoreTime />,
-    },
-  ];
-
   return (
     <Section className={section} id="facts">
       <h2 className={title}>{data.title}</h2>
@@ -89,28 +88,46 @@ const Facts = () => {
           <h2 className={titleFacts}>{data.title}</h2>
           {!!data.list.length && (
             <ul className={listFacts}>
-              {data.list.map(({ textPrimary, svg, textSecondary, bg }) => {
-                return (
-                  <li className={itemFacts} key={icons}>
-                    <div className={svgContainerFacts}>
-                      <svg className={iconFacts}>
-                        <use href={`${icons}#icon-${svg}`} />
-                      </svg>
-                      {/* {iconObject} */}
-                    </div>
-                    <div className={textContainer}>
-                      <div className="flex mt-11 laptop:block laptop:mt-0">
-                        <svg className=" w-4 h-4 fill-mainSecond mr-2 laptop:hidden ">
+              {data.list.map(
+                ({ textPrimary, svg, textSecondary, bg }, index) => {
+                  return (
+                    <li className={itemFacts} key={icons}>
+                      <div className={svgContainerFacts}>
+                        {/* <svg className={iconFacts}>
                           <use href={`${icons}#icon-${svg}`} />
-                        </svg>
-                        <p className={textPr}>{textPrimary}</p>
+                        </svg> */}{' '}
+                        <IconContext.Provider
+                          value={{
+                            className:
+                              'stair-icons mt-[11px] fill-[mainSecond] ',
+                            color: '#FF9B62',
+                          }}
+                        >
+                          {factsIcons[index]}
+                        </IconContext.Provider>
                       </div>
-                      <p className={testSec}>{textSecondary}</p>
-                      <p className={bgFacts}>{bg}</p>
-                    </div>
-                  </li>
-                );
-              })}
+                      <div className={textContainer}>
+                        <div className="flex mt-11 laptop:block laptop:mt-0">
+                          {/* <svg className=" w-4 h-4 fill-mainSecond mr-2 laptop:hidden ">
+                            <use href={`${icons}#icon-${svg}`} />
+                          </svg> */}
+                          <IconContext.Provider
+                            value={{
+                              className: 'w-4 h-4 mr-2 laptop:hidden',
+                              color: '#FF9B62',
+                            }}
+                          >
+                            {factsIcons[index]}
+                          </IconContext.Provider>
+                          <p className={textPr}>{textPrimary}</p>
+                        </div>
+                        <p className={testSec}>{textSecondary}</p>
+                        <p className={bgFacts}>{bg}</p>
+                      </div>
+                    </li>
+                  );
+                }
+              )}
             </ul>
           )}
         </div>

@@ -47,16 +47,17 @@ const Formula = () => {
                     </div>
                     <div className={textContainerFormula}>
                       <p className={testSec}>
-                        {firstWord}
+                        {firstWord} <br />
                         <span className="text-main font-bold ">
                           {colorWord}
                         </span>
                         {thirdWord}
                       </p>
+                      <svg className={svgBgFormula}>
+                        <use href={`${icons}#icon-${svg}`} />
+                      </svg>
                     </div>
-                    <svg className={svgBgFormula}>
-                      <use href={`${icons}#icon-${svg}`} />
-                    </svg>
+
                     <IoIosArrowRoundDown size={60} className={iconArrow} />
                   </div>
                 </li>

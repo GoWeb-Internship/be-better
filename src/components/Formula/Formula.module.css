@@ -28,13 +28,13 @@
   @apply hidden;
 }
 .itemFormula {
-  @apply relative flex flex-col items-center desktop:flex-row shadow-[#AAC1C6];
+  @apply relative flex flex-col items-center laptop:flex-row shadow-[#AAC1C6];
 }
 .iconFormula {
   @apply stair-icons fill-main mt-[10px];
 }
 .svgBgFormula {
-  @apply stair-iconsBg fill-iconBg   right-[15px] bottom-[25px];
+  @apply stair-iconsBg fill-iconBg left-[110px] laptop:left-[100px] laptop:bottom-[25px]   desktop:left-[120px];
 }
 
 .svgContainerFormula {
@@ -42,7 +42,7 @@
 }
 
 .textContainerFormula {
-  @apply w-50 h-36 bg-white rounded-2xl shadow-lg px-12 text-center flex flex-col justify-center ease-in duration-300 hover:shadow-2xl laptop:w-[184px] desktop:w-50;
+  @apply w-50 h-36 bg-white rounded-2xl shadow-lg desktop:px-10 text-center flex flex-col justify-center ease-in duration-300 hover:shadow-2xl laptop:w-[184px] desktop:w-50;
 }
 .iconArrow {
   @apply mt-2 mb-[36px] laptop:h-8 laptop:w-8 desktop:w-12 desktop:h-12 text-likeGrey laptop:mt-[6px] laptop:mb-[6px] laptop:-rotate-90 desktop:mr-[38px] desktop:ml-[38px];

@@ -5,7 +5,7 @@ import Container from '../Container';
 import Form from '../Form';
 import Social from '../Social';
 import FormWithBackground from '../Form/FormWithBackground';
-import FooterNext from '../FooterNext';
+import FooterNext from './FooterNext';
 import { footerContainer, gradient, list, link, donate } from './Footer.module.css';
 import icons from '../../images/sprite.svg';
 import Donations from '../Donations';

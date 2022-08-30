@@ -5,13 +5,14 @@ import { useTranslation } from 'gatsby-plugin-react-i18next';
 import { StaticImage, GatsbyImage } from 'gatsby-plugin-image';
 import icons from '../../images/factsIcons.svg';
 import Way from '../Way';
+import { IconContext } from 'react-icons';
 import {
   MdBusinessCenter,
   MdOutlineThumbUp,
   MdOutlineStackedLineChart,
   MdOutlineDomain,
   MdOutlineMoreTime,
-} from 'react-icons';
+} from 'react-icons/md';
 
 import { ReactComponent as Icf } from '../../images/icf.svg';
 
@@ -32,6 +33,15 @@ import {
   bgFacts,
 } from './Facts.module.css';
 import { useMedia } from 'react-use';
+
+const factsIcons = [
+  <MdBusinessCenter />,
+  <MdOutlineThumbUp />,
+  <MdOutlineStackedLineChart />,
+  <MdOutlineDomain />,
+  <Icf />,
+  <MdOutlineMoreTime />,
+];
 
 const Facts = () => {
   const foto = useStaticQuery(graphql`
@@ -78,27 +88,37 @@ const Facts = () => {
           <h2 className={titleFacts}>{data.title}</h2>
           {!!data.list.length && (
             <ul className={listFacts}>
-              {data.list.map(({ textPrimary, svg, textSecondary, bg }) => {
-                return (
-                  <li className={itemFacts} key={icons}>
-                    <div className={svgContainerFacts}>
-                      <svg className={iconFacts}>
-                        <use href={`${icons}#icon-${svg}`} />
-                      </svg>
-                    </div>
-                    <div className={textContainer}>
-                      <div className="flex mt-11 laptop:block laptop:mt-0">
-                        <svg className=" w-4 h-4 fill-mainSecond mr-2 laptop:hidden ">
+              {data.list.map(
+                ({ textPrimary, svg, textSecondary, bg }, index) => {
+                  return (
+                    <li className={itemFacts} key={icons}>
+                      <div className={svgContainerFacts}>
+                        {/* <svg className={iconFacts}>
                           <use href={`${icons}#icon-${svg}`} />
-                        </svg>
-                        <p className={textPr}>{textPrimary}</p>
+                        </svg> */}{' '}
+                        <IconContext.Provider
+                          value={{
+                            className: 'm-0 w-[48px] h-[48px]',
+                            color: 'orange',
+                          }}
+                        >
+                          {factsIcons[index]}
+                        </IconContext.Provider>
                       </div>
-                      <p className={testSec}>{textSecondary}</p>
-                      <p className={bgFacts}>{bg}</p>
-                    </div>
-                  </li>
-                );
-              })}
+                      <div className={textContainer}>
+                        <div className="flex mt-11 laptop:block laptop:mt-0">
+                          <svg className=" w-4 h-4 fill-mainSecond mr-2 laptop:hidden ">
+                            <use href={`${icons}#icon-${svg}`} />
+                          </svg>
+                          <p className={textPr}>{textPrimary}</p>
+                        </div>
+                        <p className={testSec}>{textSecondary}</p>
+                        <p className={bgFacts}>{bg}</p>
+                      </div>
+                    </li>
+                  );
+                }
+              )}
             </ul>
           )}
         </div>

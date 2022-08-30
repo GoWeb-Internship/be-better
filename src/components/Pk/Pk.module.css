@@ -1,6 +1,7 @@
 h3 span{
     @apply text-main desktop:-mt-5 pb-30;
 }
+
 .text{
     @apply   pt-0 h-96 tablet:mr-10 laptop:mr-32  desktop:mr-96
 }

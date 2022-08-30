@@ -1,5 +1,6 @@
 import React from 'react';
 import { StaticImage } from 'gatsby-plugin-image';
+import {heroBg} from './Hero.module.css';
 
 const HeroBackground = () => {
   return (
@@ -10,7 +11,7 @@ const HeroBackground = () => {
           src="../../images/background/heroMobile.jpg"
           alt=""
           style={{ position: 'absolute' }}
-          className="w-full h-full -z-10 top-0"
+          className={heroBg}
         />
       </div>
       <div className="hidden laptop:block desktop:hidden">
@@ -19,7 +20,7 @@ const HeroBackground = () => {
           src="../../images/background/heroTablet.jpg"
           alt=""
           style={{ position: 'absolute' }}
-          className="w-full h-full -z-10 top-0"
+          className={heroBg}
         />
       </div>
     </>

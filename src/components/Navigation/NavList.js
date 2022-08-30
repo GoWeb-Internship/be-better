@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-scroll';
+import PropTypes from 'prop-types';
 import { links, active } from './Nav.module.css';
 
 const NavList = ({ navigation }) => {
@@ -23,4 +24,10 @@ const NavList = ({ navigation }) => {
   );
 };
 
+NavList.propTypes = {
+  navigation: PropTypes.arrayOf(PropTypes.shape({
+    id: PropTypes.string.isRequired,
+    name: PropTypes.string.isRequired,
+  }))
+}
 export default NavList;

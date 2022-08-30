@@ -14,3 +14,19 @@
 .donate {
     @apply ml-[70px] text-xs mb-6 text-left laptop:text-sm laptop:w-80 laptop:ml-0 laptop:-mt-[120px] laptop:mb-10 desktop:ml-[200px] desktop:w-[480px] desktop:-mt-[60px] desktop:mb-14;
 }
+/* FooterNext */
+.title {
+    @apply mb-2 font-bold text-base laptop:font-semibold text-main laptop:text-black laptop:text-2xl desktop:pb-4 desktop:text-black desktop:w-[416px];
+  }
+  
+  .text {
+    @apply font-normal  text-sm;
+  }
+  
+  .text p {
+    @apply mt-[54px] text-main text-start;
+  }
+  
+  .text span {
+    @apply text-caveat;
+  }

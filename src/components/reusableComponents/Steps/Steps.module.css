@@ -2,119 +2,108 @@
   @apply text-mainSecondLight text-xl font-medium laptop:font-semibold laptop:text-4xl  text-center laptop:w-[68%] laptop:ml-32 laptop:pl-6 desktop:pl-0 desktop:ml-16 desktop:w-[100%]  pt-6 desktop:pt-20 -top-20 max-w-7xl laptop:mb-4 desktop:mb-0;
 }
 .listFacts {
-  @apply flex  text-sm pr-4   pb-24  pt-2 min-w-min justify-center flex-wrap text-start pb-32  desktop:pb-24  pt-2  desktop:flex-nowrap ;
-
+  @apply flex  text-sm pr-4 pb-24 pt-2 min-w-min justify-center flex-wrap text-start desktop:pb-24 desktop:flex-nowrap;
 }
 
-  .listFacts {
-  @apply flex  text-sm pr-4 desktop:max-w-7xl text-start  pb-24  pt-2   ;
-} 
-.listFacts{
-  @apply relative desktop:w-48 desktop:flex
- }
-
- .listFacts li:nth-child(1){
-  @apply mb-3 laptop:ml-[2rem] laptop:mr-[1.25rem] desktop:mb-0 -mr-[1.75rem] desktop:mt-64 w-48 desktop:ml-20
+.listFacts {
+  @apply flex  text-sm pr-4 desktop:max-w-7xl text-start pb-24;
 }
-.listFacts li:nth-child(2){
-  @apply  mb-3 laptop:mr-[0.25rem]  desktop:mb-0 -mr-[1.75rem] desktop:mt-52 w-48
-} 
-.listFacts li:nth-child(3){
-  @apply mb-3 laptop:ml-5 laptop:mr-5 desktop:mb-0 -mr-[1.75rem] desktop:mt-40 w-48 
-}
-.listFacts p:nth-child(3){
-  @apply  desktop:mt-48 ml-4
-}
-.listFacts li:nth-child(4){
-  @apply -mr-[0.5rem]  ml-8 laptop:mr-5 desktop:ml-0  desktop:mt-28  w-48
+.listFacts {
+  @apply relative desktop:w-48 desktop:flex mt-36;
 }
 
-.listFacts li:nth-child(5){
-  @apply -mr-[1.75rem]   laptop:mr-5 desktop:mt-16 w-48
+.listFacts li {
+  @apply pt-[16px] pl-[16px] relative;
 }
-.listFacts li:nth-child(6){
-  @apply -mr-[1.75rem] laptop:-mr-5 desktop:mr-5 desktop:mt-5  w-48
-} 
 
+.listFacts li:nth-child(1) {
+  @apply mb-3 laptop:ml-[2rem] laptop:mr-[1.25rem] desktop:mb-0 -mr-[1.75rem] desktop:mt-64 w-48 desktop:ml-20 laptop:h-[180px] laptop:border-t-[20px] laptop:border-l-[20px] laptop:border-l-stOne laptop:border-t-stOne;
+}
+.listFacts li:nth-child(2) {
+  @apply mb-3 laptop:mr-[0.25rem]  desktop:mb-0 -mr-[1.75rem] desktop:mt-52 w-48 laptop:h-[180px] laptop:border-t-[20px] laptop:border-l-[20px] laptop:border-l-stTwo laptop:border-t-stTwo;
+}
+.listFacts li:nth-child(3) {
+  @apply mb-3 laptop:ml-5 laptop:mr-5 desktop:mb-0 -mr-[1.75rem] desktop:mt-40 w-48 laptop:mb-[40px] laptop:h-[180px] laptop:border-t-[20px] laptop:border-l-[20px] laptop:border-l-stThree laptop:border-t-stThree;
+}
+.listFacts li:nth-child(4) {
+  @apply -mr-[0.5rem]  ml-8 laptop:-ml-4 laptop:mr-5 desktop:ml-0  desktop:mt-28  w-48 laptop:h-[180px] laptop:border-t-[20px] laptop:border-l-[20px] laptop:border-l-stFour laptop:border-t-stFour;
+}
+
+.listFacts li:nth-child(5) {
+  @apply -mr-[1.75rem]   laptop:mr-5 desktop:mt-16 w-48 laptop:h-[180px] laptop:border-t-[20px] laptop:border-l-[20px] laptop:border-l-stFive laptop:border-t-stFive;
+}
+.listFacts li:nth-child(6) {
+  @apply -mr-[1.75rem] laptop:-mr-5 desktop:mr-5 desktop:mt-5  w-48 laptop:h-[180px] laptop:border-t-[20px] laptop:border-l-[20px] laptop:border-l-stSix laptop:border-t-stSix;
+}
 
 .textPrP {
-@apply text-mainSecond list-none  list-inside font-normal pl-16  mt-8  text-sm  ;
+  @apply text-mainSecond list-none list-inside font-normal text-sm;
 }
+
 .textContainer {
-  @apply  w-50 h-36 mt-36 text-center flex flex-col justify-center ;
-  }
-  
-  
-  .testSecS {
-  @apply  font-normal text-sm pr-4 text-start pl-8 -mt-[3rem] desktop:-mt-[4rem] 
-  }
-  .testSecS{
-    @apply -mt-[6rem] desktop:-mt-[4rem]
-  }
+  @apply w-50 h-36 text-center flex flex-col justify-center;
+}
 
-  
-  .iconClass{
-    @apply  pl-40  -mb-56 pb-12
+.textSteps {
+  @apply font-normal text-sm;
+}
 
-  }
-  
-  
-  
-  .itemFacts {
-    @apply relative w-48;
-  }
-  .itemFactsMob{
-    @apply relative w-48;
-  }
-  .svgContainerFacts {
-    @apply w-5 h-5   absolute -top-5  left-7   z-10;
-  }
-  
-  .iconFactsSteps {
-    @apply   mt-14 ml-0 w-[22px] h-[22px];
-  }
-  
-  
-  
-  
-  .svgBgFacts {
-    @apply icons-step fill-mainSecondLight -mt-[5.5rem]  desktop:-mt-[3.5rem] -ml-[0.25rem];
-  }
-  
-  .itemFacts {
-    @apply relative w-48;
-  }
-/*   
+.iconClass {
+  @apply tablet:hidden desktop:flex items-center justify-center desktop:w-[16px] desktop:h-[16px] absolute top-[-46px] right-0;
+}
+
+.itemFacts {
+  @apply relative w-48;
+}
+.itemFactsMob {
+  @apply relative w-48;
+}
+.svgContainerFacts {
+  @apply w-5 h-5 absolute -top-5  left-7 z-10;
+}
+
+.iconFactsSteps {
+  @apply mt-14 ml-0 w-[22px] h-[22px];
+}
+
+.svgBgFacts {
+  @apply icons-step fill-mainSecondLight -mt-[5.5rem]  desktop:-mt-[3.5rem] -ml-[0.25rem];
+}
+
+.itemFacts {
+  @apply relative w-48;
+}
+/*
   .iconFacts-template {
     position: absolute;
     display: block;
     content: '';
-  
+
     top: 0;
     left: 0;
-  
+
     background-color: #F17C39;
   }
-  
+
   .itemFacts::before {
     @apply iconFacts-template;
-  
+
     width: 24px;
     height: 104px;
   }
-  
+
   .itemFacts::after {
     @apply iconFacts-template;
-  
+
     width: 200px;
     height: 24px;
   }
-  
+
   .itemFacts:nth-child(2)::before,
   .itemFacts:nth-child(2)::after {
     background-color: #F38F55;
   }
-  
+
   .itemFacts:nth-child(3)::before,
   .itemFacts:nth-child(3)::after {
     background-color: #F59E6B;

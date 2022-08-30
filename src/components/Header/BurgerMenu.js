@@ -1,45 +1,48 @@
 import React from 'react';
 import { useTranslation } from 'gatsby-plugin-react-i18next';
 import { Link } from 'react-scroll';
-import icons from '../../images/sprite.svg';
+import {burgerMenuOverlay, burgerMenuNav, menuContainer, menuBg, closeBtn, closeIcon, menuList, menuItem, menuLink} from './Header.module.css';
+// import icons from '../../images/sprite.svg';
 
 const BurgerMenu = ({ toggleNav }) => {
   const { t } = useTranslation();
   const { nav, toMain } = t('header', { returnObjects: true });
 
   return (
-    <div className="fixed inset-0 bg-black bg-opacity-50 z-20 laptop:hidden">
-      <div className=" bg-white z-30 pl-12 pb-4 w-70 ml-auto">
-        <button
-          className="absolute top-1 right-5 w-11 h-11"
+    <div className={burgerMenuOverlay}>
+      <div className={menuBg}>
+        {/* <button
+          className={closeBtn}
           onClick={toggleNav}
         >
-          <svg className="w-7 h-7 m-auto fill-main">
+          <svg className={closeIcon}>
             <use href={`${icons}#close`} />
           </svg>
-        </button>
-        <ul className="flex flex-col pt-12 text-main ">
+        </button> */}
+        <ul className={menuList}>
           {nav.map(({ id, name }) => (
-            <li key={id} className="cursor-pointer h-11 pt-3 ">
+            <li key={id} className={menuItem}>
               <Link
                 to={`${id}`}
                 smooth
                 spy
                 offset={-52}
-                className="hover:border-b-2 border-main"
+                className={menuLink}
                 onClick={toggleNav}
+                href={`${id}`}
               >
                 {name}
               </Link>
             </li>
           ))}
-          <li key={toMain} className="cursor-pointer h-11 pt-3 ">
+          <li key={toMain} className={menuItem}>
             <Link
               to={'home'}
               smooth
               spy
-              className="hover:border-b-2 border-main"
+              className={menuLink}
               onClick={toggleNav}
+              href='home'
             >
               {toMain}
             </Link>
@@ -47,6 +50,47 @@ const BurgerMenu = ({ toggleNav }) => {
         </ul>
       </div>
     </div>
+    // <div className={menuContainer}>
+    //   <div className={menuBg}>
+    //     <button
+    //       className={closeBtn}
+    //       onClick={toggleNav}
+    //     >
+    //       <svg className={closeIcon}>
+    //         <use href={`${icons}#close`} />
+    //       </svg>
+    //     </button>
+    //     <ul className={menuList}>
+    //       {nav.map(({ id, name }) => (
+    //         <li key={id} className={menuItem}>
+    //           <Link
+    //             to={`${id}`}
+    //             smooth
+    //             spy
+    //             offset={-52}
+    //             className={menuLink}
+    //             onClick={toggleNav}
+    //             href={`${id}`}
+    //           >
+    //             {name}
+    //           </Link>
+    //         </li>
+    //       ))}
+    //       <li key={toMain} className={menuItem}>
+    //         <Link
+    //           to={'home'}
+    //           smooth
+    //           spy
+    //           className={menuLink}
+    //           onClick={toggleNav}
+    //           href='home'
+    //         >
+    //           {toMain}
+    //         </Link>
+    //       </li>
+    //     </ul>
+    //   </div>
+    // </div>
   );
 };
 

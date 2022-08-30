@@ -1,6 +1,6 @@
 import React from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
-import { title } from './FooterNext.module.css';
+import { title } from './Footer.module.css';
 import { useTranslation } from 'gatsby-plugin-react-i18next';
 
 const FooterNext = () => {

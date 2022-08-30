@@ -1,4 +1,4 @@
-.formulaContainer {
+.formula {
   @apply text-center pt-20 pb-54 relative;
 }
 
@@ -16,4 +16,37 @@
 
 .iconBg {
   @apply bg-white  -top-icon  left-2/4 -translate-x-1/2;
+}
+
+.listFormula {
+  @apply flex flex-col laptop:flex-row justify-center;
+}
+.formulaContainer {
+  @apply flex items-center flex-col laptop:flex-row;
+}
+.formulaContainer:last-child .iconArrow {
+  @apply hidden;
+}
+.itemFormula {
+  @apply relative flex flex-col items-center desktop:flex-row shadow-[#AAC1C6];
+}
+.iconFormula {
+  @apply stair-icons fill-main mt-[10px];
+}
+.svgBgFormula {
+  @apply stair-iconsBg fill-iconBg   right-[15px] bottom-[25px];
+}
+
+.svgContainerFormula {
+  @apply w-14 h-14 bg-white rounded-lg absolute shadow-you -top-[20px] left-2/4 -translate-x-1/2 z-10;
+}
+
+.textContainerFormula {
+  @apply w-50 h-36 bg-white rounded-2xl shadow-lg px-12 text-center flex flex-col justify-center ease-in duration-300 hover:shadow-2xl laptop:w-[184px] desktop:w-50;
+}
+.iconArrow {
+  @apply mt-2 mb-[36px] laptop:h-8 laptop:w-8 desktop:w-12 desktop:h-12 text-likeGrey laptop:mt-[6px] laptop:mb-[6px] laptop:-rotate-90 desktop:mr-[38px] desktop:ml-[38px];
+}
+.testSec {
+  @apply text-xs laptop:text-sm z-10;
 }

@@ -55,7 +55,10 @@ const Change = () => {
   };
 
   return (
-    <Section className="tablet:-mt-[57%] laptop:-mt-[17%] desktop:-mt-[11%]">
+    <Section
+      className="tablet:-mt-[57%] laptop:-mt-[17%] desktop:-mt-[11%]"
+      id="change"
+    >
       {data.map(node => {
         if (node.frontmatter.language === i18n.language) {
           return (

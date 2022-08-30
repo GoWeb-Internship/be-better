@@ -10,7 +10,7 @@ const StepsAdd = () => {
   const { t } = useTranslation();
   const data = t('stepsAdd', { returnObjects: true });
   return (
-    <Section className=" relative">
+    <Section className=" relative" id="stepsAdd">
       <StaticImage
         layout="fullWidth"
         src="../../images/background/results-min.png"

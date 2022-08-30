@@ -42,7 +42,7 @@ const ClientHistory = () => {
   const clients = allMarkdownRemark.nodes;
 
   return (
-    <Section className="py-20">
+    <Section className="py-20" id="client">
       <h3 className={title}>{data.title}</h3>
 
       <Slider slidesPerView={1} className={sliderHistory}>

@@ -11,7 +11,7 @@ const StepsAdd = () => {
   const data = t('stepsnew', { returnObjects: true });
 
   return (
-    <Section className="relative">
+    <Section className="relative" id="whyStep">
       <div className="relative max-h-full ">
         <StaticImage
           layout="fullWidth"
@@ -20,23 +20,23 @@ const StepsAdd = () => {
           style={{ position: 'absolute' }}
           className="w-[416px] h-[128px] tablet:hidden laptop:block  laptop:left-1/4 z-1 laptop:top-[45%]  desktop:pl-40 desktop:left-2/4 desktop:top-[35%] "
         />
-       <div className='tablet:hidden laptop:block'>
-        <StaticImage
-          layout="fullWidth"
-          src="../../images/background/features.jpg"
-          alt=""
-          style={{ position: 'absolute' }}
-          className="-z-20 w-full h-full"
-        />
+        <div className="tablet:hidden laptop:block">
+          <StaticImage
+            layout="fullWidth"
+            src="../../images/background/features.jpg"
+            alt=""
+            style={{ position: 'absolute' }}
+            className="-z-20 w-full h-full"
+          />
         </div>
-        <div className='laptop:hidden'>
-        <StaticImage
-          layout="fullWidth"
-          src="../../images/background/vectwo-min.png"
-          alt=""
-          style={{ position: 'absolute' }}
-          className="-z-20 w-full h-full"
-        />
+        <div className="laptop:hidden">
+          <StaticImage
+            layout="fullWidth"
+            src="../../images/background/vectwo-min.png"
+            alt=""
+            style={{ position: 'absolute' }}
+            className="-z-20 w-full h-full"
+          />
         </div>
         <List data={data} icons={svg} />
         <Reviews />

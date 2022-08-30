@@ -23,7 +23,7 @@ const Formula = () => {
   const data = t('formula', { returnObjects: true });
 
   return (
-    <Section className={formula}>
+    <Section className={formula} id="formula">
       <StaticImage
         layout="fullWidth"
         src="../../images/background/backgroundBlu.jpg"
@@ -38,8 +38,8 @@ const Formula = () => {
           <ul className={listFormula}>
             {data.list.map(({ svg, firstWord, colorWord, thirdWord }) => {
               return (
-                <div key={icons} className={formulaContainer}>
-                  <li className={itemFormula}>
+                <li key={icons} className={formulaContainer}>
+                  <div className={itemFormula}>
                     <div className={svgContainerFormula}>
                       <svg className={iconFormula}>
                         <use href={`${icons}#icon-${svg}`} />
@@ -57,9 +57,9 @@ const Formula = () => {
                     <svg className={svgBgFormula}>
                       <use href={`${icons}#icon-${svg}`} />
                     </svg>
-                  </li>
-                  <IoIosArrowRoundDown size={60} className={iconArrow} />
-                </div>
+                    <IoIosArrowRoundDown size={60} className={iconArrow} />
+                  </div>
+                </li>
               );
             })}
           </ul>

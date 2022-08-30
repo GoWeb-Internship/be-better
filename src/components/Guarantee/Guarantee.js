@@ -27,7 +27,10 @@ const Guarantee = () => {
   const data = allMarkdownRemark.nodes;
 
   return (
-    <Section className="h-[480px] pt-8 pb-16 px-5 laptop:pt-30 laptop:pl-[92px] desktop:h-[568px] desktop:pt-30 desktop:pl-74 text-left">
+    <Section
+      className="h-[480px] pt-8 pb-16 px-5 laptop:pt-30 laptop:pl-[92px] desktop:h-[568px] desktop:pt-30 desktop:pl-74 text-left"
+      id="guarantee"
+    >
       <GuaranteeBg />
       {data.map(node => {
         if (node.frontmatter.language === i18n.language) {

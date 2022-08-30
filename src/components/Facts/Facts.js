@@ -6,6 +6,16 @@ import { StaticImage, GatsbyImage } from 'gatsby-plugin-image';
 import icons from '../../images/factsIcons.svg';
 import Way from '../Way';
 import {
+  MdBusinessCenter,
+  MdOutlineThumbUp,
+  MdOutlineStackedLineChart,
+  MdOutlineDomain,
+  MdOutlineMoreTime,
+} from 'react-icons';
+
+import { ReactComponent as Icf } from '../../images/icf.svg';
+
+import {
   section,
   title,
   contentContainer,
@@ -31,7 +41,7 @@ const Facts = () => {
         publicURL
         childImageSharp {
           id
-          gatsbyImageData
+          gatsbyImageData(placeholder: BLURRED, formats: [AUTO, WEBP, AVIF])
         }
       }
       desk: file(name: { eq: "factsFoto" }) {
@@ -39,12 +49,12 @@ const Facts = () => {
         publicURL
         childImageSharp {
           id
-          gatsbyImageData
+          gatsbyImageData(placeholder: BLURRED, formats: [AUTO, WEBP, AVIF])
         }
       }
     }
   `);
- 
+
   const { t } = useTranslation();
   const data = t('facts', { returnObjects: true });
   const isWide = useMedia('(min-width:1440px');
@@ -52,8 +62,19 @@ const Facts = () => {
   const fotoMob = foto.mob.childImageSharp.gatsbyImageData;
   const fotoDesk = foto.desk.childImageSharp.gatsbyImageData;
 
+  const iconObject = [
+    {
+      bag: <MdBusinessCenter />,
+      ok: <MdOutlineThumbUp />,
+      scale: <MdOutlineStackedLineChart />,
+      house: <MdOutlineDomain />,
+      icf: <Icf />,
+      clock: <MdOutlineMoreTime />,
+    },
+  ];
+
   return (
-    <Section className={section}>
+    <Section className={section} id="facts">
       <h2 className={title}>{data.title}</h2>
 
       <StaticImage
@@ -75,6 +96,7 @@ const Facts = () => {
                       <svg className={iconFacts}>
                         <use href={`${icons}#icon-${svg}`} />
                       </svg>
+                      {/* {iconObject} */}
                     </div>
                     <div className={textContainer}>
                       <div className="flex mt-11 laptop:block laptop:mt-0">

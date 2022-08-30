@@ -25,12 +25,12 @@ const NotFound = () => {
     query {
       bg: file(name: { eq: "404" }) {
         childImageSharp {
-          gatsbyImageData
+          gatsbyImageData(placeholder: BLURRED, formats: [AUTO, WEBP, AVIF])
         }
       }
       light: file(name: { eq: "light" }) {
         childImageSharp {
-          gatsbyImageData
+          gatsbyImageData(placeholder: BLURRED, formats: [AUTO, WEBP, AVIF])
         }
       }
     }

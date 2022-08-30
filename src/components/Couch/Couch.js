@@ -29,7 +29,7 @@ const Couch = () => {
     setModal(false);
   };
   return (
-    <Section className={couchContainer}>
+    <Section className={couchContainer} id="couch">
       <div className={flexContainer}>
         <div className="flex laptop:block">
           <h3 className={`${title} laptop:hidden`}>{couch.title}</h3>

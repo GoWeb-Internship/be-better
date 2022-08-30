@@ -38,7 +38,7 @@ const FormWithVideoBg = ({ clickFrom }) => {
   const [frontmatter] = allMarkdownRemark.nodes;
   const data = frontmatter.frontmatter;
   return (
-    <Section id="nav-feedback">
+    <Section>
     {isMobile ? <FormWithBackground clickFrom="main" /> : 
     <div
       className="hidden laptop:block laptop:h-[1053px] desktop:h-[760px] desktop:pr-6"

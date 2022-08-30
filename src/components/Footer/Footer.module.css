@@ -1,5 +1,8 @@
 .footerContainer{
-    @apply relative w-full h-[480px] laptop:h-[547px] desktop:h-[420px] bg-bright desktop:bg-transparent;
+    @apply relative w-full h-[480px] laptop:h-[547px] desktop:h-[420px] bg-bright;
+}
+.gradient {
+    background: linear-gradient(to right, #ADF0FE 72%, #FAFCFC 28%);
 }
 .list{
     @apply flex space-x-2 ml-[70px] laptop:ml-0 laptop:justify-evenly desktop:mr-[420px] desktop:-mt-10;

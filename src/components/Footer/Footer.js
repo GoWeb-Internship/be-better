@@ -6,23 +6,22 @@ import Form from '../Form';
 import Social from '../Social';
 import FormWithBackground from '../Form/FormWithBackground';
 import FooterNext from '../FooterNext';
-import { footerContainer, list, link, donate } from './Footer.module.css';
+import { footerContainer, gradient, list, link, donate } from './Footer.module.css';
 import icons from '../../images/sprite.svg';
 import Donations from '../Donations';
+import { useMedia } from 'react-use';
 
 const Footer = () => {
   const { t } = useTranslation();
   const { links } = t('footer', { returnObjects: true });
   const { priceByOne } = t('footer', { returnObjects: true });
 
+  const isDesktop = useMedia('(min-width:1440px)');
   return (
-    <footer>
+    <footer id="nav-feedback">
       <FormWithBackground clickFrom="footer" />
-      <div className={footerContainer}>
+      <div className={isDesktop ? `${footerContainer} ${gradient}` : `${footerContainer}`}>
         <Container>
-          <div className="hidden desktop:block w-1036 h-[420px] -z-10 absolute top-0">
-            <div className="bg-bright  w-1036 h-[420px] "></div>
-          </div>
           <div className="px-5 pt-10 pb-6 laptop:px-16 laptop:pt-12 desktop:px-20 desktop:pt-14">
             <svg className=" hidden desktop:block desktop:w-[90px] desktop:h-14">
               <use href={`${icons}#logo`} />

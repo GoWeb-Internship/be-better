@@ -1,0 +1,11 @@
+.switcher {
+    @apply flex justify-between items-center w-[45px] text-main;
+}
+
+.list {
+    @apply absolute top-0 w-full py-2 space-y-4 text-center bg-white text-likeGrey rounded;
+}
+
+.item {
+    @apply hover:text-main focus:text-main;
+}

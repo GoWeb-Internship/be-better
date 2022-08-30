@@ -1,48 +1,105 @@
 import React from 'react';
+import { graphql, useStaticQuery } from 'gatsby';
 import { Link, useTranslation } from 'gatsby-plugin-react-i18next';
 import { StaticImage } from 'gatsby-plugin-image';
+import { useMedia } from 'react-use';
 import Container from '../Container';
 import Form from '../Form';
 import Social from '../Social';
 import FormWithBackground from '../Form/FormWithBackground';
-import FooterNext from './FooterNext';
-import { footerContainer, gradient, list, link, donate } from './Footer.module.css';
+import {
+  footerContainer,
+  gradient,
+  content,
+  logo,
+  social,
+  titleContainer,
+  discountText,
+  discount,
+  icf,
+  form,
+  list,
+  link,
+  donate,
+  title,
+  price
+} from './Footer.module.css';
 import icons from '../../images/sprite.svg';
 import Donations from '../Donations';
-import { useMedia } from 'react-use';
+import WithDiscount from '../reusableComponents/WithDiscount';
 
 const Footer = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const { links } = t('footer', { returnObjects: true });
   const { priceByOne } = t('footer', { returnObjects: true });
 
   const isDesktop = useMedia('(min-width:1440px)');
+
+  const markdown = useStaticQuery(graphql`
+    query {
+      text: allMarkdownRemark(
+        filter: { fileAbsolutePath: { regex: "/footer/" } }
+      ) {
+        nodes {
+          html
+          frontmatter {
+            title
+            language
+          }
+          id
+        }
+      }
+    }
+  `);
+  const data = markdown.text.nodes;
+
   return (
     <footer id="nav-feedback">
       <FormWithBackground clickFrom="footer" />
-      <div className={isDesktop ? `${footerContainer} ${gradient}` : `${footerContainer}`}>
+      <div
+        className={
+          isDesktop ? `${footerContainer} ${gradient}` : `${footerContainer}`
+        }
+      >
         <Container>
-          <div className="px-5 pt-10 pb-6 laptop:px-16 laptop:pt-12 desktop:px-20 desktop:pt-14">
-            <svg className=" hidden desktop:block desktop:w-[90px] desktop:h-14">
+          <div className={content}>
+            <svg className={logo}>
               <use href={`${icons}#logo`} />
             </svg>
-            <div className="flex desktop:flex-row-reverse desktop:-mt-14">
+            <div className={social}>
               <Social
                 classNameList="space-y-6 laptop:space-y-4"
                 classNameLink="bg-main"
               />
-              <FooterNext />
+              <div>
+                {data.map(node => {
+                  if (node.frontmatter.language === i18n.language) {
+                    return (
+                      <div
+                        key={node.frontmatter.language}
+                        className={titleContainer}
+                      >
+                        <h3 className={title}>{node.frontmatter.title}</h3>
+                        <WithDiscount
+                          classnameText={discountText}
+                          classnameDiscount={discount}
+                        />
+                      </div>
+                    );
+                  }
+                })}
+              </div>
             </div>
             <div className="laptop:flex">
-              <div className="w-[60px] h-14 ml-17.5 mb-[10px] laptop:ml-[110px] laptop:w-[90px] laptop:h-[82px] desktop:ml-0 desktop:-mt-20">
-                <StaticImage src="../../images/icf.png" alt="" />
+              <div className={icf}>
+                <StaticImage src="../../images/icf.png" alt="icf" />
               </div>
-              <div className="hidden laptop:block laptop:ml-auto desktop:-mt-40 desktop:ml-[666px]">
+              <div className={form}>
                 <Form clickFrom="footer" className="-mb-4" />
               </div>
             </div>
             <Donations className={donate} classNameText="text-main " />
-            <p className="mb-6 ml-16 text-xs laptop:text-sm laptop:ml-0 laptop:text-left desktop:text-right">
+            <p className={price}>
               {priceByOne}
             </p>
             <ul className={list}>

@@ -9,9 +9,6 @@ import {
   burgerMenuClose,
   burgerMenuButton,
   burgerMenuLines,
-  burgerMenuOverlay,
-  burgerBtn,
-  burgerIcon,
 } from './Header.module.css';
 import Navigation from '../Navigation';
 import SwitchLang from '../SwitchLang';
@@ -28,7 +25,6 @@ const Header = () => {
 
   return (
     <header className={header} id="#home">
-      {showNav && <BurgerMenu toggleNav={toggleNav} />}
       <div className={headerContainer}>
         <Link to="#home" className={link}>
           <svg className={icon}>
@@ -37,17 +33,13 @@ const Header = () => {
         </Link>
         <Navigation />
         <SwitchLang />
-        {/* <button type='button' className={burgerBtn} onClick={toggleNav}>
-            <svg className={burgerIcon}>
-              <use href={`${icons}#burger`} />
-            </svg>
-          </button> */}
         <div className={showNav ? `${burgerMenuActive} ${burgerMenuClose}` : `${burgerMenuClose}`}>
           <button type="button" className={burgerMenuButton} onClick={toggleNav}>
             <span className={burgerMenuLines}></span>
           </button>
         </div>
       </div>
+      {showNav && <BurgerMenu toggleNav={toggleNav} />}
     </header>
   );
 };

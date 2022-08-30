@@ -7,6 +7,9 @@
 .discountStyle {
   @apply    text-change  text-2xl text-mainSecond pt-[16px] pb-[16px];
 }
+.discount {
+  @apply text-black font-semibold;
+}
 .text p{
   @apply pb-[8px] laptop:pl-[63px] laptop:pr-[64px] 
 }

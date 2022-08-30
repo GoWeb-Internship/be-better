@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { useTranslation } from 'gatsby-plugin-react-i18next';
 import 'react-phone-input-2/lib/style.css';
+import PropTypes from 'prop-types';
 import { modalsuccess, modaltitle, modaltext } from './Form.module.css';
 import ModalWindow from '../ModalWindow';
 import JustForm from './JustForm';
@@ -38,5 +39,11 @@ const Form = ({
     </>
   );
 };
+
+Form.propTypes = {
+  clickFrom: PropTypes.string,
+  formClassname: PropTypes.string,
+  checkboxClassname: PropTypes.string,
+}
 
 export default Form;

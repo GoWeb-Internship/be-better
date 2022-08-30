@@ -1,7 +1,7 @@
 .list {
-  @apply flex flex-col;
+  @apply flex flex-col laptop:space-y-4 ;
 }
 
 .link {
-  @apply flex justify-center items-center p-2 desktop:bg-main text-white desktop:border desktop:border-main rounded-2xl outline-none transition hover:bg-white hover:text-main focus:bg-white focus:text-main;
+  @apply flex justify-center items-center p-2 border border-transparent desktop:bg-main text-white rounded-2xl outline-none transition hover:border hover:border-main focus:border-main hover:bg-white hover:text-main focus:bg-white focus:text-main;
 }

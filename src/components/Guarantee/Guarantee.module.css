@@ -1,0 +1,11 @@
+.guarantee {
+    @apply h-[480px] pt-8 pb-16 px-5 laptop:pt-30 laptop:pl-[92px] desktop:h-[568px] desktop:pt-30 desktop:pl-74 text-left;
+}
+
+.title {
+    @apply mb-[173px] laptop:mb-20 text-center laptop:text-left laptop:text-34 text-mainSecond text-xl font-medium laptop:font-semibold desktop:text-34 desktop:font-semibold;
+}
+
+.text {
+    @apply w-[220px] laptop:w-[432px] text-sm laptop:text-xl laptop:font-medium desktop:w-[432px] desktop:text-xl;
+}

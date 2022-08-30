@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import ModalWindow from '../ModalWindow';
 import JustForm from '../Form';
 import { useTranslation } from 'gatsby-plugin-react-i18next';
@@ -51,4 +52,9 @@ const ModalPriceWindow = ({ hideModal, currentPrice, currentRate }) => {
   );
 };
 
+ModalPriceWindow.propTypes = {
+  hideModal:PropTypes.func.isRequired,
+  currentPrice: PropTypes.string.isRequired,
+  currentRate: PropTypes.string.isRequired,
+}
 export default ModalPriceWindow;

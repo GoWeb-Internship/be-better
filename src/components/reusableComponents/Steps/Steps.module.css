@@ -14,31 +14,31 @@
  }
 
  .listFacts li:nth-child(1){
-  @apply mb-3 laptop:ml-[2rem] laptop:mr-[1.25rem] desktop:mb-0 -mr-[1.75rem] desktop:mt-64 w-48 desktop:ml-20
+  @apply mb-3 laptop:ml-[2rem] laptop:mr-[1.25rem] desktop:mb-0 -mr-[1.75rem] desktop:mt-64 w-48 desktop:ml-20 laptop:h-[180px] laptop:border-t-[20px] laptop:border-l-[20px] laptop:border-l-stOne laptop:border-t-stOne
 }
 .listFacts li:nth-child(2){
-  @apply  mb-3 laptop:mr-[0.25rem]  desktop:mb-0 -mr-[1.75rem] desktop:mt-52 w-48
+  @apply  mb-3 laptop:mr-[0.25rem]  desktop:mb-0 -mr-[1.75rem] desktop:mt-52 w-48 laptop:h-[180px] laptop:border-t-[20px] laptop:border-l-[20px] laptop:border-l-stTwo laptop:border-t-stTwo
 } 
 .listFacts li:nth-child(3){
-  @apply mb-3 laptop:ml-5 laptop:mr-5 desktop:mb-0 -mr-[1.75rem] desktop:mt-40 w-48 
+  @apply mb-3 laptop:ml-5 laptop:mr-5 desktop:mb-0 -mr-[1.75rem] desktop:mt-40 w-48 laptop:mb-[40px] laptop:h-[180px] laptop:border-t-[20px] laptop:border-l-[20px] laptop:border-l-stThree laptop:border-t-stThree
 }
 .listFacts p:nth-child(3){
   @apply  desktop:mt-48 ml-4
 }
 .listFacts li:nth-child(4){
-  @apply -mr-[0.5rem]  ml-8 laptop:mr-5 desktop:ml-0  desktop:mt-28  w-48
+  @apply -mr-[0.5rem]  ml-8 laptop:-ml-4 laptop:mr-5 desktop:ml-0  desktop:mt-28  w-48 laptop:h-[180px] laptop:border-t-[20px] laptop:border-l-[20px] laptop:border-l-stFour laptop:border-t-stFour
 }
 
 .listFacts li:nth-child(5){
-  @apply -mr-[1.75rem]   laptop:mr-5 desktop:mt-16 w-48
+  @apply -mr-[1.75rem]   laptop:mr-5 desktop:mt-16 w-48 laptop:h-[180px] laptop:border-t-[20px] laptop:border-l-[20px] laptop:border-l-stFive laptop:border-t-stFive
 }
 .listFacts li:nth-child(6){
-  @apply -mr-[1.75rem] laptop:-mr-5 desktop:mr-5 desktop:mt-5  w-48
+  @apply -mr-[1.75rem] laptop:-mr-5 desktop:mr-5 desktop:mt-5  w-48 laptop:h-[180px] laptop:border-t-[20px] laptop:border-l-[20px] laptop:border-l-stSix laptop:border-t-stSix
 } 
 
 
 .textPrP {
-@apply text-mainSecond list-none  list-inside font-normal pl-16  mt-8  text-sm  ;
+@apply text-mainSecond list-none  list-inside font-normal pl-16  mt-[1rem]  text-sm  ;
 }
 .textContainer {
   @apply  w-50 h-36 mt-36 text-center flex flex-col justify-center ;

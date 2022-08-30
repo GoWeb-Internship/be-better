@@ -4,6 +4,7 @@ import useFormPersist from 'react-hook-form-persist';
 import { yupResolver } from '@hookform/resolvers/yup';
 import { useTranslation } from 'gatsby-plugin-react-i18next';
 import PhoneInput from 'react-phone-input-2';
+import PropTypes from 'prop-types';
 import 'react-phone-input-2/lib/style.css';
 import Button from '../reusableComponents/Button';
 import {
@@ -11,11 +12,15 @@ import {
   input,
   label,
   checkbox,
+  checkboxLabel,
   check,
+  acceptText,
   phonebutton,
   phoneinput,
   phonedropdown,
   error,
+  checkError,
+  button,
 } from './Form.module.css';
 import locationApi from '../../services/locationApi';
 import sendMessageToTg from '../../services/telegramApi';
@@ -66,7 +71,7 @@ const JustForm = ({
     
     <b>Additional information:</b>
     <i>Form name: contact</i>
-    <i>Form send from:</i> ${clickFrom}
+    <i>Form send from:</i> <b>${clickFrom}</b>
     <a href="https://be-better.today">https://be-better.today</a>
     ------
     `;
@@ -94,29 +99,28 @@ const JustForm = ({
       <input type="hidden" name="form-name" value="contact" />
       <div className="relative">
         <input
-          id="name"
+          id={`name-${clickFrom}`}
           {...register('name')}
           className={input}
           placeholder=" "
         />
-        <label className={label}>
+        <label className={label} htmlFor={`name-${clickFrom}`}>
           {data.nameInput}
         </label>
         <p className={error}>{errors.name?.message}</p>
       </div>
       <div className="relative ">
         <input
-          id="email"
+          id={`email-${clickFrom}`}
           {...register('email')}
           className={input}
           placeholder=" "
         />
-        <label className={label} htmlFor="email">
+        <label className={label} htmlFor={`email-${clickFrom}`}>
           E-mail
         </label>
         <p className={error}>{errors.email?.message}</p>
       </div>
-
       <Controller
         name="phone"
         control={control}
@@ -142,7 +146,7 @@ const JustForm = ({
         )}
       />
       <div className={`relative ${checkboxClassname}`}>
-        <label className="flex items-start mt-1 mb-8 pl-2 pt-1 laptop:mb-9">
+        <label className={checkboxLabel}>
           <input
             type="checkbox"
             name="checkbox"
@@ -152,17 +156,17 @@ const JustForm = ({
           <div
             className={`${check} ${errors.checkbox ? '!border-error' : ''}`}
           ></div>
-          <span className="ml-3	text-left text-xs text-black laptop:text-white desktop:text-black">
+          <span className={acceptText}>
             {data.accept}
           </span>
         </label>
-        <p className="absolute top-10 left-8 text-error text-xs">
+        <p className={checkError}>
           {errors.checkbox?.message}
         </p>
       </div>
       <Button
         type="submit"
-        className="h-12 w-full border border-main rounded-full text-white"
+        className={button}
       >
         {data.button}
       </Button>
@@ -170,4 +174,10 @@ const JustForm = ({
   );
 };
 
+JustForm.propTypes = {
+  clickFrom: PropTypes.string.isRequired,
+  formClassname: PropTypes.string,
+  checkboxClassname: PropTypes.string,
+  openModal: PropTypes.func.isRequired,
+}
 export default JustForm;

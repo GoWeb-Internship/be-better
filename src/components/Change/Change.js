@@ -3,9 +3,10 @@ import { StaticImage } from 'gatsby-plugin-image';
 import Button from '../reusableComponents/Button';
 import { graphql, useStaticQuery } from 'gatsby';
 import { useTranslation } from 'gatsby-plugin-react-i18next';
-import { text, changeTitle, discountStyle } from './Change.module.css';
+import { text, changeTitle, discountStyle, discount } from './Change.module.css';
 import FormInModal from '../Form/FormInModal';
 import Section from '../reusableComponents/Section';
+import WithDiscount from '../reusableComponents/WithDiscount';
 
 const Change = () => {
   const { i18n } = useTranslation();
@@ -28,23 +29,9 @@ const Change = () => {
           id
         }
       }
-      discount: markdownRemark(fileAbsolutePath: { regex: "/discount/" }) {
-        frontmatter {
-          ukFirst
-          ukDiscount
-          ukSecond
-          enFirst
-          enDiscount
-          enSecond
-          ruFirst
-          ruDiscount
-          ruSecond
-        }
-      }
     }
   `);
   const data = markdown.text.nodes;
-  const disc = markdown.discount.frontmatter;
 
   const showModal = change => {
     setCurrentChange(change);
@@ -121,14 +108,7 @@ const Change = () => {
                               dangerouslySetInnerHTML={{ __html: node.html }}
                             />
                           </div>
-                          <p className={discountStyle}>
-                            {disc[`${i18n.language}First`]}{' '}
-                            <span className="text-black font-semibold">
-                              {' '}
-                              {disc[`${i18n.language}Discount`]}
-                            </span>{' '}
-                            {disc[`${i18n.language}Second`]}
-                          </p>
+                          <WithDiscount classnameText={discountStyle} classnameDiscount={discount}/>
                         </div>
                         <Button
                           type="button"

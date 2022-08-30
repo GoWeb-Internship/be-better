@@ -1,8 +1,18 @@
 import React from 'react';
 import { useTranslation } from 'gatsby-plugin-react-i18next';
+import PropTypes from 'prop-types';
+import {
+  modalform,
+  modaltitle,
+  modaltext,
+  formHi,
+  formConnect,
+  modalcheck,
+  formMargins,
+  formSee,
+} from './Form.module.css';
 import JustForm from './JustForm';
 import ModalWindow from '../ModalWindow';
-import { modalform, modaltitle, modaltext, modalcheck } from './Form.module.css';
 
 const FormInModal = ({ hideModal, currentPlace = '' }) => {
   const [successMessage, setSuccessMessage] = React.useState(false);
@@ -19,23 +29,24 @@ const FormInModal = ({ hideModal, currentPlace = '' }) => {
         </div>
       ) : (
         <>
-          <p className="text-base laptop:text-xl">{modalForm.hi}!</p>
-          <p className="text-base mb-[72px] laptop:text-xl laptop:mb-13">
-            {modalForm.connection}
-          </p>
+          <p className={formHi}>{modalForm.hi}!</p>
+          <p className={formConnect}>{modalForm.connection}</p>
           <JustForm
             clickFrom={currentPlace}
-            formClassname="m-auto mb-2 laptop:mb-8"
+            formClassname={formMargins}
             checkboxClassname={modalcheck}
             openModal={setSuccessMessage}
           />
-          <p className="text-center text-sm laptop:text-base">
-            {modalForm.seeYou}!
-          </p>
+          <p className={formSee}>{modalForm.seeYou}!</p>
         </>
       )}
     </ModalWindow>
   );
 };
+
+FormInModal.propTypes = {
+  hideModal: PropTypes.func.isRequired,
+  currentPlace: PropTypes.string,
+}
 
 export default FormInModal;

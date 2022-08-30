@@ -10,7 +10,6 @@ module.exports = {
   },
   plugins: [
     `gatsby-transformer-remark`,
-    `gatsby-plugin-svg-sprite`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-image`,

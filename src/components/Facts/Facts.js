@@ -55,8 +55,6 @@ const Facts = () => {
     }
   `);
 
-  const iconsReturn = svg => {};
-
   const { t } = useTranslation();
   const data = t('facts', { returnObjects: true });
   const isWide = useMedia('(min-width:1440px');
@@ -85,10 +83,7 @@ const Facts = () => {
                   <li className={itemFacts} key={icons}>
                     <div className={svgContainerFacts}>
                       <svg className={iconFacts}>
-                        <use
-                          href={`${icons}#icon-${svg}`}
-                          xlinkHref={`${icons}#icon-${svg}`}
-                        />
+                        <use href={`${icons}#icon-${svg}`} />
                       </svg>
                     </div>
                     <div className={textContainer}>

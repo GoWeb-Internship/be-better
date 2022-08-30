@@ -42,7 +42,7 @@ const Steps = ({ icons = '', data = {}, img = '', icon = '' }) => {
                 <IconContext.Provider
                  value={{
                   className: 'm-0 w-[22px] h-[22px]',
-                  color: 'red'
+                  color: '#F38F55'
                 }}
                   >
                     {stepsIcons[index]}
@@ -57,7 +57,6 @@ const Steps = ({ icons = '', data = {}, img = '', icon = '' }) => {
                   </svg>
                 </div>
 
-                {/* <div className={textContainer}></div> */}
                 <p className={textSteps}>{textSecondary}</p>
               </li>
             );

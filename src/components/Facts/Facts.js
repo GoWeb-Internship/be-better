@@ -55,23 +55,14 @@ const Facts = () => {
     }
   `);
 
+  const iconsReturn = svg => {};
+
   const { t } = useTranslation();
   const data = t('facts', { returnObjects: true });
   const isWide = useMedia('(min-width:1440px');
 
   const fotoMob = foto.mob.childImageSharp.gatsbyImageData;
   const fotoDesk = foto.desk.childImageSharp.gatsbyImageData;
-
-  const iconObject = [
-    {
-      bag: <MdBusinessCenter />,
-      ok: <MdOutlineThumbUp />,
-      scale: <MdOutlineStackedLineChart />,
-      house: <MdOutlineDomain />,
-      icf: <Icf />,
-      clock: <MdOutlineMoreTime />,
-    },
-  ];
 
   return (
     <Section className={section} id="facts">
@@ -94,9 +85,11 @@ const Facts = () => {
                   <li className={itemFacts} key={icons}>
                     <div className={svgContainerFacts}>
                       <svg className={iconFacts}>
-                        <use href={`${icons}#icon-${svg}`} />
+                        <use
+                          href={`${icons}#icon-${svg}`}
+                          xlinkHref={`${icons}#icon-${svg}`}
+                        />
                       </svg>
-                      {/* {iconObject} */}
                     </div>
                     <div className={textContainer}>
                       <div className="flex mt-11 laptop:block laptop:mt-0">

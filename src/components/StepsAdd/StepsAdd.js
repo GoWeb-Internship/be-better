@@ -13,7 +13,7 @@ const StepsAdd = () => {
     <Section className=" relative" id="stepsAdd">
       <StaticImage
         layout="fullWidth"
-        src="../../images/background/results-min.png"
+        src="../../images/background/fontwo-min.png"
         alt=""
         style={{ position: 'absolute' }}
         className="-z-20 w-full h-full"

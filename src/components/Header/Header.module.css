@@ -74,4 +74,4 @@
   .burgerMenuActive .burgerMenuLines::after{
     @apply top-0 -rotate-45;
   }
-  
+ 

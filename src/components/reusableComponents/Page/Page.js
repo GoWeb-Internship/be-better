@@ -1,5 +1,5 @@
 import React from 'react'
-import { titleFacts,iconFacts, listFacts, itemFacts,itemFactsMob, svgBgFacts, svgContainerFacts, textContainer, textPr, iconClass, testSec,} from './Page.module.css'
+import { titleFacts,iconFacts, listFacts,stepsHeih, itemFacts,itemFactsMob, svgBgFacts, svgContainerFacts, textContainer, textPr, iconClass, testSec,} from './Page.module.css'
 import {useMedia} from 'react-use'
 
 const Page = ({ icons = '', data = {}, img ='', icon='' }) => {
@@ -13,6 +13,7 @@ const isTablet = useMedia('(min-width: 768px)');
           {data.page.map(({ textPrimary, svg, img, icon, textSecondary }) => {
             return (
               <li className={isTablet ? itemFacts : itemFactsMob} key={icons}>
+                <div className={stepsHeih}>
             <div><p className={textPr}>{textPrimary}</p></div>
             <div className={iconClass}>
                 <svg className="tablet:hidden desktop:block  desktop:w-10 desktop:h-10 desktop:-mt-20 desktop:ml-6">
@@ -20,7 +21,7 @@ const isTablet = useMedia('(min-width: 768px)');
                   </svg>
                 </div> 
 
-                <div className="w-5 h-5   absolute -top-5  left-7   z-10">
+                <div className="w-5 h-5   absolute -top-10  left-7   z-10">
                   <svg className='mt-14 ml-0 w-[22px] h-[22px]'>
                     <use href={`${icons}#icon-${img}`} />
                   </svg>
@@ -29,14 +30,14 @@ const isTablet = useMedia('(min-width: 768px)');
                 
                 <div className={textContainer}>
                  
-                 <div className='tablet:hidden laptop:block'>
+                 {/* <div className='tablet:hidden laptop:block'>
                   <svg className={svgBgFacts}>
                     <use href={`${icons}#icon-${svg}`} />
                   </svg>
-                  </div>
+                  </div> */}
                 </div>
                   <p className={testSec}>{textSecondary}</p>
-                
+                  </div>
               </li>
             );
           })}

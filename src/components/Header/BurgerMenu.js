@@ -48,4 +48,5 @@ const BurgerMenu = ({ toggleNav }) => {
 BurgerMenu.propTypes={
   toggleNav: PropTypes.func.isRequired
 }
+
 export default BurgerMenu;

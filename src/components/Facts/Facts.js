@@ -3,8 +3,7 @@ import Section from '../reusableComponents/Section';
 import { graphql, useStaticQuery } from 'gatsby';
 import { useTranslation } from 'gatsby-plugin-react-i18next';
 import { StaticImage, GatsbyImage } from 'gatsby-plugin-image';
-import List from '../reusableComponents/List';
-import svg from '../../images/factsIcons.svg';
+import icons from '../../images/factsIcons.svg';
 import Way from '../Way';
 import {
   section,
@@ -12,6 +11,15 @@ import {
   contentContainer,
   imgMob,
   img,
+  titleFacts,
+  listFacts,
+  itemFacts,
+  svgContainerFacts,
+  iconFacts,
+  textContainer,
+  textPr,
+  testSec,
+  bgFacts,
 } from './Facts.module.css';
 import { useMedia } from 'react-use';
 
@@ -46,7 +54,7 @@ const Facts = () => {
 
   return (
     <Section className={section}>
-      <h3 className={title}>{data.title}</h3>
+      <h2 className={title}>{data.title}</h2>
 
       <StaticImage
         layout="fullWidth"
@@ -56,8 +64,34 @@ const Facts = () => {
         className="w-full h-full -z-10 top-0"
       />
       <div className={contentContainer}>
-        <List data={data} icons={svg} />
-
+        <div>
+          <h2 className={titleFacts}>{data.title}</h2>
+          {!!data.list.length && (
+            <ul className={listFacts}>
+              {data.list.map(({ textPrimary, svg, textSecondary, bg }) => {
+                return (
+                  <li className={itemFacts} key={icons}>
+                    <div className={svgContainerFacts}>
+                      <svg className={iconFacts}>
+                        <use href={`${icons}#icon-${svg}`} />
+                      </svg>
+                    </div>
+                    <div className={textContainer}>
+                      <div className="flex mt-11 laptop:block laptop:mt-0">
+                        <svg className=" w-4 h-4 fill-mainSecond mr-2 laptop:hidden ">
+                          <use href={`${icons}#icon-${svg}`} />
+                        </svg>
+                        <p className={textPr}>{textPrimary}</p>
+                      </div>
+                      <p className={testSec}>{textSecondary}</p>
+                      <p className={bgFacts}>{bg}</p>
+                    </div>
+                  </li>
+                );
+              })}
+            </ul>
+          )}
+        </div>
         {isWide ? (
           <GatsbyImage image={fotoDesk} alt="foto" className={img} />
         ) : (

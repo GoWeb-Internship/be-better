@@ -12,9 +12,9 @@ import {
   MdOutlineStackedLineChart,
   MdOutlineDomain,
   MdOutlineMoreTime,
+  MdFactCheck,
 } from 'react-icons/md';
-
-import { ReactComponent as Icf } from '../../images/icf.svg';
+import { GrCertificate } from 'react-icons/gr';
 
 import {
   section,
@@ -39,7 +39,7 @@ const factsIcons = [
   <MdOutlineThumbUp />,
   <MdOutlineStackedLineChart />,
   <MdOutlineDomain />,
-  <Icf />,
+  <MdFactCheck />,
   <MdOutlineMoreTime />,
 ];
 
@@ -98,8 +98,9 @@ const Facts = () => {
                         </svg> */}{' '}
                         <IconContext.Provider
                           value={{
-                            className: 'm-0 w-[48px] h-[48px]',
-                            color: 'orange',
+                            className:
+                              'stair-icons mt-[11px] fill-[mainSecond] ',
+                            color: '#FF9B62',
                           }}
                         >
                           {factsIcons[index]}
@@ -107,9 +108,17 @@ const Facts = () => {
                       </div>
                       <div className={textContainer}>
                         <div className="flex mt-11 laptop:block laptop:mt-0">
-                          <svg className=" w-4 h-4 fill-mainSecond mr-2 laptop:hidden ">
+                          {/* <svg className=" w-4 h-4 fill-mainSecond mr-2 laptop:hidden ">
                             <use href={`${icons}#icon-${svg}`} />
-                          </svg>
+                          </svg> */}
+                          <IconContext.Provider
+                            value={{
+                              className: 'w-4 h-4 mr-2 laptop:hidden',
+                              color: '#FF9B62',
+                            }}
+                          >
+                            {factsIcons[index]}
+                          </IconContext.Provider>
                           <p className={textPr}>{textPrimary}</p>
                         </div>
                         <p className={testSec}>{textSecondary}</p>

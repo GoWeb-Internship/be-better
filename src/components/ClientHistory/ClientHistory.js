@@ -9,6 +9,8 @@ import {
   name,
   profession,
   sliderHistory,
+  slide,
+  icon,
 } from './ClientHistory.module.css';
 import { FaQuoteLeft } from 'react-icons/fa';
 
@@ -50,7 +52,7 @@ const ClientHistory = () => {
           clients.map(({ frontmatter }, id) => {
             return (
               <SwiperSlide key={id}>
-                <div className="m-auto px-5 mb-5 flex flex-col text-left laptop:mb-4 laptop:w-80  desktop:w-[716px] desktop:flex-row">
+                <div className={slide}>
                   <div>
                     <p className={name}>
                       {frontmatter[`${i18n.language}Name`]}
@@ -67,10 +69,7 @@ const ClientHistory = () => {
             );
           })}
       </Slider>
-      <FaQuoteLeft
-        className="absolute -z-10 text-[#E8F6FA] top-[30%] left-[5%] laptop:top-[45%] laptop:left-[27%] desktop:top-1/4 desktop:left-[37%]"
-        size={120}
-      />
+      <FaQuoteLeft className={icon} size={120} />
     </Section>
   );
 };

@@ -1,5 +1,6 @@
 import * as React from 'react';
 import 'react-phone-input-2/lib/style.css';
+import Seo from '../components/seo';
 import { graphql } from 'gatsby';
 import Layout from '../components/Layout';
 import Price from '../components/Price';
@@ -18,32 +19,38 @@ import Couch from '../components/Couch';
 import WhyStepsAdd from '../components/WhyStepsAdd';
 import Steps from '../components/Steps';
 import ButtonUp from '../components/ButtonUp';
+import { useTranslation } from 'gatsby-plugin-react-i18next';
 
 const IndexPage = () => {
-  return (
-    <Layout id="home">
-      {/* <main> */}
-      <Hero />
-      <Container>
-        <AboutMe />
-        <Facts />
-        <ClientHistory />
-        <Formula />
-        <FormWithVideoBg clickFrom="main" />
-        <WhyStepsAdd />
-        <Price />
-        <Guarantee />
-        <Couch />
-        <Steps />
-        <Change />
-        <BeBetter />
-        <ButtonUp/>
-      </Container>
+  const { t } = useTranslation();
+  const seo = t('seo', { returnObjects: true });
 
-      {/* </main> */}
-      <script
-        dangerouslySetInnerHTML={{
-          __html: `
+  return (
+    <>
+      <Seo title={seo.title} description={seo.description} />
+      <Layout id="home">
+        {/* <main> */}
+        <Hero />
+        <Container>
+          <AboutMe />
+          <Facts />
+          <ClientHistory />
+          <Formula />
+          <FormWithVideoBg clickFrom="main" />
+          <WhyStepsAdd />
+          <Price />
+          <Guarantee />
+          <Couch />
+          <Steps />
+          <Change />
+          <BeBetter />
+          <ButtonUp />
+        </Container>
+
+        {/* </main> */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
 !function(f,b,e,v,n,t,s)
 {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
 n.callMethod.apply(n,arguments):n.queue.push(arguments)};
@@ -55,18 +62,19 @@ s.parentNode.insertBefore(t,s)}(window, document,'script',
 fbq('init', '414740170505309');
 fbq('track', 'PageView');
 `,
-        }}
-      />
-      <script
-        type="text/javascript"
-        dangerouslySetInnerHTML={{
-          __html: `
+          }}
+        />
+        <script
+          type="text/javascript"
+          dangerouslySetInnerHTML={{
+            __html: `
       <img height="1" width="1" style="display:none"
       src="https://www.facebook.com/tr?id=414740170505309&ev=PageView&noscript=1"
     />`,
-        }}
-      ></script>
-    </Layout>
+          }}
+        ></script>
+      </Layout>
+    </>
   );
 };
 

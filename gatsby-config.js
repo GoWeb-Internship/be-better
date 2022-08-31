@@ -5,7 +5,8 @@ require('dotenv').config({
 module.exports = {
   siteMetadata: {
     title: `Be-better`,
-    description: `Если ты эмоционально выгорел и живешь без удовольствия.`,
+    description: `If you are emotionally burnt out and live without pleasure.`,
+    author: `GoWeb`,
     siteUrl: `https://be-better.netlify.app`,
   },
   plugins: [

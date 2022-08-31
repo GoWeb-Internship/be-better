@@ -1,4 +1,8 @@
 {
+  "seo": {
+    "title": "Be better!",
+    "description": "If you are emotionally burnt out and live without pleasure."
+  },
   "header": {
     "nav": [
       { "name": "About", "id": "nav-about" },

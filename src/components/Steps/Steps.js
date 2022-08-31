@@ -25,6 +25,7 @@ const Steps = () => {
           />
         </div>
         <div className="relative max-h-full">
+          <div className="tablet:hidden laptop:block">
           <StaticImage
             layout="fullWidth"
             src="../../images/background/Frame-min.png"
@@ -32,6 +33,7 @@ const Steps = () => {
             style={{ position: 'absolute' }}
             className="tablet:hidden laptop:block  laptop:top-[70%] laptop:left-1/4 w-96 h-52 -z-10  desktop:pl-40 desktop:left-2/4 desktop:top-2/4 "
           />
+          </div>
           <div className="tablet:hidden laptop:block">
             <StaticImage
               layout="fullWidth"

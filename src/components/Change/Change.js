@@ -55,7 +55,7 @@ const Change = () => {
                   <StaticImage
                     layout="fullWidth"
                     src="../../images/background/fon-min.png"
-                    alt=""
+                    alt="fon"
                     style={{ position: 'absolute' }}
                     className="w-[154px] h-[64px] float-right move-right -z-10 laptop:w-[504px] laptop:h-[96px] desktop:w-[1036px] desktop:h-[152px]"
                     formats={['auto', 'webp', 'avif']}
@@ -64,7 +64,7 @@ const Change = () => {
                 <StaticImage
                   layout="fullWidth"
                   src="../../images/background/fontwo-min.png"
-                  alt=""
+                  alt="backgraund"
                   style={{ position: 'absolute' }}
                   className="-z-20  w-full h-full mt-6 max-w-full laptop:mt-24 desktop:mt-[149px]"
                   formats={['auto', 'webp', 'avif']}
@@ -74,7 +74,7 @@ const Change = () => {
                 <div className="laptop:float-right laptop:-mt-40 display:block desktop:-mt-[77px]">
                   <StaticImage
                     src="../../images/background/julia.png"
-                    alt="z-10"
+                    alt="julia"
                     style={{ position: 'absolute' }}
                     className="w-[280px] h-[280px] -ml-44 rounded-2xl laptop:w-[310px] laptop:h-[442px] desktop:w-[480px] desktop:h-[734px] desktop:pr-[60px]"
                     formats={['auto', 'webp', 'avif']}
@@ -84,7 +84,7 @@ const Change = () => {
                 <div className="desktop:hidden">
                   <StaticImage
                     src="../../images/background/union-min.png"
-                    alt=""
+                    alt="union"
                     style={{ position: 'absolute' }}
                     className="w-[88px] h-[476px] -z-10 -ml-32 mt-[300px] laptop:w-[88px] laptop:h-[444px] laptop:mt-8 laptop:-ml-64"
                     formats={['auto', 'webp', 'avif']}
@@ -95,7 +95,7 @@ const Change = () => {
                     <div className="tablet:hidden desktop:block ml-[188px] mt-[33px]">
                       <StaticImage
                         src="../../images/background/arrow-min.png"
-                        alt=""
+                        alt="arrow"
                         style={{ position: 'absolute' }}
                         className="h-[574px] "
                         formats={['auto', 'webp', 'avif']}

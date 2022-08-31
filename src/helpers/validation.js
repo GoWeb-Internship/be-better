@@ -9,7 +9,7 @@ export const schema = yup
     name: yup
       .string()
       .matches(
-        /^[а-яА-ЯёЁa-zA-Z]{1}[а-яА-ЯёЁa-zA-Z ]+$/,
+        /^[а-яА-ЯёЁa-zA-Z]{1}[а-яА-ЯёЁa-zA-Z0-9 ]+$/,
         'Please enter valid name'
       )
       .min(3, 'Name must contain 3 or more letters')
@@ -19,7 +19,7 @@ export const schema = yup
       .string()
       .email()
       .matches(
-        /^[a-zA-Z0-9+_.]+[a-zA-Z0-9+_.-]+@[a-zA-Z0-9_.-]+$/,
+        /^[a-zA-Z0-9+_.]+[a-zA-Z0-9+_.-/]+[a-zA-Z0-9+_./-]+@[a-zA-Z0-9_.-]+$/,
         'Please enter valid email'
       )
       .min(10, 'Email must contain 10 or more symbols')

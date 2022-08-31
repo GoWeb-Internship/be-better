@@ -127,8 +127,8 @@
   },
   "footer": {
     "links": [
-      { "name": "Privacy Policy", "id": "pk" },
-      { "name": "Public offer", "id": "po" }
+      { "name": "Privacy Policy", "id": "policy" },
+      { "name": "Public offer", "id": "oferta" }
     ],
     "priceByOne": "*The cost for one session 100$"
   },

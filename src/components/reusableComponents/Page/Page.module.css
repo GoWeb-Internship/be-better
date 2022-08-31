@@ -27,14 +27,14 @@
 }
 
 .listFacts li:nth-child(4) {
-  @apply ml-[3rem] laptop:mr-[0.75rem] laptop:ml-[1rem] tablet:mr-10  desktop:-mr-[0.25rem]  desktop:mt-28 desktop:ml-0 w-48 laptop:h-[180px] laptop:border-t-[20px] laptop:border-l-[20px] laptop:border-l-stepsThree laptop:border-t-stepsThree;
+  @apply ml-[3rem] laptop:mr-[0.75rem] laptop:ml-[0.75rem] tablet:mr-10  desktop:-mr-[0.25rem]  desktop:mt-28 desktop:ml-0 w-48 laptop:h-[180px] laptop:border-t-[20px] laptop:border-l-[20px] laptop:border-l-stepsThree laptop:border-t-stepsThree;
 }
 
 .listFacts li:nth-child(5) {
-  @apply ml-[2rem] laptop:mr-[0.75rem] tablet:mr-2 desktop:-mr-[0.25rem] desktop:mt-16 w-48 laptop:h-[180px] laptop:border-t-[20px] laptop:border-l-[20px] laptop:border-l-stepsFour laptop:border-t-stepsFour;
+  @apply ml-[2rem] laptop:mr-[1.75rem] tablet:mr-[2rem] desktop:mr-[1.5rem] desktop:mt-16 w-48 laptop:h-[180px] laptop:border-t-[20px] laptop:border-l-[20px] laptop:border-l-stepsFour laptop:border-t-stepsFour;
 }
 .listFacts li:nth-child(6) {
-  @apply ml-[2rem] laptop:-mr-5 desktop:mt-5 desktop:mr-[0.25rem] w-48 laptop:h-[180px] laptop:border-t-[20px] laptop:border-l-[20px] laptop:border-l-stepsFive laptop:border-t-stepsFive;
+  @apply ml-[0.5rem] laptop:-mr-5 desktop:mt-5 desktop:mr-[1rem] w-48 laptop:h-[180px] laptop:border-t-[20px] laptop:border-l-[20px] laptop:border-l-stepsFive laptop:border-t-stepsFive;
 }
 
 .textPr {

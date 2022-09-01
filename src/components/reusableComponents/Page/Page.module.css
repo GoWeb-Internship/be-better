@@ -17,24 +17,24 @@
 }
 
 .listFacts li:nth-child(1) {
-  @apply mb-3 ml-[2rem] laptop:mr-[0.75rem] laptop:ml-12 desktop:mb-0 mr-5 desktop:mt-64 desktop:-mr-[0.25rem] w-48 desktop:ml-20 laptop:h-[180px] laptop:border-t-[20px] laptop:border-l-[20px] laptop:border-l-main laptop:border-t-main;
+  @apply mb-3  -ml-[1rem] mt-[1.5rem] laptop:mr-[1.75rem] laptop:ml-12 desktop:mb-0 mr-5 desktop:mt-64  laptop:w-48 desktop:ml-20 laptop:h-[180px] laptop:border-t-[20px] laptop:border-l-[20px] laptop:border-l-main laptop:border-t-main;
 }
 .listFacts li:nth-child(2) {
-  @apply mb-3 ml-[2rem] laptop:mr-[0.75rem] desktop:mb-0 mr-5 desktop:-mr-[0.25rem] desktop:mt-52 w-48 laptop:h-[180px] laptop:border-t-[20px] laptop:border-l-[20px] laptop:border-l-stepsOne laptop:border-t-stepsOne;
+  @apply mb-3 -ml-[1rem] laptop:mr-[1.75rem] laptop:mt-[24px] desktop:mb-0 mr-5  desktop:mt-52 w-48 laptop:h-[180px] laptop:border-t-[20px] laptop:border-l-[20px] laptop:border-l-stepsOne laptop:border-t-stepsOne;
 }
 .listFacts li:nth-child(3) {
-  @apply mb-3 ml-[2rem]  desktop:mb-0 mr-5 desktop:mt-40 desktop:mr-[1.75rem] w-48 laptop:mb-[70px] laptop:h-[180px] laptop:border-t-[20px] laptop:border-l-[20px] laptop:border-l-stepsTwo laptop:border-t-stepsTwo;
+  @apply mb-3 -ml-[1rem]  desktop:mb-0 mr-5 laptop:mt-[24px] desktop:mt-40  w-48 laptop:mb-[70px] laptop:h-[180px] laptop:border-t-[20px] laptop:border-l-[20px] laptop:border-l-stepsTwo laptop:border-t-stepsTwo;
 }
 
 .listFacts li:nth-child(4) {
-  @apply ml-[3rem] laptop:mr-[0.75rem] laptop:ml-[0.75rem] tablet:mr-10  desktop:-mr-[0.25rem]  desktop:mt-28 desktop:ml-0 w-48 laptop:h-[180px] laptop:border-t-[20px] laptop:border-l-[20px] laptop:border-l-stepsThree laptop:border-t-stepsThree;
+  @apply -ml-[0rem] laptop:mr-[1.75rem] laptop:ml-[0.75rem] tablet:mr-10   desktop:mt-28 desktop:ml-0 w-48 laptop:h-[180px] laptop:border-t-[20px] laptop:border-l-[20px] laptop:border-l-stepsThree laptop:border-t-stepsThree;
 }
 
 .listFacts li:nth-child(5) {
-  @apply ml-[2rem] laptop:mr-[1.75rem] tablet:mr-[2rem] desktop:mr-[1.5rem] desktop:mt-16 w-48 laptop:h-[180px] laptop:border-t-[20px] laptop:border-l-[20px] laptop:border-l-stepsFour laptop:border-t-stepsFour;
+  @apply -ml-[0.5rem] laptop:mr-[3rem] tablet:mr-[2rem]  desktop:mt-16 w-48 laptop:h-[180px] laptop:border-t-[20px] laptop:border-l-[20px] laptop:border-l-stepsFour laptop:border-t-stepsFour;
 }
 .listFacts li:nth-child(6) {
-  @apply ml-[0.5rem] laptop:-mr-5 desktop:mt-5 desktop:mr-[1rem] w-48 laptop:h-[180px] laptop:border-t-[20px] laptop:border-l-[20px] laptop:border-l-stepsFive laptop:border-t-stepsFive;
+  @apply -ml-[2rem] laptop:-mr-5 desktop:mt-5  w-48 laptop:h-[180px] laptop:border-t-[20px] laptop:border-l-[20px] laptop:border-l-stepsFive laptop:border-t-stepsFive;
 }
 
 .textPr {
@@ -46,7 +46,7 @@
 }
 
 .testSec {
-  @apply font-normal text-sm ;
+  @apply font-normal text-sm w-[197px] laptop:w-[160px];
 }
 
 .iconClass {

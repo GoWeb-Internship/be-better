@@ -61,6 +61,7 @@ const Change = () => {
                     formats={['auto', 'webp', 'avif']}
                   />
                 </div>
+                <div className='desktop:hidden'>
                 <StaticImage
                   layout="fullWidth"
                   src="../../images/background/fontwo-min.png"
@@ -69,14 +70,24 @@ const Change = () => {
                   className="-z-20  w-full h-full mt-6 max-w-full laptop:mt-24 desktop:mt-[149px]"
                   formats={['auto', 'webp', 'avif']}
                 />
-
+              </div>
+              <div className='tablet:hidden desktop:block'>
+                <StaticImage
+                  layout="fullWidth"
+                  src="../../images/background/about.png"
+                  alt="backgraund"
+                  style={{ position: 'absolute' }}
+                  className="-z-20  w-[1440px] h-[728px] mt-6 max-w-full laptop:mt-24 desktop:mt-[149px]"
+                  formats={['auto', 'webp', 'avif']}
+                />
+                 </div>
                 <h3 className={changeTitle}>{node.frontmatter.title}</h3>
-                <div className="laptop:float-right laptop:-mt-40 display:block desktop:-mt-[77px]">
+                <div className="laptop:float-right laptop:-mt-40 display:block desktop:-mt-[77px] desktop:-mr-[20px]">
                   <StaticImage
                     src="../../images/background/julia.png"
                     alt="julia"
                     style={{ position: 'absolute' }}
-                    className="w-[280px] h-[280px] -ml-44 rounded-2xl laptop:w-[310px] laptop:h-[442px] desktop:w-[480px] desktop:h-[734px] desktop:pr-[60px]"
+                    className="w-[280px] h-[280px] -ml-44 rounded-2xl laptop:w-[310px] laptop:h-[442px] desktop:w-[480px] desktop:h-[734px] desktop:pr-[60px] desktop:pt-[100px]"
                     formats={['auto', 'webp', 'avif']}
                   />
                 </div>
@@ -92,26 +103,18 @@ const Change = () => {
                 </div>
                 <div className="flex ">
                   <div className="flex justify-between">
-                    <div className="tablet:hidden desktop:block ml-[188px] mt-[33px]">
-                      <StaticImage
-                        src="../../images/background/arrow-min.png"
-                        alt="arrow"
-                        style={{ position: 'absolute' }}
-                        className="h-[574px] "
-                        formats={['auto', 'webp', 'avif']}
-                      />
-                    </div>
                     <div>
-                      <div className="float-left">
+                      <div className="float-left desktop:ml-[150px] desktop:mr-[100px]">
                         <div className={text}>
                           <div>
                             <div
-                              className="laptop:-mt-[255px] desktop:w-[624px] float-left block"
+                              className="laptop:-mt-[255px] desktop:w-[524px] desktop:ml-[108px]  desktop:-mt-[255px]  float-left block"
                               key={node.frontmatter.language}
                               dangerouslySetInnerHTML={{ __html: node.html }}
                             />
                           </div>
-                          <WithDiscount classnameText={discountStyle} classnameDiscount={discount}/>
+                          <div className='desktop:ml-[100px] desktop:!w-[350px] '>
+                          <WithDiscount classnameText={discountStyle} classnameDiscount={discount}/></div>
                         </div>
                         <Button
                           type="button"

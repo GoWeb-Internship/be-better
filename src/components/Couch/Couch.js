@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Section from '../reusableComponents/Section';
-import { StaticImage, GatsbyImage } from 'gatsby-plugin-image';
+import { GatsbyImage } from 'gatsby-plugin-image';
 import { useTranslation } from 'gatsby-plugin-react-i18next';
 import { graphql, useStaticQuery } from 'gatsby';
 import {
@@ -112,26 +112,6 @@ const Couch = () => {
               className={mainImg}
             />
           )}
-          {/* <div className=" hidden laptop:block">
-            <StaticImage
-              placeholder="blurred"
-              layout="constrained"
-              formats={['auto', 'webp', 'avif']}
-              alt="author with notebook"
-              src="../../images/withNote.jpg"
-              className={`${mainImg}`}
-            />
-          </div>
-          <div className="laptop:hidden">
-            <StaticImage
-              placeholder="blurred"
-              layout="constrained"
-              formats={['auto', 'webp', 'avif']}
-              alt="author with notebook"
-              src="../../images/withNoteMob.jpg"
-              className={`${mainImg} `}
-            />
-          </div> */}
         </div>
 
         <div>
@@ -163,16 +143,9 @@ const Couch = () => {
                 className="mt-4 rounded-2xl desktop:w-[416px] desktop:h-[280px] "
               />
             )}
-            {/* <StaticImage
-              src="../../images/note.jpg"
-              placeholder="blurred"
-              formats={['auto', 'webp', 'avif']}
-              layout="fullWidth"
-              alt="notebook"
-              className="mt-4 rounded-2xl desktop:w-[416px] desktop:h-[280px]"
-            /> */}
+
             <p className="mt-[58px] w-[280px] desktop:w-81">{couch.why}</p>
-            {/* <div className="desktop:hidden"> */}
+
             {!isDesktop && (
               <Button
                 type="button"
@@ -182,7 +155,7 @@ const Couch = () => {
                 {form.button}
               </Button>
             )}
-            {/* </div> */}
+
             {!isMobile && (
               <div className="absolute right-0 rounded-2xl mt-[20px] mr-auto">
                 <GatsbyImage
@@ -192,17 +165,6 @@ const Couch = () => {
                 />
               </div>
             )}
-            {/* <div className="hidden laptop:block absolute right-0 rounded-2xl mt-[20px] mr-auto">
-              <StaticImage
-                src="../../images/skyscraper.jpg"
-                placeholder="blurred"
-                formats={['auto', 'webp', 'avif']}
-                width={160}
-                height={176}
-                layout="fixed"
-                alt="skyscraper"
-              />
-            </div> */}
           </div>
         </div>
       </div>
@@ -225,15 +187,6 @@ const Couch = () => {
             className="w-[201px] h-[174px]"
             alt="skyscraper"
           />
-          {/* <div className="w-[201px] h-[174px]">
-            <StaticImage
-              src="../../images/skyscraperMob.jpg"
-              placeholder="blurred"
-              formats={['auto', 'webp', 'avif']}
-              layout="fullWidth"
-              alt="skyscraper"
-            />
-          </div> */}
         </div>
       </div>
       {modal && <FormInModal hideModal={hideModal} currentPlace="with couch" />}

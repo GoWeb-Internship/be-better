@@ -172,7 +172,8 @@ const Couch = () => {
               className="mt-4 rounded-2xl desktop:w-[416px] desktop:h-[280px]"
             /> */}
             <p className="mt-[58px] w-[280px] desktop:w-81">{couch.why}</p>
-            <div className="desktop:hidden">
+            {/* <div className="desktop:hidden"> */}
+            {!isDesktop && (
               <Button
                 type="button"
                 className={`${button}  !ml-0  !mt-12 `}
@@ -180,15 +181,16 @@ const Couch = () => {
               >
                 {form.button}
               </Button>
-            </div>
-            {/* {!isMobile && (
+            )}
+            {/* </div> */}
+            {!isMobile && (
               <GatsbyImage
                 image={skyscraper}
                 alt="skyscraper"
                 className="absolute right-0 rounded-2xl mt-[20px] mr-auto w-[160px] h-[176px]"
               />
-            )} */}
-            <div className="hidden laptop:block absolute right-0 rounded-2xl mt-[20px] mr-auto">
+            )}
+            {/* <div className="hidden laptop:block absolute right-0 rounded-2xl mt-[20px] mr-auto">
               <StaticImage
                 src="../../images/skyscraper.jpg"
                 placeholder="blurred"
@@ -198,7 +200,7 @@ const Couch = () => {
                 layout="fixed"
                 alt="skyscraper"
               />
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
@@ -216,12 +218,12 @@ const Couch = () => {
               {form.button}
             </Button>
           </div>
-          {/* <GatsbyImage
+          <GatsbyImage
             image={skyscraperMob}
             className="w-[201px] h-[174px]"
             alt="skyscraper"
-          /> */}
-          <div className="w-[201px] h-[174px]">
+          />
+          {/* <div className="w-[201px] h-[174px]">
             <StaticImage
               src="../../images/skyscraperMob.jpg"
               placeholder="blurred"
@@ -229,7 +231,7 @@ const Couch = () => {
               layout="fullWidth"
               alt="skyscraper"
             />
-          </div>
+          </div> */}
         </div>
       </div>
       {modal && <FormInModal hideModal={hideModal} currentPlace="with couch" />}

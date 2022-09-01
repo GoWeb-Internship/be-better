@@ -13,18 +13,20 @@ const StepsAdd = () => {
   return (
     <Section className="relative" id="whyStep">
       <div className="relative max-h-full ">
+        {/* <div className="tablet:hidden laptop:block">
         <StaticImage
           layout="fullWidth"
           src="../../images/background/str-min.png"
-          alt=""
+          alt="str"
           style={{ position: 'absolute' }}
           className="w-[416px] h-[128px] tablet:hidden laptop:block  laptop:left-1/4 z-1 laptop:top-[45%]  desktop:pl-40 desktop:left-2/4 desktop:top-[35%] "
         />
+        </div> */}
         <div className="tablet:hidden laptop:block">
           <StaticImage
             layout="fullWidth"
-            src="../../images/background/features.jpg"
-            alt=""
+            src="../../images/background/van.png"
+            alt="features"
             style={{ position: 'absolute' }}
             className="-z-20 w-full h-full"
           />
@@ -33,7 +35,7 @@ const StepsAdd = () => {
           <StaticImage
             layout="fullWidth"
             src="../../images/background/vectwo-min.png"
-            alt=""
+            alt="vectwo"
             style={{ position: 'absolute' }}
             className="-z-20 w-full h-full"
           />

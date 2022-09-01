@@ -16,8 +16,8 @@ enText: I want to express my sincere gratitude for the coaching session. Julia
   slowed down, held back and took a lot of time. Now I have more time and
   energy! Many thanks to you, Julia, for your sincerity, warmth and
   understanding!
-ruName: CEO Global LTD
-ruPosition: Александра
+ruName: Александра
+ruPosition: CEO Global LTD
 ruText: Хочу выразить искреннюю благодарность за проведенную коуч сессию. Юлия,
   умело направила моё внимание и помогла распознать установки-привычки моего
   обучения в школе, которые значительно влияли на мою эффективность в

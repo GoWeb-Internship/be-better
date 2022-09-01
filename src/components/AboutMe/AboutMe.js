@@ -1,5 +1,5 @@
 import React from 'react';
-import { StaticImage } from 'gatsby-plugin-image';
+import { StaticImage, GatsbyImage } from 'gatsby-plugin-image';
 import AboutYou from '../AboutYou';
 import { useTranslation } from 'gatsby-plugin-react-i18next';
 import Section from '../reusableComponents/Section';
@@ -10,12 +10,39 @@ import {
   caveat,
   aboutMeContainer,
 } from './AboutMe.module.css';
+import { graphql, useStaticQuery } from 'gatsby';
 import icon from '../../images/signature.svg';
+import { useMedia } from 'react-use';
 
 const AboutMe = () => {
   const { t } = useTranslation();
 
+  const isDesktop = useMedia('(min-width:1440px)');
+
+  const foto = useStaticQuery(graphql`
+    query {
+      avatarLaptop: file(name: { eq: "aboutMe" }) {
+        id
+        publicURL
+        childImageSharp {
+          id
+          gatsbyImageData(placeholder: BLURRED, formats: [AUTO, WEBP, AVIF])
+        }
+      }
+      avatarDesktop: file(name: { eq: "about" }) {
+        id
+        publicURL
+        childImageSharp {
+          id
+          gatsbyImageData(placeholder: BLURRED, formats: [AUTO, WEBP, AVIF])
+        }
+      }
+    }
+  `);
   const data = t('aboutMe', { returnObjects: true });
+  const smartScreenAvatar = foto.avatarLaptop.childImageSharp.gatsbyImageData;
+  const DesktopScreenAvatar =
+    foto.avatarDesktop.childImageSharp.gatsbyImageData;
 
   return (
     <Section className={sectionContainer} id="nav-about">
@@ -33,26 +60,49 @@ const AboutMe = () => {
             </span>
           </div>
 
-          <div className="desktop:hidden">
-            <StaticImage
+          {isDesktop ? (
+            <GatsbyImage
+              image={DesktopScreenAvatar}
+              alt="author"
+              className="  desktop:w-[456px] desktop:h-[480px]"
+            />
+          ) : (
+            <GatsbyImage
+              image={smartScreenAvatar}
+              alt="author"
+              className=" w-[134px] h-[160px] laptop:w-[270px]  laptop:h-[342px] laptop:mr-5  rounded-2xl "
+            />
+          )}
+          {/* <div className="desktop:hidden">
+            <GatsbyImage
+              image={smartScreenAvatar}
+              alt="author"
+              className=" w-[134px] h-[160px] laptop:w-[270px]  laptop:h-[342px] laptop:mr-5  rounded-2xl "
+            /> */}
+          {/* <StaticImage
               src="../../images/aboutMe.jpeg"
               layout="constrained"
               alt="author"
               className=" w-[134px] h-[160px] laptop:w-[270px]  laptop:h-[342px] laptop:mr-5  rounded-2xl "
               placeholder="blurred"
               formats={['auto', 'webp', 'avif']}
-            />
-          </div>
+            /> */}
+          {/* </div>
           <div className="hidden laptop:hidden desktop:block">
-            <StaticImage
+            <GatsbyImage
+              image={DesktopScreenAvatar}
+              alt="author"
+              className="  desktop:w-[456px] desktop:h-[480px]"
+            /> */}
+          {/* <StaticImage
               src="../../images/about.jpg"
               layout="constrained"
               alt="author"
               className="  desktop:w-[456px] desktop:h-[480px]"
               placeholder="blurred"
               formats={['auto', 'webp', 'avif']}
-            />
-          </div>
+            /> */}
+          {/* </div> */}
         </div>
         <div className={textContainer}>
           <h1 className={title}>{data.title}</h1>

@@ -34,7 +34,7 @@
   @apply -ml-[0.5rem] laptop:mr-[3rem] tablet:mr-[2rem]  desktop:mt-16 w-48 laptop:h-[180px] laptop:border-t-[20px] laptop:border-l-[20px] laptop:border-l-stepsFour laptop:border-t-stepsFour;
 }
 .listFacts li:nth-child(6) {
-  @apply -ml-[2rem] laptop:-mr-5 desktop:mt-5  w-48 laptop:h-[180px] laptop:border-t-[20px] laptop:border-l-[20px] laptop:border-l-stepsFive laptop:border-t-stepsFive;
+  @apply -ml-[2rem] laptop:-mr-5 desktop:mt-5 w-48 laptop:h-[180px] laptop:border-t-[20px] laptop:border-l-[20px] laptop:border-l-stepsFive laptop:border-t-stepsFive;
 }
 
 .textPr {

@@ -59,9 +59,9 @@ const Reviews = () => {
   const reviews = t('reviews', { returnObjects: true });
 
   return (
-    <Section
+    <div
       id="nav-reviews"
-      className="px-5 mt-[73px] laptop:mt-[324px] desktop:mt-[181px] pb-[83px] laptop:pb-[131px] desktop:pb-[142px]"
+      className="px-5 mt-[73px] laptop:mt-[324px] desktop:mt-[181px] pb-[83px] laptop:pb-[131px] desktop:pb-[142px] relative"
     >
       <h3 className={title}>{reviews.title}</h3>
 
@@ -90,7 +90,7 @@ const Reviews = () => {
           size={120}
         />
       )}
-    </Section>
+    </div>
   );
 };
 

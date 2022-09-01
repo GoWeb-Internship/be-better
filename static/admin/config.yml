@@ -58,7 +58,7 @@ collections:
       - { label: 'Text En', name: 'enText', widget: 'string' }
       - { label: 'Name Ru', name: 'ruName', widget: 'string' }
       - { label: 'Position Ru', name: 'ruPosition', widget: 'string' }
-      - { label: 'Text Ru', name: 'ruText', widget: 'string'}
+      - { label: 'Text Ru', name: 'ruText', widget: 'string' }
       - { label: 'Language', name: 'language', widget: 'hidden', default: 'uk' }
   #reviews
   - name: 'reviews'

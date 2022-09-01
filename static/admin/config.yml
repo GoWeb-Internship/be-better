@@ -58,12 +58,7 @@ collections:
       - { label: 'Text En', name: 'enText', pattern: ['^[A-Z]{1,400}$', 'Must be no more than 400 characters'], widget: 'string' }
       - { label: 'Name Ru', name: 'ruName', widget: 'string' }
       - { label: 'Position Ru', name: 'ruPosition', widget: 'string' }
-      - {
-          label: 'Text Ru',
-          name: 'ruText',
-          pattern: ['^[A-Z]{1,400}$', 'Must be no more than 400 characters'],
-          widget: 'string',
-        }
+      - { label: 'Text Ru', name: 'ruText', pattern: ['^[A-Z]{1,400}$', 'Must be no more than 400 characters'], widget: 'string'}
       - { label: 'Language', name: 'language', widget: 'hidden', default: 'uk' }
   #reviews
   - name: 'reviews'

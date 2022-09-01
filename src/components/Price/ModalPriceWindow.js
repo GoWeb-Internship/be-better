@@ -12,6 +12,8 @@ import {
   price,
   checkbox,
   underformtext,
+  titleSuccess,
+  textSuccess,
 } from './Price.module.css';
 
 const ModalPriceWindow = ({ hideModal, currentPrice, currentRate }) => {
@@ -24,10 +26,10 @@ const ModalPriceWindow = ({ hideModal, currentPrice, currentRate }) => {
     <ModalWindow className={modalform} handleClose={hideModal}>
       {successMessage ? (
         <div>
-          <h2 className="mb-[10px] desktop:mb-1 text-xl desktop:text-2xl font-medium desktop:font-semibold text-main">
+          <h2 className={titleSuccess}>
             {modalSuccess.gratitude}{' '}
           </h2>
-          <p className="desktop:font-medium text-base desktop:text-xl text-black">
+          <p className={textSuccess}>
             {modalSuccess.text}
           </p>
         </div>

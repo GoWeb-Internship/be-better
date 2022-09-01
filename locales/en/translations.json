@@ -61,7 +61,21 @@
     "connection": "I will contact you soon!",
     "minimum": "Basic",
     "base": "Standard",
-    "optimal": "Professional"
+    "optimal": "Professional",
+    "errorMessage": {
+      "nameMatch": "Please enter valid name",
+      "nameMin": "Name must contain 3 or more letters",
+      "nameMax": "Name can not contain more then 100 letters",
+      "nameRequired": "Name is required",
+      "emailMatch": "Please enter valid email",
+      "emailMin": "Email must contain 10 or more symbols",
+      "emailMax": "Email can not contain more then 63 symbols",
+      "emailRequired": "Email is required",
+      "phoneMin": "Number must contain at least 8 digits",
+      "phoneMax": "Number cannot contain more than 13 digits",
+      "phoneReguired": "Phone number is required",
+      "check": "You must accept the terms"
+    }
   },
   "reviews": {
     "title": "Сustomer feedback ❤️"

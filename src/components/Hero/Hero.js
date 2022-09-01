@@ -48,14 +48,14 @@ const Hero = () => {
             <StaticImage
               layout="fullWidth"
               src="../../images/background/heroDesktop.jpg"
-              alt=""
+              alt="background on desktop"
               style={{ position: 'absolute' }}
               className={desktopBgImg}
             />
             <StaticImage
               layout="fullWidth"
               src="../../images/background/whiteHeroDesktop.png"
-              alt=""
+              alt="filter on background"
               style={{ position: 'absolute' }}
               className={desktopBgImg}
             />
@@ -96,7 +96,7 @@ const Hero = () => {
           <WithDiscount classnameText={discountText} classnameDiscount={discount}/>
         </Container>
       </div>
-      <FormWithBackground clickFrom="hero" />
+      <FormWithBackground clickFrom="hero-m" />
       {showModal && <FormInModal hideModal={closeForm} currentPlace="hero" />}
     </Section>
   );

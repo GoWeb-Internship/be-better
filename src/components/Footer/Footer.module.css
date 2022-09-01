@@ -55,5 +55,5 @@
 }
 
 .link{
-    @apply text-black text-xs text-left laptop:text-sm hover:text-[#038bab];
+    @apply text-black text-xs text-left laptop:text-sm hover:text-[#038bab] ;
 }

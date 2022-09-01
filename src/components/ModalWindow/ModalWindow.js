@@ -1,4 +1,5 @@
 import React, { useCallback, useEffect } from 'react';
+import PropTypes from 'prop-types';
 import { backdrop, modal, icon } from './ModalWindow.module.css';
 import sprite from '../../images/sprite.svg';
 
@@ -40,5 +41,10 @@ const ModalWindow = ({ children, className = '', handleClose }) => {
     </div>
   );
 };
+
+ModalWindow.propTypes = {
+  className: PropTypes.string,
+  handleClose: PropTypes.func.isRequired,
+}
 
 export default ModalWindow;

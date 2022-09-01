@@ -184,11 +184,13 @@ const Couch = () => {
             )}
             {/* </div> */}
             {!isMobile && (
-              <GatsbyImage
-                image={skyscraper}
-                alt="skyscraper"
-                className="absolute right-0 rounded-2xl mt-[20px] mr-auto w-[160px] h-[176px]"
-              />
+              <div className="absolute right-0 rounded-2xl mt-[20px] mr-auto">
+                <GatsbyImage
+                  image={skyscraper}
+                  alt="skyscraper"
+                  className="w-[160px] h-[176px]"
+                />
+              </div>
             )}
             {/* <div className="hidden laptop:block absolute right-0 rounded-2xl mt-[20px] mr-auto">
               <StaticImage

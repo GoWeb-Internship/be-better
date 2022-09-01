@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import Section from '../reusableComponents/Section';
-import { StaticImage } from 'gatsby-plugin-image';
+import { StaticImage, GatsbyImage } from 'gatsby-plugin-image';
 import { useTranslation } from 'gatsby-plugin-react-i18next';
+import { graphql, useStaticQuery } from 'gatsby';
 import {
   couchContainer,
   flexContainer,
@@ -12,6 +13,7 @@ import {
 } from './Couch.module.css';
 import Button from '../reusableComponents/Button';
 import FormInModal from '../Form/FormInModal';
+import { useMedia } from 'react-use';
 
 const Couch = () => {
   const [modal, setModal] = useState(false);
@@ -20,6 +22,69 @@ const Couch = () => {
 
   const form = t('form', { returnObjects: true });
   const couch = t('couch', { returnObjects: true });
+
+  const foto = useStaticQuery(graphql`
+    query {
+      avatarWithNote: file(name: { eq: "withNote" }) {
+        id
+        publicURL
+        childImageSharp {
+          id
+          gatsbyImageData(
+            placeholder: BLURRED
+            formats: [AUTO, WEBP, AVIF]
+            layout: CONSTRAINED
+          )
+        }
+      }
+      avatarWithNoteMob: file(name: { eq: "withNoteMob" }) {
+        id
+        publicURL
+        childImageSharp {
+          id
+          gatsbyImageData(
+            placeholder: BLURRED
+            formats: [AUTO, WEBP, AVIF]
+            layout: CONSTRAINED
+          )
+        }
+      }
+      notebook: file(name: { eq: "note" }) {
+        id
+        publicURL
+        childImageSharp {
+          id
+          gatsbyImageData(placeholder: BLURRED, formats: [AUTO, WEBP, AVIF])
+        }
+      }
+      skyscraper: file(name: { eq: "skyscraper" }) {
+        id
+        publicURL
+        childImageSharp {
+          id
+          gatsbyImageData(placeholder: BLURRED, formats: [AUTO, WEBP, AVIF])
+        }
+      }
+      skyscraperMob: file(name: { eq: "skyscraperMob" }) {
+        id
+        publicURL
+        childImageSharp {
+          id
+          gatsbyImageData(placeholder: BLURRED, formats: [AUTO, WEBP, AVIF])
+        }
+      }
+    }
+  `);
+
+  const isMobile = useMedia('(max-width:767px)');
+  const isDesktop = useMedia('(min-width:1440px)');
+
+  const smartScreenAvatar = foto.avatarWithNote.childImageSharp.gatsbyImageData;
+  const DesktopScreenAvatar =
+    foto.avatarWithNoteMob.childImageSharp.gatsbyImageData;
+  const notebookImg = foto.notebook.childImageSharp.gatsbyImageData;
+  const skyscraper = foto.skyscraper.childImageSharp.gatsbyImageData;
+  const skyscraperMob = foto.skyscraperMob.childImageSharp.gatsbyImageData;
 
   const showModal = change => {
     setCurrentChange(change);
@@ -32,8 +97,22 @@ const Couch = () => {
     <Section className={couchContainer} id="couch">
       <div className={flexContainer}>
         <div className="flex laptop:block">
-          <h3 className={`${title} laptop:hidden`}>{couch.title}</h3>
-          <div className=" hidden laptop:block">
+          <h2 className={`${title} laptop:hidden`}>{couch.title}</h2>
+
+          {isMobile ? (
+            <GatsbyImage
+              image={DesktopScreenAvatar}
+              alt="author with notebook"
+              className={mainImg}
+            />
+          ) : (
+            <GatsbyImage
+              image={smartScreenAvatar}
+              alt="author with notebook"
+              className={mainImg}
+            />
+          )}
+          {/* <div className=" hidden laptop:block">
             <StaticImage
               placeholder="blurred"
               layout="constrained"
@@ -52,7 +131,7 @@ const Couch = () => {
               src="../../images/withNoteMob.jpg"
               className={`${mainImg} `}
             />
-          </div>
+          </div> */}
         </div>
 
         <div>
@@ -77,14 +156,21 @@ const Couch = () => {
         </div>
         <div className="relative laptop:hidden desktop:block">
           <div className=" laptop:hidden desktop:block">
-            <StaticImage
+            {(isMobile || isDesktop) && (
+              <GatsbyImage
+                image={notebookImg}
+                alt="notebook"
+                className="mt-4 rounded-2xl desktop:w-[416px] desktop:h-[280px] "
+              />
+            )}
+            {/* <StaticImage
               src="../../images/note.jpg"
               placeholder="blurred"
               formats={['auto', 'webp', 'avif']}
               layout="fullWidth"
               alt="notebook"
               className="mt-4 rounded-2xl desktop:w-[416px] desktop:h-[280px]"
-            />
+            /> */}
             <p className="mt-[58px] w-[280px] desktop:w-81">{couch.why}</p>
             <div className="desktop:hidden">
               <Button
@@ -95,7 +181,14 @@ const Couch = () => {
                 {form.button}
               </Button>
             </div>
-            <div className="hidden laptop:block absolute right-0 rounded-2xl mt-[20px] mr-auto">
+            {!isMobile && (
+              <GatsbyImage
+                image={skyscraper}
+                alt="skyscraper"
+                className="absolute right-0 rounded-2xl mt-[20px] mr-auto w-[160px] h-[176px]"
+              />
+            )}
+            {/* <div className="hidden laptop:block absolute right-0 rounded-2xl mt-[20px] mr-auto">
               <StaticImage
                 src="../../images/skyscraper.jpg"
                 placeholder="blurred"
@@ -105,7 +198,7 @@ const Couch = () => {
                 layout="fixed"
                 alt="skyscraper"
               />
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
@@ -123,7 +216,12 @@ const Couch = () => {
               {form.button}
             </Button>
           </div>
-          <div className="w-[201px] h-[174px]">
+          <GatsbyImage
+            image={skyscraperMob}
+            className="w-[201px] h-[174px]"
+            alt="skyscraper"
+          />
+          {/* <div className="w-[201px] h-[174px]">
             <StaticImage
               src="../../images/skyscraperMob.jpg"
               placeholder="blurred"
@@ -131,7 +229,7 @@ const Couch = () => {
               layout="fullWidth"
               alt="skyscraper"
             />
-          </div>
+          </div> */}
         </div>
       </div>
       {modal && <FormInModal hideModal={hideModal} currentPlace="with couch" />}

@@ -39,6 +39,7 @@ const AboutMe = () => {
       }
     }
   `);
+
   const data = t('aboutMe', { returnObjects: true });
   const smartScreenAvatar = foto.avatarLaptop.childImageSharp.gatsbyImageData;
   const DesktopScreenAvatar =

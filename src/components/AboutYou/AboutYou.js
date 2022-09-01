@@ -29,7 +29,7 @@ const AboutYou = () => {
         if (node.frontmatter.language === i18n.language) {
           return (
             <div key={node.frontmatter.language}>
-              <h3 className={title}>{node.frontmatter.title}</h3>
+              <h2 className={title}>{node.frontmatter.title}</h2>
               <div
                 className={listContainer}
                 dangerouslySetInnerHTML={{ __html: node.html }}

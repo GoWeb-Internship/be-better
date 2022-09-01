@@ -52,13 +52,13 @@ collections:
     fields:
       - { label: 'Name Ua', name: 'ukName', widget: 'string' }
       - { label: 'Position Ua', name: 'ukPosition', widget: 'string' }
-      - { label: 'Text Ua', name: 'ukText', pattern: ['^{1,400}$', 'Must be no more than 400 characters'], widget: 'string' }
+      - { label: 'Text Ua', name: 'ukText', pattern: ['^.{0,400}', 'Must be no more than 400 characters'], widget: 'string' }
       - { label: 'Name En', name: 'enName', widget: 'string' }
       - { label: 'Position En', name: 'enPosition', widget: 'string' }
-      - { label: 'Text En', name: 'enText', pattern: ['^{1,400}$', 'Must be no more than 400 characters'], widget: 'string' }
+      - { label: 'Text En', name: 'enText', pattern: ['^.{0,400}', 'Must be no more than 400 characters'], widget: 'string' }
       - { label: 'Name Ru', name: 'ruName', widget: 'string' }
       - { label: 'Position Ru', name: 'ruPosition', widget: 'string' }
-      - { label: 'Text Ru', name: 'ruText', pattern: ['^{1,400}$', 'Must be no more than 400 characters'], widget: 'string'}
+      - { label: 'Text Ru', name: 'ruText', pattern: ['^.{0,400}', 'Must be no more than 400 characters'], widget: 'string'}
       - { label: 'Language', name: 'language', widget: 'hidden', default: 'uk' }
   #reviews
   - name: 'reviews'

@@ -25,10 +25,19 @@ const Steps = () => {
           />
         </div>
         <div className="relative max-h-full">
-          <div className="tablet:hidden laptop:block laptop:w-[768px] ">
+          <div className="tablet:hidden desktop:block laptop:w-[768px] ">
             <StaticImage
               layout="fullWidth"
               src="../../images/background/results.png"
+              alt=""
+              style={{ position: 'absolute' }}
+              className="-z-20 w-full h-full"
+            />
+          </div>
+          <div className="tablet:hidden laptop:block desktop:hidden laptop:w-[768px] ">
+            <StaticImage
+              layout="fullWidth"
+              src="../../images/background/group.png"
               alt=""
               style={{ position: 'absolute' }}
               className="-z-20 w-full h-full"

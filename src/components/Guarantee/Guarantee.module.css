@@ -9,3 +9,19 @@
 .text {
     @apply w-[220px] laptop:w-[432px] text-sm laptop:text-xl laptop:font-medium desktop:w-[432px] desktop:text-xl;
 }
+
+.icon {
+    @apply absolute -z-10 w-12 h-[42px] top-[211px] left-5 laptop:top-[166px] laptop:left-16 desktop:left-[268px] laptop:w-[136px] laptop:h-[156px];
+}
+
+.photoMobile {
+    @apply w-[219px] h-[325px] -z-10 top-[90px] right-5;
+}
+
+.photoTablet {
+    @apply w-[594px] h-[510px] -z-10 top-0 right-0;
+}
+
+.photoDesktop {
+    @apply w-1036 h-full -z-10 top-0 right-0;
+}

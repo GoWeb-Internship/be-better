@@ -10,11 +10,12 @@ const NavList = ({ navigation }) => {
         <li key={id} className="cursor-pointer">
           <Link
             to={`${id}`}
-            smooth
-            spy
+            spy={true}
+            smooth={true}
             offset={-80}
             className={links}
             activeClass={active}
+            href={`${id}`}
           >
             {name}
           </Link>

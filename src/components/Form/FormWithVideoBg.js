@@ -9,8 +9,11 @@ import {
   ifYou,
   emo,
   formInMain,
+  checkboxInMain,
   discountText,
   discount,
+  sociaListlInMain,
+  socialLinkInMain,
 } from './Form.module.css';
 import Section from '../reusableComponents/Section';
 import Container from '../Container';
@@ -23,13 +26,13 @@ import WithDiscount from '../reusableComponents/WithDiscount';
 const FormWithVideoBg = ({ clickFrom }) => {
   const { t } = useTranslation();
   const hero = t('hero', { returnObjects: true });
-  const isMobile = useMedia('(max-width:767px');
-  const isDesktop = useMedia('(min-width:1440px');
+  const isMobile = useMedia('(max-width:767px)');
+  const isDesktop = useMedia('(min-width:1440px)');
 
   return (
     <Section>
       {isMobile ? (
-        <FormWithBackground clickFrom="main" />
+        <FormWithBackground clickFrom="main-m" />
       ) : (
         <div className={mainContainer}>
           {isDesktop ? (
@@ -38,7 +41,7 @@ const FormWithVideoBg = ({ clickFrom }) => {
             <StaticImage
               layout="fullWidth"
               src="../../images/background/formTablet.jpg"
-              alt=""
+              alt="tablet form background"
               style={{ position: 'absolute' }}
               className="w-full h-full -z-10 top-0"
             />
@@ -58,7 +61,7 @@ const FormWithVideoBg = ({ clickFrom }) => {
                   <Form
                     clickFrom={clickFrom}
                     formClassname={formInMain}
-                    checkboxClassname="mb-8"
+                    checkboxClassname={checkboxInMain}
                   />
                   <WithDiscount
                     classnameText={discountText}
@@ -67,7 +70,7 @@ const FormWithVideoBg = ({ clickFrom }) => {
                 </div>
               </div>
               <div className="ml-[213px]">
-                <Social classNameList="space-y-4 desktop:space-y-8" />
+                <Social classNameList={sociaListlInMain} classNameLink={socialLinkInMain} />
               </div>
             </div>
           </Container>

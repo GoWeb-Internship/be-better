@@ -24,15 +24,15 @@
 }
 
 .phonedropdown::-webkit-scrollbar {
-  @apply w-4 bg-[#e4eaeb];
+  @apply w-4 rounded-r-xl bg-[#e4eaeb];
 }
 
 .phonedropdown::-webkit-scrollbar-thumb {
-  @apply h-2 rounded bg-likeGrey;
+  @apply h-2 mt-11 rounded bg-likeGrey;
 }
 
 .error {
-  @apply absolute -top-2 left-8 z-10 text-error text-xs;
+  @apply absolute -top-2 right-3 z-10 text-error text-xs;
 }
 
 .modalsuccess {
@@ -52,7 +52,7 @@
     @apply flex items-start mt-1 mb-8 pl-2 pt-1 laptop:mb-9;
 }
 .checkbox:checked + .check {
-  @apply bg-[url('../../images/check.svg')] bg-no-repeat bg-left laptop:bg-[url('../../images/checkWhite.svg')] desktop:bg-[url('../../images/check.svg')];
+  @apply transition-all duration-200 bg-[url('../../images/check.svg')] bg-no-repeat bg-left laptop:bg-[url('../../images/checkWhite.svg')] desktop:bg-[url('../../images/check.svg')];
 }
 
 .check {
@@ -67,20 +67,9 @@
     @apply absolute top-10 left-8 text-error text-xs;
 }
 
-.button {
-    @apply h-12 w-full border border-main rounded-full text-white;
+.buttonF {
+    @apply h-12 w-full border border-main rounded-full text-white focus:outline-none;
 }
-/* анимация галочки */
-/* #anim-one {
-    text-align: center;
-    padding-top: 100px;
-    font-size: 0;
-    font-weight: 700;
-    color: #00CED2;
-    animation: bounce-text 2s infinite cubic-bezier(0.245, 0.325, 0.670, 1.510);
-}
-
-@keyframes bounce-text 60% font-size: 60px 100% font-size: 60px */
 
 /* FormInModal */
 .modalform {
@@ -115,14 +104,12 @@
   @apply mb-8 text-black;
 }
 
-.modalcheck div {
-  @apply laptop:bg-[#7FDCF1] laptop:border-main desktop:border-likeGrey desktop:bg-transparent;
-}
-
 .modalcheck span {
+  @apply laptop:bg-[#7FDCF1] laptop:border-main  desktop:border-likeGrey desktop:bg-transparent;
+}
+.modalcheck p {
   @apply laptop:text-black;
 }
-
 .formMargins {
     @apply m-auto mb-2 laptop:mb-8;
 }
@@ -156,13 +143,31 @@
 }
 
 .ifYou {
-    @apply mb-10 laptop:text-white laptop:mb-50 desktop:text-black desktop:mb-10 text-34 font-semibold;
+    @apply mb-10 laptop:mb-50 laptop:text-black desktop:mb-10 text-34 font-semibold;
 }
 
 .emo {
-    @apply text-32 laptop:text-white desktop:text-black font-caveat font-normal;
+    @apply text-32 laptop:text-black font-caveat font-normal;
 }
 
 .formInMain {
     @apply laptop:mb-[120px] desktop:!m-0 desktop:!mr-auto desktop:!mb-6;
 }
+
+.checkboxInMain {
+  @apply mb-8;
+}
+
+.checkboxInMain p {
+  @apply laptop:text-black; 
+}
+
+.sociaListlInMain {
+  @apply space-y-4 desktop:space-y-8 ; 
+}
+/* .sociaLinklInMain {
+  @apply  desktop:hover:text-main desktop:focus:text-main;
+}
+.socialLinkInMain svg{
+  @apply laptop:text-black desktop:text-white  ;
+} */

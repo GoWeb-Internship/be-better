@@ -22,9 +22,9 @@ const AboutMe = () => {
       <div className={aboutMeContainer}>
         <div className="flex mb-6 laptop:block desktop:h-[342px]">
           <div className="w-[134px] text-left laptop:hidden mr-3">
-            <h1 className="title-primary text-left mb-4 laptop:mb-13 laptop:font-semibold laptop:text-34">
+            <h2 className="title-primary text-left mb-4 laptop:mb-13 laptop:font-semibold laptop:text-34">
               {data.title}
-            </h1>
+            </h2>
             <span className="text-black text-left text-sm">
               {data.oneParagraphFirst}
               <span className="text-caveat leading-[0.9]">
@@ -55,7 +55,7 @@ const AboutMe = () => {
           </div>
         </div>
         <div className={textContainer}>
-          <h1 className={title}>{data.title}</h1>
+          <h2 className={title}>{data.title}</h2>
           <p className="mb-2 desktop:mb-8">
             <span className="text-black hidden laptop:inline">
               {data.oneParagraphFirst}

@@ -1,5 +1,6 @@
 import * as React from 'react';
 import { useForm, Controller } from 'react-hook-form';
+import * as yup from 'yup';
 import useFormPersist from 'react-hook-form-persist';
 import { yupResolver } from '@hookform/resolvers/yup';
 import { useTranslation } from 'gatsby-plugin-react-i18next';
@@ -20,11 +21,10 @@ import {
   phonedropdown,
   error,
   checkError,
-  button,
+  buttonF,
 } from './Form.module.css';
 import locationApi from '../../services/locationApi';
 import sendMessageToTg from '../../services/telegramApi';
-import { schema } from '../../helpers/validation';
 
 const isBrowser = typeof window !== 'undefined';
 
@@ -34,6 +34,39 @@ const JustForm = ({
   checkboxClassname = 'mb-3',
   openModal,
 }) => {
+  const { t } = useTranslation();
+  const {nameInput, accept, button, errorMessage} = t('form', { returnObjects: true });
+  
+  const schema = yup
+  .object({
+    name: yup
+      .string()
+      .matches(
+        /^[а-яА-ЯёЁa-zA-ZіІїЇґҐєЄ]{1}[а-яА-ЯёЁa-zA-ZіІїЇґҐєЄ0-9 ]+$/,
+        errorMessage.nameMatch
+      )
+      .min(3, errorMessage.nameMin)
+      .max(100, errorMessage.nameMax)
+      .required(errorMessage.nameRequired),
+    email: yup
+      .string()
+      .email()
+      .matches(
+        /^[a-zA-Z0-9+_.]+[a-zA-Z0-9+_.-/]+[a-zA-Z0-9+_./-]+@[a-zA-Z0-9_.-]+$/,
+        errorMessage.emailMatch
+      )
+      .min(10, errorMessage.emailMin)
+      .max(63, errorMessage.emailMax)
+      .required(errorMessage.emailRequired),
+    phone: yup
+      .string()
+      .min(9, errorMessage.phoneMin)
+      .max(13, errorMessage.phoneMax)
+      .required(errorMessage.phoneReguired),
+    checkbox: yup.boolean().oneOf([true], errorMessage.check),
+  })
+  .required();
+
   const {
     register,
     control,
@@ -57,9 +90,6 @@ const JustForm = ({
     setValue,
     storage: isBrowser ? window.localStorage : null,
   });
-
-  const { t } = useTranslation();
-  const data = t('form', { returnObjects: true });
 
   const onSubmit = async data => {
     let message = `
@@ -105,7 +135,7 @@ const JustForm = ({
           placeholder=" "
         />
         <label className={label} htmlFor={`name-${clickFrom}`}>
-          {data.nameInput}
+          {nameInput}
         </label>
         <p className={error}>{errors.name?.message}</p>
       </div>
@@ -153,12 +183,12 @@ const JustForm = ({
             {...register('checkbox')}
             className={checkbox}
           />
-          <div
+          <span
             className={`${check} ${errors.checkbox ? '!border-error' : ''}`}
-          ></div>
-          <span className={acceptText}>
-            {data.accept}
-          </span>
+          ></span>
+          <p className={acceptText}>
+            {accept}
+          </p>
         </label>
         <p className={checkError}>
           {errors.checkbox?.message}
@@ -166,9 +196,9 @@ const JustForm = ({
       </div>
       <Button
         type="submit"
-        className={button}
+        className={buttonF}
       >
-        {data.button}
+        {button}
       </Button>
     </form>
   );

@@ -21,6 +21,11 @@ const Header = () => {
   const toggleNav = e => {
     e.preventDefault();
     setShowNav(prevState => !prevState);
+    if (!showNav) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = '';
+    }
   };
 
   return (

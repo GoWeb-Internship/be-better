@@ -54,9 +54,12 @@ const Review = ({ frontmatter }) => {
       <div className="flex items-center">
         <div className="rounded-full mr-6 ">
           {image ? (
-            <GatsbyImage image={image} className="h-6 w-6 rounded-full  " />
+            <GatsbyImage
+              image={image}
+              className="h-[60px] w-[60px] rounded-full  "
+            />
           ) : (
-            <BsPerson size={24} />
+            <BsPerson size={60} />
           )}
         </div>
         <div>

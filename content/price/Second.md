@@ -2,7 +2,7 @@
 ukSubscription: Standard
 enSubscription: Standard
 ruSubscription: Standard
-price: 60
+price: 600
 economy: 40
 ukMonth: 2 місяці роботи
 enMonth: 2 months of work

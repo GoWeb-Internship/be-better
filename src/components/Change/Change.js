@@ -118,7 +118,7 @@ const Change = () => {
                         </div>
                         <Button
                           type="button"
-                          className="!bg-mainSecond  border   px-16 !ml-8 desktop:!ml-28 py-2 rounded-3xl hover:!bg-[#d46828] ease-in duration-300 laptop:!ml-[80px]"
+                          className="!bg-mainSecond border px-16 !ml-8 desktop:!ml-28 py-2 rounded-3xl hover:!bg-[#d46828] focus:!bg-[#d46828] focus:outline-none ease-in duration-300 laptop:!ml-[80px]"
                           doAction={() => showModal()}
                         >
                           {buttonTranslate.button}

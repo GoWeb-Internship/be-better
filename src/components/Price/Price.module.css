@@ -54,15 +54,20 @@
 .checkbox {
   @apply mb-9;
 }
-.checkbox div {
-  @apply laptop:bg-[#7FDCF1] laptop:border-main desktop:border-likeGrey desktop:bg-transparent;
-}
-
 .checkbox span {
+  @apply laptop:bg-[#7FDCF1] laptop:border-main  desktop:border-likeGrey desktop:bg-transparent;
+}
+.checkbox p {
   @apply laptop:text-black;
 }
 .underformtext {
   @apply text-sm laptop:text-base;
+}
+.titleSuccess {
+  @apply mb-[10px] desktop:mb-1 text-xl desktop:text-2xl font-medium desktop:font-semibold text-main;
+}
+.textSuccess {
+  @apply desktop:font-medium text-base desktop:text-xl text-black;
 }
 /* Card */
 .subscription {
@@ -77,7 +82,7 @@
 }
 
 .buttonStyled {
-  @apply px-20 rounded-3xl border border-none laptop:px-10 desktop:px-[88px] py-[11px];
+  @apply px-20 rounded-3xl border border-none laptop:px-10 desktop:px-[88px] py-[11px] focus:outline-none;
 }
 
 .donation {

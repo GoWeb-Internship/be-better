@@ -34,7 +34,7 @@
 }
 
 .mobileBtn {
-    @apply h-12 w-[280px] text-white rounded-full !bg-buttonMobile mb-4 hover:!bg-main;
+    @apply h-12 w-[280px] text-white rounded-full !bg-buttonMobile mb-4 border-none hover:!bg-main focus:outline-buttonMobile;
 }
 
 .heroForm {

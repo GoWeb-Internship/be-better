@@ -55,7 +55,7 @@ const Footer = () => {
 
   return (
     <footer id="nav-feedback">
-      <FormWithBackground clickFrom="footer" />
+      <FormWithBackground clickFrom="footer-m" />
       <div
         className={
           isDesktop ? `${footerContainer} ${gradient}` : `${footerContainer}`
@@ -105,7 +105,7 @@ const Footer = () => {
             <ul className={list}>
               {links.map(({ name, id }) => (
                 <li key={id} className={link}>
-                  <Link to={`/${id}`}>{name}</Link>
+                  <Link to={`/${id}`} className='focus:text-[#038bab] focus:outline-none'>{name}</Link>
                 </li>
               ))}
             </ul>

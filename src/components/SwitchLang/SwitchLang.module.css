@@ -1,5 +1,5 @@
 .switcher {
-    @apply flex justify-between items-center w-[45px] text-main;
+    @apply flex justify-between items-center w-[45px] text-main focus:outline-main;
 }
 
 .list {

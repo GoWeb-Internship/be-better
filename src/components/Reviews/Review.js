@@ -41,7 +41,7 @@ const Review = ({ frontmatter }) => {
   const positionLength = frontmatter[`${i18n.language}Position`];
 
   const position = positionLength === null ? 'mb-6' : 'opacity-0';
-  const image = frontmatter.image.childImageSharp.gatsbyImageData;
+  const image = frontmatter.image?.childImageSharp.gatsbyImageData;
 
   return (
     <div className={reviewContainer}>

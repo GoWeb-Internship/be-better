@@ -3,7 +3,7 @@ ukSubscription: Basic
 enSubscription: Basic
 ruSubscription: Basic
 price: 320
-economy: 0
+economy: 
 ukMonth: 1 місяць роботи
 enMonth: 1 month of work
 ruMonth: 1 месяц работы

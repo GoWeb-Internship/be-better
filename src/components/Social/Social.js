@@ -12,7 +12,7 @@ const Social = ({ classNameList = '', classNameLink = '' }) => {
           href="https://instagram.com/yuliya_shayenko?igshid=YmMyMTA2M2Y="
           target="blank"
           rel="noreferrer noopener nofollow"
-          aria-label='link to instagram'
+          aria-label="instagram"
         >
           <FaInstagram size={24} />
         </a>
@@ -23,7 +23,7 @@ const Social = ({ classNameList = '', classNameLink = '' }) => {
           href="https://www.facebook.com/Yuliya.Shayenko"
           target="blank"
           rel="noreferrer noopener nofollow"
-          aria-label='link to facebook'
+          aria-label="facebook"
         >
           <FaFacebookF size={24} />
         </a>
@@ -34,7 +34,7 @@ const Social = ({ classNameList = '', classNameLink = '' }) => {
           href="https://www.linkedin.com/in/yshayenko/"
           target="blank"
           rel="noreferrer noopener nofollow"
-          aria-label='link to linkedin'
+          aria-label="linkedin"
         >
           <FaLinkedinIn size={24} />
         </a>

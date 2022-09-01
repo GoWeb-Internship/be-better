@@ -14,7 +14,6 @@ import {
   MdOutlineMoreTime,
   MdFactCheck,
 } from 'react-icons/md';
-import { GrCertificate } from 'react-icons/gr';
 
 import {
   section,

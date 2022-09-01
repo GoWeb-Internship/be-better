@@ -20,7 +20,7 @@ const Page = ({ icons = '', data = {}, img ='', icon='' }) => {
 const isTablet = useMedia('(min-width: 768px)');
 
   return (
-    <div className='max-w-full'>
+    <div className='max-w-full laptop:pb-[337px] desktop:pb-[106px]'>
       <h3 className={titleFacts}>{data.title}</h3>
       {!!data.page.length && (
         <ul className={`${listFacts}`}>

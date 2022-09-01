@@ -18,9 +18,20 @@
 }
 
 .slide {
-  @apply m-auto px-5 mb-5 flex flex-col text-left laptop:mb-4 laptop:w-80  desktop:w-[716px] desktop:flex-row;
+  @apply m-auto w-70   mb-5 flex flex-col justify-between text-left laptop:mb-4 laptop:w-[560px]  desktop:w-[716px] desktop:flex-row;
 }
 
 .icon {
   @apply absolute -z-10 text-[#E8F6FA] top-[30%] left-[5%] laptop:top-[45%] laptop:left-[27%] desktop:top-1/4 desktop:left-[37%];
+}
+
+.client {
+  @apply text-sm laptop:text-base desktop:w-[518px] laptop:w-[560px] desktop:ml-5 h-[228px] laptop:h-[290px] desktop:h-[200px] overflow-y-auto mb-4;
+}
+
+.client::-webkit-scrollbar-thumb {
+  @apply bg-main rounded-xl w-2;
+}
+.client::-webkit-scrollbar {
+  @apply bg-likeGrey rounded-xl w-2;
 }

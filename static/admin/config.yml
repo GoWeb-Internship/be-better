@@ -27,6 +27,7 @@ collections:
       - { label: 'Hour Ua', name: 'ukHour', widget: 'string' }
       - { label: 'Hour En', name: 'enHour', widget: 'string' }
       - { label: 'Hour Ru', name: 'ruHour', widget: 'string' }
+      - { label: 'Id', name: 'id', widget: 'string' }
   #donats
   - name: 'donations'
     label: 'Donations'

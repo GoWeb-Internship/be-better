@@ -10,8 +10,8 @@ collections:
   - name: 'price'
     label: 'Price'
     folder: 'content/price'
-    create: true
-    delete: true
+    create: false
+    delete: false
     slug: '{{enSubscription}}'
     editor:
       preview: true

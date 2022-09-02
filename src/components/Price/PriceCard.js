@@ -25,8 +25,12 @@ const PriceCard = ({ priceData = {}, onClick }) => {
         {price.economy} ${priceData.economy}
       </p>
 
-      <p className="mb-2 font-medium">{priceData[`${i18n.language}Month`]}</p>
-      <p className="mb-6 text-likeGrey ">{priceData[`${i18n.language}Hour`]}</p>
+      <p className="mb-2 font-medium desktop:text-xl">
+        {priceData[`${i18n.language}Month`]}
+      </p>
+      <p className="mb-6 text-likeGrey text-sm desktop:text-base ">
+        {priceData[`${i18n.language}Hour`]}
+      </p>
 
       <Button
         type="button"

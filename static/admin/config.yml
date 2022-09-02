@@ -10,7 +10,7 @@ collections:
   - name: 'price'
     label: 'Price'
     folder: 'content/price'
-    create: true
+    create: false
     delete: false
     slug: '{{enSubscription}}'
     editor:
@@ -27,6 +27,7 @@ collections:
       - { label: 'Hour Ua', name: 'ukHour', widget: 'string' }
       - { label: 'Hour En', name: 'enHour', widget: 'string' }
       - { label: 'Hour Ru', name: 'ruHour', widget: 'string' }
+      - { label: 'Id', name: 'id', widget: 'hidden' }
   #donats
   - name: 'donations'
     label: 'Donations'

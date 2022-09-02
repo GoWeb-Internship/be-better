@@ -92,9 +92,6 @@ const Facts = () => {
                   return (
                     <li className={itemFacts} key={icons}>
                       <div className={svgContainerFacts}>
-                        {/* <svg className={iconFacts}>
-                          <use href={`${icons}#icon-${svg}`} />
-                        </svg> */}{' '}
                         <IconContext.Provider
                           value={{
                             className:
@@ -107,9 +104,6 @@ const Facts = () => {
                       </div>
                       <div className={textContainer}>
                         <div className="flex mt-11 laptop:block laptop:mt-0">
-                          {/* <svg className=" w-4 h-4 fill-mainSecond mr-2 laptop:hidden ">
-                            <use href={`${icons}#icon-${svg}`} />
-                          </svg> */}
                           <IconContext.Provider
                             value={{
                               className: 'w-4 h-4 mr-2 laptop:hidden',

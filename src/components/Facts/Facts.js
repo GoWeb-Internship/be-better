@@ -73,7 +73,6 @@ const Facts = () => {
 
   return (
     <Section className={section} id="facts">
-      {/* <h2 className={title}>{data.title}</h2> */}
       <Heading tag="h2" className={title} text={data.title} />
       <StaticImage
         layout="fullWidth"
@@ -84,7 +83,6 @@ const Facts = () => {
       />
       <div className={contentContainer}>
         <div>
-          {/* <h2 className={titleFacts}>{data.title}</h2> */}
           <Heading tag="h2" className={titleFacts} text={data.title} />
           {!!data.list.length && (
             <ul className={listFacts}>

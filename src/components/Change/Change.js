@@ -95,10 +95,9 @@ const Change = () => {
                   className={changeTitle}
                   text={node.frontmatter.title}
                 />
-                {/* <h3 className={changeTitle}>{node.frontmatter.title}</h3> */}
                 <div className="laptop:float-right laptop:-mt-40 display:block desktop:-mt-[77px] desktop:-mr-[20px]">
                   <StaticImage
-                    src="../../images/background/julia.png"
+                    src="../../images/background/julia.jpg"
                     alt="julia"
                     style={{ position: 'absolute' }}
                     className="w-[280px] h-[280px] -ml-44 rounded-2xl laptop:w-[310px] laptop:h-[442px] desktop:w-[480px] desktop:h-[734px] desktop:pr-[60px] desktop:pt-[100px]"

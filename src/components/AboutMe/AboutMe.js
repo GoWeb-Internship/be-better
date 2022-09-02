@@ -45,6 +45,19 @@ const AboutMe = () => {
     <Section className={sectionContainer} id="nav-about">
       <div className={aboutMeContainer}>
         <div className="flex mb-6 laptop:block desktop:h-[342px]">
+          <div className="w-[134px] text-left laptop:hidden mr-3">
+            <Heading
+              tag={'h2'}
+              className="title-primary text-left mb-4 laptop:mb-13 laptop:font-semibold laptop:text-34"
+              text={data.title}
+            />
+            <span className="text-black text-left text-sm">
+              {data.oneParagraphFirst}
+              <span className="text-caveat leading-[0.9]">
+                {data.oneParagraphSpan}
+              </span>
+            </span>
+          </div>
           {isDesktop ? (
             <GatsbyImage
               image={DesktopScreenAvatar}
@@ -52,26 +65,11 @@ const AboutMe = () => {
               className="  desktop:w-[456px] desktop:h-[480px]"
             />
           ) : (
-            <>
-              <div className="w-[134px] text-left laptop:hidden mr-3">
-                <Heading
-                  tag={'h2'}
-                  className="title-primary text-left mb-4 laptop:mb-13 laptop:font-semibold laptop:text-34"
-                  text={data.title}
-                />
-                <span className="text-black text-left text-sm">
-                  {data.oneParagraphFirst}
-                  <span className="text-caveat leading-[0.9]">
-                    {data.oneParagraphSpan}
-                  </span>
-                </span>
-              </div>
-              <GatsbyImage
-                image={smartScreenAvatar}
-                alt="author"
-                className=" w-[134px] h-[160px] laptop:w-[270px]  laptop:h-[342px] laptop:mr-5  rounded-2xl "
-              />
-            </>
+            <GatsbyImage
+              image={smartScreenAvatar}
+              alt="author"
+              className=" w-[134px] h-[160px] laptop:w-[270px]  laptop:h-[342px] laptop:mr-5  rounded-2xl "
+            />
           )}
         </div>
         <AboutMePrimaryText data={data} />

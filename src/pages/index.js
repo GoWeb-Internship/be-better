@@ -56,7 +56,7 @@ const IndexPage = () => {
         </Container>
 
         {/* </main> */}
-        <script
+        {/* <script
           dangerouslySetInnerHTML={{
             __html: `
 !function(f,b,e,v,n,t,s)
@@ -80,7 +80,7 @@ fbq('track', 'PageView');
       src="https://www.facebook.com/tr?id=414740170505309&ev=PageView&noscript=1"
     />`,
           }}
-        ></script>
+        ></script> */}
       </Layout>
     </>
   );

@@ -1,11 +1,12 @@
 import React from 'react';
 import { GatsbyImage } from 'gatsby-plugin-image';
 import { useTranslation } from 'gatsby-plugin-react-i18next';
-import Section from '../reusableComponents/Section';
-import { sectionContainer, aboutMeContainer } from './AboutMe.module.css';
 import { graphql, useStaticQuery } from 'gatsby';
-import icon from '../../images/signature.svg';
 import { useMedia } from 'react-use';
+import Section from '../reusableComponents/Section';
+import Heading from '../reusableComponents/Heading';
+import { sectionContainer, aboutMeContainer } from './AboutMe.module.css';
+import icon from '../../images/signature.svg';
 import AboutMeLap from './AboutMeLap';
 import AboutMePrimaryText from './AboutMePrimaryText';
 
@@ -53,9 +54,11 @@ const AboutMe = () => {
           ) : (
             <>
               <div className="w-[134px] text-left laptop:hidden mr-3">
-                <h2 className="title-primary text-left mb-4 laptop:mb-13 laptop:font-semibold laptop:text-34">
-                  {data.title}
-                </h2>
+                <Heading
+                  tag={'h2'}
+                  className="title-primary text-left mb-4 laptop:mb-13 laptop:font-semibold laptop:text-34"
+                  text={data.title}
+                />
                 <span className="text-black text-left text-sm">
                   {data.oneParagraphFirst}
                   <span className="text-caveat leading-[0.9]">
@@ -72,32 +75,6 @@ const AboutMe = () => {
           )}
         </div>
         <AboutMePrimaryText data={data} />
-        {/* <div className={textContainer}>
-          <h2 className={title}>{data.title}</h2>
-          <p className="mb-2 desktop:mb-8">
-            <span className="text-black hidden laptop:inline">
-              {data.oneParagraphFirst}
-              <span className={caveat}> {data.oneParagraphSpan}</span>
-            </span>
-            {data.oneParagraphThird}
-          </p>
-          <p className="mb-2 desktop:mb-[26px]">
-            <span className={caveat}> {data.twoParagraphSpan}</span>
-            {data.twoParagraphThird}
-          </p>
-          <p className="mb-2 laptop:hidden desktop:block desktop:mb-8">
-            {data.threeParagraphFirst}
-            <span className={caveat}>{data.threeParagraphSpan}</span>
-            {data.threeParagraphThird}
-          </p>
-          <p className="mb-6 laptop:hidden desktop:block laptop:mb-0">
-            {data.fourParagraph}
-          </p>
-          <p className="mb-4 laptop:hidden desktop:block laptop:mb-0">
-            <span className="text-caveat">{data.fiveParagraphSpan}</span>
-          </p>
-          <AboutYou />
-        </div> */}
       </div>
       <AboutMeLap data={data} />
       <div className="w-[265px] mt-8  ml-auto laptop:mr-0 laptop:mt-16 desktop:mt-13">

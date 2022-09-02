@@ -81,12 +81,12 @@ const Hero = () => {
             </Button>
           </div>
           <div className={heroForm}>
-            <Form
-              clickFrom="hero"
-              formClassname={formMargins}
-            />
+            <Form clickFrom="hero" formClassname={formMargins} />
           </div>
-          <WithDiscount classnameText={discountText} classnameDiscount={discount}/>
+          <WithDiscount
+            classnameText={discountText}
+            classnameDiscount={discount}
+          />
         </Container>
       </div>
       <FormWithBackground clickFrom="hero-m" />

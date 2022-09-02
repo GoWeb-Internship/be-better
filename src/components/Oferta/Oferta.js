@@ -5,6 +5,7 @@ import { text, btn, img, people, arrow, svg } from './Oferta.module.css';
 import { useTranslation } from 'gatsby-plugin-react-i18next';
 import Container from '../Container';
 import { Link } from 'gatsby';
+import Heading from '../reusableComponents/Heading';
 
 const Pk = () => {
   const { i18n } = useTranslation();
@@ -75,9 +76,12 @@ const Pk = () => {
             if (node.frontmatter.language === i18n.language) {
               return (
                 <>
-                  <h3 className="text-main tablet:text-2xl  font-semibold laptop:text-4xl absolute mb-2 -mt-32">
-                    {node.frontmatter.title}
-                  </h3>
+                  <Heading
+                    tag="h1"
+                    text={node.frontmatter.title}
+                    className="text-main tablet:text-2xl  font-semibold laptop:text-4xl absolute mb-2 -mt-32"
+                  />
+
                   <div
                     key={node.frontmatter.language}
                     className="pt-0 h-96 mt-32 tablet:mr-10 laptop:mt-34px laptop:mr-32 desktop:mt-6 desktop:mr-52 "

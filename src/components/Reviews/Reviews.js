@@ -8,6 +8,7 @@ import { graphql, useStaticQuery } from 'gatsby';
 import { title, sliderRev } from './Reviews.module.css';
 import { CgQuote } from 'react-icons/cg';
 import Review from './Review';
+import Heading from '../reusableComponents/Heading';
 
 const Reviews = () => {
   const [slide, setSlide] = useState(3);
@@ -63,7 +64,7 @@ const Reviews = () => {
       id="nav-reviews"
       className="px-5 mt-[73px] laptop:mt-[324px] desktop:mt-[181px] pb-[83px] laptop:pb-[131px] desktop:pb-[142px] relative"
     >
-      <h3 className={title}>{reviews.title}</h3>
+      <Heading tag="h2" className={title} text={reviews.title} />
 
       <CgQuote
         className="text-mainSecond absolute top-0 -left-[15px] desktop:left-[60px] "

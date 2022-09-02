@@ -33,10 +33,6 @@
   @apply hidden laptop:block laptop:w-14 h-14 laptop:bg-white laptop:rounded-2xl  absolute laptop:shadow-you laptop:-top-icon left-2/4 laptop:-translate-x-1/2 z-10;
 }
 
-.iconFacts {
-  @apply stair-icons fill-mainSecond mt-[11px];
-}
-
 .textContainer {
   @apply relative w-[134px] text-left  laptop:w-50 laptop:h-36 laptop:bg-white laptop:rounded-2xl laptop:shadow-lg laptop:px-4 laptop:text-center flex flex-col justify-start laptop:ease-in laptop:duration-300 laptop:hover:shadow-2xl;
 }

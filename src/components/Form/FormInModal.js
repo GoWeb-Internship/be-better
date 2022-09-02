@@ -14,6 +14,7 @@ import {
 } from './Form.module.css';
 import JustForm from './JustForm';
 import ModalWindow from '../ModalWindow';
+import Heading from '../reusableComponents/Heading';
 
 const FormInModal = ({ hideModal, currentPlace = '' }) => {
   const [successMessage, setSuccessMessage] = React.useState(false);
@@ -25,7 +26,12 @@ const FormInModal = ({ hideModal, currentPlace = '' }) => {
     <ModalWindow className={modalform} handleClose={hideModal}>
       {successMessage ? (
         <div>
-          <h2 className={modaltitle}>{modalSuccess.gratitude} </h2>
+          <Heading
+            tag="h2"
+            className={modaltitle}
+            text={modalSuccess.gratitude}
+          />
+          {/* <h2 className={modaltitle}>{modalSuccess.gratitude} </h2> */}
           <p className={modaltext}>{modalSuccess.text}</p>
         </div>
       ) : (
@@ -49,6 +55,6 @@ const FormInModal = ({ hideModal, currentPlace = '' }) => {
 FormInModal.propTypes = {
   hideModal: PropTypes.func.isRequired,
   currentPlace: PropTypes.string,
-}
+};
 
 export default FormInModal;

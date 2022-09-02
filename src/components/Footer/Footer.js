@@ -23,11 +23,12 @@ import {
   link,
   donate,
   title,
-  price
+  price,
 } from './Footer.module.css';
 import icons from '../../images/sprite.svg';
 import Donations from '../Donations';
 import WithDiscount from '../reusableComponents/WithDiscount';
+import Heading from '../reusableComponents/Heading';
 
 const Footer = () => {
   const { t, i18n } = useTranslation();
@@ -80,7 +81,12 @@ const Footer = () => {
                         key={node.frontmatter.language}
                         className={titleContainer}
                       >
-                        <h3 className={title}>{node.frontmatter.title}</h3>
+                        <Heading
+                          tag="h2"
+                          className={title}
+                          text={node.frontmatter.title}
+                        />
+                        {/* <h3 className={title}>{node.frontmatter.title}</h3> */}
                         <WithDiscount
                           classnameText={discountText}
                           classnameDiscount={discount}
@@ -96,17 +102,24 @@ const Footer = () => {
                 <StaticImage src="../../images/icf.png" alt="icf" />
               </div>
               <div className={form}>
-                <Form clickFrom="footer" className="-mb-4" classnameAccept={accepttext}/>
+                <Form
+                  clickFrom="footer"
+                  className="-mb-4"
+                  classnameAccept={accepttext}
+                />
               </div>
             </div>
             <Donations className={donate} classNameText="text-main " />
-            <p className={price}>
-              {priceByOne}
-            </p>
+            <p className={price}>{priceByOne}</p>
             <ul className={list}>
               {links.map(({ name, id }) => (
                 <li key={id} className={link}>
-                  <Link to={`/${id}`} className='focus:text-[#038bab] focus:outline-none'>{name}</Link>
+                  <Link
+                    to={`/${id}`}
+                    className="focus:text-[#038bab] focus:outline-none"
+                  >
+                    {name}
+                  </Link>
                 </li>
               ))}
             </ul>

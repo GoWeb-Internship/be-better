@@ -2,8 +2,21 @@ import React from 'react';
 import { StaticImage } from 'gatsby-plugin-image';
 import { graphql, useStaticQuery } from 'gatsby';
 import { useTranslation } from 'gatsby-plugin-react-i18next';
-import { textBeBetter, beBetterSection, textBeBet, varning, contBeBetter, beBetterCont, oneMin, divImg, threeMin, bakaluImg, containerBeBetter } from './BeBetter.module.css';
+import {
+  textBeBetter,
+  beBetterSection,
+  textBeBet,
+  varning,
+  contBeBetter,
+  beBetterCont,
+  oneMin,
+  divImg,
+  threeMin,
+  bakaluImg,
+  containerBeBetter,
+} from './BeBetter.module.css';
 import Section from '../reusableComponents/Section';
+import Heading from '../reusableComponents/Heading';
 
 const BeBetter = () => {
   const { i18n } = useTranslation();
@@ -24,17 +37,19 @@ const BeBetter = () => {
   `);
   const data = allMarkdownRemark.nodes;
   return (
-    <Section
-      className={beBetterSection}
-      id="be-better"
-    >
+    <Section className={beBetterSection} id="be-better">
       <div className={containerBeBetter}>
         <div>
           {data.map(node => {
             if (node.frontmatter.language === i18n.language) {
               return (
                 <div key={node.frontmatter.title}>
-                  <h3 className={textBeBet}>{node.frontmatter.title}</h3>
+                  <Heading
+                    tag="h2"
+                    className={textBeBet}
+                    text={node.frontmatter.title}
+                  />
+                  {/* <h3 className={textBeBet}>{node.frontmatter.title}</h3> */}
                   <div
                     key={node.frontmatter.language}
                     className={textBeBetter}
@@ -52,21 +67,25 @@ const BeBetter = () => {
                 alt="mountains"
                 src="../../images/one-min.png"
                 className={oneMin}
-                formats={['auto', 'webp', 'avif']}/>
+                formats={['auto', 'webp', 'avif']}
+              />
             </div>
             <div className={divImg}>
               <StaticImage
                 alt="car"
                 src="../../images/three-min.png"
                 className={threeMin}
-                formats={['auto', 'webp', 'avif']}/>
+                formats={['auto', 'webp', 'avif']}
+              />
             </div>
           </div>
           <div>
-            <StaticImage alt="grocers" 
-              src="../../images/background/bokalu.png" 
+            <StaticImage
+              alt="grocers"
+              src="../../images/background/bokalu.png"
               className={bakaluImg}
-              formats={['auto', 'webp', 'avif']}/>
+              formats={['auto', 'webp', 'avif']}
+            />
           </div>
         </div>
       </div>

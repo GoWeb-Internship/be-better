@@ -12,6 +12,7 @@ import {
 import FormInModal from '../Form/FormInModal';
 import Section from '../reusableComponents/Section';
 import WithDiscount from '../reusableComponents/WithDiscount';
+import Heading from '../reusableComponents/Heading';
 
 const Change = () => {
   const { i18n } = useTranslation();
@@ -89,7 +90,12 @@ const Change = () => {
                     formats={['auto', 'webp', 'avif']}
                   />
                 </div>
-                <h3 className={changeTitle}>{node.frontmatter.title}</h3>
+                <Heading
+                  tag="h2"
+                  className={changeTitle}
+                  text={node.frontmatter.title}
+                />
+                {/* <h3 className={changeTitle}>{node.frontmatter.title}</h3> */}
                 <div className="laptop:float-right laptop:-mt-40 display:block desktop:-mt-[77px] desktop:-mr-[20px]">
                   <StaticImage
                     src="../../images/background/julia.png"

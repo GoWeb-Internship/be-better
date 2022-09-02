@@ -17,6 +17,7 @@ import {
   testSec,
   title,
 } from './Formula.module.css';
+import Heading from '../reusableComponents/Heading';
 
 const Formula = () => {
   const { t } = useTranslation();
@@ -32,7 +33,8 @@ const Formula = () => {
         className="w-full h-full -z-10 top-0"
       />
       <div>
-        <h2 className={title}>{data.title}</h2>
+        <Heading tag="h2" className={title} text={data.title} />
+        {/* <h2 className={title}>{data.title}</h2> */}
 
         {!!data.list.length && (
           <ul className={listFormula}>

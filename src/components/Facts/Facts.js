@@ -14,6 +14,7 @@ import {
   MdOutlineMoreTime,
   MdFactCheck,
 } from 'react-icons/md';
+import Heading from '../reusableComponents/Heading';
 
 import {
   section,
@@ -25,7 +26,6 @@ import {
   listFacts,
   itemFacts,
   svgContainerFacts,
-  iconFacts,
   textContainer,
   textPr,
   testSec,
@@ -73,8 +73,8 @@ const Facts = () => {
 
   return (
     <Section className={section} id="facts">
-      <h2 className={title}>{data.title}</h2>
-
+      {/* <h2 className={title}>{data.title}</h2> */}
+      <Heading tag="h2" className={title} text={data.title} />
       <StaticImage
         layout="fullWidth"
         src="../../images/background/features.jpg"
@@ -84,43 +84,41 @@ const Facts = () => {
       />
       <div className={contentContainer}>
         <div>
-          <h2 className={titleFacts}>{data.title}</h2>
+          {/* <h2 className={titleFacts}>{data.title}</h2> */}
+          <Heading tag="h2" className={titleFacts} text={data.title} />
           {!!data.list.length && (
             <ul className={listFacts}>
-              {data.list.map(
-                ({ textPrimary, svg, textSecondary, bg }, index) => {
-                  return (
-                    <li className={itemFacts} key={icons}>
-                      <div className={svgContainerFacts}>
+              {data.list.map(({ textPrimary, textSecondary, bg }, index) => {
+                return (
+                  <li className={itemFacts} key={icons}>
+                    <div className={svgContainerFacts}>
+                      <IconContext.Provider
+                        value={{
+                          className: 'stair-icons mt-[11px] fill-[mainSecond] ',
+                          color: '#FF9B62',
+                        }}
+                      >
+                        {factsIcons[index]}
+                      </IconContext.Provider>
+                    </div>
+                    <div className={textContainer}>
+                      <div className="flex mt-11 laptop:block laptop:mt-0">
                         <IconContext.Provider
                           value={{
-                            className:
-                              'stair-icons mt-[11px] fill-[mainSecond] ',
+                            className: 'w-4 h-4 mr-2 laptop:hidden',
                             color: '#FF9B62',
                           }}
                         >
                           {factsIcons[index]}
                         </IconContext.Provider>
+                        <p className={textPr}>{textPrimary}</p>
                       </div>
-                      <div className={textContainer}>
-                        <div className="flex mt-11 laptop:block laptop:mt-0">
-                          <IconContext.Provider
-                            value={{
-                              className: 'w-4 h-4 mr-2 laptop:hidden',
-                              color: '#FF9B62',
-                            }}
-                          >
-                            {factsIcons[index]}
-                          </IconContext.Provider>
-                          <p className={textPr}>{textPrimary}</p>
-                        </div>
-                        <p className={testSec}>{textSecondary}</p>
-                        <p className={bgFacts}>{bg}</p>
-                      </div>
-                    </li>
-                  );
-                }
-              )}
+                      <p className={testSec}>{textSecondary}</p>
+                      <p className={bgFacts}>{bg}</p>
+                    </div>
+                  </li>
+                );
+              })}
             </ul>
           )}
         </div>

@@ -6,6 +6,7 @@ import { useTranslation } from 'gatsby-plugin-react-i18next';
 import PriceCard from './PriceCard';
 import Donations from '../Donations';
 import ModalPriceWindow from './ModalPriceWindow';
+import Heading from '../reusableComponents/Heading';
 
 const Price = () => {
   const [modal, setModal] = useState(false);
@@ -71,7 +72,7 @@ const Price = () => {
 
   return (
     <Section className={container} id="nav-price">
-      <h1 className={title}>{pricePac.title}</h1>
+      <Heading tag="h2" className={title} text={pricePac.title} />
       <ul className={list}>
         {allMarkdownRemark &&
           data.map(({ frontmatter }) => {

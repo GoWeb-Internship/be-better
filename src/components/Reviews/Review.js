@@ -4,6 +4,7 @@ import { BsPerson } from 'react-icons/bs';
 import { reviewContainer, textContainer } from './Reviews.module.css';
 import { useMedia } from 'react-use';
 import { GatsbyImage } from 'gatsby-plugin-image';
+import PropTypes from 'prop-types';
 
 const Review = ({ frontmatter }) => {
   const [overflow, setOverflow] = useState('overflow-hidden');
@@ -55,7 +56,20 @@ const Review = ({ frontmatter }) => {
       </div>
 
       <div className="flex items-center">
-        <div className="rounded-full mr-2 laptop:mr-6 ">
+        {image ? (
+          <div className="rounded-full mr-2 laptop:mr-6 ">
+            <GatsbyImage
+              image={image}
+              className={`${avatarSize} rounded-full`}
+            />
+          </div>
+        ) : (
+          <div className="rounded-full mr-2 laptop:mr-6 ">
+            <BsPerson size={noAvatarSize} />{' '}
+          </div>
+        )}
+
+        {/* <div className="rounded-full mr-2 laptop:mr-6 ">
           {image ? (
             <GatsbyImage
               image={image}
@@ -64,7 +78,7 @@ const Review = ({ frontmatter }) => {
           ) : (
             <BsPerson size={noAvatarSize} />
           )}
-        </div>
+        </div> */}
         <div>
           <p className={`{${position}} laptop:text-xl font-bold`}>
             {frontmatter[`${i18n.language}Name`]}
@@ -79,3 +93,7 @@ const Review = ({ frontmatter }) => {
 };
 
 export default Review;
+
+Review.propTypes = {
+  frontmatter: PropTypes.object,
+};

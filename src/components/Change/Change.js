@@ -3,7 +3,12 @@ import { StaticImage } from 'gatsby-plugin-image';
 import Button from '../reusableComponents/Button';
 import { graphql, useStaticQuery } from 'gatsby';
 import { useTranslation } from 'gatsby-plugin-react-i18next';
-import { text, changeTitle, discountStyle, discount } from './Change.module.css';
+import {
+  text,
+  changeTitle,
+  discountStyle,
+  discount,
+} from './Change.module.css';
 import FormInModal from '../Form/FormInModal';
 import Section from '../reusableComponents/Section';
 import WithDiscount from '../reusableComponents/WithDiscount';
@@ -50,7 +55,10 @@ const Change = () => {
         if (node.frontmatter.language === i18n.language) {
           return (
             <>
-              <div className="relative mb-24 mt-24">
+              <div
+                className="relative mb-24 mt-24"
+                id={node.frontmatter.language}
+              >
                 <div className="ml-[152px] -z-10 laptop:ml-[265px] laptop:-mt-40 desktop:ml-[404px] ">
                   <StaticImage
                     layout="fullWidth"
@@ -61,26 +69,26 @@ const Change = () => {
                     formats={['auto', 'webp', 'avif']}
                   />
                 </div>
-                <div className='desktop:hidden'>
-                <StaticImage
-                  layout="fullWidth"
-                  src="../../images/background/fontwo-min.png"
-                  alt="backgraund"
-                  style={{ position: 'absolute' }}
-                  className="-z-20  w-full h-full mt-6 max-w-full laptop:mt-24 desktop:mt-[149px]"
-                  formats={['auto', 'webp', 'avif']}
-                />
-              </div>
-              <div className='tablet:hidden desktop:block'>
-                <StaticImage
-                  layout="fullWidth"
-                  src="../../images/background/about.png"
-                  alt="backgraund"
-                  style={{ position: 'absolute' }}
-                  className="-z-20  w-[1440px] h-[728px] mt-6 max-w-full laptop:mt-24 desktop:mt-[149px]"
-                  formats={['auto', 'webp', 'avif']}
-                />
-                 </div>
+                <div className="desktop:hidden">
+                  <StaticImage
+                    layout="fullWidth"
+                    src="../../images/background/fontwo-min.png"
+                    alt="background"
+                    style={{ position: 'absolute' }}
+                    className="-z-20  w-full h-full mt-6 max-w-full laptop:mt-24 desktop:mt-[149px]"
+                    formats={['auto', 'webp', 'avif']}
+                  />
+                </div>
+                <div className="tablet:hidden desktop:block">
+                  <StaticImage
+                    layout="fullWidth"
+                    src="../../images/background/about.png"
+                    alt="background"
+                    style={{ position: 'absolute' }}
+                    className="-z-20  w-[1440px] h-[728px] mt-6 max-w-full laptop:mt-24 desktop:mt-[149px]"
+                    formats={['auto', 'webp', 'avif']}
+                  />
+                </div>
                 <h3 className={changeTitle}>{node.frontmatter.title}</h3>
                 <div className="laptop:float-right laptop:-mt-40 display:block desktop:-mt-[77px] desktop:-mr-[20px]">
                   <StaticImage
@@ -113,8 +121,12 @@ const Change = () => {
                               dangerouslySetInnerHTML={{ __html: node.html }}
                             />
                           </div>
-                          <div className='desktop:ml-[100px] desktop:!w-[350px] '>
-                          <WithDiscount classnameText={discountStyle} classnameDiscount={discount}/></div>
+                          <div className="desktop:ml-[100px] desktop:!w-[350px] ">
+                            <WithDiscount
+                              classnameText={discountStyle}
+                              classnameDiscount={discount}
+                            />
+                          </div>
                         </div>
                         <Button
                           type="button"

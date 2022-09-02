@@ -4,6 +4,7 @@ import { BsPerson } from 'react-icons/bs';
 import { reviewContainer, textContainer } from './Reviews.module.css';
 import { useMedia } from 'react-use';
 import { GatsbyImage } from 'gatsby-plugin-image';
+import PropTypes from 'prop-types';
 
 const Review = ({ frontmatter }) => {
   const [overflow, setOverflow] = useState('overflow-hidden');
@@ -92,3 +93,7 @@ const Review = ({ frontmatter }) => {
 };
 
 export default Review;
+
+Review.propTypes = {
+  frontmatter: PropTypes.object,
+};

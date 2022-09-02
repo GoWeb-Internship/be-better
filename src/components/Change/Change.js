@@ -73,7 +73,7 @@ const Change = () => {
                   <StaticImage
                     layout="fullWidth"
                     src="../../images/background/fontwo-min.png"
-                    alt="backgraund"
+                    alt="background"
                     style={{ position: 'absolute' }}
                     className="-z-20  w-full h-full mt-6 max-w-full laptop:mt-24 desktop:mt-[149px]"
                     formats={['auto', 'webp', 'avif']}
@@ -83,7 +83,7 @@ const Change = () => {
                   <StaticImage
                     layout="fullWidth"
                     src="../../images/background/about.png"
-                    alt="backgraund"
+                    alt="background"
                     style={{ position: 'absolute' }}
                     className="-z-20  w-[1440px] h-[728px] mt-6 max-w-full laptop:mt-24 desktop:mt-[149px]"
                     formats={['auto', 'webp', 'avif']}

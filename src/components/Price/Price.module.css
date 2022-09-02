@@ -24,7 +24,7 @@
 }
 
 .modalform input {
-  @apply laptop:!border-transparent laptop:shadow-formInput
+  @apply laptop:!border-transparent laptop:shadow-formInput;
 }
 
 .modalform label {
@@ -71,14 +71,14 @@
 }
 /* Card */
 .subscription {
-  @apply text-main mb-2 desktop:text-xl font-medium desktop:mb-14;
+  @apply text-main mb-2 font-bold  desktop:text-xl desktop:font-medium desktop:mb-14;
 }
 
 .priceStyle {
-  @apply mb-1 desktop:mb-2 font-semibold desktop:text-34;
+  @apply mb-1 desktop:mb-2 text-2xl font-semibold desktop:text-34;
 }
 .economyStyle {
-  @apply mb-5 desktop:mb-16 text-main;
+  @apply mb-5 text-xs desktop:mb-16 desktop:text-base text-main;
 }
 
 .buttonStyled {

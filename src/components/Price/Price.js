@@ -28,6 +28,7 @@ const Price = () => {
             ruSubscription
             ruMonth
             ruHour
+            id
           }
           id
         }
@@ -73,9 +74,9 @@ const Price = () => {
       <h1 className={title}>{pricePac.title}</h1>
       <ul className={list}>
         {allMarkdownRemark &&
-          data.map(({ frontmatter }, id) => {
+          data.map(({ frontmatter }) => {
             return (
-              <li className={item} key={id}>
+              <li className={item} key={frontmatter.id}>
                 <PriceCard priceData={frontmatter} onClick={showModal} />
               </li>
             );

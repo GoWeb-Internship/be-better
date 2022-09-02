@@ -44,5 +44,5 @@
     @apply tablet:ml-[10px] laptop:pt-20 laptop:-ml-10  laptop:w-[250px] laptop:h-[382px] mr-5 rounded-2xl desktop:ml-0 desktop:w-[308] desktop:h-[440] desktop:mt-[80px]
 }
 .containerBeBetter{
-    @apply laptop:flex
+    @apply laptop:flex mb-[102px]
 }

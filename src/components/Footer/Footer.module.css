@@ -42,6 +42,9 @@
   @apply hidden laptop:block laptop:ml-auto desktop:-mt-40 desktop:ml-[666px];
 }
 
+.accepttext {
+  @apply laptop:text-black;
+}
 .donate {
     @apply ml-[70px] text-xs mb-6 text-left laptop:text-sm laptop:w-80 laptop:ml-0 laptop:-mt-[120px] laptop:mb-10 desktop:ml-[200px] desktop:w-[480px] desktop:-mt-[60px] desktop:mb-14;
 }

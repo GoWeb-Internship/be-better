@@ -55,10 +55,10 @@
   @apply mb-9;
 }
 .checkbox span {
-  @apply laptop:bg-[#7FDCF1] laptop:border-main  desktop:border-likeGrey desktop:bg-transparent;
+  @apply laptop:bg-[#7FDCF1]  laptop:border-main  desktop:border-likeGrey desktop:bg-transparent;
 }
-.checkbox p {
-  @apply laptop:text-black;
+.acceptmodal {
+  @apply laptop:text-black laptop:!bg-transparent;
 }
 .underformtext {
   @apply text-sm laptop:text-base;

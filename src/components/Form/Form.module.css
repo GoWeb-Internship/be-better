@@ -107,8 +107,8 @@
 .modalcheck span {
   @apply laptop:bg-[#7FDCF1] laptop:border-main  desktop:border-likeGrey desktop:bg-transparent;
 }
-.modalcheck p {
-  @apply laptop:text-black;
+.modalAccept {
+  @apply laptop:text-black laptop:!bg-transparent;
 }
 .formMargins {
     @apply m-auto mb-2 laptop:mb-8;
@@ -158,16 +158,13 @@
   @apply mb-8;
 }
 
-.checkboxInMain p {
+.acceptInMain {
   @apply laptop:text-black; 
 }
 
 .sociaListlInMain {
   @apply space-y-4 desktop:space-y-8 ; 
 }
-/* .sociaLinklInMain {
-  @apply  desktop:hover:text-main desktop:focus:text-main;
+.socialLinkInMain{
+  @apply laptop:!text-black desktop:!text-white  desktop:hover:!text-main desktop:focus:!text-main ;
 }
-.socialLinkInMain svg{
-  @apply laptop:text-black desktop:text-white  ;
-} */

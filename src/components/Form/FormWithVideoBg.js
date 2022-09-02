@@ -10,6 +10,7 @@ import {
   emo,
   formInMain,
   checkboxInMain,
+  acceptInMain,
   discountText,
   discount,
   sociaListlInMain,
@@ -20,20 +21,16 @@ import Container from '../Container';
 import Video from '../Video';
 import Form from './Form';
 import Social from '../Social';
-import FormWithBackground from '../Form/FormWithBackground';
+
 import WithDiscount from '../reusableComponents/WithDiscount';
 
 const FormWithVideoBg = ({ clickFrom }) => {
   const { t } = useTranslation();
   const hero = t('hero', { returnObjects: true });
-  const isMobile = useMedia('(max-width:767px)');
   const isDesktop = useMedia('(min-width:1440px)');
 
   return (
     <Section>
-      {isMobile ? (
-        <FormWithBackground clickFrom="main-m" />
-      ) : (
         <div className={mainContainer}>
           {isDesktop ? (
             <Video />
@@ -62,6 +59,7 @@ const FormWithVideoBg = ({ clickFrom }) => {
                     clickFrom={clickFrom}
                     formClassname={formInMain}
                     checkboxClassname={checkboxInMain}
+                    classnameAccept={acceptInMain}
                   />
                   <WithDiscount
                     classnameText={discountText}
@@ -75,7 +73,6 @@ const FormWithVideoBg = ({ clickFrom }) => {
             </div>
           </Container>
         </div>
-      )}
     </Section>
   );
 };

@@ -8,6 +8,7 @@ import {
   formHi,
   formConnect,
   modalcheck,
+  modalAccept,
   formMargins,
   formSee,
 } from './Form.module.css';
@@ -35,6 +36,7 @@ const FormInModal = ({ hideModal, currentPlace = '' }) => {
             clickFrom={currentPlace}
             formClassname={formMargins}
             checkboxClassname={modalcheck}
+            classnameAccept={modalAccept}
             openModal={setSuccessMessage}
           />
           <p className={formSee}>{modalForm.seeYou}!</p>

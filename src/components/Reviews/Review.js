@@ -55,7 +55,20 @@ const Review = ({ frontmatter }) => {
       </div>
 
       <div className="flex items-center">
-        <div className="rounded-full mr-2 laptop:mr-6 ">
+        {image ? (
+          <div className="rounded-full mr-2 laptop:mr-6 ">
+            <GatsbyImage
+              image={image}
+              className={`${avatarSize} rounded-full`}
+            />
+          </div>
+        ) : (
+          <div className="rounded-full mr-2 laptop:mr-6 ">
+            <BsPerson size={noAvatarSize} />{' '}
+          </div>
+        )}
+
+        {/* <div className="rounded-full mr-2 laptop:mr-6 ">
           {image ? (
             <GatsbyImage
               image={image}
@@ -64,7 +77,7 @@ const Review = ({ frontmatter }) => {
           ) : (
             <BsPerson size={noAvatarSize} />
           )}
-        </div>
+        </div> */}
         <div>
           <p className={`{${position}} laptop:text-xl font-bold`}>
             {frontmatter[`${i18n.language}Name`]}

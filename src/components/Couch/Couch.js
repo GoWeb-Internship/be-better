@@ -12,14 +12,16 @@ import {
   button,
 } from './Couch.module.css';
 import Button from '../reusableComponents/Button';
-import FormInModal from '../Form/FormInModal';
+// import FormInModal from '../Form/FormInModal';
 import { useMedia } from 'react-use';
+import loadable from '@loadable/component';
+
+const FormInModal = loadable(() => import('../Form/FormInModal'));
 
 const Couch = () => {
   const [modal, setModal] = useState(false);
   const [currentChange, setCurrentChange] = useState('');
   const { t } = useTranslation();
-
   const form = t('form', { returnObjects: true });
   const couch = t('couch', { returnObjects: true });
 

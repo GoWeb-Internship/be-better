@@ -1,9 +1,9 @@
 .sectionContainer {
-  @apply py-8 px-5 laptop:pt-20 laptop:pb-36 laptop:px-20  text-base  relative;
+  @apply py-8 px-5 laptop:pt-20 laptop:pb-36 laptop:px-16 desktop:px-20  text-base  relative;
 }
 
 .aboutMeContainer {
-  @apply flex flex-col justify-center laptop:flex-row;
+  @apply flex flex-col justify-center laptop:justify-end laptop:flex-row desktop:justify-center;
 }
 .title {
   @apply hidden laptop:block title-primary text-left mb-4 laptop:mb-8 desktop:mb-13 laptop:font-semibold laptop:text-34;

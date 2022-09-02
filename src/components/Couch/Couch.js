@@ -15,6 +15,7 @@ import Button from '../reusableComponents/Button';
 // import FormInModal from '../Form/FormInModal';
 import { useMedia } from 'react-use';
 import loadable from '@loadable/component';
+import Heading from '../reusableComponents/Heading';
 
 const FormInModal = loadable(() => import('../Form/FormInModal'));
 
@@ -99,8 +100,12 @@ const Couch = () => {
     <Section className={couchContainer} id="couch">
       <div className={flexContainer}>
         <div className="flex laptop:block">
-          <h2 className={`${title} laptop:hidden`}>{couch.title}</h2>
-
+          {/* <h2 className={`${title} laptop:hidden`}>{couch.title}</h2> */}
+          <Heading
+            tag="h2"
+            className={`${title} laptop:hidden`}
+            text={couch.title}
+          />
           {isMobile ? (
             <GatsbyImage
               image={DesktopScreenAvatar}
@@ -118,7 +123,12 @@ const Couch = () => {
 
         <div>
           <div className="laptop:w-[310px] desktop:w-[326px] relative laptop:leading-[1.36]">
-            <h3 className={`${title} hidden laptop:block`}>{couch.title}</h3>
+            {/* <h3 className={`${title} hidden laptop:block`}>{couch.title}</h3> */}
+            <Heading
+              tag="h2"
+              className={`${title} hidden laptop:block`}
+              text={couch.title}
+            />
             <p className="mb-2 laptop:mb-4 desktop:mb-6 ">{couch.mySelf}</p>
             <p className="mb-2 laptop:mb-4 desktop:mb-6 ">{couch.course}</p>
             <p className="desktop:mb-12 ">{couch.noTime}</p>

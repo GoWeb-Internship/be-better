@@ -1,13 +1,15 @@
 import React from 'react';
-import { title, textContainer, caveat } from './AboutMe.module.css';
-import AboutYou from '../AboutYou';
 import PropTypes from 'prop-types';
+
+import Heading from '../reusableComponents/Heading';
+import AboutYou from '../AboutYou';
+import { title, textContainer, caveat } from './AboutMe.module.css';
 
 const AboutMePrimaryText = ({ data }) => {
   console.log(data);
   return (
     <div className={textContainer}>
-      <h2 className={title}>{data.title}</h2>
+      <Heading tag="h2" className={title} text={data.title} />
       <p className="mb-2 desktop:mb-8">
         <span className="text-black hidden laptop:inline">
           {data.oneParagraphFirst}

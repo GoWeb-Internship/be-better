@@ -2,6 +2,8 @@ import React from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
 import { useTranslation } from 'gatsby-plugin-react-i18next';
 import { title, listContainer, wayContainer } from './Way.module.css';
+import Heading from '../reusableComponents/Heading';
+
 const Way = () => {
   const { i18n } = useTranslation();
 
@@ -26,7 +28,11 @@ const Way = () => {
         if (node.frontmatter.language === i18n.language) {
           return (
             <div key={node.frontmatter.language}>
-              <h3 className={title}>{node.frontmatter.title}</h3>
+              <Heading
+                tag="h3"
+                className={title}
+                text={node.frontmatter.title}
+              />
               <div
                 className={listContainer}
                 dangerouslySetInnerHTML={{ __html: node.html }}

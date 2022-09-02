@@ -5,6 +5,7 @@ import PropTypes from 'prop-types';
 import { modalsuccess, modaltitle, modaltext } from './Form.module.css';
 import ModalWindow from '../ModalWindow';
 import JustForm from './JustForm';
+import Heading from '../reusableComponents/Heading';
 
 const Form = ({
   clickFrom = '',
@@ -25,7 +26,12 @@ const Form = ({
           handleClose={() => setSuccessModal(false)}
         >
           <div>
-            <h2 className={modaltitle}>{modalSuccess.gratitude} </h2>
+            <Heading
+              tag="h2"
+              className={modaltitle}
+              text={modalSuccess.gratitude}
+            />
+            {/* <h2 className={modaltitle}>{modalSuccess.gratitude} </h2> */}
             <p className={modaltext}>{modalSuccess.text}</p>
           </div>
         </ModalWindow>
@@ -47,6 +53,6 @@ Form.propTypes = {
   formClassname: PropTypes.string,
   checkboxClassname: PropTypes.string,
   classnameAccept: PropTypes.string,
-}
+};
 
 export default Form;

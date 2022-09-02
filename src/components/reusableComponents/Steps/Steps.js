@@ -10,22 +10,21 @@ import {
   textSteps,
 } from './Steps.module.css';
 import { useMedia } from 'react-use';
-import { FaRegHandPaper} from 'react-icons/fa';
-import {MdOutlineChat} from 'react-icons/md';
-import {BsBarChartSteps, BsCalendarCheck} from 'react-icons/bs';
-import {ImPower} from 'react-icons/im';
-import {AiOutlineSearch} from 'react-icons/ai';
-
-
+import { FaRegHandPaper } from 'react-icons/fa';
+import { MdOutlineChat } from 'react-icons/md';
+import { BsBarChartSteps, BsCalendarCheck } from 'react-icons/bs';
+import { ImPower } from 'react-icons/im';
+import { AiOutlineSearch } from 'react-icons/ai';
+import Heading from '../Heading';
 
 const stepsIcons = [
-  <FaRegHandPaper/>,
-  <MdOutlineChat/>,
-  <BsBarChartSteps/>,
-  <ImPower/>,
-  <AiOutlineSearch/>,
-  <BsCalendarCheck/>
-]
+  <FaRegHandPaper />,
+  <MdOutlineChat />,
+  <BsBarChartSteps />,
+  <ImPower />,
+  <AiOutlineSearch />,
+  <BsCalendarCheck />,
+];
 const Steps = ({ icons = '', data = {}, img = '', icon = '' }) => {
   const isTablet = useMedia('(min-width: 768px)');
 
@@ -34,21 +33,19 @@ const Steps = ({ icons = '', data = {}, img = '', icon = '' }) => {
       <h3 className={titleFacts}>{data.title}</h3>
       {!!data.steps.length && (
         <ul className={`${listFacts}`}>
-          {data.steps.map(({ textPrimary,  icon, textSecondary }, index) => {
+          {data.steps.map(({ textPrimary, icon, textSecondary }, index) => {
             return (
               <li className={isTablet ? itemFacts : itemFactsMob} key={icons}>
-
                 <div className="flex items-center gap-[10px] mb-1">
-                <IconContext.Provider
-                 value={{
-                  className: 'm-0 w-[22px] h-[22px]',
-                  color: '#F38F55'
-                }}
+                  <IconContext.Provider
+                    value={{
+                      className: 'm-0 w-[22px] h-[22px]',
+                      color: '#F38F55',
+                    }}
                   >
                     {stepsIcons[index]}
-                    </IconContext.Provider>
-
-                  <h3 className={textPrP}>{textPrimary}</h3>
+                  </IconContext.Provider>
+                  <Heading tag="h2" className={textPrP} text={textPrimary} />
                 </div>
 
                 <div className={iconClass}>

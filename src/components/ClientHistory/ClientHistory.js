@@ -14,6 +14,7 @@ import {
   client,
 } from './ClientHistory.module.css';
 import { FaQuoteLeft } from 'react-icons/fa';
+import Heading from '../reusableComponents/Heading';
 
 const ClientHistory = () => {
   const { t, i18n } = useTranslation();
@@ -46,7 +47,8 @@ const ClientHistory = () => {
 
   return (
     <Section className="py-20" id="client">
-      <h3 className={title}>{data.title}</h3>
+      <Heading tag="h2" className={title} text={data.title} />
+      {/* <h3 className={title}>{data.title}</h3> */}
 
       <Slider slidesPerView={1} className={sliderHistory}>
         {!!clients.length &&

@@ -14,6 +14,7 @@ import {
   img,
 } from './NotFound.module.css';
 import { useTranslation } from 'gatsby-plugin-react-i18next';
+import Heading from '../reusableComponents/Heading';
 
 const NotFound = () => {
   const isMobile = useMedia('(max-width:767px)');
@@ -47,7 +48,7 @@ const NotFound = () => {
       />
       <div className=" laptop:flex laptop:justify-around">
         <div className={textContainer}>
-          <h1 className={title}>404</h1>
+          <Heading tag="h1" className={title} text="404" />
           <p className={something}>{data.something}</p>
           <p className={work}>{data.work}</p>
           <p className={timeReturn}>{data.timeToReturn}</p>

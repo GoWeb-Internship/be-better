@@ -10,5 +10,5 @@ ruMonth: 2 месяца работы
 ukHour: 8 годинних сесій
 enHour: 8 hour sessions
 ruHour: 8 часовых сессий
-id: "1"
+id: "2"
 ---

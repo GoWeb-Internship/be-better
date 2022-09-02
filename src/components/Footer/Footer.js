@@ -18,6 +18,7 @@ import {
   discount,
   icf,
   form,
+  accepttext,
   list,
   link,
   donate,
@@ -95,7 +96,7 @@ const Footer = () => {
                 <StaticImage src="../../images/icf.png" alt="icf" />
               </div>
               <div className={form}>
-                <Form clickFrom="footer" className="-mb-4" />
+                <Form clickFrom="footer" className="-mb-4" classnameAccept={accepttext}/>
               </div>
             </div>
             <Donations className={donate} classNameText="text-main " />

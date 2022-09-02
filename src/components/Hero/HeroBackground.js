@@ -9,7 +9,7 @@ const HeroBackground = () => {
         <StaticImage
           layout="fullWidth"
           src="../../images/background/heroMobile.jpg"
-          alt=""
+          alt="mobile background"
           style={{ position: 'absolute' }}
           className={heroBg}
         />
@@ -18,7 +18,7 @@ const HeroBackground = () => {
         <StaticImage
           layout="fullWidth"
           src="../../images/background/heroTablet.jpg"
-          alt=""
+          alt="tablet background"
           style={{ position: 'absolute' }}
           className={heroBg}
         />

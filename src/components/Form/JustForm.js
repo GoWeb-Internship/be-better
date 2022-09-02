@@ -32,6 +32,7 @@ const JustForm = ({
   clickFrom = '',
   formClassname = '',
   checkboxClassname = 'mb-3',
+  classnameAccept = '',
   openModal,
 }) => {
   const { t } = useTranslation();
@@ -186,9 +187,9 @@ const JustForm = ({
           <span
             className={`${check} ${errors.checkbox ? '!border-error' : ''}`}
           ></span>
-          <p className={acceptText}>
+          <span className={`${acceptText} ${classnameAccept}`}>
             {accept}
-          </p>
+          </span>
         </label>
         <p className={checkError}>
           {errors.checkbox?.message}
@@ -208,6 +209,7 @@ JustForm.propTypes = {
   clickFrom: PropTypes.string.isRequired,
   formClassname: PropTypes.string,
   checkboxClassname: PropTypes.string,
+  classnameAccept: PropTypes.string,
   openModal: PropTypes.func.isRequired,
 }
 export default JustForm;

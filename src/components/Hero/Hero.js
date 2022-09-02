@@ -28,7 +28,7 @@ import WithDiscount from '../reusableComponents/WithDiscount';
 
 const Hero = () => {
   const [showModal, setShowModal] = useState(false);
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
   const { button } = t('form', { returnObjects: true });
   const hero = t('hero', { returnObjects: true });
 
@@ -49,13 +49,6 @@ const Hero = () => {
               layout="fullWidth"
               src="../../images/background/heroDesktop.jpg"
               alt="background on desktop"
-              style={{ position: 'absolute' }}
-              className={desktopBgImg}
-            />
-            <StaticImage
-              layout="fullWidth"
-              src="../../images/background/whiteHeroDesktop.png"
-              alt="filter on background"
               style={{ position: 'absolute' }}
               className={desktopBgImg}
             />

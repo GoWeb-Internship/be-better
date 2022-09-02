@@ -22,7 +22,7 @@
   @apply hidden desktop:block title-secondary text-34 text-left mb-13;
 }
 .listFacts {
-  @apply flex flex-wrap justify-between w-70  laptop:mt-[76px] laptop:w-[648px] desktop:mt-0;
+  @apply flex flex-wrap justify-between w-70 gap-2 laptop:gap-0  laptop:mt-[76px] laptop:w-[648px] desktop:mt-0;
 }
 
 .itemFacts {

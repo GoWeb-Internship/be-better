@@ -11,6 +11,7 @@ import Container from '../components/Container';
 import AboutMe from '../components/AboutMe';
 import Facts from '../components/Facts';
 import Hero from '../components/Hero';
+import FormWithBackground from '../components/Form/FormWithBackground';
 import FormWithVideoBg from '../components/Form/FormWithVideoBg';
 import BeBetter from '../components/BeBetter';
 import Change from '../components/Change';
@@ -36,6 +37,9 @@ const IndexPage = () => {
           <Facts />
           <ClientHistory />
           <Formula />
+        </Container>
+        <FormWithBackground clickFrom="main-m" />
+        <Container>
           <FormWithVideoBg clickFrom="main" />
           <WhyStepsAdd />
           <Price />

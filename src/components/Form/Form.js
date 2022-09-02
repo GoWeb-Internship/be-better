@@ -10,6 +10,7 @@ const Form = ({
   clickFrom = '',
   formClassname = '',
   checkboxClassname = 'mb-3',
+  classnameAccept = '',
 }) => {
   const [successModal, setSuccessModal] = React.useState(false);
 
@@ -34,6 +35,7 @@ const Form = ({
           clickFrom={clickFrom}
           formClassname={formClassname}
           checkboxClassname={checkboxClassname}
+          classnameAccept={classnameAccept}
         />
       )}
     </>
@@ -44,6 +46,7 @@ Form.propTypes = {
   clickFrom: PropTypes.string,
   formClassname: PropTypes.string,
   checkboxClassname: PropTypes.string,
+  classnameAccept: PropTypes.string,
 }
 
 export default Form;

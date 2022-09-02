@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import ModalWindow from '../ModalWindow';
-import JustForm from '../Form';
 import { useTranslation } from 'gatsby-plugin-react-i18next';
+import ModalWindow from '../ModalWindow';
+import JustForm from '../Form/JustForm';
 import {
   modalform,
   formtitle,
@@ -11,6 +11,7 @@ import {
   accenttext,
   price,
   checkbox,
+  acceptmodal,
   underformtext,
   titleSuccess,
   textSuccess,
@@ -45,6 +46,7 @@ const ModalPriceWindow = ({ hideModal, currentPrice, currentRate }) => {
             clickFrom={currentPrice}
             formClassname={formmargin}
             checkboxClassname={checkbox}
+            classnameAccept={acceptmodal}
             openModal={setSuccessMessage}
           />
           <p className={underformtext}>{form.connection}</p>

@@ -23,12 +23,16 @@ import ButtonUp from '../components/ButtonUp';
 import { useTranslation } from 'gatsby-plugin-react-i18next';
 
 const IndexPage = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const seo = t('seo', { returnObjects: true });
 
   return (
     <>
-      <Seo title={seo.title} description={seo.description} />
+      <Seo
+        title={seo.title}
+        description={seo.description}
+        lang={i18n.language}
+      />
       <Layout id="home">
         {/* <main> */}
         <Hero />
@@ -83,8 +87,6 @@ fbq('track', 'PageView');
 };
 
 export default IndexPage;
-
-export const Head = () => <title>Be-better</title>;
 
 export const query = graphql`
   query ($language: String!) {

@@ -1,11 +1,12 @@
 .textBeBetter span {
-    @apply  !text-left text-caveat ;
+    @apply  !text-left text-caveat ml-[10px] mr-[10px] !pb-[24px];
   }
+ 
 .textBeBetter ol{
     @apply  text-start font-normal  pl-6 pr-2 laptop:pl-8 desktop:ml-[10px];
 }
 .textBeBetter li{
-    @apply pb-3 text-start font-normal text-base list-disc mb-2 marker:text-main 
+    @apply pb-3 ml-[10px] mr-[10px] text-start font-normal text-base list-disc mb-2 marker:text-main 
 }
 .textBeBetter{
     @apply font-normal text-xs laptop:w-[500px] laptop:pl-8 desktop:pl-40 desktop:w-[576px]
@@ -14,14 +15,12 @@
     @apply pt-40 laptop:-ml-16 desktop:-ml-6
 }
 .beBetterSection{
-    @apply desktop:w-[1440px] desktop:h-[800px] desktop:mt-[150px]
+    @apply desktop:w-[1440px] desktop:h-[800px] desktop:mt-[80px]
 }
 .textBeBet{
-    @apply  text-buttonMobile font-medium text-xl text-center ml-2 mt-4 mb-3 laptop:mb-12 laptop:font-semibold laptop:text-4xl  laptop:ml-32 desktop:w-[500px] desktop:ml-[180px] desktop:mb-4 desktop:text-left desktop:pr-10 desktop:mt-[80px]
+    @apply  text-buttonMobile font-medium text-xl text-center ml-[20px] mr-[20px] pt-[32px] mb-[24px] laptop:mb-12 laptop:font-semibold laptop:text-4xl  laptop:ml-32 desktop:w-[500px] desktop:ml-[180px] desktop:mb-4 desktop:text-left desktop:pr-10 desktop:mt-[80px]
 }
-/* .textBeBet{
-    @apply  laptop:mb-12 laptop:font-semibold laptop:text-4xl laptop:pl-18 laptop:ml-32 desktop:w-[500px] desktop:ml-[180px] desktop:mb-4 desktop:text-left desktop:pr-10 desktop:mt-[80px]
-} */
+
 .varning{
     @apply desktop:flex desktop:ml-[65px]
 }
@@ -41,8 +40,8 @@
     @apply ml-8 rounded-2xl laptop:w-[200px] laptop:h-[162px] laptop:-ml-10 mb-4 mt-2 desktop:-ml-2 desktop:w-[204px] desktop:h-[280]
 }
 .bakaluImg{
-    @apply tablet:ml-[10px] laptop:pt-20 laptop:-ml-10  laptop:w-[250px] laptop:h-[382px] mr-5 rounded-2xl desktop:ml-0 desktop:w-[308] desktop:h-[440] desktop:mt-[80px]
+    @apply w-[280px] h-[300px] tablet:ml-[10px] tablet:mt-[24px] laptop:pt-20 laptop:-ml-10  laptop:w-[250px] laptop:h-[382px] mr-5 rounded-2xl desktop:ml-0 desktop:w-[308] desktop:h-[440] desktop:mt-[80px]
 }
 .containerBeBetter{
-    @apply laptop:flex mb-[102px]
+    @apply laptop:flex mb-[48px]
 }

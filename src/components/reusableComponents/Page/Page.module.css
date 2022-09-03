@@ -1,5 +1,5 @@
 .titleFacts {
-  @apply text-main text-xl font-medium laptop:font-semibold laptop:text-4xl  text-center laptop:w-[68%] laptop:ml-32 laptop:pl-6 desktop:pl-20 desktop:ml-0 desktop:w-[100%]  pt-6 desktop:pt-20 -top-20 max-w-7xl laptop:mb-4 desktop:mb-0;
+  @apply text-main text-xl font-medium laptop:font-semibold laptop:text-4xl  text-center laptop:w-[68%] laptop:ml-32 laptop:pl-6 desktop:pl-20 desktop:ml-0 desktop:w-[100%]  pt-[2rem] desktop:pt-20 -top-20 max-w-7xl laptop:mb-4 desktop:mb-0;
 }
 
 .listFacts {

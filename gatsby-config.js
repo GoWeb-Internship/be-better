@@ -15,7 +15,7 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-image`,
     `gatsby-plugin-react-helmet`,
-    `gatsby-plugin-facebook-pixel`,
+    // `gatsby-plugin-facebook-pixel`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -52,12 +52,12 @@ module.exports = {
     //     ignore: ['react-phone-input-2/lib/bootstrap.css'],
     //   },
     // },
-    {
-      resolve: `gatsby-plugin-facebook-pixel`,
-      options: {
-        pixelId: '414740170505309',
-      },
-    },
+    // {
+    //   resolve: `gatsby-plugin-facebook-pixel`,
+    //   options: {
+    //     pixelId: '414740170505309',
+    //   },
+    // },
     {
       resolve: `gatsby-source-filesystem`,
       options: {

@@ -60,7 +60,7 @@ const Change = () => {
                 className="relative mb-24 mt-24"
                 id={node.frontmatter.language}
               >
-                <div className="ml-[152px] -z-10 laptop:ml-[265px] laptop:-mt-40 desktop:ml-[404px] ">
+                <div className="ml-[165px] pt-[22px] -z-10 laptop:pt-[0px] laptop:ml-[265px] laptop:-mt-40 desktop:ml-[404px] ">
                   <StaticImage
                     layout="fullWidth"
                     src="../../images/background/fon-min.png"
@@ -76,7 +76,7 @@ const Change = () => {
                     src="../../images/background/fontwo-min.png"
                     alt="background"
                     style={{ position: 'absolute' }}
-                    className="-z-20  w-full h-full mt-6 max-w-full laptop:mt-24 desktop:mt-[149px]"
+                    className="-z-20  w-full h-full mt-[64px] max-w-full  "
                     formats={['auto', 'webp', 'avif']}
                   />
                 </div>

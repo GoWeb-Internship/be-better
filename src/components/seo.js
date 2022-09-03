@@ -67,7 +67,7 @@ function Seo({ description, title, lang = 'uk', meta = [] }) {
       ].concat(meta)}
     >
       <title>{title}</title>
-      <Script
+      {/* <Script
         id="facebook"
         strategy="post-hydrate"
         dangerouslySetInnerHTML={{
@@ -94,7 +94,7 @@ fbq('track', 'PageView');
       src="https://www.facebook.com/tr?id=414740170505309&ev=PageView&noscript=1"
     />`,
         }}
-      />
+      /> */}
     </Helmet>
   );
 }

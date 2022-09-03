@@ -49,7 +49,6 @@ const BeBetter = () => {
                     className={textBeBet}
                     text={node.frontmatter.title}
                   />
-                  {/* <h3 className={textBeBet}>{node.frontmatter.title}</h3> */}
                   <div
                     key={node.frontmatter.language}
                     className={textBeBetter}

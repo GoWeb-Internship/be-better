@@ -6,7 +6,6 @@ import AboutYou from '../AboutYou';
 import { title, textContainer, caveat } from './AboutMe.module.css';
 
 const AboutMePrimaryText = ({ data }) => {
-  console.log(data);
   return (
     <div className={textContainer}>
       <Heading tag="h2" className={title} text={data.title} />

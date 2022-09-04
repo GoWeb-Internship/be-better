@@ -1,5 +1,5 @@
 .changeTitle {
-  @apply tablet:text-xl tablet:font-medium text-orangeDark pt-[37px] text-center mb-[32px] laptop:font-semibold laptop:text-4xl laptop:w-[310px] laptop:pt-[20px] laptop:mb-[16px] laptop:pl-[80px] laptop:text-start desktop:w-[830px] desktop:pl-[188px] desktop:pt-[92px] desktop:mr-[40px]
+  @apply tablet:text-xl tablet:font-medium pl-[20px] pr-[20px] text-orangeDark pt-[37px] text-center mb-[32px] laptop:font-semibold laptop:text-4xl laptop:w-[310px] laptop:pt-[20px] laptop:mb-[16px] laptop:pl-[80px] laptop:text-start desktop:w-[600px] desktop:pl-[188px] desktop:pt-[92px] desktop:mr-[40px]
 }
 .text {
   @apply font-normal  text-sm laptop:text-base text-start max-w-3xl tablet:pt-72 pl-[20px] pr-[20px] desktop:w-[524px] desktop:pr-[60px];

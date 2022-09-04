@@ -1,5 +1,5 @@
 import React from 'react';
-// import { graphql, useStaticQuery } from 'gatsby';
+import { graphql, useStaticQuery } from 'gatsby';
 import { StaticImage, GatsbyImage } from 'gatsby-plugin-image';
 import Section from '../reusableComponents/Section';
 import List from '../reusableComponents/Page';
@@ -10,77 +10,111 @@ const Steps = () => {
   const { t } = useTranslation();
   const data = t('steps', { returnObjects: true });
 
-//   const foto = useStaticQuery(graphql`
-//   query {
-//     avatarVanMin:  file(name: {eq: "vanMin"}, id: {}, publicURL: {}) {
-//       childrenImageSharp {
-//         id
-//         gatsbyImageData(placeholder: BLURRED, formats: [AUTO, WEBP, AVIF], layout: CONSTRAINED)
-//       }
-//     }
-//   }
-// `);
+  const foto = useStaticQuery(graphql`
+  query {
+    avatarVanMin: file(name: { eq: "vanMin" }) {
+      id
+      publicURL
+      childImageSharp {
+        id
+        gatsbyImageData(
+          placeholder: BLURRED
+          formats: [AUTO, WEBP, AVIF]
+          layout: CONSTRAINED
+        )
+      }
+    }
+    avatarResults: file(name: { eq: "results" }) {
+      id
+      publicURL
+      childImageSharp {
+        id
+        gatsbyImageData(
+          placeholder: BLURRED
+          formats: [AUTO, WEBP, AVIF]
+          layout: CONSTRAINED
+        )
+      }
+    }
+    avatarGroup: file(name: { eq: "group" }) {
+      id
+      publicURL
+      childImageSharp {
+        id
+        gatsbyImageData(
+          placeholder: BLURRED
+          formats: [AUTO, WEBP, AVIF]
+          layout: CONSTRAINED
+        )
+      }
+    }
+  }
+  
+`);
 
-// const avatarVan = foto.avatarVanMin.childrenImageSharp.gatsbyImageData;
+const avatarVan = foto.avatarVanMin.childImageSharp.gatsbyImageData;
+const avatarRes = foto.avatarResults.childImageSharp.gatsbyImageData;
+const avatarGr = foto.avatarGroup.childImageSharp.gatsbyImageData;
+
+
  
 
   return (
     <Section className="pt-20 pb-16  relative" id="steps">
       <div className="relative">
-        {/* <div className="laptop:hidden  z-1">
-          <StaticImage
-            layout="fullWidth"
-            alt=""
-            src="../../images/background/van-min.png"
-            className=""
-            width=""
-            height=""
-            style={{ position: 'absolute' }}
-          />
-        </div> */}
-        {/* <div className="laptop:hidden  z-1">
-          <GatsbyImage
-            alt="avatar"
-            src={avatarVan}
-            style={{ position: 'absolute' }}
-          />
-        </div> */}
         <div className="relative max-h-full">
-          <div className="tablet:hidden desktop:block laptop:w-[768px] ">
+          {/* <div className="tablet:hidden desktop:block laptop:w-[768px] ">
             <StaticImage
               layout="fullWidth"
-              src="../../images/background/results.png"
+              src="../../images/results.png"
               alt=""
+              style={{ position: 'absolute' }}
+              className="-z-20 w-full h-full"
+            />
+          </div> */}
+          <div className="tablet:hidden desktop:block laptop:w-[768px] pl-[0px] -ml-[384px] pr-0 mr-0">
+          <GatsbyImage
+              image={avatarRes}
+              alt="result"
               style={{ position: 'absolute' }}
               className="-z-20 w-full h-full"
             />
           </div>
-          <div className="tablet:hidden laptop:block desktop:hidden laptop:w-[768px] ">
+          {/* <div className="tablet:hidden laptop:block desktop:hidden laptop:w-[768px] ">
             <StaticImage
               layout="fullWidth"
-              src="../../images/background/group.png"
+              src="../../images/group.png"
               alt=""
+              style={{ position: 'absolute' }}
+              className="-z-20 w-full h-full"
+            />
+          </div> */}
+          <div className="tablet:hidden laptop:block desktop:hidden laptop:w-[768px] -ml-[383px]">
+          <GatsbyImage
+              image={avatarGr}
+              alt="result"
               style={{ position: 'absolute' }}
               className="-z-20 w-full h-full"
             />
           </div>
-           <div className="laptop:hidden">
+
+           {/* <div className="laptop:hidden">
             <StaticImage
               layout="fullWidth"
-              src="../../images/background/van-min.png"
+              src="../../images/vanMin.png"
               alt=""
               style={{ position: 'absolute' }}
               className="-z-20 w-full h-full"
             />
-           </div> 
-            {/* <div className="laptop:hidden">
-            <GatsbyImage
-              src={avatarVan}
+           </div>  */}
+            <div className="-ml-[335px] laptop:hidden">
+             <GatsbyImage
+              image={avatarVan}
               alt="avatar"
               style={{ position: 'absolute' }}
               className="-z-20 w-full h-full"
             />
-           </div> */}
+           </div>
           <List data={data} icons={svg} />
         </div>
       </div>

@@ -1,5 +1,5 @@
 import React from 'react';
-import { StaticImage } from 'gatsby-plugin-image';
+import { StaticImage, GatsbyImage } from 'gatsby-plugin-image';
 import { graphql, useStaticQuery } from 'gatsby';
 import { useTranslation } from 'gatsby-plugin-react-i18next';
 import {
@@ -21,9 +21,9 @@ import Heading from '../reusableComponents/Heading';
 const BeBetter = () => {
   const { i18n } = useTranslation();
 
-  const { allMarkdownRemark } = useStaticQuery(graphql`
+  const  allMarkdownRemark  = useStaticQuery(graphql`
     query {
-      allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/beBetter/" } }) {
+      text: allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/beBetter/" } }) {
         nodes {
           html
           frontmatter {
@@ -33,9 +33,94 @@ const BeBetter = () => {
           id
         }
       }
+      avatarMin: file(name: { eq: "one-min" }) {
+        id
+        publicURL
+        childImageSharp {
+          id
+          gatsbyImageData(
+            placeholder: BLURRED
+            formats: [AUTO, WEBP, AVIF]
+            layout: CONSTRAINED
+          )
+        }
+      }
+      avatarTh: file(name: { eq: "three-min" }) {
+        id
+        publicURL
+        childImageSharp {
+          id
+          gatsbyImageData(
+            placeholder: BLURRED
+            formats: [AUTO, WEBP, AVIF]
+            layout: CONSTRAINED
+          )
+        }
+      }
+      avatarBoc: file(name: { eq: "bokalu" }) {
+        id
+        publicURL
+        childImageSharp {
+          id
+          gatsbyImageData(
+            placeholder: BLURRED
+            formats: [AUTO, WEBP, AVIF]
+            layout: CONSTRAINED
+          )
+        }
+      }
     }
   `);
-  const data = allMarkdownRemark.nodes;
+
+  const data = allMarkdownRemark.text.nodes;
+
+//   const foto = useStaticQuery(graphql`
+//   query {
+//     avatarMin: file(name: { eq: "one-min" }) {
+//       id
+//       publicURL
+//       childImageSharp {
+//         id
+//         gatsbyImageData(
+//           placeholder: BLURRED
+//           formats: [AUTO, WEBP, AVIF]
+//           layout: CONSTRAINED
+//         )
+//       }
+//     }
+//     avatarTh: file(name: { eq: "three-min" }) {
+//       id
+//       publicURL
+//       childImageSharp {
+//         id
+//         gatsbyImageData(
+//           placeholder: BLURRED
+//           formats: [AUTO, WEBP, AVIF]
+//           layout: CONSTRAINED
+//         )
+//       }
+//     }
+//     avatarBoc: file(name: { eq: "bokalu" }) {
+//       id
+//       publicURL
+//       childImageSharp {
+//         id
+//         gatsbyImageData(
+//           placeholder: BLURRED
+//           formats: [AUTO, WEBP, AVIF]
+//           layout: CONSTRAINED
+//         )
+//       }
+//     }
+//   }
+  
+// `);
+
+  const avatar = allMarkdownRemark.avatarMin.childImageSharp.gatsbyImageData;
+  const avatarThree = allMarkdownRemark.avatarTh.childImageSharp.gatsbyImageData;
+  const avatarBocalu = allMarkdownRemark.avatarBoc.childImageSharp.gatsbyImageData;
+
+ 
   return (
     <Section className={beBetterSection} id="be-better">
       <div className={containerBeBetter}>
@@ -61,29 +146,53 @@ const BeBetter = () => {
         </div>
         <div className={varning}>
           <div className={contBeBetter}>
-            <div className={beBetterCont}>
+            {/* <div className={beBetterCont}>
               <StaticImage
                 alt="mountains"
                 src="../../images/one-min.png"
                 className={oneMin}
                 formats={['auto', 'webp', 'avif']}
               />
+            </div> */}
+            <div className={beBetterCont}>
+            <GatsbyImage
+              image={avatar}
+              alt="result"
+              style={{ position: 'absolute' }}
+              className={oneMin}
+            />
             </div>
-            <div className={divImg}>
+            {/* <div className={divImg}>
               <StaticImage
                 alt="car"
                 src="../../images/three-min.png"
                 className={threeMin}
                 formats={['auto', 'webp', 'avif']}
               />
+            </div> */}
+            <div className={divImg}>
+            <GatsbyImage
+              image={avatarThree}
+              alt="car"
+              style={{ position: 'absolute' }}
+              className={threeMin}
+            />
             </div>
           </div>
-          <div>
+          {/* <div>
             <StaticImage
               alt="grocers"
-              src="../../images/background/bokalu.png"
+              src="../../images/bokalu.png"
               className={bakaluImg}
               formats={['auto', 'webp', 'avif']}
+            />
+          </div> */}
+           <div>
+           <GatsbyImage
+              image={avatarBocalu}
+              alt="grocers"
+              style={{ position: 'absolute' }}
+              className={bakaluImg}
             />
           </div>
         </div>

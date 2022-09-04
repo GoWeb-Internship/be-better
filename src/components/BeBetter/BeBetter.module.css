@@ -31,7 +31,7 @@
     @apply tablet:hidden desktop:block desktop:mt-14 desktop:mb-8
 }
 .oneMin{
-    @apply tablet:hidden laptop:block desktop:w-[341] desktop:h-[240] desktop:-ml-[23px]  desktop:mt-[124px]
+    @apply tablet:hidden laptop:block desktop:w-[341] desktop:h-[240] desktop:-ml-[40px]  desktop:mt-[124px]
 }
 .divImg{
     @apply tablet:hidden laptop:block  laptop:ml-28

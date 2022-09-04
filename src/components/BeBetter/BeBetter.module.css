@@ -1,5 +1,5 @@
 .textBeBetter span {
-    @apply  !text-left text-caveat  !-ml-[10px] !mr-[10px] !pb-[24px] laptop:!ml-[20px] laptop:!w-[310px] desktop:!ml-[34px] desktop:!w-[373px];
+    @apply  text-left text-caveat ml-[20px] mr-[20px]   !pb-[24px] laptop:!ml-[20px] laptop:!w-[310px] desktop:!ml-[34px] desktop:!w-[373px];
   }
  
 .textBeBetter ol{
@@ -18,7 +18,7 @@
     @apply desktop:w-[1440px] desktop:h-[800px] desktop:mt-[80px]
 }
 .textBeBet{
-    @apply  text-buttonMobile font-medium text-xl text-center ml-[20px] mr-[20px] pt-[32px] mb-[24px] laptop:w-[420px] laptop:mb-12 laptop:font-semibold laptop:text-4xl laptop:mr-[44px] laptop:mt-[48px]  laptop:ml-[7rem] desktop:w-[500px] desktop:ml-[180px] desktop:mb-4 desktop:text-left desktop:pr-10 desktop:mt-[80px]
+    @apply  text-buttonMobile font-medium text-xl text-center ml-[20px] mr-[20px] pt-[32px] mb-[24px] laptop:w-[420px] laptop:mb-12 laptop:font-semibold laptop:text-4xl laptop:mr-[44px] laptop:mt-[48px]  laptop:ml-[7rem] desktop:w-[500px] desktop:ml-[194px] desktop:mb-4 desktop:text-left desktop:pr-10 desktop:mt-[80px]
 }
 
 .varning{

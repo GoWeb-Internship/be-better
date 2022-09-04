@@ -100,10 +100,10 @@ const Change = () => {
   const data = markdown.text.nodes;
 
   const avatarFMin = markdown.avatarFM.childImageSharp.gatsbyImageData;
-  const avatarMin = markdown.avatarMin.childImageSharp.gatsbyImageData;
-  const avatarAb = markdown.avatarAbout.childImageSharp.gatsbyImageData;
+  // const avatarMinChange = markdown.avatarMin.childImageSharp.gatsbyImageData;
+  // const avatarAb = markdown.avatarAbout.childImageSharp.gatsbyImageData;
   const avatarJl = markdown.avatarJulia.childImageSharp.gatsbyImageData;
-  const avatarUn = markdown.avatarUnion.childImageSharp.gatsbyImageData;
+  // const avatarUn = markdown.avatarUnion.childImageSharp.gatsbyImageData;
 
   const showModal = change => {
     setCurrentChange(change);
@@ -144,24 +144,24 @@ const Change = () => {
               className="w-[154px] h-[64px] float-right move-right -z-10 laptop:w-[504px] laptop:h-[96px] desktop:w-[1036px] desktop:h-[152px] desktop:-ml-[518px]"
             />
                 </div>
-                {/* <div className="desktop:hidden">
+                <div className="desktop:hidden">
                   <StaticImage
                     layout="fullWidth"
-                    src="../../images/background/fontwo-min.png"
+                    src="../../images/fontwo-min.png"
                     alt="background"
                     style={{ position: 'absolute' }}
                     className="-z-20  w-full h-full mt-[64px] max-w-full  "
                     formats={['auto', 'webp', 'avif']}
                   />
-                </div> */}
-                <div className="desktop:hidden -ml-[333px] laptop:-ml-[762px] laptop:pt-[30px] ">
+                </div>
+                {/* <div className="desktop:hidden -ml-[333px] laptop:-ml-[762px] laptop:pt-[30px] ">
                 <GatsbyImage
-              image={avatarMin}
+              image={avatarMinChange}
               alt="result"
               style={{ position: 'absolute' }}
               className="-z-20 w-full h-full mt-[64px]  "
             />
-                </div>
+                </div> */}
                 <div className="tablet:hidden desktop:block">
                   <StaticImage
                     layout="fullWidth"
@@ -203,7 +203,7 @@ const Change = () => {
                   />
                 </div>
 
-                {/* <div className="desktop:hidden">
+                <div className="desktop:hidden">
                   <StaticImage
                     src="../../images/union-min.png"
                     alt="union"
@@ -211,8 +211,8 @@ const Change = () => {
                     className="w-[88px] h-[476px] -z-10 -ml-32 mt-[300px] laptop:w-[88px] laptop:h-[444px] laptop:mt-8 laptop:-ml-64"
                     formats={['auto', 'webp', 'avif']}
                   />
-                </div> */}
-                 <div className="desktop:hidden">
+                </div>
+                 {/* <div className="desktop:hidden">
                   <GatsbyImage
                     image={avatarUn}
                     alt="union"
@@ -220,7 +220,7 @@ const Change = () => {
                     className="w-[88px] h-[476px] -z-10 -ml-32 mt-[300px] laptop:w-[88px] laptop:h-[444px] laptop:mt-8 laptop:-ml-64"
                     formats={['auto', 'webp', 'avif']}
                   />
-                </div>
+                </div> */}
                 <div className="flex ">
                   <div className="flex justify-between">
                     <div>

@@ -18,7 +18,7 @@
     @apply desktop:w-[1440px] desktop:h-[800px] desktop:mt-[80px] 
 }
 .textBeBet{
-    @apply  text-buttonMobile font-medium text-xl text-center ml-[20px] mr-[20px] pt-[32px] mb-[24px] laptop:w-[420px] laptop:mb-12 laptop:font-semibold laptop:text-4xl laptop:mr-[44px] laptop:mt-[48px]  laptop:ml-[7rem] desktop:w-[500px] desktop:ml-[194px] desktop:mb-4 desktop:text-left desktop:pr-10 desktop:pt-[80px] desktop:pt-[80px]
+    @apply  text-buttonMobile font-medium text-xl text-center ml-[20px] mr-[20px] pt-[32px] mb-[24px] laptop:w-[420px] laptop:mb-12 laptop:font-semibold laptop:text-4xl laptop:mr-[44px] laptop:mt-[48px]  laptop:ml-[7rem] desktop:w-[500px] desktop:ml-[194px] desktop:mb-4 desktop:text-left desktop:pr-10 
 }
 
 .varning{
@@ -31,16 +31,16 @@
     @apply tablet:hidden desktop:block desktop:mt-14 desktop:mb-8
 }
 .oneMin{
-    @apply tablet:hidden laptop:block desktop:w-[341] desktop:h-[240] desktop:-ml-[72px]  desktop:mt-[124px]
+    @apply tablet:hidden laptop:block desktop:w-[341] desktop:h-[240] desktop:-ml-[74px]  
 }
 .divImg{
     @apply tablet:hidden laptop:block  laptop:ml-28
 }
 .threeMin{
-    @apply ml-8 rounded-2xl laptop:w-[200px] laptop:h-[162px] laptop:-ml-[56px] laptop:mt-[60px] mb-4 mt-2 desktop:-ml-[70px] desktop:w-[284px] desktop:h-[280] desktop:mt-[378px]
+    @apply ml-8 rounded-2xl laptop:w-[200px] laptop:h-[162px] laptop:-ml-[56px] laptop:mt-[60px] mb-4 mt-2 desktop:-ml-[70px] desktop:w-[284px] desktop:h-[280] desktop:mt-[280px]
 }
 .bakaluImg{
-    @apply w-[280px] h-[300px] tablet:-ml-[140px] -mt-[288px] laptop:-mt-[70px] laptop:-ml-[100px]  laptop:w-[250px] laptop:h-[382px] mr-5 rounded-2xl  desktop:w-[308] desktop:h-[440] desktop:mt-[150px] desktop:ml-[215px]  desktop:pt-[80px]
+    @apply w-[280px] h-[300px] tablet:-ml-[140px] -mt-[288px] laptop:-mt-[70px] laptop:-ml-[100px]  laptop:w-[250px] laptop:h-[382px] mr-5 rounded-2xl  desktop:w-[308] desktop:h-[440] desktop:mt-[80px] desktop:ml-[215px]  desktop:pt-[80px]
 }
 .containerBeBetter{
     @apply laptop:flex mb-[48px] }

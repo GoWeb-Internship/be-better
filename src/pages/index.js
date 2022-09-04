@@ -12,8 +12,8 @@ import Container from '../components/Container';
 import AboutMe from '../components/AboutMe';
 import Facts from '../components/Facts';
 import Hero from '../components/Hero';
-// import FormWithBackground from '../components/Form/FormWithBackground';
-// import FormWithVideoBg from '../components/Form/FormWithVideoBg';
+import FormWithBackground from '../components/Form/FormWithBackground';
+import FormWithVideoBg from '../components/Form/FormWithVideoBg';
 import BeBetter from '../components/BeBetter';
 import Change from '../components/Change';
 // import StepsAdd from '../components/StepsAdd';
@@ -22,13 +22,6 @@ import WhyStepsAdd from '../components/WhyStepsAdd';
 import Steps from '../components/Steps';
 import ButtonUp from '../components/ButtonUp';
 import { useTranslation } from 'gatsby-plugin-react-i18next';
-
-const FormWithVideoBg = loadable(() =>
-  import('../components/Form/FormWithVideoBg')
-);
-const FormWithBackground = loadable(() =>
-  import('../components/Form/FormWithBackground')
-);
 
 const IndexPage = () => {
   const { t, i18n } = useTranslation();

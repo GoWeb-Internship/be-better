@@ -62,7 +62,7 @@ const Reviews = () => {
   return (
     <div
       id="nav-reviews"
-      className="px-5 mt-[73px] laptop:mt-[324px] desktop:mt-[181px] pb-[83px] laptop:pb-[131px] desktop:pb-[142px] relative"
+      className="px-5 mt-[73px] laptop:mt-[324px] desktop:mt-[160px] pb-[83px] laptop:pb-[131px] desktop:pb-[142px] relative"
     >
       <Heading tag="h2" className={title} text={reviews.title} />
 
@@ -87,7 +87,7 @@ const Reviews = () => {
 
       {!isMobile && (
         <CgQuote
-          className="text-mainSecond absolute right-[100px] bottom-[50px]"
+          className="text-mainSecond absolute  right-[120px] bottom-[80px]"
           size={120}
         />
       )}

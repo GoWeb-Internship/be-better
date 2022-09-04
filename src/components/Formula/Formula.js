@@ -42,12 +42,12 @@ const Formula = () => {
               return (
                 <li key={icons} className={formulaContainer}>
                   <div className={itemFormula}>
-                    <div className={svgContainerFormula}>
-                      <svg className={iconFormula}>
-                        <use href={`${icons}#icon-${svg}`} />
-                      </svg>
-                    </div>
                     <div className={textContainerFormula}>
+                      <div className={svgContainerFormula}>
+                        <svg className={iconFormula}>
+                          <use href={`${icons}#icon-${svg}`} />
+                        </svg>
+                      </div>
                       <p className={testSec}>
                         {firstWord} <br />
                         <span className="text-main font-bold ">

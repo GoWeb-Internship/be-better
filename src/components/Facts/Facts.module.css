@@ -7,7 +7,7 @@
 }
 
 .contentContainer {
-  @apply flex flex-col-reverse desktop:flex-row px-5 laptop:px-16  desktop:px-46;
+  @apply flex flex-col-reverse pb-8 desktop:flex-row px-5 laptop:pb-20 laptop:px-16  desktop:px-20;
 }
 
 .imgMob {
@@ -15,7 +15,7 @@
 }
 
 .img {
-  @apply rounded-2xl desktop:ml-13  desktop:w-[380px] desktop:h-[560px];
+  @apply rounded-2xl desktop:ml-13  desktop:w-[524px] desktop:h-[560px];
 }
 
 .titleFacts {

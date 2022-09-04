@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { useTranslation } from 'gatsby-plugin-react-i18next';
 import { graphql, useStaticQuery } from 'gatsby';
 import Section from '../reusableComponents/Section';
@@ -15,8 +15,25 @@ import {
 } from './ClientHistory.module.css';
 import { FaQuoteLeft } from 'react-icons/fa';
 import Heading from '../reusableComponents/Heading';
+import { useMedia } from 'react-use';
 
 const ClientHistory = () => {
+  const [size, setSize] = useState(120);
+
+  const isMobile = useMedia('(max-width:767px)');
+
+  const isDesktop = useMedia('(min-width:1440px)');
+
+  useEffect(() => {
+    if (isMobile) {
+      setSize(55);
+    } else if (isDesktop) {
+      setSize(120);
+    } else {
+      setSize(64);
+    }
+  }, [isMobile, isDesktop, size]);
+
   const { t, i18n } = useTranslation();
 
   const data = t('clientHistory', { returnObjects: true });
@@ -46,9 +63,11 @@ const ClientHistory = () => {
   const clients = allMarkdownRemark.nodes;
 
   return (
-    <Section className="py-20" id="client">
+    <Section
+      className="py-8 laptop:pt-20 laptop:pb-[50px] desktop:pb-[77px]"
+      id="client"
+    >
       <Heading tag="h2" className={title} text={data.title} />
-      {/* <h3 className={title}>{data.title}</h3> */}
 
       <Slider slidesPerView={1} className={sliderHistory}>
         {!!clients.length &&
@@ -73,7 +92,7 @@ const ClientHistory = () => {
           })}
       </Slider>
       <div className={icon}>
-        <FaQuoteLeft size={120} />
+        <FaQuoteLeft size={size} />
       </div>
     </Section>
   );

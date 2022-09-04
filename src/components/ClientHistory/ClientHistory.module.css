@@ -1,5 +1,5 @@
 .title {
-  @apply title-primary px-5 mb-6 laptop:mb-[58px] laptop:px-15 laptop:text-34 desktop:mb-13;
+  @apply title-primary px-5 mb-4 laptop:mb-8 laptop:px-15 laptop:text-34 desktop:mb-[122px];
 }
 .name {
   @apply text-2xl font-semibold mb-1;
@@ -18,15 +18,15 @@
 }
 
 .slide {
-  @apply m-auto w-70   mb-5 flex flex-col justify-between text-left laptop:mb-4 laptop:w-[560px]  desktop:w-[716px] desktop:flex-row;
+  @apply m-auto w-70   mb-5 flex flex-col justify-between text-left laptop:mb-4   desktop:w-[716px] desktop:flex-row;
 }
 
 .icon {
-  @apply absolute -z-10 text-[#E8F6FA] top-[30%] left-[5%] laptop:top-[45%] laptop:left-[27%] desktop:top-1/4 desktop:left-[37%];
+  @apply absolute -z-10 text-[#00a5cc33] top-[155px] left-[20px] laptop:top-[268px] laptop:left-[227px] desktop:top-[190px] desktop:left-[528px];
 }
 
 .client {
-  @apply text-sm laptop:text-base desktop:w-[518px] laptop:w-[560px] desktop:ml-5 h-[228px] laptop:h-[290px] desktop:h-[200px] overflow-y-auto mb-4;
+  @apply text-sm laptop:text-base laptop:leading-[1.36] desktop:w-[518px] laptop:w-[320px] desktop:ml-5 h-[228px] laptop:h-[290px] desktop:h-[200px] overflow-y-auto mb-4;
 }
 
 .client::-webkit-scrollbar-thumb {

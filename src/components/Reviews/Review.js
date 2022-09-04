@@ -17,7 +17,7 @@ const Review = ({ frontmatter }) => {
   const isDesktop = useMedia('(min-width:1440px)');
 
   const avatarSize = isMobile ? 'h-8 w-8' : 'h-[60px] w-[60px]';
-  const noAvatarSize = isMobile ? 32 : 60;
+  // const noAvatarSize = isMobile ? 32 : 60;
 
   useEffect(() => {
     const showScroll = () => {
@@ -56,18 +56,9 @@ const Review = ({ frontmatter }) => {
       </div>
 
       <div className="flex items-center">
-        {image ? (
-          <div className="rounded-full mr-2 laptop:mr-6 ">
-            <GatsbyImage
-              image={image}
-              className={`${avatarSize} rounded-full`}
-            />
-          </div>
-        ) : (
-          <div className="rounded-full mr-2 laptop:mr-6 ">
-            <BsPerson size={noAvatarSize} />{' '}
-          </div>
-        )}
+        <div className="rounded-full mr-2 laptop:mr-6 ">
+          <GatsbyImage image={image} className={`${avatarSize} rounded-full`} />
+        </div>
 
         {/* <div className="rounded-full mr-2 laptop:mr-6 ">
           {image ? (

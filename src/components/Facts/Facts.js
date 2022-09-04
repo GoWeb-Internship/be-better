@@ -121,9 +121,13 @@ const Facts = () => {
           )}
         </div>
         {isWide ? (
-          <GatsbyImage image={fotoDesk} alt="foto" className={img} />
+          <div>
+            <GatsbyImage image={fotoDesk} alt="foto" className={img} />
+          </div>
         ) : (
-          <GatsbyImage image={fotoMob} alt="foto" className={imgMob} />
+          <div>
+            <GatsbyImage image={fotoMob} alt="foto" className={imgMob} />{' '}
+          </div>
         )}
       </div>
       <Way />

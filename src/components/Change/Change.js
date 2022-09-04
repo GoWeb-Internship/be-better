@@ -115,7 +115,7 @@ const Change = () => {
 
   return (
     <Section
-      className="tablet:-mt-[57%] laptop:-mt-[17%] desktop:-mt-[11%]"
+      className="desktop:h-[880px]"
       id="change"
     >
       {data.map(node => {
@@ -159,7 +159,7 @@ const Change = () => {
               image={avatarMin}
               alt="result"
               style={{ position: 'absolute' }}
-              className="-z-20  w-full h-full mt-[64px] max-w-full"
+              className="-z-20 w-full h-full mt-[64px]  "
             />
                 </div>
                 <div className="tablet:hidden desktop:block">
@@ -168,7 +168,7 @@ const Change = () => {
                     src="../../images/about.png"
                     alt="background"
                     style={{ position: 'absolute' }}
-                    className="-z-20  w-[1440px] h-[728px]  mt-6 max-w-full laptop:mt-24 desktop:mt-[149px]"
+                    className="-z-20  w-[1440px]  mt-6 max-w-full laptop:mt-24 h-[880px] desktop:mt-[149px]"
                     formats={['auto', 'webp', 'avif']}
                   />
                 </div>
@@ -214,7 +214,7 @@ const Change = () => {
                 </div> */}
                  <div className="desktop:hidden">
                   <GatsbyImage
-                      image={avatarUn}
+                    image={avatarUn}
                     alt="union"
                     style={{ position: 'absolute' }}
                     className="w-[88px] h-[476px] -z-10 -ml-32 mt-[300px] laptop:w-[88px] laptop:h-[444px] laptop:mt-8 laptop:-ml-64"

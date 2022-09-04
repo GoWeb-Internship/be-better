@@ -21,9 +21,9 @@ import Heading from '../reusableComponents/Heading';
 const BeBetter = () => {
   const { i18n } = useTranslation();
 
-  const { allMarkdownRemark } = useStaticQuery(graphql`
+  const  allMarkdownRemark  = useStaticQuery(graphql`
     query {
-      allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/beBetter/" } }) {
+      text: allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/beBetter/" } }) {
         nodes {
           html
           frontmatter {
@@ -72,11 +72,55 @@ const BeBetter = () => {
     }
   `);
 
+  const data = allMarkdownRemark.text.nodes;
+
+//   const foto = useStaticQuery(graphql`
+//   query {
+//     avatarMin: file(name: { eq: "one-min" }) {
+//       id
+//       publicURL
+//       childImageSharp {
+//         id
+//         gatsbyImageData(
+//           placeholder: BLURRED
+//           formats: [AUTO, WEBP, AVIF]
+//           layout: CONSTRAINED
+//         )
+//       }
+//     }
+//     avatarTh: file(name: { eq: "three-min" }) {
+//       id
+//       publicURL
+//       childImageSharp {
+//         id
+//         gatsbyImageData(
+//           placeholder: BLURRED
+//           formats: [AUTO, WEBP, AVIF]
+//           layout: CONSTRAINED
+//         )
+//       }
+//     }
+//     avatarBoc: file(name: { eq: "bokalu" }) {
+//       id
+//       publicURL
+//       childImageSharp {
+//         id
+//         gatsbyImageData(
+//           placeholder: BLURRED
+//           formats: [AUTO, WEBP, AVIF]
+//           layout: CONSTRAINED
+//         )
+//       }
+//     }
+//   }
+  
+// `);
+
   const avatar = allMarkdownRemark.avatarMin.childImageSharp.gatsbyImageData;
   const avatarThree = allMarkdownRemark.avatarTh.childImageSharp.gatsbyImageData;
   const avatarBocalu = allMarkdownRemark.avatarBoc.childImageSharp.gatsbyImageData;
 
-  const data = allMarkdownRemark.nodes;
+ 
   return (
     <Section className={beBetterSection} id="be-better">
       <div className={containerBeBetter}>

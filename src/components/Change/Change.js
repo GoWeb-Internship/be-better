@@ -100,10 +100,8 @@ const Change = () => {
   const data = markdown.text.nodes;
 
   const avatarFMin = markdown.avatarFM.childImageSharp.gatsbyImageData;
-  // const avatarMinChange = markdown.avatarMin.childImageSharp.gatsbyImageData;
-  // const avatarAb = markdown.avatarAbout.childImageSharp.gatsbyImageData;
   const avatarJl = markdown.avatarJulia.childImageSharp.gatsbyImageData;
-  // const avatarUn = markdown.avatarUnion.childImageSharp.gatsbyImageData;
+
 
   const showModal = change => {
     setCurrentChange(change);

@@ -44,7 +44,7 @@ const AboutMe = () => {
   return (
     <Section className={sectionContainer} id="nav-about">
       <div className={aboutMeContainer}>
-        <div className="flex mb-6 laptop:block desktop:h-[342px]">
+        <div className="flex mb-6 laptop:mb-0 laptop:block ">
           <div className="w-[134px] text-left laptop:hidden mr-3">
             <Heading
               tag={'h2'}
@@ -63,7 +63,7 @@ const AboutMe = () => {
             <GatsbyImage
               image={DesktopScreenAvatar}
               alt="author"
-              className="  desktop:w-[456px] desktop:h-[480px]"
+              className="  desktop:w-[524px] desktop:h-full rounded-[24px] "
             />
           ) : (
             <GatsbyImage

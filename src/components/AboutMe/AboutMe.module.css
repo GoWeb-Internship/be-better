@@ -1,16 +1,16 @@
 .sectionContainer {
-  @apply py-8 px-5 laptop:pt-20 laptop:pb-36 laptop:px-16 desktop:px-20  text-base  relative;
+  @apply py-8 px-5 laptop:py-20 laptop:px-16 desktop:px-20  text-base  relative;
 }
 
 .aboutMeContainer {
-  @apply flex flex-col justify-center laptop:justify-end laptop:flex-row desktop:justify-center;
+  @apply flex flex-col justify-center laptop:justify-end laptop:flex-row;
 }
 .title {
   @apply hidden laptop:block title-primary text-left mb-4 laptop:mb-8 desktop:mb-13 laptop:font-semibold laptop:text-34;
 }
 
 .textContainer {
-  @apply w-70 text-sm  laptop:text-base laptop:w-[310px] desktop:w-524 text-left desktop:ml-20;
+  @apply w-70 text-sm  laptop:text-base laptop:w-[310px] desktop:w-524 text-left desktop:ml-[124px];
 }
 
 .caveat {

@@ -1,21 +1,21 @@
 /* List */
 .container {
-  @apply m-auto text-center pb-2 pt-8 laptop:pb-[106px] laptop:pt-12  desktop:pt-20 desktop:pb-23 bg-background;
+  @apply m-auto text-center  py-8 laptop:pb-[106px] laptop:pt-12 desktop:px-20 desktop:py-20  bg-background;
 }
 .title {
-  @apply title-primary px-10 mb-8 laptop:text-34 laptop:font-semibold laptop:tracking-wide laptop:mb-8 desktop:mb-13;
+  @apply title-primary px-10 mb-4 laptop:text-34 laptop:font-semibold laptop:tracking-wide laptop:mb-8 desktop:mb-16;
 }
 
 .list {
-  @apply items-center flex flex-col text-center justify-center laptop:flex-row;
+  @apply items-center flex flex-col text-center justify-center laptop:flex-row desktop:justify-between;
 }
 
 .item {
-  @apply pt-10 pb-8  mb-4 w-70 laptop:mb-0 laptop:w-50 laptop:mr-5 desktop:pt-6 desktop:pb-12 desktop:px-7 desktop:w-[336px] desktop:mr-4 rounded-lg last:mr-0 last:mb-0  hover:bg-hoverPrice shadow-you hover:scale-105 ease-in duration-300;
+  @apply pt-10 pb-8  mb-4 w-70 laptop:mb-0 laptop:w-50 laptop:mr-5 desktop:pt-6 desktop:pb-11 desktop:px-10 desktop:w-[360px] desktop:mr-0 rounded-lg last:mr-0 last:mb-0  hover:bg-hoverPrice shadow-you desktop:hover:scale-105 ease-in duration-300;
 }
 
 .item:nth-child(2) {
-  @apply desktop:scale-105 bg-hoverPrice hover:bg-[#b9f4ff]  desktop:hover:scale-110 ease-in duration-300;
+  @apply laptop:scale-105 bg-hoverPrice hover:bg-[#b9f4ff]  desktop:hover:scale-110 ease-in duration-300;
 }
 
 /* Form */
@@ -86,5 +86,5 @@
 }
 
 .donation {
-  @apply text-center m-auto w-70 mt-4 text-[9px] laptop:mt-12 laptop:text-base laptop:w-480 desktop:mt-14;
+  @apply text-center m-auto w-70 mt-4 text-[9px] laptop:mt-12 laptop:text-base laptop:w-480 desktop:mt-11;
 }

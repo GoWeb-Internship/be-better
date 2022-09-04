@@ -1,5 +1,5 @@
 .couchContainer {
-  @apply text-left px-5 pt-8 pb-[38px] laptop:pt-12 laptop:pb-[132px] laptop:px-16 desktop:px-20 desktop:pt-[22px] desktop:pb-[112px];
+  @apply text-left px-5 pt-8 pb-[38px]   laptop:px-16 desktop:px-20 laptop:py-20;
 }
 
 .flexContainer {

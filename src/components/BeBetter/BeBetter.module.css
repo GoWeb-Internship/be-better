@@ -1,48 +1,46 @@
 .textBeBetter span {
-    @apply  !text-left text-caveat ;
+    @apply  text-left text-caveat ml-[20px] mr-[20px]   !pb-[24px] laptop:!ml-[20px] laptop:!w-[310px] desktop:!ml-[34px] desktop:!w-[373px];
   }
+ 
 .textBeBetter ol{
-    @apply  text-start font-normal  pl-6 pr-2 laptop:pl-8 desktop:ml-[10px];
+    @apply  text-start font-normal  pl-6 pr-2 laptop:pl-8 desktop:ml-[10px] desktop:w-[476px];
 }
 .textBeBetter li{
-    @apply pb-3 text-start font-normal text-base list-disc mb-2 marker:text-main 
+    @apply pb-3 ml-[10px] mr-[10px] text-start font-normal text-base list-disc mb-2 marker:text-main  desktop:w-[476px]
 }
 .textBeBetter{
-    @apply font-normal text-xs laptop:w-[500px] laptop:pl-8 desktop:pl-40 desktop:w-[576px]
+    @apply font-normal text-xs laptop:w-[460px] laptop:pl-8 desktop:pl-40 desktop:w-[576px]
 }
 .text-caveat{
     @apply pt-40 laptop:-ml-16 desktop:-ml-6
 }
 .beBetterSection{
-    @apply desktop:w-[1440px] desktop:h-[800px] desktop:mt-[150px]
+    @apply desktop:w-[1440px] desktop:h-[800px] desktop:mt-[80px] 
 }
 .textBeBet{
-    @apply  text-buttonMobile font-medium text-xl text-center ml-2 mt-4 mb-3 laptop:mb-12 laptop:font-semibold laptop:text-4xl  laptop:ml-32 desktop:w-[500px] desktop:ml-[180px] desktop:mb-4 desktop:text-left desktop:pr-10 desktop:mt-[80px]
+    @apply  text-buttonMobile font-medium text-xl text-center ml-[20px] mr-[20px] pt-[32px] mb-[24px] laptop:w-[420px] laptop:mb-12 laptop:font-semibold laptop:text-4xl laptop:mr-[44px] laptop:mt-[48px]  laptop:ml-[7rem] desktop:w-[500px] desktop:ml-[194px] desktop:mb-4 desktop:text-left desktop:pr-10 desktop:pt-[80px] desktop:pt-[80px]
 }
-/* .textBeBet{
-    @apply  laptop:mb-12 laptop:font-semibold laptop:text-4xl laptop:pl-18 laptop:ml-32 desktop:w-[500px] desktop:ml-[180px] desktop:mb-4 desktop:text-left desktop:pr-10 desktop:mt-[80px]
-} */
+
 .varning{
     @apply desktop:flex desktop:ml-[65px]
 }
 .contBeBetter{
-    @apply laptop:-ml-24 desktop:-ml-16 desktop:pr-2 desktop:mt-[80px]
+    @apply h-[312px] laptop:-ml-24 desktop:-ml-16 desktop:pr-2 desktop:mt-[80px]
 }
 .beBetterCont{
     @apply tablet:hidden desktop:block desktop:mt-14 desktop:mb-8
 }
 .oneMin{
-    @apply tablet:hidden laptop:block desktop:w-[341] desktop:h-[240]
+    @apply tablet:hidden laptop:block desktop:w-[341] desktop:h-[240] desktop:-ml-[20px]  desktop:mt-[124px]
 }
 .divImg{
     @apply tablet:hidden laptop:block  laptop:ml-28
 }
 .threeMin{
-    @apply ml-8 rounded-2xl laptop:w-[200px] laptop:h-[162px] laptop:-ml-10 mb-4 mt-2 desktop:-ml-2 desktop:w-[204px] desktop:h-[280]
+    @apply ml-8 rounded-2xl laptop:w-[200px] laptop:h-[162px] laptop:-ml-[56px] laptop:mt-[60px] mb-4 mt-2 desktop:-ml-[70px] desktop:w-[284px] desktop:h-[280] desktop:mt-[378px]
 }
 .bakaluImg{
-    @apply tablet:ml-[10px] laptop:pt-20 laptop:-ml-10  laptop:w-[250px] laptop:h-[382px] mr-5 rounded-2xl desktop:ml-0 desktop:w-[308] desktop:h-[440] desktop:mt-[80px]
+    @apply w-[280px] h-[300px] tablet:-ml-[140px] -mt-[288px] laptop:-mt-[70px] laptop:-ml-[100px]  laptop:w-[250px] laptop:h-[382px] mr-5 rounded-2xl  desktop:w-[308] desktop:h-[440] desktop:mt-[150px] desktop:ml-[215px]  desktop:pt-[80px]
 }
 .containerBeBetter{
-    @apply laptop:flex mb-[102px]
-}
+    @apply laptop:flex mb-[48px] }

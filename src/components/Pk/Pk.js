@@ -1,6 +1,6 @@
 import React from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
-import { StaticImage } from 'gatsby-plugin-image';
+import { StaticImage, GatsbyImage } from 'gatsby-plugin-image';
 import { text, btn, img, people, arrow, svg } from './Pk.module.css';
 import { useTranslation } from 'gatsby-plugin-react-i18next';
 import Container from '../Container';
@@ -10,9 +10,9 @@ import Heading from '../reusableComponents/Heading';
 const Pk = () => {
   const { i18n } = useTranslation();
 
-  const { allMarkdownRemark } = useStaticQuery(graphql`
+  const allMarkdownRemark = useStaticQuery(graphql`
     query {
-      allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/pk/" } }) {
+      text: allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/pk/" } }) {
         nodes {
           html
           frontmatter {
@@ -22,13 +22,54 @@ const Pk = () => {
           id
         }
       }
+      avatarBackPk: file(name: { eq: "back" }) {
+        id
+        publicURL
+        childImageSharp {
+          id
+          gatsbyImageData(
+            placeholder: BLURRED
+            formats: [AUTO, WEBP, AVIF]
+            layout: CONSTRAINED
+          )
+        }
+      }
+      avatarOfertaPk: file(name: { eq: "fonp-min" }) {
+        id
+        publicURL
+        childImageSharp {
+          id
+          gatsbyImageData(
+            placeholder: BLURRED
+            formats: [AUTO, WEBP, AVIF]
+            layout: CONSTRAINED
+          )
+        }
+      }
+      avatarMinPk: file(name: { eq: "pkl-min" }) {
+        id
+        publicURL
+        childImageSharp {
+          id
+          gatsbyImageData(
+            placeholder: BLURRED
+            formats: [AUTO, WEBP, AVIF]
+            layout: CONSTRAINED
+          )
+        }
+      }
     }
   `);
-  const data = allMarkdownRemark.nodes;
+
+  const back = allMarkdownRemark.avatarBackPk.childImageSharp.gatsbyImageData;
+  const oferta = allMarkdownRemark.avatarOfertaPk.childImageSharp.gatsbyImageData;
+  const minimum = allMarkdownRemark.avatarMinPk.childImageSharp.gatsbyImageData;
+
+  const data = allMarkdownRemark.text.nodes;
   return (
     <Container className="">
       <div className="relative w-full">
-        <div className="flex desktop:flex-row ">
+        <div className="flex desktop:flex-row laptop:w-[768px]">
           <Link
             to="/"
             className="w-9 h-5 hover:scale-110 mr-20 transition-transform tablet:ml-1  tablet:mt-4 laptop:mt-5 laptop:ml-13 laptop:mr-40 laptop:pl-14 "
@@ -46,30 +87,47 @@ const Pk = () => {
             to="/"
             className="max-w-xs cursor-pointer  mb-16   desktop:mt-24 "
           >
-            <StaticImage
+            {/* <StaticImage
               className="mt-8 cursor-pointer m-auto w-8 tablet:ml-40 h-5 -ml-96  laptop:ml-80 laptop:h-7 desktop:-ml-60"
-              src="../../images/background/back.png"
+              src="../../images/back.png"
               alt="background"
+            /> */}
+             <GatsbyImage
+              image={back}
+              alt="background"
+              style={{ position: 'absolute' }}
+              className="mt-8 cursor-pointer m-auto w-8 tablet:ml-40 h-5 -ml-96  laptop:ml-80 laptop:h-7 desktop:-ml-60"
             />
           </Link>
         </div>
-        <StaticImage
+        {/* <StaticImage
           layout="fullWidth"
-          src="../../images/background/fonp-min.png"
+          src="../../images/fonp-min.png"
           alt=""
           style={{ position: 'absolute' }}
           className="-z-20 top-11  tablet:object tablet:mt-6 tablet:h-20 tablet:w-36 laptop:w-96 laptop:mt-5 laptop:ml-80 -cover  h-20 ml-40   mt-0   mb-16 pr-0 max-w-5xl  desktop:h-36 desktop:-mt-12 desktop:ml-96 desktop:w-3/4"
           formats={['auto', 'webp', 'avif']}
-        />
-
-        <StaticImage
+        /> */}
+             <GatsbyImage
+              image={oferta}
+              alt="background"
+              style={{ position: 'absolute' }}
+              className="-z-20 top-11 ml-[4px]  tablet:object tablet:mt-6 tablet:h-20 tablet:w-36 laptop:w-96 laptop:mt-5  -cover  h-20 laptop:-ml-[12px]   mt-0   mb-16 pr-0 max-w-5xl  desktop:h-36 desktop:-mt-12 desktop:-ml-[318px] desktop:w-3/4"
+            />
+        {/* <StaticImage
           layout="fullWidth"
-          src="../../images/background/pkl-min.png"
+          src="../../images/pkl-min.png"
           alt=""
           style=""
           className="tablet:hidden desktop:block w-3/4 -z-10 top-0  max-w-md  !float-right mr-40  -mt-32 mb-16  h-60 rounded-lg "
           formats={['auto', 'webp', 'avif']}
-        />
+        /> */}
+           <GatsbyImage
+              image={minimum}
+              alt="background"
+              style={{ position: 'absolute' }}
+              className="tablet:hidden desktop:block w-3/4 -z-10 top-0  max-w-md  !float-right mr-40 mt-[60px] ml-[920px]  mb-16  h-60 rounded-lg"
+            />
 
         <div className="text-start h-96 block tablet:pl-5 laptop:pl-28 desktop:pl-72">
           {data.map(node => {
@@ -79,12 +137,12 @@ const Pk = () => {
                   <Heading
                     tag="h1"
                     text={node.frontmatter.title}
-                    className="text-main tablet:text-2xl  font-semibold laptop:text-4xl absolute mb-2 -mt-32"
+                    className="text-main tablet:text-2xl -mt-[62px]  font-semibold laptop:text-4xl absolute mb-2 laptop:-mt-[72px] desktop:-mt-[190px]"
                   />
 
                   <div
                     key={node.frontmatter.language}
-                    className="pt-0 h-96 mt-32 tablet:mr-10 laptop:mt-34px laptop:mr-32 desktop:mt-6 desktop:mr-52"
+                    className="pt-0 h-96 mt-32 tablet:mr-10 laptop:mt-34px laptop:mr-32 desktop:mt-[150px] desktop:mr-52"
                     dangerouslySetInnerHTML={{ __html: node.html }}
                   />
                 </>
@@ -93,14 +151,7 @@ const Pk = () => {
           })}
         </div>
       </div>
-      {/* <div>
-    <Link
-            to="/"
-            className={btn}
-          ><span>{"< "}</span>
-            На главную
-          </Link>
-          </div> */}
+
     </Container>
   );
 };

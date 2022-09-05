@@ -22,9 +22,6 @@ const Review = ({ frontmatter }) => {
 
   const isDesktop = useMedia('(min-width:1440px)');
 
-  // const avatarSize = isMobile ? 'h-8 w-8' : 'h-[60px] w-[60px]';
-  // const noAvatarSize = isMobile ? 32 : 60;
-
   useEffect(() => {
     const showScroll = () => {
       const contentText = frontmatter[`${i18n.language}Text`].length;
@@ -62,25 +59,13 @@ const Review = ({ frontmatter }) => {
       </div>
 
       <div className={authorContainer}>
-        {/* <div className="rounded-full mr-2 laptop:mr-6 "> */}
         <GatsbyImage
           image={image}
           className={
             isDesktop ? `${avatarDesk} mr-2 laptop:mr-6` : `${avatarMob}`
           }
         />
-        {/* </div> */}
 
-        {/* <div className="rounded-full mr-2 laptop:mr-6 ">
-          {image ? (
-            <GatsbyImage
-              image={image}
-              className={`${avatarSize} rounded-full`}
-            />
-          ) : (
-            <BsPerson size={noAvatarSize} />
-          )}
-        </div> */}
         <div>
           <p className={`{${position}} laptop:text-xl font-bold`}>
             {frontmatter[`${i18n.language}Name`]}

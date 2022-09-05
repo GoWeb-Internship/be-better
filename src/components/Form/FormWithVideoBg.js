@@ -1,5 +1,4 @@
 import React from 'react';
-import loadable from '@loadable/component';
 import { useTranslation } from 'gatsby-plugin-react-i18next';
 import { StaticImage } from 'gatsby-plugin-image';
 import { useMedia } from 'react-use';
@@ -19,11 +18,10 @@ import {
 } from './Form.module.css';
 import Section from '../reusableComponents/Section';
 import Container from '../Container';
-// import Video from '../Video';
+import Video from '../Video';
 import Form from './Form';
 import Social from '../Social';
 import WithDiscount from '../reusableComponents/WithDiscount';
-const Video = loadable(() => import('../Video'));
 
 const FormWithVideoBg = ({ clickFrom }) => {
   const { t } = useTranslation();

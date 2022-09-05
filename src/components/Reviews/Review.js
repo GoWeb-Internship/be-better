@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { BsPerson } from 'react-icons/bs';
-import { reviewContainer, textContainer } from './Reviews.module.css';
+import { reviewContainer, textContainer, avatar } from './Reviews.module.css';
 import { useMedia } from 'react-use';
 import { GatsbyImage } from 'gatsby-plugin-image';
 import PropTypes from 'prop-types';
@@ -56,9 +56,9 @@ const Review = ({ frontmatter }) => {
       </div>
 
       <div className="flex items-center">
-        <div className="rounded-full mr-2 laptop:mr-6 ">
-          <GatsbyImage image={image} className={`${avatarSize} rounded-full`} />
-        </div>
+        {/* <div className={avatar}> */}
+        <GatsbyImage image={image} className={`${avatarSize} ${avatar}`} />
+        {/* </div> */}
 
         {/* <div className="rounded-full mr-2 laptop:mr-6 ">
           {image ? (

@@ -74,47 +74,7 @@ const BeBetter = () => {
 
   const data = allMarkdownRemark.text.nodes;
 
-//   const foto = useStaticQuery(graphql`
-//   query {
-//     avatarMin: file(name: { eq: "one-min" }) {
-//       id
-//       publicURL
-//       childImageSharp {
-//         id
-//         gatsbyImageData(
-//           placeholder: BLURRED
-//           formats: [AUTO, WEBP, AVIF]
-//           layout: CONSTRAINED
-//         )
-//       }
-//     }
-//     avatarTh: file(name: { eq: "three-min" }) {
-//       id
-//       publicURL
-//       childImageSharp {
-//         id
-//         gatsbyImageData(
-//           placeholder: BLURRED
-//           formats: [AUTO, WEBP, AVIF]
-//           layout: CONSTRAINED
-//         )
-//       }
-//     }
-//     avatarBoc: file(name: { eq: "bokalu" }) {
-//       id
-//       publicURL
-//       childImageSharp {
-//         id
-//         gatsbyImageData(
-//           placeholder: BLURRED
-//           formats: [AUTO, WEBP, AVIF]
-//           layout: CONSTRAINED
-//         )
-//       }
-//     }
-//   }
-  
-// `);
+
 
   const avatar = allMarkdownRemark.avatarMin.childImageSharp.gatsbyImageData;
   const avatarThree = allMarkdownRemark.avatarTh.childImageSharp.gatsbyImageData;
@@ -146,14 +106,6 @@ const BeBetter = () => {
         </div>
         <div className={varning}>
           <div className={contBeBetter}>
-            {/* <div className={beBetterCont}>
-              <StaticImage
-                alt="mountains"
-                src="../../images/one-min.png"
-                className={oneMin}
-                formats={['auto', 'webp', 'avif']}
-              />
-            </div> */}
             <div className={beBetterCont}>
             <GatsbyImage
               image={avatar}
@@ -162,14 +114,6 @@ const BeBetter = () => {
               className={oneMin}
             />
             </div>
-            {/* <div className={divImg}>
-              <StaticImage
-                alt="car"
-                src="../../images/three-min.png"
-                className={threeMin}
-                formats={['auto', 'webp', 'avif']}
-              />
-            </div> */}
             <div className={divImg}>
             <GatsbyImage
               image={avatarThree}
@@ -179,14 +123,6 @@ const BeBetter = () => {
             />
             </div>
           </div>
-          {/* <div>
-            <StaticImage
-              alt="grocers"
-              src="../../images/bokalu.png"
-              className={bakaluImg}
-              formats={['auto', 'webp', 'avif']}
-            />
-          </div> */}
            <div>
            <GatsbyImage
               image={avatarBocalu}

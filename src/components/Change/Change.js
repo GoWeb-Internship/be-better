@@ -121,10 +121,10 @@ const Change = () => {
           return (
             <>
               <div
-                className="relative mb-24 mt-24"
+                className="relative mb-24 laptop:mt-24"
                 id={node.frontmatter.language}
               >
-                {/* <div className="ml-[165px] pt-[22px] -z-10 laptop:pt-[0px] laptop:ml-[265px] laptop:-mt-40 desktop:ml-[404px] ">
+                <div className="ml-[165px]  -z-10  laptop:ml-[265px] laptop:-mt-40 desktop:ml-[404px] ">
                   <StaticImage
                     layout="fullWidth"
                     src="../../images/fon-min.png"
@@ -133,14 +133,6 @@ const Change = () => {
                     className="w-[154px] h-[64px] float-right move-right -z-10 laptop:w-[504px] laptop:h-[96px] desktop:w-[1036px] desktop:h-[152px]"
                     formats={['auto', 'webp', 'avif']}
                   />
-                </div> */}
-              <div className="-ml-[2px] pt-[22px] -z-10 laptop:pt-[0px] laptop:-ml-[240px] laptop:-mt-40 desktop:ml-[404px] ">
-              <GatsbyImage
-              image={avatarFMin}
-              alt="result"
-              style={{ position: 'absolute' }}
-              className="w-[154px] h-[64px] float-right move-right -z-10 laptop:w-[504px] laptop:h-[96px] desktop:w-[1036px] desktop:h-[152px] desktop:-ml-[518px]"
-            />
                 </div>
                 <div className="desktop:hidden">
                   <StaticImage
@@ -148,18 +140,10 @@ const Change = () => {
                     src="../../images/fontwo-min.png"
                     alt="background"
                     style={{ position: 'absolute' }}
-                    className="-z-20  w-full h-full mt-[64px] max-w-full  "
+                    className="-z-20  w-full h-full mt-[64px] laptop:mt-[84px] max-w-full  "
                     formats={['auto', 'webp', 'avif']}
                   />
                 </div>
-                {/* <div className="desktop:hidden -ml-[333px] laptop:-ml-[762px] laptop:pt-[30px] ">
-                <GatsbyImage
-              image={avatarMinChange}
-              alt="result"
-              style={{ position: 'absolute' }}
-              className="-z-20 w-full h-full mt-[64px]  "
-            />
-                </div> */}
                 <div className="tablet:hidden desktop:block">
                   <StaticImage
                     layout="fullWidth"
@@ -170,28 +154,11 @@ const Change = () => {
                     formats={['auto', 'webp', 'avif']}
                   />
                 </div>
-                 {/* <div className="tablet:hidden desktop:block">
-                 <GatsbyImage
-                 image={avatarAb}
-                 alt="result"
-                 style={{ position: 'absolute' }}
-                 className="-z-20  w-[1440px] h-[728px] mt-6 max-w-full laptop:mt-24 desktop:mt-[149px] -ml-[1100px]"
-                />
-                </div> */}
                 <Heading
                   tag="h2"
                   className={changeTitle}
                   text={node.frontmatter.title}
                 />
-                {/* <div className="laptop:float-right laptop:-mt-40 display:block desktop:-mt-[77px] desktop:-mr-[20px]">
-                  <StaticImage
-                    src="../../images/background/julia.jpg"
-                    alt="julia"
-                    style={{ position: 'absolute' }}
-                    className="w-[280px] h-[280px] -ml-44 rounded-2xl laptop:w-[310px] laptop:h-[442px] desktop:w-[480px] desktop:h-[734px] desktop:pr-[60px] desktop:pt-[100px]"
-                    formats={['auto', 'webp', 'avif']}
-                  />
-                </div> */}
                   <div className="laptop:float-right laptop:-mt-40 display:block desktop:-mt-[77px] desktop:-mr-[20px]">
                   <GatsbyImage
                     image={avatarJl}
@@ -210,15 +177,6 @@ const Change = () => {
                     formats={['auto', 'webp', 'avif']}
                   />
                 </div>
-                 {/* <div className="desktop:hidden">
-                  <GatsbyImage
-                    image={avatarUn}
-                    alt="union"
-                    style={{ position: 'absolute' }}
-                    className="w-[88px] h-[476px] -z-10 -ml-32 mt-[300px] laptop:w-[88px] laptop:h-[444px] laptop:mt-8 laptop:-ml-64"
-                    formats={['auto', 'webp', 'avif']}
-                  />
-                </div> */}
                 <div className="flex ">
                   <div className="flex justify-between">
                     <div>

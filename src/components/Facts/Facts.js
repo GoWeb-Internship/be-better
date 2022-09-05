@@ -61,22 +61,6 @@ const Facts = () => {
           gatsbyImageData(placeholder: BLURRED, formats: [AUTO, WEBP, AVIF])
         }
       }
-      back: file(name: { eq: "features" }) {
-        id
-        publicURL
-        childImageSharp {
-          id
-          gatsbyImageData(placeholder: BLURRED, formats: [AUTO, WEBP, AVIF])
-        }
-      }
-      backMob: file(name: { eq: "features-mini" }) {
-        id
-        publicURL
-        childImageSharp {
-          id
-          gatsbyImageData(placeholder: BLURRED, formats: [AUTO, WEBP, AVIF])
-        }
-      }
     }
   `);
 
@@ -86,30 +70,17 @@ const Facts = () => {
 
   const fotoMob = foto.mob.childImageSharp.gatsbyImageData;
   const fotoDesk = foto.desk.childImageSharp.gatsbyImageData;
-  const back = foto.back.childImageSharp.gatsbyImageData;
-  const backMob = foto.backMob.childImageSharp.gatsbyImageData;
 
   return (
     <Section className={section} id="facts">
       <Heading tag="h2" className={title} text={data.title} />
-      {isWide ? (
-        <div className="w-full h-full -z-10 top-0 absolute left-0">
-          <GatsbyImage
-            image={back}
-            // className="w-full h-full -z-10 top-0 absolute left-0"
-            alt="background"
-          />
-        </div>
-      ) : (
-        <div className="w-full h-full -z-10 top-0 absolute left-0">
-          <GatsbyImage
-            image={backMob}
-            // className="w-full h-full -z-10 top-0 absolute left-0"
-            alt="background"
-          />
-        </div>
-      )}
-
+      <StaticImage
+        layout="fullWidth"
+        src="../../images/background/features.jpg"
+        alt=""
+        style={{ position: 'absolute' }}
+        className="w-full h-full -z-10 top-0"
+      />
       <div className={contentContainer}>
         <div>
           <Heading tag="h2" className={titleFacts} text={data.title} />
@@ -150,13 +121,9 @@ const Facts = () => {
           )}
         </div>
         {isWide ? (
-          <div>
-            <GatsbyImage image={fotoDesk} alt="foto" className={img} />
-          </div>
+          <GatsbyImage image={fotoDesk} alt="foto" className={img} />
         ) : (
-          <div>
-            <GatsbyImage image={fotoMob} alt="foto" className={imgMob} />{' '}
-          </div>
+          <GatsbyImage image={fotoMob} alt="foto" className={imgMob} />
         )}
       </div>
       <Way />

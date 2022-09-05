@@ -62,7 +62,7 @@ const avatarVect = foto.avatarVec.childImageSharp.gatsbyImageData;
   return (
     <Section className="relative" id="whyStep">
       <div className="relative max-h-full ">
-        {/* <div className="tablet:hidden desktop:block">
+        <div className="tablet:hidden desktop:block">
           <StaticImage
             layout="fullWidth"
             src="../../images/van.png"
@@ -70,16 +70,16 @@ const avatarVect = foto.avatarVec.childImageSharp.gatsbyImageData;
             style={{ position: 'absolute' }}
             className="-z-20 w-full h-full"
           />
-        </div> */}
-          <div className="tablet:hidden desktop:block -ml-[1440px]">
+        </div>
+          {/* <div className="tablet:hidden desktop:block -ml-[1440px]">
           <GatsbyImage
               image={avatarV}
               alt="result"
               style={{ position: 'absolute' }}
               className="-z-20 w-full h-full"
             />
-        </div>
-        {/* <div className="tablet:hidden laptop:block desktop:hidden">
+        </div> */}
+        <div className="tablet:hidden laptop:block desktop:hidden">
           <StaticImage
             layout="fullWidth"
             src="../../images/grow.png"
@@ -87,16 +87,16 @@ const avatarVect = foto.avatarVec.childImageSharp.gatsbyImageData;
             style={{ position: 'absolute' }}
             className="-z-20 w-full h-full"
           />
-        </div> */}
-         <div className="tablet:hidden laptop:block -ml-[770px] desktop:hidden">
+        </div>
+         {/* <div className="tablet:hidden laptop:block -ml-[770px] desktop:hidden">
          <GatsbyImage
               image={avatarG}
               alt="result"
               style={{ position: 'absolute' }}
               className="-z-20 w-full h-full"
             />
-        </div>
-        {/* <div className="laptop:hidden">
+        </div> */}
+        <div className="laptop:hidden">
           <StaticImage
             layout="fullWidth"
             src="../../images/vectwo-min.png"
@@ -104,15 +104,15 @@ const avatarVect = foto.avatarVec.childImageSharp.gatsbyImageData;
             style={{ position: 'absolute' }}
             className="-z-20 w-full h-full"
           />
-        </div> */}
-        <div className="laptop:hidden -ml-[320px]">
+        </div>
+        {/* <div className="laptop:hidden -ml-[320px]">
         <GatsbyImage
               image={avatarVect}
               alt="result"
               style={{ position: 'absolute' }}
               className="-z-20 w-full h-full"
             />
-        </div>
+        </div> */}
         <List data={data} icons={svg} />
         <Reviews />
       </div>

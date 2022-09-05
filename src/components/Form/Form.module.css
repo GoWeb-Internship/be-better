@@ -60,7 +60,7 @@
 }
 
 .acceptText {
-    @apply ml-3	text-left text-xs text-black laptop:text-white desktop:text-black;
+    @apply ml-3	text-left text-xs text-black;
 }
 
 .checkError {
@@ -118,40 +118,48 @@
 }
 /* WithDiscount */
 .discountText {
-  @apply text-black text-lg leading-[23px] text-left;
+  @apply text-black text-lg leading-[23px] text-left laptop:w-81 desktop:ml-auto desktop:mr-50;
 }
 
 .discount {
   @apply text-mainSecond font-medium;
 }
 
-/* Form in Mobile */
-.mobContainer {
-    @apply relative h-[568px] laptop:hidden;
-}
-
-.mobIfYou {
-    @apply mb-[152px] px-6 pt-12 font-caveat text-orangeDark text-2xl;
-}
 /* FormInMain*/
 .mainContainer {
-    @apply hidden laptop:block laptop:h-[1053px] desktop:h-[760px] ;
+    @apply h-[638px] laptop:h-[1053px] desktop:h-[760px] ;
+}
+
+.mobContainer {
+    @apply laptop:hidden;
+}
+
+.tabContainer {
+  @apply tablet:block;
 }
 
 .content {
-    @apply laptop:px-16 laptop:pt-40 desktop:pt-20 desktop:pl-0 desktop:pr-20 flex justify-end;
+    @apply px-5 pt-10 laptop:px-16 laptop:pt-40 desktop:pt-20 desktop:pl-0 desktop:pr-20;
+}
+
+.soctitle {
+  @apply flex laptop:justify-between laptop:flex-row-reverse desktop:justify-start;
+}
+
+.sociaListlInMain {
+  @apply space-y-3 laptop:space-y-8 ; 
 }
 
 .ifYou {
-    @apply mb-10 laptop:mb-50 laptop:text-black desktop:mb-10 text-34 font-semibold;
+    @apply text-xl mb-[70px] laptop:mb-50 laptop:text-black desktop:mb-10 laptop:text-34 font-semibold;
 }
 
 .emo {
-    @apply text-32 laptop:text-black font-caveat font-normal;
+    @apply text-2xl laptop:text-32 text-black font-caveat font-normal;
 }
 
 .formInMain {
-    @apply laptop:mb-[120px] desktop:!m-0 desktop:!mr-auto desktop:!mb-6;
+    @apply m-auto mb-8 laptop:!m-0 laptop:!mr-auto laptop:!mb-[120px] desktop:!mb-2 desktop:!ml-auto desktop:!mr-50;
 }
 
 .checkboxInMain {
@@ -160,11 +168,4 @@
 
 .acceptInMain {
   @apply laptop:text-black; 
-}
-
-.sociaListlInMain {
-  @apply space-y-4 desktop:space-y-8 ; 
-}
-.socialLinkInMain{
-  @apply laptop:!text-black desktop:!text-white  desktop:hover:!text-main desktop:focus:!text-main ;
 }

@@ -68,7 +68,7 @@ const FormWithVideoBg = ({ clickFrom }) => {
                 />
               </div>
             </div>
-            <div className="ml-[213px]">
+            <div className="ml-[156px]">
               <Social
                 classNameList={sociaListlInMain}
                 classNameLink={socialLinkInMain}

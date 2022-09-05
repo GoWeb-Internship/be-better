@@ -1,5 +1,5 @@
 .guarantee {
-    @apply h-[480px] pt-8 pb-16 px-5 laptop:pt-30 laptop:pl-[92px] desktop:h-[568px] desktop:pt-30 desktop:pl-74 text-left;
+    @apply h-[448px] py-8 px-5 laptop:pt-20 laptop:pl-16 laptop:h-[510px] desktop:h-[568px] desktop:pl-[188px] text-left;
 }
 
 .title {
@@ -7,11 +7,11 @@
 }
 
 .text {
-    @apply w-[220px] laptop:w-[432px] text-sm laptop:text-xl laptop:font-medium desktop:w-[432px] desktop:text-xl;
+    @apply w-[220px] laptop:w-[310px] text-sm laptop:text-xl laptop:font-medium desktop:w-[432px] desktop:text-xl;
 }
 
 .icon {
-    @apply absolute -z-10 w-12 h-[42px] top-[211px] left-5 laptop:top-[166px] laptop:left-16 desktop:left-[268px] laptop:w-[136px] laptop:h-[156px];
+    @apply absolute -z-10 w-12 h-[42px] top-[211px] left-5 laptop:top-[132px] laptop:left-12 desktop:left-40 laptop:w-[118px] laptop:h-[112px] desktop:w-[136px];
 }
 
 .photoMobile {

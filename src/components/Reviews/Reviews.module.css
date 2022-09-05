@@ -21,10 +21,17 @@
   @apply bg-[#FCD9C4] rounded-xl w-2;
 }
 
-.avatar {
-  @apply mr-2 laptop:mr-6;
+.avatarDesk {
+  @apply mr-2 laptop:mr-6 h-[60px] w-[60px];
 }
 
-.avatar img {
+.avatarMob {
+  @apply mr-2 laptop:mr-6 h-8 w-8;
+}
+
+.authorContainer {
+  @apply flex items-center;
+}
+.authorContainer img {
   @apply rounded-full;
 }

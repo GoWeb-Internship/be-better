@@ -59,19 +59,19 @@ const AboutMe = () => {
             </span>
           </div>
 
-          {isDesktop ? (
-            <GatsbyImage
+          {/* {isDesktop ? ( */}
+          <GatsbyImage
+            image={DesktopScreenAvatar}
+            alt="author"
+            className="w-[134px] h-[160px] laptop:w-[270px]  laptop:h-[342px] laptop:mr-5    desktop:w-[524px] desktop:h-full rounded-[24px] "
+          />
+          {/* ) : ( */}
+          {/* <GatsbyImage
               image={DesktopScreenAvatar}
               alt="author"
-              className="  desktop:w-[524px] desktop:h-full rounded-[24px] "
-            />
-          ) : (
-            <GatsbyImage
-              image={smartScreenAvatar}
-              alt="author"
               className=" w-[134px] h-[160px] laptop:w-[270px]  laptop:h-[342px] laptop:mr-5  rounded-2xl "
-            />
-          )}
+            /> */}
+          {/* )} */}
 
           {/* {isDesktop ? (
             <div>

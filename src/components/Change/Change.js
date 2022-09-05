@@ -163,10 +163,10 @@ const Change = () => {
                 <div className="tablet:hidden desktop:block">
                   <StaticImage
                     layout="fullWidth"
-                    src="../../images/about.png"
+                    src="../../images/background/about.png"
                     alt="background"
                     style={{ position: 'absolute' }}
-                    className="-z-20  w-[1440px]  mt-6 max-w-full laptop:mt-24 h-[880px] desktop:mt-[149px]"
+                    className="-z-20 w-[1440px] h-[750px] mt-6   desktop:mt-[149px]"
                     formats={['auto', 'webp', 'avif']}
                   />
                 </div>
@@ -197,7 +197,7 @@ const Change = () => {
                     image={avatarJl}
                     alt="julia"
                     style={{ position: 'absolute' }}
-                    className="w-[280px] h-[280px] -ml-44 rounded-2xl laptop:w-[310px] laptop:h-[442px] desktop:w-[480px] desktop:h-[734px] desktop:pr-[60px] desktop:pt-[100px] desktop:pb-[80px]"
+                    className="w-[280px] h-[280px] -ml-44 rounded-2xl laptop:w-[310px] laptop:h-[442px] desktop:w-[480px] desktop:h-[734px] desktop:pr-[60px] desktop:-ml-[600px] desktop:-mt-[40px] desktop:pb-[80px]"
                   />
                 </div>
 

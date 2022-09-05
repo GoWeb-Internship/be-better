@@ -135,11 +135,11 @@
 }
 /* FormInMain*/
 .mainContainer {
-    @apply hidden laptop:block laptop:h-[1053px] desktop:h-[760px] desktop:pr-6;
+    @apply hidden laptop:block laptop:h-[1053px] desktop:h-[760px] ;
 }
 
 .content {
-    @apply laptop:px-16 laptop:pt-40 desktop:pr-6 flex justify-end;
+    @apply laptop:px-16 laptop:pt-40 desktop:pt-20 desktop:pl-0 desktop:pr-20 flex justify-end;
 }
 
 .ifYou {

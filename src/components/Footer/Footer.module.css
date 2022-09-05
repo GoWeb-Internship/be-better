@@ -1,5 +1,5 @@
 .footerContainer{
-    @apply relative w-full h-[480px] laptop:h-[547px] desktop:h-[420px] bg-bright;
+    @apply relative w-full h-[480px] laptop:h-[575px] desktop:h-[432px] bg-bright;
 }
 
 .gradient {
@@ -7,7 +7,7 @@
 }
 
 .content {
-  @apply px-5 pt-10 pb-6 laptop:px-16 laptop:pt-12 desktop:px-20 desktop:pt-14;
+  @apply px-5 pt-10 pb-6 laptop:px-16 laptop:pt-20 laptop:pb-5 desktop:px-20;
 }
 
 .logo {

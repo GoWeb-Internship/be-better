@@ -14,7 +14,7 @@
 }
 
 .content {
-    @apply flex justify-between desktop:flex-row-reverse desktop:justify-end mb-[150px] pt-[100px] laptop:pt-[200px] laptop:px-16 laptop:mb-50 text-left desktop:items-start desktop:pt-30 desktop:px-20 desktop:mb-0;
+    @apply flex justify-between desktop:flex-row-reverse desktop:justify-end mb-[150px] pt-[85px] laptop:pt-[200px] laptop:px-16 laptop:mb-50 text-left desktop:items-start desktop:pt-30 desktop:px-20 desktop:mb-0;
 }
 
 .ifyou {
@@ -22,7 +22,7 @@
 }
 
 .titleCaveat {
-    @apply text-xl text-white font-caveat laptop:text-32 desktop:text-black;
+    @apply text-2xl text-white font-caveat laptop:text-32 desktop:text-black;
 }
 
 .title {

@@ -93,17 +93,21 @@ const Facts = () => {
     <Section className={section} id="facts">
       <Heading tag="h2" className={title} text={data.title} />
       {isWide ? (
-        <GatsbyImage
-          image={back}
-          className="w-full h-full -z-10 top-0 absolute left-0"
-          alt="background"
-        />
+        <div className="w-full h-full -z-10 top-0 absolute left-0">
+          <GatsbyImage
+            image={back}
+            // className="w-full h-full -z-10 top-0 absolute left-0"
+            alt="background"
+          />
+        </div>
       ) : (
-        <GatsbyImage
-          image={backMob}
-          className="w-full h-full -z-10 top-0 absolute left-0"
-          alt="background"
-        />
+        <div className="w-full h-full -z-10 top-0 absolute left-0">
+          <GatsbyImage
+            image={backMob}
+            // className="w-full h-full -z-10 top-0 absolute left-0"
+            alt="background"
+          />
+        </div>
       )}
 
       <div className={contentContainer}>

@@ -20,3 +20,11 @@
 .textContainer::-webkit-scrollbar {
   @apply bg-[#FCD9C4] rounded-xl w-2;
 }
+
+.avatar {
+  @apply mr-2 laptop:mr-6;
+}
+
+.avatar img {
+  @apply rounded-full;
+}

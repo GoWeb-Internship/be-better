@@ -66,7 +66,7 @@ const Review = ({ frontmatter }) => {
         <GatsbyImage
           image={image}
           className={
-            isMobile ? `${avatarMob} mr-2 laptop:mr-6` : `${avatarDesk}`
+            isDesktop ? `${avatarDesk} mr-2 laptop:mr-6` : `${avatarMob}`
           }
         />
         {/* </div> */}

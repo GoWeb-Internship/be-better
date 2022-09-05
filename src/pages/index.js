@@ -1,7 +1,7 @@
 import * as React from 'react';
 import 'react-phone-input-2/lib/style.css';
 import Seo from '../components/seo';
-import loadable from '@loadable/component';
+// import loadable from '@loadable/component';
 import { graphql } from 'gatsby';
 import Layout from '../components/Layout';
 import Price from '../components/Price';

@@ -1,13 +1,15 @@
 .footerContainer{
-    @apply relative w-full h-[480px] laptop:h-[575px] desktop:h-[432px] bg-bright;
+    @apply relative w-full h-[816px] laptop:h-[575px] desktop:h-[432px] bg-bright;
 }
 
 .gradient {
+  max-width: 1440px;
+  margin: 0 auto;
     background: linear-gradient(to right, #ADF0FE 72%, #FAFCFC 28%);
 }
 
 .content {
-  @apply px-5 pt-10 pb-6 laptop:px-16 laptop:pt-20 laptop:pb-5 desktop:px-20;
+  @apply px-5 pt-8 pb-10 laptop:px-16 laptop:pt-20 laptop:pb-5 desktop:px-20;
 }
 
 .logo {
@@ -23,11 +25,11 @@
 }
 
 .titleContainer {
-  @apply ml-7 mb-5 text-start laptop:mb-4 laptop:ml-[66px] desktop:mr-[600px];
+  @apply ml-7 mb-[46px] text-start laptop:mb-4 laptop:ml-[66px] desktop:mr-[600px];
 }
 
 .discountText {
-  @apply text-black text-lg leading-[23px] laptop:text-2xl laptop:leading-[30px] laptop:text-main laptop:w-[440px];
+  @apply  text-black text-lg leading-[23px] laptop:text-2xl laptop:leading-[30px] laptop:text-main laptop:w-[440px];
 }
 
 .discount {
@@ -35,26 +37,27 @@
 }
 
 .icf {
-  @apply w-[60px] h-14 ml-17.5 mb-[10px] laptop:ml-[110px] laptop:w-[90px] laptop:h-[82px] desktop:ml-0 desktop:-mt-20;
+  @apply w-[60px] h-14 mb-4 laptop:ml-[110px] laptop:w-[90px] laptop:h-[82px] desktop:ml-0 desktop:-mt-[220px];
 }
 
 .form {
-  @apply hidden laptop:block laptop:ml-auto desktop:-mt-40 desktop:ml-[666px];
+  @apply laptop:ml-auto desktop:-mt-40 desktop:ml-[756px];
 }
 
 .accepttext {
   @apply laptop:text-black;
 }
+
 .donate {
-    @apply ml-[70px] text-xs mb-6 text-left laptop:text-sm laptop:w-80 laptop:ml-0 laptop:-mt-[120px] laptop:mb-10 desktop:ml-[200px] desktop:w-[480px] desktop:-mt-[60px] desktop:mb-14;
+    @apply text-xs mb-6 text-left laptop:text-sm laptop:w-80 laptop:ml-0 laptop:-mt-[135px] laptop:mb-10 desktop:ml-[200px] desktop:w-[480px] desktop:mt-16 desktop:mb-10;
 }
 
 .price {
-  @apply mb-6 ml-16 text-xs laptop:text-sm laptop:ml-0 laptop:text-left desktop:text-right;
+  @apply mb-6 text-xs laptop:text-sm text-left desktop:text-right;
 }
 
 .list{
-    @apply flex space-x-2 ml-[70px] laptop:ml-0 laptop:justify-evenly desktop:mr-[420px] desktop:-mt-10;
+    @apply flex space-x-2 laptop:justify-evenly desktop:mr-[420px] desktop:-mt-10;
 }
 
 .link{

@@ -10,7 +10,6 @@ import {
   titleCaveat,
   title,
   titleBig,
-  mobileBtn,
   heroForm,
   formMargins,
   discountText,
@@ -21,23 +20,11 @@ import Form from '../Form';
 import Section from '../reusableComponents/Section';
 import Social from '../Social';
 import Container from '../Container';
-import FormWithBackground from '../Form/FormWithBackground';
-import Button from '../reusableComponents/Button';
-import FormInModal from '../Form/FormInModal';
 import WithDiscount from '../reusableComponents/WithDiscount';
 
 const Hero = () => {
-  const [showModal, setShowModal] = useState(false);
   const { t } = useTranslation();
-  const { button } = t('form', { returnObjects: true });
   const hero = t('hero', { returnObjects: true });
-
-  const openForm = () => {
-    setShowModal(true);
-  };
-  const closeForm = () => {
-    setShowModal(false);
-  };
 
   return (
     <Section id="home">
@@ -54,12 +41,10 @@ const Hero = () => {
             />
           </div>
           <div className={content}>
-            <p className={ifyou}>
-              {hero.if}
-              {hero.emo} <br />
-              {hero.yourLife} {hero.pleasure}
-            </p>
-            <div className="pl-5 desktop:pl-0">
+            <div className="mr-[30px] laptop:mr-0 desktop:mr-[172px]">
+              <Social classNameList="space-y-2 laptop:space-y-8" />
+            </div>
+            <div className="laptop:pl-5 desktop:pl-0">
               <p className={titleCaveat}>{hero.teach}</p>
               <h1 className={title}>
                 {hero.life}
@@ -71,17 +56,14 @@ const Hero = () => {
                 {hero.burn}
               </p>
             </div>
-            <div className="pr-[30px] desktop:mr-[172px]">
-              <Social classNameList="space-y-2 desktop:space-y-8" />
-            </div>
-          </div>
-          <div className="laptop:hidden">
-            <Button type="button" className={mobileBtn} doAction={openForm}>
-              {button}
-            </Button>
+            <p className={ifyou}>
+              {hero.if}
+              {hero.emo} <br />
+              {hero.yourLife} {hero.pleasure}
+            </p>
           </div>
           <div className={heroForm}>
-            <Form clickFrom="hero" formClassname={formMargins} />
+            <Form clickFrom="hero" formClassname={formMargins}/>
           </div>
           <WithDiscount
             classnameText={discountText}
@@ -89,8 +71,6 @@ const Hero = () => {
           />
         </Container>
       </div>
-      <FormWithBackground clickFrom="hero-m" />
-      {showModal && <FormInModal hideModal={closeForm} currentPlace="hero" />}
     </Section>
   );
 };

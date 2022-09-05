@@ -1,7 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { BsPerson } from 'react-icons/bs';
-import { reviewContainer, textContainer, avatar } from './Reviews.module.css';
+import {
+  reviewContainer,
+  textContainer,
+  avatarDesk,
+  authorContainer,
+  avatarMob,
+} from './Reviews.module.css';
 import { useMedia } from 'react-use';
 import { GatsbyImage } from 'gatsby-plugin-image';
 import PropTypes from 'prop-types';
@@ -16,7 +22,7 @@ const Review = ({ frontmatter }) => {
 
   const isDesktop = useMedia('(min-width:1440px)');
 
-  const avatarSize = isMobile ? 'h-8 w-8' : 'h-[60px] w-[60px]';
+  // const avatarSize = isMobile ? 'h-8 w-8' : 'h-[60px] w-[60px]';
   // const noAvatarSize = isMobile ? 32 : 60;
 
   useEffect(() => {
@@ -55,9 +61,14 @@ const Review = ({ frontmatter }) => {
         </div>
       </div>
 
-      <div className="flex items-center">
-        {/* <div className={avatar}> */}
-        <GatsbyImage image={image} className={`${avatarSize} ${avatar}`} />
+      <div className={authorContainer}>
+        {/* <div className="rounded-full mr-2 laptop:mr-6 "> */}
+        <GatsbyImage
+          image={image}
+          className={
+            isMobile ? `${avatarMob} mr-2 laptop:mr-6` : `${avatarDesk}`
+          }
+        />
         {/* </div> */}
 
         {/* <div className="rounded-full mr-2 laptop:mr-6 ">

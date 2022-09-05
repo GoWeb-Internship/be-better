@@ -63,7 +63,7 @@ const avatarGr = foto.avatarGroup.childImageSharp.gatsbyImageData;
     <Section className="pt-20 pb-16  relative" id="steps">
       <div className="relative">
         <div className="relative max-h-full">
-          {/* <div className="tablet:hidden desktop:block laptop:w-[768px] ">
+          <div className="tablet:hidden desktop:block laptop:w-[768px] ">
             <StaticImage
               layout="fullWidth"
               src="../../images/results.png"
@@ -71,16 +71,16 @@ const avatarGr = foto.avatarGroup.childImageSharp.gatsbyImageData;
               style={{ position: 'absolute' }}
               className="-z-20 w-full h-full"
             />
-          </div> */}
-          <div className="tablet:hidden desktop:block laptop:w-[768px] pl-[0px] -ml-[384px] pr-0 mr-0">
+          </div>
+          {/* <div className="tablet:hidden desktop:block laptop:w-[768px] pl-[0px] -ml-[384px] pr-0 mr-0">
           <GatsbyImage
               image={avatarRes}
               alt="result"
               style={{ position: 'absolute' }}
               className="-z-20 w-full h-full"
             />
-          </div>
-          {/* <div className="tablet:hidden laptop:block desktop:hidden laptop:w-[768px] ">
+          </div> */}
+          <div className="tablet:hidden laptop:block desktop:hidden laptop:w-[768px] ">
             <StaticImage
               layout="fullWidth"
               src="../../images/group.png"
@@ -88,17 +88,17 @@ const avatarGr = foto.avatarGroup.childImageSharp.gatsbyImageData;
               style={{ position: 'absolute' }}
               className="-z-20 w-full h-full"
             />
-          </div> */}
-          <div className="tablet:hidden laptop:block desktop:hidden laptop:w-[768px] -ml-[383px]">
+          </div>
+          {/* <div className="tablet:hidden laptop:block desktop:hidden laptop:w-[768px] -ml-[383px]">
           <GatsbyImage
               image={avatarGr}
               alt="result"
               style={{ position: 'absolute' }}
               className="-z-20 w-full h-full"
             />
-          </div>
+          </div> */}
 
-           {/* <div className="laptop:hidden">
+           <div className="laptop:hidden">
             <StaticImage
               layout="fullWidth"
               src="../../images/vanMin.png"
@@ -106,15 +106,15 @@ const avatarGr = foto.avatarGroup.childImageSharp.gatsbyImageData;
               style={{ position: 'absolute' }}
               className="-z-20 w-full h-full"
             />
-           </div>  */}
-            <div className="-ml-[335px] laptop:hidden">
+           </div> 
+            {/* <div className="-ml-[335px] laptop:hidden">
              <GatsbyImage
               image={avatarVan}
               alt="avatar"
               style={{ position: 'absolute' }}
               className="-z-20 w-full h-full"
             />
-           </div>
+           </div> */}
           <List data={data} icons={svg} />
         </div>
       </div>

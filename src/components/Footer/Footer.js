@@ -6,7 +6,6 @@ import { useMedia } from 'react-use';
 import Container from '../Container';
 import Form from '../Form';
 import Social from '../Social';
-import FormWithBackground from '../Form/FormWithBackground';
 import {
   footerContainer,
   gradient,
@@ -57,7 +56,6 @@ const Footer = () => {
 
   return (
     <footer id="nav-feedback">
-      <FormWithBackground clickFrom="footer-m" />
       <div
         className={
           isDesktop ? `${footerContainer} ${gradient}` : `${footerContainer}`
@@ -71,7 +69,6 @@ const Footer = () => {
             <div className={social}>
               <Social
                 classNameList="space-y-6 laptop:space-y-4"
-                classNameLink="bg-main"
               />
               <div>
                 {data.map(node => {
@@ -86,7 +83,6 @@ const Footer = () => {
                           className={title}
                           text={node.frontmatter.title}
                         />
-                        {/* <h3 className={title}>{node.frontmatter.title}</h3> */}
                         <WithDiscount
                           classnameText={discountText}
                           classnameDiscount={discount}
@@ -97,17 +93,17 @@ const Footer = () => {
                 })}
               </div>
             </div>
-            <div className="laptop:flex">
-              <div className={icf}>
-                <StaticImage src="../../images/icf.png" alt="icf" />
-              </div>
-              <div className={form}>
-                <Form
-                  clickFrom="footer"
-                  className="-mb-4"
-                  classnameAccept={accepttext}
-                />
-              </div>
+            <div className="laptop:flex laptop:flex-row-reverse laptop:-mt-2 desktop:block">
+            <div className={form}>
+              <Form
+                clickFrom="footer"
+                formClassname="mb-6"
+                classnameAccept={accepttext}
+              />
+            </div>
+            <div className={icf}>
+              <StaticImage src="../../images/icf.png" alt="icf" />
+            </div>
             </div>
             <Donations className={donate} classNameText="text-main " />
             <p className={price}>{priceByOne}</p>

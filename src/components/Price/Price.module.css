@@ -11,7 +11,7 @@
 }
 
 .item {
-  @apply pt-10 pb-8  mb-4 w-70 laptop:mb-0 laptop:w-50 laptop:mr-5 desktop:pt-6 desktop:pb-11 desktop:px-10 desktop:w-[360px] desktop:mr-0 rounded-lg last:mr-0 last:mb-0  hover:bg-hoverPrice shadow-you desktop:hover:scale-105 ease-in duration-300;
+  @apply pt-10 pb-8  mb-4 w-70 laptop:mb-0 laptop:w-50 laptop:mr-5 desktop:pt-6 desktop:pb-11 desktop:px-10 desktop:w-[360px] desktop:mr-0 rounded-2xl last:mr-0 last:mb-0  hover:bg-hoverPrice shadow-you desktop:hover:scale-105 ease-in duration-300;
 }
 
 .item:nth-child(2) {

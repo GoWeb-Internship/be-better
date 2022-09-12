@@ -130,12 +130,12 @@
     @apply h-[638px] laptop:h-[1053px] desktop:h-[760px] ;
 }
 
-.mobContainer {
+/* .mobContainer {
     @apply laptop:hidden;
-}
+} */
 
 .tabContainer {
-  @apply hidden laptop:block desktop:hidden;
+  @apply hidden laptop:block;
 }
 
 .content {

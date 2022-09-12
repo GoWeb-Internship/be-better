@@ -43,7 +43,7 @@ const JustForm = ({
     name: yup
       .string()
       .matches(
-        /^[а-яА-ЯёЁa-zA-ZіІїЇґҐєЄ]{1}[а-яА-ЯёЁa-zA-ZіІїЇґҐєЄ0-9 ]+$/,
+        /^[а-яА-ЯёЁa-zA-ZіІїЇґҐєЄ]{1}[а-яА-ЯёЁa-zA-ZіІїЇґҐєЄ0-9' ]+$/,
         errorMessage.nameMatch
       )
       .min(3, errorMessage.nameMin)

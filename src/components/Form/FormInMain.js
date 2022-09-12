@@ -31,7 +31,7 @@ const FormInMain = ({ clickFrom }) => {
   const isDesktop = useMedia('(min-width:1440px)');
 
   return (
-    <Section>
+    <Section id="main-form">
       <div className={mainContainer}>
         <div className={mobContainer}>
           <StaticImage

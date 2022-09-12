@@ -33,9 +33,7 @@ const FormInMain = ({ clickFrom }) => {
   return (
     <Section>
       <div className={mainContainer}>
-        {isDesktop ? (
-          <Video />
-        ) : (
+        {isDesktop && <Video />}
           <>
             <div className={mobContainer}>
               <StaticImage
@@ -56,7 +54,6 @@ const FormInMain = ({ clickFrom }) => {
               />
             </div>
           </>
-        )}
         <Container>
           <div className={content}>
             <div className={soctitle}>

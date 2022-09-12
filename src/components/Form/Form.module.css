@@ -1,6 +1,6 @@
 /* JustForm */
 .form {
-  @apply relative w-70 z-10 laptop:w-80;
+  @apply w-70 z-10 laptop:w-80;
 }
 
 .input {

@@ -5,7 +5,7 @@
   },
   "header": {
     "nav": [
-      { "name": "Про меня", "id": "nav-about" },
+      { "name": "Обо мне", "id": "nav-about" },
       { "name": "Отзывы", "id": "nav-reviews" },
       { "name": "Стоимость", "id": "nav-price" },
       { "name": "Обратная связь", "id": "nav-feedback" }

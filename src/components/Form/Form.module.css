@@ -135,7 +135,7 @@
 }
 
 .tabContainer {
-  @apply hidden laptop:block;
+  @apply hidden laptop:block desktop:hidden;
 }
 
 .content {

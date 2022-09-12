@@ -5,7 +5,7 @@ import { useMedia } from 'react-use';
 import PropTypes from 'prop-types';
 import {
   mainContainer,
-  mobContainer,
+  // mobContainer,
   tabContainer,
   content,
   soctitle,
@@ -28,63 +28,63 @@ import WithDiscount from '../reusableComponents/WithDiscount';
 const FormInMain = ({ clickFrom }) => {
   const { t } = useTranslation();
   const hero = t('hero', { returnObjects: true });
+  const isMobile = useMedia('(max-width:767px)');
+  const isTablet = useMedia('(max-width:1439px)');
   const isDesktop = useMedia('(min-width:1440px)');
 
   return (
     <Section>
       <div className={mainContainer}>
+        {isMobile && (
+          <StaticImage
+            layout="fullWidth"
+            src="../../images/background/formMobile.jpg"
+            alt="mobileform background"
+            style={{ position: 'absolute' }}
+            className="w-full h-full -z-10 top-0"
+          />
+        )}
+        {isTablet && (
+          <div className={tabContainer}>
+            <StaticImage
+              layout="fullWidth"
+              src="../../images/background/formTablet.jpg"
+              alt="tablet form background"
+              style={{ position: 'absolute' }}
+              className="w-full h-full -z-10 top-0"
+            />
+          </div>
+        )}
         {isDesktop && <Video />}
-          <>
-            <div className={mobContainer}>
-              <StaticImage
-                layout="fullWidth"
-                src="../../images/background/formMobile.jpg"
-                alt="mobileform background"
-                style={{ position: 'absolute' }}
-                className="w-full h-full -z-10 top-0"
-              />
-            </div>
-            <div className={tabContainer}>
-              <StaticImage
-                layout="fullWidth"
-                src="../../images/background/formTablet.jpg"
-                alt="tablet form background"
-                style={{ position: 'absolute' }}
-                className="w-full h-full -z-10 top-0"
-              />
-            </div>
-          </>
         <Container>
           <div className={content}>
             <div className={soctitle}>
               <div className="mr-[30px] laptop:mr-0 desktop:ml-[156px]">
-              <Social
-                classNameList={sociaListlInMain}
-              />
+                <Social classNameList={sociaListlInMain} />
+              </div>
+              <div className="laptop:w-81 text-left ">
+                <p className={ifYou}>
+                  {hero.if}
+                  <br />
+                  <span className={emo}>{hero.emo}</span>
+                  <br />
+                  {hero.yourLife}
+                  <br /> {hero.pleasure}
+                </p>
+              </div>
             </div>
-            <div className="laptop:w-81 text-left ">
-              <p className={ifYou}>
-                {hero.if}
-                <br />
-                <span className={emo}>{hero.emo}</span>
-                <br />
-                {hero.yourLife}
-                <br /> {hero.pleasure}
-              </p>
-            </div>
-            </div>
-          <Form
-            clickFrom={clickFrom}
-            formClassname={formInMain}
-            checkboxClassname={checkboxInMain}
-            classnameAccept={acceptInMain}
-          />
-          <WithDiscount
-            classnameText={discountText}
-            classnameDiscount={discount}
-          />
+            <Form
+              clickFrom={clickFrom}
+              formClassname={formInMain}
+              checkboxClassname={checkboxInMain}
+              classnameAccept={acceptInMain}
+            />
+            <WithDiscount
+              classnameText={discountText}
+              classnameDiscount={discount}
+            />
           </div>
-        </Container> 
+        </Container>
       </div>
     </Section>
   );

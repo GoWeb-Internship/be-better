@@ -5,7 +5,7 @@ import { useMedia } from 'react-use';
 import PropTypes from 'prop-types';
 import {
   mainContainer,
-  // mobContainer,
+  mobContainer,
   tabContainer,
   content,
   soctitle,
@@ -28,14 +28,12 @@ import WithDiscount from '../reusableComponents/WithDiscount';
 const FormInMain = ({ clickFrom }) => {
   const { t } = useTranslation();
   const hero = t('hero', { returnObjects: true });
-  const isMobile = useMedia('(max-width:767px)');
-  const isTablet = useMedia('(max-width:1439px)');
   const isDesktop = useMedia('(min-width:1440px)');
 
   return (
     <Section>
       <div className={mainContainer}>
-        {isMobile && (
+        <div className={mobContainer}>
           <StaticImage
             layout="fullWidth"
             src="../../images/background/formMobile.jpg"
@@ -43,9 +41,8 @@ const FormInMain = ({ clickFrom }) => {
             style={{ position: 'absolute' }}
             className="w-full h-full -z-10 top-0"
           />
-        )}
-        {isTablet && (
-          <div className={tabContainer}>
+        </div>
+        <div className={tabContainer}>
             <StaticImage
               layout="fullWidth"
               src="../../images/background/formTablet.jpg"
@@ -53,8 +50,7 @@ const FormInMain = ({ clickFrom }) => {
               style={{ position: 'absolute' }}
               className="w-full h-full -z-10 top-0"
             />
-          </div>
-        )}
+        </div>
         {isDesktop && <Video />}
         <Container>
           <div className={content}>

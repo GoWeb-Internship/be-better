@@ -45,6 +45,7 @@ img {
 }
 
 /* phone-input styles */
+
 .react-tel-input .country-list .search-box {
   @apply !-ml-10 !w-[256px] desktop:!w-[300px] !pl-8 !border-x-transparent !border-t-transparent !border-b-main text-main !shadow-none;
 }

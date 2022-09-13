@@ -26,10 +26,10 @@ const AboutYou = () => {
 
   return (
     <div className={container}>
-      {data.map(node => (
-        <>
+      {data.map((node, id) => (
+        <React.Fragment key={id}>
           {node.frontmatter.language === i18n.language && (
-            <div key={node.frontmatter.language}>
+            <div>
               <Heading
                 className={title}
                 tag="h2"
@@ -41,7 +41,7 @@ const AboutYou = () => {
               />
             </div>
           )}
-        </>
+        </React.Fragment>
       ))}
     </div>
   );

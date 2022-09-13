@@ -8,6 +8,7 @@ import {
   changeTitle,
   discountStyle,
   discount,
+  button,
 } from './Change.module.css';
 import FormInModal from '../Form/FormInModal';
 import Section from '../reusableComponents/Section';
@@ -17,7 +18,6 @@ import Heading from '../reusableComponents/Heading';
 const Change = () => {
   const { i18n } = useTranslation();
   const [modal, setModal] = useState(false);
-  const [currentChange, setCurrentChange] = useState('');
   const { t } = useTranslation();
   const buttonTranslate = t('littleComponents', { returnObjects: true });
 
@@ -33,18 +33,6 @@ const Change = () => {
             language
           }
           id
-        }
-      }
-      avatarFM: file(name: { eq: "fon-min" }) {
-        id
-        publicURL
-        childImageSharp {
-          id
-          gatsbyImageData(
-            placeholder: BLURRED
-            formats: [AUTO, WEBP, AVIF]
-            layout: CONSTRAINED
-          )
         }
       }
       avatarMin: file(name: { eq: "fontwo-min" }) {
@@ -98,13 +86,9 @@ const Change = () => {
     }
   `);
   const data = markdown.text.nodes;
-
-  const avatarFMin = markdown.avatarFM.childImageSharp.gatsbyImageData;
   const avatarJl = markdown.avatarJulia.childImageSharp.gatsbyImageData;
 
-
-  const showModal = change => {
-    setCurrentChange(change);
+  const showModal = () => {
     setModal(true);
   };
   const hideModal = () => {
@@ -121,10 +105,10 @@ const Change = () => {
           return (
             <>
               <div
-                className="relative mb-24 laptop:mt-24"
+                className="mb-24 laptop:mt-24"
                 id={node.frontmatter.language}
               >
-                <div className="ml-[165px]  -z-10  laptop:ml-[265px] laptop:-mt-40 desktop:ml-[404px] ">
+                <div className="ml-[165px] -z-10 laptop:ml-[265px] laptop:-mt-40 desktop:ml-[404px] ">
                   <StaticImage
                     layout="fullWidth"
                     src="../../images/fon-min.png"
@@ -147,7 +131,7 @@ const Change = () => {
                 <div className="tablet:hidden desktop:block">
                   <StaticImage
                     layout="fullWidth"
-                    src="../../images/background/about.png"
+                    src="../../images/background/about.jpg"
                     alt="background"
                     style={{ position: 'absolute' }}
                     className="-z-20 w-[1440px] h-[750px] mt-6   desktop:mt-[149px]"
@@ -167,7 +151,6 @@ const Change = () => {
                     className="w-[280px] h-[280px] -ml-44 rounded-2xl laptop:w-[310px] laptop:h-[442px] desktop:w-[480px] desktop:h-[734px] desktop:pr-[60px] desktop:-ml-[600px] desktop:-mt-[40px] desktop:pb-[80px]"
                   />
                 </div>
-
                 <div className="desktop:hidden">
                   <StaticImage
                     src="../../images/union-min.png"
@@ -177,33 +160,26 @@ const Change = () => {
                     formats={['auto', 'webp', 'avif']}
                   />
                 </div>
-                <div className="flex ">
                   <div className="flex justify-between">
-                    <div>
                       <div className="float-left desktop:ml-[150px] desktop:mr-[100px]">
                         <div className={text}>
-                          <div>
                             <div
-                              className="laptop:-mt-[255px] desktop:w-[524px] desktop:ml-[108px]  desktop:-mt-[255px]  float-left block"
+                              className="laptop:-mt-[255px] laptop:mb-16 desktop:w-[524px] float-left block"
                               key={node.frontmatter.language}
                               dangerouslySetInnerHTML={{ __html: node.html }}
                             />
-                          </div>
-                          <div className="desktop:ml-[100px] desktop:!w-[350px] ">
                             <WithDiscount
                               classnameText={discountStyle}
                               classnameDiscount={discount}
                             />
-                          </div>
                         </div>
                         <Button
                           type="button"
-                          className="!bg-mainSecond border px-16 !ml-8 desktop:!ml-28 py-2 rounded-3xl hover:!bg-[#d46828] focus:!bg-[#d46828] focus:outline-none ease-in duration-300 laptop:!ml-[80px]"
+                          className={button}
                           doAction={() => showModal()}
                         >
                           {buttonTranslate.button}
                         </Button>
-                      </div>
                     </div>
                     {modal && (
                       <FormInModal
@@ -213,8 +189,7 @@ const Change = () => {
                     )}
                   </div>
                 </div>
-              </div>
-            </>
+         </>
           );
         }
       })}

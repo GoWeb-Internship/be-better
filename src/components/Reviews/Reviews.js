@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react';
 import { useMedia } from 'react-use';
 import { SwiperSlide } from 'swiper/react';
 import { useTranslation } from 'gatsby-plugin-react-i18next';
-import Section from '../reusableComponents/Section';
 import Slider from '../reusableComponents/Slider';
 import { graphql, useStaticQuery } from 'gatsby';
 import { title, sliderRev } from './Reviews.module.css';
@@ -44,7 +43,6 @@ const Reviews = () => {
   const clients = allMarkdownRemark.nodes;
 
   const isMobile = useMedia('(max-width:767px)');
-
   const isDesktop = useMedia('(min-width:1440px)');
 
   useEffect(() => {

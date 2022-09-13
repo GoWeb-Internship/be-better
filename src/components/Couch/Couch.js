@@ -12,7 +12,6 @@ import {
   button,
 } from './Couch.module.css';
 import Button from '../reusableComponents/Button';
-// import FormInModal from '../Form/FormInModal';
 import { useMedia } from 'react-use';
 import loadable from '@loadable/component';
 import Heading from '../reusableComponents/Heading';
@@ -21,7 +20,6 @@ const FormInModal = loadable(() => import('../Form/FormInModal'));
 
 const Couch = () => {
   const [modal, setModal] = useState(false);
-  const [currentChange, setCurrentChange] = useState('');
   const { t } = useTranslation();
   const form = t('form', { returnObjects: true });
   const couch = t('couch', { returnObjects: true });
@@ -89,8 +87,7 @@ const Couch = () => {
   const skyscraper = foto.skyscraper.childImageSharp.gatsbyImageData;
   const skyscraperMob = foto.skyscraperMob.childImageSharp.gatsbyImageData;
 
-  const showModal = change => {
-    setCurrentChange(change);
+  const showModal = () => {
     setModal(true);
   };
   const hideModal = () => {
@@ -100,7 +97,6 @@ const Couch = () => {
     <Section className={couchContainer} id="couch">
       <div className={flexContainer}>
         <div className="flex laptop:block">
-          {/* <h2 className={`${title} laptop:hidden`}>{couch.title}</h2> */}
           <Heading
             tag="h2"
             className={`${title} laptop:hidden`}
@@ -123,7 +119,6 @@ const Couch = () => {
 
         <div>
           <div className="laptop:w-[310px] desktop:w-[326px] relative laptop:leading-[1.36]">
-            {/* <h3 className={`${title} hidden laptop:block`}>{couch.title}</h3> */}
             <Heading
               tag="h2"
               className={`${title} hidden laptop:block`}

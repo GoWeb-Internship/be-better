@@ -1,19 +1,13 @@
 .titleFacts {
-  @apply text-main text-xl pl-[15px] pr-[15px] font-medium laptop:font-semibold laptop:text-4xl  text-center laptop:w-[68%] laptop:ml-32 laptop:pl-6 desktop:pl-20 desktop:ml-0 desktop:w-[100%]  pt-[2rem] desktop:pt-20 -top-20 max-w-7xl laptop:mb-4 desktop:mb-0;
+  @apply text-main text-xl pl-[15px] pr-[15px] font-medium laptop:font-semibold laptop:text-4xl text-center desktop:pl-20 desktop:ml-0 desktop:w-[100%] -top-20 max-w-7xl laptop:mb-4 desktop:mb-0;
 }
 
 .listFacts {
-  @apply flex  text-sm pr-4 w-full min-w-min justify-center flex-wrap text-start pb-32  desktop:pb-24  pt-2  desktop:flex-nowrap;
+  @apply relative flex flex-wrap justify-center w-full min-w-min text-sm pr-4 pb-8 desktop:max-w-7xl text-start desktop:pb-24 pt-2 desktop:flex-nowrap;
 }
 
-.listFacts {
-  @apply flex  text-sm pr-4 desktop:max-w-7xl text-start  pb-24  pt-2;
-}
-.listFacts {
-  @apply relative desktop:w-48 desktop:flex mt-0;
-}
 .listFacts li {
-  @apply pt-[16px] pl-[16px] relative;
+  @apply pt-4 pl-4 relative;
 }
 
 .listFacts li:nth-child(1) {
@@ -38,7 +32,7 @@
 }
 
 .textPr {
-  @apply text-main list-none  list-inside font-normal text-sm  text-sm;
+  @apply text-main list-none  list-inside font-normal text-sm;
 }
 
 .textContainer {

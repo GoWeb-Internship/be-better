@@ -1,27 +1,25 @@
 .changeTitle {
-  @apply tablet:text-xl tablet:font-medium pl-[20px] pr-[20px] text-orangeDark pt-[37px] text-center mb-[32px] laptop:font-semibold laptop:text-4xl laptop:w-[310px] laptop:pt-[20px] laptop:mb-[16px] laptop:pl-[80px] laptop:text-start desktop:w-[600px] desktop:pl-[188px] desktop:pt-[92px] desktop:mr-[40px]
+  @apply tablet:text-xl tablet:font-medium pl-[20px] pr-[20px] text-orangeDark pt-[37px] text-center mb-[32px] laptop:font-semibold laptop:text-4xl laptop:w-[310px] laptop:pt-[20px] laptop:mb-[16px] laptop:pl-20 laptop:text-start desktop:w-[600px] desktop:pt-[92px] desktop:mr-[40px]
 }
 .text {
-  @apply font-normal  text-sm laptop:text-base text-start max-w-3xl tablet:pt-72 pl-[20px] pr-[20px] desktop:w-[524px] desktop:pr-[60px];
+  @apply font-normal  text-sm laptop:text-base text-start max-w-3xl tablet:pt-72 pl-[20px] pr-[20px] desktop:px-0;
 }
 .discountStyle {
-  @apply    text-change  text-2xl text-mainSecond pt-[16px] pb-[16px] laptop:!w-[690px] desktop:pl-[70px] desktop:pr-0 desktop:!w-[440px]
+  @apply text-change text-2xl text-mainSecond pt-[16px] pb-[16px] laptop:!w-[690px] laptop:mb-8 desktop:pl-[70px] desktop:pr-0 desktop:!w-[440px]
 }
 .discount {
   @apply text-black font-semibold;
 }
 .text p{
-  @apply pb-[8px] laptop:pl-[63px] laptop:pr-[64px]  desktop:pl-0 desktop:pr-0 desktop:mb-[12px]
+  @apply pb-2 laptop:px-16 desktop:px-0 desktop:mb-[12px]
 }
 .text p:nth-child(1){
   @apply laptop:w-96 laptop:pr-[21px] desktop:w-[524px] desktop:pr-0
 }
-.text p:nth-child(4){
-  @apply  desktop:pb-[24px]
+.button {
+  @apply !bg-mainSecond border px-16 !ml-8 desktop:!ml-0 py-2 rounded-3xl hover:!bg-[#d46828] focus:!bg-[#d46828] focus:outline-none ease-in duration-300 laptop:!ml-[80px];
 }
-.text p:nth-child(5){
-  @apply  desktop:ml-[100px] desktop:w-[440px]
-}
+/* Form */
 .modalform {
   @apply w-80 pt-10 text-base desktop:w-[440px] desktop:h-[560px] desktop:pt-14 bg-background;
 }

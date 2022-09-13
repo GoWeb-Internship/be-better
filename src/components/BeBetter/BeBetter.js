@@ -1,5 +1,5 @@
 import React from 'react';
-import { StaticImage, GatsbyImage } from 'gatsby-plugin-image';
+import { GatsbyImage } from 'gatsby-plugin-image';
 import { graphql, useStaticQuery } from 'gatsby';
 import { useTranslation } from 'gatsby-plugin-react-i18next';
 import {
@@ -73,14 +73,10 @@ const BeBetter = () => {
   `);
 
   const data = allMarkdownRemark.text.nodes;
-
-
-
   const avatar = allMarkdownRemark.avatarMin.childImageSharp.gatsbyImageData;
   const avatarThree = allMarkdownRemark.avatarTh.childImageSharp.gatsbyImageData;
   const avatarBocalu = allMarkdownRemark.avatarBoc.childImageSharp.gatsbyImageData;
 
- 
   return (
     <Section className={beBetterSection} id="be-better">
       <div className={containerBeBetter}>

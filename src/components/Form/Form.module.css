@@ -41,7 +41,7 @@
 
 .input:focus + .label,
 .input:not(:placeholder-shown) + .label {
-  @apply text-xs text-main -translate-y-5;
+  @apply text-xs text-main bg-white -translate-y-5;
 }
 
 .checkbox {

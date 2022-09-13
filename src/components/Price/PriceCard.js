@@ -8,6 +8,7 @@ import {
   economyStyle,
   buttonStyled,
 } from './Price.module.css';
+import { preloadModalPriceWindow } from '../../services/preloader';
 
 const PriceCard = ({ priceData = {}, onClick }) => {
   const { t, i18n } = useTranslation();
@@ -36,6 +37,8 @@ const PriceCard = ({ priceData = {}, onClick }) => {
         type="button"
         className={buttonStyled}
         doAction={() => onClick(priceData.price)}
+        onMouseOver={preloadModalPriceWindow}
+        onTouchStart={preloadModalPriceWindow}
       >
         {buttonTranslate.button}
       </Button>

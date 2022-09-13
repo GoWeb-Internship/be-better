@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
-import { BsPerson } from 'react-icons/bs';
 import {
   reviewContainer,
   textContainer,
@@ -33,7 +32,7 @@ const Review = ({ frontmatter }) => {
       }
     };
     showScroll();
-  }, [overflow, limitText]);
+  }, [overflow, limitText, frontmatter, i18n.language]);
 
   useEffect(() => {
     if (isMobile) {

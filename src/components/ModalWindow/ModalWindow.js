@@ -6,10 +6,7 @@ import sprite from '../../images/sprite.svg';
 const ModalWindow = ({ children, className = '', handleClose }) => {
   const onClose = useCallback(
     e => {
-      if (
-        e.code === 'Escape' ||
-        e.target.className === 'ModalWindow-module--backdrop--d9jgE'
-      ) {
+      if (e.code === 'Escape' || e.target.id === 'modal-backdrop') {
         handleClose();
       }
     },
@@ -29,7 +26,7 @@ const ModalWindow = ({ children, className = '', handleClose }) => {
   }, [onClose, handleClose]);
 
   return (
-    <div className={backdrop}>
+    <div className={backdrop} id="modal-backdrop">
       <div className={`${modal} ${className}`}>
         {children}
         <button className={icon} type="button" onClick={handleClose}>
@@ -45,6 +42,6 @@ const ModalWindow = ({ children, className = '', handleClose }) => {
 ModalWindow.propTypes = {
   className: PropTypes.string,
   handleClose: PropTypes.func.isRequired,
-}
+};
 
 export default ModalWindow;

@@ -1,6 +1,17 @@
+const path = require('path');
+
 require('dotenv').config({
   path: `.env.${process.env.NODE_ENV}`,
 });
+
+const gatsbyRequiredRules = path.join(
+  process.cwd(),
+  'node_modules',
+  'gatsby',
+  'dist',
+  'utils',
+  'eslint-rules'
+);
 
 module.exports = {
   siteMetadata: {
@@ -10,6 +21,7 @@ module.exports = {
     siteUrl: `https://be-better.netlify.app`,
   },
   plugins: [
+    `gatsby-plugin-webpack-bundle-analyser-v2`,
     `gatsby-transformer-remark`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
@@ -120,6 +132,15 @@ module.exports = {
           keySeparator: false,
           nsSeparator: false,
         },
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-eslint',
+      options: {
+        rulePaths: [gatsbyRequiredRules],
+        stages: ['develop'],
+        extensions: ['js', 'jsx', 'ts', 'tsx'],
+        exclude: ['node_modules', 'bower_components', '.cache', 'public'],
       },
     },
   ],

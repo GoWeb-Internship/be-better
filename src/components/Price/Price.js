@@ -5,8 +5,11 @@ import { container, list, item, title, donation } from './Price.module.css';
 import { useTranslation } from 'gatsby-plugin-react-i18next';
 import PriceCard from './PriceCard';
 import Donations from '../Donations';
-import ModalPriceWindow from './ModalPriceWindow';
+// import ModalPriceWindow from './ModalPriceWindow';
 import Heading from '../reusableComponents/Heading';
+import loadable from '@loadable/component';
+
+const ModalPriceWindow = loadable(() => import('./ModalPriceWindow'));
 
 const Price = () => {
   const [modal, setModal] = useState(false);

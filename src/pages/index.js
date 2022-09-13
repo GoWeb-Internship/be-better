@@ -1,7 +1,6 @@
 import * as React from 'react';
 import 'react-phone-input-2/lib/style.css';
 import Seo from '../components/seo';
-// import loadable from '@loadable/component';
 import { graphql } from 'gatsby';
 import Layout from '../components/Layout';
 import Price from '../components/Price';
@@ -15,7 +14,6 @@ import Hero from '../components/Hero';
 import FormInMain from '../components/Form/FormInMain';
 import BeBetter from '../components/BeBetter';
 import Change from '../components/Change';
-// import StepsAdd from '../components/StepsAdd';
 import Couch from '../components/Couch';
 import WhyStepsAdd from '../components/WhyStepsAdd';
 import Steps from '../components/Steps';

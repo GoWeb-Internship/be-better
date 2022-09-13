@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
+import loadable from '@loadable/component';
 import { StaticImage, GatsbyImage } from 'gatsby-plugin-image';
-import Button from '../reusableComponents/Button';
 import { graphql, useStaticQuery } from 'gatsby';
 import { useTranslation } from 'gatsby-plugin-react-i18next';
 import {
@@ -9,10 +9,14 @@ import {
   discountStyle,
   discount,
 } from './Change.module.css';
-import FormInModal from '../Form/FormInModal';
+// import FormInModal from '../Form/FormInModal';
+import Button from '../reusableComponents/Button';
 import Section from '../reusableComponents/Section';
 import WithDiscount from '../reusableComponents/WithDiscount';
 import Heading from '../reusableComponents/Heading';
+import { preloadFormInModal } from '../../services/preloader';
+
+const FormInModal = loadable(() => import('../Form/FormInModal'));
 
 const Change = () => {
   const { i18n } = useTranslation();
@@ -102,7 +106,6 @@ const Change = () => {
   const avatarFMin = markdown.avatarFM.childImageSharp.gatsbyImageData;
   const avatarJl = markdown.avatarJulia.childImageSharp.gatsbyImageData;
 
-
   const showModal = change => {
     setCurrentChange(change);
     setModal(true);
@@ -112,10 +115,7 @@ const Change = () => {
   };
 
   return (
-    <Section
-      className="desktop:h-[880px]"
-      id="change"
-    >
+    <Section className="desktop:h-[880px]" id="change">
       {data.map(node => {
         if (node.frontmatter.language === i18n.language) {
           return (
@@ -159,7 +159,7 @@ const Change = () => {
                   className={changeTitle}
                   text={node.frontmatter.title}
                 />
-                  <div className="laptop:float-right laptop:-mt-40 display:block desktop:-mt-[77px] desktop:-mr-[20px]">
+                <div className="laptop:float-right laptop:-mt-40 display:block desktop:-mt-[77px] desktop:-mr-[20px]">
                   <GatsbyImage
                     image={avatarJl}
                     alt="julia"
@@ -200,6 +200,8 @@ const Change = () => {
                           type="button"
                           className="!bg-mainSecond border px-16 !ml-8 desktop:!ml-28 py-2 rounded-3xl hover:!bg-[#d46828] focus:!bg-[#d46828] focus:outline-none ease-in duration-300 laptop:!ml-[80px]"
                           doAction={() => showModal()}
+                          onMouseOver={preloadFormInModal}
+                          onTouchStart={preloadFormInModal}
                         >
                           {buttonTranslate.button}
                         </Button>

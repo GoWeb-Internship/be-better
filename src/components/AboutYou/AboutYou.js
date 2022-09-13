@@ -26,9 +26,9 @@ const AboutYou = () => {
 
   return (
     <div className={container}>
-      {data.map(node => {
-        if (node.frontmatter.language === i18n.language) {
-          return (
+      {data.map(node => (
+        <>
+          {node.frontmatter.language === i18n.language && (
             <div key={node.frontmatter.language}>
               <Heading
                 className={title}
@@ -40,9 +40,9 @@ const AboutYou = () => {
                 dangerouslySetInnerHTML={{ __html: node.html }}
               />
             </div>
-          );
-        }
-      })}
+          )}
+        </>
+      ))}
     </div>
   );
 };

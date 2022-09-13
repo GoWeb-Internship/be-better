@@ -16,7 +16,6 @@ const ClientHistory = () => {
   const [size, setSize] = useState(120);
 
   const isMobile = useMedia('(max-width:767px)');
-
   const isDesktop = useMedia('(min-width:1440px)');
 
   useEffect(() => {

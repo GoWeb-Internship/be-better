@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import loadable from '@loadable/component';
 import { useMedia } from 'react-use';
-import { graphql, useStaticQuery } from 'gatsby';
 import { useTranslation } from 'gatsby-plugin-react-i18next';
+import { graphql, useStaticQuery } from 'gatsby';
 
 import Heading from '../reusableComponents/Heading';
 import ObserverWrapper from '../ObserverWrapper/ObserverWrapper';
@@ -47,7 +47,6 @@ const Reviews = () => {
   const clients = allMarkdownRemark.nodes;
 
   const isMobile = useMedia('(max-width:767px)');
-
   const isDesktop = useMedia('(min-width:1440px)');
 
   useEffect(() => {

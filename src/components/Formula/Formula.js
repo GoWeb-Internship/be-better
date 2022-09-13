@@ -34,13 +34,11 @@ const Formula = () => {
       />
       <div>
         <Heading tag="h2" className={title} text={data.title} />
-        {/* <h2 className={title}>{data.title}</h2> */}
-
         {!!data.list.length && (
           <ul className={listFormula}>
-            {data.list.map(({ svg, firstWord, colorWord, thirdWord }) => {
+            {data.list.map(({ svg, firstWord, colorWord, thirdWord }, idx) => {
               return (
-                <li key={icons} className={formulaContainer}>
+                <li key={`${icons}-${idx}`} className={formulaContainer}>
                   <div className={itemFormula}>
                     <div className={textContainerFormula}>
                       <div className={svgContainerFormula}>
@@ -59,7 +57,6 @@ const Formula = () => {
                         <use href={`${icons}#icon-${svg}`} />
                       </svg>
                     </div>
-
                     <IoIosArrowRoundDown size={60} className={iconArrow} />
                   </div>
                 </li>

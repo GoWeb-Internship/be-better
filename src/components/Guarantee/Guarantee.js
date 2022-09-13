@@ -40,7 +40,6 @@ const Guarantee = () => {
                 className={title}
                 text={node.frontmatter.title}
               />
-              {/* <h2 className={title}>{node.frontmatter.title}</h2> */}
               <div
                 dangerouslySetInnerHTML={{ __html: node.html }}
                 className={text}

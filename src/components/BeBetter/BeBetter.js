@@ -75,7 +75,6 @@ const BeBetter = () => {
   `);
 
   const data = allMarkdownRemark.text.nodes;
-
   const avatar = allMarkdownRemark.avatarMin.childImageSharp.gatsbyImageData;
   const avatarThree =
     allMarkdownRemark.avatarTh.childImageSharp.gatsbyImageData;

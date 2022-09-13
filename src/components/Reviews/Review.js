@@ -18,7 +18,6 @@ const Review = ({ frontmatter }) => {
   const { i18n } = useTranslation();
 
   const isMobile = useMedia('(max-width:767px)');
-
   const isDesktop = useMedia('(min-width:1440px)');
 
   useEffect(() => {
@@ -60,6 +59,7 @@ const Review = ({ frontmatter }) => {
       <div className={authorContainer}>
         <GatsbyImage
           image={image}
+          alt="avatar"
           className={
             isDesktop ? `${avatarDesk} mr-2 laptop:mr-6` : `${avatarMob}`
           }

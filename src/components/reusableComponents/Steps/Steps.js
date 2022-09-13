@@ -25,7 +25,7 @@ const stepsIcons = [
   <AiOutlineSearch />,
   <BsCalendarCheck />,
 ];
-const Steps = ({ icons = '', data = {}, img = '', icon = '' }) => {
+const Steps = ({ icons = '', data = {}}) => {
   const isTablet = useMedia('(min-width: 768px)');
 
   return (

@@ -1,5 +1,7 @@
 import React from 'react';
 import { IconContext } from 'react-icons';
+import { useMedia } from 'react-use';
+
 import {
   titleFacts,
   listFacts,
@@ -9,7 +11,7 @@ import {
   iconClass,
   testSec,
 } from './Page.module.css';
-import { useMedia } from 'react-use';
+
 import { FaRocketchat } from 'react-icons/fa';
 import { MdBookmarks, MdCenterFocusWeak } from 'react-icons/md';
 import { CgArrowAlignV } from 'react-icons/cg';

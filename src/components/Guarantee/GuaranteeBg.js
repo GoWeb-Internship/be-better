@@ -1,8 +1,15 @@
 import React from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
 import { GatsbyImage } from 'gatsby-plugin-image';
-import {icon, photoMobile, photoTablet, photoDesktop} from './Guarantee.module.css';
-import icons from '../../images/sprite.svg';
+
+import {
+  icon,
+  photoMobile,
+  photoTablet,
+  photoDesktop,
+} from './Guarantee.module.css';
+
+import icons from 'images/sprite.svg';
 
 const GuaranteeBg = () => {
   const foto = useStaticQuery(graphql`
@@ -36,7 +43,8 @@ const GuaranteeBg = () => {
 
   const mobileGuarantee = foto.guaranteeMobile.childImageSharp.gatsbyImageData;
   const tabletGuarantee = foto.guaranteeLaptop.childImageSharp.gatsbyImageData;
-  const desktopGuarantee = foto.guaranteeDesktop.childImageSharp.gatsbyImageData;
+  const desktopGuarantee =
+    foto.guaranteeDesktop.childImageSharp.gatsbyImageData;
 
   return (
     <div>

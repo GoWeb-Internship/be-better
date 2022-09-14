@@ -1,6 +1,11 @@
 import React from 'react';
-import { useTranslation } from 'gatsby-plugin-react-i18next';
 import PropTypes from 'prop-types';
+import { useTranslation } from 'gatsby-plugin-react-i18next';
+
+import Heading from 'components/reusableComponents/Heading';
+import JustForm from './JustForm';
+import ModalWindow from 'components/ModalWindow';
+
 import {
   modalform,
   modaltitle,
@@ -12,9 +17,6 @@ import {
   formMargins,
   formSee,
 } from './Form.module.css';
-import JustForm from './JustForm';
-import ModalWindow from '../ModalWindow';
-import Heading from '../reusableComponents/Heading';
 
 const FormInModal = ({ hideModal, currentPlace = '' }) => {
   const [successMessage, setSuccessMessage] = React.useState(false);

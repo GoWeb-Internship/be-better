@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Heading from '../Heading';
+import Heading from 'components/reusableComponents/Heading';
 
 const MarkdownList = ({ listClassName, titleClassName, data, tag }) => {
   return (

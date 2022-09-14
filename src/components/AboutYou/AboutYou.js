@@ -1,8 +1,10 @@
 import React from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
-import { title, container, listContainer } from './AboutYou.module.css';
 import { useTranslation } from 'gatsby-plugin-react-i18next';
-import MarkdownList from '../reusableComponents/MarkdownList';
+
+import MarkdownList from 'components/reusableComponents/MarkdownList';
+
+import { title, container, listContainer } from './AboutYou.module.css';
 
 const AboutYou = () => {
   const { i18n } = useTranslation();

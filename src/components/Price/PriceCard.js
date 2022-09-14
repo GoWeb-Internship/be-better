@@ -1,14 +1,16 @@
 import React from 'react';
-import { useTranslation } from 'react-i18next';
-import Button from '../reusableComponents/Button';
 import PropTypes from 'prop-types';
+import { useTranslation } from 'react-i18next';
+import Button from 'components/reusableComponents/Button';
+
+import { preloadModalPriceWindow } from 'services/preloader';
+
 import {
   subscription,
   priceStyle,
   economyStyle,
   buttonStyled,
 } from './Price.module.css';
-import { preloadModalPriceWindow } from '../../services/preloader';
 
 const PriceCard = ({ priceData = {}, onClick }) => {
   const { t, i18n } = useTranslation();

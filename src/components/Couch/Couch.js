@@ -1,8 +1,16 @@
 import React, { useState } from 'react';
-import Section from '../reusableComponents/Section';
-import { GatsbyImage } from 'gatsby-plugin-image';
-import { useTranslation } from 'gatsby-plugin-react-i18next';
 import { graphql, useStaticQuery } from 'gatsby';
+import loadable from '@loadable/component';
+import { useTranslation } from 'gatsby-plugin-react-i18next';
+import { GatsbyImage } from 'gatsby-plugin-image';
+import { useMedia } from 'react-use';
+
+import Section from 'components/reusableComponents/Section';
+import Heading from 'components/reusableComponents/Heading';
+import Button from 'components/reusableComponents/Button';
+
+import { preloadFormInModal } from 'services/preloader';
+
 import {
   couchContainer,
   flexContainer,
@@ -11,13 +19,8 @@ import {
   caveat,
   button,
 } from './Couch.module.css';
-import Button from '../reusableComponents/Button';
-import { useMedia } from 'react-use';
-import loadable from '@loadable/component';
-import Heading from '../reusableComponents/Heading';
-import { preloadFormInModal } from '../../services/preloader';
 
-const FormInModal = loadable(() => import('../Form/FormInModal'));
+const FormInModal = loadable(() => import('components/Form/FormInModal'));
 
 const Couch = () => {
   const [modal, setModal] = useState(false);

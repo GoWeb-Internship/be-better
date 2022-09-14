@@ -2,9 +2,11 @@ import React from 'react';
 import { useMedia } from 'react-use';
 import { Swiper } from 'swiper/react';
 import { Navigation, EffectFade, Pagination } from 'swiper';
+
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
+
 import { BsChevronLeft, BsChevronRight } from 'react-icons/bs';
 
 const Slider = ({ children, slidesPerView, className = '' }) => {

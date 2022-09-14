@@ -5,7 +5,7 @@ import { StaticImage } from 'gatsby-plugin-image';
 import { useTranslation } from 'gatsby-plugin-react-i18next';
 import Container from '../Container';
 import { Link } from 'gatsby';
-import Heading from '../reusableComponents/Heading';
+import Heading from 'components/reusableComponents/Heading';
 
 const Pk = () => {
   const { i18n } = useTranslation();

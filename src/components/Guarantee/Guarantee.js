@@ -1,10 +1,12 @@
 import React from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
 import { useTranslation } from 'gatsby-plugin-react-i18next';
-import { guarantee, title, text } from './Guarantee.module.css';
-import Section from '../reusableComponents/Section';
+
+import Section from 'components/reusableComponents/Section';
 import GuaranteeBg from './GuaranteeBg';
-import MarkdownList from '../reusableComponents/MarkdownList';
+import MarkdownList from 'components/reusableComponents/MarkdownList';
+
+import { guarantee, title, text } from './Guarantee.module.css';
 
 const Guarantee = () => {
   const { i18n } = useTranslation();

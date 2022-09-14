@@ -1,16 +1,16 @@
 import loadable from '@loadable/component';
 
-const FormInModal = loadable(() => import('../components/Form/FormInModal'));
+const FormInModal = loadable(() => import('components/Form/FormInModal'));
 
 const ModalPriceWindow = loadable(() =>
-  import('../components/Price/ModalPriceWindow')
+  import('components/Price/ModalPriceWindow')
 );
 
 const ClientHistoryList = loadable(() =>
-  import('../components/ClientHistory/ClientHistoryList')
+  import('components/ClientHistory/ClientHistoryList')
 );
 
-const ReviewsList = loadable(() => import('../components/Reviews/ReviewsList'));
+const ReviewsList = loadable(() => import('components/Reviews/ReviewsList'));
 
 export const handleMenuClickPreload = () => {
   ClientHistoryList.preload();

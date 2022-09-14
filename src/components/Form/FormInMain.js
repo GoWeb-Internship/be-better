@@ -1,8 +1,16 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { useTranslation } from 'gatsby-plugin-react-i18next';
 import { StaticImage } from 'gatsby-plugin-image';
 import { useMedia } from 'react-use';
-import PropTypes from 'prop-types';
+
+import Section from 'components/reusableComponents/Section';
+import Container from 'components/Container';
+import Video from 'components/Video';
+import Form from './Form';
+import Social from 'components/Social';
+import WithDiscount from 'components/reusableComponents/WithDiscount';
+
 import {
   mainContainer,
   mobContainer,
@@ -18,12 +26,6 @@ import {
   discount,
   sociaListlInMain,
 } from './Form.module.css';
-import Section from '../reusableComponents/Section';
-import Container from '../Container';
-import Video from '../Video';
-import Form from './Form';
-import Social from '../Social';
-import WithDiscount from '../reusableComponents/WithDiscount';
 
 const FormInMain = ({ clickFrom }) => {
   const { t } = useTranslation();
@@ -43,13 +45,13 @@ const FormInMain = ({ clickFrom }) => {
           />
         </div>
         <div className={tabContainer}>
-            <StaticImage
-              layout="fullWidth"
-              src="../../images/background/formTablet.jpg"
-              alt="tablet form background"
-              style={{ position: 'absolute' }}
-              className="w-full h-full -z-10 top-0"
-            />
+          <StaticImage
+            layout="fullWidth"
+            src="../../images/background/formTablet.jpg"
+            alt="tablet form background"
+            style={{ position: 'absolute' }}
+            className="w-full h-full -z-10 top-0"
+          />
         </div>
         {isDesktop && <Video />}
         <Container>

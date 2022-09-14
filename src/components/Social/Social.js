@@ -1,7 +1,9 @@
 import React from 'react';
-import { FaLinkedinIn, FaFacebookF, FaInstagram } from 'react-icons/fa';
 import PropTypes from 'prop-types';
+
 import { list, link } from './Social.module.css';
+
+import { FaLinkedinIn, FaFacebookF, FaInstagram } from 'react-icons/fa';
 
 const Social = ({ classNameList = '', classNameLink = '' }) => {
   return (

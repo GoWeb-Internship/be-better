@@ -1,13 +1,15 @@
-import * as React from 'react';
-import { useForm, Controller } from 'react-hook-form';
-import * as yup from 'yup';
-import useFormPersist from 'react-hook-form-persist';
-import { yupResolver } from '@hookform/resolvers/yup';
-import { useTranslation } from 'gatsby-plugin-react-i18next';
-import PhoneInput from 'react-phone-input-2';
+import React from 'react';
 import PropTypes from 'prop-types';
+import { useTranslation } from 'gatsby-plugin-react-i18next';
+import { useForm, Controller } from 'react-hook-form';
+import useFormPersist from 'react-hook-form-persist';
+import * as yup from 'yup';
+import { yupResolver } from '@hookform/resolvers/yup';
+
+import PhoneInput from 'react-phone-input-2';
+import Button from 'components/reusableComponents/Button';
+
 import 'react-phone-input-2/lib/style.css';
-import Button from '../reusableComponents/Button';
 import {
   form,
   input,
@@ -23,8 +25,9 @@ import {
   checkError,
   buttonF,
 } from './Form.module.css';
-import locationApi from '../../services/locationApi';
-import sendMessageToTg from '../../services/telegramApi';
+
+import locationApi from 'services/locationApi';
+import sendMessageToTg from 'services/telegramApi';
 
 const isBrowser = typeof window !== 'undefined';
 

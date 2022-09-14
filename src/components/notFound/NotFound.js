@@ -1,8 +1,11 @@
 import React from 'react';
-import { graphql, useStaticQuery } from 'gatsby';
+import { graphql, useStaticQuery, Link } from 'gatsby';
+import { useTranslation } from 'gatsby-plugin-react-i18next';
 import { GatsbyImage } from 'gatsby-plugin-image';
 import { useMedia } from 'react-use';
-import { Link } from 'gatsby';
+
+import Heading from 'components/reusableComponents/Heading';
+
 import {
   title,
   container,
@@ -13,8 +16,6 @@ import {
   link,
   img,
 } from './NotFound.module.css';
-import { useTranslation } from 'gatsby-plugin-react-i18next';
-import Heading from '../reusableComponents/Heading';
 
 const NotFound = () => {
   const isMobile = useMedia('(max-width:767px)');

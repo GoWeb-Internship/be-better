@@ -1,5 +1,9 @@
 import React, { useState, useEffect } from 'react';
+import PropTypes from 'prop-types';
 import { useTranslation } from 'react-i18next';
+import { GatsbyImage } from 'gatsby-plugin-image';
+import { useMedia } from 'react-use';
+
 import {
   reviewContainer,
   textContainer,
@@ -7,9 +11,6 @@ import {
   authorContainer,
   avatarMob,
 } from './Reviews.module.css';
-import { useMedia } from 'react-use';
-import { GatsbyImage } from 'gatsby-plugin-image';
-import PropTypes from 'prop-types';
 
 const Review = ({ frontmatter }) => {
   const [overflow, setOverflow] = useState('overflow-hidden');

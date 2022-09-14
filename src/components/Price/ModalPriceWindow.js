@@ -1,8 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { useTranslation } from 'gatsby-plugin-react-i18next';
-import ModalWindow from '../ModalWindow';
-import JustForm from '../Form/JustForm';
+
+import ModalWindow from 'components/ModalWindow';
+import JustForm from 'components/Form/JustForm';
+
 import {
   modalform,
   formtitle,
@@ -27,12 +29,8 @@ const ModalPriceWindow = ({ hideModal, currentPrice, currentRate }) => {
     <ModalWindow className={modalform} handleClose={hideModal}>
       {successMessage ? (
         <div>
-          <h2 className={titleSuccess}>
-            {modalSuccess.gratitude}{' '}
-          </h2>
-          <p className={textSuccess}>
-            {modalSuccess.text}
-          </p>
+          <h2 className={titleSuccess}>{modalSuccess.gratitude} </h2>
+          <p className={textSuccess}>{modalSuccess.text}</p>
         </div>
       ) : (
         <>
@@ -57,8 +55,8 @@ const ModalPriceWindow = ({ hideModal, currentPrice, currentRate }) => {
 };
 
 ModalPriceWindow.propTypes = {
-  hideModal:PropTypes.func.isRequired,
+  hideModal: PropTypes.func.isRequired,
   currentPrice: PropTypes.string.isRequired,
   currentRate: PropTypes.string.isRequired,
-}
+};
 export default ModalPriceWindow;

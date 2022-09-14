@@ -1,25 +1,24 @@
 import * as React from 'react';
-import 'react-phone-input-2/lib/style.css';
-import Seo from '../components/seo';
 import { graphql } from 'gatsby';
-import Layout from '../components/Layout';
-import Price from '../components/Price';
-import Formula from '../components/Formula';
-import Guarantee from '../components/Guarantee';
-import ClientHistory from '../components/ClientHistory';
-import Container from '../components/Container';
-import AboutMe from '../components/AboutMe';
-import Facts from '../components/Facts';
-import Hero from '../components/Hero';
-import FormInMain from '../components/Form/FormInMain';
-import BeBetter from '../components/BeBetter';
-import Change from '../components/Change';
-import Couch from '../components/Couch';
-import WhyStepsAdd from '../components/WhyStepsAdd';
-import Steps from '../components/Steps';
-import ButtonUp from '../components/ButtonUp';
 import { useTranslation } from 'gatsby-plugin-react-i18next';
-// import Events from '../components/scripts/Events';
+
+import Seo from 'components/seo';
+import Layout from 'components/Layout';
+import Hero from 'components/Hero';
+import Container from 'components/Container';
+import AboutMe from 'components/AboutMe';
+import Facts from 'components/Facts';
+import ClientHistory from 'components/ClientHistory';
+import Formula from 'components/Formula';
+import FormInMain from 'components/Form/FormInMain';
+import WhyStepsAdd from 'components/WhyStepsAdd';
+import Price from 'components/Price';
+import Guarantee from 'components/Guarantee';
+import Couch from 'components/Couch';
+import Steps from 'components/Steps';
+import Change from 'components/Change';
+import BeBetter from 'components/BeBetter';
+import ButtonUp from 'components/ButtonUp';
 
 const IndexPage = () => {
   const { t, i18n } = useTranslation();
@@ -34,7 +33,6 @@ const IndexPage = () => {
         lang={i18n.language}
       />
       <Layout id="home">
-        {/* <main> */}
         <Hero />
         <Container>
           <AboutMe />

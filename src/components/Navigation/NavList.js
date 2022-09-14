@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-scroll';
 import PropTypes from 'prop-types';
 import { links, active } from './Nav.module.css';
+import { handleMenuClickPreload } from '../../services/preloader';
 
 const NavList = ({ navigation }) => {
   return (
@@ -16,6 +17,8 @@ const NavList = ({ navigation }) => {
             className={links}
             activeClass={active}
             href={`${id}`}
+            onMouseOver={handleMenuClickPreload}
+            onTouchStart={handleMenuClickPreload}
           >
             {name}
           </Link>
@@ -26,9 +29,11 @@ const NavList = ({ navigation }) => {
 };
 
 NavList.propTypes = {
-  navigation: PropTypes.arrayOf(PropTypes.shape({
-    id: PropTypes.string.isRequired,
-    name: PropTypes.string.isRequired,
-  }))
-}
+  navigation: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string.isRequired,
+      name: PropTypes.string.isRequired,
+    })
+  ),
+};
 export default NavList;

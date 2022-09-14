@@ -12,16 +12,15 @@ import {
   button,
 } from './Couch.module.css';
 import Button from '../reusableComponents/Button';
-// import FormInModal from '../Form/FormInModal';
 import { useMedia } from 'react-use';
 import loadable from '@loadable/component';
 import Heading from '../reusableComponents/Heading';
+import { preloadFormInModal } from '../../services/preloader';
 
 const FormInModal = loadable(() => import('../Form/FormInModal'));
 
 const Couch = () => {
   const [modal, setModal] = useState(false);
-  const [currentChange, setCurrentChange] = useState('');
   const { t } = useTranslation();
   const form = t('form', { returnObjects: true });
   const couch = t('couch', { returnObjects: true });
@@ -89,8 +88,7 @@ const Couch = () => {
   const skyscraper = foto.skyscraper.childImageSharp.gatsbyImageData;
   const skyscraperMob = foto.skyscraperMob.childImageSharp.gatsbyImageData;
 
-  const showModal = change => {
-    setCurrentChange(change);
+  const showModal = () => {
     setModal(true);
   };
   const hideModal = () => {
@@ -188,6 +186,8 @@ const Couch = () => {
               type="button"
               className={`${button} !ml-0  !mt-12 `}
               doAction={() => showModal()}
+              onMouseOver={preloadFormInModal}
+              onTouchStart={preloadFormInModal}
             >
               {form.button}
             </Button>

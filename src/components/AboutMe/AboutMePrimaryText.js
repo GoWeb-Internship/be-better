@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-
 import Heading from '../reusableComponents/Heading';
 import AboutYou from '../AboutYou';
 import { title, textContainer, caveat } from './AboutMe.module.css';

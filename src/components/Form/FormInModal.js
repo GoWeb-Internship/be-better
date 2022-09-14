@@ -31,7 +31,6 @@ const FormInModal = ({ hideModal, currentPlace = '' }) => {
             className={modaltitle}
             text={modalSuccess.gratitude}
           />
-          {/* <h2 className={modaltitle}>{modalSuccess.gratitude} </h2> */}
           <p className={modaltext}>{modalSuccess.text}</p>
         </div>
       ) : (

@@ -38,6 +38,24 @@ const AboutYou = () => {
           );
         }
       })}
+
+      {/* {data.map((node, id) => (
+        <React.Fragment key={id}>
+          {node.frontmatter.language === i18n.language && (
+            <div>
+              <Heading
+                className={title}
+                tag="h2"
+                text={node.frontmatter.title}
+              />
+              <div
+                className={listContainer}
+                dangerouslySetInnerHTML={{ __html: node.html }}
+              />
+            </div>
+          )}
+        </React.Fragment>
+      ))} */}
     </div>
   );
 };

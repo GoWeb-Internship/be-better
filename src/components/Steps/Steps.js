@@ -11,8 +11,7 @@ const Steps = () => {
 
 
   return (
-    <Section className="pt-20 laptop:pb-16  relative" id="steps">
-      <div className="relative">
+    <Section className="laptop:pb-16" id="steps">
         <div className="relative max-h-full">
           <div className="tablet:hidden desktop:block laptop:w-[768px] ">
             <StaticImage
@@ -43,7 +42,6 @@ const Steps = () => {
            </div> 
           <List data={data} icons={svg} />
         </div>
-      </div>
     </Section>
   );
 };

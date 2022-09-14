@@ -72,10 +72,10 @@ const Pk = () => {
         />
 
         <div className="text-start h-96 block tablet:pl-5 laptop:pl-28 desktop:pl-72">
-          {data.map(node => {
+          {data.map((node, id) => {
             if (node.frontmatter.language === i18n.language) {
               return (
-                <>
+                <React.Fragment key={id}>
                   <Heading
                     tag="h1"
                     text={node.frontmatter.title}
@@ -83,11 +83,10 @@ const Pk = () => {
                   />
 
                   <div
-                    key={node.frontmatter.language}
                     className="pt-0 h-96 mt-32 tablet:mr-10 laptop:mt-34px laptop:mr-32 desktop:mt-[150px] desktop:mr-52"
                     dangerouslySetInnerHTML={{ __html: node.html }}
                   />
-                </>
+                </React.Fragment>
               );
             }
           })}

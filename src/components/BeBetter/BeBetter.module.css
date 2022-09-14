@@ -1,24 +1,22 @@
 .textBeBetter span {
-    @apply  text-left text-caveat ml-[20px] mr-[20px]   !pb-[24px] laptop:!ml-[20px] laptop:!w-[310px] desktop:!ml-[34px] desktop:!w-[373px];
+    @apply block text-caveat text-center mb-4 laptop:w-[310px] desktop:w-[400px] desktop:text-left;
   }
  
 .textBeBetter ol{
-    @apply  text-start font-normal  pl-6 pr-2 laptop:pl-8 desktop:ml-[10px] desktop:w-[476px];
+    @apply  text-start font-normal pr-2 laptop:w-[310px] desktop:ml-[10px] desktop:w-[476px] desktop:mb-16;
 }
 .textBeBetter li{
-    @apply pb-3 ml-[10px] mr-[10px] text-start font-normal text-base list-disc mb-2 marker:text-main  desktop:w-[476px]
+    @apply pb-3 ml-[10px] mr-[10px] text-start font-normal text-base list-disc mb-2 marker:text-main desktop:w-[476px];
 }
 .textBeBetter{
-    @apply font-normal text-xs laptop:w-[460px] laptop:pl-8 desktop:pl-40 desktop:w-[576px]
+    @apply font-normal text-xs desktop:pl-0 desktop:w-[576px];
 }
-.text-caveat{
-    @apply pt-40 laptop:-ml-16 desktop:-ml-6
-}
+
 .beBetterSection{
-    @apply desktop:w-[1440px] desktop:h-[800px] desktop:mt-[80px] 
+    @apply laptop:px-16 desktop:w-[1440px] desktop:h-[772px] laptop:pt-20 desktop:px-20; 
 }
 .textBeBet{
-    @apply  text-buttonMobile font-medium text-xl text-center ml-[20px] mr-[20px] pt-[32px] mb-[24px] laptop:w-[420px] laptop:mb-12 laptop:font-semibold laptop:text-4xl laptop:mr-[44px] laptop:mt-[48px]  laptop:ml-[7rem] desktop:w-[500px] desktop:ml-[194px] desktop:mb-4 desktop:text-left desktop:pr-10 
+    @apply  text-buttonMobile font-medium text-xl text-center mb-[24px] laptop:w-[420px] laptop:mb-12 laptop:font-semibold laptop:text-4xl desktop:w-[500px] desktop:ml-0 desktop:mb-4 desktop:text-left desktop:pr-10 
 }
 
 .varning{
@@ -31,16 +29,16 @@
     @apply tablet:hidden desktop:block desktop:mt-14 desktop:mb-8
 }
 .oneMin{
-    @apply tablet:hidden laptop:block desktop:w-[341] desktop:h-[240] desktop:-ml-[74px]  
+    @apply tablet:hidden desktop:block desktop:w-[384px] desktop:h-[270px] desktop:-ml-12;  
 }
 .divImg{
-    @apply tablet:hidden laptop:block  laptop:ml-28
+    @apply tablet:hidden laptop:block  laptop:ml-28;
 }
 .threeMin{
-    @apply ml-8 rounded-2xl laptop:w-[200px] laptop:h-[162px] laptop:-ml-[56px] laptop:mt-[60px] mb-4 mt-2 desktop:-ml-[70px] desktop:w-[284px] desktop:h-[280] desktop:mt-[280px]
+    @apply mb-6 rounded-2xl laptop:w-[200px] laptop:h-[162px] desktop:-ml-8 desktop:w-[284px] desktop:h-[280] desktop:mt-[280px]
 }
 .bakaluImg{
-    @apply w-[280px] h-[300px] tablet:-ml-[140px] -mt-[288px] laptop:-mt-[70px] laptop:-ml-[100px]  laptop:w-[250px] laptop:h-[382px] mr-5 rounded-2xl  desktop:w-[308] desktop:h-[440] desktop:mt-[80px] desktop:ml-[215px]  desktop:pt-[80px]
+    @apply w-[280px] h-[300px] tablet:-ml-[140px] -mt-[288px] laptop:-ml-22 laptop:-mt-[120px] laptop:w-[310px] laptop:h-[544px] mr-5 rounded-2xl  desktop:w-[308px] desktop:h-[440px] desktop:mt-[80px] desktop:ml-[255px]  desktop:pt-[80px]
 }
 .containerBeBetter{
     @apply laptop:flex mb-[48px] }

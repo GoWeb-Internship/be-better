@@ -48,3 +48,16 @@ const Guarantee = () => {
 };
 
 export default Guarantee;
+// {
+//   /* <div key={node.frontmatter.title}>
+//               <Heading
+//                 tag="h2"
+//                 className={title}
+//                 text={node.frontmatter.title}
+//               />
+//               <div
+//                 dangerouslySetInnerHTML={{ __html: node.html }}
+//                 className={text}
+//               />
+//             </div> */
+// }

@@ -88,7 +88,7 @@ const Facts = () => {
             <ul className={listFacts}>
               {data.list.map(({ textPrimary, textSecondary, bg }, index) => {
                 return (
-                  <li className={itemFacts} key={icons}>
+                  <li className={itemFacts} key={`${icons}-${index}`}>
                     <div className={svgContainerFacts}>
                       <IconContext.Provider
                         value={{

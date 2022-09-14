@@ -1,14 +1,17 @@
 import React, { useEffect, useState } from 'react';
+import loadable from '@loadable/component';
 import { useMedia } from 'react-use';
-import { SwiperSlide } from 'swiper/react';
 import { useTranslation } from 'gatsby-plugin-react-i18next';
-import Section from '../reusableComponents/Section';
-import Slider from '../reusableComponents/Slider';
 import { graphql, useStaticQuery } from 'gatsby';
-import { title, sliderRev } from './Reviews.module.css';
-import { CgQuote } from 'react-icons/cg';
-import Review from './Review';
+
 import Heading from '../reusableComponents/Heading';
+import ObserverWrapper from '../ObserverWrapper/ObserverWrapper';
+import ReviewsListSkeleton from './ReviewsListSkeleton';
+
+import { title } from './Reviews.module.css';
+import { CgQuote } from 'react-icons/cg';
+
+const ReviewsList = loadable(() => import('./ReviewsList'));
 
 const Reviews = () => {
   const [slide, setSlide] = useState(3);
@@ -44,7 +47,6 @@ const Reviews = () => {
   const clients = allMarkdownRemark.nodes;
 
   const isMobile = useMedia('(max-width:767px)');
-
   const isDesktop = useMedia('(min-width:1440px)');
 
   useEffect(() => {
@@ -71,19 +73,10 @@ const Reviews = () => {
         size={120}
       />
 
-      <Slider slidesPerView={slide} className={sliderRev}>
-        {!!clients.length &&
-          clients.map(({ frontmatter }, id) => {
-            return (
-              <SwiperSlide
-                key={id}
-                className="slide h-auto  slider-item-width "
-              >
-                <Review frontmatter={frontmatter} />
-              </SwiperSlide>
-            );
-          })}
-      </Slider>
+      <ObserverWrapper
+        component={<ReviewsList reviewsData={clients} slidesPerView={slide} />}
+        fallback={<ReviewsListSkeleton reviewsData={clients} />}
+      />
 
       {!isMobile && (
         <CgQuote

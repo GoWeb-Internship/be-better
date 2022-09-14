@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
-import { BsPerson } from 'react-icons/bs';
 import {
   reviewContainer,
   textContainer,
@@ -19,7 +18,6 @@ const Review = ({ frontmatter }) => {
   const { i18n } = useTranslation();
 
   const isMobile = useMedia('(max-width:767px)');
-
   const isDesktop = useMedia('(min-width:1440px)');
 
   useEffect(() => {
@@ -33,7 +31,7 @@ const Review = ({ frontmatter }) => {
       }
     };
     showScroll();
-  }, [overflow, limitText]);
+  }, [overflow, limitText, frontmatter, i18n.language]);
 
   useEffect(() => {
     if (isMobile) {
@@ -61,6 +59,7 @@ const Review = ({ frontmatter }) => {
       <div className={authorContainer}>
         <GatsbyImage
           image={image}
+          alt="avatar"
           className={
             isDesktop ? `${avatarDesk} mr-2 laptop:mr-6` : `${avatarMob}`
           }

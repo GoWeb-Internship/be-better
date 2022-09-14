@@ -1,5 +1,5 @@
 .container {
-  @apply pt-[36px] pb-[36px] px-5  laptop:pt-[110px] laptop:pb-[110px] desktop:pt-[112px] desktop:pb-[112px]  h-[100vh];
+  @apply pt-[36px] pb-[36px] px-5  laptop:pt-[55px] laptop:pb-[55px] desktop:pt-[112px] desktop:pb-[112px]  h-[100vh];
 }
 
 .textContainer {

@@ -1,19 +1,13 @@
 .titleFacts {
-  @apply text-mainSecondLight text-xl font-medium laptop:font-semibold laptop:text-4xl  text-center laptop:w-[68%] laptop:ml-32 laptop:pl-6 desktop:pl-0 desktop:ml-16 desktop:w-[100%]  pt-[3rem] desktop:pt-[5rem] -top-20 max-w-7xl laptop:mb-4 desktop:mb-0;
+  @apply text-mainSecondLight text-xl font-medium laptop:font-semibold laptop:text-4xl text-center laptop:w-[68%] laptop:ml-32 laptop:pl-6 desktop:pl-0 desktop:ml-16 desktop:w-[100%]  pt-[3rem] desktop:pt-[5rem] -top-20 max-w-7xl laptop:mb-4 desktop:mb-0;
 }
 .listFacts {
-  @apply flex  text-sm pr-4 pb-24 pt-2 min-w-min justify-center flex-wrap text-start desktop:pb-24 desktop:flex-nowrap;
+  @apply flex text-sm pr-4 pb-24 pt-2 min-w-min justify-center flex-wrap text-start desktop:pb-24 desktop:w-48 desktop:max-w-7xl desktop:flex-nowrap;
 }
 
-.listFacts {
-  @apply flex  text-sm pr-4 desktop:max-w-7xl text-start pb-24;
-}
-.listFacts {
-  @apply relative desktop:w-48 desktop:flex ;
-}
 
 .listFacts li {
-  @apply pt-[16px] laptop:pl-[16px] relative;
+  @apply pt-8 laptop:pl-4 relative;
 }
 
 .listFacts li:nth-child(1) {

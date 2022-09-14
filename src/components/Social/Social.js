@@ -49,4 +49,5 @@ Social.propTypes = {
   classNameList: PropTypes.string,
   classNameLink: PropTypes.string,
 };
+
 export default Social;

@@ -133,6 +133,7 @@ const Couch = () => {
             </p>
             <div className=" hidden desktop:block">
               <Button
+                id="button-couch"
                 type="button"
                 className={`${button} !mt-[180px]`}
                 doAction={() => showModal()}

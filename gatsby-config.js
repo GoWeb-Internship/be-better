@@ -64,12 +64,19 @@ module.exports = {
     //     ignore: ['react-phone-input-2/lib/bootstrap.css'],
     //   },
     // },
-    // {
-    //   resolve: `gatsby-plugin-facebook-pixel`,
-    //   options: {
-    //     pixelId: '414740170505309',
-    //   },
-    // },
+    {
+      resolve: `gatsby-plugin-facebook-pixel`,
+      options: {
+        pixelId: process.env.FACEBOOK_PIXEL_ID,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-google-tagmanager`,
+      options: {
+        id: process.env.GOOGLE_TAGMANAGER_ID,
+        includeInDevelopment: false,
+      },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {

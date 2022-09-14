@@ -2,7 +2,7 @@ import React from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
 import { useTranslation } from 'gatsby-plugin-react-i18next';
 import { title, listContainer, wayContainer } from './Way.module.css';
-import Heading from '../reusableComponents/Heading';
+import MarkdownList from '../reusableComponents/MarkdownList';
 
 const Way = () => {
   const { i18n } = useTranslation();
@@ -27,17 +27,12 @@ const Way = () => {
       {data.map(node => {
         if (node.frontmatter.language === i18n.language) {
           return (
-            <div key={node.frontmatter.language}>
-              <Heading
-                tag="h3"
-                className={title}
-                text={node.frontmatter.title}
-              />
-              <div
-                className={listContainer}
-                dangerouslySetInnerHTML={{ __html: node.html }}
-              />
-            </div>
+            <MarkdownList
+              listClassName={listContainer}
+              titleClassName={title}
+              tag="h3"
+              data={node}
+            />
           );
         }
       })}

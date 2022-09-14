@@ -121,7 +121,7 @@ const Couch = () => {
         <div>
           <div className="laptop:w-[310px] desktop:w-[326px] relative laptop:leading-[1.36]">
             <Heading
-              tag="h2"
+              tag="h3"
               className={`${title} hidden laptop:block`}
               text={couch.title}
             />

@@ -1,44 +1,60 @@
+.beBetterSection {
+  @apply bg-background py-8 px-5 laptop:px-16 desktop:w-[1440px] desktop:h-[772px] laptop:pt-20 desktop:p-20;
+}
+
+.containerBeBetter {
+  @apply laptop:flex;
+}
+
+.textBeBet {
+  @apply text-buttonMobile font-medium text-xl text-center mb-[24px] laptop:w-[420px] laptop:mb-12 laptop:font-semibold laptop:text-4xl desktop:w-[500px] desktop:ml-0 desktop:mb-4 desktop:text-left desktop:pr-10;
+}
+
 .textBeBetter span {
-    @apply block text-caveat text-center mb-4 laptop:w-[310px] desktop:w-[400px] desktop:text-left;
-  }
- 
-.textBeBetter ol{
-    @apply  text-start font-normal pr-2 laptop:w-[310px] desktop:ml-[10px] desktop:w-[476px] desktop:mb-16;
-}
-.textBeBetter li{
-    @apply pb-3 ml-[10px] mr-[10px] text-start font-normal text-base list-disc mb-2 marker:text-main desktop:w-[476px];
-}
-.textBeBetter{
-    @apply font-normal text-xs desktop:pl-0 desktop:w-[576px];
+  @apply block text-caveat text-center mb-4 laptop:w-[310px] desktop:w-[400px] desktop:text-left;
 }
 
-.beBetterSection{
-    @apply laptop:px-16 desktop:w-[1440px] desktop:h-[772px] laptop:pt-20 desktop:px-20; 
-}
-.textBeBet{
-    @apply  text-buttonMobile font-medium text-xl text-center mb-[24px] laptop:w-[420px] laptop:mb-12 laptop:font-semibold laptop:text-4xl desktop:w-[500px] desktop:ml-0 desktop:mb-4 desktop:text-left desktop:pr-10 
+.textBeBetter ul {
+  @apply text-start font-normal pr-2 laptop:w-[310px] desktop:ml-[10px] desktop:w-[476px] desktop:mb-16;
 }
 
-.varning{
-    @apply desktop:flex desktop:ml-[65px]
+.textBeBetter li {
+  @apply pb-3 ml-[10px] mr-[10px] text-start font-normal text-base list-disc mb-2 marker:text-main desktop:w-[476px];
 }
-.contBeBetter{
-    @apply h-[312px] laptop:-ml-24 desktop:-ml-16 desktop:pr-2 desktop:mt-[80px]
+
+.textBeBetter {
+  @apply font-normal text-xs desktop:pl-0 desktop:w-[576px];
 }
-.beBetterCont{
-    @apply tablet:hidden desktop:block desktop:mt-14 desktop:mb-8
+
+
+.pictures {
+  @apply laptop:-ml-20 desktop:flex desktop:ml-12;
 }
-.oneMin{
-    @apply tablet:hidden desktop:block desktop:w-[384px] desktop:h-[270px] desktop:-ml-12;  
+
+.pictureDesktop {
+  @apply desktop:mt-6;
 }
-.divImg{
-    @apply tablet:hidden laptop:block  laptop:ml-28;
+
+.beBetterCont {
+  @apply hidden desktop:block desktop:mb-6;
 }
-.threeMin{
-    @apply mb-6 rounded-2xl laptop:w-[200px] laptop:h-[162px] desktop:-ml-8 desktop:w-[284px] desktop:h-[280] desktop:mt-[280px]
+
+.oneMin {
+  @apply hidden desktop:block desktop:w-[384px] desktop:h-[270px] desktop:-ml-12;
 }
-.bakaluImg{
-    @apply w-[280px] h-[300px] tablet:-ml-[140px] -mt-[288px] laptop:-ml-22 laptop:-mt-[120px] laptop:w-[310px] laptop:h-[544px] mr-5 rounded-2xl  desktop:w-[308px] desktop:h-[440px] desktop:mt-[80px] desktop:ml-[255px]  desktop:pt-[80px]
+
+.divImg {
+  @apply hidden laptop:block laptop:ml-28 desktop:ml-auto laptop:mb-6 desktop:w-[284px] desktop:h-[294px] ;
 }
-.containerBeBetter{
-    @apply laptop:flex mb-[48px] }
+
+.threeMin {
+  @apply rounded-2xl laptop:w-[200px] laptop:h-[162px] desktop:w-full desktop:h-full;
+}
+
+.bocaluDiv {
+@apply w-[280px] h-[300px] laptop:w-[310px] laptop:h-[544px] desktop:ml-3;
+}
+
+.bakaluImg {
+  @apply  rounded-2xl laptop:w-full laptop:h-full desktop:w-[308px] desktop:h-[440px];
+}

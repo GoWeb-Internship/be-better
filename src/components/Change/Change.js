@@ -99,11 +99,11 @@ const Change = () => {
   };
 
   return (
-    <Section className="desktop:h-[880px]" id="change">
+    <Section className="h-full pb-8 laptop:pb-20" id="change">
       {data.map((node, id) => (
         <React.Fragment key={id}>
           {node.frontmatter.language === i18n.language && (
-            <div className="mb-24 laptop:mt-24" id={node.frontmatter.language}>
+            <div className="laptop:mt-24" id={node.frontmatter.language}>
               <div className="ml-[165px] -z-10 laptop:ml-[265px] laptop:-mt-40 desktop:ml-[404px] ">
                 <StaticImage
                   layout="fullWidth"
@@ -160,7 +160,7 @@ const Change = () => {
                 <div className="float-left desktop:ml-[150px] desktop:mr-[100px]">
                   <div className={text}>
                     <div
-                      className="laptop:-mt-[255px] laptop:mb-16 desktop:w-[524px] float-left block"
+                      className="laptop:-mt-[255px] laptop:mb-16 desktop:mb-6 desktop:w-[524px] float-left block"
                       key={node.frontmatter.language}
                       dangerouslySetInnerHTML={{ __html: node.html }}
                     />

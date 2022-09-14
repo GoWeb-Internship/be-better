@@ -1,5 +1,5 @@
 .changeTitle {
-  @apply tablet:text-xl tablet:font-medium pl-[20px] pr-[20px] text-orangeDark pt-[37px] text-center mb-[32px] laptop:font-semibold laptop:text-4xl laptop:w-[310px] laptop:pt-[20px] laptop:mb-[16px] laptop:pl-20 laptop:text-start desktop:w-[600px] desktop:pt-[92px] desktop:mr-[40px]
+  @apply tablet:text-xl tablet:font-medium pl-5 pr-5 text-orangeDark pt-[37px] text-center mb-8 laptop:font-semibold laptop:text-4xl laptop:w-[310px] laptop:pt-5 laptop:mb-4 laptop:pl-20 laptop:text-start desktop:w-[700px] desktop:pt-20;
 }
 .text {
   @apply font-normal  text-sm laptop:text-base text-start max-w-3xl tablet:pt-72 pl-[20px] pr-[20px] desktop:px-0;
@@ -17,7 +17,7 @@
   @apply laptop:w-96 laptop:pr-[21px] desktop:w-[524px] desktop:pr-0
 }
 .button {
-  @apply !bg-mainSecond border px-16 !ml-8 desktop:!ml-0 py-2 rounded-3xl hover:!bg-[#d46828] focus:!bg-[#d46828] focus:outline-none ease-in duration-300 laptop:!ml-[80px];
+  @apply !bg-mainSecond border px-16 !ml-8 desktop:!ml-0 py-2 rounded-3xl hover:!bg-[#d46828] focus:!bg-[#d46828] focus:outline-none ease-in duration-300 laptop:!ml-20;
 }
 /* Form */
 .modalform {

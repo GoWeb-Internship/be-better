@@ -11,7 +11,6 @@ import {
 import { preloadModalPriceWindow } from '../../services/preloader';
 
 const PriceCard = ({ priceData = {}, onClick }) => {
-  console.log('priceData', priceData);
   const { t, i18n } = useTranslation();
   const buttonTranslate = t('littleComponents', { returnObjects: true });
   const price = t('price', { returnObjects: true });

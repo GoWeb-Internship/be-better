@@ -1,7 +1,7 @@
 import React from 'react';
-import Seo from '../components/seo';
-import Oferta from '../components/Oferta';
-import ButtonUp from '../components/ButtonUp';
+import Seo from 'components/seo';
+import Oferta from 'components/Oferta';
+import ButtonUp from 'components/ButtonUp';
 import { useTranslation } from 'gatsby-plugin-react-i18next';
 
 const Po = () => {

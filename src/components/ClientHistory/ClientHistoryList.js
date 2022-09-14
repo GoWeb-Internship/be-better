@@ -1,8 +1,10 @@
 import React from 'react';
 import { SwiperSlide } from 'swiper/react';
-import Slider from '../reusableComponents/Slider';
-import { sliderHistory } from './ClientHistory.module.css';
+
+import Slider from 'components/reusableComponents/Slider';
 import ClientHistoryItem from './ClientHistoryItem';
+
+import { sliderHistory } from './ClientHistory.module.css';
 
 const ClientHistoryList = ({ clients }) => {
   return (

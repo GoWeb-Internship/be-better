@@ -1,10 +1,10 @@
 import * as React from 'react';
-import NotFound from '../components/notFound';
-import Seo from '../components/seo';
+import NotFound from 'components/notFound';
+import Seo from 'components/seo';
 import { useTranslation } from 'gatsby-plugin-react-i18next';
 import { graphql } from 'gatsby';
-import Section from '../components/reusableComponents/Section';
-import Container from '../components/Container';
+import Section from 'components/reusableComponents/Section';
+import Container from 'components/Container';
 
 const NotFoundPage = () => {
   const { i18n } = useTranslation();

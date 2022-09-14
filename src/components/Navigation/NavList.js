@@ -1,8 +1,10 @@
 import React from 'react';
-import { Link } from 'react-scroll';
 import PropTypes from 'prop-types';
+import { Link } from 'react-scroll';
+
 import { links, active } from './Nav.module.css';
-import { handleMenuClickPreload } from '../../services/preloader';
+
+import { handleMenuClickPreload } from 'services/preloader';
 
 const NavList = ({ navigation }) => {
   return (

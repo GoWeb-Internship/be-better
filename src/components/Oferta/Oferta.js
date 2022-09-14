@@ -1,10 +1,10 @@
 import React from 'react';
-import { graphql, useStaticQuery } from 'gatsby';
-import { StaticImage } from 'gatsby-plugin-image';
+import { graphql, useStaticQuery, Link } from 'gatsby';
 import { useTranslation } from 'gatsby-plugin-react-i18next';
-import Container from '../Container';
-import { Link } from 'gatsby';
-import Heading from '../reusableComponents/Heading';
+import { StaticImage } from 'gatsby-plugin-image';
+
+import Container from 'components/Container';
+import Heading from 'components/reusableComponents/Heading';
 
 const Pk = () => {
   const { i18n } = useTranslation();

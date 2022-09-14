@@ -1,6 +1,10 @@
 import React, { useRef, useState } from 'react';
-import loadable from '@loadable/component';
 import { Link } from 'gatsby';
+import loadable from '@loadable/component';
+
+import Navigation from 'components/Navigation';
+import SwitchLang from 'components/SwitchLang';
+
 import {
   header,
   headerContainer,
@@ -11,10 +15,10 @@ import {
   burgerMenuButton,
   burgerMenuLines,
 } from './Header.module.css';
-import Navigation from '../Navigation';
-import SwitchLang from '../SwitchLang';
-import icons from '../../images/sprite.svg';
-import { handleMenuClickPreload } from '../../services/preloader';
+
+import { handleMenuClickPreload } from 'services/preloader';
+
+import icons from 'images/sprite.svg';
 
 const BurgerMenu = loadable(() => import('./BurgerMenu'));
 

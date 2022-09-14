@@ -21,13 +21,13 @@ module.exports = {
     siteUrl: `https://be-better.netlify.app`,
   },
   plugins: [
-    `gatsby-plugin-webpack-bundle-analyser-v2`,
+    // `gatsby-plugin-webpack-bundle-analyser-v2`,
+    `gatsby-plugin-root-import`,
     `gatsby-transformer-remark`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-image`,
     `gatsby-plugin-react-helmet`,
-    // `gatsby-plugin-facebook-pixel`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {

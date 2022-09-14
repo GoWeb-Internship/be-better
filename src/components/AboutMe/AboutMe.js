@@ -1,17 +1,18 @@
 import React from 'react';
-import { GatsbyImage } from 'gatsby-plugin-image';
-import { useTranslation } from 'gatsby-plugin-react-i18next';
 import { graphql, useStaticQuery } from 'gatsby';
-import Section from '../reusableComponents/Section';
-import Heading from '../reusableComponents/Heading';
-import { sectionContainer, aboutMeContainer } from './AboutMe.module.css';
-import icon from '../../images/signature.svg';
+import { useTranslation } from 'gatsby-plugin-react-i18next';
+import { GatsbyImage } from 'gatsby-plugin-image';
+
+import Section from 'components/reusableComponents/Section';
+import Heading from 'components/reusableComponents/Heading';
 import AboutMeLap from './AboutMeLap';
 import AboutMePrimaryText from './AboutMePrimaryText';
 
-const AboutMe = () => {
-  const { t } = useTranslation();
+import { sectionContainer, aboutMeContainer } from './AboutMe.module.css';
 
+import icon from 'images/signature.svg';
+
+const AboutMe = () => {
   const foto = useStaticQuery(graphql`
     query {
       avatarDesktop: file(name: { eq: "aboutFoto" }) {
@@ -24,6 +25,8 @@ const AboutMe = () => {
       }
     }
   `);
+
+  const { t } = useTranslation();
 
   const data = t('aboutMe', { returnObjects: true });
 

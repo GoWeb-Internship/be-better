@@ -1,5 +1,6 @@
 import React from 'react';
 import { useTranslation } from 'gatsby-plugin-react-i18next';
+
 import { name, profession, slide, client } from './ClientHistory.module.css';
 
 const ClientHistoryItem = ({ itemData }) => {

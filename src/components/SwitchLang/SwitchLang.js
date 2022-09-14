@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 import { Link, useI18next } from 'gatsby-plugin-react-i18next';
-import {switcher, list, item} from './SwitchLang.module.css';
-import icons from '../../images/sprite.svg';
+
+import { switcher, list, item } from './SwitchLang.module.css';
+
+import icons from 'images/sprite.svg';
 
 const SwitchLang = () => {
   const { language, languages, changeLanguage, originalPath } = useI18next();
@@ -14,16 +16,13 @@ const SwitchLang = () => {
         className={switcher}
         onClick={() => setDropdown(true)}
       >
-        {language === 'uk' ? "UA" : language.toUpperCase()}
+        {language === 'uk' ? 'UA' : language.toUpperCase()}
         <svg width="16px" height="16px">
           <use href={`${icons}#vector`} />
         </svg>
       </button>
       {dropdown && (
-        <ul
-          className={list}
-          onMouseLeave={() => setDropdown(false)}
-        >
+        <ul className={list} onMouseLeave={() => setDropdown(false)}>
           {languages.map(lng => (
             <li key={lng} className={item}>
               <Link
@@ -33,7 +32,7 @@ const SwitchLang = () => {
                   changeLanguage(lng);
                 }}
               >
-                {lng === 'uk' ? "UA" : lng.toUpperCase()}
+                {lng === 'uk' ? 'UA' : lng.toUpperCase()}
               </Link>
             </li>
           ))}

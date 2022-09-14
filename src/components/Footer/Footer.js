@@ -3,9 +3,14 @@ import { graphql, useStaticQuery } from 'gatsby';
 import { Link, useTranslation } from 'gatsby-plugin-react-i18next';
 import { StaticImage } from 'gatsby-plugin-image';
 import { useMedia } from 'react-use';
-import Container from '../Container';
-import Form from '../Form';
-import Social from '../Social';
+
+import Container from 'components/Container';
+import Form from 'components/Form';
+import Social from 'components/Social';
+import Donations from 'components/Donations';
+import WithDiscount from 'components/reusableComponents/WithDiscount';
+import Heading from 'components/reusableComponents/Heading';
+
 import {
   footerContainer,
   gradient,
@@ -24,10 +29,8 @@ import {
   title,
   price,
 } from './Footer.module.css';
-import icons from '../../images/sprite.svg';
-import Donations from '../Donations';
-import WithDiscount from '../reusableComponents/WithDiscount';
-import Heading from '../reusableComponents/Heading';
+
+import icons from 'images/sprite.svg';
 
 const Footer = () => {
   const { t, i18n } = useTranslation();
@@ -67,9 +70,7 @@ const Footer = () => {
               <use href={`${icons}#logo`} />
             </svg>
             <div className={social}>
-              <Social
-                classNameList="space-y-6 laptop:space-y-4"
-              />
+              <Social classNameList="space-y-6 laptop:space-y-4" />
               <div>
                 {data.map(node => {
                   if (node.frontmatter.language === i18n.language) {
@@ -94,16 +95,16 @@ const Footer = () => {
               </div>
             </div>
             <div className="laptop:flex laptop:flex-row-reverse laptop:-mt-2 desktop:block">
-            <div className={form}>
-              <Form
-                clickFrom="footer"
-                formClassname="mb-6"
-                classnameAccept={accepttext}
-              />
-            </div>
-            <div className={icf}>
-              <StaticImage src="../../images/icf.png" alt="icf" />
-            </div>
+              <div className={form}>
+                <Form
+                  clickFrom="footer"
+                  formClassname="mb-6"
+                  classnameAccept={accepttext}
+                />
+              </div>
+              <div className={icf}>
+                <StaticImage src="../../images/icf.png" alt="icf" />
+              </div>
             </div>
             <Donations className={donate} classNameText="text-main " />
             <p className={price}>{priceByOne}</p>

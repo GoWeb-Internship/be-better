@@ -1,6 +1,7 @@
 import React from 'react';
 import { SwiperSlide } from 'swiper/react';
-import Slider from '../reusableComponents/Slider';
+
+import Slider from 'components/reusableComponents/Slider';
 import Review from './Review';
 
 import { sliderRev } from './Reviews.module.css';

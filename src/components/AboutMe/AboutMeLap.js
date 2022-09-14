@@ -1,6 +1,7 @@
 import React from 'react';
-import { caveat } from './AboutMe.module.css';
 import PropTypes from 'prop-types';
+
+import { caveat } from './AboutMe.module.css';
 
 const AboutMeLap = ({ data }) => {
   return (

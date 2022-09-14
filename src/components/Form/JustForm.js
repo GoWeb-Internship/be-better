@@ -195,7 +195,7 @@ const JustForm = ({
         </label>
         <p className={checkError}>{errors.checkbox?.message}</p>
       </div>
-      <Button type="submit" className={buttonF}>
+      <Button id="button-form" type="submit" className={buttonF}>
         {button}
       </Button>
     </form>

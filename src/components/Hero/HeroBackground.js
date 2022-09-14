@@ -3,16 +3,13 @@ import { StaticImage } from 'gatsby-plugin-image';
 
 import { heroBg } from './Hero.module.css';
 
-import heroMobile from 'images/background/heroMobile.jpg';
-import heroTablet from 'images/background/heroTablet.jpg';
-
 const HeroBackground = () => {
   return (
     <>
       <div className="laptop:hidden">
         <StaticImage
           layout="fullWidth"
-          src={heroMobile}
+          src="../../images/background/heroMobile.jpg"
           alt="mobile background"
           style={{ position: 'absolute' }}
           className={heroBg}
@@ -21,7 +18,7 @@ const HeroBackground = () => {
       <div className="hidden laptop:block desktop:hidden">
         <StaticImage
           layout="fullWidth"
-          src={heroTablet}
+          src="../../images/background/heroTablet.jpg"
           alt="tablet background"
           style={{ position: 'absolute' }}
           className={heroBg}

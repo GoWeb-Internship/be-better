@@ -2,7 +2,7 @@ import React from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
 import { useTranslation } from 'gatsby-plugin-react-i18next';
 
-import Heading from 'components/reusableComponents/Heading';
+import MarkdownList from 'components/reusableComponents/MarkdownList';
 
 import { title, container, listContainer } from './AboutYou.module.css';
 
@@ -31,17 +31,12 @@ const AboutYou = () => {
       {data.map((node, id) => (
         <React.Fragment key={id}>
           {node.frontmatter.language === i18n.language && (
-            <div>
-              <Heading
-                className={title}
-                tag="h2"
-                text={node.frontmatter.title}
-              />
-              <div
-                className={listContainer}
-                dangerouslySetInnerHTML={{ __html: node.html }}
-              />
-            </div>
+            <MarkdownList
+              listClassName={listContainer}
+              titleClassName={title}
+              tag="h2"
+              data={node}
+            />
           )}
         </React.Fragment>
       ))}

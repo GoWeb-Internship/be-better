@@ -36,6 +36,7 @@ const PriceCard = ({ priceData = {}, onClick }) => {
       </p>
 
       <Button
+        id={`button-price-${priceData.id}`}
         type="button"
         className={buttonStyled}
         doAction={() => onClick(priceData.price)}

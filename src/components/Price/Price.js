@@ -79,10 +79,13 @@ const Price = () => {
       <Heading tag="h2" className={title} text={pricePac.title} />
       <ul className={list}>
         {allMarkdownRemark &&
-          data.map(({ frontmatter }) => {
+          data.map(({ frontmatter }, id) => {
             return (
               <li className={item} key={frontmatter.id}>
-                <PriceCard priceData={frontmatter} onClick={showModal} />
+                <PriceCard
+                  priceData={{ ...frontmatter, id }}
+                  onClick={showModal}
+                />
               </li>
             );
           })}

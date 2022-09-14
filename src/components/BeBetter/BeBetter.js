@@ -10,12 +10,13 @@ import {
   textBeBetter,
   beBetterSection,
   textBeBet,
-  varning,
-  contBeBetter,
+  pictures,
+  pictureDesktop,
   beBetterCont,
   oneMin,
   divImg,
   threeMin,
+  bocaluDiv,
   bakaluImg,
   containerBeBetter,
 } from './BeBetter.module.css';
@@ -106,13 +107,12 @@ const BeBetter = () => {
             }
           })}
         </div>
-        <div className={varning}>
-          <div className={contBeBetter}>
+        <div className={pictures}>
+          <div className={pictureDesktop}>
             <div className={beBetterCont}>
               <GatsbyImage
                 image={avatar}
                 alt="result"
-                style={{ position: 'absolute' }}
                 className={oneMin}
               />
             </div>
@@ -120,16 +120,14 @@ const BeBetter = () => {
               <GatsbyImage
                 image={avatarThree}
                 alt="car"
-                style={{ position: 'absolute' }}
                 className={threeMin}
               />
             </div>
           </div>
-          <div>
+          <div className={bocaluDiv}>
             <GatsbyImage
               image={avatarBocalu}
               alt="grocers"
-              style={{ position: 'absolute' }}
               className={bakaluImg}
             />
           </div>

@@ -26,10 +26,10 @@ const AboutYou = () => {
 
   return (
     <div className={container}>
-      {data.map(node => {
-        if (node.frontmatter.language === i18n.language) {
-          return (
-            <div key={node.frontmatter.language}>
+      {data.map((node, id) => (
+        <React.Fragment key={id}>
+          {node.frontmatter.language === i18n.language && (
+            <div>
               <Heading
                 className={title}
                 tag="h2"
@@ -40,9 +40,9 @@ const AboutYou = () => {
                 dangerouslySetInnerHTML={{ __html: node.html }}
               />
             </div>
-          );
-        }
-      })}
+          )}
+        </React.Fragment>
+      ))}
     </div>
   );
 };

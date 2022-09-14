@@ -18,7 +18,7 @@
 }
 
 .slide {
-  @apply m-auto w-70   mb-5 flex flex-col justify-between text-left laptop:mb-4   desktop:w-[716px] desktop:flex-row;
+  @apply m-auto w-70 mb-5 flex flex-col justify-between text-left laptop:mb-4 desktop:w-[716px] desktop:flex-row;
 }
 
 .icon {

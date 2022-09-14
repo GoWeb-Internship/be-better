@@ -31,7 +31,7 @@ const Review = ({ frontmatter }) => {
       }
     };
     showScroll();
-  }, [overflow, limitText]);
+  }, [overflow, limitText, frontmatter, i18n.language]);
 
   useEffect(() => {
     if (isMobile) {

@@ -21,9 +21,11 @@ import Heading from '../reusableComponents/Heading';
 const BeBetter = () => {
   const { i18n } = useTranslation();
 
-  const  allMarkdownRemark  = useStaticQuery(graphql`
+  const allMarkdownRemark = useStaticQuery(graphql`
     query {
-      text: allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/beBetter/" } }) {
+      text: allMarkdownRemark(
+        filter: { fileAbsolutePath: { regex: "/beBetter/" } }
+      ) {
         nodes {
           html
           frontmatter {
@@ -74,8 +76,10 @@ const BeBetter = () => {
 
   const data = allMarkdownRemark.text.nodes;
   const avatar = allMarkdownRemark.avatarMin.childImageSharp.gatsbyImageData;
-  const avatarThree = allMarkdownRemark.avatarTh.childImageSharp.gatsbyImageData;
-  const avatarBocalu = allMarkdownRemark.avatarBoc.childImageSharp.gatsbyImageData;
+  const avatarThree =
+    allMarkdownRemark.avatarTh.childImageSharp.gatsbyImageData;
+  const avatarBocalu =
+    allMarkdownRemark.avatarBoc.childImageSharp.gatsbyImageData;
 
   return (
     <Section className={beBetterSection} id="be-better">
@@ -103,24 +107,24 @@ const BeBetter = () => {
         <div className={varning}>
           <div className={contBeBetter}>
             <div className={beBetterCont}>
-            <GatsbyImage
-              image={avatar}
-              alt="result"
-              style={{ position: 'absolute' }}
-              className={oneMin}
-            />
+              <GatsbyImage
+                image={avatar}
+                alt="result"
+                style={{ position: 'absolute' }}
+                className={oneMin}
+              />
             </div>
             <div className={divImg}>
-            <GatsbyImage
-              image={avatarThree}
-              alt="car"
-              style={{ position: 'absolute' }}
-              className={threeMin}
-            />
+              <GatsbyImage
+                image={avatarThree}
+                alt="car"
+                style={{ position: 'absolute' }}
+                className={threeMin}
+              />
             </div>
           </div>
-           <div>
-           <GatsbyImage
+          <div>
+            <GatsbyImage
               image={avatarBocalu}
               alt="grocers"
               style={{ position: 'absolute' }}

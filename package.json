@@ -59,6 +59,14 @@
     "yup": "^0.32.11"
   },
   "devDependencies": {
-    "@tailwindcss/typography": "^0.5.4"
+    "@tailwindcss/typography": "^0.5.4",
+    "babel-eslint": "^10.1.0",
+    "cssnano": "^5.1.13",
+    "eslint": "^8.23.1",
+    "eslint-config-react-app": "^7.0.1",
+    "eslint-plugin-react": "^7.31.8",
+    "eslint-webpack-plugin": "^3.2.0",
+    "gatsby-plugin-eslint": "^4.0.2",
+    "gatsby-plugin-webpack-bundle-analyser-v2": "^1.1.27"
   }
 }

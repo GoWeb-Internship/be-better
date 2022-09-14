@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React, { useRef, useState } from 'react';
+import loadable from '@loadable/component';
 import { Link } from 'gatsby';
 import {
   header,
@@ -12,11 +13,14 @@ import {
 } from './Header.module.css';
 import Navigation from '../Navigation';
 import SwitchLang from '../SwitchLang';
-import BurgerMenu from './BurgerMenu';
 import icons from '../../images/sprite.svg';
+import { handleMenuClickPreload } from '../../services/preloader';
+
+const BurgerMenu = loadable(() => import('./BurgerMenu'));
 
 const Header = () => {
   const [showNav, setShowNav] = useState(false);
+  const firstClickOnButton = useRef(true);
 
   const toggleNav = e => {
     e.preventDefault();
@@ -26,6 +30,16 @@ const Header = () => {
     } else {
       document.body.style.overflow = '';
     }
+
+    if (firstClickOnButton.current) {
+      firstClickOnButton.current = false;
+      handleMenuClickPreload();
+      return;
+    }
+  };
+
+  const preload = () => {
+    BurgerMenu.preload();
   };
 
   return (
@@ -38,8 +52,20 @@ const Header = () => {
         </Link>
         <Navigation />
         <SwitchLang />
-        <div className={showNav ? `${burgerMenuActive} ${burgerMenuClose}` : `${burgerMenuClose}`}>
-          <button type="button" className={burgerMenuButton} onClick={toggleNav}>
+        <div
+          className={
+            showNav
+              ? `${burgerMenuActive} ${burgerMenuClose}`
+              : `${burgerMenuClose}`
+          }
+        >
+          <button
+            type="button"
+            className={burgerMenuButton}
+            onClick={toggleNav}
+            onMouseOver={preload}
+            onTouchStart={preload}
+          >
             <span className={burgerMenuLines}></span>
           </button>
         </div>

@@ -100,7 +100,6 @@ const Couch = () => {
     <Section className={couchContainer} id="couch">
       <div className={flexContainer}>
         <div className="flex laptop:block">
-          {/* <h2 className={`${title} laptop:hidden`}>{couch.title}</h2> */}
           <Heading
             tag="h2"
             className={`${title} laptop:hidden`}
@@ -123,9 +122,8 @@ const Couch = () => {
 
         <div>
           <div className="laptop:w-[310px] desktop:w-[326px] relative laptop:leading-[1.36]">
-            {/* <h3 className={`${title} hidden laptop:block`}>{couch.title}</h3> */}
             <Heading
-              tag="h2"
+              tag="h3"
               className={`${title} hidden laptop:block`}
               text={couch.title}
             />

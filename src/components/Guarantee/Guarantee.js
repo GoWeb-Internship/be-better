@@ -4,7 +4,7 @@ import { useTranslation } from 'gatsby-plugin-react-i18next';
 import { guarantee, title, text } from './Guarantee.module.css';
 import Section from '../reusableComponents/Section';
 import GuaranteeBg from './GuaranteeBg';
-import Heading from '../reusableComponents/Heading';
+import MarkdownList from '../reusableComponents/MarkdownList';
 
 const Guarantee = () => {
   const { i18n } = useTranslation();
@@ -34,18 +34,12 @@ const Guarantee = () => {
       {data.map(node => {
         if (node.frontmatter.language === i18n.language) {
           return (
-            <div key={node.frontmatter.title}>
-              <Heading
-                tag="h2"
-                className={title}
-                text={node.frontmatter.title}
-              />
-              {/* <h2 className={title}>{node.frontmatter.title}</h2> */}
-              <div
-                dangerouslySetInnerHTML={{ __html: node.html }}
-                className={text}
-              />
-            </div>
+            <MarkdownList
+              listClassName={text}
+              titleClassName={title}
+              tag="h2"
+              data={node}
+            />
           );
         }
       })}

@@ -1,11 +1,10 @@
 import React from 'react';
-import Section from '../reusableComponents/Section';
 import { graphql, useStaticQuery } from 'gatsby';
 import { useTranslation } from 'gatsby-plugin-react-i18next';
 import { StaticImage, GatsbyImage } from 'gatsby-plugin-image';
-import icons from '../../images/factsIcons.svg';
-import Way from '../Way';
 import { IconContext } from 'react-icons';
+import Section from '../reusableComponents/Section';
+import { useMedia } from 'react-use';
 import {
   MdBusinessCenter,
   MdOutlineThumbUp,
@@ -15,6 +14,8 @@ import {
   MdFactCheck,
 } from 'react-icons/md';
 import Heading from '../reusableComponents/Heading';
+import icons from '../../images/factsIcons.svg';
+import Way from '../Way';
 
 import {
   section,
@@ -31,7 +32,6 @@ import {
   testSec,
   bgFacts,
 } from './Facts.module.css';
-import { useMedia } from 'react-use';
 
 const factsIcons = [
   <MdBusinessCenter />,

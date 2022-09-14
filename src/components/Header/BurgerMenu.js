@@ -1,8 +1,15 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { useTranslation } from 'gatsby-plugin-react-i18next';
 import { Link } from 'react-scroll';
-import PropTypes from 'prop-types';
-import {burgerMenuOverlay, menuBg, menuList, menuItem, menuLink} from './Header.module.css';
+
+import {
+  burgerMenuOverlay,
+  menuBg,
+  menuList,
+  menuItem,
+  menuLink,
+} from './Header.module.css';
 
 const BurgerMenu = ({ toggleNav }) => {
   const { t } = useTranslation();
@@ -34,7 +41,7 @@ const BurgerMenu = ({ toggleNav }) => {
               spy
               className={menuLink}
               onClick={toggleNav}
-              href='home'
+              href="home"
             >
               {toMain}
             </Link>
@@ -45,8 +52,8 @@ const BurgerMenu = ({ toggleNav }) => {
   );
 };
 
-BurgerMenu.propTypes={
-  toggleNav: PropTypes.func.isRequired
-}
+BurgerMenu.propTypes = {
+  toggleNav: PropTypes.func.isRequired,
+};
 
 export default BurgerMenu;

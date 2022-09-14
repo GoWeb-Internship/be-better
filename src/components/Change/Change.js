@@ -1,8 +1,16 @@
 import React, { useState } from 'react';
-import loadable from '@loadable/component';
-import { StaticImage, GatsbyImage } from 'gatsby-plugin-image';
 import { graphql, useStaticQuery } from 'gatsby';
+import loadable from '@loadable/component';
 import { useTranslation } from 'gatsby-plugin-react-i18next';
+import { StaticImage, GatsbyImage } from 'gatsby-plugin-image';
+
+import Section from 'components/reusableComponents/Section';
+import Heading from 'components/reusableComponents/Heading';
+import WithDiscount from 'components/reusableComponents/WithDiscount';
+import Button from 'components/reusableComponents/Button';
+
+import { preloadFormInModal } from 'services/preloader';
+
 import {
   text,
   changeTitle,
@@ -10,11 +18,6 @@ import {
   discount,
   button,
 } from './Change.module.css';
-import Button from '../reusableComponents/Button';
-import Section from '../reusableComponents/Section';
-import WithDiscount from '../reusableComponents/WithDiscount';
-import Heading from '../reusableComponents/Heading';
-import { preloadFormInModal } from '../../services/preloader';
 
 const FormInModal = loadable(() => import('../Form/FormInModal'));
 
@@ -170,6 +173,7 @@ const Change = () => {
                     />
                   </div>
                   <Button
+                    id="button-change"
                     type="button"
                     className={button}
                     doAction={() => showModal()}

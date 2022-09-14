@@ -1,6 +1,14 @@
 import React from 'react';
-import { useTranslation } from 'gatsby-plugin-react-i18next';
 import { StaticImage } from 'gatsby-plugin-image';
+import { useTranslation } from 'gatsby-plugin-react-i18next';
+
+import Section from 'components/reusableComponents/Section';
+import Container from 'components/Container';
+import HeroBackground from './HeroBackground';
+import Form from 'components/Form';
+import Social from 'components/Social';
+import WithDiscount from 'components/reusableComponents/WithDiscount';
+
 import {
   heroContainer,
   desktopBg,
@@ -15,12 +23,6 @@ import {
   discountText,
   discount,
 } from './Hero.module.css';
-import HeroBackground from './HeroBackground';
-import Form from '../Form';
-import Section from '../reusableComponents/Section';
-import Social from '../Social';
-import Container from '../Container';
-import WithDiscount from '../reusableComponents/WithDiscount';
 
 const Hero = () => {
   const { t } = useTranslation();
@@ -63,7 +65,7 @@ const Hero = () => {
             </p>
           </div>
           <div className={heroForm}>
-            <Form clickFrom="hero" formClassname={formMargins}/>
+            <Form clickFrom="hero" formClassname={formMargins} />
           </div>
           <WithDiscount
             classnameText={discountText}

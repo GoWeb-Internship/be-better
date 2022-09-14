@@ -1,10 +1,11 @@
 import React, { useCallback, useEffect } from 'react';
 import PropTypes from 'prop-types';
+
 import { backdrop, modal, icon } from './ModalWindow.module.css';
-import sprite from '../../images/sprite.svg';
+
+import sprite from 'images/sprite.svg';
 
 const ModalWindow = ({ children, className = '', handleClose }) => {
-  
   const onClose = useCallback(
     e => {
       if (e.code === 'Escape' || e.target.id === 'modal-backdrop') {

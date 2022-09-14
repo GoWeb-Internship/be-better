@@ -1,11 +1,12 @@
-import * as React from 'react';
-import { useTranslation } from 'gatsby-plugin-react-i18next';
-import 'react-phone-input-2/lib/style.css';
+import React from 'react';
 import PropTypes from 'prop-types';
-import { modalsuccess, modaltitle, modaltext } from './Form.module.css';
-import ModalWindow from '../ModalWindow';
+import { useTranslation } from 'gatsby-plugin-react-i18next';
+
+import Heading from 'components/reusableComponents/Heading';
+import ModalWindow from 'components/ModalWindow';
 import JustForm from './JustForm';
-import Heading from '../reusableComponents/Heading';
+
+import { modalsuccess, modaltitle, modaltext } from './Form.module.css';
 
 const Form = ({
   clickFrom = '',

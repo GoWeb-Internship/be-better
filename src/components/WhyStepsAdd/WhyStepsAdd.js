@@ -1,10 +1,12 @@
 import React from 'react';
-import Section from '../reusableComponents/Section';
 import { useTranslation } from 'gatsby-plugin-react-i18next';
 import { StaticImage } from 'gatsby-plugin-image';
-import List from '../reusableComponents/Steps';
-import svg from '../../images/iconsnew.svg';
-import Reviews from '../Reviews';
+
+import Section from 'components/reusableComponents/Section';
+import List from 'components/reusableComponents/Steps';
+import Reviews from 'components/Reviews';
+
+import svg from 'images/iconsnew.svg';
 
 const StepsAdd = () => {
   const { t } = useTranslation();

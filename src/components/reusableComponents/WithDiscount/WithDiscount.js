@@ -1,7 +1,7 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { graphql, useStaticQuery } from 'gatsby';
 import { useTranslation } from 'gatsby-plugin-react-i18next';
-import PropTypes from 'prop-types';
 
 const WithDiscount = ({ classnameText = '', classnameDiscount = '' }) => {
   const { i18n } = useTranslation();
@@ -41,8 +41,8 @@ const WithDiscount = ({ classnameText = '', classnameDiscount = '' }) => {
 };
 
 WithDiscount.propTypes = {
-    classnameText: PropTypes.string,
-    classnameDiscount: PropTypes.string,
-}
+  classnameText: PropTypes.string,
+  classnameDiscount: PropTypes.string,
+};
 
 export default WithDiscount;

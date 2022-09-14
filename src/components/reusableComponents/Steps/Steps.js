@@ -1,5 +1,15 @@
 import React from 'react';
 import { IconContext } from 'react-icons';
+import { useMedia } from 'react-use';
+
+import Heading from 'components/reusableComponents/Heading';
+
+import { FaRegHandPaper } from 'react-icons/fa';
+import { MdOutlineChat } from 'react-icons/md';
+import { BsBarChartSteps, BsCalendarCheck } from 'react-icons/bs';
+import { ImPower } from 'react-icons/im';
+import { AiOutlineSearch } from 'react-icons/ai';
+
 import {
   titleFacts,
   listFacts,
@@ -9,13 +19,6 @@ import {
   iconClass,
   textSteps,
 } from './Steps.module.css';
-import { useMedia } from 'react-use';
-import { FaRegHandPaper } from 'react-icons/fa';
-import { MdOutlineChat } from 'react-icons/md';
-import { BsBarChartSteps, BsCalendarCheck } from 'react-icons/bs';
-import { ImPower } from 'react-icons/im';
-import { AiOutlineSearch } from 'react-icons/ai';
-import Heading from '../Heading';
 
 const stepsIcons = [
   <FaRegHandPaper />,
@@ -25,7 +28,7 @@ const stepsIcons = [
   <AiOutlineSearch />,
   <BsCalendarCheck />,
 ];
-const Steps = ({ icons = '', data = {}}) => {
+const Steps = ({ icons = '', data = {} }) => {
   const isTablet = useMedia('(min-width: 768px)');
 
   return (

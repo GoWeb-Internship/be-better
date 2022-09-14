@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { animateScroll } from 'react-scroll';
-import icons from '../../images/sprite.svg';
+
+import icons from 'images/sprite.svg';
 
 const ButtonUp = () => {
   const [showButton, setShowButton] = useState(false);

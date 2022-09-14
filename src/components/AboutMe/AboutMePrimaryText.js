@@ -1,7 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Heading from '../reusableComponents/Heading';
-import AboutYou from '../AboutYou';
+
+import Heading from 'components/reusableComponents/Heading';
+import AboutYou from 'components/AboutYou';
+
 import { title, textContainer, caveat } from './AboutMe.module.css';
 
 const AboutMePrimaryText = ({ data }) => {

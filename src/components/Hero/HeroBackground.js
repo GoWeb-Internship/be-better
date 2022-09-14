@@ -1,6 +1,7 @@
 import React from 'react';
 import { StaticImage } from 'gatsby-plugin-image';
-import {heroBg} from './Hero.module.css';
+
+import { heroBg } from './Hero.module.css';
 
 const HeroBackground = () => {
   return (

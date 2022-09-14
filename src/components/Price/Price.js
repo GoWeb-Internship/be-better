@@ -1,12 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
-import Section from '../reusableComponents/Section';
-import { container, list, item, title, donation } from './Price.module.css';
 import { useTranslation } from 'gatsby-plugin-react-i18next';
-import PriceCard from './PriceCard';
-import Donations from '../Donations';
-import Heading from '../reusableComponents/Heading';
 import loadable from '@loadable/component';
+
+import Section from 'components/reusableComponents/Section';
+import Heading from 'components/reusableComponents/Heading';
+import PriceCard from './PriceCard';
+import Donations from 'components/Donations';
+
+import { container, list, item, title, donation } from './Price.module.css';
 
 const ModalPriceWindow = loadable(() => import('./ModalPriceWindow'));
 
@@ -77,10 +79,13 @@ const Price = () => {
       <Heading tag="h2" className={title} text={pricePac.title} />
       <ul className={list}>
         {allMarkdownRemark &&
-          data.map(({ frontmatter }) => {
+          data.map(({ frontmatter }, id) => {
             return (
               <li className={item} key={frontmatter.id}>
-                <PriceCard priceData={frontmatter} onClick={showModal} />
+                <PriceCard
+                  priceData={{ ...frontmatter, id }}
+                  onClick={showModal}
+                />
               </li>
             );
           })}

@@ -1,20 +1,13 @@
 import React from 'react';
-import Section from '../reusableComponents/Section';
 import { graphql, useStaticQuery } from 'gatsby';
 import { useTranslation } from 'gatsby-plugin-react-i18next';
 import { StaticImage, GatsbyImage } from 'gatsby-plugin-image';
-import icons from '../../images/factsIcons.svg';
-import Way from '../Way';
 import { IconContext } from 'react-icons';
-import {
-  MdBusinessCenter,
-  MdOutlineThumbUp,
-  MdOutlineStackedLineChart,
-  MdOutlineDomain,
-  MdOutlineMoreTime,
-  MdFactCheck,
-} from 'react-icons/md';
-import Heading from '../reusableComponents/Heading';
+import { useMedia } from 'react-use';
+
+import Section from 'components/reusableComponents/Section';
+import Heading from 'components/reusableComponents/Heading';
+import Way from 'components/Way';
 
 import {
   section,
@@ -31,7 +24,17 @@ import {
   testSec,
   bgFacts,
 } from './Facts.module.css';
-import { useMedia } from 'react-use';
+
+import {
+  MdBusinessCenter,
+  MdOutlineThumbUp,
+  MdOutlineStackedLineChart,
+  MdOutlineDomain,
+  MdOutlineMoreTime,
+  MdFactCheck,
+} from 'react-icons/md';
+
+import icons from 'images/factsIcons.svg';
 
 const factsIcons = [
   <MdBusinessCenter />,

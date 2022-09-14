@@ -1,12 +1,14 @@
 import React from 'react';
-import { FaLinkedinIn, FaFacebookF, FaInstagram } from 'react-icons/fa';
 import PropTypes from 'prop-types';
+
 import { list, link } from './Social.module.css';
+
+import { FaLinkedinIn, FaFacebookF, FaInstagram } from 'react-icons/fa';
 
 const Social = ({ classNameList = '', classNameLink = '' }) => {
   return (
     <ul className={`${list} ${classNameList}`}>
-      <li>
+      <li id="link-instagram">
         <a
           className={`${link} ${classNameLink}`}
           href="https://instagram.com/yuliya_shayenko?igshid=YmMyMTA2M2Y="
@@ -17,7 +19,7 @@ const Social = ({ classNameList = '', classNameLink = '' }) => {
           <FaInstagram size={24} />
         </a>
       </li>
-      <li>
+      <li id="link-facebook">
         <a
           className={`${link} ${classNameLink}`}
           href="https://www.facebook.com/Yuliya.Shayenko"
@@ -28,7 +30,7 @@ const Social = ({ classNameList = '', classNameLink = '' }) => {
           <FaFacebookF size={24} />
         </a>
       </li>
-      <li>
+      <li id="link-linkedin">
         <a
           className={`${link} ${classNameLink}`}
           href="https://www.linkedin.com/in/yshayenko/"
@@ -46,5 +48,5 @@ const Social = ({ classNameList = '', classNameLink = '' }) => {
 Social.propTypes = {
   classNameList: PropTypes.string,
   classNameLink: PropTypes.string,
-}
+};
 export default Social;

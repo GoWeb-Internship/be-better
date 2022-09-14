@@ -1,13 +1,15 @@
-import * as React from 'react';
-import { useForm, Controller } from 'react-hook-form';
-import * as yup from 'yup';
-import useFormPersist from 'react-hook-form-persist';
-import { yupResolver } from '@hookform/resolvers/yup';
-import { useTranslation } from 'gatsby-plugin-react-i18next';
-import PhoneInput from 'react-phone-input-2';
+import React from 'react';
 import PropTypes from 'prop-types';
+import { useTranslation } from 'gatsby-plugin-react-i18next';
+import { useForm, Controller } from 'react-hook-form';
+import useFormPersist from 'react-hook-form-persist';
+import * as yup from 'yup';
+import { yupResolver } from '@hookform/resolvers/yup';
+
+import PhoneInput from 'react-phone-input-2';
+import Button from 'components/reusableComponents/Button';
+
 import 'react-phone-input-2/lib/style.css';
-import Button from '../reusableComponents/Button';
 import {
   form,
   input,
@@ -23,8 +25,9 @@ import {
   checkError,
   buttonF,
 } from './Form.module.css';
-import locationApi from '../../services/locationApi';
-import sendMessageToTg from '../../services/telegramApi';
+
+import locationApi from 'services/locationApi';
+import sendMessageToTg from 'services/telegramApi';
 
 const isBrowser = typeof window !== 'undefined';
 
@@ -36,37 +39,39 @@ const JustForm = ({
   openModal,
 }) => {
   const { t } = useTranslation();
-  const {nameInput, accept, button, errorMessage} = t('form', { returnObjects: true });
-  
+  const { nameInput, accept, button, errorMessage } = t('form', {
+    returnObjects: true,
+  });
+
   const schema = yup
-  .object({
-    name: yup
-      .string()
-      .matches(
-        /^[а-яА-ЯёЁa-zA-ZіІїЇґҐєЄ]{1}[а-яА-ЯёЁa-zA-ZіІїЇґҐєЄ0-9' ]+$/,
-        errorMessage.nameMatch
-      )
-      .min(3, errorMessage.nameMin)
-      .max(100, errorMessage.nameMax)
-      .required(errorMessage.nameRequired),
-    email: yup
-      .string()
-      .email()
-      .matches(
-        /^[a-zA-Z0-9+_.]+[a-zA-Z0-9+_.-/]+[a-zA-Z0-9+_./-]+@[a-zA-Z0-9_.-]+$/,
-        errorMessage.emailMatch
-      )
-      .min(10, errorMessage.emailMin)
-      .max(63, errorMessage.emailMax)
-      .required(errorMessage.emailRequired),
-    phone: yup
-      .string()
-      .min(9, errorMessage.phoneMin)
-      .max(13, errorMessage.phoneMax)
-      .required(errorMessage.phoneReguired),
-    checkbox: yup.boolean().oneOf([true], errorMessage.check),
-  })
-  .required();
+    .object({
+      name: yup
+        .string()
+        .matches(
+          /^[а-яА-ЯёЁa-zA-ZіІїЇґҐєЄ]{1}[а-яА-ЯёЁa-zA-ZіІїЇґҐєЄ0-9' ]+$/,
+          errorMessage.nameMatch
+        )
+        .min(3, errorMessage.nameMin)
+        .max(100, errorMessage.nameMax)
+        .required(errorMessage.nameRequired),
+      email: yup
+        .string()
+        .email()
+        .matches(
+          /^[a-zA-Z0-9+_.]+[a-zA-Z0-9+_.-/]+[a-zA-Z0-9+_./-]+@[a-zA-Z0-9_.-]+$/,
+          errorMessage.emailMatch
+        )
+        .min(10, errorMessage.emailMin)
+        .max(63, errorMessage.emailMax)
+        .required(errorMessage.emailRequired),
+      phone: yup
+        .string()
+        .min(9, errorMessage.phoneMin)
+        .max(13, errorMessage.phoneMax)
+        .required(errorMessage.phoneReguired),
+      checkbox: yup.boolean().oneOf([true], errorMessage.check),
+    })
+    .required();
 
   const {
     register,
@@ -186,18 +191,11 @@ const JustForm = ({
           <span
             className={`${check} ${errors.checkbox ? '!border-error' : ''}`}
           ></span>
-          <span className={`${acceptText} ${classnameAccept}`}>
-            {accept}
-          </span>
+          <span className={`${acceptText} ${classnameAccept}`}>{accept}</span>
         </label>
-        <p className={checkError}>
-          {errors.checkbox?.message}
-        </p>
+        <p className={checkError}>{errors.checkbox?.message}</p>
       </div>
-      <Button
-        type="submit"
-        className={buttonF}
-      >
+      <Button id="button-form" type="submit" className={buttonF}>
         {button}
       </Button>
     </form>
@@ -210,5 +208,5 @@ JustForm.propTypes = {
   checkboxClassname: PropTypes.string,
   classnameAccept: PropTypes.string,
   openModal: PropTypes.func.isRequired,
-}
+};
 export default JustForm;

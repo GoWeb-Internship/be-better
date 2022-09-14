@@ -1,9 +1,10 @@
 import React from 'react';
 import { useTranslation } from 'gatsby-plugin-react-i18next';
-import Section from '../reusableComponents/Section';
 import { StaticImage } from 'gatsby-plugin-image';
-import { IoIosArrowRoundDown } from 'react-icons/io';
-import icons from '../../images/formulaIcons.svg';
+
+import Section from 'components/reusableComponents/Section';
+import Heading from 'components/reusableComponents/Heading';
+
 import {
   listFormula,
   formula,
@@ -17,7 +18,9 @@ import {
   testSec,
   title,
 } from './Formula.module.css';
-import Heading from '../reusableComponents/Heading';
+
+import { IoIosArrowRoundDown } from 'react-icons/io';
+import icons from 'images/formulaIcons.svg';
 
 const Formula = () => {
   const { t } = useTranslation();

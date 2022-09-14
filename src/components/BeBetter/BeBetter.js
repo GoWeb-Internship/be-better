@@ -1,7 +1,11 @@
 import React from 'react';
-import { GatsbyImage } from 'gatsby-plugin-image';
 import { graphql, useStaticQuery } from 'gatsby';
 import { useTranslation } from 'gatsby-plugin-react-i18next';
+import { GatsbyImage } from 'gatsby-plugin-image';
+
+import Section from 'components/reusableComponents/Section';
+import Heading from 'components/reusableComponents/Heading';
+
 import {
   textBeBetter,
   beBetterSection,
@@ -16,8 +20,6 @@ import {
   bakaluImg,
   containerBeBetter,
 } from './BeBetter.module.css';
-import Section from '../reusableComponents/Section';
-import Heading from '../reusableComponents/Heading';
 
 const BeBetter = () => {
   const { i18n } = useTranslation();

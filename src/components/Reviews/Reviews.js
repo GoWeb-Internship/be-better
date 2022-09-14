@@ -1,14 +1,15 @@
 import React, { useEffect, useState } from 'react';
+import { graphql, useStaticQuery } from 'gatsby';
+import { useTranslation } from 'gatsby-plugin-react-i18next';
 import loadable from '@loadable/component';
 import { useMedia } from 'react-use';
-import { useTranslation } from 'gatsby-plugin-react-i18next';
-import { graphql, useStaticQuery } from 'gatsby';
 
-import Heading from '../reusableComponents/Heading';
-import ObserverWrapper from '../ObserverWrapper/ObserverWrapper';
+import Heading from 'components/reusableComponents/Heading';
+import ObserverWrapper from 'components/ObserverWrapper/ObserverWrapper';
 import ReviewsListSkeleton from './ReviewsListSkeleton';
 
 import { title } from './Reviews.module.css';
+
 import { CgQuote } from 'react-icons/cg';
 
 const ReviewsList = loadable(() => import('./ReviewsList'));

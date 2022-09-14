@@ -1,14 +1,17 @@
 import React, { useState, useEffect } from 'react';
-import { useTranslation } from 'gatsby-plugin-react-i18next';
 import { graphql, useStaticQuery } from 'gatsby';
 import loadable from '@loadable/component';
-import Section from '../reusableComponents/Section';
-import { title, icon } from './ClientHistory.module.css';
-import { FaQuoteLeft } from 'react-icons/fa';
-import Heading from '../reusableComponents/Heading';
+import { useTranslation } from 'gatsby-plugin-react-i18next';
 import { useMedia } from 'react-use';
+
+import Section from 'components/reusableComponents/Section';
+import Heading from 'components/reusableComponents/Heading';
 import ClientHistoryListSkeleton from './ClientHistoryListSkeleton';
-import ObserverWrapper from '../ObserverWrapper/ObserverWrapper';
+import ObserverWrapper from 'components/ObserverWrapper/ObserverWrapper';
+
+import { title, icon } from './ClientHistory.module.css';
+
+import { FaQuoteLeft } from 'react-icons/fa';
 
 const ClientHistoryList = loadable(() => import('./ClientHistoryList'));
 

@@ -1,14 +1,23 @@
 import React from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
 import { StaticImage } from 'gatsby-plugin-image';
+import { useTranslation, Link } from 'gatsby-plugin-react-i18next';
 
-import { useTranslation } from 'gatsby-plugin-react-i18next';
 import Container from '../Container';
-import { Link } from 'gatsby';
-import Heading from 'components/reusableComponents/Heading';
+import MarkdownList from 'components/reusableComponents/MarkdownList';
+
+import {
+  headerContainer,
+  logo,
+  link,
+  contentContainer,
+  title,
+  textContainer,
+} from './Pk.module.css';
 
 const Pk = () => {
-  const { i18n } = useTranslation();
+  const { t, i18n } = useTranslation();
+  const translate = t('pages', { returnObjects: true });
 
   const allMarkdownRemark = useStaticQuery(graphql`
     query {
@@ -29,35 +38,29 @@ const Pk = () => {
   return (
     <Container className="">
       <div className="relative w-full">
-        <div className="flex desktop:flex-row laptop:w-[768px]">
-          <Link
-            to="/"
-            className="w-9 h-5 hover:scale-110 mr-20 transition-transform tablet:ml-1  tablet:mt-4 laptop:mt-5 laptop:ml-13 laptop:mr-40 laptop:pl-14 "
-          >
+        <div className={headerContainer}>
+          <Link to="/" className={logo}>
             <StaticImage
               src="../../images/logo.svg"
               width={90}
               height={56}
               className=""
               layout="fixed"
-              alt="logo"
+              alt={translate.logo}
             />
           </Link>
-          <Link
-            to="/"
-            className="max-w-xs cursor-pointer  mb-16   desktop:mt-24 "
-          >
+          <Link to="/" className={link}>
             <StaticImage
               className="mt-8 cursor-pointer m-auto w-8 tablet:ml-40 h-5 -ml-96  laptop:ml-80 laptop:h-7 desktop:-ml-60"
               src="../../images/back.png"
-              alt="background"
+              alt={translate.arrow}
             />
           </Link>
         </div>
         <StaticImage
           layout="fullWidth"
           src="../../images/fonp-min.png"
-          alt=""
+          alt={translate.background}
           style={{ position: 'absolute' }}
           className="-z-20 top-11  tablet:object tablet:mt-6 tablet:h-20 tablet:w-36 laptop:w-96 laptop:mt-5 laptop:ml-80 -cover  h-20 ml-40   mt-0   mb-16 pr-0 max-w-5xl  desktop:h-36 desktop:-mt-12 desktop:ml-96 desktop:w-3/4"
           formats={['auto', 'webp', 'avif']}
@@ -66,30 +69,24 @@ const Pk = () => {
         <StaticImage
           layout="fullWidth"
           src="../../images/pkl-min.png"
-          alt=""
+          alt={translate.security}
           className="tablet:hidden desktop:block w-3/4 -z-10 top-0  max-w-md  !float-right mr-40  -mt-32 mb-16  h-60 rounded-lg "
           formats={['auto', 'webp', 'avif']}
         />
 
-        <div className="text-start h-96 block tablet:pl-5 laptop:pl-28 desktop:pl-72">
-          {data.map((node, id) => {
-            if (node.frontmatter.language === i18n.language) {
-              return (
-                <React.Fragment key={id}>
-                  <Heading
-                    tag="h1"
-                    text={node.frontmatter.title}
-                    className="text-main tablet:text-2xl -mt-[62px]  font-semibold laptop:text-4xl absolute mb-2 laptop:-mt-[72px] desktop:-mt-[190px]"
-                  />
-
-                  <div
-                    className="pt-0 h-96 mt-32 tablet:mr-10 laptop:mt-34px laptop:mr-32 desktop:mt-[150px] desktop:mr-52"
-                    dangerouslySetInnerHTML={{ __html: node.html }}
-                  />
-                </React.Fragment>
-              );
-            }
-          })}
+        <div className={contentContainer}>
+          {data.map((node, id) => (
+            <React.Fragment key={id}>
+              {node.frontmatter.language === i18n.language && (
+                <MarkdownList
+                  listClassName={textContainer}
+                  titleClassName={title}
+                  tag="h1"
+                  data={node}
+                />
+              )}
+            </React.Fragment>
+          ))}
         </div>
       </div>
     </Container>

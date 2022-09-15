@@ -45,6 +45,7 @@ const NotFound = () => {
       <GatsbyImage
         image={bgFoto}
         style={{ position: 'absolute' }}
+        alt={data.background}
         className="w-full h-full -z-10 top-0 left-0"
       />
       <div className=" laptop:flex laptop:justify-around">
@@ -58,7 +59,9 @@ const NotFound = () => {
           </Link>
         </div>
         <div>
-          {!isMobile && <GatsbyImage image={badWeather} className={img} />}
+          {!isMobile && (
+            <GatsbyImage image={badWeather} alt={data.rain} className={img} />
+          )}
         </div>
       </div>
     </div>

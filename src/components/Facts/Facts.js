@@ -80,7 +80,7 @@ const Facts = () => {
       <StaticImage
         layout="fullWidth"
         src="../../images/background/features.jpg"
-        alt=""
+        alt={data.background}
         style={{ position: 'absolute' }}
         className="w-full h-full -z-10 top-0"
       />
@@ -124,9 +124,9 @@ const Facts = () => {
           )}
         </div>
         {isWide ? (
-          <GatsbyImage image={fotoDesk} alt="foto" className={img} />
+          <GatsbyImage image={fotoDesk} alt={data.author} className={img} />
         ) : (
-          <GatsbyImage image={fotoMob} alt="foto" className={imgMob} />
+          <GatsbyImage image={fotoMob} alt={data.author} className={imgMob} />
         )}
       </div>
       <Way />

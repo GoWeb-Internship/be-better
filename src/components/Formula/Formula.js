@@ -31,7 +31,7 @@ const Formula = () => {
       <StaticImage
         layout="fullWidth"
         src="../../images/background/backgroundBlu.jpg"
-        alt=""
+        alt={data.background}
         style={{ position: 'absolute' }}
         className="w-full h-full -z-10 top-0"
       />

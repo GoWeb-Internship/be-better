@@ -109,13 +109,13 @@ const Couch = () => {
           {isMobile ? (
             <GatsbyImage
               image={DesktopScreenAvatar}
-              alt="author with notebook"
+              alt={couch.withNote}
               className={mainImg}
             />
           ) : (
             <GatsbyImage
               image={smartScreenAvatar}
-              alt="author with notebook"
+              alt={couch.withNote}
               className={mainImg}
             />
           )}
@@ -151,7 +151,7 @@ const Couch = () => {
             {(isMobile || isDesktop) && (
               <GatsbyImage
                 image={notebookImg}
-                alt="notebook"
+                alt={couch.notebook}
                 className="mt-4 rounded-2xl desktop:w-[416px] desktop:h-[280px] "
               />
             )}
@@ -172,7 +172,7 @@ const Couch = () => {
               <div className="absolute right-0 rounded-2xl mt-[20px] mr-auto">
                 <GatsbyImage
                   image={skyscraper}
-                  alt="skyscraper"
+                  alt={couch.skyscraper}
                   className="w-[160px] h-[176px]"
                 />
               </div>
@@ -199,7 +199,7 @@ const Couch = () => {
           <GatsbyImage
             image={skyscraperMob}
             className="w-[201px] h-[174px]"
-            alt="skyscraper"
+            alt={couch.skyscraper}
           />
         </div>
       </div>

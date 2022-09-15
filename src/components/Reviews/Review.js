@@ -51,7 +51,7 @@ const Review = ({ frontmatter }) => {
 
   return (
     <div className={reviewContainer}>
-      <div className={`${overflow} ${textContainer} h-28  laptop:h-[200px] `}>
+      <div className={`${overflow} ${textContainer} h-36 laptop:h-[200px] `}>
         <div>
           <p>{frontmatter[`${i18n.language}Text`]}</p>
         </div>

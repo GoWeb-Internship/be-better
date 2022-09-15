@@ -26,18 +26,18 @@ const Way = () => {
   const data = allMarkdownRemark.nodes;
   return (
     <div className={wayContainer}>
-      {data.map(node => {
-        if (node.frontmatter.language === i18n.language) {
-          return (
+      {data.map((node, id) => (
+        <React.Fragment key={id}>
+          {node.frontmatter.language === i18n.language && (
             <MarkdownList
               listClassName={listContainer}
               titleClassName={title}
               tag="h3"
               data={node}
             />
-          );
-        }
-      })}
+          )}
+        </React.Fragment>
+      ))}
     </div>
   );
 };

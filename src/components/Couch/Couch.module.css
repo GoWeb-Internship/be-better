@@ -7,7 +7,7 @@
 }
 
 .mainImg {
-  @apply rounded-2xl desktop:mt-[98px] w-[134px] h-[160px] laptop:w-[310px] laptop:h-[398px] desktop:w-[366px] desktop:h-[520px];
+  @apply rounded-2xl mb-4 desktop:mt-[98px] w-[134px] h-[160px] laptop:w-[310px] laptop:h-[398px] desktop:w-[366px] desktop:h-[520px];
 }
 
 .title {

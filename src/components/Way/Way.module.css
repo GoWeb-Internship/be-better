@@ -15,5 +15,5 @@
 }
 
 .listContainer li {
-  @apply mb-3 desktop:mb-5 marker:text-mainSecond list-disc;
+  @apply mb-3 desktop:mb-5 marker:text-mainSecond marker:text-xl list-disc laptop:marker:text-3xl;
 }

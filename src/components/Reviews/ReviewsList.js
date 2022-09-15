@@ -12,7 +12,7 @@ const ReviewsList = ({ slidesPerView, reviewsData }) => {
       {!!reviewsData.length &&
         reviewsData.map(({ frontmatter }, id) => {
           return (
-            <SwiperSlide key={id} className="slide h-auto slider-item-width ">
+            <SwiperSlide key={id} className="slide h-auto slider-item-width  ">
               <Review frontmatter={frontmatter} />
             </SwiperSlide>
           );

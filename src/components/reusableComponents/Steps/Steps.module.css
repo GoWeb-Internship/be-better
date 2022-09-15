@@ -1,5 +1,5 @@
 .titleFacts {
-  @apply text-mainSecondLight text-xl font-medium laptop:font-semibold laptop:text-4xl text-center laptop:w-[68%] laptop:ml-32 laptop:pl-6 desktop:pl-0 desktop:ml-16 desktop:w-[100%]  pt-[3rem] desktop:pt-[5rem] -top-20 max-w-7xl laptop:mb-4 desktop:mb-0;
+  @apply text-orangeDark text-xl font-medium laptop:font-semibold laptop:text-4xl text-center laptop:w-[68%] laptop:ml-32 laptop:pl-6 desktop:pl-0 desktop:ml-16 desktop:w-[100%]  pt-[3rem] desktop:pt-[5rem] -top-20 max-w-7xl laptop:mb-4 desktop:mb-0;
 }
 .listFacts {
   @apply flex text-sm pr-4 pb-24 pt-2 min-w-min justify-center flex-wrap text-start desktop:pb-24 desktop:w-48 desktop:max-w-7xl desktop:flex-nowrap;
@@ -31,7 +31,7 @@
 }
 
 .textPrP {
-  @apply text-mainSecond list-none list-inside font-normal text-sm;
+  @apply text-mainSecond list-none list-inside font-bold text-base;
 }
 
 .textContainer {

@@ -32,7 +32,7 @@
 }
 
 .textPr {
-  @apply text-main list-none  list-inside font-normal text-sm;
+  @apply text-main list-none  list-inside font-bold text-sm;
 }
 
 .textContainer {

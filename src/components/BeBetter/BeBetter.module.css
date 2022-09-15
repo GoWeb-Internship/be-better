@@ -19,7 +19,7 @@
 }
 
 .textBeBetter li {
-  @apply pb-3 ml-[10px] mr-[10px] text-start font-normal text-base list-disc mb-2 marker:text-main desktop:w-[476px];
+  @apply pb-3 ml-[10px] mr-[10px] text-start font-normal text-sm laptop:text-base list-disc mb-2 marker:text-main desktop:w-[476px];
 }
 
 .textBeBetter {

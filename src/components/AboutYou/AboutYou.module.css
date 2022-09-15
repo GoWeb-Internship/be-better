@@ -11,9 +11,9 @@
 }
 
 .listContainer ul {
-  @apply list-outside list-disc marker:text-main laptop:w-[148px] laptop:m-auto desktop:w-[220px] desktop:mr-0;
+  @apply list-outside  laptop:w-[148px] laptop:m-auto desktop:w-[220px] desktop:mr-0;
 }
 
 .listContainer li {
-  @apply mb-3 text-sm laptop:text-xs desktop:text-sm;
+  @apply mb-3 text-sm laptop:text-xs desktop:text-sm marker:text-main marker:text-xl list-disc;
 }

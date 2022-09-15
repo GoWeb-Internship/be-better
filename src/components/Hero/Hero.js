@@ -37,7 +37,7 @@ const Hero = () => {
             <StaticImage
               layout="fullWidth"
               src="../../images/background/heroDesktop.jpg"
-              alt="background on desktop"
+              alt={hero.background}
               style={{ position: 'absolute' }}
               className={desktopBgImg}
             />

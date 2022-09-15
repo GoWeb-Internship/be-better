@@ -18,6 +18,7 @@
   },
   "aboutMe": {
     "title": "Let's get acquainted",
+    "alt": "Author with glasses",
     "oneParagraphFirst": "Hello, I'm Yuliya and ",
     "oneParagraphSpan": "my motto is - to live it up! ",
     "oneParagraphThird": "I always do what brings me pleasure and fun, I like to discover new cities, countries, continents and I can’t stop doing it. ",
@@ -29,6 +30,18 @@
     "fourParagraph": "Together we will reveal your potential, analyze your desires and determine what slows down you along the way to your goals.",
     "fiveParagraphSpan": "And you will definitely get to know what it is to live it up!"
   },
+  "bebetter": {
+    "jumper": "Rock jumper",
+    "auto": "Cool auto",
+    "glasses": "Glasses"
+  },
+  "changes": {
+    "orangeBgRectangular ": "Orange rectangular background",
+    "mobileBg": "Orange background",
+    "arrowWithBg": "Arrow with background",
+    "arrow": "Arrow",
+    "author": "Julia on the beach"
+  },
   "hero": {
     "teach": "I will teach you",
     "life": "  to live",
@@ -38,14 +51,21 @@
     "if": "If you ",
     "emo": " are emotionally burnt out",
     "yourLife": "your life",
-    "pleasure": "and don’t enjoy "
+    "pleasure": "and don’t enjoy ",
+    "background": "Background beach"
+  },
+  "guarantee": {
+    "background": "Julia near the car"
   },
   "couch": {
     "title": "Why it is better with a coach?",
     "mySelf": "“I’ll do it myself” is a common mistake of people who drive themselves and constantly face burnout…",
     "course": "Of course, you can do it yourself, if you find the time and energy to study all the necessary information, you will understand what you need, what are the problems and start acting.",
     "noTime": "But there is not enough time anyway, and your current knowledge has led to the current situation.",
-    "why": "What for you need to “reinvent the wheel“, waste time, money, energy and to go all the way yourself and, besides, you don’t even know whether it will be successful.  Instead, you can call for professional help and achieve results faster and easier. That's what all successful people do!"
+    "why": "What for you need to “reinvent the wheel“, waste time, money, energy and to go all the way yourself and, besides, you don’t even know whether it will be successful.  Instead, you can call for professional help and achieve results faster and easier. That's what all successful people do!",
+    "withNote": "Julia with laptop",
+    "notebook": "Laptop",
+    "skyscraper": "Skyscraper"
   },
   "modalForm": {
     "hi": "Hi",
@@ -76,6 +96,13 @@
       "phoneReguired": "Phone number is required",
       "check": "You must accept the terms"
     }
+  },
+  "pages": {
+    "logo": "Logo",
+    "background": "Background",
+    "hand": "Hand with a pen",
+    "arrow": "Go back",
+    "security": "Privacy img"
   },
   "reviews": {
     "title": "Сustomer feedback ❤️"
@@ -119,7 +146,9 @@
         "svg": "clock",
         "bg": "500+"
       }
-    ]
+    ],
+    "background": "Orange background",
+    "author": "Julia in the office with a laptop"
   },
   "formula": {
     "title": "My formula is very simple and effective",
@@ -137,14 +166,16 @@
         "svg": "puzzle"
       },
       { "firstWord": "Start", "colorWord": " doing!", "svg": "toDo" }
-    ]
+    ],
+    "background": "Background img"
   },
   "footer": {
     "links": [
       { "name": "Privacy Policy", "id": "policy" },
       { "name": "Public offer", "id": "oferta" }
     ],
-    "priceByOne": "*The cost for one session 100$"
+    "priceByOne": "*The cost for one session 100$",
+    "logo": "Logo"
   },
   "littleComponents": {
     "button": "Sign up",
@@ -208,7 +239,9 @@
     "something": "Something went wrong(",
     "work": "We are already working to fix this!",
     "timeToReturn": "In the meantime, you can return to the main page",
-    "returnLink": "Return to main"
+    "returnLink": "Return to main",
+    "background": "Background  img",
+    "rain": "Girl in the rain"
   },
   "stepsnew": {
     "title": "How we do it in 6 easy steps",

@@ -1,6 +1,7 @@
 import React from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
 import { GatsbyImage } from 'gatsby-plugin-image';
+import { useTranslation } from 'gatsby-plugin-react-i18next';
 
 import {
   icon,
@@ -12,6 +13,10 @@ import {
 import icons from 'images/sprite.svg';
 
 const GuaranteeBg = () => {
+  const { t } = useTranslation();
+
+  const { background } = t('guarantee', { returnObjects: true });
+
   const foto = useStaticQuery(graphql`
     query {
       guaranteeMobile: file(name: { eq: "guaranteeMobile" }) {
@@ -54,7 +59,7 @@ const GuaranteeBg = () => {
       <div className="laptop:hidden">
         <GatsbyImage
           image={mobileGuarantee}
-          alt="author with car small"
+          alt={background}
           style={{ position: 'absolute' }}
           className={photoMobile}
         />
@@ -62,7 +67,7 @@ const GuaranteeBg = () => {
       <div className="hidden laptop:block desktop:hidden">
         <GatsbyImage
           image={tabletGuarantee}
-          alt="author with car middle"
+          alt={background}
           style={{ position: 'absolute' }}
           className={photoTablet}
         />
@@ -70,7 +75,7 @@ const GuaranteeBg = () => {
       <div className="hidden desktop:block">
         <GatsbyImage
           image={desktopGuarantee}
-          alt="author with car big"
+          alt={background}
           style={{ position: 'absolute' }}
           className={photoDesktop}
         />

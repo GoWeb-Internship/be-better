@@ -39,7 +39,7 @@ const FormInMain = ({ clickFrom }) => {
           <StaticImage
             layout="fullWidth"
             src="../../images/background/formMobile.jpg"
-            alt="mobileform background"
+            alt={hero.background}
             style={{ position: 'absolute' }}
             className="w-full h-full -z-10 top-0"
           />
@@ -48,7 +48,7 @@ const FormInMain = ({ clickFrom }) => {
           <StaticImage
             layout="fullWidth"
             src="../../images/background/formTablet.jpg"
-            alt="tablet form background"
+            alt={hero.background}
             style={{ position: 'absolute' }}
             className="w-full h-full -z-10 top-0"
           />

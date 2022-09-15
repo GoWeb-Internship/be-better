@@ -4,7 +4,7 @@ import { useTranslation } from 'gatsby-plugin-react-i18next';
 import { GatsbyImage } from 'gatsby-plugin-image';
 
 import Section from 'components/reusableComponents/Section';
-import Heading from 'components/reusableComponents/Heading';
+import MarkdownList from 'components/reusableComponents/MarkdownList';
 
 import {
   textBeBetter,
@@ -22,7 +22,7 @@ import {
 } from './BeBetter.module.css';
 
 const BeBetter = () => {
-  const { i18n } = useTranslation();
+  const { t, i18n } = useTranslation();
 
   const allMarkdownRemark = useStaticQuery(graphql`
     query {
@@ -77,6 +77,8 @@ const BeBetter = () => {
     }
   `);
 
+  const translate = t('bebetter', { returnObjects: true });
+
   const data = allMarkdownRemark.text.nodes;
   const avatar = allMarkdownRemark.avatarMin.childImageSharp.gatsbyImageData;
   const avatarThree =
@@ -88,38 +90,32 @@ const BeBetter = () => {
     <Section className={beBetterSection} id="be-better">
       <div className={containerBeBetter}>
         <div>
-          {data.map(node => {
-            if (node.frontmatter.language === i18n.language) {
-              return (
-                <div key={node.frontmatter.title}>
-                  <Heading
-                    tag="h2"
-                    className={textBeBet}
-                    text={node.frontmatter.title}
-                  />
-                  <div
-                    key={node.frontmatter.language}
-                    className={textBeBetter}
-                    dangerouslySetInnerHTML={{ __html: node.html }}
-                  />
-                </div>
-              );
-            }
-          })}
+          {data.map((node, id) => (
+            <React.Fragment key={id}>
+              {node.frontmatter.language === i18n.language && (
+                <MarkdownList
+                  listClassName={textBeBetter}
+                  titleClassName={textBeBet}
+                  tag="h2"
+                  data={node}
+                />
+              )}
+            </React.Fragment>
+          ))}
         </div>
         <div className={pictures}>
           <div className={pictureDesktop}>
             <div className={beBetterCont}>
               <GatsbyImage
                 image={avatar}
-                alt="result"
+                alt={translate.jumper}
                 className={oneMin}
               />
             </div>
             <div className={divImg}>
               <GatsbyImage
                 image={avatarThree}
-                alt="car"
+                alt={translate.auto}
                 className={threeMin}
               />
             </div>
@@ -127,7 +123,7 @@ const BeBetter = () => {
           <div className={bocaluDiv}>
             <GatsbyImage
               image={avatarBocalu}
-              alt="grocers"
+              alt={translate.glasses}
               className={bakaluImg}
             />
           </div>

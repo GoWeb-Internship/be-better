@@ -22,10 +22,11 @@ import {
 const FormInModal = loadable(() => import('../Form/FormInModal'));
 
 const Change = () => {
-  const { i18n } = useTranslation();
+  const { t, i18n } = useTranslation();
   const [modal, setModal] = useState(false);
-  const { t } = useTranslation();
+
   const buttonTranslate = t('littleComponents', { returnObjects: true });
+  const altTranslate = t('changes', { returnObjects: true });
 
   const markdown = useStaticQuery(graphql`
     query {
@@ -111,7 +112,7 @@ const Change = () => {
                 <StaticImage
                   layout="fullWidth"
                   src="../../images/fon-min.png"
-                  alt="fon"
+                  alt={altTranslate.orangeBgRectangular}
                   style={{ position: 'absolute' }}
                   className="w-[154px] h-[64px] float-right move-right -z-10 laptop:w-[504px] laptop:h-[96px] desktop:w-[1036px] desktop:h-[152px]"
                   formats={['auto', 'webp', 'avif']}
@@ -121,7 +122,7 @@ const Change = () => {
                 <StaticImage
                   layout="fullWidth"
                   src="../../images/fontwo-min.png"
-                  alt="background"
+                  alt={altTranslate.mobileBg}
                   style={{ position: 'absolute' }}
                   className="-z-20  w-full h-full mt-[64px] laptop:mt-[84px] max-w-full  "
                   formats={['auto', 'webp', 'avif']}
@@ -131,7 +132,7 @@ const Change = () => {
                 <StaticImage
                   layout="fullWidth"
                   src="../../images/background/about.jpg"
-                  alt="background"
+                  alt={altTranslate.arrowWithBg}
                   style={{ position: 'absolute' }}
                   className="-z-20 w-[1440px] h-[750px] mt-6   desktop:mt-[149px]"
                   formats={['auto', 'webp', 'avif']}
@@ -145,7 +146,7 @@ const Change = () => {
               <div className="laptop:float-right laptop:-mt-40 display:block desktop:-mt-[77px] desktop:-mr-[20px]">
                 <GatsbyImage
                   image={avatarJl}
-                  alt="julia"
+                  alt={altTranslate.author}
                   style={{ position: 'absolute' }}
                   className="w-[280px] h-[280px] -ml-44 rounded-2xl laptop:w-[310px] laptop:h-[442px] desktop:w-[480px] desktop:h-[734px] desktop:pr-[60px] desktop:-ml-[600px] desktop:-mt-[40px] desktop:pb-[80px]"
                 />
@@ -153,7 +154,7 @@ const Change = () => {
               <div className="desktop:hidden">
                 <StaticImage
                   src="../../images/union-min.png"
-                  alt="union"
+                  alt={altTranslate.arrow}
                   style={{ position: 'absolute' }}
                   className="w-[88px] h-[476px] -z-10 -ml-32 mt-[300px] laptop:w-[88px] laptop:h-[444px] laptop:mt-8 laptop:-ml-64"
                   formats={['auto', 'webp', 'avif']}

@@ -32,22 +32,21 @@ const Guarantee = () => {
 
   return (
     <Section className={guarantee} id="guarantee">
-      <GuaranteeBg />
-      {data.map(node => {
-        if (node.frontmatter.language === i18n.language) {
-          return (
+      <GuaranteeBg />{' '}
+      {data.map((node, id) => (
+        <React.Fragment key={id}>
+          {node.frontmatter.language === i18n.language && (
             <MarkdownList
               listClassName={text}
               titleClassName={title}
               tag="h2"
               data={node}
             />
-          );
-        }
-      })}
+          )}
+        </React.Fragment>
+      ))}
     </Section>
   );
 };
 
 export default Guarantee;
-//

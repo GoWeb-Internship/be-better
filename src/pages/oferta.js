@@ -1,5 +1,7 @@
 import React from 'react';
 import Seo from 'components/seo';
+import { graphql } from 'gatsby';
+
 import Oferta from 'components/Oferta';
 import ButtonUp from 'components/ButtonUp';
 import { useTranslation } from 'gatsby-plugin-react-i18next';
@@ -22,3 +24,17 @@ const Po = () => {
 };
 
 export default Po;
+
+export const query = graphql`
+  query ($language: String!) {
+    locales: allLocale(filter: { language: { eq: $language } }) {
+      edges {
+        node {
+          ns
+          data
+          language
+        }
+      }
+    }
+  }
+`;

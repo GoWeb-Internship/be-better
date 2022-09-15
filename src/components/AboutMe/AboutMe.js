@@ -53,7 +53,7 @@ const AboutMe = () => {
 
           <GatsbyImage
             image={DesktopScreenAvatar}
-            alt="author"
+            alt={data.alt}
             className="w-[134px] h-[160px] laptop:w-[270px]  laptop:h-[342px] laptop:mr-5    desktop:w-[524px] desktop:h-full rounded-[24px] "
           />
         </div>

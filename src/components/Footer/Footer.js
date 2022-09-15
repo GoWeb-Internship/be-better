@@ -34,8 +34,7 @@ import icons from 'images/sprite.svg';
 
 const Footer = () => {
   const { t, i18n } = useTranslation();
-  const { links } = t('footer', { returnObjects: true });
-  const { priceByOne } = t('footer', { returnObjects: true });
+  const translation = t('footer', { returnObjects: true });
 
   const isDesktop = useMedia('(min-width:1440px)');
 
@@ -72,9 +71,9 @@ const Footer = () => {
             <div className={social}>
               <Social classNameList="space-y-6 laptop:space-y-4" />
               <div>
-                {data.map(node => {
-                  if (node.frontmatter.language === i18n.language) {
-                    return (
+                {data.map((node, id) => (
+                  <React.Fragment key={id}>
+                    {node.frontmatter.language === i18n.language && (
                       <div
                         key={node.frontmatter.language}
                         className={titleContainer}
@@ -89,9 +88,9 @@ const Footer = () => {
                           classnameDiscount={discount}
                         />
                       </div>
-                    );
-                  }
-                })}
+                    )}
+                  </React.Fragment>
+                ))}
               </div>
             </div>
             <div className="laptop:flex laptop:flex-row-reverse laptop:-mt-2 desktop:block">
@@ -103,13 +102,16 @@ const Footer = () => {
                 />
               </div>
               <div className={icf}>
-                <StaticImage src="../../images/icf.png" alt="icf" />
+                <StaticImage
+                  src="../../images/icf.png"
+                  alt={translation.logo}
+                />
               </div>
             </div>
             <Donations className={donate} classNameText="text-main " />
-            <p className={price}>{priceByOne}</p>
+            <p className={price}>{translation.priceByOne}</p>
             <ul className={list}>
-              {links.map(({ name, id }) => (
+              {translation.links.map(({ name, id }) => (
                 <li key={id} className={link}>
                   <Link
                     to={`/${id}`}

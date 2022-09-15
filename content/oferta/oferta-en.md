@@ -3,7 +3,7 @@ title: Public offer
 language: en
 ---
 
-<span>Public offer for the provision of paid and free consulting services</span>
+<h3><span>Public offer for the provision of paid and free consulting services</span></h3>
 
 20.04.2022 A real public offer, the text of which is constantly posted for
 information telecommunications network "Internet" (hereinafter - the Internet
@@ -11,7 +11,7 @@ network) at the network address: http://be-better.today is an offer addressed to
 an unlimited number of people enter into a contract for the provision of paid
 coaching services specified in this public offer.
 
-1.  TERMS AND DEFINITIONS
+1.  ## TERMS AND DEFINITIONS
 
     1.1. "Party", "Parties" - Customer, Listener, Performer.
 
@@ -90,7 +90,7 @@ coaching services specified in this public offer.
     participates in the process in the form of observations, questions, other
     skills and Coaching skills provided by the ICF Key Competencies.
 
-2.  OFFER ACCEPTANCE
+2.  ## OFFER ACCEPTANCE
 
     2.1. Acceptance of the Offer by the person specified in Clause
 
@@ -125,7 +125,7 @@ coaching services specified in this public offer.
     considered the date of receipt of the complete offer payment for Services no
     later than the date of provision of the relevant Service.
 
-3.  SCOPE OF THE CONTRACT
+3.  ## SCOPE OF THE CONTRACT
 
     3.1. The Contractor undertakes to provide the Customer with services
     individual counseling in the form of coaching (hereinafter - "coaching"),
@@ -143,7 +143,7 @@ coaching services specified in this public offer.
     the Contractor's address has not been received relevant statements or claims
     from the Customer and (or) Listener.
 
-4.  RIGHTS AND DUTIES
+4.  ## RIGHTS AND DUTIES
 
     4.1. RIGHTS AND OBLIGATIONS OF THE PERFORMER
 
@@ -253,7 +253,7 @@ coaching services specified in this public offer.
     Ethics, the Customer has the right to apply to the International Coachin
     Federation or one of its affiliates branches
 
-5.  FINANCIAL TERMS
+5.  ## FINANCIAL TERMS
 
     5.1. The cost of the session regardless of the form of its conduct
     (face-to-face or with the help of funds communication: by phone, skype,
@@ -289,15 +289,14 @@ coaching services specified in this public offer.
     same time, the funds are returned to the Customer by transfer to his current
     account or bank card.
 
-6.  TERM OF THE CONTRACT
+6.  ## TERM OF THE CONTRACT
 
     6.1. The contract is valid from the date of its conclusion by the Parties
     until the end of the period provision of Consulting Services to the Customer
     and Listeners, and in part others obligations of the Parties - until full
     fulfillment.
 
-7.  RESPONSIBILITIES OF THE PARTIES. RESOLUTION OF DISPUTES. FORCE MAJEURE.
-    MESSAGE.
+7.  ## RESPONSIBILITIES OF THE PARTIES. RESOLUTION OF DISPUTES. FORCE MAJEURE.MESSAGE.
 
     7.1. For non-fulfillment or improper fulfillment of the obligations accepted
     under this Agreement obligations, the Parties bear the responsibility
@@ -397,7 +396,7 @@ coaching services specified in this public offer.
 
   7.15 The executor is (taxpayer/natural person).
 
-8. FINAL PROVISIONS
+8. ## FINAL PROVISIONS
 
    8.1. This Agreement enters into force from the moment of signing and remains
    in effect until complete performance by the Parties of their obligations.
@@ -420,7 +419,7 @@ coaching services specified in this public offer.
    terms and conditions by the Parties terminology in Russian in two authentic
    copies, one for each of Parties that have the same legal validity.
 
-9. DETAILS OF THE PERFORMER  
+9. ## DETAILS OF THE PERFORMER
    Recipient:  
    Shayenko Yuliya Yuriivna  
    IBAN - UA973220010000026004310078110  
@@ -431,5 +430,3 @@ coaching services specified in this public offer.
    МФО 322001  
    ЕГРПОУ Банка 21133352  
    PayPal - [yshayenko@gmail.com](yshayenko@gmail.com)
-
-   

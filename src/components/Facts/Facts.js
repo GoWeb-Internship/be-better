@@ -55,7 +55,7 @@ const Facts = () => {
         publicURL
         childImageSharp {
           id
-          gatsbyImageData(placeholder: BLURRED, formats: [AUTO, WEBP, AVIF])
+          gatsbyImageData(placeholder: BLURRED, formats: [AUTO, WEBP])
         }
       }
       desk: file(name: { eq: "factsFoto" }) {
@@ -63,7 +63,7 @@ const Facts = () => {
         publicURL
         childImageSharp {
           id
-          gatsbyImageData(placeholder: BLURRED, formats: [AUTO, WEBP, AVIF])
+          gatsbyImageData(placeholder: BLURRED, formats: [AUTO, WEBP])
         }
       }
     }

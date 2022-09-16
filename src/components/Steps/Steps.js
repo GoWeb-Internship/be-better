@@ -23,6 +23,7 @@ const Steps = () => {
             alt={data.background}
             style={{ position: 'absolute' }}
             className="-z-20 w-full h-full"
+            formats={['auto', 'webp']}
           />
         )}
         {media === 'tablet' && (
@@ -32,6 +33,7 @@ const Steps = () => {
             alt={data.background}
             style={{ position: 'absolute' }}
             className="-z-20 w-full h-full"
+            formats={['auto', 'webp']}
           />
         )}
         {media === 'mobile' && (
@@ -41,6 +43,7 @@ const Steps = () => {
             alt={data.background}
             style={{ position: 'absolute' }}
             className="-z-20 w-full h-full"
+            formats={['auto', 'webp']}
           />
         )}
         <List data={data} icons={svg} />

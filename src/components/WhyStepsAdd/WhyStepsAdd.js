@@ -5,44 +5,48 @@ import { StaticImage } from 'gatsby-plugin-image';
 import Section from 'components/reusableComponents/Section';
 import List from 'components/reusableComponents/Steps';
 import Reviews from 'components/Reviews';
-
+import useMediaRules from 'helpers/getMedia';
 import svg from 'images/iconsnew.svg';
 import VectorBackground from 'images/vectorBackgrounds/step1.inline.svg';
 
 const StepsAdd = () => {
   const { t } = useTranslation();
   const data = t('stepsnew', { returnObjects: true });
+  const media = useMediaRules();
 
   return (
-    <Section className="relative" id="whyStep" Background={VectorBackground}>
-      <div className="relative max-h-full ">
-        <div className="tablet:hidden desktop:block">
+    <Section id="whyStep" Background={VectorBackground}>
+      <div className=" max-h-full ">
+        {media === 'desktop' && (
           <StaticImage
             layout="fullWidth"
             src="../../images/van.png"
             alt={data.background}
             style={{ position: 'absolute' }}
             className="-z-20 w-full h-full"
+            formats={['auto', 'webp']}
           />
-        </div>
-        <div className="tablet:hidden laptop:block desktop:hidden">
+        )}
+        {media === 'tablet' && (
           <StaticImage
             layout="fullWidth"
             src="../../images/grow.png"
             alt={data.background}
             style={{ position: 'absolute' }}
             className="-z-20 w-full h-full"
+            formats={['auto', 'webp']}
           />
-        </div>
-        <div className="laptop:hidden">
+        )}
+        {media === 'mobile' && (
           <StaticImage
             layout="fullWidth"
             src="../../images/vectwo-min.png"
             alt={data.background}
             style={{ position: 'absolute' }}
             className="-z-20 w-full h-full"
+            formats={['auto', 'webp']}
           />
-        </div>
+        )}
         <List data={data} icons={svg} />
         <Reviews />
       </div>

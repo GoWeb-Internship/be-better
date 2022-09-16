@@ -52,7 +52,7 @@ const Change = () => {
           id
           gatsbyImageData(
             placeholder: BLURRED
-            formats: [AUTO, WEBP, AVIF]
+            formats: [AUTO, WEBP]
             layout: CONSTRAINED
           )
         }
@@ -64,7 +64,7 @@ const Change = () => {
           id
           gatsbyImageData(
             placeholder: BLURRED
-            formats: [AUTO, WEBP, AVIF]
+            formats: [AUTO, WEBP]
             layout: CONSTRAINED
           )
         }
@@ -76,7 +76,7 @@ const Change = () => {
           id
           gatsbyImageData(
             placeholder: BLURRED
-            formats: [AUTO, WEBP, AVIF]
+            formats: [AUTO, WEBP]
             layout: CONSTRAINED
           )
         }
@@ -88,7 +88,7 @@ const Change = () => {
           id
           gatsbyImageData(
             placeholder: BLURRED
-            formats: [AUTO, WEBP, AVIF]
+            formats: [AUTO, WEBP]
             layout: CONSTRAINED
           )
         }
@@ -118,7 +118,7 @@ const Change = () => {
                   alt={altTranslate.orangeBgRectangular}
                   style={{ position: 'absolute' }}
                   className="w-[154px] h-[64px] float-right move-right -z-10 laptop:w-[504px] laptop:h-[96px] desktop:w-[1036px] desktop:h-[152px]"
-                  formats={['auto', 'webp', 'avif']}
+                  formats={['auto', 'webp']}
                 />
               </div>
 
@@ -129,7 +129,7 @@ const Change = () => {
                   alt={altTranslate.arrowWithBg}
                   style={{ position: 'absolute' }}
                   className="-z-20 w-[1440px] h-[750px] mt-6   desktop:mt-[149px]"
-                  formats={['auto', 'webp', 'avif']}
+                  formats={['auto', 'webp']}
                 />
               ) : (
                 <StaticImage
@@ -138,7 +138,7 @@ const Change = () => {
                   alt={altTranslate.mobileBg}
                   style={{ position: 'absolute' }}
                   className="-z-20  w-full h-full mt-[64px] laptop:mt-[84px] max-w-full  "
-                  formats={['auto', 'webp', 'avif']}
+                  formats={['auto', 'webp']}
                 />
               )}
 
@@ -161,7 +161,7 @@ const Change = () => {
                   alt={altTranslate.arrow}
                   style={{ position: 'absolute' }}
                   className="w-[88px] h-[476px] -z-10 -ml-32 mt-[300px] laptop:w-[88px] laptop:h-[444px] laptop:mt-8 laptop:-ml-64"
-                  formats={['auto', 'webp', 'avif']}
+                  formats={['auto', 'webp']}
                 />
               )}
               <div className="flex justify-between">

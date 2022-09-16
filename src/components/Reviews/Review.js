@@ -60,7 +60,7 @@ const Review = ({ frontmatter }) => {
       <div className={authorContainer}>
         <GatsbyImage
           image={image}
-          alt="avatar"
+          alt={frontmatter[`${i18n.language}Name`]}
           className={
             isDesktop ? `${avatarDesk} mr-2 laptop:mr-6` : `${avatarMob}`
           }

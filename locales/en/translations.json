@@ -191,6 +191,7 @@
   },
   "steps": {
     "title": "What are your 6 most important results?",
+    "background": "Background  img",
     "page": [
       {
         "textPrimary": "1 Understanding",
@@ -245,6 +246,7 @@
   },
   "stepsnew": {
     "title": "How we do it in 6 easy steps",
+    "background": "Background  img",
     "steps": [
       {
         "textPrimary": "Step 1",

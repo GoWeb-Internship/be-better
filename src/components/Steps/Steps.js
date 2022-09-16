@@ -18,7 +18,7 @@ const Steps = () => {
           <StaticImage
             layout="fullWidth"
             src="../../images/results.png"
-            alt=""
+            alt={data.background}
             style={{ position: 'absolute' }}
             className="-z-20 w-full h-full"
           />
@@ -27,7 +27,7 @@ const Steps = () => {
           <StaticImage
             layout="fullWidth"
             src="../../images/group.png"
-            alt=""
+            alt={data.background}
             style={{ position: 'absolute' }}
             className="-z-20 w-full h-full"
           />
@@ -36,7 +36,7 @@ const Steps = () => {
           <StaticImage
             layout="fullWidth"
             src="../../images/vanMin.png"
-            alt=""
+            alt={data.background}
             style={{ position: 'absolute' }}
             className="-z-20 w-full h-full"
           />

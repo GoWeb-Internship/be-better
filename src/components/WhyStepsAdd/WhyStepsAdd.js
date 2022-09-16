@@ -19,7 +19,7 @@ const StepsAdd = () => {
           <StaticImage
             layout="fullWidth"
             src="../../images/van.png"
-            alt="features"
+            alt={data.background}
             style={{ position: 'absolute' }}
             className="-z-20 w-full h-full"
           />
@@ -28,7 +28,7 @@ const StepsAdd = () => {
           <StaticImage
             layout="fullWidth"
             src="../../images/grow.png"
-            alt="features"
+            alt={data.background}
             style={{ position: 'absolute' }}
             className="-z-20 w-full h-full"
           />
@@ -37,7 +37,7 @@ const StepsAdd = () => {
           <StaticImage
             layout="fullWidth"
             src="../../images/vectwo-min.png"
-            alt="vectwo"
+            alt={data.background}
             style={{ position: 'absolute' }}
             className="-z-20 w-full h-full"
           />

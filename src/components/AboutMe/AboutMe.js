@@ -23,7 +23,7 @@ const AboutMe = () => {
         publicURL
         childImageSharp {
           id
-          gatsbyImageData(placeholder: BLURRED, formats: [AUTO, WEBP, AVIF])
+          gatsbyImageData(placeholder: BLURRED, formats: [AUTO, WEBP])
         }
       }
     }
@@ -53,12 +53,13 @@ const AboutMe = () => {
               </span>
             </span>
           </div>
-
-          <GatsbyImage
-            image={DesktopScreenAvatar}
-            alt={data.alt}
-            className="w-[134px] h-[160px] laptop:w-[270px]  laptop:h-[342px] laptop:mr-5    desktop:w-[524px] desktop:h-full rounded-[24px] "
-          />
+          <div className="  overflow-hidden ">
+            <GatsbyImage
+              image={DesktopScreenAvatar}
+              alt={data.alt}
+              className="w-[134px] h-[160px] laptop:w-[270px]  laptop:h-[342px] laptop:mr-5    desktop:w-[524px] desktop:h-full rounded-2xl  "
+            />
+          </div>
         </div>
         <AboutMePrimaryText data={data} />
       </div>

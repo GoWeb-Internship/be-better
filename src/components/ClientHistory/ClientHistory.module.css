@@ -22,7 +22,7 @@
 }
 
 .icon {
-  @apply absolute -z-10 text-[#E8F6FA] top-[155px] left-[20px] laptop:top-[268px] laptop:left-[227px] desktop:top-[190px] desktop:left-[528px];
+  @apply absolute text-[#E8F6FA] top-[155px] left-[20px] laptop:top-[268px] laptop:left-[227px] desktop:top-[190px] desktop:left-[528px];
 }
 
 .client {

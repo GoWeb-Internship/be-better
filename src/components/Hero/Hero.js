@@ -24,12 +24,14 @@ import {
   discount,
 } from './Hero.module.css';
 
+import BgIcon from 'images/vectorBackgrounds/hero.inline.svg';
+
 const Hero = () => {
   const { t } = useTranslation();
   const hero = t('hero', { returnObjects: true });
 
   return (
-    <Section id="home">
+    <Section id="home" Background={BgIcon}>
       <div className={heroContainer}>
         <HeroBackground />
         <Container>

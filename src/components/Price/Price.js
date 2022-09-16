@@ -9,6 +9,7 @@ import PriceCard from './PriceCard';
 import Donations from 'components/Donations';
 
 import { container, list, item, title, donation } from './Price.module.css';
+import VectorBackgound from 'images/vectorBackgrounds/price.inline.svg';
 
 const ModalPriceWindow = loadable(() => import('./ModalPriceWindow'));
 
@@ -75,7 +76,7 @@ const Price = () => {
   };
 
   return (
-    <Section className={container} id="nav-price">
+    <Section className={container} id="nav-price" Background={VectorBackgound}>
       <Heading tag="h2" className={title} text={pricePac.title} />
       <ul className={list}>
         {allMarkdownRemark &&

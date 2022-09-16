@@ -13,6 +13,8 @@ import { title, icon } from './ClientHistory.module.css';
 
 import { FaQuoteLeft } from 'react-icons/fa';
 
+import StoriesBackground from 'images/vectorBackgrounds/stories.inline.svg';
+
 const ClientHistoryList = loadable(() => import('./ClientHistoryList'));
 
 const ClientHistory = () => {
@@ -61,8 +63,9 @@ const ClientHistory = () => {
 
   return (
     <Section
-      className="py-8 laptop:pt-20 laptop:pb-[50px] desktop:pb-[77px] overflow-hidden"
+      className="py-8 laptop:pt-20 laptop:pb-[50px] desktop:pb-[77px] overflow-hidden desktop:overflow-visible z-auto"
       id="client"
+      Background={StoriesBackground}
     >
       <Heading tag="h2" className={title} text={data.title} />
 

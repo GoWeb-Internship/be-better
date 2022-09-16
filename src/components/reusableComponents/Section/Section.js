@@ -1,9 +1,14 @@
 import React from 'react';
 
-const Section = ({ children, className = '', id = '' }) => {
+const Section = ({ children, className = '', id = '', Background }) => {
   return (
-    <section className={`${className} relative`} id={id}>
+    <section className={`${className} relative bg-white -z-10`} id={id}>
       {children}
+      {Background && (
+        <Background
+          className={'absolute top-0 left-1/2 -translate-x-1/2 -z-50'}
+        />
+      )}
     </section>
   );
 };

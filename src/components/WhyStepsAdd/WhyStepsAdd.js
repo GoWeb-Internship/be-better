@@ -7,13 +7,14 @@ import List from 'components/reusableComponents/Steps';
 import Reviews from 'components/Reviews';
 
 import svg from 'images/iconsnew.svg';
+import VectorBackground from 'images/vectorBackgrounds/step1.inline.svg';
 
 const StepsAdd = () => {
   const { t } = useTranslation();
   const data = t('stepsnew', { returnObjects: true });
 
   return (
-    <Section className="relative" id="whyStep">
+    <Section className="relative" id="whyStep" Background={VectorBackground}>
       <div className="relative max-h-full ">
         <div className="tablet:hidden desktop:block">
           <StaticImage

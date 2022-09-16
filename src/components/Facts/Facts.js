@@ -36,6 +36,8 @@ import {
 
 import icons from 'images/factsIcons.svg';
 
+import FactsBackground from 'images/vectorBackgrounds/facts.inline.svg';
+
 const factsIcons = [
   <MdBusinessCenter />,
   <MdOutlineThumbUp />,
@@ -75,7 +77,7 @@ const Facts = () => {
   const fotoDesk = foto.desk.childImageSharp.gatsbyImageData;
 
   return (
-    <Section className={section} id="facts">
+    <Section className={section} id="facts" Background={FactsBackground}>
       <Heading tag="h2" className={title} text={data.title} />
       <StaticImage
         layout="fullWidth"

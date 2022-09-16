@@ -8,6 +8,7 @@ import { useMedia } from 'react-use';
 import Section from 'components/reusableComponents/Section';
 import Heading from 'components/reusableComponents/Heading';
 import Button from 'components/reusableComponents/Button';
+import useMediaRules from 'helpers/getMedia';
 
 import { preloadFormInModal } from 'services/preloader';
 
@@ -27,6 +28,7 @@ const Couch = () => {
   const { t } = useTranslation();
   const form = t('form', { returnObjects: true });
   const couch = t('couch', { returnObjects: true });
+  const media = useMediaRules();
 
   const foto = useStaticQuery(graphql`
     query {
@@ -134,7 +136,8 @@ const Couch = () => {
             <p className={`${caveat} hidden laptop:hidden desktop:block`}>
               {couch.mySelf}
             </p>
-            <div className=" hidden desktop:block">
+
+            {media === 'desktop' && (
               <Button
                 id="button-couch"
                 type="button"
@@ -143,66 +146,70 @@ const Couch = () => {
               >
                 {form.button}
               </Button>
-            </div>
+            )}
           </div>
         </div>
-        <div className="relative laptop:hidden desktop:block">
-          <div className=" laptop:hidden desktop:block">
-            {(isMobile || isDesktop) && (
-              <GatsbyImage
-                image={notebookImg}
-                alt={couch.notebook}
-                className="mt-4 rounded-2xl desktop:w-[416px] desktop:h-[280px] "
-              />
-            )}
+        {media !== 'tablet' && (
+          <div className="relative">
+            <div>
+              {(isMobile || isDesktop) && (
+                <GatsbyImage
+                  image={notebookImg}
+                  alt={couch.notebook}
+                  className="mt-4 rounded-2xl desktop:w-[416px] desktop:h-[280px] "
+                />
+              )}
 
-            <p className="mt-[58px] w-[280px] desktop:w-81">{couch.why}</p>
+              <p className="mt-[58px] w-[280px] desktop:w-81">{couch.why}</p>
 
-            {!isDesktop && (
+              {!isDesktop && (
+                <Button
+                  type="button"
+                  className={`${button}  !ml-0  !mt-12 `}
+                  doAction={() => showModal()}
+                >
+                  {form.button}
+                </Button>
+              )}
+
+              {!isMobile && (
+                <div className="absolute right-0 rounded-2xl mt-[20px] mr-auto">
+                  <GatsbyImage
+                    image={skyscraper}
+                    alt={couch.skyscraper}
+                    className="w-[160px] h-[176px]"
+                  />
+                </div>
+              )}
+            </div>
+          </div>
+        )}
+      </div>
+      {media === 'tablet' && (
+        <div className="laptop:mt-8 laptop:w-auto">
+          <p className="laptop:w-auto">{couch.why}</p>
+          <div className="flex justify-between mt-8">
+            <div className="w-[420px] ">
+              <p className="text-caveat leading-[1.08]">{couch.mySelf}</p>
               <Button
                 type="button"
-                className={`${button}  !ml-0  !mt-12 `}
+                className={`${button} !ml-0  !mt-12 `}
                 doAction={() => showModal()}
+                onMouseOver={preloadFormInModal}
+                onTouchStart={preloadFormInModal}
               >
                 {form.button}
               </Button>
-            )}
-
-            {!isMobile && (
-              <div className="absolute right-0 rounded-2xl mt-[20px] mr-auto">
-                <GatsbyImage
-                  image={skyscraper}
-                  alt={couch.skyscraper}
-                  className="w-[160px] h-[176px]"
-                />
-              </div>
-            )}
+            </div>
+            <GatsbyImage
+              image={skyscraperMob}
+              className="w-[201px] h-[174px]"
+              alt={couch.skyscraper}
+            />
           </div>
         </div>
-      </div>
+      )}
 
-      <div className="hidden laptop:block laptop:mt-8 laptop:w-auto desktop:hidden">
-        <p className="laptop:w-auto">{couch.why}</p>
-        <div className="flex justify-between mt-8">
-          <div className="w-[420px] ">
-            <p className="text-caveat leading-[1.08]">{couch.mySelf}</p>
-            <Button
-              type="button"
-              className={`${button} !ml-0  !mt-12 `}
-              doAction={() => showModal()}
-              onMouseOver={preloadFormInModal}
-              onTouchStart={preloadFormInModal}
-            >
-              {form.button}
-            </Button>
-          </div>
-          <GatsbyImage
-            image={skyscraperMob}
-            className="w-[201px] h-[174px]"
-            alt={couch.skyscraper}
-          />
-        </div>
-      </div>
       {modal && <FormInModal hideModal={hideModal} currentPlace="with couch" />}
     </Section>
   );

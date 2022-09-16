@@ -5,6 +5,7 @@ import { GatsbyImage } from 'gatsby-plugin-image';
 
 import Section from 'components/reusableComponents/Section';
 import MarkdownList from 'components/reusableComponents/MarkdownList';
+import useMediaRules from 'helpers/getMedia';
 
 import {
   textBeBetter,
@@ -23,6 +24,7 @@ import {
 
 const BeBetter = () => {
   const { t, i18n } = useTranslation();
+  const media = useMediaRules();
 
   const allMarkdownRemark = useStaticQuery(graphql`
     query {
@@ -105,20 +107,25 @@ const BeBetter = () => {
         </div>
         <div className={pictures}>
           <div className={pictureDesktop}>
-            <div className={beBetterCont}>
-              <GatsbyImage
-                image={avatar}
-                alt={translate.jumper}
-                className={oneMin}
-              />
-            </div>
-            <div className={divImg}>
-              <GatsbyImage
-                image={avatarThree}
-                alt={translate.auto}
-                className={threeMin}
-              />
-            </div>
+            {media === 'desktop' && (
+              <div className={beBetterCont}>
+                <GatsbyImage
+                  image={avatar}
+                  alt={translate.jumper}
+                  className={oneMin}
+                />
+              </div>
+            )}
+
+            {media !== 'mobile' && (
+              <div className={divImg}>
+                <GatsbyImage
+                  image={avatarThree}
+                  alt={translate.auto}
+                  className={threeMin}
+                />
+              </div>
+            )}
           </div>
           <div className={bocaluDiv}>
             <GatsbyImage

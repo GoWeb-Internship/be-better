@@ -25,15 +25,6 @@ const Steps = () => {
             className="-z-20 w-full h-full"
           />
         )}
-        {/* <div className="tablet:hidden desktop:block laptop:w-[768px] ">
-          <StaticImage
-            layout="fullWidth"
-            src="../../images/results.png"
-            alt={data.background}
-            style={{ position: 'absolute' }}
-            className="-z-20 w-full h-full"
-          />
-        </div> */}
         {media === 'tablet' && (
           <StaticImage
             layout="fullWidth"
@@ -43,15 +34,6 @@ const Steps = () => {
             className="-z-20 w-full h-full"
           />
         )}
-        {/* <div className="tablet:hidden laptop:block desktop:hidden laptop:w-[768px] ">
-          <StaticImage
-            layout="fullWidth"
-            src="../../images/group.png"
-            alt={data.background}
-            style={{ position: 'absolute' }}
-            className="-z-20 w-full h-full"
-          />
-        </div> */}
         {media === 'mobile' && (
           <StaticImage
             layout="fullWidth"
@@ -61,15 +43,6 @@ const Steps = () => {
             className="-z-20 w-full h-full"
           />
         )}
-        {/* <div className="laptop:hidden">
-          <StaticImage
-            layout="fullWidth"
-            src="../../images/vanMin.png"
-            alt={data.background}
-            style={{ position: 'absolute' }}
-            className="-z-20 w-full h-full"
-          />
-        </div> */}
         <List data={data} icons={svg} />
       </div>
     </Section>

@@ -3,10 +3,13 @@ import PropTypes from 'prop-types';
 
 import Heading from 'components/reusableComponents/Heading';
 import AboutYou from 'components/AboutYou';
+import useMediaRules from 'helpers/getMedia';
 
 import { title, textContainer, caveat } from './AboutMe.module.css';
 
 const AboutMePrimaryText = ({ data }) => {
+  const media = useMediaRules();
+
   return (
     <div className={textContainer}>
       <Heading tag="h2" className={title} text={data.title} />
@@ -21,17 +24,19 @@ const AboutMePrimaryText = ({ data }) => {
         <span className={caveat}> {data.twoParagraphSpan}</span>
         {data.twoParagraphThird}
       </p>
-      <p className="mb-2 laptop:hidden desktop:block desktop:mb-8">
-        {data.threeParagraphFirst}
-        <span className={caveat}>{data.threeParagraphSpan}</span>
-        {data.threeParagraphThird}
-      </p>
-      <p className="mb-6 laptop:hidden desktop:block laptop:mb-0">
-        {data.fourParagraph}
-      </p>
-      <p className="mb-4 laptop:hidden desktop:block laptop:mb-0">
-        <span className="text-caveat">{data.fiveParagraphSpan}</span>
-      </p>
+      {media !== 'tablet' && (
+        <>
+          <p className="mb-2 desktop:block desktop:mb-8">
+            {data.threeParagraphFirst}
+            <span className={caveat}>{data.threeParagraphSpan}</span>
+            {data.threeParagraphThird}
+          </p>
+          <p className="mb-6 desktop:block laptop:mb-0">{data.fourParagraph}</p>
+          <p className="mb-4 desktop:block laptop:mb-0">
+            <span className="text-caveat">{data.fiveParagraphSpan}</span>
+          </p>
+        </>
+      )}
       <AboutYou />
     </div>
   );

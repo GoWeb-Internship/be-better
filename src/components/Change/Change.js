@@ -8,6 +8,7 @@ import Section from 'components/reusableComponents/Section';
 import Heading from 'components/reusableComponents/Heading';
 import WithDiscount from 'components/reusableComponents/WithDiscount';
 import Button from 'components/reusableComponents/Button';
+import useMediaRules from 'helpers/getMedia';
 
 import { preloadFormInModal } from 'services/preloader';
 
@@ -24,6 +25,8 @@ const FormInModal = loadable(() => import('../Form/FormInModal'));
 const Change = () => {
   const { t, i18n } = useTranslation();
   const [modal, setModal] = useState(false);
+
+  const media = useMediaRules();
 
   const buttonTranslate = t('littleComponents', { returnObjects: true });
   const altTranslate = t('changes', { returnObjects: true });
@@ -118,17 +121,8 @@ const Change = () => {
                   formats={['auto', 'webp', 'avif']}
                 />
               </div>
-              <div className="desktop:hidden">
-                <StaticImage
-                  layout="fullWidth"
-                  src="../../images/fontwo-min.png"
-                  alt={altTranslate.mobileBg}
-                  style={{ position: 'absolute' }}
-                  className="-z-20  w-full h-full mt-[64px] laptop:mt-[84px] max-w-full  "
-                  formats={['auto', 'webp', 'avif']}
-                />
-              </div>
-              <div className="tablet:hidden desktop:block">
+
+              {media === 'desktop' ? (
                 <StaticImage
                   layout="fullWidth"
                   src="../../images/background/about.jpg"
@@ -137,7 +131,17 @@ const Change = () => {
                   className="-z-20 w-[1440px] h-[750px] mt-6   desktop:mt-[149px]"
                   formats={['auto', 'webp', 'avif']}
                 />
-              </div>
+              ) : (
+                <StaticImage
+                  layout="fullWidth"
+                  src="../../images/fontwo-min.png"
+                  alt={altTranslate.mobileBg}
+                  style={{ position: 'absolute' }}
+                  className="-z-20  w-full h-full mt-[64px] laptop:mt-[84px] max-w-full  "
+                  formats={['auto', 'webp', 'avif']}
+                />
+              )}
+
               <Heading
                 tag="h2"
                 className={changeTitle}
@@ -151,7 +155,7 @@ const Change = () => {
                   className="w-[280px] h-[280px] -ml-44 rounded-2xl laptop:w-[310px] laptop:h-[442px] desktop:w-[480px] desktop:h-[734px] desktop:pr-[60px] desktop:-ml-[600px] desktop:-mt-[40px] desktop:pb-[80px]"
                 />
               </div>
-              <div className="desktop:hidden">
+              {media !== 'desktop' && (
                 <StaticImage
                   src="../../images/union-min.png"
                   alt={altTranslate.arrow}
@@ -159,7 +163,7 @@ const Change = () => {
                   className="w-[88px] h-[476px] -z-10 -ml-32 mt-[300px] laptop:w-[88px] laptop:h-[444px] laptop:mt-8 laptop:-ml-64"
                   formats={['auto', 'webp', 'avif']}
                 />
-              </div>
+              )}
               <div className="flex justify-between">
                 <div className="float-left desktop:ml-[150px] desktop:mr-[100px]">
                   <div className={text}>

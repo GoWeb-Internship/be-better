@@ -7,12 +7,15 @@ import Section from 'components/reusableComponents/Section';
 import Heading from 'components/reusableComponents/Heading';
 import AboutMeLap from './AboutMeLap';
 import AboutMePrimaryText from './AboutMePrimaryText';
+import useMediaRules from 'helpers/getMedia';
 
 import { sectionContainer, aboutMeContainer } from './AboutMe.module.css';
 
 import icon from 'images/signature.svg';
 
 const AboutMe = () => {
+  const media = useMediaRules();
+
   const foto = useStaticQuery(graphql`
     query {
       avatarDesktop: file(name: { eq: "aboutFoto" }) {
@@ -59,7 +62,7 @@ const AboutMe = () => {
         </div>
         <AboutMePrimaryText data={data} />
       </div>
-      <AboutMeLap data={data} />
+      {media === 'tablet' && <AboutMeLap data={data} />}
       <div className="w-[265px] mt-8  ml-auto laptop:mr-0 laptop:mt-16 desktop:mt-13">
         <svg className="w-[212px] ml-auto h-16 laptop:w-[265px] laptop:h-20">
           <use href={`${icon}#icon-signature`} />

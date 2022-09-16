@@ -6,7 +6,7 @@ import { caveat } from './AboutMe.module.css';
 const AboutMeLap = ({ data }) => {
   return (
     <div>
-      <div className=" hidden laptop:block laptop:w-[420px] laptop:ml-auto  desktop:hidden text-left">
+      <div className="laptop:block laptop:w-[420px] laptop:ml-auto text-left">
         <p className="mb-2  desktop:mb-8">
           {data.threeParagraphFirst}
           <span className={caveat}>{data.threeParagraphSpan}</span> <br />
@@ -15,7 +15,7 @@ const AboutMeLap = ({ data }) => {
           </span>
         </p>
       </div>
-      <div className="text-left hidden  laptop:block laptop:w-[640px] laptop:mt-12  desktop:hidden ">
+      <div className="text-left laptop:block laptop:w-[640px] laptop:mt-12">
         <p className="mb-6 laptop:mb-0">{data.fourParagraph}</p>
         <p className="mb-4 laptop:mt-8 laptop:mb-0">
           <span className="text-caveat">{data.fiveParagraphSpan}</span>

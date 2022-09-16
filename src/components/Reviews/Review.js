@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { useTranslation } from 'react-i18next';
 import { GatsbyImage } from 'gatsby-plugin-image';
 import { useMedia } from 'react-use';
+import useMediaRules from 'helpers/getMedia';
 
 import {
   reviewContainer,
@@ -18,8 +19,8 @@ const Review = ({ frontmatter }) => {
 
   const { i18n } = useTranslation();
 
-  const isMobile = useMedia('(max-width:767px)');
   const isDesktop = useMedia('(min-width:1440px)');
+  const media = useMediaRules();
 
   useEffect(() => {
     const showScroll = () => {
@@ -35,14 +36,14 @@ const Review = ({ frontmatter }) => {
   }, [overflow, limitText, frontmatter, i18n.language]);
 
   useEffect(() => {
-    if (isMobile) {
+    if (media === 'mobile') {
       setLimitText(150);
-    } else if (isDesktop) {
+    } else if (media === 'desktop') {
       setLimitText(220);
     } else {
       setLimitText(180);
     }
-  }, [limitText, isMobile, isDesktop]);
+  }, [limitText, media]);
 
   const positionLength = frontmatter[`${i18n.language}Position`];
 

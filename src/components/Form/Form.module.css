@@ -32,7 +32,7 @@
 }
 
 .error {
-  @apply absolute -top-2 right-3 z-10 text-error text-xs;
+  @apply absolute -top-2 right-3 z-10 bg-white px-2 py-1 rounded-lg text-error text-xs;
 }
 
 .modalsuccess {
@@ -41,7 +41,7 @@
 
 .input:focus + .label,
 .input:not(:placeholder-shown) + .label {
-  @apply text-xs text-main bg-white -translate-y-5;
+  @apply text-xs text-main bg-white px-2 py-1 rounded-lg -translate-y-5;
 }
 
 .checkbox {
@@ -64,7 +64,7 @@
 }
 
 .checkError {
-    @apply absolute top-10 left-8 text-error text-xs;
+    @apply absolute top-10 laptop:top-[36px] left-8 text-error text-xs;
 }
 
 .buttonF {

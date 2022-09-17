@@ -137,25 +137,25 @@ const JustForm = ({
         <input
           id={`name-${clickFrom}`}
           {...register('name')}
-          className={input}
+          className={`${input} ${errors.name ? '!text-error' : ''}`}
           placeholder=" "
         />
-        <label className={label} htmlFor={`name-${clickFrom}`}>
+        <label className={`${label} ${errors.name ? '!text-error' : ''}` } htmlFor={`name-${clickFrom}`}>
           {nameInput}
         </label>
-        <p className={error}>{errors.name?.message}</p>
+        <p className={errors.name && `${error}`}>{errors.name?.message}</p>
       </div>
       <div className="relative ">
         <input
           id={`email-${clickFrom}`}
           {...register('email')}
-          className={input}
+          className={`${input} ${errors.email ? '!text-error' : ''}`}
           placeholder=" "
         />
-        <label className={label} htmlFor={`email-${clickFrom}`}>
+        <label className={`${label} ${errors.email ? '!text-error' : ''}`} htmlFor={`email-${clickFrom}`}>
           E-mail
         </label>
-        <p className={error}>{errors.email?.message}</p>
+        <p className={errors.email && `${error}`}>{errors.email?.message}</p>
       </div>
       <Controller
         name="phone"
@@ -176,7 +176,7 @@ const JustForm = ({
               dropdownClass={phonedropdown}
               {...field}
             />
-            <p className={error}>{errors.phone?.message}</p>
+            <p className={errors.phone && `${error}`}>{errors.phone?.message}</p>
           </div>
         )}
       />

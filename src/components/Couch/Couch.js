@@ -39,7 +39,7 @@ const Couch = () => {
           id
           gatsbyImageData(
             placeholder: BLURRED
-            formats: [AUTO, WEBP, AVIF]
+            formats: [AUTO, WEBP]
             layout: CONSTRAINED
           )
         }
@@ -51,7 +51,7 @@ const Couch = () => {
           id
           gatsbyImageData(
             placeholder: BLURRED
-            formats: [AUTO, WEBP, AVIF]
+            formats: [AUTO, WEBP]
             layout: CONSTRAINED
           )
         }
@@ -61,7 +61,7 @@ const Couch = () => {
         publicURL
         childImageSharp {
           id
-          gatsbyImageData(placeholder: BLURRED, formats: [AUTO, WEBP, AVIF])
+          gatsbyImageData(placeholder: BLURRED, formats: [AUTO, WEBP])
         }
       }
       skyscraper: file(name: { eq: "skyscraper" }) {
@@ -69,7 +69,7 @@ const Couch = () => {
         publicURL
         childImageSharp {
           id
-          gatsbyImageData(placeholder: BLURRED, formats: [AUTO, WEBP, AVIF])
+          gatsbyImageData(placeholder: BLURRED, formats: [AUTO, WEBP])
         }
       }
       skyscraperMob: file(name: { eq: "skyscraperMob" }) {
@@ -77,7 +77,7 @@ const Couch = () => {
         publicURL
         childImageSharp {
           id
-          gatsbyImageData(placeholder: BLURRED, formats: [AUTO, WEBP, AVIF])
+          gatsbyImageData(placeholder: BLURRED, formats: [AUTO, WEBP])
         }
       }
     }

@@ -24,7 +24,7 @@ const GuaranteeBg = () => {
         publicURL
         childImageSharp {
           id
-          gatsbyImageData(placeholder: BLURRED, formats: [AUTO, WEBP, AVIF])
+          gatsbyImageData(placeholder: BLURRED, formats: [AUTO, WEBP])
         }
       }
       guaranteeLaptop: file(name: { eq: "guaranteeTablet" }) {
@@ -32,7 +32,7 @@ const GuaranteeBg = () => {
         publicURL
         childImageSharp {
           id
-          gatsbyImageData(placeholder: BLURRED, formats: [AUTO, WEBP, AVIF])
+          gatsbyImageData(placeholder: BLURRED, formats: [AUTO, WEBP])
         }
       }
       guaranteeDesktop: file(name: { eq: "guaranteeDesktop" }) {
@@ -40,7 +40,7 @@ const GuaranteeBg = () => {
         publicURL
         childImageSharp {
           id
-          gatsbyImageData(placeholder: BLURRED, formats: [AUTO, WEBP, AVIF])
+          gatsbyImageData(placeholder: BLURRED, formats: [AUTO, WEBP])
         }
       }
     }

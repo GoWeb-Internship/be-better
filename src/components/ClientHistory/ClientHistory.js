@@ -9,16 +9,18 @@ import Heading from 'components/reusableComponents/Heading';
 import ClientHistoryListSkeleton from './ClientHistoryListSkeleton';
 import ObserverWrapper from 'components/ObserverWrapper/ObserverWrapper';
 
-import { title, icon } from './ClientHistory.module.css';
+import { title, icon, background } from './ClientHistory.module.css';
 
 import { FaQuoteLeft } from 'react-icons/fa';
 
-import StoriesBackground from 'images/vectorBackgrounds/stories.inline.svg';
+import Container from 'components/Container';
+import useObserver from 'components/ObserverWrapper/useObserver';
 
 const ClientHistoryList = loadable(() => import('./ClientHistoryList'));
 
 const ClientHistory = () => {
   const [size, setSize] = useState(120);
+  const [show, getRef] = useObserver();
 
   const isMobile = useMedia('(max-width:767px)');
   const isDesktop = useMedia('(min-width:1440px)');
@@ -63,20 +65,25 @@ const ClientHistory = () => {
 
   return (
     <Section
-      className="py-8 laptop:pt-20 laptop:pb-[50px] desktop:pb-[77px] overflow-hidden desktop:overflow-visible z-auto"
+      className="overflow-hidden desktop:overflow-visible"
       id="client"
-      Background={StoriesBackground}
+      backgroundClass={show ? background : ''}
+      style={{ position: 'static' }}
     >
-      <Heading tag="h2" className={title} text={data.title} />
+      <Container
+        className="relative py-8 laptop:pt-20 laptop:pb-[50px] desktop:pb-[77px] bg-white"
+        getRef={getRef}
+      >
+        <Heading tag="h2" className={title} text={data.title} />
 
-      <ObserverWrapper
-        component={<ClientHistoryList clients={clients} />}
-        fallback={<ClientHistoryListSkeleton clients={clients} />}
-      />
-
-      <div className={icon}>
-        <FaQuoteLeft size={size} />
-      </div>
+        <ObserverWrapper
+          component={<ClientHistoryList clients={clients} />}
+          fallback={<ClientHistoryListSkeleton clients={clients} />}
+        />
+        <div className={icon}>
+          <FaQuoteLeft size={size} />
+        </div>
+      </Container>
     </Section>
   );
 };

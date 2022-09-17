@@ -1,5 +1,5 @@
 .wayContainer {
-  @apply text-left w-70 m-auto pt-8 laptop:w-[594px] desktop:w-630 laptop:pt-20;
+  @apply text-left w-70 m-auto pt-8 laptop:w-[594px] desktop:w-630;
 }
 
 .title {

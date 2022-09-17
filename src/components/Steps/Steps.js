@@ -7,15 +7,23 @@ import Section from 'components/reusableComponents/Section';
 import List from 'components/reusableComponents/Page';
 
 import svg from 'images/iconku.svg';
+import Container from 'components/Container';
+
+import { background } from './Steps.module.css';
+import useObserver from 'components/ObserverWrapper/useObserver';
 
 const Steps = () => {
   const { t } = useTranslation();
   const data = t('steps', { returnObjects: true });
   const media = useMediaRules();
+  const [show, getRef] = useObserver();
 
   return (
-    <Section className="laptop:pb-16" id="steps">
-      <div className="relative max-h-full">
+    <Section id="steps" backgroundClass={show ? background : ''}>
+      <Container
+        className="relative max-h-full laptop:pb-16 desktop:pb-0"
+        getRef={getRef}
+      >
         {media === 'desktop' && (
           <StaticImage
             layout="fullWidth"
@@ -47,7 +55,7 @@ const Steps = () => {
           />
         )}
         <List data={data} icons={svg} />
-      </div>
+      </Container>
     </Section>
   );
 };

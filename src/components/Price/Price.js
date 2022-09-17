@@ -8,8 +8,16 @@ import Heading from 'components/reusableComponents/Heading';
 import PriceCard from './PriceCard';
 import Donations from 'components/Donations';
 
-import { container, list, item, title, donation } from './Price.module.css';
-import VectorBackgound from 'images/vectorBackgrounds/price.inline.svg';
+import {
+  container,
+  list,
+  item,
+  title,
+  donation,
+  background,
+} from './Price.module.css';
+import Container from 'components/Container';
+import useObserver from 'components/ObserverWrapper/useObserver';
 
 const ModalPriceWindow = loadable(() => import('./ModalPriceWindow'));
 
@@ -17,6 +25,7 @@ const Price = () => {
   const [modal, setModal] = useState(false);
   const [currentPrice, setCurrentPrice] = useState('');
   const [currentRate, setCurrentRate] = useState('');
+  const [show, getRef] = useObserver();
 
   const { allMarkdownRemark } = useStaticQuery(graphql`
     query {
@@ -76,29 +85,31 @@ const Price = () => {
   };
 
   return (
-    <Section className={container} id="nav-price" Background={VectorBackgound}>
-      <Heading tag="h2" className={title} text={pricePac.title} />
-      <ul className={list}>
-        {allMarkdownRemark &&
-          data.map(({ frontmatter }, id) => {
-            return (
-              <li className={item} key={frontmatter.id}>
-                <PriceCard
-                  priceData={{ ...frontmatter, id }}
-                  onClick={showModal}
-                />
-              </li>
-            );
-          })}
-      </ul>
-      {modal && (
-        <ModalPriceWindow
-          hideModal={hideModal}
-          currentRate={currentRate}
-          currentPrice={currentPrice}
-        />
-      )}
-      <Donations className={donation} />
+    <Section id="nav-price" backgroundClass={show ? background : ''}>
+      <Container className={container} getRef={getRef}>
+        <Heading tag="h2" className={title} text={pricePac.title} />
+        <ul className={list}>
+          {allMarkdownRemark &&
+            data.map(({ frontmatter }, id) => {
+              return (
+                <li className={item} key={frontmatter.id}>
+                  <PriceCard
+                    priceData={{ ...frontmatter, id }}
+                    onClick={showModal}
+                  />
+                </li>
+              );
+            })}
+        </ul>
+        {modal && (
+          <ModalPriceWindow
+            hideModal={hideModal}
+            currentRate={currentRate}
+            currentPrice={currentPrice}
+          />
+        )}
+        <Donations className={donation} />
+      </Container>
     </Section>
   );
 };

@@ -49,7 +49,7 @@
 }
 
 .checkboxLabel {
-    @apply flex items-start mt-1 mb-8 pl-2 pt-1 laptop:mb-9;
+  @apply flex items-start mt-1 mb-8 pl-2 pt-1 laptop:mb-9;
 }
 .checkbox:checked + .check {
   @apply transition-all duration-200 bg-[url('../../images/check.svg')] bg-no-repeat bg-left laptop:bg-[url('../../images/checkWhite.svg')] desktop:bg-[url('../../images/check.svg')];
@@ -60,15 +60,15 @@
 }
 
 .acceptText {
-    @apply ml-3	text-left text-xs text-black;
+  @apply ml-3	text-left text-xs text-black;
 }
 
 .checkError {
-    @apply absolute top-10 left-8 text-error text-xs;
+  @apply absolute top-10 left-8 text-error text-xs;
 }
 
 .buttonF {
-    @apply h-12 w-full border border-main rounded-full text-white focus:outline-none;
+  @apply h-12 w-full border border-main rounded-full text-white focus:outline-none;
 }
 
 /* FormInModal */
@@ -93,11 +93,11 @@
 }
 
 .formHi {
-    @apply text-base laptop:text-xl;
+  @apply text-base laptop:text-xl;
 }
 
 .formConnect {
-    @apply text-base mb-[72px] laptop:text-xl laptop:mb-13;
+  @apply text-base mb-[72px] laptop:text-xl laptop:mb-13;
 }
 
 .modalcheck {
@@ -111,10 +111,10 @@
   @apply laptop:text-black laptop:!bg-transparent;
 }
 .formMargins {
-    @apply m-auto mb-2 laptop:mb-8;
+  @apply m-auto mb-2 laptop:mb-8;
 }
 .formSee {
-    @apply text-center text-sm laptop:text-base;
+  @apply text-center text-sm laptop:text-base;
 }
 /* WithDiscount */
 .discountText {
@@ -127,11 +127,11 @@
 
 /* FormInMain*/
 .mainContainer {
-    @apply h-[638px] laptop:h-[1053px] desktop:h-[760px] ;
+  @apply h-[638px] laptop:h-[1053px] desktop:h-[760px];
 }
 
 .mobContainer {
-    @apply laptop:hidden;
+  @apply laptop:hidden;
 }
 
 .tabContainer {
@@ -139,7 +139,7 @@
 }
 
 .content {
-    @apply px-5 pt-10 laptop:px-16 laptop:pt-40 desktop:pt-20 desktop:pl-0 desktop:pr-20;
+  @apply px-5 pt-10 laptop:px-16 laptop:pt-40 desktop:pt-20 desktop:pl-0 desktop:pr-20;
 }
 
 .soctitle {
@@ -147,19 +147,19 @@
 }
 
 .sociaListlInMain {
-  @apply space-y-3 laptop:space-y-8 ; 
+  @apply space-y-3 laptop:space-y-8;
 }
 
 .ifYou {
-    @apply text-xl mb-[70px] laptop:mb-50 laptop:text-black desktop:mb-10 laptop:text-34 font-semibold;
+  @apply text-xl mb-[70px] laptop:mb-50 laptop:text-black desktop:mb-10 laptop:text-34 font-semibold;
 }
 
 .emo {
-    @apply text-2xl laptop:text-32 text-black font-caveat font-normal;
+  @apply text-2xl laptop:text-32 text-black font-caveat font-normal;
 }
 
 .formInMain {
-    @apply m-auto mb-8 laptop:!m-0 laptop:!mr-auto laptop:!mb-[120px] desktop:!mb-2 desktop:!ml-auto desktop:!mr-50;
+  @apply m-auto mb-8 laptop:!m-0 laptop:!mr-auto laptop:!mb-[120px] desktop:!mb-2 desktop:!ml-auto desktop:!mr-50;
 }
 
 .checkboxInMain {
@@ -167,5 +167,11 @@
 }
 
 .acceptInMain {
-  @apply laptop:text-black; 
+  @apply laptop:text-black;
+}
+
+@media screen and (min-width: 1440px) {
+  .background {
+    background-image: url('../../images/vectorBackgrounds/video.svg');
+  }
 }

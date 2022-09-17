@@ -10,6 +10,7 @@ import Social from 'components/Social';
 import WithDiscount from 'components/reusableComponents/WithDiscount';
 
 import {
+  background,
   heroContainer,
   desktopBg,
   desktopBgImg,
@@ -24,14 +25,12 @@ import {
   discount,
 } from './Hero.module.css';
 
-import BgIcon from 'images/vectorBackgrounds/hero.inline.svg';
-
 const Hero = () => {
   const { t } = useTranslation();
   const hero = t('hero', { returnObjects: true });
 
   return (
-    <Section id="home" Background={BgIcon}>
+    <Section id="home" backgroundClass={background}>
       <div className={heroContainer}>
         <HeroBackground />
         <Container>

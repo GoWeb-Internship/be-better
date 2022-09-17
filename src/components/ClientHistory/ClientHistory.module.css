@@ -35,3 +35,9 @@
 .client::-webkit-scrollbar {
   @apply bg-likeGrey rounded-xl w-2;
 }
+
+@media screen and (min-width: 1440px) {
+  .background {
+    background-image: url('../../images/vectorBackgrounds/stories.svg');
+  }
+}

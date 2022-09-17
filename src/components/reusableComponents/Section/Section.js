@@ -1,10 +1,21 @@
 import React from 'react';
 
-const Section = ({ children, className = '', id = '', Background }) => {
+import { position } from './Section.module.css';
+
+const Section = ({
+  children,
+  className = '',
+  id = '',
+  backgroundClass,
+  style,
+}) => {
   return (
-    <section className={`${className} relative`} id={id}>
+    <section
+      style={style}
+      className={`${className} relative -z-10 ${position} ${backgroundClass}`}
+      id={id}
+    >
       {children}
-      {Background && <Background />}
     </section>
   );
 };

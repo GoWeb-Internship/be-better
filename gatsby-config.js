@@ -48,7 +48,15 @@ module.exports = {
         extensions: [`.mdx`, `.md`],
       },
     },
-
+    {
+      // import SomeIcon from 'images/svg/some-icon.inline.svg' and use as Component <SomeIcon/>, inline svg
+      resolve: 'gatsby-plugin-react-svg',
+      options: {
+        rule: {
+          include: /\.inline\.svg$/,
+        },
+      },
+    },
     {
       resolve: `gatsby-plugin-postcss`,
       options: {

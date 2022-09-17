@@ -1,50 +1,54 @@
 .heroContainer {
-    @apply relative h-[690px] laptop:h-[1133px] desktop:h-[780px];
+  @apply relative h-[690px] laptop:h-[1133px] desktop:h-[780px];
+}
+
+.background {
+  background-image: url('../../images/vectorBackgrounds/hero.svg');
 }
 
 .heroBg {
-    @apply w-full h-full -z-10 top-0;
+  @apply w-full h-full -z-10 top-0;
 }
 .desktopBg {
-    @apply hidden desktop:block w-[1440px] h-[780px] -z-10 absolute
+  @apply hidden desktop:block w-[1440px] h-[780px] -z-10 absolute bg-white;
 }
 
 .desktopBgImg {
-    @apply w-1036 h-full -z-10 top-0 right-0;
+  @apply w-1036 h-full -z-10 top-0 right-0;
 }
 
 .content {
-    @apply flex pl-5 laptop:flex-row-reverse laptop:justify-between desktop:flex-row desktop:justify-start mb-10 pt-[92px] laptop:pt-[200px] laptop:px-16 laptop:mb-50 text-left desktop:items-start desktop:pt-30 desktop:px-20 desktop:mb-0;
+  @apply flex pl-5 laptop:flex-row-reverse laptop:justify-between desktop:flex-row desktop:justify-start mb-10 pt-[92px] laptop:pt-[200px] laptop:px-16 laptop:mb-50 text-left desktop:items-start desktop:pt-30 desktop:px-20 desktop:mb-0;
 }
 
 .ifyou {
-    @apply hidden desktop:block ml-auto font-caveat text-white text-28;
+  @apply hidden desktop:block ml-auto font-caveat text-white text-28;
 }
 
 .titleCaveat {
-    @apply text-2xl font-caveat laptop:text-32 text-black;
+  @apply text-2xl font-caveat laptop:text-32 text-black;
 }
 
 .title {
-    @apply font-medium text-black text-xl laptop:font-normal laptop:text-5xl laptop:leading-[65px];
+  @apply font-medium text-black text-xl laptop:font-normal laptop:text-5xl laptop:leading-[65px];
 }
 
 .titleBig {
-    @apply font-semibold text-black text-2xl laptop:font-light laptop:text-59;
+  @apply font-semibold text-black text-2xl laptop:font-light laptop:text-59;
 }
 
 .heroForm {
-    @apply laptop:pl-16 desktop:pl-[296px] text-left;
+  @apply laptop:pl-16 desktop:pl-[296px] text-left;
 }
 
 .formMargins {
-    @apply mb-8 m-auto laptop:mr-auto laptop:ml-0 laptop:mb-13 desktop:mb-2;
+  @apply mb-8 m-auto laptop:mr-auto laptop:ml-0 laptop:mb-13 desktop:mb-2;
 }
 
 .discountText {
-    @apply px-5 text-orangeDark text-lg leading-[18px] laptop:w-81 laptop:leading-[23px] laptop:ml-16 laptop:p-0 laptop:text-black desktop:ml-[296px] text-left;
+  @apply px-5 text-orangeDark text-lg leading-[18px] laptop:w-81 laptop:leading-[23px] laptop:ml-16 laptop:p-0 laptop:text-black desktop:ml-[296px] text-left;
 }
 
 .discount {
-    @apply laptop:font-medium text-mainSecond;
+  @apply laptop:font-medium text-mainSecond;
 }

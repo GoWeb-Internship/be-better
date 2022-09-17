@@ -26,8 +26,7 @@ const Header = () => {
   const [showNav, setShowNav] = useState(false);
   const firstClickOnButton = useRef(true);
 
-  const toggleNav = e => {
-    e.preventDefault();
+  const toggleNav = () => {
     setShowNav(prevState => !prevState);
     if (!showNav) {
       document.body.style.overflow = 'hidden';

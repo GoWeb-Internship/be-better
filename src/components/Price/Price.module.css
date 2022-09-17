@@ -1,6 +1,6 @@
 /* List */
 .container {
-  @apply m-auto text-center  py-8 laptop:pb-[106px] laptop:pt-12 desktop:px-20 desktop:py-20  bg-background;
+  @apply m-auto text-center py-8 laptop:pb-[80px] laptop:pt-12 desktop:px-20 desktop:py-20  bg-background z-auto;
 }
 .title {
   @apply title-primary px-10 mb-4 laptop:text-34 laptop:font-semibold laptop:tracking-wide laptop:mb-8 desktop:mb-16;
@@ -87,4 +87,10 @@
 
 .donation {
   @apply text-center m-auto w-70 mt-4 text-[9px] laptop:mt-12 laptop:text-base laptop:w-480 desktop:mt-11;
+}
+
+@media screen and (min-width: 1440px) {
+  .background {
+    background-image: url('../../images/vectorBackgrounds/price.svg');
+  }
 }

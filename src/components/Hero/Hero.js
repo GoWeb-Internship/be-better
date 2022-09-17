@@ -10,6 +10,7 @@ import Social from 'components/Social';
 import WithDiscount from 'components/reusableComponents/WithDiscount';
 
 import {
+  background,
   heroContainer,
   desktopBg,
   desktopBgImg,
@@ -29,7 +30,7 @@ const Hero = () => {
   const hero = t('hero', { returnObjects: true });
 
   return (
-    <Section id="home">
+    <Section id="home" backgroundClass={background}>
       <div className={heroContainer}>
         <HeroBackground />
         <Container>

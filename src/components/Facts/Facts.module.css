@@ -60,3 +60,9 @@
 .bgFacts {
   @apply absolute text-[#fccdb244] -left-[5px] laptop:left-[5px]  text-[52px] font-extrabold;
 }
+
+@media screen and (min-width: 1440px) {
+  .background {
+    background-image: url('../../images/vectorBackgrounds/facts.svg');
+  }
+}

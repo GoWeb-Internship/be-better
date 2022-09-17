@@ -3,20 +3,15 @@ import PropTypes from 'prop-types';
 import { useTranslation } from 'gatsby-plugin-react-i18next';
 import { Link } from 'react-scroll';
 
-import {
-  burgerMenuOverlay,
-  menuBg,
-  menuList,
-  menuItem,
-  menuLink,
-} from './Header.module.css';
+import { menuBg, menuList, menuItem, menuLink } from './Header.module.css';
+import Backdrop from 'components/reusableComponents/BackDrop';
 
 const BurgerMenu = ({ toggleNav }) => {
   const { t } = useTranslation();
   const { nav, toMain } = t('header', { returnObjects: true });
 
   return (
-    <div className={burgerMenuOverlay}>
+    <>
       <div className={menuBg}>
         <ul className={menuList}>
           {nav.map(({ id, name }) => (
@@ -48,7 +43,8 @@ const BurgerMenu = ({ toggleNav }) => {
           </li>
         </ul>
       </div>
-    </div>
+      <Backdrop onClose={toggleNav} />
+    </>
   );
 };
 

@@ -4,10 +4,12 @@ import { useTranslation } from 'gatsby-plugin-react-i18next';
 import { StaticImage, GatsbyImage } from 'gatsby-plugin-image';
 import { IconContext } from 'react-icons';
 import { useMedia } from 'react-use';
+import useObserver from 'components/ObserverWrapper/useObserver';
 
 import Section from 'components/reusableComponents/Section';
 import Heading from 'components/reusableComponents/Heading';
 import Way from 'components/Way';
+import Container from 'components/Container';
 
 import {
   section,
@@ -23,6 +25,7 @@ import {
   textPr,
   testSec,
   bgFacts,
+  background,
 } from './Facts.module.css';
 
 import {
@@ -71,65 +74,77 @@ const Facts = () => {
   const data = t('facts', { returnObjects: true });
   const isWide = useMedia('(min-width:1440px');
 
+  const [show, getRef] = useObserver();
+
   const fotoMob = foto.mob.childImageSharp.gatsbyImageData;
   const fotoDesk = foto.desk.childImageSharp.gatsbyImageData;
 
   return (
-    <Section className={section} id="facts">
-      <Heading tag="h2" className={title} text={data.title} />
-      <StaticImage
-        layout="fullWidth"
-        src="../../images/background/features.jpg"
-        alt={data.background}
-        style={{ position: 'absolute' }}
-        className="w-full h-full -z-10 top-0"
-      />
-      <div className={contentContainer}>
-        <div>
-          <Heading tag="h2" className={titleFacts} text={data.title} />
-          {!!data.list.length && (
-            <ul className={listFacts}>
-              {data.list.map(({ textPrimary, textSecondary, bg }, index) => {
-                return (
-                  <li className={itemFacts} key={`${icons}-${index}`}>
-                    <div className={svgContainerFacts}>
-                      <IconContext.Provider
-                        value={{
-                          className: 'stair-icons mt-[11px] fill-[mainSecond] ',
-                          color: '#FF9B62',
-                        }}
-                      >
-                        {factsIcons[index]}
-                      </IconContext.Provider>
-                    </div>
-                    <div className={textContainer}>
-                      <div className="flex mt-11 laptop:block laptop:mt-0">
+    <Section
+      className={section}
+      id="facts"
+      backgroundClass={show ? background : ''}
+    >
+      <Container getRef={getRef}>
+        <Heading tag="h2" className={title} text={data.title} />
+
+        <StaticImage
+          layout="fullWidth"
+          src="../../images/background/features.jpg"
+          alt={data.background}
+          style={{ position: 'absolute' }}
+          objectFit={'cover'}
+          className="h-full w-[320px] laptop:w-[768px] desktop:w-[1440px] -z-10 top-0"
+        />
+
+        <div className={contentContainer}>
+          <div>
+            <Heading tag="h2" className={titleFacts} text={data.title} />
+            {!!data.list.length && (
+              <ul className={listFacts}>
+                {data.list.map(({ textPrimary, textSecondary, bg }, index) => {
+                  return (
+                    <li className={itemFacts} key={`${icons}-${index}`}>
+                      <div className={svgContainerFacts}>
                         <IconContext.Provider
                           value={{
-                            className: 'w-4 h-4 mr-2 laptop:hidden',
+                            className:
+                              'stair-icons mt-[11px] fill-[mainSecond] ',
                             color: '#FF9B62',
                           }}
                         >
                           {factsIcons[index]}
                         </IconContext.Provider>
-                        <p className={textPr}>{textPrimary}</p>
                       </div>
-                      <p className={testSec}>{textSecondary}</p>
-                      <p className={bgFacts}>{bg}</p>
-                    </div>
-                  </li>
-                );
-              })}
-            </ul>
+                      <div className={textContainer}>
+                        <div className="flex mt-11 laptop:block laptop:mt-0">
+                          <IconContext.Provider
+                            value={{
+                              className: 'w-4 h-4 mr-2 laptop:hidden',
+                              color: '#FF9B62',
+                            }}
+                          >
+                            {factsIcons[index]}
+                          </IconContext.Provider>
+                          <p className={textPr}>{textPrimary}</p>
+                        </div>
+                        <p className={testSec}>{textSecondary}</p>
+                        <p className={bgFacts}>{bg}</p>
+                      </div>
+                    </li>
+                  );
+                })}
+              </ul>
+            )}
+          </div>
+          {isWide ? (
+            <GatsbyImage image={fotoDesk} alt={data.author} className={img} />
+          ) : (
+            <GatsbyImage image={fotoMob} alt={data.author} className={imgMob} />
           )}
         </div>
-        {isWide ? (
-          <GatsbyImage image={fotoDesk} alt={data.author} className={img} />
-        ) : (
-          <GatsbyImage image={fotoMob} alt={data.author} className={imgMob} />
-        )}
-      </div>
-      <Way />
+        <Way />
+      </Container>
     </Section>
   );
 };

@@ -1,8 +1,8 @@
 import React from 'react';
-import { useMedia } from 'react-use';
 import { Swiper } from 'swiper/react';
 import { Navigation, EffectFade, Pagination } from 'swiper';
 
+import useMediaRules from 'helpers/getMedia';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
@@ -10,7 +10,7 @@ import 'swiper/css/pagination';
 import { BsChevronLeft, BsChevronRight } from 'react-icons/bs';
 
 const Slider = ({ children, slidesPerView, className = '' }) => {
-  const isMobile = useMedia('(min-width:1440px');
+  const media = useMediaRules();
 
   return (
     <div className="relative">
@@ -31,7 +31,7 @@ const Slider = ({ children, slidesPerView, className = '' }) => {
         {children}
       </Swiper>
 
-      {isMobile && (
+      {media === 'desktop' && (
         <>
           <div className="prev-slider swiper-button-disabled" role={'button'}>
             <BsChevronLeft size={48} />

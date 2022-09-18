@@ -3,6 +3,7 @@ import { graphql, useStaticQuery } from 'gatsby';
 import { GatsbyImage } from 'gatsby-plugin-image';
 import { useTranslation } from 'gatsby-plugin-react-i18next';
 
+import useMediaRules from 'helpers/getMedia';
 import {
   icon,
   photoMobile,
@@ -16,6 +17,7 @@ const GuaranteeBg = () => {
   const { t } = useTranslation();
 
   const { background } = t('guarantee', { returnObjects: true });
+  const media = useMediaRules();
 
   const foto = useStaticQuery(graphql`
     query {
@@ -56,30 +58,31 @@ const GuaranteeBg = () => {
       <svg className={icon}>
         <use href={`${icons}#quote-left`} />
       </svg>
-      <div className="laptop:hidden">
+
+      {media === 'mobile' && (
         <GatsbyImage
           image={mobileGuarantee}
           alt={background}
           style={{ position: 'absolute' }}
           className={photoMobile}
         />
-      </div>
-      <div className="hidden laptop:block desktop:hidden">
+      )}
+      {media === 'tablet' && (
         <GatsbyImage
           image={tabletGuarantee}
           alt={background}
           style={{ position: 'absolute' }}
           className={photoTablet}
         />
-      </div>
-      <div className="hidden desktop:block">
+      )}
+      {media === 'desktop' && (
         <GatsbyImage
           image={desktopGuarantee}
           alt={background}
           style={{ position: 'absolute' }}
           className={photoDesktop}
         />
-      </div>
+      )}
     </div>
   );
 };

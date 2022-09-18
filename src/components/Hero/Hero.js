@@ -8,6 +8,7 @@ import HeroBackground from './HeroBackground';
 import Form from 'components/Form';
 import Social from 'components/Social';
 import WithDiscount from 'components/reusableComponents/WithDiscount';
+import useMediaRules from 'helpers/getMedia';
 
 import {
   background,
@@ -28,21 +29,25 @@ import {
 const Hero = () => {
   const { t } = useTranslation();
   const hero = t('hero', { returnObjects: true });
+  const media = useMediaRules();
 
   return (
     <Section id="home" backgroundClass={background}>
       <div className={heroContainer}>
         <HeroBackground />
         <Container>
-          <div className={desktopBg}>
-            <StaticImage
-              layout="fullWidth"
-              src="../../images/background/heroDesktop.jpg"
-              alt={hero.background}
-              style={{ position: 'absolute' }}
-              className={desktopBgImg}
-            />
-          </div>
+          {media === 'desktop' && (
+            <div className={desktopBg}>
+              <StaticImage
+                layout="fullWidth"
+                src="../../images/background/heroDesktop.jpg"
+                alt={hero.background}
+                style={{ position: 'absolute' }}
+                className={desktopBgImg}
+              />
+            </div>
+          )}
+
           <div className={content}>
             <div className="mr-[30px] laptop:mr-0 desktop:mr-[172px]">
               <Social classNameList="space-y-2 laptop:space-y-8" />
@@ -59,11 +64,13 @@ const Hero = () => {
                 {hero.burn}
               </p>
             </div>
-            <p className={ifyou}>
-              {hero.if}
-              {hero.emo} <br />
-              {hero.yourLife} {hero.pleasure}
-            </p>
+            {media === 'desktop' && (
+              <p className={ifyou}>
+                {hero.if}
+                {hero.emo} <br />
+                {hero.yourLife} {hero.pleasure}
+              </p>
+            )}
           </div>
           <div className={heroForm}>
             <Form clickFrom="hero" formClassname={formMargins} />

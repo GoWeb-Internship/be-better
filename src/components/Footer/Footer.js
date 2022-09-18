@@ -2,7 +2,6 @@ import React from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
 import { Link, useTranslation } from 'gatsby-plugin-react-i18next';
 import { StaticImage } from 'gatsby-plugin-image';
-import { useMedia } from 'react-use';
 
 import Container from 'components/Container';
 import Form from 'components/Form';
@@ -10,6 +9,7 @@ import Social from 'components/Social';
 import Donations from 'components/Donations';
 import WithDiscount from 'components/reusableComponents/WithDiscount';
 import Heading from 'components/reusableComponents/Heading';
+import useMediaRules from 'helpers/getMedia';
 
 import {
   footerContainer,
@@ -35,8 +35,7 @@ import icons from 'images/sprite.svg';
 const Footer = () => {
   const { t, i18n } = useTranslation();
   const translation = t('footer', { returnObjects: true });
-
-  const isDesktop = useMedia('(min-width:1440px)');
+  const media = useMediaRules();
 
   const markdown = useStaticQuery(graphql`
     query {
@@ -60,14 +59,19 @@ const Footer = () => {
     <footer id="nav-feedback">
       <div
         className={
-          isDesktop ? `${footerContainer} ${gradient}` : `${footerContainer}`
+          media === 'desktop'
+            ? `${footerContainer} ${gradient}`
+            : `${footerContainer}`
         }
       >
         <Container>
           <div className={content}>
-            <svg className={logo}>
-              <use href={`${icons}#logo`} />
-            </svg>
+            {media === 'desktop' && (
+              <svg className={logo}>
+                <use href={`${icons}#logo`} />
+              </svg>
+            )}
+
             <div className={social}>
               <Social classNameList="space-y-6 laptop:space-y-4" />
               <div>

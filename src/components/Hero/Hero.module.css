@@ -10,7 +10,7 @@
   @apply w-full h-full -z-10 top-0;
 }
 .desktopBg {
-  @apply hidden desktop:block w-[1440px] h-[780px] -z-10 absolute bg-white;
+  @apply w-[1440px] h-[780px] -z-10 absolute bg-white;
 }
 
 .desktopBgImg {
@@ -22,7 +22,7 @@
 }
 
 .ifyou {
-  @apply hidden desktop:block ml-auto font-caveat text-white text-28;
+  @apply ml-auto font-caveat text-white text-28;
 }
 
 .titleCaveat {

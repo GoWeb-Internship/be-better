@@ -4,6 +4,7 @@ import { useTranslation, Link } from 'gatsby-plugin-react-i18next';
 import { StaticImage } from 'gatsby-plugin-image';
 
 import Container from 'components/Container';
+import useMediaRules from 'helpers/getMedia';
 
 import MarkdownList from 'components/reusableComponents/MarkdownList';
 
@@ -18,6 +19,7 @@ import {
 
 const Pk = () => {
   const { t, i18n } = useTranslation();
+  const media = useMediaRules();
 
   const translate = t('pages', { returnObjects: true });
 
@@ -66,16 +68,18 @@ const Pk = () => {
           alt={translate.background}
           style={{ position: 'absolute' }}
           className="-z-20 top-11  tablet:object tablet:mt-6 tablet:h-20 tablet:w-36 laptop:w-96 laptop:mt-5 laptop:ml-80 -cover  h-20 ml-40   mt-0   mb-16 pr-0 max-w-5xl  desktop:h-36 desktop:-mt-12 desktop:ml-96 desktop:w-3/4"
-          formats={['auto', 'webp', 'avif']}
+          formats={['auto', 'webp']}
         />
 
-        <StaticImage
-          layout="fullWidth"
-          src="../../images/ofertal-min.png"
-          alt={translate.hand}
-          className="tablet:hidden desktop:block w-3/4 -z-10 top-0  max-w-md  !float-right mr-40  -mt-32 mb-16  h-60 rounded-lg "
-          formats={['auto', 'webp', 'avif']}
-        />
+        {media === 'desktop' && (
+          <StaticImage
+            layout="fullWidth"
+            src="../../images/ofertal-min.png"
+            alt={translate.hand}
+            className="w-3/4 -z-10 top-0  max-w-md  !float-right mr-40  -mt-32 mb-16  h-60 rounded-lg "
+            formats={['auto', 'webp']}
+          />
+        )}
 
         <div className={contentContainer}>
           {data.map((node, id) => (

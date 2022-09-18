@@ -2,12 +2,12 @@ import React, { useState, useEffect } from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
 import loadable from '@loadable/component';
 import { useTranslation } from 'gatsby-plugin-react-i18next';
-import { useMedia } from 'react-use';
 
 import Section from 'components/reusableComponents/Section';
 import Heading from 'components/reusableComponents/Heading';
 import ClientHistoryListSkeleton from './ClientHistoryListSkeleton';
 import ObserverWrapper from 'components/ObserverWrapper/ObserverWrapper';
+import useMediaRules from 'helpers/getMedia';
 
 import { title, icon, background } from './ClientHistory.module.css';
 
@@ -21,19 +21,17 @@ const ClientHistoryList = loadable(() => import('./ClientHistoryList'));
 const ClientHistory = () => {
   const [size, setSize] = useState(120);
   const [show, getRef] = useObserver();
-
-  const isMobile = useMedia('(max-width:767px)');
-  const isDesktop = useMedia('(min-width:1440px)');
+  const media = useMediaRules();
 
   useEffect(() => {
-    if (isMobile) {
+    if (media === 'mobile') {
       setSize(55);
-    } else if (isDesktop) {
+    } else if (media === 'desktop') {
       setSize(120);
     } else {
       setSize(64);
     }
-  }, [isMobile, isDesktop, size]);
+  }, [media, size]);
 
   const { t } = useTranslation();
 

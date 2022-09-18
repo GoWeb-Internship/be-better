@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { useTranslation } from 'react-i18next';
-import Button from 'components/reusableComponents/Button';
 
+import Button from 'components/reusableComponents/Button';
 import { preloadModalPriceWindow } from 'services/preloader';
 
 import {

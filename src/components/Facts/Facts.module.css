@@ -30,7 +30,7 @@
 }
 
 .svgContainerFacts {
-  @apply hidden laptop:block laptop:w-14 h-14 laptop:bg-white laptop:rounded-2xl  absolute laptop:shadow-you laptop:-top-icon left-2/4 laptop:-translate-x-1/2 z-10;
+  @apply laptop:w-14 h-14 laptop:bg-white laptop:rounded-2xl  absolute laptop:shadow-you laptop:-top-icon left-2/4 laptop:-translate-x-1/2 z-10;
 }
 
 .textContainer {

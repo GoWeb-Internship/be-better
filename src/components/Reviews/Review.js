@@ -2,9 +2,8 @@ import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { useTranslation } from 'react-i18next';
 import { GatsbyImage } from 'gatsby-plugin-image';
-import { useMedia } from 'react-use';
-import useMediaRules from 'helpers/getMedia';
 
+import useMediaRules from 'helpers/getMedia';
 import {
   reviewContainer,
   textContainer,
@@ -19,7 +18,6 @@ const Review = ({ frontmatter }) => {
 
   const { i18n } = useTranslation();
 
-  const isDesktop = useMedia('(min-width:1440px)');
   const media = useMediaRules();
 
   useEffect(() => {
@@ -63,7 +61,9 @@ const Review = ({ frontmatter }) => {
           image={image}
           alt={frontmatter[`${i18n.language}Name`]}
           className={
-            isDesktop ? `${avatarDesk} mr-2 laptop:mr-6` : `${avatarMob}`
+            media === 'desktop'
+              ? `${avatarDesk} mr-2 laptop:mr-6`
+              : `${avatarMob}`
           }
         />
 

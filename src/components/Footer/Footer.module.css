@@ -1,11 +1,11 @@
-.footerContainer{
-    @apply relative w-full h-[816px] laptop:h-[575px] desktop:h-[432px] bg-bright;
+.footerContainer {
+  @apply relative w-full h-[816px] laptop:h-[575px] desktop:h-[432px] bg-bright;
 }
 
 .gradient {
   max-width: 1440px;
   margin: 0 auto;
-    background: linear-gradient(to right, #ADF0FE 72%, #FAFCFC 28%);
+  background: linear-gradient(to right, #adf0fe 72%, #fafcfc 28%);
 }
 
 .content {
@@ -13,7 +13,7 @@
 }
 
 .logo {
-  @apply hidden desktop:block desktop:w-[90px] desktop:h-14;
+  @apply desktop:w-[90px] desktop:h-14;
 }
 
 .social {
@@ -21,7 +21,7 @@
 }
 
 .title {
-    @apply mb-2 font-bold text-base laptop:font-semibold text-main laptop:text-black laptop:text-2xl desktop:pb-4 desktop:text-black desktop:w-[416px];
+  @apply mb-2 font-bold text-base laptop:font-semibold text-main laptop:text-black laptop:text-2xl desktop:pb-4 desktop:text-black desktop:w-[416px];
 }
 
 .titleContainer {
@@ -29,7 +29,7 @@
 }
 
 .discountText {
-  @apply  text-black text-lg leading-[23px] laptop:text-2xl laptop:leading-[30px] laptop:text-main laptop:w-[440px];
+  @apply text-black text-lg leading-[23px] laptop:text-2xl laptop:leading-[30px] laptop:text-main laptop:w-[440px];
 }
 
 .discount {
@@ -49,17 +49,17 @@
 }
 
 .donate {
-    @apply text-xs mb-6 text-left laptop:text-sm laptop:w-80 laptop:ml-0 laptop:-mt-[135px] laptop:mb-10 desktop:ml-[200px] desktop:w-[480px] desktop:mt-16 desktop:mb-10;
+  @apply text-xs mb-6 text-left laptop:text-sm laptop:w-80 laptop:ml-0 laptop:-mt-[135px] laptop:mb-10 desktop:ml-[200px] desktop:w-[480px] desktop:mt-16 desktop:mb-10;
 }
 
 .price {
   @apply mb-6 text-xs laptop:text-sm text-left desktop:text-right;
 }
 
-.list{
-    @apply flex space-x-2 laptop:justify-evenly desktop:mr-[420px] desktop:-mt-10;
+.list {
+  @apply flex space-x-2 laptop:justify-evenly desktop:mr-[420px] desktop:-mt-10;
 }
 
-.link{
-    @apply text-black text-xs text-left laptop:text-sm hover:text-[#038bab] ;
+.link {
+  @apply text-black text-xs text-left laptop:text-sm hover:text-[#038bab];
 }

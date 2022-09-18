@@ -6,7 +6,7 @@
   @apply flex flex-col justify-center laptop:justify-end laptop:flex-row;
 }
 .title {
-  @apply hidden laptop:block title-primary text-left mb-4 laptop:mb-8 desktop:mb-13 laptop:font-semibold laptop:text-34;
+  @apply title-primary text-left mb-4 laptop:mb-8 desktop:mb-13 laptop:font-semibold laptop:text-34;
 }
 
 .textContainer {

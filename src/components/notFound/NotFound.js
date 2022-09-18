@@ -2,8 +2,8 @@ import React from 'react';
 import { graphql, useStaticQuery, Link } from 'gatsby';
 import { useTranslation } from 'gatsby-plugin-react-i18next';
 import { GatsbyImage } from 'gatsby-plugin-image';
-import { useMedia } from 'react-use';
 
+import useMediaRules from 'helpers/getMedia';
 import Heading from 'components/reusableComponents/Heading';
 
 import {
@@ -18,10 +18,9 @@ import {
 } from './NotFound.module.css';
 
 const NotFound = () => {
-  const isMobile = useMedia('(max-width:767px)');
-
   const { t } = useTranslation();
   const data = t('notFound', { returnObjects: true });
+  const media = useMediaRules();
 
   const foto = useStaticQuery(graphql`
     query {
@@ -59,7 +58,7 @@ const NotFound = () => {
           </Link>
         </div>
         <div>
-          {!isMobile && (
+          {media !== 'mobile' && (
             <GatsbyImage image={badWeather} alt={data.rain} className={img} />
           )}
         </div>

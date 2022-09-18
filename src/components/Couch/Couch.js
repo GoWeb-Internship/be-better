@@ -3,7 +3,6 @@ import { graphql, useStaticQuery } from 'gatsby';
 import loadable from '@loadable/component';
 import { useTranslation } from 'gatsby-plugin-react-i18next';
 import { GatsbyImage } from 'gatsby-plugin-image';
-import { useMedia } from 'react-use';
 
 import Section from 'components/reusableComponents/Section';
 import Heading from 'components/reusableComponents/Heading';
@@ -34,7 +33,7 @@ const Couch = () => {
   const media = useMediaRules();
   const [show, getRef] = useObserver();
 
-  const foto = useStaticQuery(graphql`
+  const photo = useStaticQuery(graphql`
     query {
       avatarWithNote: file(name: { eq: "withNote" }) {
         id
@@ -87,15 +86,13 @@ const Couch = () => {
     }
   `);
 
-  const isMobile = useMedia('(max-width:767px)');
-  const isDesktop = useMedia('(min-width:1440px)');
-
-  const smartScreenAvatar = foto.avatarWithNote.childImageSharp.gatsbyImageData;
   const DesktopScreenAvatar =
-    foto.avatarWithNoteMob.childImageSharp.gatsbyImageData;
-  const notebookImg = foto.notebook.childImageSharp.gatsbyImageData;
-  const skyscraper = foto.skyscraper.childImageSharp.gatsbyImageData;
-  const skyscraperMob = foto.skyscraperMob.childImageSharp.gatsbyImageData;
+    photo.avatarWithNote.childImageSharp.gatsbyImageData;
+  const smartScreenAvatar =
+    photo.avatarWithNoteMob.childImageSharp.gatsbyImageData;
+  const notebookImg = photo.notebook.childImageSharp.gatsbyImageData;
+  const skyscraper = photo.skyscraper.childImageSharp.gatsbyImageData;
+  const skyscraperMob = photo.skyscraperMob.childImageSharp.gatsbyImageData;
 
   const showModal = () => {
     setModal(true);
@@ -113,15 +110,15 @@ const Couch = () => {
               className={`${title} laptop:hidden`}
               text={couch.title}
             />
-            {isMobile ? (
+            {media === 'mobile' ? (
               <GatsbyImage
-                image={DesktopScreenAvatar}
+                image={smartScreenAvatar}
                 alt={couch.withNote}
                 className={mainImg}
               />
             ) : (
               <GatsbyImage
-                image={smartScreenAvatar}
+                image={DesktopScreenAvatar}
                 alt={couch.withNote}
                 className={mainImg}
               />
@@ -138,9 +135,7 @@ const Couch = () => {
               <p className="mb-2 laptop:mb-4 desktop:mb-6 ">{couch.mySelf}</p>
               <p className="mb-2 laptop:mb-4 desktop:mb-6 ">{couch.course}</p>
               <p className="desktop:mb-12 ">{couch.noTime}</p>
-              <p className={`${caveat} hidden laptop:hidden desktop:block`}>
-                {couch.mySelf}
-              </p>
+              <p className={`${caveat} hidden desktop:block`}>{couch.mySelf}</p>
 
               {media === 'desktop' && (
                 <Button
@@ -157,7 +152,7 @@ const Couch = () => {
           {media !== 'tablet' && (
             <div className="relative">
               <div>
-                {(isMobile || isDesktop) && (
+                {media !== 'tablet' && (
                   <GatsbyImage
                     image={notebookImg}
                     alt={couch.notebook}
@@ -167,7 +162,7 @@ const Couch = () => {
 
                 <p className="mt-[58px] w-[280px] desktop:w-81">{couch.why}</p>
 
-                {!isDesktop && (
+                {media !== 'desktop' && (
                   <Button
                     type="button"
                     className={`${button}  !ml-0  !mt-12 `}
@@ -177,7 +172,7 @@ const Couch = () => {
                   </Button>
                 )}
 
-                {!isMobile && (
+                {media !== 'mobile' && (
                   <div className="absolute right-0 rounded-2xl mt-[20px] mr-auto">
                     <GatsbyImage
                       image={skyscraper}

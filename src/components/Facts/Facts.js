@@ -1,7 +1,7 @@
 import React from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
 import { useTranslation } from 'gatsby-plugin-react-i18next';
-import { StaticImage, GatsbyImage } from 'gatsby-plugin-image';
+import { GatsbyImage } from 'gatsby-plugin-image';
 import { IconContext } from 'react-icons';
 import useObserver from 'components/ObserverWrapper/useObserver';
 
@@ -26,6 +26,7 @@ import {
   testSec,
   bgFacts,
   background,
+  svgBackground,
 } from './Facts.module.css';
 
 import {
@@ -80,22 +81,12 @@ const Facts = () => {
   const photoDesk = photo.desk.childImageSharp.gatsbyImageData;
 
   return (
-    <Section
-      className={section}
-      id="facts"
-      backgroundClass={show ? background : ''}
-    >
-      <Container getRef={getRef}>
+    <Section id="facts" backgroundClass={show ? svgBackground : ''}>
+      <Container
+        getRef={getRef}
+        className={`${section} ${show ? background : ''}`}
+      >
         <Heading tag="h2" className={title} text={data.title} />
-
-        <StaticImage
-          layout="fullWidth"
-          src="../../images/background/features.jpg"
-          alt={data.background}
-          style={{ position: 'absolute' }}
-          objectFit={'cover'}
-          className="h-full w-[320px] laptop:w-[768px] desktop:w-[1440px] -z-10 top-0"
-        />
 
         <div className={contentContainer}>
           <div>

@@ -22,7 +22,7 @@ const useObserver = () => {
 
   useEffect(() => {
     observer.current = new IntersectionObserver(onElementIntersection, {
-      rootMargin: '100% 0px',
+      rootMargin: '50% 0px',
       threshold: 0.1,
     });
   }, []);

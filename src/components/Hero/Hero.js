@@ -8,7 +8,6 @@ import HeroBackground from './HeroBackground';
 import Form from 'components/Form';
 import Social from 'components/Social';
 import WithDiscount from 'components/reusableComponents/WithDiscount';
-import useMediaRules from 'helpers/getMedia';
 
 import {
   background,
@@ -29,24 +28,21 @@ import {
 const Hero = () => {
   const { t } = useTranslation();
   const hero = t('hero', { returnObjects: true });
-  const media = useMediaRules();
 
   return (
     <Section id="home" backgroundClass={background}>
       <div className={heroContainer}>
         <HeroBackground />
         <Container>
-          {media === 'desktop' && (
-            <div className={desktopBg}>
-              <StaticImage
-                layout="fullWidth"
-                src="../../images/background/heroDesktop.jpg"
-                alt={hero.background}
-                style={{ position: 'absolute' }}
-                className={desktopBgImg}
-              />
-            </div>
-          )}
+          <div className={desktopBg}>
+            <StaticImage
+              layout="fullWidth"
+              src="../../images/background/heroDesktop.jpg"
+              alt={hero.background}
+              style={{ position: 'absolute' }}
+              className={desktopBgImg}
+            />
+          </div>
 
           <div className={content}>
             <div className="mr-[30px] laptop:mr-0 desktop:mr-[172px]">
@@ -64,13 +60,12 @@ const Hero = () => {
                 {hero.burn}
               </p>
             </div>
-            {media === 'desktop' && (
-              <p className={ifyou}>
-                {hero.if}
-                {hero.emo} <br />
-                {hero.yourLife} {hero.pleasure}
-              </p>
-            )}
+
+            <p className={ifyou}>
+              {hero.if}
+              {hero.emo} <br />
+              {hero.yourLife} {hero.pleasure}
+            </p>
           </div>
           <div className={heroForm}>
             <Form clickFrom="hero" formClassname={formMargins} />

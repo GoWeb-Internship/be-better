@@ -36,7 +36,7 @@
 }
 
 .modalsuccess {
-  @apply w-80 laptop:w-[440px] py-[72px] laptop:px-[68px] bg-white text-center;
+  @apply w-80 laptop:w-[440px] py-[72px] laptop:px-[68px] bg-white text-center z-20;
 }
 
 .input:focus + .label,

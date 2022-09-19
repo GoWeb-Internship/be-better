@@ -30,7 +30,7 @@ const Hero = () => {
   const hero = t('hero', { returnObjects: true });
 
   return (
-    <Section id="home" backgroundClass={background}>
+    <Section style={{position: 'static'}} id="home" backgroundClass={background}>
       <div className={heroContainer}>
         <HeroBackground />
         <Container>

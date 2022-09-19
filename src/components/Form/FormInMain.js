@@ -39,25 +39,29 @@ const FormInMain = ({ clickFrom }) => {
     <Section id="main-form" backgroundClass={show ? background : ''}>
       <Container className="relative bg-white -z-10" getRef={getRef}>
         <div className={mainContainer}>
-          <div className={mobContainer}>
-            <StaticImage
-              layout="fullWidth"
-              src="../../images/background/formMobile.jpg"
-              alt={hero.background}
-              style={{ position: 'absolute' }}
-              className="h-full w-[320px] laptop:w-[768px] desktop:w-[1440px] -z-10 top-0"
-            />
-          </div>
-          <div className={tabContainer}>
-            <StaticImage
-              layout="fullWidth"
-              src="../../images/background/formTablet.jpg"
-              alt={hero.background}
-              style={{ position: 'absolute' }}
-              className="h-full w-[320px] laptop:w-[768px] desktop:w-[1440px] -z-10 top-0"
-            />
-          </div>
-          {isDesktop && <Video />}
+          {show && (
+            <>
+              <div className={mobContainer}>
+                <StaticImage
+                  layout="fullWidth"
+                  src="../../images/background/formMobile.jpg"
+                  alt={hero.background}
+                  style={{ position: 'absolute' }}
+                  className="h-full w-[320px] laptop:w-[768px] desktop:w-[1440px] -z-10 top-0"
+                />
+              </div>
+              <div className={tabContainer}>
+                <StaticImage
+                  layout="fullWidth"
+                  src="../../images/background/formTablet.jpg"
+                  alt={hero.background}
+                  style={{ position: 'absolute' }}
+                  className="h-full w-[320px] laptop:w-[768px] desktop:w-[1440px] -z-10 top-0"
+                />
+              </div>
+            </>
+          )}
+          {isDesktop && show && <Video />}
           <div className={content}>
             <div className={soctitle}>
               <div className="mr-[30px] laptop:mr-0 desktop:ml-[156px]">

@@ -13,6 +13,7 @@ import useMediaRules from 'helpers/getMedia';
 import { preloadFormInModal } from 'services/preloader';
 
 import {
+  gradient,
   text,
   changeTitle,
   discountStyle,
@@ -21,6 +22,7 @@ import {
   background,
 } from './Change.module.css';
 import Container from 'components/Container';
+import useObserver from 'components/ObserverWrapper/useObserver';
 
 const FormInModal = loadable(() => import('../Form/FormInModal'));
 
@@ -29,6 +31,7 @@ const Change = () => {
   const [modal, setModal] = useState(false);
 
   const media = useMediaRules();
+  const [show, getRef] = useObserver();
 
   const buttonTranslate = t('littleComponents', { returnObjects: true });
   const altTranslate = t('changes', { returnObjects: true });
@@ -136,22 +139,19 @@ const Change = () => {
   };
 
   return (
-    <Section backgroundClass={background} id="change">
-      <Container className="relative h-full pb-8 laptop:pb-20 ">
+    // <Section backgroundClass={background} id="change">
+    //   <Container className="relative h-full pb-8 laptop:pb-20 ">
+    // =======
+    <Section id="change" backgroundClass={show ? background : ''}>
+      <Container className="relative h-full pb-8 laptop:pb-20 " getRef={getRef}>
+        {/* >>>>>>> master */}
         {data.map((node, id) => (
           <React.Fragment key={id}>
             {node.frontmatter.language === i18n.language && (
-              <div className="laptop:mt-[160px]" id={node.frontmatter.language}>
-                <div className="ml-[165px] laptop:ml-[265px] laptop:-mt-40 desktop:ml-[404px] ">
-                  <StaticImage
-                    layout="fullWidth"
-                    src="../../images/fon-min.png"
-                    alt={altTranslate.orangeBgRectangular}
-                    style={{ position: 'absolute' }}
-                    className="w-[154px] h-[64px] float-right move-right -z-10 laptop:w-[504px] laptop:h-[96px] desktop:w-[1036px] desktop:h-[152px]"
-                    formats={['auto', 'webp']}
-                  />
-                </div>
+              <div id={node.frontmatter.language}>
+                <div
+                  className={`${gradient} absolute right-0 w-[154px] h-[64px] laptop:w-[594px] laptop:h-[112px] desktop:w-[1036px] desktop:h-[152px] -z-10 `}
+                ></div>
 
                 {media === 'desktop' ? (
                   <StaticImage
@@ -159,7 +159,7 @@ const Change = () => {
                     src="../../images/background/about.jpg"
                     alt={altTranslate.arrowWithBg}
                     style={{ position: 'absolute' }}
-                    className="-z-20 w-[1440px] h-[750px] mt-6   desktop:mt-[149px]"
+                    className="-z-20 w-[1440px] h-[776px] mt-6 desktop:mt-[149px]"
                     formats={['auto', 'webp']}
                   />
                 ) : (
@@ -168,11 +168,10 @@ const Change = () => {
                     src="../../images/fontwo-min.png"
                     alt={altTranslate.mobileBg}
                     style={{ position: 'absolute' }}
-                    className="-z-20  w-full h-full mt-[64px] laptop:mt-[84px] max-w-full  "
+                    className="-z-20  w-full h-full mt-[64px] laptop:mt-[112px] max-w-full  "
                     formats={['auto', 'webp']}
                   />
                 )}
-
                 <Heading
                   tag="h2"
                   className={changeTitle}

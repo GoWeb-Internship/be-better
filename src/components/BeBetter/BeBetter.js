@@ -23,10 +23,12 @@ import {
   background,
 } from './BeBetter.module.css';
 import Container from 'components/Container';
+import useObserver from 'components/ObserverWrapper/useObserver';
 
 const BeBetter = () => {
   const { t, i18n } = useTranslation();
   const media = useMediaRules();
+  const [show, getRef] = useObserver();
 
   const allMarkdownRemark = useStaticQuery(graphql`
     query {
@@ -119,8 +121,12 @@ const BeBetter = () => {
     allMarkdownRemark.avatarGlassesMob.childImageSharp.gatsbyImageData;
 
   return (
-    <Section backgroundClass={background} id="be-better">
-      <Container className={beBetterSection}>
+    // <<<<<<< HEAD
+    //     <Section backgroundClass={background} id="be-better">
+    //       <Container className={beBetterSection}>
+    // =======
+    <Section id="be-better" backgroundClass={show ? background : ''}>
+      <Container className={beBetterSection} getRef={getRef}>
         <div className={containerBeBetter}>
           <div>
             {data.map((node, id) => (

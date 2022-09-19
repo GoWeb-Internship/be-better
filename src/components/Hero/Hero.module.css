@@ -2,10 +2,6 @@
   @apply relative h-[690px] laptop:h-[1133px] desktop:h-[780px];
 }
 
-.background {
-  background-image: url('../../images/vectorBackgrounds/hero.svg');
-}
-
 .heroBg {
   @apply w-full h-full -z-10 top-0;
 }
@@ -51,4 +47,8 @@
 
 .discount {
   @apply laptop:font-medium text-mainSecond;
+}
+
+.background {
+  background-image: url('../../images/vectorBackgrounds/hero.svg');
 }

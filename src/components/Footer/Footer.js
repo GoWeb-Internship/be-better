@@ -28,6 +28,7 @@ import {
   donate,
   title,
   price,
+  background,
 } from './Footer.module.css';
 
 import icons from 'images/sprite.svg';
@@ -56,7 +57,7 @@ const Footer = () => {
   const data = markdown.text.nodes;
 
   return (
-    <footer id="nav-feedback">
+    <footer id="nav-feedback" className={background}>
       <div
         className={
           media === 'desktop'

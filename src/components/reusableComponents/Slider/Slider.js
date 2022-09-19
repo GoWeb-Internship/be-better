@@ -2,7 +2,6 @@ import React from 'react';
 import { Swiper } from 'swiper/react';
 import { Navigation, EffectFade, Pagination } from 'swiper';
 
-import useMediaRules from 'helpers/getMedia';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
@@ -10,8 +9,6 @@ import 'swiper/css/pagination';
 import { BsChevronLeft, BsChevronRight } from 'react-icons/bs';
 
 const Slider = ({ children, slidesPerView, className = '' }) => {
-  const media = useMediaRules();
-
   return (
     <div className="relative">
       <Swiper
@@ -30,17 +27,18 @@ const Slider = ({ children, slidesPerView, className = '' }) => {
       >
         {children}
       </Swiper>
-
-      {media === 'desktop' && (
-        <>
-          <div className="prev-slider swiper-button-disabled" role={'button'}>
-            <BsChevronLeft size={48} />
-          </div>
-          <div className="next-slider swiper-button-disabled" role={'button'}>
-            <BsChevronRight size={48} />
-          </div>
-        </>
-      )}
+      <div
+        className="prev-slider swiper-button-disabled hidden desktop:block"
+        role={'button'}
+      >
+        <BsChevronLeft size={48} />
+      </div>
+      <div
+        className="next-slider swiper-button-disabled hidden desktop:block"
+        role={'button'}
+      >
+        <BsChevronRight size={48} />
+      </div>
     </div>
   );
 };

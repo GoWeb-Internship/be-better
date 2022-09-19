@@ -121,10 +121,6 @@ const BeBetter = () => {
     allMarkdownRemark.avatarGlassesMob.childImageSharp.gatsbyImageData;
 
   return (
-    // <<<<<<< HEAD
-    //     <Section backgroundClass={background} id="be-better">
-    //       <Container className={beBetterSection}>
-    // =======
     <Section id="be-better" backgroundClass={show ? background : ''}>
       <Container className={beBetterSection} getRef={getRef}>
         <div className={containerBeBetter}>

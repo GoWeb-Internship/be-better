@@ -139,9 +139,6 @@ const Change = () => {
   };
 
   return (
-    // <Section backgroundClass={background} id="change">
-    //   <Container className="relative h-full pb-8 laptop:pb-20 ">
-    // =======
     <Section id="change" backgroundClass={show ? background : ''}>
       <Container className="relative h-full pb-8 laptop:pb-20 " getRef={getRef}>
         {/* >>>>>>> master */}

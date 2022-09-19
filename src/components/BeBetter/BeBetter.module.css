@@ -57,3 +57,7 @@
 .bakaluImg {
   @apply rounded-2xl laptop:w-full laptop:h-full desktop:w-[308px] desktop:h-[440px];
 }
+
+.background {
+  background-image: url('../../images/vectorBackgrounds/beBetter.svg');
+}

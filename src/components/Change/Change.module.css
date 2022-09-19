@@ -49,3 +49,7 @@
 .accenttext {
   @apply text-main font-bold;
 }
+
+.background {
+  background-image: url('../../images/vectorBackgrounds/changes.svg');
+}

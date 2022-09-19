@@ -12,7 +12,25 @@ const HeroBackground = () => {
 
   return (
     <>
-      {media === 'mobile' && (
+      <div className="tablet:hidden">
+        <StaticImage
+          layout="fullWidth"
+          src="../../images/background/heroMobile.jpg"
+          alt={hero.background}
+          style={{ position: 'absolute' }}
+          className={heroBg}
+        />
+      </div>
+      <div className="hidden tablet:block desktop:hidden">
+        <StaticImage
+          layout="fullWidth"
+          src="../../images/background/heroMobile.jpg"
+          alt={hero.background}
+          style={{ position: 'absolute' }}
+          className={heroBg}
+        />
+      </div>
+      {/* {media === 'mobile' && (
         <StaticImage
           layout="fullWidth"
           src="../../images/background/heroMobile.jpg"
@@ -29,7 +47,7 @@ const HeroBackground = () => {
           style={{ position: 'absolute' }}
           className={heroBg}
         />
-      )}
+      )} */}
     </>
   );
 };

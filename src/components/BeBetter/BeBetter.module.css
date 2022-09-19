@@ -39,7 +39,7 @@
 }
 
 .oneMin {
-  @apply desktop:w-[384px] desktop:h-[270px] desktop:-ml-12;
+  @apply rounded-2xl desktop:w-[384px] desktop:h-[270px] desktop:-ml-12;
 }
 
 .divImg {
@@ -58,6 +58,8 @@
   @apply rounded-2xl laptop:w-full laptop:h-full desktop:w-[308px] desktop:h-[440px];
 }
 
-.background {
-  background-image: url('../../images/vectorBackgrounds/beBetter.svg');
+@media screen and (min-width: 1440px) {
+  .background {
+    background-image: url('../../images/vectorBackgrounds/be-better.svg');
+  }
 }

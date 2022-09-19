@@ -54,6 +54,8 @@
   @apply text-main font-bold;
 }
 
-.background {
-  background-image: url('../../images/vectorBackgrounds/changes.svg');
+@media screen and (min-width: 1440px) {
+  .background {
+    background-image: url('../../images/vectorBackgrounds/change.svg');
+  }
 }

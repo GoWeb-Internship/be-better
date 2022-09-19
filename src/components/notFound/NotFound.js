@@ -22,7 +22,7 @@ const NotFound = () => {
   const data = t('notFound', { returnObjects: true });
   const media = useMediaRules();
 
-  const foto = useStaticQuery(graphql`
+  const photo = useStaticQuery(graphql`
     query {
       bg: file(name: { eq: "404" }) {
         childImageSharp {
@@ -37,12 +37,12 @@ const NotFound = () => {
     }
   `);
 
-  const bgFoto = foto.bg.childImageSharp.gatsbyImageData;
-  const badWeather = foto.light.childImageSharp.gatsbyImageData;
+  const bgPhoto = photo.bg.childImageSharp.gatsbyImageData;
+  const badWeather = photo.light.childImageSharp.gatsbyImageData;
   return (
     <div className={container}>
       <GatsbyImage
-        image={bgFoto}
+        image={bgPhoto}
         style={{ position: 'absolute' }}
         alt={data.background}
         className="w-full h-full -z-10 top-0 left-0"

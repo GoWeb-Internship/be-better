@@ -23,5 +23,11 @@
 <path fill="#00a5cc" style="fill: var(--color1, #00a5cc)" d="M32 16c0 8.837-7.163 16-16 16s-16-7.163-16-16c0-8.837 7.163-16 16-16s16 7.163 16 16z"></path>
 <path fill="#fafcfc" style="fill: var(--color2, #fafcfc)" d="M22.036 19.928l-5.891-5.818-5.891 5.818-2.356-1.164 8.247-8.145 8.247 8.145-2.356 1.164z"></path>
 </symbol>
+<symbol id="arrow-min" viewBox="0 0 6 32">
+<path fill="#fcd9c4" style="fill: var(--color1, #fcd9c4)" d="M4.303 0h-2.689v29.849h-1.613l2.958 2.151 2.958-2.151h-1.613v-29.849z"></path>
+</symbol>
+<symbol id="arrow-max" viewBox="0 0 1 32">
+<path fill="#ef7229" style="fill: var(--color1, #ef7229)" d="M0.406 31.984c0.022 0.022 0.057 0.022 0.079 0l0.354-0.354c0.022-0.022 0.022-0.057 0-0.079s-0.057-0.022-0.079 0l-0.315 0.315-0.315-0.315c-0.022-0.022-0.057-0.022-0.079 0s-0.022 0.057 0 0.079l0.354 0.354zM0.39 0v31.944h0.111v-31.944h-0.111z"></path>
+</symbol>
 </defs>
 </svg>

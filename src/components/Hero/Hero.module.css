@@ -3,22 +3,23 @@
 }
 
 .heroBg {
-  @apply w-full h-full -z-10 top-0;
+  @apply w-full h-full z-0 top-0;
 }
+
 .desktopBg {
-  @apply w-[1440px] h-[780px] -z-10 absolute bg-white hidden desktop:block;
+  @apply w-[1440px] h-[780px] z-0 absolute bg-white hidden desktop:block;
 }
 
 .desktopBgImg {
-  @apply w-1036 h-full -z-10 top-0 right-0;
+  @apply w-1036 h-full z-0 top-0 right-0;
 }
 
 .content {
-  @apply flex pl-5 laptop:flex-row-reverse laptop:justify-between desktop:flex-row desktop:justify-start mb-10 pt-[92px] laptop:pt-[200px] laptop:px-16 laptop:mb-50 text-left desktop:items-start desktop:pt-30 desktop:px-20 desktop:mb-0;
+  @apply relative z-10 flex pl-5 laptop:flex-row-reverse laptop:justify-between desktop:flex-row desktop:justify-start mb-10 pt-[92px] laptop:pt-[200px] laptop:px-16 laptop:mb-50 text-left desktop:items-start desktop:pt-30 desktop:px-20 desktop:mb-0;
 }
 
 .ifyou {
-  @apply ml-auto font-caveat text-white text-28 hidden desktop:block;
+  @apply z-10 ml-auto font-caveat text-white text-28 hidden desktop:block ;
 }
 
 .titleCaveat {
@@ -34,7 +35,7 @@
 }
 
 .heroForm {
-  @apply laptop:pl-16 desktop:pl-[296px] text-left;
+  @apply relative z-10 laptop:pl-16 desktop:pl-[296px] text-left;
 }
 
 .formMargins {
@@ -42,7 +43,7 @@
 }
 
 .discountText {
-  @apply px-5 text-orangeDark text-lg leading-[18px] laptop:w-81 laptop:leading-[23px] laptop:ml-16 laptop:p-0 laptop:text-black desktop:ml-[296px] text-left;
+  @apply px-5 text-orangeDark text-lg leading-[18px] laptop:w-81 laptop:leading-[23px] laptop:ml-16 laptop:p-0 laptop:text-black desktop:ml-[296px] text-left relative z-0;
 }
 
 .discount {

@@ -2,12 +2,13 @@ import React, { useState } from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
 import loadable from '@loadable/component';
 import { useTranslation } from 'gatsby-plugin-react-i18next';
-import { StaticImage, GatsbyImage } from 'gatsby-plugin-image';
+import { GatsbyImage } from 'gatsby-plugin-image';
 
 import Section from 'components/reusableComponents/Section';
 import Heading from 'components/reusableComponents/Heading';
 import WithDiscount from 'components/reusableComponents/WithDiscount';
 import Button from 'components/reusableComponents/Button';
+import icons from 'images/sprite.svg';
 import useMediaRules from 'helpers/getMedia';
 
 import { preloadFormInModal } from 'services/preloader';
@@ -156,24 +157,14 @@ const Change = () => {
               {node.frontmatter.language === i18n.language && (
                 <div>
                   {media === 'desktop' ? (
-                  <StaticImage
-                    layout="fullWidth"
-                    src="../../images/background/about.jpg"
-                    alt={altTranslate.arrowWithBg}
-                    style={{ position: 'absolute' }}
-                    className="-z-20 w-[1440px] h-[776px] mt-6 desktop:mt-[149px]"
-                    formats={['auto', 'webp']}
-                  />
-                ) : (
-                  <StaticImage
-                    layout="fullWidth"
-                    src="../../images/fontwo-min.png"
-                    alt={altTranslate.mobileBg}
-                    style={{ position: 'absolute' }}
-                    className="-z-20  w-full h-full mt-[64px] laptop:mt-[112px] max-w-full  "
-                    formats={['auto', 'webp']}
-                  />
-                )}
+                    <svg className="absolute -z-10 w-5 h-[575px] mt-[228px] ml-20">
+                      <use href={`${icons}#arrow-max`}/>
+                    </svg>
+                  ) : (
+                    <svg className="absolute -z-10  w-[88px] h-[476px] mt-[408px] ml-4 laptop:mt-[256px] laptop:h-[444px] laptop:ml-[88px]">
+                      <use href={`${icons}#arrow-min`} />
+                    </svg>
+                  )}
                   <Heading
                     tag="h2"
                     className={changeTitle}
@@ -205,18 +196,9 @@ const Change = () => {
                         image={avatarJuliaDesk}
                         alt={altTranslate.author}
                         style={{ position: 'absolute' }}
-                        className="-ml-44 rounded-2xl desktop:w-[480px] desktop:h-[734px] desktop:pr-[60px] desktop:-ml-[600px] desktop:-mt-[40px] desktop:pb-[80px]"
+                        className="-ml-44 rounded-2xl desktop:w-[480px] desktop:h-[734px] desktop:-ml-[600px] desktop:-mt-[40px] desktop:pb-[80px]"
                       />
                     </div>
-                  )}
-                  {media !== 'desktop' && (
-                    <StaticImage
-                      src="../../images/union-min.png"
-                      alt={altTranslate.arrow}
-                      style={{ position: 'absolute' }}
-                      className="w-[88px] h-[476px] -z-10 -ml-32 mt-[300px] laptop:w-[88px] laptop:h-[444px] laptop:mt-8 laptop:-ml-64"
-                      formats={['auto', 'webp']}
-                    />
                   )}
                   <div className="flex justify-between">
                     <div className="float-left desktop:ml-[150px] desktop:mr-[100px]">

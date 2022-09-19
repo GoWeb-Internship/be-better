@@ -1,3 +1,7 @@
+.gradient {
+  background-image: url('../../images/fon-min.png');
+}
+
 .changeTitle {
   @apply tablet:text-xl tablet:font-medium pl-5 pr-5 text-orangeDark pt-[37px] text-center mb-8 laptop:font-semibold laptop:text-4xl laptop:w-[310px] laptop:pt-5 laptop:mb-4 laptop:pl-20 laptop:text-start desktop:w-[700px] desktop:pt-20;
 }

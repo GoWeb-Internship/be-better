@@ -141,7 +141,6 @@ const Change = () => {
   return (
     <Section id="change" backgroundClass={show ? background : ''}>
       <Container className="relative h-full pb-8 laptop:pb-20 " getRef={getRef}>
-        {/* >>>>>>> master */}
         {data.map((node, id) => (
           <React.Fragment key={id}>
             {node.frontmatter.language === i18n.language && (

@@ -13,7 +13,7 @@
 }
 
 .logo {
-  @apply hidden desktop:block desktop:w-[90px] desktop:h-14;
+  @apply desktop:w-[90px] desktop:h-14;
 }
 
 .social {

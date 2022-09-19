@@ -1,7 +1,7 @@
 import React from 'react';
 import { IconContext } from 'react-icons';
-import { useMedia } from 'react-use';
 
+import useMediaRules from 'helpers/getMedia';
 import {
   titleFacts,
   listFacts,
@@ -27,7 +27,7 @@ const stepsIcons = [
   <BiMedal />,
 ];
 const Page = ({ icons = '', data = {}, img = '', icon = '' }) => {
-  const isTablet = useMedia('(min-width: 768px)');
+  const media = useMediaRules();
 
   return (
     <div className="max-w-full pt-8 laptop:pt-20 laptop:pb-[230px] desktop:pb-[106px] desktop:h-[680px]">
@@ -36,7 +36,10 @@ const Page = ({ icons = '', data = {}, img = '', icon = '' }) => {
         <ul className={`${listFacts}`}>
           {data.page.map(({ textPrimary, icon, textSecondary }, index) => {
             return (
-              <li className={isTablet ? itemFacts : itemFactsMob} key={icons}>
+              <li
+                className={media !== 'mobile' ? itemFacts : itemFactsMob}
+                key={icons}
+              >
                 <div className="flex items-center gap-[10px] mb-1">
                   <IconContext.Provider
                     value={{

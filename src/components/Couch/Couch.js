@@ -47,7 +47,7 @@ const Couch = () => {
           )
         }
       }
-      avatarWithNoteMob: file(name: { eq: "withNoteMob" }) {
+      avatarWithNoteMob: file(name: { eq: "avatarCouchMob" }) {
         id
         publicURL
         childImageSharp {
@@ -67,7 +67,7 @@ const Couch = () => {
           gatsbyImageData(placeholder: BLURRED, formats: [AUTO, WEBP])
         }
       }
-      skyscraper: file(name: { eq: "skyscraper" }) {
+      skyscraper: file(name: { eq: "skyscraperDesk" }) {
         id
         publicURL
         childImageSharp {
@@ -177,7 +177,7 @@ const Couch = () => {
                     <GatsbyImage
                       image={skyscraper}
                       alt={couch.skyscraper}
-                      className="w-[160px] h-[176px]"
+                      className="w-[160px] h-[176px] rounded-2xl"
                     />
                   </div>
                 )}
@@ -203,7 +203,7 @@ const Couch = () => {
               </div>
               <GatsbyImage
                 image={skyscraperMob}
-                className="w-[201px] h-[174px]"
+                className="w-[201px] h-[174px] rounded-2xl"
                 alt={couch.skyscraper}
               />
             </div>

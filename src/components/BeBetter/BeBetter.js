@@ -20,6 +20,7 @@ import {
   bocaluDiv,
   bakaluImg,
   containerBeBetter,
+  background,
 } from './BeBetter.module.css';
 import Container from 'components/Container';
 
@@ -41,7 +42,7 @@ const BeBetter = () => {
           id
         }
       }
-      avatarMin: file(name: { eq: "one-min" }) {
+      avatarMin: file(name: { eq: "jumperDesk" }) {
         id
         publicURL
         childImageSharp {
@@ -53,7 +54,7 @@ const BeBetter = () => {
           )
         }
       }
-      avatarTh: file(name: { eq: "three-min" }) {
+      avatarCar: file(name: { eq: "carDesk" }) {
         id
         publicURL
         childImageSharp {
@@ -65,7 +66,31 @@ const BeBetter = () => {
           )
         }
       }
-      avatarBoc: file(name: { eq: "bokalu" }) {
+      avatarCarTablet: file(name: { eq: "carTablet" }) {
+        id
+        publicURL
+        childImageSharp {
+          id
+          gatsbyImageData(
+            placeholder: BLURRED
+            formats: [AUTO, WEBP]
+            layout: CONSTRAINED
+          )
+        }
+      }
+      avatarGlassesDesk: file(name: { eq: "glassesDesk" }) {
+        id
+        publicURL
+        childImageSharp {
+          id
+          gatsbyImageData(
+            placeholder: BLURRED
+            formats: [AUTO, WEBP]
+            layout: CONSTRAINED
+          )
+        }
+      }
+      avatarGlassesMob: file(name: { eq: "glassesMob" }) {
         id
         publicURL
         childImageSharp {
@@ -83,14 +108,18 @@ const BeBetter = () => {
   const translate = t('bebetter', { returnObjects: true });
 
   const data = allMarkdownRemark.text.nodes;
-  const avatar = allMarkdownRemark.avatarMin.childImageSharp.gatsbyImageData;
-  const avatarThree =
-    allMarkdownRemark.avatarTh.childImageSharp.gatsbyImageData;
-  const avatarBocalu =
-    allMarkdownRemark.avatarBoc.childImageSharp.gatsbyImageData;
+  const jumper = allMarkdownRemark.avatarMin.childImageSharp.gatsbyImageData;
+  const avatarCarDesk =
+    allMarkdownRemark.avatarCar.childImageSharp.gatsbyImageData;
+  const avatarCarTablet =
+    allMarkdownRemark.avatarCar.childImageSharp.gatsbyImageData;
+  const avatarGlasses =
+    allMarkdownRemark.avatarGlassesDesk.childImageSharp.gatsbyImageData;
+  const avatarGlassesMob =
+    allMarkdownRemark.avatarGlassesMob.childImageSharp.gatsbyImageData;
 
   return (
-    <Section id="be-better">
+    <Section backgroundClass={background} id="be-better">
       <Container className={beBetterSection}>
         <div className={containerBeBetter}>
           <div>
@@ -112,17 +141,26 @@ const BeBetter = () => {
               {media === 'desktop' && (
                 <div className={beBetterCont}>
                   <GatsbyImage
-                    image={avatar}
+                    image={jumper}
                     alt={translate.jumper}
                     className={oneMin}
                   />
                 </div>
               )}
 
-              {media !== 'mobile' && (
+              {media === 'desktop' && (
                 <div className={divImg}>
                   <GatsbyImage
-                    image={avatarThree}
+                    image={avatarCarDesk}
+                    alt={translate.auto}
+                    className={threeMin}
+                  />
+                </div>
+              )}
+              {media === 'tablet' && (
+                <div className={divImg}>
+                  <GatsbyImage
+                    image={avatarCarTablet}
                     alt={translate.auto}
                     className={threeMin}
                   />
@@ -130,11 +168,21 @@ const BeBetter = () => {
               )}
             </div>
             <div className={bocaluDiv}>
-              <GatsbyImage
-                image={avatarBocalu}
-                alt={translate.glasses}
-                className={bakaluImg}
-              />
+              {media !== 'mobile' && (
+                <GatsbyImage
+                  image={avatarGlasses}
+                  alt={translate.glasses}
+                  className={bakaluImg}
+                />
+              )}
+
+              {media === 'mobile' && (
+                <GatsbyImage
+                  image={avatarGlassesMob}
+                  alt={translate.glasses}
+                  className={bakaluImg}
+                />
+              )}
             </div>
           </div>
         </div>

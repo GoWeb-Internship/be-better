@@ -21,9 +21,25 @@ import Container from 'components/Container';
 const AboutMe = () => {
   const media = useMediaRules();
 
-  const foto = useStaticQuery(graphql`
+  const photo = useStaticQuery(graphql`
     query {
-      avatarDesktop: file(name: { eq: "aboutFoto" }) {
+      avatarDesktop: file(name: { eq: "avatarDesktop" }) {
+        id
+        publicURL
+        childImageSharp {
+          id
+          gatsbyImageData(placeholder: BLURRED, formats: [AUTO, WEBP])
+        }
+      }
+      avatarMobile: file(name: { eq: "avatarMob" }) {
+        id
+        publicURL
+        childImageSharp {
+          id
+          gatsbyImageData(placeholder: BLURRED, formats: [AUTO, WEBP])
+        }
+      }
+      avatarTablet: file(name: { eq: "avatarTablet" }) {
         id
         publicURL
         childImageSharp {
@@ -38,8 +54,10 @@ const AboutMe = () => {
 
   const data = t('aboutMe', { returnObjects: true });
 
-  const DesktopScreenAvatar =
-    foto.avatarDesktop.childImageSharp.gatsbyImageData;
+  const mobileScreenAvatar = photo.avatarMobile.childImageSharp.gatsbyImageData;
+  const tabletScreenAvatar = photo.avatarTablet.childImageSharp.gatsbyImageData;
+  const desktopScreenAvatar =
+    photo.avatarDesktop.childImageSharp.gatsbyImageData;
 
   return (
     <Section backgroundClass={background} id="nav-about">
@@ -62,12 +80,28 @@ const AboutMe = () => {
               </div>
             )}
 
-            <div className="  overflow-hidden float-right ">
-              <GatsbyImage
-                image={DesktopScreenAvatar}
-                alt={data.alt}
-                className="w-[134px] h-[160px] laptop:w-[270px]  laptop:h-[342px] laptop:mr-5    desktop:w-[524px] desktop:h-full rounded-2xl  "
-              />
+            <div className="  overflow-hidden ">
+              {media === 'desktop' && (
+                <GatsbyImage
+                  image={desktopScreenAvatar}
+                  alt={data.alt}
+                  className="desktop:w-[524px] desktop:h-full rounded-2xl  "
+                />
+              )}
+              {media === 'mobile' && (
+                <GatsbyImage
+                  image={mobileScreenAvatar}
+                  alt={data.alt}
+                  className="w-[134px] h-[160px] rounded-2xl  "
+                />
+              )}
+              {media === 'tablet' && (
+                <GatsbyImage
+                  image={tabletScreenAvatar}
+                  alt={data.alt}
+                  className="laptop:w-[270px]  laptop:h-[342px] laptop:mr-5 rounded-2xl  "
+                />
+              )}
             </div>
           </div>
           <AboutMePrimaryText data={data} />

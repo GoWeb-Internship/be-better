@@ -11,7 +11,7 @@
 }
 
 .imgMob {
-  @apply rounded-2xl desktop:ml-13 w-70 h-[200px] laptop:w-[640px] laptop:h-[440px];
+  @apply rounded-2xl w-70 h-[200px] laptop:w-[640px] laptop:h-[440px];
 }
 
 .img {

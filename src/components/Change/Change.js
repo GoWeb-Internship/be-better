@@ -18,6 +18,7 @@ import {
   discountStyle,
   discount,
   button,
+  background,
 } from './Change.module.css';
 import Container from 'components/Container';
 
@@ -70,7 +71,31 @@ const Change = () => {
           )
         }
       }
-      avatarJulia: file(name: { eq: "julia" }) {
+      avatarJuliaMob: file(name: { eq: "changeMob" }) {
+        id
+        publicURL
+        childImageSharp {
+          id
+          gatsbyImageData(
+            placeholder: BLURRED
+            formats: [AUTO, WEBP]
+            layout: CONSTRAINED
+          )
+        }
+      }
+      avatarJuliaTablet: file(name: { eq: "changeTablet" }) {
+        id
+        publicURL
+        childImageSharp {
+          id
+          gatsbyImageData(
+            placeholder: BLURRED
+            formats: [AUTO, WEBP]
+            layout: CONSTRAINED
+          )
+        }
+      }
+      avatarJuliaDesk: file(name: { eq: "changeDesk" }) {
         id
         publicURL
         childImageSharp {
@@ -97,7 +122,11 @@ const Change = () => {
     }
   `);
   const data = markdown.text.nodes;
-  const avatarJl = markdown.avatarJulia.childImageSharp.gatsbyImageData;
+  const avatarJlMob = markdown.avatarJuliaMob.childImageSharp.gatsbyImageData;
+  const avatarJuliaTablet =
+    markdown.avatarJuliaTablet.childImageSharp.gatsbyImageData;
+  const avatarJuliaDesk =
+    markdown.avatarJuliaDesk.childImageSharp.gatsbyImageData;
 
   const showModal = () => {
     setModal(true);
@@ -107,7 +136,7 @@ const Change = () => {
   };
 
   return (
-    <Section id="change">
+    <Section backgroundClass={background} id="change">
       <Container className="relative h-full pb-8 laptop:pb-20 ">
         {data.map((node, id) => (
           <React.Fragment key={id}>
@@ -149,14 +178,36 @@ const Change = () => {
                   className={changeTitle}
                   text={node.frontmatter.title}
                 />
-                <div className="laptop:float-right laptop:-mt-40 display:block desktop:-mt-[77px] desktop:-mr-[20px]">
-                  <GatsbyImage
-                    image={avatarJl}
-                    alt={altTranslate.author}
-                    style={{ position: 'absolute' }}
-                    className="w-[280px] h-[280px] -ml-44 rounded-2xl laptop:w-[310px] laptop:h-[442px] desktop:w-[480px] desktop:h-[734px] desktop:pr-[60px] desktop:-ml-[600px] desktop:-mt-[40px] desktop:pb-[80px]"
-                  />
-                </div>
+                {media === 'mobile' && (
+                  <div className="overflow-hidden">
+                    <GatsbyImage
+                      image={avatarJlMob}
+                      alt={altTranslate.author}
+                      style={{ position: 'absolute' }}
+                      className="w-[280px] h-[280px] -ml-44 rounded-2xl"
+                    />
+                  </div>
+                )}
+                {media === 'tablet' && (
+                  <div className="laptop:float-right laptop:-mt-40 overflow-hidden">
+                    <GatsbyImage
+                      image={avatarJuliaTablet}
+                      alt={altTranslate.author}
+                      style={{ position: 'absolute' }}
+                      className="-ml-44 rounded-2xl laptop:w-[310px] laptop:h-[442px]"
+                    />
+                  </div>
+                )}
+                {media === 'desktop' && (
+                  <div className="laptop:float-right laptop:-mt-40 display:block desktop:-mt-[77px] desktop:-mr-[20px] overflow-hidden">
+                    <GatsbyImage
+                      image={avatarJuliaDesk}
+                      alt={altTranslate.author}
+                      style={{ position: 'absolute' }}
+                      className="-ml-44 rounded-2xl desktop:w-[480px] desktop:h-[734px] desktop:pr-[60px] desktop:-ml-[600px] desktop:-mt-[40px] desktop:pb-[80px]"
+                    />
+                  </div>
+                )}
                 {media !== 'desktop' && (
                   <StaticImage
                     src="../../images/union-min.png"

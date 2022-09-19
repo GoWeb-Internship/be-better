@@ -2,7 +2,7 @@ import * as React from 'react';
 import PropTypes from 'prop-types';
 import { useStaticQuery, graphql } from 'gatsby';
 import { Helmet } from 'react-helmet';
-import image from '../images/withNoteMob.jpg';
+import image from '../images/withNote.jpg';
 
 function Seo({ description, title, lang = 'uk', meta = [] }) {
   const { site } = useStaticQuery(

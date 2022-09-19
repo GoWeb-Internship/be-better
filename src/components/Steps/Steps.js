@@ -18,7 +18,7 @@ const Steps = () => {
   return (
     <Section id="steps" backgroundClass={show ? svgBackground : ''}>
       <Container
-        className={`relative max-h-full laptop:pb-16 desktop:pb-0 ${
+        className={`relative max-h-full pb-12 laptop:pb-16 desktop:pb-0 ${
           show ? background : ''
         }`}
         getRef={getRef}

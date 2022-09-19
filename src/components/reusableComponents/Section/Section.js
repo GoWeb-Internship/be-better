@@ -12,7 +12,7 @@ const Section = ({
   return (
     <section
       style={style}
-      className={`${className} relative -z-10 ${position} ${backgroundClass}`}
+      className={`${className} relative z-0 ${position} ${backgroundClass}`}
       id={id}
     >
       {children}

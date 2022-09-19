@@ -80,29 +80,33 @@ const AboutMe = () => {
               </div>
             )}
 
-            <div className="  overflow-hidden ">
-              {media === 'desktop' && (
+            {media === 'desktop' && (
+              <div className="overflow-hidden ">
                 <GatsbyImage
                   image={desktopScreenAvatar}
                   alt={data.alt}
                   className="desktop:w-[524px] desktop:h-full rounded-2xl  "
                 />
-              )}
-              {media === 'mobile' && (
+              </div>
+            )}
+            {media === 'mobile' && (
+              <div className="overflow-hidden h-[164px]">
                 <GatsbyImage
                   image={mobileScreenAvatar}
                   alt={data.alt}
-                  className="w-[134px] h-[160px] rounded-2xl  "
+                  className="w-[134px] h-full rounded-2xl  "
                 />
-              )}
-              {media === 'tablet' && (
+              </div>
+            )}
+            {media === 'tablet' && (
+              <div className="overflow-hidden ">
                 <GatsbyImage
                   image={tabletScreenAvatar}
                   alt={data.alt}
                   className="laptop:w-[270px]  laptop:h-[342px] laptop:mr-5 rounded-2xl  "
                 />
-              )}
-            </div>
+              </div>
+            )}
           </div>
           <AboutMePrimaryText data={data} />
         </div>

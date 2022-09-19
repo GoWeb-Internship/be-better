@@ -1,42 +1,40 @@
 import React, { useState } from 'react';
-import { Link, useI18next } from 'gatsby-plugin-react-i18next';
+import { useI18next } from 'gatsby-plugin-react-i18next';
 
-import { switcher, list, item } from './SwitchLang.module.css';
+import { switcher } from './SwitchLang.module.css';
 
-import icons from 'images/sprite.svg';
+import ArrowIcon from 'images/dropdown.inline.svg';
+
+import LangList from './LangList';
+import Backdrop from 'components/reusableComponents/BackDrop';
+
+export const normalizeLang = language =>
+  language === 'uk' ? 'UA' : language.toUpperCase();
 
 const SwitchLang = () => {
-  const { language, languages, changeLanguage, originalPath } = useI18next();
+  const { language } = useI18next();
   const [dropdown, setDropdown] = useState(false);
+
+  const toggle = () => {
+    setDropdown(p => !p);
+  };
 
   return (
     <div className="relative">
       <button
         type="button"
         className={switcher}
-        onClick={() => setDropdown(true)}
+        onClick={toggle}
+        disabled={dropdown}
       >
-        {language === 'uk' ? 'UA' : language.toUpperCase()}
-        <svg width="16px" height="16px">
-          <use href={`${icons}#vector`} />
-        </svg>
+        <span>{normalizeLang(language)}</span>
+        <ArrowIcon />
       </button>
       {dropdown && (
-        <ul className={list} onMouseLeave={() => setDropdown(false)}>
-          {languages.map(lng => (
-            <li key={lng} className={item}>
-              <Link
-                to={originalPath}
-                onClick={e => {
-                  e.preventDefault();
-                  changeLanguage(lng);
-                }}
-              >
-                {lng === 'uk' ? 'UA' : lng.toUpperCase()}
-              </Link>
-            </li>
-          ))}
-        </ul>
+        <>
+          <LangList onClose={toggle} />
+          <Backdrop onClose={toggle} transparent />
+        </>
       )}
     </div>
   );

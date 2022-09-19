@@ -2,14 +2,17 @@ import React from 'react';
 import { StaticImage } from 'gatsby-plugin-image';
 import { useTranslation } from 'gatsby-plugin-react-i18next';
 
+import useMediaRules from 'helpers/getMedia';
 import { heroBg } from './Hero.module.css';
 
 const HeroBackground = () => {
   const { t } = useTranslation();
   const hero = t('hero', { returnObjects: true });
+  const media = useMediaRules();
+
   return (
     <>
-      <div className="laptop:hidden">
+      {media === 'mobile' && (
         <StaticImage
           layout="fullWidth"
           src="../../images/background/heroMobile.jpg"
@@ -17,8 +20,8 @@ const HeroBackground = () => {
           style={{ position: 'absolute' }}
           className={heroBg}
         />
-      </div>
-      <div className="hidden laptop:block desktop:hidden">
+      )}
+      {media === 'tablet' && (
         <StaticImage
           layout="fullWidth"
           src="../../images/background/heroTablet.jpg"
@@ -26,7 +29,7 @@ const HeroBackground = () => {
           style={{ position: 'absolute' }}
           className={heroBg}
         />
-      </div>
+      )}
     </>
   );
 };

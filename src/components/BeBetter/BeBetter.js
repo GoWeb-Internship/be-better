@@ -21,6 +21,7 @@ import {
   bakaluImg,
   containerBeBetter,
 } from './BeBetter.module.css';
+import Container from 'components/Container';
 
 const BeBetter = () => {
   const { t, i18n } = useTranslation();
@@ -89,53 +90,55 @@ const BeBetter = () => {
     allMarkdownRemark.avatarBoc.childImageSharp.gatsbyImageData;
 
   return (
-    <Section className={beBetterSection} id="be-better">
-      <div className={containerBeBetter}>
-        <div>
-          {data.map((node, id) => (
-            <React.Fragment key={id}>
-              {node.frontmatter.language === i18n.language && (
-                <MarkdownList
-                  listClassName={textBeBetter}
-                  titleClassName={textBeBet}
-                  tag="h2"
-                  data={node}
-                />
+    <Section id="be-better">
+      <Container className={beBetterSection}>
+        <div className={containerBeBetter}>
+          <div>
+            {data.map((node, id) => (
+              <React.Fragment key={id}>
+                {node.frontmatter.language === i18n.language && (
+                  <MarkdownList
+                    listClassName={textBeBetter}
+                    titleClassName={textBeBet}
+                    tag="h2"
+                    data={node}
+                  />
+                )}
+              </React.Fragment>
+            ))}
+          </div>
+          <div className={pictures}>
+            <div className={pictureDesktop}>
+              {media === 'desktop' && (
+                <div className={beBetterCont}>
+                  <GatsbyImage
+                    image={avatar}
+                    alt={translate.jumper}
+                    className={oneMin}
+                  />
+                </div>
               )}
-            </React.Fragment>
-          ))}
-        </div>
-        <div className={pictures}>
-          <div className={pictureDesktop}>
-            {media === 'desktop' && (
-              <div className={beBetterCont}>
-                <GatsbyImage
-                  image={avatar}
-                  alt={translate.jumper}
-                  className={oneMin}
-                />
-              </div>
-            )}
 
-            {media !== 'mobile' && (
-              <div className={divImg}>
-                <GatsbyImage
-                  image={avatarThree}
-                  alt={translate.auto}
-                  className={threeMin}
-                />
-              </div>
-            )}
-          </div>
-          <div className={bocaluDiv}>
-            <GatsbyImage
-              image={avatarBocalu}
-              alt={translate.glasses}
-              className={bakaluImg}
-            />
+              {media !== 'mobile' && (
+                <div className={divImg}>
+                  <GatsbyImage
+                    image={avatarThree}
+                    alt={translate.auto}
+                    className={threeMin}
+                  />
+                </div>
+              )}
+            </div>
+            <div className={bocaluDiv}>
+              <GatsbyImage
+                image={avatarBocalu}
+                alt={translate.glasses}
+                className={bakaluImg}
+              />
+            </div>
           </div>
         </div>
-      </div>
+      </Container>
     </Section>
   );
 };

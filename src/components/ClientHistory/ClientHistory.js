@@ -2,34 +2,36 @@ import React, { useState, useEffect } from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
 import loadable from '@loadable/component';
 import { useTranslation } from 'gatsby-plugin-react-i18next';
-import { useMedia } from 'react-use';
 
 import Section from 'components/reusableComponents/Section';
 import Heading from 'components/reusableComponents/Heading';
 import ClientHistoryListSkeleton from './ClientHistoryListSkeleton';
 import ObserverWrapper from 'components/ObserverWrapper/ObserverWrapper';
+import useMediaRules from 'helpers/getMedia';
 
-import { title, icon } from './ClientHistory.module.css';
+import { title, icon, background } from './ClientHistory.module.css';
 
 import { FaQuoteLeft } from 'react-icons/fa';
+
+import Container from 'components/Container';
+import useObserver from 'components/ObserverWrapper/useObserver';
 
 const ClientHistoryList = loadable(() => import('./ClientHistoryList'));
 
 const ClientHistory = () => {
   const [size, setSize] = useState(120);
-
-  const isMobile = useMedia('(max-width:767px)');
-  const isDesktop = useMedia('(min-width:1440px)');
+  const [show, getRef] = useObserver();
+  const media = useMediaRules();
 
   useEffect(() => {
-    if (isMobile) {
+    if (media === 'mobile') {
       setSize(55);
-    } else if (isDesktop) {
+    } else if (media === 'desktop') {
       setSize(120);
     } else {
       setSize(64);
     }
-  }, [isMobile, isDesktop, size]);
+  }, [media, size]);
 
   const { t } = useTranslation();
 
@@ -61,19 +63,25 @@ const ClientHistory = () => {
 
   return (
     <Section
-      className="py-8 laptop:pt-20 laptop:pb-[50px] desktop:pb-[77px] overflow-hidden"
+      className="overflow-hidden desktop:overflow-visible"
       id="client"
+      backgroundClass={show ? background : ''}
+      style={{ position: 'static' }}
     >
-      <Heading tag="h2" className={title} text={data.title} />
+      <Container
+        className="relative py-8 laptop:pt-20 laptop:pb-[50px] desktop:pb-[77px] bg-white"
+        getRef={getRef}
+      >
+        <Heading tag="h2" className={title} text={data.title} />
 
-      <ObserverWrapper
-        component={<ClientHistoryList clients={clients} />}
-        fallback={<ClientHistoryListSkeleton clients={clients} />}
-      />
-
-      <div className={icon}>
-        <FaQuoteLeft size={size} />
-      </div>
+        <ObserverWrapper
+          component={<ClientHistoryList clients={clients} />}
+          fallback={<ClientHistoryListSkeleton clients={clients} />}
+        />
+        <div className={icon}>
+          <FaQuoteLeft size={size} />
+        </div>
+      </Container>
     </Section>
   );
 };

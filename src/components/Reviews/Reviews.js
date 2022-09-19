@@ -2,11 +2,11 @@ import React, { useEffect, useState } from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
 import { useTranslation } from 'gatsby-plugin-react-i18next';
 import loadable from '@loadable/component';
-import { useMedia } from 'react-use';
 
 import Heading from 'components/reusableComponents/Heading';
 import ObserverWrapper from 'components/ObserverWrapper/ObserverWrapper';
 import ReviewsListSkeleton from './ReviewsListSkeleton';
+import useMediaRules from 'helpers/getMedia';
 
 import { title } from './Reviews.module.css';
 
@@ -16,6 +16,7 @@ const ReviewsList = loadable(() => import('./ReviewsList'));
 
 const Reviews = () => {
   const [slide, setSlide] = useState(3);
+  const media = useMediaRules();
 
   const { t } = useTranslation();
   const { allMarkdownRemark } = useStaticQuery(graphql`
@@ -47,25 +48,22 @@ const Reviews = () => {
   `);
   const clients = allMarkdownRemark.nodes;
 
-  const isMobile = useMedia('(max-width:767px)');
-  const isDesktop = useMedia('(min-width:1440px)');
-
   useEffect(() => {
-    if (isMobile) {
+    if (media === 'mobile') {
       setSlide(1);
-    } else if (isDesktop) {
+    } else if (media === 'desktop') {
       setSlide(3);
     } else {
       setSlide(2);
     }
-  }, [isMobile, isDesktop, slide]);
+  }, [media, slide]);
 
   const reviews = t('reviews', { returnObjects: true });
 
   return (
     <div
       id="nav-reviews"
-      className="px-5 mt-[73px] laptop:mt-[324px] desktop:mt-[160px] pb-[83px] laptop:pb-[131px] desktop:pb-[142px] relative"
+      className="px-5 mt-[70px] laptop:mt-[280px] desktop:mt-[160px] laptop:pb-[131px] desktop:pb-[132px] relative z-50"
     >
       <Heading tag="h2" className={title} text={reviews.title} />
 
@@ -79,7 +77,7 @@ const Reviews = () => {
         fallback={<ReviewsListSkeleton reviewsData={clients} />}
       />
 
-      {!isMobile && (
+      {media !== 'mobile' && (
         <CgQuote
           className="text-mainSecond absolute  right-[120px] bottom-[80px]"
           size={120}

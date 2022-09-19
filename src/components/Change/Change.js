@@ -19,6 +19,7 @@ import {
   discount,
   button,
 } from './Change.module.css';
+import Container from 'components/Container';
 
 const FormInModal = loadable(() => import('../Form/FormInModal'));
 
@@ -106,99 +107,101 @@ const Change = () => {
   };
 
   return (
-    <Section className="h-full pb-8 laptop:pb-20" id="change">
-      {data.map((node, id) => (
-        <React.Fragment key={id}>
-          {node.frontmatter.language === i18n.language && (
-            <div className="laptop:mt-24" id={node.frontmatter.language}>
-              <div className="ml-[165px] -z-10 laptop:ml-[265px] laptop:-mt-40 desktop:ml-[404px] ">
-                <StaticImage
-                  layout="fullWidth"
-                  src="../../images/fon-min.png"
-                  alt={altTranslate.orangeBgRectangular}
-                  style={{ position: 'absolute' }}
-                  className="w-[154px] h-[64px] float-right move-right -z-10 laptop:w-[504px] laptop:h-[96px] desktop:w-[1036px] desktop:h-[152px]"
-                  formats={['auto', 'webp']}
-                />
-              </div>
-
-              {media === 'desktop' ? (
-                <StaticImage
-                  layout="fullWidth"
-                  src="../../images/background/about.jpg"
-                  alt={altTranslate.arrowWithBg}
-                  style={{ position: 'absolute' }}
-                  className="-z-20 w-[1440px] h-[750px] mt-6   desktop:mt-[149px]"
-                  formats={['auto', 'webp']}
-                />
-              ) : (
-                <StaticImage
-                  layout="fullWidth"
-                  src="../../images/fontwo-min.png"
-                  alt={altTranslate.mobileBg}
-                  style={{ position: 'absolute' }}
-                  className="-z-20  w-full h-full mt-[64px] laptop:mt-[84px] max-w-full  "
-                  formats={['auto', 'webp']}
-                />
-              )}
-
-              <Heading
-                tag="h2"
-                className={changeTitle}
-                text={node.frontmatter.title}
-              />
-              <div className="laptop:float-right laptop:-mt-40 display:block desktop:-mt-[77px] desktop:-mr-[20px]">
-                <GatsbyImage
-                  image={avatarJl}
-                  alt={altTranslate.author}
-                  style={{ position: 'absolute' }}
-                  className="w-[280px] h-[280px] -ml-44 rounded-2xl laptop:w-[310px] laptop:h-[442px] desktop:w-[480px] desktop:h-[734px] desktop:pr-[60px] desktop:-ml-[600px] desktop:-mt-[40px] desktop:pb-[80px]"
-                />
-              </div>
-              {media !== 'desktop' && (
-                <StaticImage
-                  src="../../images/union-min.png"
-                  alt={altTranslate.arrow}
-                  style={{ position: 'absolute' }}
-                  className="w-[88px] h-[476px] -z-10 -ml-32 mt-[300px] laptop:w-[88px] laptop:h-[444px] laptop:mt-8 laptop:-ml-64"
-                  formats={['auto', 'webp']}
-                />
-              )}
-              <div className="flex justify-between">
-                <div className="float-left desktop:ml-[150px] desktop:mr-[100px]">
-                  <div className={text}>
-                    <div
-                      className="laptop:-mt-[255px] laptop:mb-16 desktop:mb-6 desktop:w-[524px] float-left block"
-                      key={node.frontmatter.language}
-                      dangerouslySetInnerHTML={{ __html: node.html }}
-                    />
-                    <WithDiscount
-                      classnameText={discountStyle}
-                      classnameDiscount={discount}
-                    />
-                  </div>
-                  <Button
-                    id="button-change"
-                    type="button"
-                    className={button}
-                    doAction={() => showModal()}
-                    onMouseOver={preloadFormInModal}
-                    onTouchStart={preloadFormInModal}
-                  >
-                    {buttonTranslate.button}
-                  </Button>
+    <Section id="change">
+      <Container className="relative h-full pb-8 laptop:pb-20 ">
+        {data.map((node, id) => (
+          <React.Fragment key={id}>
+            {node.frontmatter.language === i18n.language && (
+              <div className="laptop:mt-[160px]" id={node.frontmatter.language}>
+                <div className="ml-[165px] laptop:ml-[265px] laptop:-mt-40 desktop:ml-[404px] ">
+                  <StaticImage
+                    layout="fullWidth"
+                    src="../../images/fon-min.png"
+                    alt={altTranslate.orangeBgRectangular}
+                    style={{ position: 'absolute' }}
+                    className="w-[154px] h-[64px] float-right move-right -z-10 laptop:w-[504px] laptop:h-[96px] desktop:w-[1036px] desktop:h-[152px]"
+                    formats={['auto', 'webp']}
+                  />
                 </div>
-                {modal && (
-                  <FormInModal
-                    hideModal={hideModal}
-                    currentPlace="change in life"
+
+                {media === 'desktop' ? (
+                  <StaticImage
+                    layout="fullWidth"
+                    src="../../images/background/about.jpg"
+                    alt={altTranslate.arrowWithBg}
+                    style={{ position: 'absolute' }}
+                    className="-z-20 w-[1440px] h-[750px] mt-6   desktop:mt-[149px]"
+                    formats={['auto', 'webp']}
+                  />
+                ) : (
+                  <StaticImage
+                    layout="fullWidth"
+                    src="../../images/fontwo-min.png"
+                    alt={altTranslate.mobileBg}
+                    style={{ position: 'absolute' }}
+                    className="-z-20  w-full h-full mt-[64px] laptop:mt-[84px] max-w-full  "
+                    formats={['auto', 'webp']}
                   />
                 )}
+
+                <Heading
+                  tag="h2"
+                  className={changeTitle}
+                  text={node.frontmatter.title}
+                />
+                <div className="laptop:float-right laptop:-mt-40 display:block desktop:-mt-[77px] desktop:-mr-[20px]">
+                  <GatsbyImage
+                    image={avatarJl}
+                    alt={altTranslate.author}
+                    style={{ position: 'absolute' }}
+                    className="w-[280px] h-[280px] -ml-44 rounded-2xl laptop:w-[310px] laptop:h-[442px] desktop:w-[480px] desktop:h-[734px] desktop:pr-[60px] desktop:-ml-[600px] desktop:-mt-[40px] desktop:pb-[80px]"
+                  />
+                </div>
+                {media !== 'desktop' && (
+                  <StaticImage
+                    src="../../images/union-min.png"
+                    alt={altTranslate.arrow}
+                    style={{ position: 'absolute' }}
+                    className="w-[88px] h-[476px] -z-10 -ml-32 mt-[300px] laptop:w-[88px] laptop:h-[444px] laptop:mt-8 laptop:-ml-64"
+                    formats={['auto', 'webp']}
+                  />
+                )}
+                <div className="flex justify-between">
+                  <div className="float-left desktop:ml-[150px] desktop:mr-[100px]">
+                    <div className={text}>
+                      <div
+                        className="laptop:-mt-[255px] laptop:mb-16 desktop:mb-6 desktop:w-[524px] float-left block"
+                        key={node.frontmatter.language}
+                        dangerouslySetInnerHTML={{ __html: node.html }}
+                      />
+                      <WithDiscount
+                        classnameText={discountStyle}
+                        classnameDiscount={discount}
+                      />
+                    </div>
+                    <Button
+                      id="button-change"
+                      type="button"
+                      className={button}
+                      doAction={() => showModal()}
+                      onMouseOver={preloadFormInModal}
+                      onTouchStart={preloadFormInModal}
+                    >
+                      {buttonTranslate.button}
+                    </Button>
+                  </div>
+                  {modal && (
+                    <FormInModal
+                      hideModal={hideModal}
+                      currentPlace="change in life"
+                    />
+                  )}
+                </div>
               </div>
-            </div>
-          )}
-        </React.Fragment>
-      ))}
+            )}
+          </React.Fragment>
+        ))}
+      </Container>
     </Section>
   );
 };

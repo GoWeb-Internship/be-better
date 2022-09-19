@@ -5,7 +5,6 @@ import { useTranslation } from 'gatsby-plugin-react-i18next';
 import Seo from 'components/seo';
 import Layout from 'components/Layout';
 import Hero from 'components/Hero';
-import Container from 'components/Container';
 import AboutMe from 'components/AboutMe';
 import Facts from 'components/Facts';
 import ClientHistory from 'components/ClientHistory';
@@ -19,6 +18,7 @@ import Steps from 'components/Steps';
 import Change from 'components/Change';
 import BeBetter from 'components/BeBetter';
 import ButtonUp from 'components/ButtonUp';
+import Events from 'components/scripts/Events';
 
 const IndexPage = () => {
   const { t, i18n } = useTranslation();
@@ -26,7 +26,7 @@ const IndexPage = () => {
 
   return (
     <>
-      {/* <Events /> */}
+      <Events />
       <Seo
         title={seo.title}
         description={seo.description}
@@ -34,21 +34,19 @@ const IndexPage = () => {
       />
       <Layout id="home">
         <Hero />
-        <Container>
-          <AboutMe />
-          <Facts />
-          <ClientHistory />
-          <Formula />
-          <FormInMain clickFrom="main" />
-          <WhyStepsAdd />
-          <Price />
-          <Guarantee />
-          <Couch />
-          <Steps />
-          <Change />
-          <BeBetter />
-          <ButtonUp />
-        </Container>
+        <AboutMe />
+        <Facts />
+        <ClientHistory />
+        <Formula />
+        <FormInMain clickFrom="main" />
+        <WhyStepsAdd />
+        <Price />
+        <Guarantee />
+        <Couch />
+        <Steps />
+        <Change />
+        <BeBetter />
+        <ButtonUp />
       </Layout>
     </>
   );

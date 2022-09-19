@@ -1,12 +1,12 @@
 .sectionContainer {
-  @apply py-8 px-5 laptop:py-20 laptop:px-16 desktop:px-20  text-base  relative;
+  @apply py-8 px-5 laptop:py-20 laptop:px-16 desktop:px-20  text-base  relative bg-white;
 }
 
 .aboutMeContainer {
   @apply flex flex-col justify-center laptop:justify-end laptop:flex-row;
 }
 .title {
-  @apply hidden laptop:block title-primary text-left mb-4 laptop:mb-8 desktop:mb-13 laptop:font-semibold laptop:text-34;
+  @apply title-primary text-left mb-4 laptop:mb-8 desktop:mb-13 laptop:font-semibold laptop:text-34;
 }
 
 .textContainer {
@@ -15,4 +15,10 @@
 
 .caveat {
   @apply text-caveat text-lg laptop:text-2xl laptop:leading-[0.9];
+}
+
+@media screen and (min-width: 1440px) {
+  .background {
+    background-image: url('../../images/vectorBackgrounds/aboutMe.svg');
+  }
 }

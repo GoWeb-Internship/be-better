@@ -1,9 +1,9 @@
 .gradient {
-  background-image: url('../../images/fon-min.png');
+  background: linear-gradient(90deg, #FFA877 0%, #FFE3D3 100%);
 }
 
 .changeTitle {
-  @apply tablet:text-xl tablet:font-medium pl-5 pr-5 text-orangeDark pt-[37px] text-center mb-8 laptop:font-semibold laptop:text-4xl laptop:w-[310px] laptop:pt-5 laptop:mb-4 laptop:pl-20 laptop:text-start desktop:w-[700px] desktop:pt-20;
+  @apply tablet:text-xl tablet:font-medium pl-5 pr-5 text-orangeDark pt-[37px] text-center mb-8 laptop:font-semibold laptop:text-34 laptop:w-[310px] laptop:pt-5 laptop:mb-4 laptop:pl-20 laptop:text-start desktop:w-[700px] desktop:pt-20;
 }
 
 .text {

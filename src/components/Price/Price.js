@@ -85,32 +85,34 @@ const Price = () => {
   };
 
   return (
-    <Section id="nav-price" backgroundClass={show ? background : ''}>
-      <Container className={container} getRef={getRef}>
-        <Heading tag="h2" className={title} text={pricePac.title} />
-        <ul className={list}>
-          {allMarkdownRemark &&
-            data.map(({ frontmatter }, id) => {
-              return (
-                <li className={item} key={frontmatter.id}>
-                  <PriceCard
-                    priceData={{ ...frontmatter, id }}
-                    onClick={showModal}
-                  />
-                </li>
-              );
-            })}
-        </ul>
-        {modal && (
-          <ModalPriceWindow
-            hideModal={hideModal}
-            currentRate={currentRate}
-            currentPrice={currentPrice}
-          />
-        )}
-        <Donations className={donation} />
-      </Container>
-    </Section>
+    <>
+      <Section id="nav-price" backgroundClass={show ? background : ''}>
+        <Container className={container} getRef={getRef}>
+          <Heading tag="h2" className={title} text={pricePac.title} />
+          <ul className={list}>
+            {allMarkdownRemark &&
+              data.map(({ frontmatter }, id) => {
+                return (
+                  <li className={item} key={frontmatter.id}>
+                    <PriceCard
+                      priceData={{ ...frontmatter, id }}
+                      onClick={showModal}
+                    />
+                  </li>
+                );
+              })}
+          </ul>
+          <Donations className={donation} />
+        </Container>
+      </Section>
+      {modal && (
+        <ModalPriceWindow
+          hideModal={hideModal}
+          currentRate={currentRate}
+          currentPrice={currentPrice}
+        />
+      )}
+    </>
   );
 };
 

@@ -54,7 +54,7 @@ const Page = ({ icons = '', data = {}, img = '', icon = '' }) => {
                 </div>
 
                 <div className={iconClass}>
-                  <svg className="desktop:w-[16px] desktop:h-[16px]">
+                  <svg className="desktop:w-4 desktop:h-4">
                     <use href={`${icons}#icon-${icon}`} />
                   </svg>
                 </div>

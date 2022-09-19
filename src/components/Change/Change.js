@@ -19,8 +19,10 @@ import {
   discountStyle,
   discount,
   button,
+  background,
 } from './Change.module.css';
 import Container from 'components/Container';
+import useObserver from 'components/ObserverWrapper/useObserver';
 
 const FormInModal = loadable(() => import('../Form/FormInModal'));
 
@@ -29,6 +31,7 @@ const Change = () => {
   const [modal, setModal] = useState(false);
 
   const media = useMediaRules();
+  const [show, getRef] = useObserver();
 
   const buttonTranslate = t('littleComponents', { returnObjects: true });
   const altTranslate = t('changes', { returnObjects: true });
@@ -108,13 +111,15 @@ const Change = () => {
   };
 
   return (
-    <Section id="change">
-      <Container className="relative h-full pb-8 laptop:pb-20">
+    <Section id="change" backgroundClass={show ? background : ''}>
+      <Container className="relative h-full pb-8 laptop:pb-20 " getRef={getRef}>
         {data.map((node, id) => (
           <React.Fragment key={id}>
             {node.frontmatter.language === i18n.language && (
               <div id={node.frontmatter.language}>
-                <div className={`${gradient} absolute right-0 w-[154px] h-[64px] laptop:w-[594px] laptop:h-[112px] desktop:w-[1036px] desktop:h-[152px] -z-10 `}></div>
+                <div
+                  className={`${gradient} absolute right-0 w-[154px] h-[64px] laptop:w-[594px] laptop:h-[112px] desktop:w-[1036px] desktop:h-[152px] -z-10 `}
+                ></div>
 
                 {media === 'desktop' ? (
                   <StaticImage

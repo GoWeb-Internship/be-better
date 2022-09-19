@@ -22,7 +22,7 @@ const StepsAdd = () => {
         style={{ position: 'static' }}
         backgroundClass={show ? svgBackground : ''}
       >
-        <Container className={background} getRef={getRef}>
+        <Container className={show ? background : ''} getRef={getRef}>
           <List data={data} icons={svg} />
           <Reviews />
         </Container>

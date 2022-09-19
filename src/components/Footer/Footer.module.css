@@ -63,3 +63,9 @@
 .link {
   @apply text-black text-xs text-left laptop:text-sm hover:text-[#038bab];
 }
+
+.background {
+  background-image: url('../../images/vectorBackgrounds/footer.svg');
+  background-position: top center;
+  background-repeat: no-repeat;
+}

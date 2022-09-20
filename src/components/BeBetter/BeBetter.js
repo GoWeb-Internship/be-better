@@ -7,21 +7,7 @@ import Section from 'components/reusableComponents/Section';
 import MarkdownList from 'components/reusableComponents/MarkdownList';
 import useMediaRules from 'helpers/getMedia';
 
-import {
-  textBeBetter,
-  beBetterSection,
-  textBeBet,
-  pictures,
-  pictureDesktop,
-  beBetterCont,
-  oneMin,
-  divImg,
-  threeMin,
-  bocaluDiv,
-  bakaluImg,
-  containerBeBetter,
-  background,
-} from './BeBetter.module.css';
+import { textBeBetter, background } from './BeBetter.module.css';
 import Container from 'components/Container';
 import useObserver from 'components/ObserverWrapper/useObserver';
 
@@ -122,15 +108,18 @@ const BeBetter = () => {
 
   return (
     <Section id="be-better" backgroundClass={show ? background : ''}>
-      <Container className={beBetterSection} getRef={getRef}>
-        <div className={containerBeBetter}>
+      <Container
+        className="bg-background py-8 px-5 laptop:px-16 desktop:w-[1440px] desktop:h-[772px] laptop:pt-20 desktop:p-20"
+        getRef={getRef}
+      >
+        <div className="laptop:flex">
           <div>
             {data.map((node, id) => (
               <React.Fragment key={id}>
                 {node.frontmatter.language === i18n.language && (
                   <MarkdownList
                     listClassName={textBeBetter}
-                    titleClassName={textBeBet}
+                    titleClassName="text-buttonMobile font-medium text-xl text-center mb-[24px] laptop:w-[420px] laptop:mb-12 laptop:font-semibold laptop:text-4xl desktop:w-[500px] desktop:ml-0 desktop:mb-4 desktop:text-left desktop:pr-10"
                     tag="h2"
                     data={node}
                   />
@@ -138,43 +127,43 @@ const BeBetter = () => {
               </React.Fragment>
             ))}
           </div>
-          <div className={pictures}>
-            <div className={pictureDesktop}>
+          <div className="laptop:-ml-20 desktop:flex desktop:ml-12">
+            <div className="desktop:mt-6">
               {media === 'desktop' && (
-                <div className={beBetterCont}>
+                <div className="desktop:mb-6">
                   <GatsbyImage
                     image={jumper}
                     alt={translate.jumper}
-                    className={oneMin}
+                    className="rounded-2xl desktop:w-[384px] desktop:h-[270px] desktop:-ml-12"
                   />
                 </div>
               )}
 
               {media === 'desktop' && (
-                <div className={divImg}>
+                <div className="laptop:ml-28 desktop:ml-auto laptop:mb-6 desktop:w-[284px] desktop:h-[294px]">
                   <GatsbyImage
                     image={avatarCarDesk}
                     alt={translate.auto}
-                    className={threeMin}
+                    className="rounded-2xl laptop:w-[200px] laptop:h-[162px] desktop:w-full desktop:h-full"
                   />
                 </div>
               )}
               {media === 'tablet' && (
-                <div className={divImg}>
+                <div className="laptop:ml-28 desktop:ml-auto laptop:mb-6 desktop:w-[284px] desktop:h-[294px]">
                   <GatsbyImage
                     image={avatarCarTablet}
                     alt={translate.auto}
-                    className={threeMin}
+                    className="rounded-2xl laptop:w-[200px] laptop:h-[162px] desktop:w-full desktop:h-full"
                   />
                 </div>
               )}
             </div>
-            <div className={bocaluDiv}>
+            <div className="w-[280px] h-[300px] laptop:w-[310px] laptop:h-[544px] desktop:ml-3">
               {media !== 'mobile' && (
                 <GatsbyImage
                   image={avatarGlasses}
                   alt={translate.glasses}
-                  className={bakaluImg}
+                  className="rounded-2xl laptop:w-full laptop:h-full desktop:w-[308px] desktop:h-[440px]"
                 />
               )}
 
@@ -182,7 +171,7 @@ const BeBetter = () => {
                 <GatsbyImage
                   image={avatarGlassesMob}
                   alt={translate.glasses}
-                  className={bakaluImg}
+                  className="rounded-2xl laptop:w-full laptop:h-full desktop:w-[308px] desktop:h-[440px]"
                 />
               )}
             </div>

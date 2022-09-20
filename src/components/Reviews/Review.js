@@ -4,13 +4,7 @@ import { useTranslation } from 'react-i18next';
 import { GatsbyImage } from 'gatsby-plugin-image';
 
 import useMediaRules from 'helpers/getMedia';
-import {
-  reviewContainer,
-  textContainer,
-  avatarDesk,
-  authorContainer,
-  avatarMob,
-} from './Reviews.module.css';
+import { textContainer, authorContainer } from './Reviews.module.css';
 
 const Review = ({ frontmatter }) => {
   const [overflow, setOverflow] = useState('overflow-hidden');
@@ -49,7 +43,7 @@ const Review = ({ frontmatter }) => {
   const image = frontmatter.image?.childImageSharp.gatsbyImageData;
 
   return (
-    <div className={reviewContainer}>
+    <div className="relative overflow-auto flex leading-[1.36] flex-col justify-between text-xs  ml-1 mt-1 mb-6   px-2 py-4  w-[238px] h-[234px] laptop:text-base laptop:w-70 desktop:w-80 laptop:h-[360px] text-left laptop:px-8 laptop:pb-8 laptop:pt-10 bg-white rounded-2xl shadow-you">
       <div className={`${overflow} ${textContainer} h-36 laptop:h-[200px] `}>
         <div>
           <p>{frontmatter[`${i18n.language}Text`]}</p>
@@ -62,8 +56,8 @@ const Review = ({ frontmatter }) => {
           alt={frontmatter[`${i18n.language}Name`]}
           className={
             media === 'desktop'
-              ? `${avatarDesk} mr-2 laptop:mr-6`
-              : `${avatarMob}`
+              ? `h-[60px] w-[60px] mr-2 laptop:mr-6`
+              : 'mr-2 laptop:mr-6 h-8 w-8'
           }
         />
 

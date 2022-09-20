@@ -9,11 +9,7 @@ import AboutMeLap from './AboutMeLap';
 import AboutMePrimaryText from './AboutMePrimaryText';
 import useMediaRules from 'helpers/getMedia';
 
-import {
-  sectionContainer,
-  aboutMeContainer,
-  background,
-} from './AboutMe.module.css';
+import { background } from './AboutMe.module.css';
 
 import icon from 'images/signature.svg';
 import Container from 'components/Container';
@@ -61,8 +57,8 @@ const AboutMe = () => {
 
   return (
     <Section backgroundClass={background} id="nav-about">
-      <Container className={sectionContainer}>
-        <div className={aboutMeContainer}>
+      <Container className="py-8 px-5 laptop:py-20 laptop:px-16 desktop:px-20  text-base  relative bg-white">
+        <div className="flex flex-col justify-center laptop:justify-end laptop:flex-row">
           <div className="flex mb-6 laptop:mb-0 laptop:block ">
             {media === 'mobile' && (
               <div className="w-[134px] text-left mr-3">

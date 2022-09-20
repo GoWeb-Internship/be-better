@@ -1,15 +1,16 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import { caveat } from './AboutMe.module.css';
-
 const AboutMeLap = ({ data }) => {
   return (
     <div>
       <div className="laptop:w-[420px] laptop:ml-auto text-left">
         <p className="mb-2  desktop:mb-8">
           {data.threeParagraphFirst}
-          <span className={caveat}>{data.threeParagraphSpan}</span> <br />
+          <span className="text-caveat text-lg laptop:text-2xl laptop:leading-[0.9]">
+            {data.threeParagraphSpan}
+          </span>
+          <br />
           <span className="text-black block mt-4">
             {data.threeParagraphThird}
           </span>

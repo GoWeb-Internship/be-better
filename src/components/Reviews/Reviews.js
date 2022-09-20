@@ -8,8 +8,6 @@ import ObserverWrapper from 'components/ObserverWrapper/ObserverWrapper';
 import ReviewsListSkeleton from './ReviewsListSkeleton';
 import useMediaRules from 'helpers/getMedia';
 
-import { title } from './Reviews.module.css';
-
 import { CgQuote } from 'react-icons/cg';
 
 const ReviewsList = loadable(() => import('./ReviewsList'));
@@ -65,7 +63,11 @@ const Reviews = () => {
       id="nav-reviews"
       className="px-5 mt-[70px] laptop:mt-[280px] desktop:mt-[160px] laptop:pb-[131px] desktop:pb-[132px] relative z-50"
     >
-      <Heading tag="h2" className={title} text={reviews.title} />
+      <Heading
+        tag="h2"
+        className="title-primary text-orangeDark  mb-14 laptop:mb-[76px]  laptop:text-34 desktop:mb-11"
+        text={reviews.title}
+      />
 
       <CgQuote
         className="text-mainSecond absolute top-0 -left-[15px] desktop:left-[60px] "

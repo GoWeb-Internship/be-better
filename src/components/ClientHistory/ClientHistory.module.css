@@ -1,30 +1,3 @@
-.title {
-  @apply title-primary px-5 mb-4 laptop:mb-8 laptop:px-15 laptop:text-34 desktop:mb-[122px];
-}
-.name {
-  @apply text-2xl font-semibold mb-1;
-}
-
-.profession {
-  @apply text-likeGrey laptop:mb-4;
-}
-
-.screenCss {
-  @apply tablet:w-80;
-}
-
-.sliderHistory {
-  @apply w-80 laptop:w-[600px]  desktop:w-[1064px] pb-[5px];
-}
-
-.slide {
-  @apply m-auto w-70 mb-5 flex flex-col justify-between text-left laptop:mb-4 desktop:w-[716px] desktop:flex-row;
-}
-
-.icon {
-  @apply absolute text-[#E8F6FA] top-[155px] left-[20px] laptop:top-[268px] laptop:left-[227px] desktop:top-[190px] desktop:left-[528px];
-}
-
 .client {
   @apply text-sm laptop:text-base laptop:leading-[1.36] desktop:w-[518px] laptop:w-[320px] desktop:ml-5 h-[228px] laptop:h-[290px] desktop:h-[200px] overflow-y-auto mb-4;
 }

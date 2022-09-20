@@ -120,7 +120,7 @@ const Footer = () => {
                 <li key={id} className={link}>
                   <Link
                     to={`/${id}`}
-                    className="focus:text-[#038bab] focus:outline-none"
+                    className="focus:text-[#038bab]"
                   >
                     {name}
                   </Link>

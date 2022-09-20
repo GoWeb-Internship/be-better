@@ -82,7 +82,7 @@
 }
 
 .buttonStyled {
-  @apply px-20 rounded-3xl border border-none laptop:px-10 desktop:px-[88px] py-[11px] focus:outline-none;
+  @apply px-20 rounded-3xl border border-none laptop:px-10 desktop:px-[88px] py-[11px];
 }
 
 .donation {

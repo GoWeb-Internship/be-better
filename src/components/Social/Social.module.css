@@ -3,5 +3,5 @@
 }
 
 .link {
-  @apply flex justify-center items-center p-2 border border-transparent bg-main text-white rounded-2xl outline-none transition hover:border hover:border-main focus:border-main hover:bg-white hover:text-main focus:bg-white focus:text-main;
+  @apply flex justify-center items-center p-2 border border-transparent bg-main text-white rounded-2xl transition hover:border hover:border-main focus:border-main hover:bg-white hover:text-main focus:bg-white focus:text-main;
 }

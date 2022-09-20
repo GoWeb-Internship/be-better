@@ -19,7 +19,7 @@
 }
 
 .button {
-  @apply h-12 w-70 border mt-8 border-main rounded-full text-white z-10 laptop:mt-[110px] focus:outline-none;
+  @apply h-12 w-70 border mt-8 border-main rounded-full text-white z-10 laptop:mt-[110px];
 }
 
 @media screen and (min-width: 1440px) {

@@ -4,7 +4,7 @@
 }
 
 .input {
-  @apply w-full mb-3 pl-8 h-11 border border-main rounded-full outline-none text-main desktop:border-transparent desktop:shadow-formInput;
+  @apply w-full mb-3 pl-8 h-11 border border-main rounded-full text-main desktop:border-transparent desktop:shadow-formInput;
 }
 
 .label {
@@ -68,7 +68,7 @@
 }
 
 .buttonF {
-  @apply h-12 w-full border border-main rounded-full text-white focus:outline-none;
+  @apply h-12 w-full border border-main rounded-full text-white;
 }
 
 /* FormInModal */

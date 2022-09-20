@@ -27,7 +27,7 @@
 }
 
 .button {
-  @apply !bg-mainSecond border px-16 !ml-8 desktop:!ml-0 py-2 rounded-3xl hover:!bg-[#d46828] focus:!bg-[#d46828] focus:outline-none ease-in duration-300 laptop:!ml-20;
+  @apply !bg-mainSecond border px-16 !ml-8 desktop:!ml-0 py-2 rounded-3xl hover:!bg-[#d46828] focus:!bg-[#d46828] ease-in duration-300 laptop:!ml-20;
 }
 
 /* Form */

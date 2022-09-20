@@ -170,7 +170,6 @@ const JustForm = ({
               enableSearch="true"
               searchPlaceholder="Choose country"
               disableSearchIcon="true"
-              containerClass={'outline-none'}
               buttonClass={phonebutton}
               inputClass={phoneinput}
               dropdownClass={phonedropdown}

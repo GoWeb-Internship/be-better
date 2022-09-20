@@ -9,7 +9,7 @@ import ClientHistoryListSkeleton from './ClientHistoryListSkeleton';
 import ObserverWrapper from 'components/ObserverWrapper/ObserverWrapper';
 import useMediaRules from 'helpers/getMedia';
 
-import { title, icon, background } from './ClientHistory.module.css';
+import { background } from './ClientHistory.module.css';
 
 import { FaQuoteLeft } from 'react-icons/fa';
 
@@ -72,13 +72,17 @@ const ClientHistory = () => {
         className="relative py-8 laptop:pt-20 laptop:pb-[50px] desktop:pb-[77px] bg-white"
         getRef={getRef}
       >
-        <Heading tag="h2" className={title} text={data.title} />
+        <Heading
+          tag="h2"
+          className="title-primary px-5 mb-4 laptop:mb-8 laptop:px-15 laptop:text-34 desktop:mb-[122px]"
+          text={data.title}
+        />
 
         <ObserverWrapper
           component={<ClientHistoryList clients={clients} />}
           fallback={<ClientHistoryListSkeleton clients={clients} />}
         />
-        <div className={icon}>
+        <div className="absolute text-[#E8F6FA] top-[155px] left-[20px] laptop:top-[268px] laptop:left-[227px] desktop:top-[190px] desktop:left-[528px]">
           <FaQuoteLeft size={size} />
         </div>
       </Container>

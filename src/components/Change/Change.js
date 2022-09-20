@@ -9,19 +9,11 @@ import Heading from 'components/reusableComponents/Heading';
 import WithDiscount from 'components/reusableComponents/WithDiscount';
 import Button from 'components/reusableComponents/Button';
 import icons from 'images/sprite.svg';
-import useMediaRules from 'helpers/getMedia';
 
 import { preloadFormInModal } from 'services/preloader';
 
-import {
-  gradient,
-  text,
-  changeTitle,
-  discountStyle,
-  discount,
-  button,
-  background,
-} from './Change.module.css';
+import useMediaRules from 'helpers/getMedia';
+import { text, background } from './Change.module.css';
 import Container from 'components/Container';
 import useObserver from 'components/ObserverWrapper/useObserver';
 
@@ -146,19 +138,13 @@ const Change = () => {
           className="relative h-full pb-8 laptop:pb-20 bg-oferta -z-20"
           getRef={getRef}
         >
-          <div className="absolute w-full h-[64px] laptop:h-[112px] desktop:h-[152px] bg-white -z-20">
-            <div
-              className={`${gradient} ml-auto w-[154px] h-full laptop:w-[594px] desktop:w-[1036px] -z-10 `}
-            ></div>
-          </div>
-
           {data.map((node, id) => (
             <React.Fragment key={id}>
               {node.frontmatter.language === i18n.language && (
                 <div>
                   {media === 'desktop' ? (
                     <svg className="absolute -z-10 w-5 h-[575px] mt-[228px] ml-20">
-                      <use href={`${icons}#arrow-max`}/>
+                      <use href={`${icons}#arrow-max`} />
                     </svg>
                   ) : (
                     <svg className="absolute -z-10  w-[88px] h-[476px] mt-[408px] ml-4 laptop:mt-[256px] laptop:h-[444px] laptop:ml-[88px]">
@@ -167,7 +153,7 @@ const Change = () => {
                   )}
                   <Heading
                     tag="h2"
-                    className={changeTitle}
+                    className="tablet:text-xl tablet:font-medium pl-5 pr-5 text-orangeDark pt-[37px] text-center mb-8 laptop:font-semibold laptop:text-34 laptop:w-[310px] laptop:pt-5 laptop:mb-4 laptop:pl-20 laptop:text-start desktop:w-[700px] desktop:pt-20"
                     text={node.frontmatter.title}
                   />
                   {media === 'mobile' && (
@@ -209,14 +195,14 @@ const Change = () => {
                           dangerouslySetInnerHTML={{ __html: node.html }}
                         />
                         <WithDiscount
-                          classnameText={discountStyle}
-                          classnameDiscount={discount}
+                          classnameText="text-change text-2xl text-mainSecond pt-[16px] pb-[16px] laptop:!w-[690px] laptop:mb-8 desktop:pl-[70px] desktop:pr-0 desktop:!w-[440px]"
+                          classnameDiscount="text-black font-semibold"
                         />
                       </div>
                       <Button
                         id="button-change"
                         type="button"
-                        className={button}
+                        className="!bg-mainSecond border px-16 !ml-8 desktop:!ml-0 py-2 rounded-3xl hover:!bg-[#d46828] focus:!bg-[#d46828] ease-in duration-300 laptop:!ml-20"
                         doAction={() => showModal()}
                         onMouseOver={preloadFormInModal}
                         onTouchStart={preloadFormInModal}

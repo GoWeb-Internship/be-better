@@ -1,13 +1,5 @@
-.beBetterSection {
-  @apply bg-background py-8 px-5 laptop:px-16 desktop:w-[1440px] desktop:h-[772px] laptop:pt-20 desktop:p-20;
-}
-
-.containerBeBetter {
-  @apply laptop:flex;
-}
-
-.textBeBet {
-  @apply text-buttonMobile font-medium text-xl text-center mb-[24px] laptop:w-[420px] laptop:mb-12 laptop:font-semibold laptop:text-4xl desktop:w-[500px] desktop:ml-0 desktop:mb-4 desktop:text-left desktop:pr-10;
+.textBeBetter {
+  @apply font-normal text-xs desktop:pl-0 desktop:w-[576px];
 }
 
 .textBeBetter span {
@@ -20,42 +12,6 @@
 
 .textBeBetter li {
   @apply pb-3 ml-[10px] mr-[10px] text-start font-normal text-sm laptop:text-base list-disc mb-2 marker:text-main desktop:w-[476px];
-}
-
-.textBeBetter {
-  @apply font-normal text-xs desktop:pl-0 desktop:w-[576px];
-}
-
-.pictures {
-  @apply laptop:-ml-20 desktop:flex desktop:ml-12;
-}
-
-.pictureDesktop {
-  @apply desktop:mt-6;
-}
-
-.beBetterCont {
-  @apply desktop:mb-6;
-}
-
-.oneMin {
-  @apply rounded-2xl desktop:w-[384px] desktop:h-[270px] desktop:-ml-12;
-}
-
-.divImg {
-  @apply laptop:ml-28 desktop:ml-auto laptop:mb-6 desktop:w-[284px] desktop:h-[294px];
-}
-
-.threeMin {
-  @apply rounded-2xl laptop:w-[200px] laptop:h-[162px] desktop:w-full desktop:h-full;
-}
-
-.bocaluDiv {
-  @apply w-[280px] h-[300px] laptop:w-[310px] laptop:h-[544px] desktop:ml-3;
-}
-
-.bakaluImg {
-  @apply rounded-2xl laptop:w-full laptop:h-full desktop:w-[308px] desktop:h-[440px];
 }
 
 @media screen and (min-width: 1440px) {

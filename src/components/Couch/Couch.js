@@ -11,15 +11,7 @@ import useMediaRules from 'helpers/getMedia';
 
 import { preloadFormInModal } from 'services/preloader';
 
-import {
-  couchContainer,
-  flexContainer,
-  mainImg,
-  title,
-  caveat,
-  button,
-  background,
-} from './Couch.module.css';
+import { background } from './Couch.module.css';
 import Container from 'components/Container';
 import useObserver from 'components/ObserverWrapper/useObserver';
 
@@ -103,25 +95,28 @@ const Couch = () => {
   return (
     <>
       <Section id="couch" backgroundClass={show ? background : ''}>
-        <Container className={couchContainer} getRef={getRef}>
-          <div className={flexContainer}>
+        <Container
+          className="text-left px-5 pt-8 pb-[38px]  bg-background laptop:px-16 desktop:px-20 laptop:py-20 desktop:pt-5 desktop:pb-20"
+          getRef={getRef}
+        >
+          <div className="laptop:flex laptop:justify-between text-sm laptop:text-base">
             <div className="flex laptop:block">
               <Heading
                 tag="h2"
-                className={`${title} laptop:hidden`}
+                className={`w-[134px] title-primary mr-3  text-left laptop:hidden`}
                 text={couch.title}
               />
               {media === 'mobile' ? (
                 <GatsbyImage
                   image={smartScreenAvatar}
                   alt={couch.withNote}
-                  className={mainImg}
+                  className="rounded-2xl mb-4 desktop:mt-[98px] w-[134px] h-[160px] laptop:w-[310px] laptop:h-[398px] desktop:w-[366px] desktop:h-[520px]"
                 />
               ) : (
                 <GatsbyImage
                   image={DesktopScreenAvatar}
                   alt={couch.withNote}
-                  className={mainImg}
+                  className="rounded-2xl mb-4 desktop:mt-[98px] w-[134px] h-[160px] laptop:w-[310px] laptop:h-[398px] desktop:w-[366px] desktop:h-[520px]"
                 />
               )}
             </div>
@@ -130,13 +125,15 @@ const Couch = () => {
               <div className="laptop:w-[310px] desktop:w-[326px] relative laptop:leading-[1.36]">
                 <Heading
                   tag="h3"
-                  className={`${title} hidden laptop:block`}
+                  className={`hidden title-primary laptop:mr-0 laptop:mb-8  laptop:w-[282px] laptop:text-34 desktop:mb-13 desktop:mt-[58px] text-left  laptop:block`}
                   text={couch.title}
                 />
                 <p className="mb-2 laptop:mb-4 desktop:mb-6 ">{couch.mySelf}</p>
                 <p className="mb-2 laptop:mb-4 desktop:mb-6 ">{couch.course}</p>
                 <p className="desktop:mb-12 ">{couch.noTime}</p>
-                <p className={`${caveat} hidden desktop:block`}>
+                <p
+                  className={`text-caveat w-[360px] absolute left-[210px] bottom-[60px] hidden desktop:block`}
+                >
                   {couch.mySelf}
                 </p>
 
@@ -144,7 +141,7 @@ const Couch = () => {
                   <Button
                     id="button-couch"
                     type="button"
-                    className={`${button} !mt-[180px]`}
+                    className={` h-12 w-70 border border-main rounded-full text-white z-10 laptop:mt-[110px] !mt-[180px]`}
                     doAction={() => showModal()}
                   >
                     {form.button}
@@ -170,7 +167,7 @@ const Couch = () => {
                   {media !== 'desktop' && (
                     <Button
                       type="button"
-                      className={`${button}  !ml-0  !mt-12 `}
+                      className={`h-12 w-70 border border-main rounded-full text-white z-10 laptop:mt-[110px]  !ml-0  !mt-12 `}
                       doAction={() => showModal()}
                     >
                       {form.button}
@@ -198,7 +195,7 @@ const Couch = () => {
                   <p className="text-caveat leading-[1.08]">{couch.mySelf}</p>
                   <Button
                     type="button"
-                    className={`${button} !ml-0  !mt-12 `}
+                    className={`h-12 w-70 border border-main rounded-full text-white z-10 laptop:mt-[110px] !ml-0  !mt-12 `}
                     doAction={() => showModal()}
                     onMouseOver={preloadFormInModal}
                     onTouchStart={preloadFormInModal}

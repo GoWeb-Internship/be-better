@@ -9,70 +9,69 @@ import Form from 'components/Form';
 import Social from 'components/Social';
 import WithDiscount from 'components/reusableComponents/WithDiscount';
 
-import {
-  background,
-  heroContainer,
-  desktopBg,
-  desktopBgImg,
-  content,
-  ifyou,
-  titleCaveat,
-  title,
-  titleBig,
-  heroForm,
-  formMargins,
-  discountText,
-  discount,
-} from './Hero.module.css';
+import { background } from './Hero.module.css';
 
 const Hero = () => {
   const { t } = useTranslation();
   const hero = t('hero', { returnObjects: true });
 
   return (
-    <Section style={{position: 'static'}} id="home" backgroundClass={background}>
-      <div className={heroContainer}>
+    <Section
+      style={{ position: 'static' }}
+      id="home"
+      backgroundClass={background}
+    >
+      <div className="relative h-[690px] laptop:h-[1133px] desktop:h-[780px]">
         <HeroBackground />
         <Container>
-          <div className={desktopBg}>
+          <div className="w-[1440px] h-[780px] z-0 absolute bg-white hidden desktop:block">
             <StaticImage
               layout="fullWidth"
-              src="../../images/background/heroDesktop.jpg"
+              src="../../images/background/hero_desktop.jpg"
               alt={hero.background}
               style={{ position: 'absolute' }}
-              className={desktopBgImg}
+              className="w-1036 h-full z-0 top-0 right-0"
             />
           </div>
 
-          <div className={content}>
+          <div className="relative z-10 flex pl-5 laptop:flex-row-reverse laptop:justify-between desktop:flex-row desktop:justify-start mb-10 pt-[92px] laptop:pt-[200px] laptop:px-16 laptop:mb-50 text-left desktop:items-start desktop:pt-30 desktop:px-20 desktop:mb-0">
             <div className="mr-[30px] laptop:mr-0 desktop:mr-[172px]">
               <Social classNameList="space-y-2 laptop:space-y-8" />
             </div>
             <div className="laptop:pl-5 desktop:pl-0">
-              <p className={titleCaveat}>{hero.teach}</p>
-              <h1 className={title}>
+              <p className="text-2xl font-caveat laptop:text-32 text-black">
+                {hero.teach}
+              </p>
+              <h1 className="font-medium text-black text-xl laptop:font-normal laptop:text-5xl laptop:leading-[65px]">
                 {hero.life}
                 <br />
-                <span className={titleBig}>{hero.kaif}</span>
+                <span className="font-semibold text-black text-2xl laptop:font-light laptop:text-59">
+                  {hero.kaif}
+                </span>
               </h1>
-              <p className={`${titleCaveat} desktop:mb-5`}>
+              <p
+                className={`text-2xl font-caveat laptop:text-32 text-black desktop:mb-5`}
+              >
                 {hero.emotion} <br />
                 {hero.burn}
               </p>
             </div>
 
-            <p className={ifyou}>
+            <p className="z-10 ml-auto font-caveat text-white text-28 hidden desktop:block">
               {hero.if}
               {hero.emo} <br />
               {hero.yourLife} {hero.pleasure}
             </p>
           </div>
-          <div className={heroForm}>
-            <Form clickFrom="hero" formClassname={formMargins} />
+          <div className="relative z-10 laptop:pl-16 desktop:pl-[296px] text-left">
+            <Form
+              clickFrom="hero"
+              formClassname="mb-8 m-auto laptop:mr-auto laptop:ml-0 laptop:mb-13 desktop:mb-2"
+            />
           </div>
           <WithDiscount
-            classnameText={discountText}
-            classnameDiscount={discount}
+            classnameText="px-5 text-orangeDark text-lg leading-[18px] laptop:w-81 laptop:leading-[23px] laptop:ml-16 laptop:p-0 laptop:text-black desktop:ml-[296px] text-left relative z-0"
+            classnameDiscount="laptop:font-medium text-mainSecond"
           />
         </Container>
       </div>

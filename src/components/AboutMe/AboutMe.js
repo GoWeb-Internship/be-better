@@ -19,7 +19,7 @@ const AboutMe = () => {
 
   const photo = useStaticQuery(graphql`
     query {
-      avatarDesktop: file(name: { eq: "avatar_desktop" }) {
+      avatarDesktop: file(name: { eq: "avatar-desktop" }) {
         id
         publicURL
         childImageSharp {
@@ -27,7 +27,7 @@ const AboutMe = () => {
           gatsbyImageData(placeholder: BLURRED, formats: [AUTO, WEBP])
         }
       }
-      avatarMobile: file(name: { eq: "avatar_mob" }) {
+      avatarMobile: file(name: { eq: "avatar-mob" }) {
         id
         publicURL
         childImageSharp {
@@ -35,7 +35,7 @@ const AboutMe = () => {
           gatsbyImageData(placeholder: BLURRED, formats: [AUTO, WEBP])
         }
       }
-      avatarTablet: file(name: { eq: "avatar_tablet" }) {
+      avatarTablet: file(name: { eq: "avatar-tablet" }) {
         id
         publicURL
         childImageSharp {

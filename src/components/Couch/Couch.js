@@ -27,7 +27,7 @@ const Couch = () => {
 
   const photo = useStaticQuery(graphql`
     query {
-      avatarWithNote: file(name: { eq: "withnote" }) {
+      avatarWithNote: file(name: { eq: "with_note" }) {
         id
         publicURL
         childImageSharp {
@@ -39,7 +39,7 @@ const Couch = () => {
           )
         }
       }
-      avatarWithNoteMob: file(name: { eq: "withnote_mob" }) {
+      avatarWithNoteMob: file(name: { eq: "with_note_mob" }) {
         id
         publicURL
         childImageSharp {

@@ -30,7 +30,7 @@ const BeBetter = () => {
           id
         }
       }
-      avatarMin: file(name: { eq: "jumperDesk" }) {
+      avatarMin: file(name: { eq: "jumper" }) {
         id
         publicURL
         childImageSharp {
@@ -42,7 +42,7 @@ const BeBetter = () => {
           )
         }
       }
-      avatarCar: file(name: { eq: "carDesk" }) {
+      avatarCar: file(name: { eq: "car_desk" }) {
         id
         publicURL
         childImageSharp {
@@ -54,7 +54,7 @@ const BeBetter = () => {
           )
         }
       }
-      avatarCarTablet: file(name: { eq: "carTablet" }) {
+      avatarCarTablet: file(name: { eq: "car_tablet" }) {
         id
         publicURL
         childImageSharp {
@@ -66,7 +66,7 @@ const BeBetter = () => {
           )
         }
       }
-      avatarGlassesDesk: file(name: { eq: "glassesDesk" }) {
+      avatarGlassesDesk: file(name: { eq: "glasses_desk" }) {
         id
         publicURL
         childImageSharp {
@@ -78,7 +78,7 @@ const BeBetter = () => {
           )
         }
       }
-      avatarGlassesMob: file(name: { eq: "glassesMob" }) {
+      avatarGlassesMob: file(name: { eq: "glasses_mob" }) {
         id
         publicURL
         childImageSharp {

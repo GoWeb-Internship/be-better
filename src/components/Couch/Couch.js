@@ -27,7 +27,7 @@ const Couch = () => {
 
   const photo = useStaticQuery(graphql`
     query {
-      avatarWithNote: file(name: { eq: "withNote" }) {
+      avatarWithNote: file(name: { eq: "with_note" }) {
         id
         publicURL
         childImageSharp {
@@ -39,7 +39,7 @@ const Couch = () => {
           )
         }
       }
-      avatarWithNoteMob: file(name: { eq: "avatarCouchMob" }) {
+      avatarWithNoteMob: file(name: { eq: "with_note_mob" }) {
         id
         publicURL
         childImageSharp {
@@ -59,7 +59,7 @@ const Couch = () => {
           gatsbyImageData(placeholder: BLURRED, formats: [AUTO, WEBP])
         }
       }
-      skyscraper: file(name: { eq: "skyscraperDesk" }) {
+      skyscraper: file(name: { eq: "skyscraper_desk" }) {
         id
         publicURL
         childImageSharp {
@@ -67,7 +67,7 @@ const Couch = () => {
           gatsbyImageData(placeholder: BLURRED, formats: [AUTO, WEBP])
         }
       }
-      skyscraperMob: file(name: { eq: "skyscraperMob" }) {
+      skyscraperMob: file(name: { eq: "skyscraper_mob" }) {
         id
         publicURL
         childImageSharp {
@@ -78,7 +78,7 @@ const Couch = () => {
     }
   `);
 
-  const DesktopScreenAvatar =
+  const desktopScreenAvatar =
     photo.avatarWithNote.childImageSharp.gatsbyImageData;
   const smartScreenAvatar =
     photo.avatarWithNoteMob.childImageSharp.gatsbyImageData;
@@ -92,6 +92,7 @@ const Couch = () => {
   const hideModal = () => {
     setModal(false);
   };
+
   return (
     <>
       <Section id="couch" backgroundClass={show ? background : ''}>
@@ -114,7 +115,7 @@ const Couch = () => {
                 />
               ) : (
                 <GatsbyImage
-                  image={DesktopScreenAvatar}
+                  image={desktopScreenAvatar}
                   alt={couch.withNote}
                   className="rounded-2xl mb-4 desktop:mt-[98px] w-[134px] h-[160px] laptop:w-[310px] laptop:h-[398px] desktop:w-[366px] desktop:h-[520px]"
                 />

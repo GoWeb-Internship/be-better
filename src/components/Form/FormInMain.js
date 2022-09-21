@@ -42,7 +42,7 @@ const FormInMain = ({ clickFrom }) => {
           <div className={mobContainer}>
             <StaticImage
               layout="fullWidth"
-              src="../../images/background/formMobile.jpg"
+              src="../../images/background/form_mobile.jpg"
               alt={hero.background}
               style={{ position: 'absolute' }}
               className="h-full w-[320px] laptop:w-[768px] desktop:w-[1440px] -z-10 top-0"
@@ -51,7 +51,7 @@ const FormInMain = ({ clickFrom }) => {
           <div className={tabContainer}>
             <StaticImage
               layout="fullWidth"
-              src="../../images/background/formTablet.jpg"
+              src="../../images/background/form_tablet.jpg"
               alt={hero.background}
               style={{ position: 'absolute' }}
               className="h-full w-[320px] laptop:w-[768px] desktop:w-[1440px] -z-10 top-0"

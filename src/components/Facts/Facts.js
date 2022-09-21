@@ -52,7 +52,7 @@ const factsIcons = [
 const Facts = () => {
   const photo = useStaticQuery(graphql`
     query {
-      mob: file(name: { eq: "factsPhotoMob" }) {
+      mob: file(name: { eq: "facts_photo_mob" }) {
         id
         publicURL
         childImageSharp {
@@ -60,7 +60,7 @@ const Facts = () => {
           gatsbyImageData(placeholder: BLURRED, formats: [AUTO, WEBP])
         }
       }
-      desk: file(name: { eq: "factsPhotoDesk" }) {
+      desk: file(name: { eq: "facts_photo_desk" }) {
         id
         publicURL
         childImageSharp {

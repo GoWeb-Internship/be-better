@@ -67,61 +67,64 @@ const Footer = () => {
       >
         <Container>
           <div className={content}>
-            {media === 'desktop' && (
-              <svg className={logo}>
-                <use href={`${icons}#logo`} />
-              </svg>
-            )}
+            <div className="desktop:flex justify-between">
+              <div className={social}>
+                <Social classNameList="space-y-6 laptop:space-y-4 desktop:space-y-8" />
+                <div>
+                  {data.map((node, id) => (
+                    <React.Fragment key={id}>
+                      {node.frontmatter.language === i18n.language && (
+                        <div
+                          key={node.frontmatter.language}
+                          className={titleContainer}
+                        >
+                          <Heading
+                            tag="h2"
+                            className={title}
+                            text={node.frontmatter.title}
+                          />
+                          <WithDiscount
+                            classnameText={discountText}
+                            classnameDiscount={discount}
+                          />
+                        </div>
+                      )}
+                    </React.Fragment>
+                  ))}
+                </div>
+              </div>
+              <div className="laptop:flex laptop:flex-row-reverse desktop:flex-row desktop:justify-between">
+                <div className={form}>
+                  <Form
+                    clickFrom="footer"
+                    formClassname="mb-6 desktop:mb-[73px]"
+                    classnameAccept={accepttext}
+                  />
+                </div>
+                <div>
+                  {media === 'desktop' && (
+                    <Link to="#home">
+                      <svg className={logo}>
+                        <use href={`${icons}#logo`} />
+                      </svg>
+                    </Link>
+                  )}
+                  <div className={icf}>
+                    <StaticImage
+                      src="../../images/icf.png"
+                      alt={translation.logo}
+                    />
+                  </div>
+                  <Donations className={donate} classNameText="text-main " />
+                  <p className={price}>{translation.priceByOne}</p>
+                </div>
+              </div>
+            </div>
 
-            <div className={social}>
-              <Social classNameList="space-y-6 laptop:space-y-4" />
-              <div>
-                {data.map((node, id) => (
-                  <React.Fragment key={id}>
-                    {node.frontmatter.language === i18n.language && (
-                      <div
-                        key={node.frontmatter.language}
-                        className={titleContainer}
-                      >
-                        <Heading
-                          tag="h2"
-                          className={title}
-                          text={node.frontmatter.title}
-                        />
-                        <WithDiscount
-                          classnameText={discountText}
-                          classnameDiscount={discount}
-                        />
-                      </div>
-                    )}
-                  </React.Fragment>
-                ))}
-              </div>
-            </div>
-            <div className="laptop:flex laptop:flex-row-reverse laptop:-mt-2 desktop:block">
-              <div className={form}>
-                <Form
-                  clickFrom="footer"
-                  formClassname="mb-6"
-                  classnameAccept={accepttext}
-                />
-              </div>
-              <div className={icf}>
-                <StaticImage
-                  src="../../images/icf.png"
-                  alt={translation.logo}
-                />
-              </div>
-            </div>
-            <Donations className={donate} classNameText="text-main " />
-            <p className={price}>{translation.priceByOne}</p>
             <ul className={list}>
               {translation.links.map(({ name, id }) => (
                 <li key={id} className={link}>
-                  <Link
-                    to={`/${id}`}
-                    className="focus:text-[#038bab]"
-                  >
+                  <Link to={`/${id}`} className="focus:text-[#038bab]">
                     {name}
                   </Link>
                 </li>

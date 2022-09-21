@@ -78,7 +78,7 @@ const Couch = () => {
     }
   `);
 
-  const DesktopScreenAvatar =
+  const desktopScreenAvatar =
     photo.avatarWithNote.childImageSharp.gatsbyImageData;
   const smartScreenAvatar =
     photo.avatarWithNoteMob.childImageSharp.gatsbyImageData;
@@ -92,6 +92,7 @@ const Couch = () => {
   const hideModal = () => {
     setModal(false);
   };
+
   return (
     <>
       <Section id="couch" backgroundClass={show ? background : ''}>
@@ -114,7 +115,7 @@ const Couch = () => {
                 />
               ) : (
                 <GatsbyImage
-                  image={DesktopScreenAvatar}
+                  image={desktopScreenAvatar}
                   alt={couch.withNote}
                   className="rounded-2xl mb-4 desktop:mt-[98px] w-[134px] h-[160px] laptop:w-[310px] laptop:h-[398px] desktop:w-[366px] desktop:h-[520px]"
                 />

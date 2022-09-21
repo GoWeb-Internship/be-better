@@ -39,7 +39,7 @@ const Formula = () => {
       <Container getRef={getRef}>
         <StaticImage
           layout="fullWidth"
-          src="../../images/background/backgroundBlu.jpg"
+          src="../../images/background/background_blu.jpg"
           alt={data.background}
           style={{ position: 'absolute' }}
           className="h-full w-[320px] laptop:w-[768px] desktop:w-[1440px] -z-10 top-0"

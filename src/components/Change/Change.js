@@ -67,7 +67,7 @@ const Change = () => {
           )
         }
       }
-      avatarJuliaMob: file(name: { eq: "changeMob" }) {
+      avatarJuliaMob: file(name: { eq: "change_mob" }) {
         id
         publicURL
         childImageSharp {
@@ -79,7 +79,7 @@ const Change = () => {
           )
         }
       }
-      avatarJuliaTablet: file(name: { eq: "changeTablet" }) {
+      avatarJuliaTablet: file(name: { eq: "change_tablet" }) {
         id
         publicURL
         childImageSharp {
@@ -91,7 +91,7 @@ const Change = () => {
           )
         }
       }
-      avatarJuliaDesk: file(name: { eq: "changeDesk" }) {
+      avatarJuliaDesk: file(name: { eq: "change_desk" }) {
         id
         publicURL
         childImageSharp {

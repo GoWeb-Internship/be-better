@@ -21,7 +21,7 @@ const GuaranteeBg = () => {
 
   const foto = useStaticQuery(graphql`
     query {
-      guaranteeMobile: file(name: { eq: "guaranteeMobile" }) {
+      guaranteeMobile: file(name: { eq: "guarantee_mobile" }) {
         id
         publicURL
         childImageSharp {
@@ -29,7 +29,7 @@ const GuaranteeBg = () => {
           gatsbyImageData(placeholder: BLURRED, formats: [AUTO, WEBP])
         }
       }
-      guaranteeLaptop: file(name: { eq: "guaranteeTablet" }) {
+      guaranteeLaptop: file(name: { eq: "guarantee_tablet" }) {
         id
         publicURL
         childImageSharp {
@@ -37,7 +37,7 @@ const GuaranteeBg = () => {
           gatsbyImageData(placeholder: BLURRED, formats: [AUTO, WEBP])
         }
       }
-      guaranteeDesktop: file(name: { eq: "guaranteeDesktop" }) {
+      guaranteeDesktop: file(name: { eq: "guarantee_desktop" }) {
         id
         publicURL
         childImageSharp {

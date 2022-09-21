@@ -27,7 +27,7 @@ const Couch = () => {
 
   const photo = useStaticQuery(graphql`
     query {
-      avatarWithNote: file(name: { eq: "withNote" }) {
+      avatarWithNote: file(name: { eq: "withnote" }) {
         id
         publicURL
         childImageSharp {
@@ -39,7 +39,7 @@ const Couch = () => {
           )
         }
       }
-      avatarWithNoteMob: file(name: { eq: "avatarCouchMob" }) {
+      avatarWithNoteMob: file(name: { eq: "withnote_mob" }) {
         id
         publicURL
         childImageSharp {
@@ -59,7 +59,7 @@ const Couch = () => {
           gatsbyImageData(placeholder: BLURRED, formats: [AUTO, WEBP])
         }
       }
-      skyscraper: file(name: { eq: "skyscraperDesk" }) {
+      skyscraper: file(name: { eq: "skyscraper_desk" }) {
         id
         publicURL
         childImageSharp {
@@ -67,7 +67,7 @@ const Couch = () => {
           gatsbyImageData(placeholder: BLURRED, formats: [AUTO, WEBP])
         }
       }
-      skyscraperMob: file(name: { eq: "skyscraperMob" }) {
+      skyscraperMob: file(name: { eq: "skyscraper_mob" }) {
         id
         publicURL
         childImageSharp {

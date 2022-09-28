@@ -5,20 +5,15 @@ import { useI18next } from 'gatsby-plugin-react-i18next';
 import { list, item } from './SwitchLang.module.css';
 import { normalizeLang } from './SwitchLang';
 
-const LangList = ({ onClose }) => {
-  const { languages, changeLanguage, originalPath } = useI18next();
-
-  const handleClick = lng => {
-    changeLanguage(lng);
-    onClose();
-  };
+const LangList = () => {
+  const { languages, originalPath } = useI18next();
 
   return (
     <>
       <ul className={list}>
         {languages.map(lng => (
           <li key={lng} className={item}>
-            <Link to={originalPath} onClick={() => handleClick(lng)}>
+            <Link to={originalPath} language={lng}>
               {normalizeLang(lng)}
             </Link>
           </li>

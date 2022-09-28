@@ -32,7 +32,7 @@ const SwitchLang = () => {
       </button>
       {dropdown && (
         <>
-          <LangList onClose={toggle} />
+          <LangList />
           <Backdrop onClose={toggle} transparent />
         </>
       )}

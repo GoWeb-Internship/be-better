@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
-import { useTranslation } from 'gatsby-plugin-react-i18next';
+import { useI18next, useTranslation } from 'gatsby-plugin-react-i18next';
 import { useForm, Controller } from 'react-hook-form';
 import useFormPersist from 'react-hook-form-persist';
 import * as yup from 'yup';
@@ -38,7 +38,9 @@ const JustForm = ({
   classnameAccept = '',
   openModal,
 }) => {
+  const [currentLanguage, setCurrentLanguage] = useState('');
   const { t } = useTranslation();
+  const { language } = useI18next();
   const { nameInput, accept, button, errorMessage } = t('form', {
     returnObjects: true,
   });
@@ -97,6 +99,26 @@ const JustForm = ({
     storage: isBrowser ? window.localStorage : null,
   });
 
+useEffect(()=>{
+  switch (language) {
+    case 'uk':
+      setCurrentLanguage('Ukrainian');
+      break;
+
+    case 'ru':
+      setCurrentLanguage('Russian');
+      break;
+
+    case 'en':
+      setCurrentLanguage('English');
+      break;
+
+    default:
+      setCurrentLanguage('');
+  }
+}, [language])
+  
+
   const onSubmit = async data => {
     let message = `
     <b>Request information:</b>
@@ -108,19 +130,20 @@ const JustForm = ({
     <b>Additional information:</b>
     <i>Form name: contact</i>
     <i>Form send from:</i> <b>${clickFrom}</b>
+    <i>Site language:</i> <b>${currentLanguage}</b>
     <a href="https://be-better.today">https://be-better.today</a>
     ------
     `;
-
-    sendMessageToTg(message)
-      .then(() => {
-        openModal(true);
-      })
-      .catch(error => alert(error))
-      .finally(() => {
-        reset();
-        localStorage.removeItem(`form-${clickFrom}`);
-      });
+    console.log(message);
+    // sendMessageToTg(message)
+    //   .then(() => {
+    //     openModal(true);
+    //   })
+    //   .catch(error => alert(error))
+    //   .finally(() => {
+    //     reset();
+    //     localStorage.removeItem(`form-${clickFrom}`);
+    //   });
   };
 
   return (
@@ -140,7 +163,10 @@ const JustForm = ({
           className={`${input} ${errors.name ? '!text-error' : ''}`}
           placeholder=" "
         />
-        <label className={`${label} ${errors.name ? '!text-error' : ''}` } htmlFor={`name-${clickFrom}`}>
+        <label
+          className={`${label} ${errors.name ? '!text-error' : ''}`}
+          htmlFor={`name-${clickFrom}`}
+        >
           {nameInput}
         </label>
         <p className={errors.name && `${error}`}>{errors.name?.message}</p>
@@ -152,7 +178,10 @@ const JustForm = ({
           className={`${input} ${errors.email ? '!text-error' : ''}`}
           placeholder=" "
         />
-        <label className={`${label} ${errors.email ? '!text-error' : ''}`} htmlFor={`email-${clickFrom}`}>
+        <label
+          className={`${label} ${errors.email ? '!text-error' : ''}`}
+          htmlFor={`email-${clickFrom}`}
+        >
           E-mail
         </label>
         <p className={errors.email && `${error}`}>{errors.email?.message}</p>
@@ -175,7 +204,9 @@ const JustForm = ({
               dropdownClass={phonedropdown}
               {...field}
             />
-            <p className={errors.phone && `${error}`}>{errors.phone?.message}</p>
+            <p className={errors.phone && `${error}`}>
+              {errors.phone?.message}
+            </p>
           </div>
         )}
       />
